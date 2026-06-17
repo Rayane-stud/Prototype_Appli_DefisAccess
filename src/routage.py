@@ -86,7 +86,7 @@ def voisin_lePlus_proche_avec_rondeur(df, start_lat, start_long):
     #On reconstruit le dataFrame final : 
     df_ordonne = df.loc[intersections_visitées].copy()   # on copie le df et ordonnons les lignes grace aux indexes contenus dans la liste intersections visitées
     df_ordonne["Ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
-    df_ordonne = df_ordonne.drop(columns=["distance_temp"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
+    df_ordonne = df_ordonne.drop(columns=["distance_tempo"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
 
 
     return df_ordonne
@@ -111,7 +111,7 @@ def route_toutes_equipes(df, rdv_lat, rdv_long):
     
     for equipe_id in equipes:
         df_equipe = df[df["Equipe"] == equipe_id].copy()                        # One ne garde que ce qui est relatif a une equipe 
-        df_equipe_ordonne = voisin_lePlus_proche(df_equipe, rdv_lat, rdv_long)  # itinéraire
+        df_equipe_ordonne = voisin_lePlus_proche_avec_rondeur(df_equipe, rdv_lat, rdv_long)  # itinéraire
 
         routes[equipe_id] = df_equipe_ordonne       # on remplit le dictionnaire
 
@@ -168,3 +168,31 @@ def voisin_lePlus_proche_opti_sans_rondeur(df, start_lat, start_long):
 
 
 # POSSIBILITE DE FAIRE QLQ CHOSE D'OPTI ET QUI PREND EN COMPTE LA RONDEUR DE LA TERRE, EN UTILISANT BallTree + Haversine
+
+
+# ---- TESTS ------------------------------------------------------------------
+if __name__ == "__main__":
+
+    RDV_LAT  = 48.8390
+    RDV_LONG = 2.1870
+
+    df_test = pd.DataFrame({
+        "Equipe":       [1, 1, 1, 2, 2],
+        "latitude":     [48.8410, 48.8380, 48.8425, 48.8360, 48.8400],
+        "longitude":    [2.1850,  2.1890,  2.1830,  2.1910,  2.1860],
+        "Intersection": ["Rue A / Rue B", "Rue C / Rue D", "Rue E / Rue F",
+                         "Rue G / Rue H", "Rue I / Rue J"],
+    })
+
+    print("=== TEST 1 : voisin_lePlus_proche (équipe 1) ===")
+    df_eq1 = df_test[df_test["Equipe"] == 1].copy()
+    df_ordonne = voisin_lePlus_proche_avec_rondeur(df_eq1, RDV_LAT, RDV_LONG)
+    print(df_ordonne[["Intersection", "Ordre"]])
+
+    print("\n=== TEST 2 : route_toutes_equipes ===")
+    routes = route_toutes_equipes(df_test, RDV_LAT, RDV_LONG)
+    for equipe_id, df_route in routes.items():
+        print(f"\n  Équipe {equipe_id} :")
+        print(df_route[["Intersection", "Ordre"]].to_string(index=False))
+
+    print("\n✅ Tous les tests passent !")

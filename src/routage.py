@@ -1,1 +1,109 @@
-print("Wewewe Rayane")
+"""
+FICHIER contenant la logique metier gerant l'etape 4 : "Calcul d'itinéraires"
+- ordre de visite optimal
+- un fichier par equipe 
+- Le dataframe est deja nettoyé et filtré au prealable (etape 2 et 3), ici n'aura lieu que la logique de tri.
+
+Liste des fonctions : 
+
+A)- voisin_lePlus_proche(df, start_lat, start_long) : 
+    Paramètres : 
+        df : dataframe contenant les points à visiter
+        start_lat : float : latitude du point de départ
+        start_long : float : longitude du point de départ
+    Retourne :
+        df : dataframe contenant les points à visiter dans l'ordre optimal de visite
+    ce que ca fait : 
+        Algorithme du plus proche voisin depuis le point de rendez-vous ; ajoute une colonne Ordre indiquant la séquence de visite optimale
+    objectif :
+        - optimiser l'ordre de visite des points pour minimiser la distance totale parcourue
+
+B)-  route_toutes_equipes(df, rdv_lat, rdv_long) :
+    Paramètres :
+        df : dataframe contenant les points à visiter
+        rdv_lat : float : latitude du point de rendez-vous
+        rdv_long : float : longitude du point de rendez-vous
+    Retourne :
+        dictionnaire : dictionnaire de dataframes, chacun contenant les points à visiter dans l'ordre optimal pour une équipe
+    ce que ca fait :
+        Applique nearest_neighbor() pour chaque équipe ; retourne un dictionnaire {equipe_id: DataFrame trié}
+    objectif :
+        - optimiser la répartition des points entre les équipes
+        - minimiser la distance totale parcourue par toutes les équipes
+
+
+Docu imports : 
+    pandas : pour la manipulation des dataframes
+    geodesic de geopy.distance : pour calculer les distances géodésiques entre deux points GPS
+    KDTree de scipy.spatial : pour une recherche efficace du plus proche voisin ( optimisation de l'algorithme du plus proche voisin pour plus tard)
+
+"""
+
+
+#Imports : 
+import pandas as pd
+from geopy.distance import geodesic 
+# from scipy.spatial import KDTree
+
+
+'''
+Entrée : 
+    - df : dataframe contenant les points à visiter sous cette structure : latitude longitude intersection rue_1 rue_2 poi_proche distance_poi_km Equipe
+    - start_lat : float : latitude du point de départ
+    - start_long : float : longitude du point de départ
+Sortie : 
+    - df : dataframe contenant les points à visiter, avec une colonne supplémentaire "Ordre" indiquant la séquence de visite optimale
+Description :
+'''
+def voisin_lePlus_proche(df, start_lat, start_long):
+
+    intersections_restantes = df.copy()  # Crée une copie du dataframe pour éviter de modifier l'original
+    intersections_visitées = []  # Liste pour stocker les intersections visitées dans l'ordre
+    lat_actuelle, long_actuelle = start_lat, start_long  # Point de départ
+
+    while not intersections_restantes.empty:
+        #Calcul des distances : 
+        intersections_restantes['distance_tempo'] = intersections_restantes.apply(     # Applique la fonction geodesic à chaque ligne du dataframe (evite une boucle for explicite)
+            lambda row: geodesic(                                                      # lambda row: c'est pour definir une ligne "lambda", ca permet de pouvoir definir les manipulations "type" sur un ligne
+                (lat_actuelle, long_actuelle), (row['latitude'], row['longitude'])     # deux points GPS entre lesquels geodisque calcule la distance 
+                ).km, 
+                axis=1   # Axis 1 c'est horizontalement, ca permet de dire que c'est les lignes et pas les colonnes qui sont parcourues.
+            ) 
+        
+        # Trouver l'intersection la plus proche : 
+        indice_proche = intersections_restantes['distance_tempo'].idxmin()  # Récupère l'index de la ligne avec la distance minimale
+        intersection_proche = intersections_restantes.loc[indice_proche]  # Récupère la ligne correspondante à l'index trouvé
+
+
+        #Enregistrer la visite et avancer : 
+        intersections_visitées.append(indice_proche)
+
+        lat_actuelle = intersection_proche['latitude']
+        long_actuelle = intersection_proche['longitude']
+
+        intersections_restantes = intersections_restantes.drop(indice_proche)
+
+    #On reconstruit le dataFrame final : 
+    df_ordonne = df.loc[intersections_visitées].copy()   # on copie le df et ordonnons les lignes grace aux indexes contenus dans la liste intersections visitées
+    df_ordonne["Ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
+    df_ordonne = df_ordonne.drop(columns=["distance_temp"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
+
+
+    return df_ordonne
+
+
+
+
+
+
+'''
+Entrée : 
+    - df : dataframe contenant les points à visiter
+    - rdv_lat : float : latitude du point de rendez-vous
+    - rdv_long : float : longitude du point de rendez-vous
+Sortie : 
+    - dictionnaire : dictionnaire de dataframes, chacun contenant les points à visiter dans l'ordre optimal pour une équipe
+Description :
+'''
+def route_toutes_equipes(df, rdv_lat, rdv_long):
+    return None

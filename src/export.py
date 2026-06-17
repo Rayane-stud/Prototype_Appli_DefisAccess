@@ -39,7 +39,9 @@ remplir les questionnaires
 import os
 import pandas as pd
 
-# fonction duplication_lignes
+# FONCTION:  duplication_lignes ------------------------------------------------
+
+
 def duplication_lignes(df):
     
         # ETAPE 1 : on verifie que la colonne nb_traversees existe
@@ -52,30 +54,47 @@ def duplication_lignes(df):
     df_filtre = df[df["nb_traversees"] != 42].copy()
     """
 
-    # ETAPE 3 : on duplique chaque ligne nb_traversees fois
-    
+    # ETAPE 3 : on duplique chaque ligne selon le nb de passage pieton(nb_traversees)
+            
     repeat_idxs = df.index.repeat(df["nb_traversees"])
     df_developpe = df.loc[repeat_idxs].reset_index(drop=True)
-
-    # ETAPE 4 : on numerote chaque passage pour un meme croisement
+            
+            #df.index va cherhcer la liste des numeros des lignes fais lors de la trad en pandas
+            # le .repeat() va faire repeter le numero d'index autant de fois que nb_traverses sur chaque ligne 
+            #df.loc[repeat_idx] va chercher dans le tab les lignes correspondant a repeat_indxs
+            #le probleme est que ce sont les index qui sont dupliqués donc .reset_index(drop=True) les remets proprements selon l'ordre des lignes, le drop=True jette les anciens indexs
+    
+    
+    # ETAPE 4 : on numerote chaque passage pieton pour un meme croisement
     
     df_developpe["traversee"] = (
         df_developpe.groupby("Intersection", sort=False).cumcount() + 1
     )
+            #df_developpe["traversee"] = (df_developpe.groupby("Intersection", sort=False) regroupe toutes les lignes qui ont le meme nom d'InterruptedError
+            #sort=False permet que pandas ne retrie pas par ordre alphabetique
+            #.cumcount numerote les lignes en partant de 0
+            # le +1 car python commence a 0 alors que stata commence a 1
 
     # ETAPE 5 : on supprime nb_traversees qui ne sert plus
-    # et on reordonne les colonnes comme dans le Stata
     df_developpe = df_developpe[["Equipe", "coordonnees", "Intersection", "Ordre", "traversee"]]
+            # et on reordonne les colonnes comme dans le Stata et jette la colonne nb_traversees
+
+
 
     # ETAPE 6 : on trie comme dans le Stata
-    # en Stata : "sort Ordre Intersection traversee"
+    
     df_developpe = df_developpe.sort_values(
         ["Ordre", "Intersection", "traversee"]
     ).reset_index(drop=True)
 
     return df_developpe
      
-    #vérifiction 
+            #.sort_values(["Ordre", "Intersection", "traversee"]) pandas trie par ordre puis par intersection puis par traversee 
+            #.reset_index(drop=True) apres le tri il remet les indexs dans l'ordre
+
+
+
+    #vérifiction fais par claude 
     import pandas as pd
 
 # On cree un petit DataFrame qui simule ce que le vrai fichier contiendrait
@@ -94,14 +113,70 @@ resultat = duplication_lignes(df_test)
 print(resultat)
 
 
-#fonction ajouter_colonnes_terrain():
-def ajouter_colonnes_notation_terrain():
-    return
+#FONCTION : ajouter_colonnes_terrain() ------------------------------------------------------------------------------
 
-#fonction vers_xlsx()
+def ajouter_col_notation_terrain():
+    #ETAPE 1 : fais une copie du tableau pour ne pas modif l'original
+    df_terrain = df.copy()
+
+    # ETAPE 2 : on ajoute les 4 colonnes de saisie avec None comme valeur par defaut
+    df_terrain["bande_de_guidage"] = None
+    df_terrain["bande_eveil"] = None
+    df_terrain["feu_parlant"] = None
+    df_terrain["commentaire"] = None
+    
+    return df_terrain
+
+
+#FONCTION : vers_xlsx() ----------------------------------------------------------------------------------------------
+
 def vers_xlsx() :
-    return
+    # ETAPE 1 : on construit le nom du fichier comme dans le Stata
+    nom_fichier = f"Garches_Equipe_{id_equipe}_feuille.xlsx"
+             # "Garches_Equipe_`i'_feuille.xlsx"
 
-#fonction exporter_toutes_equipes()
-def exporter_toutes_equipes():
-    return 
+    # ETAPE 2 : on construit le chemin complet du fichier (nom+adresse)
+    
+    chemin_fichier = os.path.join(dossier_sortie, nom_fichier)
+            # os.path.join : fonction Python qui colle un dossier et un nom de fichier ensemble pour former un chemin complet.
+    
+    
+    # ETAPE 3 : on exporte le tableau en fichier XLSX
+    
+    df.to_excel(chemin_fichier, index=False)
+            #df.to_excel(chemin_fichier) fonction qui exporte le tableau en fichier XLSX 
+            # index=False : on n'exporte pas les numeros de lignes pandas (index)
+
+          
+    return chemin_fichier
+    
+    
+#FONCTION : exporter_toutes_equipes() ----------------------------------------------------------------------------------------------------------
+
+
+def exporter_toutes_equipes(dict_equipes, dossier_sortie):
+
+
+    # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
+    liste_chemins = []
+
+    # ETAPE 2 : on boucle sur chaque equipe du dictionnaire
+
+    for id_equipe, df_equipe in dict_equipes.items():
+            #dict_equipes nom du dictionnaire
+            #chaque equipe a une clé (1,2,3,...) et la veleur c'est le nom de l'equipe qui est dans le tab df_equipe1,dfequipe2
+            # .items() permet de recup en meme temps la clé et la valeur
+
+
+    # ETAPE 3 : on appelle vers_xlsx() pour chaque equipe
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie)
+             # on cree un fichier XLSX pour chauqe et retourne son chemin
+
+
+    # ETAPE 4 : on ajoute le chemin du fichier genere a la liste
+        liste_chemins.append(chemin)
+
+    # ETAPE 5 : on retourne la liste de tous les chemins
+        # utile pour creer le ZIP Streamlit avec tous les fichiers
+    return liste_chemins
+     

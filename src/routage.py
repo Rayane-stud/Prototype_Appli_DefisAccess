@@ -43,7 +43,7 @@ Docu imports :
 #Imports : 
 import pandas as pd
 from geopy.distance import geodesic 
-# from scipy.spatial import KDTree
+from scipy.spatial import KDTree
 
 
 '''
@@ -55,7 +55,7 @@ Sortie :
     - df : dataframe contenant les points à visiter, avec une colonne supplémentaire "Ordre" indiquant la séquence de visite optimale
 Description :
 '''
-def voisin_lePlus_proche(df, start_lat, start_long):
+def voisin_lePlus_proche_avec_rondeur(df, start_lat, start_long):
 
     intersections_restantes = df.copy()  # Crée une copie du dataframe pour éviter de modifier l'original
     intersections_visitées = []  # Liste pour stocker les intersections visitées dans l'ordre
@@ -116,3 +116,55 @@ def route_toutes_equipes(df, rdv_lat, rdv_long):
         routes[equipe_id] = df_equipe_ordonne       # on remplit le dictionnaire
 
     return routes
+
+
+
+
+
+'''
+Entrée : 
+    - df : dataframe contenant les points à visiter sous cette structure : latitude longitude intersection rue_1 rue_2 poi_proche distance_poi_km Equipe
+    - start_lat : float : latitude du point de départ
+    - start_long : float : longitude du point de départ
+Sortie : 
+    - df : dataframe contenant les points à visiter, avec une colonne supplémentaire "Ordre" indiquant la séquence de visite optimale
+Description :
+    Version optimisée au niveau de la recherche du minimum, au lieu d'appeller geodisc a chaque itération, on utilise des KdTree qui toruvent le minimum en une operation
+    Toutefois la rondeur de la terre n'est pas prise en compte, ce n'est pas genant a l'echelle de quelque km carré comme garche mais ca le serait pour la france entière
+'''
+def voisin_lePlus_proche_opti_sans_rondeur(df, start_lat, start_long):
+
+    intersections_restantes = df.copy()  # Crée une copie du dataframe pour éviter de modifier l'original
+    intersections_visitées = []  # Liste pour stocker les intersections visitées dans l'ordre
+    lat_actuelle, long_actuelle = start_lat, start_long  # Point de départ
+
+    while not intersections_restantes.empty:
+        #Construction du KDTree avec les coordonnées des intersections restantes 
+        coords = intersections_restantes[["latitude", "longitude"]].values         #convertis les colones pandas en tableau numpy format attendu par KDTree
+        tree = KDTree(coords)
+
+        #Trouver l'intersection la plus proche de la position actuelle 
+        dist, indice_local = tree.query([lat_actuelle, long_actuelle])      # indice_local est une position dans le tableau numpy
+
+        #Reconversion en index pandas
+        indice_proche = intersections_restantes.index[indice_local]
+        intersection_proche = intersections_restantes.loc[indice_proche]
+
+        #Enregistrer la visite et avancer : 
+        intersections_visitées.append(indice_proche)
+
+        lat_actuelle = intersection_proche['latitude']
+        long_actuelle = intersection_proche['longitude']
+
+        intersections_restantes = intersections_restantes.drop(indice_proche)
+
+    #On reconstruit le dataFrame final : 
+    df_ordonne = df.loc[intersections_visitées].copy()   # on copie le df et ordonnons les lignes grace aux indexes contenus dans la liste intersections visitées
+    df_ordonne["Ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
+    df_ordonne = df_ordonne.drop(columns=["distance_temp"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
+
+
+    return df_ordonne
+
+
+# POSSIBILITE DE FAIRE QLQ CHOSE D'OPTI ET QUI PREND EN COMPTE LA RONDEUR DE LA TERRE, EN UTILISANT BallTree + Haversine

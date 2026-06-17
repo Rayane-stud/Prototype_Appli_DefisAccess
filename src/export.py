@@ -53,10 +53,11 @@ def duplication_lignes(df):
     """
 
     # ETAPE 3 : on duplique chaque ligne nb_traversees fois
-    
+            #df.index va cherhcer la liste des numeros des lignes fais lors de la trad en pandas
+            # le .repeat() va faire repeter le numero d'index autant de fois que nb_traverses sur chaque ligne 
     repeat_idxs = df.index.repeat(df["nb_traversees"])
     df_developpe = df.loc[repeat_idxs].reset_index(drop=True)
-
+            #
     # ETAPE 4 : on numerote chaque passage pour un meme croisement
     
     df_developpe["traversee"] = (

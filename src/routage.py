@@ -2,6 +2,7 @@
 FICHIER contenant la logique metier gerant l'etape 4 : "Calcul d'itinéraires"
 - ordre de visite optimal
 - un fichier par equipe 
+- Le dataframe est deja nettoyé et filtré au prealable (etape 2 et 3), ici n'aura lieu que la logique de tri.
 
 Liste des fonctions : 
 
@@ -30,5 +31,14 @@ B)-  route_toutes_equipes(df, rdv_lat, rdv_long) :
         - optimiser la répartition des points entre les équipes
         - minimiser la distance totale parcourue par toutes les équipes
 
-        ajout test 
+
+Docu imports : 
+    pandas : pour la manipulation des dataframes
+    geodesic de geopy.distance : pour calculer les distances géodésiques entre deux points GPS
+    KDTree de scipy.spatial : pour une recherche efficace du plus proche voisin ( optimisation de l'algorithme du plus proche voisin pour plus tard)
+
 """
+#Imports : 
+import pandas as pd
+from geopy.distance import geodesic 
+from scipy.spatial import KDTree

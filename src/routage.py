@@ -106,4 +106,13 @@ Sortie :
 Description :
 '''
 def route_toutes_equipes(df, rdv_lat, rdv_long):
-    return None
+    equipes = df["Equipe"].unique()                 # renvoies les valeurs uniques 
+    routes = {}                                     # initialisation du dictionnaire qui va contenir le resultat attendu 
+    
+    for equipe_id in equipes:
+        df_equipe = df[df["Equipe"] == equipe_id].copy()                        # One ne garde que ce qui est relatif a une equipe 
+        df_equipe_ordonne = voisin_lePlus_proche(df_equipe, rdv_lat, rdv_long)  # itinéraire
+
+        routes[equipe_id] = df_equipe_ordonne       # on remplit le dictionnaire
+
+    return routes

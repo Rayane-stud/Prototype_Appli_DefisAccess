@@ -94,28 +94,9 @@ def duplication_lignes(df):
 
 
 
-    #vérifiction fais par claude 
-    import pandas as pd
-
-# On cree un petit DataFrame qui simule ce que le vrai fichier contiendrait
-df_test = pd.DataFrame({
-    "Equipe":        [1, 1, 2],
-    "coordonnees":   ["48.838 2.186", "48.839 2.187", "48.840 2.188"],
-    "Intersection":  ["Rue de la Paix / Rue du General", "Avenue Foch / Rue Victor Hugo", "Rue Pasteur / Avenue de la Gare"],
-    "Ordre":         [1, 2, 1],
-    "nb_traversees": [4, 4, 4]
-})
-
-# On appelle la fonction
-resultat = duplication_lignes(df_test)
-
-# On affiche le resultat
-print(resultat)
-
-
 #FONCTION : ajouter_colonnes_terrain() ------------------------------------------------------------------------------
 
-def ajouter_col_notation_terrain():
+def ajouter_col_notation_terrain(df):
     #ETAPE 1 : fais une copie du tableau pour ne pas modif l'original
     df_terrain = df.copy()
 
@@ -130,7 +111,7 @@ def ajouter_col_notation_terrain():
 
 #FONCTION : vers_xlsx() ----------------------------------------------------------------------------------------------
 
-def vers_xlsx() :
+def vers_xlsx(df, id_equipe, dossier_sortie) :
     # ETAPE 1 : on construit le nom du fichier comme dans le Stata
     nom_fichier = f"Garches_Equipe_{id_equipe}_feuille.xlsx"
              # "Garches_Equipe_`i'_feuille.xlsx"
@@ -180,3 +161,37 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
         # utile pour creer le ZIP Streamlit avec tous les fichiers
     return liste_chemins
      
+#---- TESTS ------------------------------------------------------------------
+# Lancer ce fichier directement pour tester : python export.py
+ 
+if __name__ == "__main__":
+ 
+    df_test = pd.DataFrame({
+        "Equipe":        [1, 1, 2],
+        "coordonnees":   ["48.838 2.186", "48.839 2.187", "48.840 2.188"],
+        "Intersection":  ["Rue de la Paix / Rue du General", "Avenue Foch / Rue Victor Hugo", "Rue Pasteur / Avenue de la Gare"],
+        "Ordre":         [1, 2, 1],
+        "nb_traversees": [3, 2, 4]
+    })
+ 
+    print("=== TEST 1 : duplication_lignes ===")
+    df_dup = duplication_lignes(df_test)
+    print(df_dup)
+    print(f"\n→ {len(df_test)} lignes au départ → {len(df_dup)} lignes après duplication")
+ 
+    print("\n=== TEST 2 : ajouter_col_notation_terrain ===")
+    df_terrain = ajouter_col_notation_terrain(df_dup)
+    print(df_terrain.columns.tolist())
+    print(f"→ {len(df_terrain.columns)} colonnes au total")
+ 
+    print("\n=== TEST 3 : vers_xlsx + exporter_toutes_equipes ===")
+    os.makedirs("test_export", exist_ok=True)
+    dict_equipes = {
+        1: df_terrain[df_terrain["Equipe"] == 1],
+        2: df_terrain[df_terrain["Equipe"] == 2]
+    }
+    chemins = exporter_toutes_equipes(dict_equipes, "test_export")
+    for c in chemins:
+        print(f"→ Fichier généré : {c}")
+ 
+    print("\n✅ Tous les tests passent !")

@@ -224,14 +224,11 @@ def filtrer_intersections(tableauFinal):
 
     return df
 
-
 #demander le nom de la commune
 ville=input("Entrez le nom de la commune : ")
 
 #demander le nom du fichier csv
 nom = input("Entrez le nom du fichier CSV (sans l'extension .csv) : ")
-path="data/output/" + nom + ".csv"
+path="data/raw/" + nom + ".csv"
 tableau=charger_intersections(path, ville)
 print (tableau)
-
-

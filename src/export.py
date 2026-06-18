@@ -169,8 +169,9 @@ def export_final_equipes(dict_equipes, dossier_sortie):
     for id_equipe, df_equipe in dict_equipes.items():
 
         # ETAPE 3 : on applique les 3 etapes dans l'ordre pour chaque equipe
-        df_equipe = ajouter_col_notation_terrain(df_equipe)
+        
         df_equipe = duplication_lignes(df_equipe)
+        df_equipe = ajouter_col_notation_terrain(df_equipe)
         
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe

@@ -23,7 +23,7 @@ xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx"
 tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
 
 tableau_villes = proximite.charger_points(xlsx_path_lieux)
-tab_croisement = proximite.assigner_equipes(proximite.fusion_croisement(proximite.filtre_Distance(tableau_nettoye, tableau_villes)),5,rdv_lat,rdv_long)
+tab_croisement = proximite.assigner_equipes(proximite.fusion_croisement(proximite.filtre_distance(tableau_nettoye, tableau_villes)),5,rdv_lat,rdv_long)
 """
 ATTENTE DU FICHIER PROXIMITE POUR OBTENIR LE TABLEAU FINAL
 """

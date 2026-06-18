@@ -45,8 +45,11 @@ remplir les questionnaires
 """
 import os
 import pandas as pd
+import numpy as np
 
 
+
+'''ATTTENNNTIONNNNNNNNNNNNNNN A LA METHODE PROVISOIRE PR LE NB TRAVERSEES'''
 # FONCTION : duplication_lignes ------------------------------------------------
 
 def duplication_lignes(df):
@@ -69,19 +72,19 @@ def duplication_lignes(df):
     # .cumcount() numerote les occurrences en partant de 0
     # +1 car Python commence a 0 alors que Stata commence a 1
     df_developpe["traversee"] = (
-        df_developpe.groupby("Intersection", sort=False).cumcount() + 1
+        df_developpe.groupby("intersection", sort=False).cumcount() + 1
     )
 
     # ETAPE 4 : on supprime nb_traversees qui ne sert plus
     # et on reordonne les colonnes comme dans le Stata
     # en Stata : "keep Equipe Coordonnees Intersection Ordre traversee"
-    df_developpe = df_developpe[["Equipe", "coordonnees", "Intersection", "Ordre", "traversee"]]
+    df_developpe = df_developpe[["equipe", "coordonnees", "intersection", "ordre", "traversee"]]
 
     # ETAPE 5 : on trie comme dans le Stata
     # en Stata : "sort Ordre Intersection traversee"
     # .reset_index(drop=True) remet les index dans l'ordre apres le tri
     df_developpe = df_developpe.sort_values(
-        ["Ordre", "Intersection", "traversee"]
+        ["ordre", "intersection", "traversee"]
     ).reset_index(drop=True)
 
     return df_developpe
@@ -97,6 +100,8 @@ def ajouter_col_notation_terrain(df):
     # None en Python = "." en Stata (valeur manquante)
     # le benevole les remplira a la main sur le terrain
     # en Stata : "gen bande_de_guidage=." etc.
+    
+    # ARTTTTENNNNTTTTIIIIIOOOONNNNNNNNNNNNNNNNNNNNNNNNNNNNN
     df_terrain["bande_de_guidage"] = None
     df_terrain["bande_eveil"] = None
     df_terrain["feu_parlant"] = None
@@ -164,8 +169,9 @@ def export_final_equipes(dict_equipes, dossier_sortie):
     for id_equipe, df_equipe in dict_equipes.items():
 
         # ETAPE 3 : on applique les 3 etapes dans l'ordre pour chaque equipe
-        df_equipe = duplication_lignes(df_equipe)
         df_equipe = ajouter_col_notation_terrain(df_equipe)
+        df_equipe = duplication_lignes(df_equipe)
+        
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin

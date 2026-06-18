@@ -67,14 +67,33 @@ POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927) # ce point correspond �
 
 def charger_points(chemin):
 
-    """Charge le fichier lieux.xlsx et retourne un DataFrame avec une ligne par points."""
-    df = pd.read_excel(chemin) # permet de lire les fichiers excel
-    df["latitude"] = df["coordonnees"].str.split(",").str[0].astype(float)
-    df["longitude"] = df["coordonnees"].str.split(",").str[1].astype(float)
+    """Charge le fichier lieux.xlsx en ciblant directement les lignes par leur position."""
+    # 1. On charge l'Excel SANS en-tête automatique
+    df = pd.read_excel(chemin, header=None)
+    
+    # 2. On sait que la ligne 0 (index 0) = les noms ("Info", "Mairie de Garches"...)
+    #    On sait que la ligne 1 (index 1) = les coordonnées ("coordonnees", "48.84...")
+    
+    # On extrait les lieux et les coordonnées directement depuis leurs positions brutes
+    lieux = df.iloc[0, 1:].values         # Prend tout sauf la case "Info"
+    coordonnees = df.iloc[1, 1:].values   # Prend tout sauf la case "coordonnees"
+    
+    # 3. On reconstruit un DataFrame tout neuf, propre et directement dans le bon sens !
+    df_propre = pd.DataFrame({
+        "lieu": lieux,
+        "coordonnees": coordonnees
+    })
+    
+    # 4. Sécurité : Nettoyage des lignes vides (ex: si une colonne Excel était vide)
+    df_propre = df_propre.dropna(subset=["coordonnees"])
+    
+    # 5. Extraction de la latitude et de la longitude
+    df_propre["latitude"] = df_propre["coordonnees"].astype(str).str.split(",").str[0].astype(float)
+    df_propre["longitude"] = df_propre["coordonnees"].astype(str).str.split(",").str[1].astype(float)
 
-    return df  
+    return df_propre
 
- 
+
 
 def filtre_Distance (df_lieux, df_croisement, rayon_km: float = 0.2):
     dfL = df_lieux.copy()
@@ -86,7 +105,7 @@ def filtre_Distance (df_lieux, df_croisement, rayon_km: float = 0.2):
         lat=lieu["latitude"]
         long=lieu["longitude"]
 
-        distance = dfC.apply(lambda croisement: geodesic((croisement["Latitude"], croisement["Longitude"]),(lat, long)).km,axis=1)
+        distance = dfC.apply(lambda croisement: geodesic((croisement["latitude"], croisement["longitude"]),(lat, long)).km,axis=1)
 
         #on garde les intersections a moins de 200 mètres des points majeurs
         dfC.loc[distance< rayon_km, "pres_PM"] = True
@@ -96,17 +115,20 @@ def filtre_Distance (df_lieux, df_croisement, rayon_km: float = 0.2):
 
     return df
 
-def fusion_croisement(df_Intersections, threshold_km: float = 0.03):
-    df=df_Intersections.copy()
+def fusion_croisement(df_intersections, threshold_km: float = 0.03):
+    df=df_intersections.copy()
 
     for i in range(len(df)):
         for j in range(i+1, len(df)):
 
-            dist = geodesic((df.loc[i,"Latitude"], df.loc[i,"Longitude"])),
-            (df.loc[j,"Latitude"], df.loc[j, "Longitude"]).km
+            dist = geodesic(
+                (df.loc[i,"latitude"], df.loc[i,"longitude"]),
+            (df.loc[j,"latitude"], df.loc[j, "longitude"])
+            ).km
             if dist <= threshold_km:
-                df.loc[i,"Intersections"]+="/"+df.loc[j,"Intersections"]
-                df.drop(j,inplace=True,reset_index=True)
+                df.loc[i,"intersections"]+="/"+df.loc[j,"intersections"]
+                df.drop(j, inplace=True)
+                df.reset_index(drop=True, inplace=True)
                 
                 #Peut etre necessaire de faire j-1 ici, car risque de sauté un case
     
@@ -121,7 +143,7 @@ def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetu
     kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
 
     # Entraîne le KMeans et assigne le numéro d'équipe à chaque intersection
-    df["Equipe"] = kmeans.fit_predict(coordonnees)
+    df["equipe"] = kmeans.fit_predict(coordonnees)
 
     # Calcule la distance en km entre chaque intersection et le point de rassemblement
     df["dist_meetup"] = df.apply(lambda row: geodesic(
@@ -131,10 +153,10 @@ def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetu
     
 
     # Trie les intersections par équipe puis par distance au point de rassemblement
-    df = df.sort_values(by=["Equipe", "dist_meetup"]).reset_index(drop=True)
+    df = df.sort_values(by=["equipe", "dist_meetup"]).reset_index(drop=True)
 
     # Numérote les intersections au sein de chaque équipe en commençant à 1
-    df["Ordre"] = df.groupby("Equipe").cumcount() + 1
+    df["ordre"] = df.groupby("equipe").cumcount() + 1
     df.drop(columns=["dist_meetup"], inplace=True)
 
     return df

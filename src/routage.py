@@ -85,7 +85,7 @@ def voisin_lePlus_proche_avec_rondeur(df, start_lat, start_long):
 
     #On reconstruit le dataFrame final : 
     df_ordonne = df.loc[intersections_visitées].copy()   # on copie le df et ordonnons les lignes grace aux indexes contenus dans la liste intersections visitées
-    df_ordonne["Ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
+    df_ordonne["ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
     df_ordonne = df_ordonne.drop(columns=["distance_tempo"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
 
 
@@ -160,8 +160,8 @@ def voisin_lePlus_proche_opti_sans_rondeur(df, start_lat, start_long):
 
     #On reconstruit le dataFrame final : 
     df_ordonne = df.loc[intersections_visitées].copy()   # on copie le df et ordonnons les lignes grace aux indexes contenus dans la liste intersections visitées
-    df_ordonne["Ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
-    df_ordonne = df_ordonne.drop(columns=["distance_temp"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
+    df_ordonne["ordre"] = range(1, len(df_ordonne) + 1)  # generer une suite de nombre croissante jusqu'au nombre de point et les stock dans la colonne ordre
+    df_ordonne = df_ordonne.drop(columns=["distance_tempo"], errors="ignore") # suppression de la variable temporaire ( colone ) et ignore les erreures liées a si le dataset est vide
 
 
     return df_ordonne

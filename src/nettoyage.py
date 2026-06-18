@@ -14,7 +14,7 @@ def charger_intersections(path, ville):
     tableauFinal = df_ville.rename(columns={
         "geometry/coordinates/0": "longitude",
         "geometry/coordinates/1": "latitude",
-        "properties/name": "intersections",
+        "properties/name": "intersection",
         "properties/context": "Ville/Commune",
         "properties/citycode": "Code Postale",
         "properties/depcode": "Code Département"
@@ -37,7 +37,7 @@ def charger_intersections(path, ville):
 def correction_intersections(tableauFinal):
     # Correction du texte encodé
     correction = tableauFinal.copy()
-    correction["intersections"]= (correction["intersections"].str.replace('Ã©', 'é').
+    correction["intersection"]= (correction["intersection"].str.replace('Ã©', 'é').
             str.replace('Ã¨', 'è').
             str.replace('Ã¢', 'â').
             str.replace('Ãª', 'ê').
@@ -54,11 +54,11 @@ def correction_intersections(tableauFinal):
             str.replace('Ã”', 'Ô').
             str.replace('Ã•', 'Õ').
             str.replace('Ãœ', 'Ü'))
-    return tableauFinal
+    return correction
 
 def normailisation_intersections(tableauFinal):
     # Normaliser les noms de colonnes
-    col="intersections"
+    col="intersection"
     df=tableauFinal.copy()
     
     remplacer = [
@@ -220,7 +220,7 @@ def doublons_intersections(tableauFinal):
 def filtrer_intersections(tableauFinal):
     # Filtrer les intersections en fonction du type de voie
     typevoie = "Avenue|Esplanade|Boulevard"  # Ajouter d'autres types de voies si nécessaire
-    df= tableauFinal[tableauFinal["intersections"].str.contains(typevoie, case=False)]
+    df= tableauFinal[tableauFinal["intersection"].str.contains(typevoie, case=False)]
 
     return df
 

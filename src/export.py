@@ -72,19 +72,19 @@ def duplication_lignes(df):
     # .cumcount() numerote les occurrences en partant de 0
     # +1 car Python commence a 0 alors que Stata commence a 1
     df_developpe["traversee"] = (
-        df_developpe.groupby("Intersection", sort=False).cumcount() + 1
+        df_developpe.groupby("intersection", sort=False).cumcount() + 1
     )
 
     # ETAPE 4 : on supprime nb_traversees qui ne sert plus
     # et on reordonne les colonnes comme dans le Stata
     # en Stata : "keep Equipe Coordonnees Intersection Ordre traversee"
-    df_developpe = df_developpe[["Equipe", "coordonnees", "Intersection", "Ordre", "traversee"]]
+    df_developpe = df_developpe[["equipe", "coordonnees", "intersection", "ordre", "traversee"]]
 
     # ETAPE 5 : on trie comme dans le Stata
     # en Stata : "sort Ordre Intersection traversee"
     # .reset_index(drop=True) remet les index dans l'ordre apres le tri
     df_developpe = df_developpe.sort_values(
-        ["Ordre", "Intersection", "traversee"]
+        ["ordre", "intersection", "traversee"]
     ).reset_index(drop=True)
 
     return df_developpe
@@ -102,7 +102,6 @@ def ajouter_col_notation_terrain(df):
     # en Stata : "gen bande_de_guidage=." etc.
     
     # ARTTTTENNNNTTTTIIIIIOOOONNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-    df_terrain["nb_traversees"] = np.random.randint(1, 5, size=len(df_terrain)) #PAS BON DU TOUT C PROVISOIRE
     df_terrain["bande_de_guidage"] = None
     df_terrain["bande_eveil"] = None
     df_terrain["feu_parlant"] = None

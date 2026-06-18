@@ -6,6 +6,7 @@ import routage
 import nettoyage
 import proximite 
 import export
+import numpy as np
 
 from pathlib import Path
 
@@ -26,7 +27,8 @@ tab_croisement = proximite.assigner_equipes(proximite.fusion_croisement(proximit
 """
 ATTENTE DU FICHIER PROXIMITE POUR OBTENIR LE TABLEAU FINAL
 """
-
+tab_croisement["nb_traversees"] = np.random.randint(1, 5, size=len(tab_croisement)) #PAS BON DU TOUT C PROVISOIRE
+    
 
 dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement,rdv_lat, rdv_long )
 liste_chemins = export.export_final_equipes(dict_route_par_equipe,BASE_DIR.parent / "data" / "output")

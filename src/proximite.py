@@ -122,14 +122,11 @@ def filtre_distance(df_lieux, df_intersections, rayon_km: float = 0.2):
 # FONCTION : fusion_croisement() -----------------------------------------------
 
 def fusion_croisement(df_intersections, threshold_km: float = 0.03):
-    # ETAPE 1 : on travaille sur une copie avec une liste de dicts pour eviter
-    # les problemes d'index pandas qui se decalent quand on supprime des lignes
-    # dans une boucle avec reset_index
     lignes = df_intersections.copy().reset_index(drop=True).to_dict("records")
 
-    # ETAPE 2 : on parcourt toutes les paires
-    # si deux intersections sont a moins de threshold_km on fusionne la seconde
-    # dans la premiere et on la supprime de la liste
+    if lignes:
+        print("COLONNES DISPONIBLES :", list(lignes[0].keys()))
+
     i = 0
     while i < len(lignes):
         j = i + 1
@@ -138,22 +135,15 @@ def fusion_croisement(df_intersections, threshold_km: float = 0.03):
                 (lignes[i]["latitude"], lignes[i]["longitude"]),
                 (lignes[j]["latitude"], lignes[j]["longitude"])
             ).km
-
             if dist <= threshold_km:
-                # on concatene le nom de l'intersection j dans i
-                # on garde les coordonnees de i (point de reference)
-                lignes[i]["intersection"] += " / " + lignes[j]["intersection"]
+                lignes[i]["lieu"] += " / " + lignes[j]["lieu"]  # ✅ "lieu" au lieu de "intersection"
                 lignes.pop(j)
-                # on ne incremente pas j car la liste a retrecit
             else:
                 j += 1
         i += 1
 
-    # ETAPE 3 : on reconstruit le DataFrame depuis la liste de dicts
     df_fusionne = pd.DataFrame(lignes).reset_index(drop=True)
-
     return df_fusionne
-
 
 # FONCTION : assigner_equipes() ------------------------------------------------
 

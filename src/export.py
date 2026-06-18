@@ -148,6 +148,8 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
             #chaque equipe a une clé (1,2,3,...) et la veleur c'est le nom de l'equipe qui est dans le tab df_equipe1,dfequipe2
             # .items() permet de recup en meme temps la clé et la valeur
 
+        
+
 
     # ETAPE 3 : on appelle vers_xlsx() pour chaque equipe
         chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie)
@@ -161,6 +163,34 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
         # utile pour creer le ZIP Streamlit avec tous les fichiers
     return liste_chemins
 
+
+
+# NOUVELLE FONCTION 
+def export_final_equipes(dict_equipes, dossier_sortie):
+    # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
+    liste_chemins = []
+
+    # ETAPE 2 : on boucle sur chaque equipe du dictionnaire
+
+    for id_equipe, df_equipe in dict_equipes.items():
+            #dict_equipes nom du dictionnaire
+            #chaque equipe a une clé (1,2,3,...) et la veleur c'est le nom de l'equipe qui est dans le tab df_equipe1,dfequipe2
+            # .items() permet de recup en meme temps la clé et la valeur
+
+        df_equipe = duplication_lignes( df_equipe )
+        df_equipe = ajouter_col_notation_terrain(df_equipe)
+
+    # ETAPE 3 : on appelle vers_xlsx() pour chaque equipe
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie)
+             # on cree un fichier XLSX pour chauqe et retourne son chemin
+
+
+    # ETAPE 4 : on ajoute le chemin du fichier genere a la liste
+        liste_chemins.append(chemin)
+
+    # ETAPE 5 : on retourne la liste de tous les chemins
+        # utile pour creer le ZIP Streamlit avec tous les fichiers
+    return liste_chemins
 
 
 #---- TESTS ------------------------------------------------------------------

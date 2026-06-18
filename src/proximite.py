@@ -65,7 +65,7 @@ POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927) # ce point correspond Ã
 
  
 
-def charger_points(chemin: str):
+def charger_points(chemin):
 
     """Charge le fichier lieux.xlsx et retourne un DataFrame avec une ligne par points."""
     df = pd.read_excel(chemin) # permet de lire les fichiers excel

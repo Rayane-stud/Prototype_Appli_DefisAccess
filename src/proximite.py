@@ -130,7 +130,7 @@ def fusion_croisement(df_intersections, threshold_km: float = 0.03):
                 (df.loc[j, "latitude"], df.loc[j, "longitude"])
             ).km
             if dist <= threshold_km:
-                df.loc[i, "intersections"] += "/" + df.loc[j, "intersections"]
+                df.loc[i, "lieu"] += "/" + df.loc[j, "lieu"]
                 df.drop(j, inplace=True)
                 df.reset_index(drop=True, inplace=True)
             else:

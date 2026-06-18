@@ -26,12 +26,17 @@ OBJECTIF : Regrouper les croisement majeur , les filtrer par distance , supprime
               "meetup_long" de type float 
 # REPONSE : pd.DataFrame (DataFrame avec les colonnes "Equipe" et "Ordre" ajoutées)
 """
+#Import des bibliotèques utiles dans le code
 import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 from sklearn.cluster import KMeans
 
 POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927) # ce point correspond à la gare de Garches.
+
+"""
+à optimiser grâce aux fichiers et fonction faites par les autres
+"""
 Points_Majeur = [
     "MairiedeGarches", "MarchéSaintLouis", "MaternellePasteur",
     "MaternelleSaintExupéry", "MaternelleRamon", "ÉcoleélémentairePasteurA",

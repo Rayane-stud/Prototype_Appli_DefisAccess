@@ -168,31 +168,3 @@ def voisin_lePlus_proche_opti_sans_rondeur(df, start_lat, start_long):
 
 
 # POSSIBILITE DE FAIRE QLQ CHOSE D'OPTI ET QUI PREND EN COMPTE LA RONDEUR DE LA TERRE, EN UTILISANT BallTree + Haversine
-
-
-# ---- TESTS ------------------------------------------------------------------
-if __name__ == "__main__":
-
-    RDV_LAT  = 48.8390
-    RDV_LONG = 2.1870
-
-    df_test = pd.DataFrame({
-        "Equipe":       [1, 1, 1, 2, 2],
-        "latitude":     [48.8410, 48.8380, 48.8425, 48.8360, 48.8400],
-        "longitude":    [2.1850,  2.1890,  2.1830,  2.1910,  2.1860],
-        "Intersection": ["Rue A / Rue B", "Rue C / Rue D", "Rue E / Rue F",
-                         "Rue G / Rue H", "Rue I / Rue J"],
-    })
-
-    print("=== TEST 1 : voisin_lePlus_proche (équipe 1) ===")
-    df_eq1 = df_test[df_test["Equipe"] == 1].copy()
-    df_ordonne = voisin_lePlus_proche_avec_rondeur(df_eq1, RDV_LAT, RDV_LONG)
-    print(df_ordonne[["Intersection", "Ordre"]])
-
-    print("\n=== TEST 2 : route_toutes_equipes ===")
-    routes = route_toutes_equipes(df_test, RDV_LAT, RDV_LONG)
-    for equipe_id, df_route in routes.items():
-        print(f"\n  Équipe {equipe_id} :")
-        print(df_route[["Intersection", "Ordre"]].to_string(index=False))
-
-    print("\n✅ Tous les tests passent !")

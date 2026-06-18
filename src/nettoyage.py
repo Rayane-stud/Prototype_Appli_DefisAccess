@@ -224,6 +224,11 @@ def filtrer_intersections(tableauFinal):
 
     return df
 
+
+def correction_normalisation_doublons_filtrage_intersections(tableau_final):
+    return filtrer_intersections(doublons_intersections(normailisation_intersections(correction_intersections(tableau_final))))
+
+
 #demander le nom de la commune
 ville=input("Entrez le nom de la commune : ")
 

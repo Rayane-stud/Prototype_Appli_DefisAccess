@@ -26,12 +26,17 @@ OBJECTIF : Regrouper les croisement majeur , les filtrer par distance , supprime
               "meetup_long" de type float 
 # REPONSE : pd.DataFrame (DataFrame avec les colonnes "Equipe" et "Ordre" ajoutées)
 """
+#Import des bibliotèques utiles dans le code
 import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 from sklearn.cluster import KMeans
 
 POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927) # ce point correspond à la gare de Garches.
+
+"""
+à optimiser grâce aux fichiers et fonction faites par les autres
+"""
 Points_Majeur = [
     "MairiedeGarches", "MarchéSaintLouis", "MaternellePasteur",
     "MaternelleSaintExupéry", "MaternelleRamon", "ÉcoleélémentairePasteurA",
@@ -75,7 +80,7 @@ def fusion_croisement(df: pd.DataFrame, threshold_km: float = 0.03):
     return df
 
 
-def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_long: float):
+def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetup_long: float):
     coordonnees = df[["latitude", "longitude"]]
     kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
     df["Equipe"] = kmeans.fit_predict(coordonnees)
@@ -84,3 +89,11 @@ def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_
     df["Ordre"] = df.groupby("Equipe").cumcount() + 1
     df.drop(columns=["dist_meetup"], inplace=True)
     return df
+
+ville=input("Entrez le nom de la commune : ")
+
+#demander le nom du fichier csv
+nom = input("Entrez le nom du fichier CSV (sans l'extension .csv) : ")
+path="data/raw/" + nom + ".csv"
+tableau=charger_intersections(path, ville)
+print (tableau)

@@ -80,7 +80,7 @@ def fusion_croisement(df: pd.DataFrame, threshold_km: float = 0.03):
     return df
 
 
-def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_long: float):
+def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetup_long: float):
     coordonnees = df[["latitude", "longitude"]]
     kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
     df["Equipe"] = kmeans.fit_predict(coordonnees)
@@ -89,3 +89,11 @@ def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_
     df["Ordre"] = df.groupby("Equipe").cumcount() + 1
     df.drop(columns=["dist_meetup"], inplace=True)
     return df
+
+ville=input("Entrez le nom de la commune : ")
+
+#demander le nom du fichier csv
+nom = input("Entrez le nom du fichier CSV (sans l'extension .csv) : ")
+path="data/raw/" + nom + ".csv"
+tableau=charger_intersections(path, ville)
+print (tableau)

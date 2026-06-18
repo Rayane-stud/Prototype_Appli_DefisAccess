@@ -170,7 +170,7 @@ def export_final_equipes(dict_equipes, dossier_sortie):
 
         # ETAPE 3 : on applique les 3 etapes dans l'ordre pour chaque equipe
         
-        df_equipe = duplication_lignes(df_equipe)
+       # df_equipe = duplication_lignes(df_equipe)
         df_equipe = ajouter_col_notation_terrain(df_equipe)
         
 

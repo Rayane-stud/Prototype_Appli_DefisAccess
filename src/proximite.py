@@ -139,6 +139,7 @@ def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetu
 
     return df
 
+'''
 #demander le nom de la commune
 ville=input("Entrez le nom de la commune : ")
  
@@ -154,5 +155,5 @@ df_croisement=fusion_croisement(Intersection, threshold_km=0.03)
 df=filtre_Distance(df_lieux, df_croisement, rayon_km=0.2)
 
 print(df)
-
+'''
  

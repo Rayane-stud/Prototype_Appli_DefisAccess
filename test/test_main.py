@@ -20,7 +20,6 @@ xlsx_path_lieux = BASE_DIR / "data" / "row" / "garches_lieu.xlsx"
 #________________________________________________________________________________________________________________
 
 tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
-tableau_nettoye = nettoyage.filtrer_intersections(nettoyage.doublons_intersections(nettoyage.normailisation_intersections(nettoyage.correction_intersections(tableau_nettoye))))
 
 tableau_villes = proximite.charger_points(xlsx_path_lieux)
 tab_croisement = proximite.assigner_equipes(proximite.fusion_croisement(proximite.filtre_Distance(tableau_nettoye, tableau_villes)))

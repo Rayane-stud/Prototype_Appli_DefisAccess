@@ -112,15 +112,32 @@ def fusion_croisement(df_Intersections, threshold_km: float = 0.03):
     
     return df
 
-def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_long: float):
+def assigner_equipes(df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetup_long: float):
+    
+    # Extrait uniquement les colonnes latitude et longitude pour le KMeans
     coordonnees = df[["latitude", "longitude"]]
+    
+    # Crée le modèle KMeans avec n_equipes groupes et une graine aléatoire fixe pour la reproductibilité
     kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
+    
+    # Entraîne le KMeans et assigne le numéro d'équipe à chaque intersection
     df["Equipe"] = kmeans.fit_predict(coordonnees)
-    df["dist_meetup"] = df.apply(lambda row: geodesic((row["latitude"], row["longitude"]),(meetup_lat, meetup_long)).km,axis=1)
+    
+    # Calcule la distance en km entre chaque intersection et le point de rassemblement
+    df["dist_meetup"] = df.apply(
+        lambda row: geodesic(
+            (row["latitude"], row["longitude"]),  # coordonnées de l'intersection
+            (meetup_lat, meetup_long)             # coordonnées du point de rassemblement
+        ).km, axis=1)
+    
+    # Trie les intersections par équipe puis par distance au point de rassemblement
     df = df.sort_values(by=["Equipe", "dist_meetup"]).reset_index(drop=True)
+    
+    # Numérote les intersections au sein de chaque équipe en commençant à 1
     df["Ordre"] = df.groupby("Equipe").cumcount() + 1
-    df.drop(columns=["dist_meetup"], inplace=True)
-
+    
+    # Supprime la colonne temporaire dist_meetup devenue inutile
+    df.drop(columns=["dist_meetup"], inplace=True)  
     return df
 
 #demander le nom de la commune

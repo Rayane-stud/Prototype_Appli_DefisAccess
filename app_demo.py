@@ -143,7 +143,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────
 # 3. Zone principale
 # ─────────────────────────────────────────────
-st.markdown("## ♿ DEFIACCESS — Générateur de feuilles terrain")
+st.markdown("## |DF| DEFIACCESS — Générateur de feuilles terrain")
 st.markdown(
     "Chargez vos fichiers sources, ajustez les paramètres dans la barre latérale, "
     "puis cliquez sur **Générer** pour obtenir les feuilles terrain par équipe."

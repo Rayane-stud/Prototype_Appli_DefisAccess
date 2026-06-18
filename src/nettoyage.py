@@ -12,9 +12,9 @@ def charger_intersections(path, ville):
     print(df_ville.head())
     #on remet au propre le tableau avec des colonnes disctinctes
     tableauFinal = df_ville.rename(columns={
-        "geometry/coordinates/0": "Longitude",
-        "geometry/coordinates/1": "Latitude",
-        "properties/name": "Intersections",
+        "geometry/coordinates/0": "longitude",
+        "geometry/coordinates/1": "latitude",
+        "properties/name": "intersections",
         "properties/context": "Ville/Commune",
         "properties/citycode": "Code Postale",
         "properties/depcode": "Code Département"
@@ -37,7 +37,7 @@ def charger_intersections(path, ville):
 def correction_intersections(tableauFinal):
     # Correction du texte encodé
     correction = tableauFinal.copy()
-    correction["Intersections"]= (correction["Intersections"].str.replace('Ã©', 'é').
+    correction["intersections"]= (correction["intersections"].str.replace('Ã©', 'é').
             str.replace('Ã¨', 'è').
             str.replace('Ã¢', 'â').
             str.replace('Ãª', 'ê').
@@ -58,7 +58,7 @@ def correction_intersections(tableauFinal):
 
 def normailisation_intersections(tableauFinal):
     # Normaliser les noms de colonnes
-    col="Intersections"
+    col="intersections"
     df=tableauFinal.copy()
     
     remplacer = [
@@ -209,18 +209,18 @@ def normailisation_intersections(tableauFinal):
 def doublons_intersections(tableauFinal):
     # convertir en numérique
     doublons = tableauFinal.copy()
-    doublons["Longitude"] = pd.to_numeric(doublons["Longitude"])
-    doublons["Latitude"] = pd.to_numeric(doublons["Latitude"])
+    doublons["longitude"] = pd.to_numeric(doublons["longitude"])
+    doublons["latitude"] = pd.to_numeric(doublons["latitude"])
 
     # supprimer doublons géographiques
-    doublons= doublons.drop_duplicates(subset=["Longitude", "Latitude"],keep="first")
+    doublons= doublons.drop_duplicates(subset=["longitude", "latitude"],keep="first")
 
     return doublons
 
 def filtrer_intersections(tableauFinal):
     # Filtrer les intersections en fonction du type de voie
     typevoie = "Avenue|Esplanade|Boulevard"  # Ajouter d'autres types de voies si nécessaire
-    df= tableauFinal[tableauFinal["Intersections"].str.contains(typevoie, case=False)]
+    df= tableauFinal[tableauFinal["intersections"].str.contains(typevoie, case=False)]
 
     return df
 
@@ -228,7 +228,7 @@ def filtrer_intersections(tableauFinal):
 def correction_normalisation_doublons_filtrage_intersections(tableau_final):
     return filtrer_intersections(doublons_intersections(normailisation_intersections(correction_intersections(tableau_final))))
 
-
+'''
 #demander le nom de la commune
 ville=input("Entrez le nom de la commune : ")
 
@@ -237,3 +237,4 @@ nom = input("Entrez le nom du fichier CSV (sans l'extension .csv) : ")
 path="data/raw/" + nom + ".csv"
 tableau=charger_intersections(path, ville)
 print (tableau)
+'''

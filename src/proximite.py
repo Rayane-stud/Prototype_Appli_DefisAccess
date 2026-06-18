@@ -118,19 +118,24 @@ def filtre_Distance (df_lieux, df_croisement, rayon_km: float = 0.2):
 def fusion_croisement(df_intersections, threshold_km: float = 0.03):
     df=df_intersections.copy()
 
-    for i in range(len(df)):
-        for j in range(i+1, len(df)):
+    print("--- COLONNES DU TABLEAU DE CROISEMENT :", df.columns.tolist())
 
+    lignes_a_garder = []
+    i = 0
+    while i < len(df):
+        j = i + 1
+        while j < len(df):
             dist = geodesic(
-                (df.loc[i,"latitude"], df.loc[i,"longitude"]),
-            (df.loc[j,"latitude"], df.loc[j, "longitude"])
+                (df.loc[i, "latitude"], df.loc[i, "longitude"]),
+                (df.loc[j, "latitude"], df.loc[j, "longitude"])
             ).km
             if dist <= threshold_km:
-                df.loc[i,"intersections"]+="/"+df.loc[j,"intersections"]
+                df.loc[i, "intersections"] += "/" + df.loc[j, "intersections"]
                 df.drop(j, inplace=True)
                 df.reset_index(drop=True, inplace=True)
-                
-                #Peut etre necessaire de faire j-1 ici, car risque de sauté un case
+            else:
+                j += 1
+        i += 1
     
     return df
 

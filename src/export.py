@@ -160,7 +160,9 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
     # ETAPE 5 : on retourne la liste de tous les chemins
         # utile pour creer le ZIP Streamlit avec tous les fichiers
     return liste_chemins
-     
+
+
+
 #---- TESTS ------------------------------------------------------------------
 # Lancer ce fichier directement pour tester : python export.py
  

@@ -65,7 +65,7 @@ POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927) # ce point correspond �
 
  
 
-def charger_points(chemin: str):
+def charger_points(chemin):
 
     """Charge le fichier lieux.xlsx et retourne un DataFrame avec une ligne par points."""
     df = pd.read_excel(chemin) # permet de lire les fichiers excel
@@ -98,29 +98,42 @@ def filtre_Distance (df_lieux, df_croisement, rayon_km: float = 0.2):
 
 def fusion_croisement(df_Intersections, threshold_km: float = 0.03):
     df=df_Intersections.copy()
+
+    for i in range(len(df)):
+        for j in range(i+1, len(df)):
+
+            dist = geodesic((df.loc[i,"Latitude"], df.loc[i,"Longitude"])),
+            (df.loc[j,"Latitude"], df.loc[j, "Longitude"]).km
+            if dist <= threshold_km:
+                df.loc[i,"Intersections"]+="/"+df.loc[j,"Intersections"]
+                df.drop(j,inplace=True,reset_index=True)
+                
+                #Peut etre necessaire de faire j-1 ici, car risque de sauté un case
     
-    df = df.sort_values(by=["Latitude", "Longitude"], ascending=False).reset_index(drop=True)
-    df["intersection_n_1"] = df["Intersections"].shift(-1)
-    df["Lat_n_1"] = df["Latitude"].shift(-1)
-    df["Long_n_1"] = df["Longitude"].shift(-1)
-   
-    df["dist_inter"] = df.apply(
-        lambda row: geodesic((row["Latitude"], row["Longitude"]), (row["Lat_n_1"], row["Long_n_1"])).km, axis=1)
-
-    df["Intersections"] = df.apply(
-        lambda row: row["Intersections"] + "/" + row["intersection_n_1"] and row["dist_inter"] < threshold_km, axis=1)
-
-    df = df[~(df["dist_inter"].shift(1) < threshold_km)].reset_index(drop=True)
-    df.drop(columns=["intersection_n_1", "Lat_n_1", "Long_n_1", "dist_inter"], inplace=True)
-
     return df
 
-def assigner_equipes (df: pd.DataFrame, n_teams: int, meetup_lat: float, meetup_long: float):
+def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetup_long: float):
+    # Extrait uniquement les colonnes latitude et longitude pour le KMeans
+
     coordonnees = df[["latitude", "longitude"]]
+
+    # Crée le modèle KMeans avec n_equipes groupes et une graine aléatoire fixe pour la reproductibilité
     kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
+
+    # Entraîne le KMeans et assigne le numéro d'équipe à chaque intersection
     df["Equipe"] = kmeans.fit_predict(coordonnees)
-    df["dist_meetup"] = df.apply(lambda row: geodesic((row["latitude"], row["longitude"]),(meetup_lat, meetup_long)).km,axis=1)
+
+    # Calcule la distance en km entre chaque intersection et le point de rassemblement
+    df["dist_meetup"] = df.apply(lambda row: geodesic(
+        (row["latitude"], row["longitude"]),  # coordonnées de l'intersection
+        (meetup_lat, meetup_long)             # coordonnées du point de rassemblement
+        ).km,axis=1)
+    
+
+    # Trie les intersections par équipe puis par distance au point de rassemblement
     df = df.sort_values(by=["Equipe", "dist_meetup"]).reset_index(drop=True)
+
+    # Numérote les intersections au sein de chaque équipe en commençant à 1
     df["Ordre"] = df.groupby("Equipe").cumcount() + 1
     df.drop(columns=["dist_meetup"], inplace=True)
 
@@ -136,7 +149,7 @@ Intersection=charger_intersections(path, ville)
 print (Intersection)
 
 chemin="data/raw/Garches lieux.xlsx"
-df_lieux=charger_points(chemin: str)
+df_lieux=charger_points(chemin)
 df_croisement=fusion_croisement(Intersection, threshold_km=0.03)
 df=filtre_Distance(df_lieux, df_croisement, rayon_km=0.2)
 

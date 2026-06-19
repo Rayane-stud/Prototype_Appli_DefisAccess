@@ -582,55 +582,44 @@ def get_equipements_gouv(code_insee: str) -> list[dict]:
 
 
 
-# ETAPE 4 — Récupérer les lieux complémentaires via OpenStreetMap (Overpass) -----------------------------------------------------------------------------
-
-
-
+# ETAPE 4 — Récupérer les lieux complémentaires via OpenStreetMap (Overpass) -----------------------
 
 
 def get_PM_osm(osm_area_id: int) -> list[dict]:
     """
     Interroge l'API Overpass pour récupérer les lieux complémentaires
     (hôpital, clinique, pharmacie, poste, commissariat, lieu de culte,
-    centre sportif, gare...) dans les frontières exactes de la commune,
-    en utilisant l'osm_area_id calculé à l'étape 1b.
+    centre sportif, gare, supermarché...) dans les frontières exactes
+    de la commune, en utilisant l'osm_area_id calculé à l'étape 1b.
 
-    Contrairement aux étapes 2 et 3 (sources gouvernementales avec API REST
-    classique), Overpass fonctionne différemment : on lui envoie une vraie
-    "requête" écrite dans son propre langage (similaire à du SQL), et non
-    une simple liste de paramètres GET.
-
-    CORRIGE : on a découvert via un diagnostic sur les hôpitaux qu'Overpass
-    retourne une erreur 406 (Not Acceptable) si la requête n'a pas de
-    User-Agent ni de bon Content-Type -- on ajoute donc des headers,
-    comme on l'avait déjà fait pour Nominatim.
+    CORRIGE (3) : meme avec des pauses plus longues, certaines categories
+    echouent encore au hasard a cause des limites d'Overpass (429).
+    On ajoute donc une DEUXIEME PASSE automatique en fin de fonction :
+    on retient quelles categories ont echoue lors du premier passage,
+    on attend un peu, puis on les reessaie une seule fois chacune.
     """
 
     url = "https://overpass-api.de/api/interpreter"
-    # adresse du service Overpass sur internet
-
     headers = {
         "User-Agent": "DefiaccessPM/1.0 (association accessibilite)",
         "Content-Type": "application/x-www-form-urlencoded"
-        # CORRIGE : sans ces deux headers, Overpass repond 406 Not Acceptable
-        # (decouvert lors du diagnostic specifique sur les hopitaux)
     }
 
     resultats = []
-    # liste vide qui va accumuler tous les lieux trouves, toutes categories confondues
-
     noms_vus = set()
-    # ensemble (set) qui retient les lieux deja ajoutes, pour eviter les doublons
-    # un meme lieu peut parfois remonter deux fois si plusieurs tags se chevauchent
+    categories_echouees = []
+    # NOUVEAU : liste qui va retenir les categories qui ont echoue
+    # au premier passage, pour les retenter ensuite
 
-    for categorie in CATEGORIES_OSM:
-        # on boucle sur chaque categorie definie en haut du fichier
-        # (hopital, clinique, pharmacie, poste, commissariat,
-        #  lieu de culte, centre sportif, gare, supermarche)
-
+    def interroger_categorie(categorie):
+        """
+        Sous-fonction qui interroge UNE SEULE categorie aupres d'Overpass.
+        Retourne True si ca a reussi, False si ca a echoue.
+        On la met a part pour pouvoir l'appeler deux fois (1ere et 2eme passe)
+        sans dupliquer tout le code.
+        """
         type_pm     = categorie["type"]
         osm_filters = categorie["osm_filters"]
-        # on recupere le nom lisible de la categorie et le filtre OSM correspondant
 
         query = f"""
 [out:json][timeout:25];
@@ -641,66 +630,40 @@ area({osm_area_id})->.zone;
 );
 out center;
 """
-        # construction de la requete Overpass pour cette categorie precise :
-        # area({osm_area_id})->.zone : on delimite la recherche aux frontieres
-        #     exactes de la commune (et non un simple rectangle approximatif)
-        # node{osm_filters}(area.zone) : on cherche les points simples
-        #     (ex: une pharmacie ponctuelle) qui correspondent au filtre
-        # way{osm_filters}(area.zone) : on cherche aussi les batiments/surfaces
-        #     (ex: un hopital a une emprise au sol, pas juste un point)
-        # out center : pour les "way" (qui ont une forme), Overpass calcule
-        #     et retourne le point central du batiment
 
         try:
             print(f"   Recherche OSM : {type_pm}...")
             reponse = requests.post(url, data={"data": query}, headers=headers, timeout=30)
-            # POST et non GET car la requete Overpass peut etre longue
-            # headers=headers : OBLIGATOIRE sinon erreur 406 (voir docstring)
-            # timeout=30 : Overpass peut etre plus lent que les autres APIs
+
+            if reponse.status_code == 429:
+                print(f"      ⏳ Limite atteinte, pause de 10 secondes...")
+                time.sleep(10)
+                reponse = requests.post(url, data={"data": query}, headers=headers, timeout=30)
 
             reponse.raise_for_status()
-            # verification que tout va bien (200 = ok, autre = erreur)
 
             elements = reponse.json().get("elements", [])
-            # Overpass range ses resultats dans une cle "elements"
-            # .get(..., []) evite une erreur si cette cle est absente
 
             for el in elements:
-                # on parcourt chaque lieu trouve pour cette categorie
-
                 if el["type"] == "node":
                     lat = el.get("lat")
                     lon = el.get("lon")
-                    # pour un "node" les coordonnees sont directement disponibles
-
                 elif el["type"] == "way":
                     center = el.get("center", {})
                     lat = center.get("lat")
                     lon = center.get("lon")
-                    # pour un "way" (batiment) on recupere le centre calcule
-                    # par Overpass grace au "out center" de la requete
-
                 else:
                     continue
-                    # autre type d'element OSM inattendu, on l'ignore
 
                 if lat is None or lon is None:
                     continue
-                    # si pas de coordonnees on saute ce lieu
 
                 tags = el.get("tags", {})
                 nom = tags.get("name", tags.get("operator", f"{type_pm} sans nom"))
-                # le nom du lieu est dans les tags OSM, sous la cle "name"
-                # si absent on essaie "operator" (ex: l'enseigne du commerce)
-                # sinon on met un nom generique plutot que de planter
 
                 cle_unicite = f"{nom}_{round(lat, 5)}_{round(lon, 5)}"
-                # on construit une cle unique par lieu (nom + coordonnees arrondies)
-                # pour detecter les doublons entre deux categories qui se chevauchent
-
                 if cle_unicite in noms_vus:
                     continue
-                    # ce lieu a deja ete ajoute (rare mais possible), on l'ignore
                 noms_vus.add(cle_unicite)
 
                 resultats.append({
@@ -710,32 +673,47 @@ out center;
                     "latitude":  lat,
                     "longitude": lon
                 })
-                # meme structure de dictionnaire que get_ecoles_gouv() et
-                # get_equipements_gouv(), pour pouvoir tout fusionner facilement
 
             print(f"      → {len(elements)} {type_pm}(s) trouve(s)")
+            return True
+            # on signale que cette categorie a reussi
 
         except Exception as e:
             print(f"    Erreur OSM pour '{type_pm}' : {e}")
-            # si une categorie echoue on continue quand meme avec les suivantes
-            # plutot que d'arreter toute la recherche a cause d'une seule erreur
+            return False
+            # on signale que cette categorie a echoue
 
-        time.sleep(1)
-        # pause d'une seconde entre chaque categorie pour respecter les limites
-        # d'usage d'Overpass (service gratuit, on evite de le surcharger)
+    # ---- PREMIERE PASSE : on essaie toutes les categories une fois ----
+    for categorie in CATEGORIES_OSM:
+        succes = interroger_categorie(categorie)
+        if not succes:
+            categories_echouees.append(categorie)
+            # on note cette categorie pour la retenter plus tard
 
-    print(f"   {len(resultats)} lieu(x) OSM trouve(s) au total")
+        time.sleep(5)
+        # pause de 5 secondes entre chaque categorie
+
+    # ---- DEUXIEME PASSE : on retente uniquement celles qui ont echoue ----
+    if categories_echouees:
+        print(f"\n   🔁 Deuxieme passe pour {len(categories_echouees)} categorie(s) en echec...")
+        time.sleep(10)
+        # pause supplementaire avant de recommencer, pour laisser
+        # Overpass se "reposer" et reinitialiser sa limite de frequence
+
+        for categorie in categories_echouees:
+            interroger_categorie(categorie)
+            # on ne retient plus les echecs cette fois : si ca echoue
+            # encore, on abandonne definitivement cette categorie
+            time.sleep(5)
+
+    print(f"\n   {len(resultats)} lieu(x) OSM trouve(s) au total")
     return resultats
-    # on retourne la liste complete, toutes categories confondues
-    # une liste vide [] (et non None) si rien n'a ete trouve, pour la coherence
-    # avec get_ecoles_gouv() et get_equipements_gouv()
+
 
 #TESTES : ---------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
 
     ville = input("Entrez le nom de la commune : ").strip()
-    # .strip() supprime les espaces en trop si l'utilisateur en tape par erreur
-    # (ex: " Garches " devient "Garches")
 
     print(f"\n--- Recherche pour '{ville}' ---")
 
@@ -761,3 +739,4 @@ if __name__ == "__main__":
         print(f"\nLieux OSM trouves ({len(lieux_osm)}) :")
         for lieu in lieux_osm:
             print(f"  - {lieu['nom']} ({lieu['type']}) : {lieu['latitude']}, {lieu['longitude']}")
+

@@ -25,8 +25,8 @@ from streamlit_folium import st_folium
 st.set_page_config(
     page_title="DEFIACCESS — Démo",
     page_icon="DA",
-    layout="wide",
-    initial_sidebar_state="expanded",
+    layout="wide",                      # utilise tout l'ecran au lieu de centrer
+    initial_sidebar_state="expanded",   # la barre latérale est ouverte par defaut 
 )
 
 # ─────────────────────────────────────────────

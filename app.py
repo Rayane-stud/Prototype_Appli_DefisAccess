@@ -3,12 +3,12 @@ app.py — Interface Streamlit no-code pour DEFIACCESS
 Permet aux bénévoles de générer des feuilles terrain sans ligne de code.
 """
 
-import io
-import zipfile
-import yaml
-import streamlit as st
-import folium
-from streamlit_folium import st_folium
+import io                                   # Pour gerer les données en mémoire
+import zipfile                              # Crer des fichier zip sans ecrire sur disque ( rester sur RAM) 
+import yaml                                 # lire les fichier type yaml de configuration
+import streamlit as st                      # framework principal, c'est la bibli de l'interface graphique
+import folium                               # Pour     cartes
+from streamlit_folium import st_folium      #      les         intéractives
 from pathlib import Path
 
 # Modules internes du projet
@@ -21,7 +21,7 @@ from src.nettoyage import (
 )
 from src.proximite import (
     charger_points,
-    filtre_Distance,
+    filtre_distance,
     fusion_croisement,
     assigner_equipes,
 )
@@ -34,7 +34,7 @@ import pipeline
 # ─────────────────────────────────────────────
 st.set_page_config(
     page_title="DEFIACCESS",
-    page_icon="♿",
+    page_icon="|DF|",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -42,7 +42,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 # 1. Chargement des configs YAML disponibles
 # ─────────────────────────────────────────────
-CONFIG_DIR = Path("config")
+CONFIG_DIR = Path("config")  # Chemin
 
 def load_yaml_configs() -> dict:
     """Retourne un dict {nom_commune: config_dict} pour tous les YAML du dossier config/."""

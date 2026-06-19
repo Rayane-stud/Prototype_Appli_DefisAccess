@@ -136,7 +136,7 @@ def fusion_croisement(df_intersections, threshold_km: float = 0.03):
                 (lignes[j]["latitude"], lignes[j]["longitude"])
             ).km
             if dist <= threshold_km:
-                lignes[i]["intersection"] += " / " + lignes[j]["intersection"]  # ✅ "lieu" au lieu de "intersection"
+                lignes[i]["intersection"] += " / " + lignes[j]["intersection"]  #  "lieu" au lieu de "intersection"
                 lignes.pop(j)
             else:
                 j += 1

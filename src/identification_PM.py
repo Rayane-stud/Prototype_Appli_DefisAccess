@@ -93,7 +93,7 @@ CATEGORIES_OSM = [
 ]
 
 
-# ETAPE 1a — Récupérer le code INSEE via geo.api.gouv.fr (source officielle) -----------------------
+# ETAPE 1a — Récupérer le code INSEE via geo.api.gouv.fr (source officielle) --------------------------------------------------
 
 
 def get_code_insee_api(ville: str) -> str | None:
@@ -168,7 +168,7 @@ def get_code_insee_api(ville: str) -> str | None:
 
 
 
-#TESTES : ---------------------------------------------------------------------------------------------------------
+# TESTES : --------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     villes_test = ["Garches", "Montrouge", "VilleQuiNExistePas123"]
 
@@ -178,11 +178,9 @@ if __name__ == "__main__":
         print(f"Résultat : {resultat}")
 
 
-
-
-# ETAPE 1b — Récupérer l'osm_area_id via Nominatim (OpenStreetMap) ---------------------------------
+# ETAPE 1b — Récupérer l'osm_area_id via Nominatim (OpenStreetMap -- on cherche le frontiere) ---------------------------------
  
- 
+
 def get_osm_area_id(ville: str) -> int | None:
     """
     Interroge Nominatim (OpenStreetMap) pour récupérer l'osm_area_id
@@ -194,6 +192,8 @@ def get_osm_area_id(ville: str) -> int | None:
     mais ne connaît pas l'osm_area_id (système propre à OpenStreetMap,
     valable dans le monde entier). Seul Nominatim peut faire la conversion
     nom de commune → identifiant OpenStreetMap.
+
+
     """
  
     url = "https://nominatim.openstreetmap.org/search"
@@ -214,7 +214,7 @@ def get_osm_area_id(ville: str) -> int | None:
     try:
         reponse = requests.get(url, params=params, headers=HEADERS_NOMINATIM, timeout=10)
         # on envoie la question à Nominatim
-        # headers=HEADERS_NOMINATIM : carte de visite obligatoire (sinon 403 Forbidden)
+        # headers=HEADERS_NOMINATIM : carte de visite obligatoire pour eviter d'etre pris comme un spam (sinon 403 Forbidden)
         # timeout=10 : si pas de réponse en 10 secondes on abandonne
  
         reponse.raise_for_status()
@@ -263,11 +263,14 @@ def get_osm_area_id(ville: str) -> int | None:
             print(f" Erreur inattendue lors de l'appel à Nominatim : {e}")
         return None
         # si quelque chose s'est mal passé (pas internet, serveur en panne...)
-        # un seul except, bien aligné avec le try du dessus
+        # un seul except, bien aligné avec le try du dessus 
+
  
  
-#TESTES : ---------------------------------------------------------------------------------------------------------
+#TESTES : ---------------------------------------------------------------------------------------------------------+ thib------
+
 if __name__ == "__main__":
+
     villes_test = ["Garches", "Montrouge", "VilleQuiNExistePas123"]
  
     for ville in villes_test:
@@ -278,3 +281,131 @@ if __name__ == "__main__":
  
         osm_area_id = get_osm_area_id(ville)
         print(f"OSM area_id : {osm_area_id}")
+        
+
+# ETAPE 2 — Récupérer les écoles via data.education.gouv.fr (source officielle) --------------------
+ 
+ 
+# URL de l'API du Ministère de l'Éducation Nationale (plateforme Opendatasoft)
+# Ce jeu de données recense tous les établissements du 1er et 2nd degré
+# (maternelles, élémentaires, collèges, lycées), publics et privés, en France
+URL_ECOLES_API = "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre/records"
+ 
+ 
+def get_ecoles_gouv(code_insee: str) -> list[dict]:
+    """
+    Interroge l'API officielle data.education.gouv.fr pour récupérer
+    toutes les écoles d'une commune via son code INSEE.
+    Source exhaustive : toutes les écoles françaises y sont référencées,
+    qu'elles soient publiques ou privées.
+ 
+    Contrairement a get_code_insee_api() et get_osm_area_id() qui retournent
+    un seul resultat (str ou int), cette fonction retourne une LISTE de
+    dictionnaires car une commune contient generalement plusieurs ecoles.
+    """
+ 
+    params = {
+        "where":  f'code_commune="{code_insee}"',
+        # le filtre envoye a l'API : on ne veut que les ecoles de cette commune
+        # "where" est le mot-cle Opendatasoft pour filtrer les resultats
+        "limit":  100,
+        # on recupere jusqu'a 100 ecoles, largement suffisant pour une commune
+        "select": "appellation_officielle,nature_uai_libe,latitude,longitude"
+        # on ne demande que les colonnes utiles, pas tout le detail de chaque etablissement
+        # (ca evite de telecharger des infos inutiles comme le telephone, l'email...)
+    }
+    # initialisation des parametres, meme logique que pour les etapes precedentes
+ 
+    resultats = []
+    # liste vide qui va accumuler une ecole par ligne sous forme de dictionnaire
+ 
+    try:
+        print("   Interrogation de data.education.gouv.fr...")
+        reponse = requests.get(URL_ECOLES_API, params=params, timeout=15)
+        # timeout=15 (un peu plus long que les autres) car cette API peut etre
+        # plus lente, elle traite potentiellement plusieurs dizaines de resultats
+ 
+        reponse.raise_for_status()
+        # verification que tout va bien (200 = ok, autre = erreur)
+ 
+        data = reponse.json()
+        # convertit la reponse texte en dictionnaire Python lisible
+ 
+        for record in data.get("results", []):
+            # contrairement a geo.api.gouv.fr et Nominatim qui retournent
+            # directement une liste, l'API Opendatasoft range ses resultats
+            # dans une cle "results" a l'interieur du dictionnaire principal
+            # .get("results", []) evite une erreur si cette cle est absente
+ 
+            lat = record.get("latitude")
+            lon = record.get("longitude")
+            # on recupere les coordonnees GPS directement fournies par l'API
+            # PAS BESOIN DE GEOCODAGE : elles sont deja presentes dans le fichier officiel
+ 
+            if lat is None or lon is None:
+                continue
+                # si une ecole n'a pas de coordonnees on la saute plutot que
+                # de planter ou de l'inclure avec des valeurs manquantes
+ 
+            resultats.append({
+                "nom":       record.get("appellation_officielle", "École sans nom"),
+                "type":      record.get("nature_uai_libe", "école"),
+                # nature_uai_libe contient par exemple "Ecole", "Collège", "Lycée"
+                "source":    "data.education.gouv.fr",
+                # utile pour la dedoublonnage de l'etape 4 (priorite aux sources gouvernementales)
+                "latitude":  float(lat),
+                "longitude": float(lon)
+            })
+                # on construit un dictionnaire par ecole, avec les memes cles
+                # que ce qu'on utilisera pour les autres sources (etapes 3 et 4)
+                # ca permettra de fusionner facilement tous les resultats plus tard
+                
+            
+            # on construit un dictionnaire par ecole, avec les memes cles
+            # que ce qu'on utilisera pour les autres sources (etapes 3 et 4)
+            # ca permettra de fusionner facilement tous les resultats plus tard
+ 
+        print(f"   {len(resultats)} ecole(s) trouvee(s) pour le code INSEE {code_insee}")
+        return resultats
+        # on retourne la liste, meme vide si aucune ecole n'a ete trouvee
+        # (une liste vide n'est pas une erreur, certaines petites communes
+        # n'ont parfois aucune ecole sur leur territoire)
+ 
+    except Exception as e:
+        if "ConnectionError" in str(type(e)):
+            print(f" Pas de connexion internet, impossible d'interroger data.education.gouv.fr.")
+        elif "Timeout" in str(type(e)):
+            print(f"data.education.gouv.fr ne répond pas, réessayez dans quelques instants.")
+        else:
+            print(f"Erreur inattendue lors de l'appel à data.education.gouv.fr : {e}")
+        return []
+        # IMPORTANT : ici on retourne une liste vide [] et non None
+        # car le reste du pipeline (etape 4) s'attend a pouvoir faire
+        # .extend() sur le resultat de cette fonction, ce qui plante si c'est None
+        # une liste vide permet au programme de continuer sans planter,
+        # simplement avec 0 ecole pour cette commune
+
+
+
+#TESTES : ---------------------------------------------------------------------------------------------------------
+if __name__ == "__main__":
+ 
+    ville = input("Entrez le nom de la commune : ").strip()
+    # .strip() supprime les espaces en trop si l'utilisateur en tape par erreur
+    # (ex: " Garches " devient "Garches")
+ 
+    print(f"\n--- Recherche pour '{ville}' ---")
+ 
+    code_insee = get_code_insee_api(ville)
+    print(f"Code INSEE  : {code_insee}")
+ 
+    osm_area_id = get_osm_area_id(ville)
+    print(f"OSM area_id : {osm_area_id}")
+ 
+    if code_insee:
+        ecoles = get_ecoles_gouv(code_insee)
+        print(f"\nEcoles trouvees ({len(ecoles)}) :")
+        for ecole in ecoles:
+            print(f"  - {ecole['nom']} ({ecole['type']}) : {ecole['latitude']}, {ecole['longitude']}")
+ 
+

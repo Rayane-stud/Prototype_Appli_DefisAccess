@@ -1,8 +1,8 @@
 import sys   # bibliothèque pour interagir avec l'interpréteur Python
 import os    # bibliothèque pour manipuler les chemins d'accès aux fichiers
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))  # ajoute le dossier src/ à la liste
-                                                                        # des endroits où Python cherche ses modules
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))  # ajoute le dossier src/ à la liste
+                                                                       # des endroits où Python cherche ses modules
 # Import des modules du src
 import routage
 import nettoyage
@@ -17,8 +17,8 @@ from pathlib import Path
 # CONFIGURATION
 # ──────────────────────────────────────────────
 
-RDV_LAT    = 48.8403  # latitude du point de rendez-vous
-RDV_LONG   = 2.1858   # longitude du point de rendez-vous
+RDV_LAT    = 48.8381857639848  # latitude du point de rendez-vous (coordonnées fictives)
+RDV_LONG   = 2.1865433360720927   # longitude du point de rendez-vous
 NB_EQUIPES = 5        # nombre d'équipes
 
 

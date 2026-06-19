@@ -38,7 +38,7 @@ def charger_intersections(path, ville):
 
     return tableauFinal
     
-
+ 
 def correction_intersections(tableauFinal):
     # Correction du texte encodé
     correction = tableauFinal.copy()

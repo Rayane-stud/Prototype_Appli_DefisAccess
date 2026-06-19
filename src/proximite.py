@@ -129,14 +129,14 @@ def assigner_equipes (df: pd.DataFrame, n_equipes: int, meetup_lat: float, meetu
         (meetup_lat, meetup_long)             # coordonnées du point de rassemblement
         ).km,axis=1)
     
-
+    
     # Trie les intersections par équipe puis par distance au point de rassemblement
     df = df.sort_values(by=["Equipe", "dist_meetup"]).reset_index(drop=True)
 
     # Numérote les intersections au sein de chaque équipe en commençant à 1
     df["Ordre"] = df.groupby("Equipe").cumcount() + 1
     df.drop(columns=["dist_meetup"], inplace=True)
-
+    
     return df
 
 #demander le nom de la commune

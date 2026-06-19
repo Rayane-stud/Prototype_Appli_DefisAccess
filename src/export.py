@@ -172,7 +172,9 @@ def export_final_equipes(dict_equipes, dossier_sortie):
         
        # df_equipe = duplication_lignes(df_equipe)
         df_equipe = ajouter_col_notation_terrain(df_equipe)
-        
+        df_equipe["coordonnees"] = df_equipe["latitude"].astype(str)+","+df_equipe["longitude"].astype(str)
+        df_equipe = df_equipe.drop(columns=["latitude", "longitude"])
+
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin

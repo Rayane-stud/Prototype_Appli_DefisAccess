@@ -3,7 +3,7 @@ import csv
 
 def charger_intersections(path, ville):
     # charger le fichier CSV
-    df = pd.read_csv(path)
+    df = pd.read_csv(path).copy()
     #on recupere les lignes correspondantes à la ville saisie
     colonne= "properties/context"
     df_ville= df[df[colonne].str.contains(ville, case=False)]
@@ -33,7 +33,7 @@ def charger_intersections(path, ville):
     tableauFinal = filtrer_intersections(tableauFinal)
     
     tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"], 
-                      inplace=True, reset_index=True)
+    ).reset_index(drop=True)
 
     return tableauFinal
 

@@ -20,11 +20,11 @@ import folium
 from streamlit_folium import st_folium
 
 # ─────────────────────────────────────────────
-# 0. Config page
+# 0. Config page ( apparence de l'onglet naviguateur)
 # ─────────────────────────────────────────────
 st.set_page_config(
     page_title="DEFIACCESS — Démo",
-    page_icon="♿",
+    page_icon="DA",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -101,7 +101,10 @@ def generate_mock_data(n_intersections: int, n_teams: int, seed: int = 42) -> tu
     }
     return df, pois_df, teams
 
-
+'''
+Elle prend le tableau de données d'une équipe et le transforme en un fichier Excel (.xlsx) virtuel caché dans la mémoire vive de l'ordinateur (io.BytesIO), 
+prêt à être téléchargé plus tard.
+'''
 def make_xlsx_bytes(team_df: pd.DataFrame, team_id: int) -> bytes:
     """Génère un XLSX en mémoire pour une équipe."""
     buf = io.BytesIO()
@@ -111,10 +114,10 @@ def make_xlsx_bytes(team_df: pd.DataFrame, team_id: int) -> bytes:
 
 
 # ─────────────────────────────────────────────
-# 2. Barre latérale
+# 2. Barre latérale, et tout ce qui est réglage y sera
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### ♿ DEFIACCESS")
+    st.markdown("### DF_ DEFIACCESS")
     st.caption("Démo — données simulées")
     st.divider()
 
@@ -132,15 +135,15 @@ with st.sidebar:
     radius_km = st.slider("Rayon POI (km)", 0.05, 1.0, 0.2, 0.05)
     n_teams   = st.slider("Nombre d'équipes", 1, 10, 3, 1)
     n_inter   = st.slider("Intersections simulées", 10, 120, 40, 5,
-                          help="En prod ce nombre vient de votre CSV.")
+                          help="En prod ce nombre vient du CSV.")
 
     st.divider()
-    st.caption("⚠️ Mode démo — remplacez les mocks par vos vrais modules `src/` une fois prêts.")
+    st.caption("!!! Mode démo — remplacez les mocks par vos vrais modules `src/` une fois prêts.")
 
 # ─────────────────────────────────────────────
 # 3. Zone principale
 # ─────────────────────────────────────────────
-st.markdown("## ♿ DEFIACCESS — Générateur de feuilles terrain")
+st.markdown("## |DF| DEFIACCESS — Générateur de feuilles terrain")
 st.markdown(
     "Chargez vos fichiers sources, ajustez les paramètres dans la barre latérale, "
     "puis cliquez sur **Générer** pour obtenir les feuilles terrain par équipe."

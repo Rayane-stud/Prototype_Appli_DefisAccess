@@ -32,6 +32,9 @@ def charger_intersections(path, ville):
     tableauFinal = doublons_intersections(tableauFinal)
     tableauFinal = filtrer_intersections(tableauFinal)
     
+    tableauFinal.drop(columns=["type", "geometry/type"], 
+                      inplace=True, reset_index=True)
+
     return tableauFinal
 
 def correction_intersections(tableauFinal):
@@ -223,7 +226,3 @@ def filtrer_intersections(tableauFinal):
     df= tableauFinal[tableauFinal["intersection"].str.contains(typevoie, case=False)]
 
     return df
-
-
-def correction_normalisation_doublons_filtrage_intersections(tableau_final):
-    return filtrer_intersections(doublons_intersections(normailisation_intersections(correction_intersections(tableau_final))))

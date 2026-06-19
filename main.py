@@ -78,9 +78,15 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
     return liste_chemins
 
 
-# Exécuté uniquement si on lance directement ce fichier (pas si importé depuis un autre script)
+# Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
+    
+    # Lance le pipeline complet avec les constantes définies en haut du fichier
     liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES)
+    
+    # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
     print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
+    
+    # Parcourt la liste des chemins et affiche chacun d'eux
     for chemin in liste_chemins:
-        print(f"   → {chemin}")
+        print(f"   → {chemin}")  # affiche le chemin du fichier exporté

@@ -32,7 +32,7 @@ def charger_intersections(path, ville):
     tableauFinal = doublons_intersections(tableauFinal)
     tableauFinal = filtrer_intersections(tableauFinal)
     
-    tableauFinal.drop(columns=["type", "geometry/type"], 
+    tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"], 
                       inplace=True, reset_index=True)
 
     return tableauFinal

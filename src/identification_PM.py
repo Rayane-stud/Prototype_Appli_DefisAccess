@@ -636,7 +636,7 @@ out center;
             reponse = requests.post(url, data={"data": query}, headers=headers, timeout=30)
 
             if reponse.status_code == 429:
-                print(f"      ⏳ Limite atteinte, pause de 10 secondes...")
+                print(f"      Limite atteinte, pause de 10 secondes...")
                 time.sleep(10)
                 reponse = requests.post(url, data={"data": query}, headers=headers, timeout=30)
 
@@ -695,7 +695,7 @@ out center;
 
     # ---- DEUXIEME PASSE : on retente uniquement celles qui ont echoue ----
     if categories_echouees:
-        print(f"\n   🔁 Deuxieme passe pour {len(categories_echouees)} categorie(s) en echec...")
+        print(f"\n    Deuxieme passe pour {len(categories_echouees)} categorie(s) en echec...")
         time.sleep(10)
         # pause supplementaire avant de recommencer, pour laisser
         # Overpass se "reposer" et reinitialiser sa limite de frequence
@@ -710,33 +710,98 @@ out center;
     return resultats
 
 
+
+
+
+
+
+
+# ETAPE 5 — Orchestrer toutes les sources et exporter en Excel ------------------------------------
+
+
+def construire_dataframe_PM(ville: str) -> pd.DataFrame:
+    """
+    Fonction principale qui orchestre tout le pipeline d'identification des PM :
+    1. Recupere le code INSEE et l'osm_area_id de la commune
+    2. Recupere les ecoles (source gouvernementale)
+    3. Recupere la mairie (source gouvernementale + geocodage BAN)
+    4. Recupere les lieux complementaires (OSM)
+    5. Fusionne tout dans un seul DataFrame
+    6. Exporte le resultat en fichier Excel
+
+    NOTE : le dedoublonnage geographique entre sources n'est pas encore
+    implemente -- a ajouter dans une prochaine etape une fois qu'on aura
+    verifie sur des cas reels si des doublons apparaissent vraiment.
+    """
+
+    print(f"\n=== Construction du DataFrame PM pour '{ville}' ===\n")
+
+    # ETAPE 1 : identifiants de la commune
+    code_insee = get_code_insee_api(ville)
+    if code_insee is None:
+        print(" Impossible de continuer sans code INSEE valide.")
+        return pd.DataFrame()
+        # on retourne un DataFrame vide plutot que None, pour que le code
+        # appelant puisse toujours faire .empty ou len() sans planter
+
+    osm_area_id = get_osm_area_id(ville)
+    if osm_area_id is None:
+        print("  osm_area_id non trouve, la recherche OSM sera ignoree.")
+
+    # ETAPE 2 : on accumule tous les PM dans une seule liste
+    tous_les_pm = []
+
+    ecoles = get_ecoles_gouv(code_insee)
+    tous_les_pm.extend(ecoles)
+    # .extend() ajoute chaque element de la liste ecoles a tous_les_pm
+    # (contrairement a .append() qui ajouterait la liste entiere comme un seul bloc)
+
+    mairies = get_equipements_gouv(code_insee)
+    tous_les_pm.extend(mairies)
+
+    if osm_area_id:
+        lieux_osm = get_PM_osm(osm_area_id)
+        tous_les_pm.extend(lieux_osm)
+
+    # ETAPE 3 : construction du DataFrame a partir de la liste de dictionnaires
+    df = pd.DataFrame(tous_les_pm, columns=["nom", "type", "source", "latitude", "longitude"])
+    # columns= force l'ordre des colonnes meme si certains dictionnaires
+    # avaient leurs cles dans un ordre different
+
+    if df.empty:
+        print(" Aucun PM trouve pour cette commune.")
+        return df
+
+    df["coordonnees"] = df["latitude"].astype(str) + ", " + df["longitude"].astype(str)
+    # on ajoute une colonne texte combinee, au meme format que dans
+    # le reste du projet (ex: "48.843436, 2.187209")
+
+    df = df.sort_values(["type", "nom"]).reset_index(drop=True)
+    # on trie par type puis par nom pour que le fichier Excel soit lisible
+
+    print(f"\n {len(df)} PM au total pour {ville}")
+
+    # ETAPE 4 : export en Excel
+    nom_fichier = f"PM_{ville}.xlsx"
+    df.to_excel(nom_fichier, index=False)
+    print(f"Fichier exporte : {nom_fichier}")
+
+    return df
+
+
 #TESTES : ---------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
 
     ville = input("Entrez le nom de la commune : ").strip()
 
-    print(f"\n--- Recherche pour '{ville}' ---")
+    df_pm = construire_dataframe_PM(ville)
 
-    code_insee = get_code_insee_api(ville)
-    print(f"Code INSEE  : {code_insee}")
+    if not df_pm.empty:
+        print("\n=== Apercu du DataFrame final ===")
+        print(df_pm.to_string(index=False))
 
-    osm_area_id = get_osm_area_id(ville)
-    print(f"OSM area_id : {osm_area_id}")
 
-    if code_insee:
-        ecoles = get_ecoles_gouv(code_insee)
-        print(f"\nEcoles trouvees ({len(ecoles)}) :")
-        for ecole in ecoles:
-            print(f"  - {ecole['nom']} ({ecole['type']}) : {ecole['latitude']}, {ecole['longitude']}")
 
-        mairies = get_equipements_gouv(code_insee)
-        print(f"\nMairies trouvees ({len(mairies)}) :")
-        for mairie in mairies:
-            print(f"  - {mairie['nom']} : {mairie['latitude']}, {mairie['longitude']}")
 
-    if osm_area_id:
-        lieux_osm = get_PM_osm(osm_area_id)
-        print(f"\nLieux OSM trouves ({len(lieux_osm)}) :")
-        for lieu in lieux_osm:
-            print(f"  - {lieu['nom']} ({lieu['type']}) : {lieu['latitude']}, {lieu['longitude']}")
+
 

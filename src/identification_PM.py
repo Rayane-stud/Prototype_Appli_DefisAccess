@@ -83,15 +83,20 @@ HEADERS_NOMINATIM = {
 
 # CATEGORIES OSM (uniquement ce qui n'a pas de source gouvernementale)
     # demander celle qui ne sont pas necessaire 
+
 CATEGORIES_OSM = [
-    {"type": "supermarché",    "osm_filters": '["shop"="supermarket"]'},
-    {"type": "marché",         "osm_filters": '["amenity"="marketplace"]'},
-    {"type": "lieu de culte",  "osm_filters": '["amenity"="place_of_worship"]'},
-    {"type": "médiathèque",    "osm_filters": '["amenity"="library"]'},
+    {"type": "hôpital",        "osm_filters": '["amenity"="hospital"]'},
+    {"type": "clinique",       "osm_filters": '["amenity"="clinic"]'},
+    {"type": "pharmacie",      "osm_filters": '["amenity"="pharmacy"]'},
     {"type": "poste",          "osm_filters": '["amenity"="post_office"]'},
+    {"type": "commissariat",   "osm_filters": '["amenity"="police"]'},
+    {"type": "lieu de culte",  "osm_filters": '["amenity"="place_of_worship"]'},
     {"type": "centre sportif", "osm_filters": '["leisure"="sports_centre"]'},
-    
+    {"type": "gare",           "osm_filters": '["railway"="station"]'},
+    {"type": "supermarché",    "osm_filters": '["shop"="supermarket"]'},
 ]
+    
+
 
 
 # ETAPE 1a — Récupérer le code INSEE via geo.api.gouv.fr (source officielle) -----------------------
@@ -354,7 +359,7 @@ def get_ecoles_gouv(code_insee: str) -> list[dict]:
         # simplement avec 0 ecole pour cette commune
 
 
-# ETAPE 3 — Récupérer les mairies via l'API Annuaire de l'Administration --------------------------
+# ETAPE 3 — Récupérer les mairies via l'API Annuaire de l'Administration -----------------------------------------------------------------------------------------
 
 
 # URL de l'API officielle Annuaire de l'Administration (service-public.fr / DILA)
@@ -364,11 +369,72 @@ def get_ecoles_gouv(code_insee: str) -> list[dict]:
 # Elle recense plus de 86 000 guichets publics locaux (mairies, CCAS, PMI, SAMU...)
 URL_ANNUAIRE_API = "https://api-lannuaire.service-public.fr/api/explore/v2.1/catalog/datasets/api-lannuaire-administration/records"
 
+# URL de l'API Adresse du gouvernement (BAN - Base Adresse Nationale)
+# Gratuite, sans clé, specialement concue pour geocoder des adresses françaises
+# avec precision. On l'utilise pour corriger les coordonnees peu fiables
+# retournees par l'API Annuaire de l'Administration (voir explication ci-dessous)
+URL_API_ADRESSE = "https://api-adresse.data.gouv.fr/search/"
+
+
+def geocoder_adresse(adresse_texte: str) -> dict | None:
+    """
+    Interroge l'API Adresse du gouvernement (BAN) pour transformer une adresse
+    texte (ex: "Place Roland-Nungesser 94130 Nogent-sur-Marne") en coordonnees
+    GPS precises.
+
+    POURQUOI CETTE FONCTION EXISTE :
+    En testant get_equipements_gouv() on a decouvert que les coordonnees fournies
+    directement par l'API Annuaire de l'Administration sont parfois fausses, alors
+    que l'adresse texte associee est toujours correcte. Exemple verifie :
+        Mairie de Nogent-sur-Marne
+        Adresse texte (juste)   : "Place Roland-Nungesser, 94130 Nogent-sur-Marne"
+        Coordonnees fournies (fausses) : pointent vers "8 Rue Edmond Vitry" (~600m d'ecart)
+    On ignore donc le champ latitude/longitude de cette API et on regeocode
+    nous-memes l'adresse texte avec la BAN, qui est specialisee et fiable.
+    """
+
+    params = {
+        "q":     adresse_texte,
+        # la question posee a la BAN : l'adresse texte complete a localiser
+        "limit": 1
+        # on ne veut que le meilleur resultat
+    }
+
+    try:
+        reponse = requests.get(URL_API_ADRESSE, params=params, timeout=10)
+        reponse.raise_for_status()
+        # verification que tout va bien (200 = ok, autre = erreur)
+
+        data = reponse.json()
+        # convertit la reponse texte en dictionnaire Python lisible
+        # la BAN repond au format GeoJSON : une liste de "features"
+
+        features = data.get("features", [])
+        if not features:
+            return None
+            # si la BAN ne trouve pas l'adresse on ne peut rien retourner
+
+        coords = features[0]["geometry"]["coordinates"]
+        # en GeoJSON les coordonnees sont rangees [longitude, latitude]
+        # c'est l'ordre INVERSE de ce qu'on utilise partout ailleurs dans
+        # notre code (latitude, longitude) -- attention a ne pas les inverser
+
+        return {
+            "latitude":  coords[1],
+            "longitude": coords[0]
+        }
+
+    except Exception:
+        return None
+        # si le geocodage echoue on retourne None, la mairie sera simplement
+        # ignoree dans get_equipements_gouv() plutot que de planter le programme
+
 
 def get_equipements_gouv(code_insee: str) -> list[dict]:
     """
     Interroge l'API officielle Annuaire de l'Administration pour récupérer
-    la mairie d'une commune via son code INSEE.
+    la mairie d'une commune via son code INSEE, puis regeocode son adresse
+    avec l'API Adresse (BAN) pour obtenir des coordonnees fiables.
 
     IMPORTANT : cette API ne propose pas de filtre direct par type de service
     (mairie, hôpital...) dans la requête "where" -- seul le champ code_insee_commune
@@ -449,28 +515,48 @@ def get_equipements_gouv(code_insee: str) -> list[dict]:
 
             if not adresse:
                 continue
-                # si pas d'adresse on ne peut pas recuperer de coordonnees, on saute
+                # si pas d'adresse on ne peut pas reconstruire l'adresse texte, on saute
 
-            lat = adresse[0].get("latitude")
-            lon = adresse[0].get("longitude")
-            # on plonge dans le premier element de la liste adresse pour les coordonnees
-            # ATTENTION : ici elles sont fournies en texte (str), pas en nombre (float)
-            # contrairement a data.education.gouv.fr qui les donnait deja en nombre
+            premiere_adresse = adresse[0]
+            # CORRIGE : on n'utilise plus latitude/longitude de cette API (peu fiables,
+            # voir la documentation de geocoder_adresse() ci-dessus pour la preuve)
+            # On reconstruit a la place l'adresse texte complete, qui elle est fiable
 
-            if lat is None or lon is None:
+            numero_voie = premiere_adresse.get("numero_voie", "")
+            code_postal = premiere_adresse.get("code_postal", "")
+            nom_commune = premiere_adresse.get("nom_commune", "")
+            adresse_texte = f"{numero_voie} {code_postal} {nom_commune}".strip()
+            # on assemble les morceaux de l'adresse en une seule chaine de texte
+            # ex: "Place Roland-Nungesser 94130 Nogent-sur-Marne"
+
+            if not adresse_texte:
                 continue
-                # si une mairie n'a pas de coordonnees on la saute plutot que de planter
+                # si on n'a meme pas reussi a construire une adresse, on saute
+
+            coords = geocoder_adresse(adresse_texte)
+            # on envoie cette adresse texte fiable a la BAN pour obtenir
+            # des coordonnees GPS precises, calculees independamment de
+            # ce que l'Annuaire de l'Administration avait fourni
+
+            if coords is None:
+                print(f"  Geocodage impossible pour : {adresse_texte}")
+                continue
+                # si la BAN ne trouve pas l'adresse on saute cette mairie
+                # plutot que d'utiliser une coordonnee dont on sait qu'elle peut etre fausse
 
             resultats.append({
                 "nom":       record.get("nom", "Mairie sans nom"),
                 "type":      "mairie",
-                "source":    "api-lannuaire.service-public.fr",
-                "latitude":  float(lat),
-                # float() convertit le texte "48.882..." en nombre 48.882...
-                "longitude": float(lon)
+                "source":    "api-lannuaire.service-public.fr + geocodage BAN",
+                "latitude":  coords["latitude"],
+                "longitude": coords["longitude"]
             })
-            # meme structure de dictionnaire que get_ecoles_gouv(), pour pouvoir
-            # fusionner facilement tous les resultats plus tard a l'etape 4
+            # on utilise les coordonnees regeocodees par la BAN, pas celles
+            # de l'API Annuaire de l'Administration
+
+            time.sleep(0.1)
+            # petite pause pour ne pas surcharger l'API Adresse si plusieurs
+            # mairies devaient etre geocodees dans la meme commune (rare mais possible)
 
         print(f"   {len(resultats)} mairie(s) trouvee(s) pour le code INSEE {code_insee}")
         return resultats
@@ -478,15 +564,171 @@ def get_equipements_gouv(code_insee: str) -> list[dict]:
 
     except Exception as e:
         if "ConnectionError" in str(type(e)):
-            print(f" Pas de connexion internet, impossible d'interroger l'Annuaire de l'Administration.")
+            print(f"Pas de connexion internet, impossible d'interroger l'Annuaire de l'Administration.")
         elif "Timeout" in str(type(e)):
-            print(f" L'Annuaire de l'Administration ne répond pas, réessayez dans quelques instants.")
+            print(f"L'Annuaire de l'Administration ne répond pas, réessayez dans quelques instants.")
         else:
-            print(f" Erreur inattendue lors de l'appel à l'Annuaire de l'Administration : {e}")
+            print(f"Erreur inattendue lors de l'appel à l'Annuaire de l'Administration : {e}")
         return []
         # IMPORTANT : comme pour get_ecoles_gouv(), on retourne une liste vide []
         # et non None, pour ne pas casser le .extend() de l'etape 4
 
+
+
+
+
+
+
+
+
+
+# ETAPE 4 — Récupérer les lieux complémentaires via OpenStreetMap (Overpass) -----------------------------------------------------------------------------
+
+
+
+
+
+def get_PM_osm(osm_area_id: int) -> list[dict]:
+    """
+    Interroge l'API Overpass pour récupérer les lieux complémentaires
+    (hôpital, clinique, pharmacie, poste, commissariat, lieu de culte,
+    centre sportif, gare...) dans les frontières exactes de la commune,
+    en utilisant l'osm_area_id calculé à l'étape 1b.
+
+    Contrairement aux étapes 2 et 3 (sources gouvernementales avec API REST
+    classique), Overpass fonctionne différemment : on lui envoie une vraie
+    "requête" écrite dans son propre langage (similaire à du SQL), et non
+    une simple liste de paramètres GET.
+
+    CORRIGE : on a découvert via un diagnostic sur les hôpitaux qu'Overpass
+    retourne une erreur 406 (Not Acceptable) si la requête n'a pas de
+    User-Agent ni de bon Content-Type -- on ajoute donc des headers,
+    comme on l'avait déjà fait pour Nominatim.
+    """
+
+    url = "https://overpass-api.de/api/interpreter"
+    # adresse du service Overpass sur internet
+
+    headers = {
+        "User-Agent": "DefiaccessPM/1.0 (association accessibilite)",
+        "Content-Type": "application/x-www-form-urlencoded"
+        # CORRIGE : sans ces deux headers, Overpass repond 406 Not Acceptable
+        # (decouvert lors du diagnostic specifique sur les hopitaux)
+    }
+
+    resultats = []
+    # liste vide qui va accumuler tous les lieux trouves, toutes categories confondues
+
+    noms_vus = set()
+    # ensemble (set) qui retient les lieux deja ajoutes, pour eviter les doublons
+    # un meme lieu peut parfois remonter deux fois si plusieurs tags se chevauchent
+
+    for categorie in CATEGORIES_OSM:
+        # on boucle sur chaque categorie definie en haut du fichier
+        # (hopital, clinique, pharmacie, poste, commissariat,
+        #  lieu de culte, centre sportif, gare, supermarche)
+
+        type_pm     = categorie["type"]
+        osm_filters = categorie["osm_filters"]
+        # on recupere le nom lisible de la categorie et le filtre OSM correspondant
+
+        query = f"""
+[out:json][timeout:25];
+area({osm_area_id})->.zone;
+(
+  node{osm_filters}(area.zone);
+  way{osm_filters}(area.zone);
+);
+out center;
+"""
+        # construction de la requete Overpass pour cette categorie precise :
+        # area({osm_area_id})->.zone : on delimite la recherche aux frontieres
+        #     exactes de la commune (et non un simple rectangle approximatif)
+        # node{osm_filters}(area.zone) : on cherche les points simples
+        #     (ex: une pharmacie ponctuelle) qui correspondent au filtre
+        # way{osm_filters}(area.zone) : on cherche aussi les batiments/surfaces
+        #     (ex: un hopital a une emprise au sol, pas juste un point)
+        # out center : pour les "way" (qui ont une forme), Overpass calcule
+        #     et retourne le point central du batiment
+
+        try:
+            print(f"   Recherche OSM : {type_pm}...")
+            reponse = requests.post(url, data={"data": query}, headers=headers, timeout=30)
+            # POST et non GET car la requete Overpass peut etre longue
+            # headers=headers : OBLIGATOIRE sinon erreur 406 (voir docstring)
+            # timeout=30 : Overpass peut etre plus lent que les autres APIs
+
+            reponse.raise_for_status()
+            # verification que tout va bien (200 = ok, autre = erreur)
+
+            elements = reponse.json().get("elements", [])
+            # Overpass range ses resultats dans une cle "elements"
+            # .get(..., []) evite une erreur si cette cle est absente
+
+            for el in elements:
+                # on parcourt chaque lieu trouve pour cette categorie
+
+                if el["type"] == "node":
+                    lat = el.get("lat")
+                    lon = el.get("lon")
+                    # pour un "node" les coordonnees sont directement disponibles
+
+                elif el["type"] == "way":
+                    center = el.get("center", {})
+                    lat = center.get("lat")
+                    lon = center.get("lon")
+                    # pour un "way" (batiment) on recupere le centre calcule
+                    # par Overpass grace au "out center" de la requete
+
+                else:
+                    continue
+                    # autre type d'element OSM inattendu, on l'ignore
+
+                if lat is None or lon is None:
+                    continue
+                    # si pas de coordonnees on saute ce lieu
+
+                tags = el.get("tags", {})
+                nom = tags.get("name", tags.get("operator", f"{type_pm} sans nom"))
+                # le nom du lieu est dans les tags OSM, sous la cle "name"
+                # si absent on essaie "operator" (ex: l'enseigne du commerce)
+                # sinon on met un nom generique plutot que de planter
+
+                cle_unicite = f"{nom}_{round(lat, 5)}_{round(lon, 5)}"
+                # on construit une cle unique par lieu (nom + coordonnees arrondies)
+                # pour detecter les doublons entre deux categories qui se chevauchent
+
+                if cle_unicite in noms_vus:
+                    continue
+                    # ce lieu a deja ete ajoute (rare mais possible), on l'ignore
+                noms_vus.add(cle_unicite)
+
+                resultats.append({
+                    "nom":       nom,
+                    "type":      type_pm,
+                    "source":    "OpenStreetMap",
+                    "latitude":  lat,
+                    "longitude": lon
+                })
+                # meme structure de dictionnaire que get_ecoles_gouv() et
+                # get_equipements_gouv(), pour pouvoir tout fusionner facilement
+
+            print(f"      → {len(elements)} {type_pm}(s) trouve(s)")
+
+        except Exception as e:
+            print(f"    Erreur OSM pour '{type_pm}' : {e}")
+            # si une categorie echoue on continue quand meme avec les suivantes
+            # plutot que d'arreter toute la recherche a cause d'une seule erreur
+
+        time.sleep(1)
+        # pause d'une seconde entre chaque categorie pour respecter les limites
+        # d'usage d'Overpass (service gratuit, on evite de le surcharger)
+
+    print(f"   {len(resultats)} lieu(x) OSM trouve(s) au total")
+    return resultats
+    # on retourne la liste complete, toutes categories confondues
+    # une liste vide [] (et non None) si rien n'a ete trouve, pour la coherence
+    # avec get_ecoles_gouv() et get_equipements_gouv()
 
 #TESTES : ---------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
@@ -513,3 +755,9 @@ if __name__ == "__main__":
         print(f"\nMairies trouvees ({len(mairies)}) :")
         for mairie in mairies:
             print(f"  - {mairie['nom']} : {mairie['latitude']}, {mairie['longitude']}")
+
+    if osm_area_id:
+        lieux_osm = get_PM_osm(osm_area_id)
+        print(f"\nLieux OSM trouves ({len(lieux_osm)}) :")
+        for lieu in lieux_osm:
+            print(f"  - {lieu['nom']} ({lieu['type']}) : {lieu['latitude']}, {lieu['longitude']}")

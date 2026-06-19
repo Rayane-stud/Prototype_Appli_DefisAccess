@@ -3,12 +3,12 @@ app.py — Interface Streamlit no-code pour DEFIACCESS
 Permet aux bénévoles de générer des feuilles terrain sans ligne de code.
 """
 
-import io
-import zipfile
-import yaml
-import streamlit as st
-import folium
-from streamlit_folium import st_folium
+import io                                   # Pour gerer les données en mémoire
+import zipfile                              # Crer des fichier zip sans ecrire sur disque ( rester sur RAM) 
+import yaml                                 # lire les fichier type yaml de configuration
+import streamlit as st                      # framework principal, c'est la bibli de l'interface graphique
+import folium                               # Pour     cartes
+from streamlit_folium import st_folium      #      les         intéractives
 from pathlib import Path
 
 # Modules internes du projet
@@ -21,38 +21,38 @@ from src.nettoyage import (
 )
 from src.proximite import (
     charger_points,
-    filtre_Distance,
+    filtre_distance,
     fusion_croisement,
     assigner_equipes,
 )
-from src.routage import route_all_teams
-from src.export import export_all_teams
-import pipeline
+from src.routage import route_toutes_equipes
+from src.export import export_final_equipes
+# import main
 
 # ─────────────────────────────────────────────
 # 0. Configuration de la page
 # ─────────────────────────────────────────────
 st.set_page_config(
     page_title="DEFIACCESS",
-    page_icon="♿",
-    layout="wide",
-    initial_sidebar_state="expanded",
+    page_icon="|DF|",
+    layout="wide",                            # utilise tout l'ecran au lieu de centrer
+    initial_sidebar_state="expanded",         # la barre latérale est ouverte par defaut 
 )
 
 # ─────────────────────────────────────────────
 # 1. Chargement des configs YAML disponibles
 # ─────────────────────────────────────────────
-CONFIG_DIR = Path("config")
+CONFIG_DIR = Path("config")  # Chemin
 
 def load_yaml_configs() -> dict:
     """Retourne un dict {nom_commune: config_dict} pour tous les YAML du dossier config/."""
     configs = {}
     if CONFIG_DIR.exists():
-        for yaml_file in sorted(CONFIG_DIR.glob("*.yaml")):
+        for yaml_file in sorted(CONFIG_DIR.glob("*.yaml")):    # ".glob(*.yaml)" retrouve tout les fichiers .yaml
             with open(yaml_file, "r", encoding="utf-8") as f:
-                cfg = yaml.safe_load(f)
+                cfg = yaml.safe_load(f)                        # Lit le fichier YAML ded facon sécu
             # La clé d'affichage = nom propre de la commune
-            nom = cfg.get("commune", yaml_file.stem).split(",")[0].strip()
+            nom = cfg.get("commune", yaml_file.stem).split(",")[0].strip()  #recupere la valeur ou le nom du fichier par défaut
             configs[nom] = cfg
     return configs
 
@@ -68,11 +68,11 @@ with st.sidebar:
     st.divider()
 
     # --- Sélecteur de commune ---
-    commune_names = list(yaml_configs.keys())
-    commune_choice = st.selectbox(
+    commune_names = list(yaml_configs.keys()) #recup des nom des vvilles
+    commune_choice = st.selectbox(                                                                        # Renvoie la valeur choisie
         "Commune",
-        options=["— Saisie manuelle —"] + commune_names,
-        help="Sélectionnez une commune pré-configurée ou saisissez les paramètres manuellement.",
+        options=["— Saisie manuelle —"] + commune_names,   # Options de la liste déroulante
+        help="Sélectionnez une commune pré-configurée ou saisissez les paramètres manuellement.",        # Texte qui apparait au survol
     )
 
     # Chargement de la config sélectionnée (ou valeurs par défaut)
@@ -81,10 +81,11 @@ with st.sidebar:
     else:
         cfg = {}
 
+    #widget de saisie
     commune_str = st.text_input(
         "Nom de la commune (filtrage CSV)",
-        value=cfg.get("commune", ""),
-        placeholder="ex. Garches, Hauts-de-Seine",
+        value=cfg.get("commune", ""),               # Ce qui est ecrit par defaut dans al case d'input, auto remplissage si ct dans selectionner parmis les choix de la liste 
+        placeholder="ex. Garches, Hauts-de-Seine",  # Texte en arrière plan au fond de la case d'input qd elle est vide
     )
 
     st.divider()
@@ -229,33 +230,33 @@ if generate_btn and ready:
         # Étape 1 — Chargement & nettoyage
         status.info("**Étape 1/5** — Chargement et nettoyage des intersections…")
         progress.progress(10)
-        df = load_intersections(str(intersections_path), commune_str)
+        df = charger_intersections(str(intersections_path), commune_str)
         df = correction_intersections(df)
-        df = normalisation_intersections(df)
-        df = doublons_intersection(df)
-        df = filtre_intersections(df)
+        df = normailisation_intersections(df)
+        df = doublons_intersections(df)
+        df = filtrer_intersections(df)
 
         # Étape 2 — Chargement des POI
         status.info("**Étape 2/5** — Chargement des points d'intérêt…")
         progress.progress(30)
-        pois = load_pois(str(lieux_path))
+        pois = charger_points(str(lieux_path))
 
         # Étape 3 — Filtrage géographique
         status.info("**Étape 3/5** — Filtrage des intersections proches des POI…")
         progress.progress(50)
-        df = filter_nearby(df, pois, radius_km=radius_km)
-        df = merge_close_crossings(df, threshold_km=0.03)
+        df = filtre_distance(df, pois, radius_km=radius_km)
+        df = fusion_croisement(df, threshold_km=0.03)
 
         # Étape 4 — Clustering & routing
         status.info("**Étape 4/5** — Répartition par équipes et calcul des itinéraires…")
         progress.progress(70)
-        df = cluster_teams(df, n_teams=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
-        teams_dict = route_all_teams(df, meetup_lat=meetup_lat, meetup_long=meetup_lon)
+        df = assigner_equipes(df, n_teams=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
+        teams_dict = route_toutes_equipes(df, meetup_lat=meetup_lat, meetup_long=meetup_lon)
 
         # Étape 5 — Export XLSX
         status.info("**Étape 5/5** — Génération des feuilles terrain XLSX…")
         progress.progress(90)
-        output_files = export_all_teams(teams_dict, str(output_dir))
+        output_files = export_final_equipes(teams_dict, str(output_dir))
 
         progress.progress(100, text="Terminé ✅")
         status.success(

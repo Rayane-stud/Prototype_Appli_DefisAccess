@@ -228,31 +228,27 @@ if generate_btn and ready:
     status = st.empty()
 
     try:
-        # Étape 1 — Chargement & nettoyage
+        # Étape 1 — Chargement & nettoyage (charger_intersections fait déjà tout le nettoyage en interne)
         status.info("**Étape 1/5** — Chargement et nettoyage des intersections…")
         progress.progress(10)
         df = charger_intersections(str(intersections_path), commune_str)
-        df = correction_intersections(df)
-        df = normailisation_intersections(df)
-        df = doublons_intersections(df)
-        df = filtrer_intersections(df)
 
         # Étape 2 — Chargement des POI
         status.info("**Étape 2/5** — Chargement des points d'intérêt…")
         progress.progress(30)
         pois = charger_points(str(lieux_path))
 
-        # Étape 3 — Filtrage géographique
+        # Étape 3 — Filtrage géographique (ordre des arguments : lieux puis intersections)
         status.info("**Étape 3/5** — Filtrage des intersections proches des POI…")
         progress.progress(50)
-        df = filtre_distance(df, pois, radius_km=radius_km)
+        df = filtre_distance(pois, df, rayon_km=radius_km)
         df = fusion_croisement(df, threshold_km=0.03)
 
-        # Étape 4 — Clustering & routing
+        # Étape 4 — Clustering & routing (n_equipes, pas n_teams)
         status.info("**Étape 4/5** — Répartition par équipes et calcul des itinéraires…")
         progress.progress(70)
-        df = assigner_equipes(df, n_teams=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
-        teams_dict = route_toutes_equipes(df, meetup_lat=meetup_lat, meetup_long=meetup_lon)
+        df = assigner_equipes(df, n_equipes=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
+        teams_dict = route_toutes_equipes(df, meetup_lat, meetup_lon)
 
         # Étape 5 — Export XLSX
         status.info("**Étape 5/5** — Génération des feuilles terrain XLSX…")
@@ -286,6 +282,8 @@ if generate_btn and ready:
             icon=folium.Icon(color="black", icon="home", prefix="fa"),
         ).add_to(m)
 
+
+
         # POI
         for _, poi in pois.iterrows():
             folium.CircleMarker(
@@ -294,7 +292,8 @@ if generate_btn and ready:
                 color="#FF6B35",
                 fill=True,
                 fill_opacity=0.9,
-                popup=folium.Popup(str(poi.get("nom", "POI")), max_width=200),
+                popup=folium.Popup(str(poi.get("lieu", "POI")), max_width=200),
+                tooltip=str(poi.get("lieu", "POI")),  # bonus : affiche le nom au survol, sans avoir à cliquer
             ).add_to(m)
 
         # Intersections par équipe
@@ -303,7 +302,7 @@ if generate_btn and ready:
             for _, row in team_df.iterrows():
                 popup_html = (
                     f"<b>Équipe {equipe_id}</b><br>"
-                    f"Ordre : {int(row.get('Ordre', 0))}<br>"
+                    f"Ordre : {int(row.get('ordre', 0))}<br>"
                     f"{row.get('intersection', '')}"
                 )
                 folium.CircleMarker(

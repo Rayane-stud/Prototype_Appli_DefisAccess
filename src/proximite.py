@@ -40,7 +40,7 @@ import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 from sklearn.cluster import KMeans
-from nettoyage import charger_intersections
+# from nettoyage import charger_intersections
 
 
 POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927)  # Gare de Garches

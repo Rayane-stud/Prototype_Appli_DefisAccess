@@ -31,10 +31,6 @@ def charger_intersections(path, ville):
     tableauFinal = normailisation_intersections(tableauFinal)
     tableauFinal = doublons_intersections(tableauFinal)
     tableauFinal = filtrer_intersections(tableauFinal)
-    
-    
-    tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"], 
-    ).reset_index(drop=True)
 
     return tableauFinal
     

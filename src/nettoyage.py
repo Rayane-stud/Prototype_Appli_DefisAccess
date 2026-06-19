@@ -22,8 +22,8 @@ def charger_intersections(path, ville):
     
     print(tableauFinal["Ville/Commune"].head())
     #on distinct les colonnes Ville et Département à partir de la colonne Ville/Commune
-    tableauFinal[["Ville", "Département"]] = (tableauFinal["Ville/Commune"]
-        .str.split(",", n=1, expand=True))
+    tableauFinal = tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"])
+    tableauFinal = tableauFinal.reset_index(drop=True)
     
     
     #on corrige les fautes dù au texte encodé

@@ -26,7 +26,7 @@ NB_EQUIPES = 5        # nombre d'équipes
 # MAIN
 # ──────────────────────────────────────────────
 
-def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
+def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     """
     Orchestre l'ensemble du pipeline :
       1. Sélection de la ville et des fichiers
@@ -56,14 +56,18 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
 
     #xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx   # fichier des lieux (commun aux deux cas)
 
-    ville = "Garches" 
+    
     BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
     csv_path = BASE_DIR / "data" / "raw" / "intersections-92.csv"   #chemin du fichier csv avec les intersections du 92
-    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / "garches_lieu.xlsx"   #chemin du fichier xlsx avec les lieux de Garches
+    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieu.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
 
-    # ── Chargement et nettoyage des données ────────────────────────────
-    tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
-    tableau_villes  = proximite.charger_points(xlsx_path_lieux)
+    try:
+        # ── Chargement et nettoyage des données ────────────────────────────
+        tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
+        tableau_villes  = proximite.charger_points(xlsx_path_lieux)
+    except Exception as e:
+        print(f"Erreur lors du chargement des données : {e}")
+        return []
 
     # ── Calcul de proximité et assignation aux équipes ─────────────────
     tab_croisement = proximite.assigner_equipes(
@@ -87,7 +91,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
 if __name__ == "__main__":
     
     # Lance le pipeline complet avec les constantes définies en haut du fichier
-    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES)
+    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville = "Garches")
     
     # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
     print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")

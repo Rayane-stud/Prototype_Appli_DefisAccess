@@ -59,7 +59,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     
     BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
     csv_path = BASE_DIR / "data" / "raw" / "intersections-92.csv"   #chemin du fichier csv avec les intersections du 92
-    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieu.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
+    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieux.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
 
     try:
         # ── Chargement et nettoyage des données ────────────────────────────

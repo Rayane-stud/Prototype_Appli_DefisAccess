@@ -47,14 +47,19 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
 
     # ── Sélection des fichiers ──────────────────────────────────────────
     # Demande à l'utilisateur le nom de la ville et convertit en minuscules pour éviter les erreurs de saisie
-    ville = input("Choisissez le nom de la ville sur laquelle vous voulez travailler : ").lower()
+    #ville = input("Choisissez le nom de la ville sur laquelle vous voulez travailler : ").lower()
 
-    if ville == "garches":
-        csv_path = BASE_DIR.parent / "data" / "raw" / "garches.csv"           # fichier spécifique à Garches
-    else:
-        csv_path = BASE_DIR.parent / "data" / "raw" / "intersections-92.csv"  # fichier général des intersections du 92
+    #if ville == "garches":
+        #csv_path = BASE_DIR.parent / "data" / "raw" / "garches.csv"           # fichier spécifique à Garches
+    #else:
+        #csv_path = BASE_DIR.parent / "data" / "raw" / "intersections-92.csv"  # fichier général des intersections du 92
 
-    xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx"  # fichier des lieux (commun aux deux cas)
+    #xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx   # fichier des lieux (commun aux deux cas)
+
+    ville = "Garches" 
+    BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
+    csv_path = BASE_DIR / "data" / "raw" / "intersections-92.csv"   #chemin du fichier csv avec les intersections du 92
+    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / "garches_lieu.xlsx"   #chemin du fichier xlsx avec les lieux de Garches
 
     # ── Chargement et nettoyage des données ────────────────────────────
     tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
@@ -73,7 +78,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int) -> list:
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
-    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR.parent / "data" / "output")
+    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output")
 
     return liste_chemins
 

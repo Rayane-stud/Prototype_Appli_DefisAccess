@@ -40,7 +40,7 @@ import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 from sklearn.cluster import KMeans
-from nettoyage import charger_intersections
+from .nettoyage import charger_intersections
 
 
 POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927)  # Gare de Garches
@@ -162,23 +162,6 @@ def assigner_equipes(df, n_equipes: int, meetup_lat: float, meetup_long: float):
     # les numeros commencent a 0, on ajoute 1 pour commencer a 1
     df["equipe"] = kmeans.fit_predict(coordonnees) + 1
 
-<<<<<<< HEAD
-    # Calcule la distance en km entre chaque intersection et le point de rassemblement
-    df["dist_meetup"] = df.apply(lambda row: geodesic(
-        (row["latitude"], row["longitude"]),  # coordonnées de l'intersection
-        (meetup_lat, meetup_long)             # coordonnées du point de rassemblement
-        ).km,axis=1)
-    
-    
-    # Trie les intersections par équipe puis par distance au point de rassemblement
-    df = df.sort_values(by=["Equipe", "dist_meetup"]).reset_index(drop=True)
-
-    # Numérote les intersections au sein de chaque équipe en commençant à 1
-    df["Ordre"] = df.groupby("Equipe").cumcount() + 1
-    df.drop(columns=["dist_meetup"], inplace=True)
-    
-    return df
-=======
     # ETAPE 5 : on calcule la distance de chaque intersection au point de rassemblement
     # cette distance servira uniquement a trier l'ordre de visite
     df["dist_meetup"] = df.apply(
@@ -197,6 +180,5 @@ def assigner_equipes(df, n_equipes: int, meetup_lat: float, meetup_long: float):
 
     # ETAPE 8 : on supprime la colonne temporaire dist_meetup
     df = df.drop(columns=["dist_meetup"])
->>>>>>> f4edb0f792030ae1ef95c4be2f2281d41e6de977
 
     return df

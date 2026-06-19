@@ -218,10 +218,10 @@ if generate_btn and ready:
     # Sauvegarde temporaire des fichiers uploadés
     intersections_path = Path("data/raw/intersections_upload.csv")
     lieux_path = Path("data/raw/lieux_upload.xlsx")
-    intersections_path.parent.mkdir(parents=True, exist_ok=True)
+    intersections_path.parent.mkdir(parents=True, exist_ok=True) # Creation du dossier si il n'existe pas deja 
 
-    intersections_path.write_bytes(intersections_file.read())
-    lieux_path.write_bytes(lieux_file.read())
+    intersections_path.write_bytes(intersections_file.read())  #ecriture des fichiers
+    lieux_path.write_bytes(lieux_file.read())                   
 
     # Barre de progression
     progress = st.progress(0, text="Initialisation…")
@@ -277,7 +277,7 @@ if generate_btn and ready:
             "black", "lightgray", "white", "darkpurple", "salmon",
         ]
 
-        m = folium.Map(location=[meetup_lat, meetup_lon], zoom_start=14, tiles="CartoDB positron")
+        m = folium.Map(location=[meetup_lat, meetup_lon], zoom_start=14, tiles="CartoDB positron") # Creation de la carte
 
         # Point de rendez-vous
         folium.Marker(

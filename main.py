@@ -44,6 +44,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     """
     # Définit le dossier de base à partir de l'emplacement du fichier courant
     BASE_DIR = Path(__file__).parent
+    
 
     # ── Sélection des fichiers ──────────────────────────────────────────
     # Demande à l'utilisateur le nom de la ville et convertit en minuscules pour éviter les erreurs de saisie

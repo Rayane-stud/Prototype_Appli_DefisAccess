@@ -3,7 +3,7 @@ import csv
 
 def charger_intersections(path, ville):
     # charger le fichier CSV
-    df = pd.read_csv(path)
+    df = pd.read_csv(path).copy()
     #on recupere les lignes correspondantes à la ville saisie
     colonne= "properties/context"
     df_ville= df[df[colonne].str.contains(ville, case=False)]
@@ -31,10 +31,10 @@ def charger_intersections(path, ville):
     tableauFinal = normailisation_intersections(tableauFinal)
     tableauFinal = doublons_intersections(tableauFinal)
     tableauFinal = filtrer_intersections(tableauFinal)
-    
+
     return tableauFinal
     
-
+ 
 def correction_intersections(tableauFinal):
     # Correction du texte encodé
     correction = tableauFinal.copy()

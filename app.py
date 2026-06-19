@@ -99,6 +99,7 @@ with st.sidebar:
     meetup_lon = col_lon.number_input(
         "Longitude", value=float(cfg.get("meetup_long", 2.3522)), format="%.6f"
     )
+  
 
     st.divider()
 
@@ -127,7 +128,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────
 # 3. Zone principale — Uploads
 # ─────────────────────────────────────────────
-st.header("♿ DEFIACCESS — Générateur de feuilles terrain")
+st.header("|DF| DEFIACCESS — Générateur de feuilles terrain")
 st.markdown(
     "Chargez vos fichiers sources, ajustez les paramètres dans la barre latérale, "
     "puis cliquez sur **Générer** pour obtenir les feuilles terrain par équipe."
@@ -179,7 +180,7 @@ if tabs_preview:
         with tabs[idx]:
             import pandas as pd
             df_lieux_preview = pd.read_excel(lieux_file)
-            lieux_file.seek(0)
+            lieux_file.seek(0) #IMPORTANT : remise du curseur de lecteur a 0 
             st.dataframe(df_lieux_preview.head(20), use_container_width=True)
             st.caption(f"{len(df_lieux_preview):,} points d'intérêt")
 
@@ -198,7 +199,7 @@ if not ready:
         manquants.append("lieux.xlsx")
     if not commune_str.strip():
         manquants.append("nom de la commune")
-    st.info(f"En attente : **{', '.join(manquants)}**")
+    st.info(f"En attente : **{', '.join(manquants)}**") # encadré bleu 
 
 generate_btn = st.button(
     "⚙️ Générer les feuilles terrain",
@@ -208,7 +209,7 @@ generate_btn = st.button(
 )
 
 # ─────────────────────────────────────────────
-# 6. Pipeline principal
+# 6. main principal
 # ─────────────────────────────────────────────
 if generate_btn and ready:
     output_dir = Path("data/output")

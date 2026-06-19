@@ -208,6 +208,7 @@ generate_btn = st.button(
     use_container_width=True,
 )
 
+
 # ─────────────────────────────────────────────
 # 6. main principal
 # ─────────────────────────────────────────────

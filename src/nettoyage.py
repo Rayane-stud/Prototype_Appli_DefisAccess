@@ -32,10 +32,8 @@ def charger_intersections(path, ville):
     tableauFinal = doublons_intersections(tableauFinal)
     tableauFinal = filtrer_intersections(tableauFinal)
     
-    tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"], 
-                      inplace=True, reset_index=True)
-
-    return tableauFinal
+    tableauFinal = tableauFinal.drop(columns=["type", "geometry/type", "Code Postale", "Code Département"])
+    tableauFinal = tableauFinal.reset_index(drop=True)
 
 def correction_intersections(tableauFinal):
     # Correction du texte encodé

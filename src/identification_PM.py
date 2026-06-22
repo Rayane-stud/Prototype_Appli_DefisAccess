@@ -788,6 +788,19 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     return df
 
+def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx") -> str | None:
+ 
+    if df is None or df.empty:
+        print(" DataFrame vide : aucun fichier Excel genere.")
+        return None
+ 
+    # index=False : on n'ecrit pas la colonne d'index du DataFrame
+    # les titres de colonnes (header) sont ecrits automatiquement par to_excel
+    df.to_excel(nom_fichier, index=False)
+ 
+    print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
+    return nom_fichier
+
 
 #TESTES : ---------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":

@@ -788,6 +788,10 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     return df
 
+def PM_excell(ville : str, chemin:str):
+    construire_dataframe_PM(ville).to_excel(chemin, index=False)
+    return chemin
+
 
 #TESTES : ---------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":

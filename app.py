@@ -125,6 +125,67 @@ with st.sidebar:
     st.divider()
     st.caption("v1.0 — DEFIACCESS © 2025")
 
+
+# ─────────────────────────────────────────────
+# 2b. Génération des lieux via identifier_PM_hybride
+# ─────────────────────────────────────────────
+with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expanded=False):
+    st.markdown(
+        "Entrez le nom d'une commune pour récupérer automatiquement ses points d'intérêt "
+        "(écoles, mairie, supermarchés, pharmacies…) depuis les sources officielles et OpenStreetMap."
+    )
+
+    col_ville, col_btn = st.columns([3, 1])
+    with col_ville:
+        ville_pm = st.text_input(
+            "Commune à analyser",
+            placeholder="ex. Garches",
+            key="ville_pm_input",
+        )
+    with col_btn:
+        st.write("")  # alignement vertical avec le bouton
+        st.write("")
+        generer_pm_btn = st.button(
+            "Générer",
+            key="btn_generer_pm",
+            type="secondary",
+            use_container_width=True,
+            disabled=not ville_pm.strip(),
+        )
+
+    if generer_pm_btn and ville_pm.strip():
+        from src.identification_PM import construire_dataframe_PM  # import local
+        # (adapter le chemin selon où tu places le fichier dans ton projet)
+
+        with st.spinner(f"Récupération des lieux pour **{ville_pm}**… (peut prendre 1-2 min)"):
+            df_pm = construire_dataframe_PM(ville_pm.strip())
+
+        if df_pm.empty:
+            st.warning("Aucun lieu trouvé pour cette commune. Vérifiez le nom saisi.")
+        else:
+            st.success(f"**{len(df_pm)} lieux** trouvés pour {ville_pm}.")
+            st.dataframe(df_pm.head(30), use_container_width=True)
+            st.caption(f"{len(df_pm)} lieux au total · {df_pm['type'].nunique()} types")
+
+            # Export en mémoire (pas d'écriture disque)
+            buffer_pm = io.BytesIO()
+            df_pm.to_excel(buffer_pm, index=False)
+            buffer_pm.seek(0)
+
+            st.download_button(
+                label="⬇️ Télécharger lieux.xlsx",
+                data=buffer_pm,
+                file_name=f"lieux_{ville_pm.strip().lower().replace(' ', '_')}.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                type="primary",
+                use_container_width=True,
+            )
+
+
+
+
+
+
 # ─────────────────────────────────────────────
 # 3. Zone principale — Uploads
 # ─────────────────────────────────────────────

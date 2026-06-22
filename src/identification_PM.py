@@ -216,7 +216,7 @@ def get_osm_area_id(ville: str) -> int | None:
         # convertit la réponse texte en liste Python lisible
 
         if not data:
-            print(f"⚠️  Commune '{ville}' non trouvée sur Nominatim.")
+            print(f" Commune '{ville}' non trouvée sur Nominatim.")
             return None
             # si Nominatim ne trouve aucune commune correspondante on arrête
 

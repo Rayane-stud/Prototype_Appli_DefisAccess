@@ -49,28 +49,30 @@ POINT_PRINCIPAL = (48.8381857639848, 2.1865433360720927)  # Gare de Garches
 # FONCTION : charger_points() --------------------------------------------------
 
 def charger_points(chemin):
-    # ETAPE 1 : on charge l'Excel sans en-tete automatique
-    # header=None signifie que pandas ne suppose pas que la 1ere ligne est un titre
-    df = pd.read_excel(chemin, header=None)
+    df = pd.read_excel(chemin)
 
-    # ETAPE 2 : on extrait les lieux et les coordonnees directement par position
-    # iloc[0, 1:] = ligne 0 (noms des lieux), toutes les colonnes sauf la 1ere ("Info")
-    # iloc[1, 1:] = ligne 1 (coordonnees), toutes les colonnes sauf la 1ere
-    lieux = df.iloc[0, 1:].values
-    coordonnees = df.iloc[1, 1:].values
+    # Nouveau format (identifier_PM_hybride) : colonnes nommées
+    # nom | type | source | latitude | longitude | coordonnees
+    if "latitude" in df.columns and "longitude" in df.columns:
+        df["latitude"]  = pd.to_numeric(df["latitude"],  errors="coerce")
+        df["longitude"] = pd.to_numeric(df["longitude"], errors="coerce")
+        df = df.dropna(subset=["latitude", "longitude"])
 
-    # ETAPE 3 : on reconstruit un DataFrame propre avec les bonnes colonnes
-    df_propre = pd.DataFrame({
-        "lieu": lieux,
-        "coordonnees": coordonnees
-    })
+        # on ajoute "lieu" pour que le reste du pipeline (filtre_distance, etc.)
+        # continue de fonctionner sans modification
+        if "lieu" not in df.columns:
+            df["lieu"] = df["nom"]
 
-    # ETAPE 4 : on supprime les lignes vides (colonnes Excel vides)
+        return df[["lieu", "latitude", "longitude"]]
+
+    # Ancien format (fichier manuel) : lieux en ligne 0, coordonnées en ligne 1
+    df_raw = pd.read_excel(chemin, header=None)
+    lieux       = df_raw.iloc[0, 1:].values
+    coordonnees = df_raw.iloc[1, 1:].values
+
+    df_propre = pd.DataFrame({"lieu": lieux, "coordonnees": coordonnees})
     df_propre = df_propre.dropna(subset=["coordonnees"])
 
-    # ETAPE 5 : on extrait latitude et longitude depuis la colonne coordonnees
-    # le format attendu est "48.838, 2.186" (virgule comme separateur)
-    # .str.strip() supprime les espaces avant/apres pour eviter les erreurs de parsing
     df_propre["latitude"] = (
         df_propre["coordonnees"].astype(str).str.split(",").str[0].str.strip().astype(float)
     )
@@ -78,7 +80,7 @@ def charger_points(chemin):
         df_propre["coordonnees"].astype(str).str.split(",").str[1].str.strip().astype(float)
     )
 
-    return df_propre
+    return df_propre[["lieu", "latitude", "longitude"]]
 
 
 # FONCTION : filtre_distance() -------------------------------------------------

@@ -8,6 +8,7 @@ import routage
 import nettoyage
 import proximite
 import export
+import  identification_PM
 import numpy as np
 
 from pathlib import Path
@@ -57,10 +58,15 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     #xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx   # fichier des lieux (commun aux deux cas)
 
-    
+    nomFich = identification_PM.exporter_PM_excel(
+        identification_PM.construire_dataframe_PM(ville),
+        str(BASE_DIR / "data" / "raw" / (ville + "_lieux.xlsx"))
+    )
+    xlsx_path_lieux = Path(nomFich)  # on réutilise ce que la fonction a écrit
+
     BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
     csv_path = BASE_DIR / "data" / "raw" / "intersections-92.csv"   #chemin du fichier csv avec les intersections du 92
-    xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieux.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
+    #xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieux.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
 
     try:
         # ── Chargement et nettoyage des données ────────────────────────────

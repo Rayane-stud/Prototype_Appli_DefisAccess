@@ -8,11 +8,10 @@ import zipfile                              # Crer des fichier zip sans ecrire s
 import contextlib                           # Pour capturer les print(...) de identification_PM
 import yaml                                 # lire les fichier type yaml de configuration
 import streamlit as st                      # framework principal, c'est la bibli de l'interface graphique
-import folium                               # Pour     cartes     #      les         intéractives
+import folium                               # Pour     cartes
+from streamlit_folium import st_folium      #      les         intéractives
 from pathlib import Path
-import streamlit_folium  # Pour afficher les cartes Folium dans Streamlit
-import sckit-learn                              # Pour le clustering (KMeans)
-
+import numpy as np
 
 # Modules internes du projet
 from src.nettoyage import (
@@ -174,11 +173,32 @@ with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expa
 
         ville_cible = commune_str.split(",")[0].strip()
 
-        # On capture tout ce que la fonction écrit avec print(...) dans un buffer
-        # texte, SANS modifier identification_PM. redirect_stdout détourne la
-        # sortie console vers logs_buffer le temps de l'exécution.
-        logs_buffer = io.StringIO()
+        # Conteneur Streamlit où les messages s'afficheront EN TEMPS RÉEL.
+        # st.empty() est une zone qu'on peut réécrire à volonté : à chaque
+        # nouveau print, on y réaffiche l'ensemble des lignes accumulées.
+        st.markdown("**Progression de la génération :**")
+        zone_logs = st.empty()
+
+        class StreamlitLogger(io.StringIO):
+            """
+            Faux 'stdout' : intercepte chaque print(...) de identification_PM
+            et met à jour la zone Streamlit au fur et à mesure, sans modifier
+            le module source. On herite de io.StringIO pour garder une copie
+            complete du texte (recuperable a la fin via getvalue()).
+            """
+            def write(self, texte):
+                super().write(texte)              # on garde le texte en memoire
+                contenu = self.getvalue()
+                # on n'affiche que les ~25 dernieres lignes pour rester lisible
+                lignes = contenu.splitlines()
+                apercu = "\n".join(lignes[-25:])
+                zone_logs.code(apercu or "…", language="text")
+                return len(texte)
+
+        logs_buffer = StreamlitLogger()
         with st.spinner(f"Récupération des lieux pour **{ville_cible}**… (peut prendre 1-2 min)"):
+            # redirect_stdout envoie tous les print(...) vers notre logger,
+            # qui les affiche en direct dans zone_logs.
             with contextlib.redirect_stdout(logs_buffer):
                 df_pm = construire_dataframe_PM(ville_cible)
 
@@ -195,10 +215,11 @@ with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expa
             buffer_pm.seek(0)
             st.session_state["pm_buffer"] = buffer_pm.getvalue()
 
-    # ── Affichage du résultat (persistant grâce à session_state) ──
+    # ── Logs consultables après coup (persistants via session_state) ──
+    # L'affichage en direct ci-dessus disparaît au rerun ; cet expander
+    # permet de revoir l'historique complet de la dernière génération.
     if "pm_logs" in st.session_state:
-        with st.expander("📜 Détails de la génération (messages console)", expanded=False):
-            # tous les print(...) capturés, affichés en bloc à la fin
+        with st.expander("📜 Revoir les messages de la dernière génération", expanded=False):
             st.code(st.session_state["pm_logs"] or "(aucun message)", language="text")
 
     if "df_pm" in st.session_state:
@@ -370,6 +391,9 @@ if generate_btn and ready:
         progress.progress(50)
         df = filtre_distance(pois, df, rayon_km=radius_km)
         df = fusion_croisement(df, threshold_km=0.03)
+
+        # ⚠️ Provisoire — nombre de traversées aléatoire, à remplacer
+        df["nb_traversees"] = np.random.randint(1, 5, size=len(df))
 
         # Étape 4 — Clustering & routing (n_equipes, pas n_teams)
         status.info("**Étape 4/5** — Répartition par équipes et calcul des itinéraires…")

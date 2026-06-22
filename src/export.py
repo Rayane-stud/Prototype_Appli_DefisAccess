@@ -56,6 +56,7 @@ def duplication_lignes(df):
     # ETAPE 1 : on verifie que la colonne nb_traversees existe
     # si absente on arrete avec un message clair plutot qu'une erreur cryptique
     if "nb_traversees" not in df.columns:
+        print("La colonne 'nb_traversees' est absente du DataFrame.")
         raise ValueError("La colonne 'nb_traversees' est absente du DataFrame.")
 
     # ETAPE 2 : on duplique chaque ligne selon le nb de passages pietons (nb_traversees)
@@ -170,10 +171,12 @@ def export_final_equipes(dict_equipes, dossier_sortie):
 
         # ETAPE 3 : on applique les 3 etapes dans l'ordre pour chaque equipe
         
-       # df_equipe = duplication_lignes(df_equipe)
-        df_equipe = ajouter_col_notation_terrain(df_equipe)
+        # df_equipe = duplication_lignes(df_equipe)
+        
         df_equipe["coordonnees"] = df_equipe["latitude"].astype(str)+","+df_equipe["longitude"].astype(str)
-        df_equipe = df_equipe.drop(columns=["latitude", "longitude"])
+        df_equipe = duplication_lignes(df_equipe)
+        df_equipe = ajouter_col_notation_terrain(df_equipe)
+       # df_equipe = df_equipe.drop(columns=["latitude", "longitude"])
 
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
@@ -185,48 +188,3 @@ def export_final_equipes(dict_equipes, dossier_sortie):
 
     # ETAPE 6 : on retourne la liste de tous les chemins
     return liste_chemins
-
-
-# ---- TESTS ------------------------------------------------------------------
-# Lancer ce fichier directement pour tester : python export.py
-
-if __name__ == "__main__":
-
-    df_test = pd.DataFrame({
-        "Equipe":        [1, 1, 2],
-        "coordonnees":   ["48.838 2.186", "48.839 2.187", "48.840 2.188"],
-        "Intersection":  ["Rue de la Paix / Rue du General", "Avenue Foch / Rue Victor Hugo", "Rue Pasteur / Avenue de la Gare"],
-        "Ordre":         [1, 2, 1],
-        "nb_traversees": [3, 2, 4]
-    })
-
-    print("=== TEST 1 : duplication_lignes ===")
-    df_dup = duplication_lignes(df_test)
-    print(df_dup)
-    print(f"\n-> {len(df_test)} lignes au depart -> {len(df_dup)} lignes apres duplication")
-
-    print("\n=== TEST 2 : ajouter_col_notation_terrain ===")
-    df_terrain = ajouter_col_notation_terrain(df_dup)
-    print(df_terrain.columns.tolist())
-    print(f"-> {len(df_terrain.columns)} colonnes au total")
-
-    print("\n=== TEST 3 : vers_xlsx + exporter_toutes_equipes ===")
-    os.makedirs("test_export", exist_ok=True)
-    dict_equipes = {
-        1: df_terrain[df_terrain["Equipe"] == 1],
-        2: df_terrain[df_terrain["Equipe"] == 2]
-    }
-    chemins = exporter_toutes_equipes(dict_equipes, "test_export")
-    for c in chemins:
-        print(f"-> Fichier genere : {c}")
-
-    print("\n=== TEST 4 : export_final_equipes ===")
-    dict_equipes_brut = {
-        1: df_test[df_test["Equipe"] == 1],
-        2: df_test[df_test["Equipe"] == 2]
-    }
-    chemins_final = export_final_equipes(dict_equipes_brut, "test_export")
-    for c in chemins_final:
-        print(f"-> Fichier genere : {c}")
-
-    print("\nTous les tests passent !")

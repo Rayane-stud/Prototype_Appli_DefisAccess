@@ -1,6 +1,6 @@
 """
 Méthodologie :
-    Récuperations des coodonnées GPS des intersections selectioner par l'algorithme.
+    Récuperations des coordonnées GPS des intersections selectioner par l'algorithme.
 
     Récuperer les informations de la présence de passage piétons :
      - Premiere étape : Utiliser l'API overpass avec OpenStreetMap pour récupérer les passages piétons référencés
@@ -21,6 +21,6 @@ Méthodologie :
 """
 Avec BASE DE DONNEES Accidents :
 Se mettre a jour 1 fois tout les mois pour ne pas avoir a repasser la liste a chaque fois.
-Donc se creer une base traiter, des lieux de passages pietons a reutilisé (qui est donc mise a jour 1 fois par mois)
+Donc se creer une base traitée, des lieux de passages pietons a reutiliser (qui est donc mise a jour 1 fois par mois)
 
 """

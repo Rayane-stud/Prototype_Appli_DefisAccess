@@ -142,6 +142,7 @@ with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expa
             placeholder="ex. Garches",
             key="ville_pm_input",
         )
+        
     with col_btn:
         st.write("")  # alignement vertical avec le bouton
         st.write("")

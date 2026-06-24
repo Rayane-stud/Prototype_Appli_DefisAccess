@@ -1,30 +1,4 @@
 """
-Méthodologie :
-    Récuperations des coordonnées GPS des intersections selectioner par l'algorithme.
-
-    Récuperer les informations de la présence de passage piétons :
-     - Premiere étape : Utiliser l'API overpass avec OpenStreetMap pour récupérer les passages piétons référencés
-     - les attribués à leur intersection respective
-
-     - Deuxieme étape : Récuperer les passages piétons des bases de données publiques disponibles
-     - les attribués à leur intersection respective
-
-     - Troisieme étape : Detecter a l'aide d'images (par exemple de 
-                l'institut national de l'information géographique et forestiere) les passages piétons
-                - ou alors les orthophotos disponibles 
-            - pour cela : utiliser probablement DETECTRON2 pour detecter les passages piétons sur les images
-     
-     - Quatrieme étape :
-     - Comparer ce que detecte DETECTRON2 et les recuperations de OpenStreetMap
-     - Fusinoner les resultat pour avoir un resultat fiable pour chaque intersections
-"""
-"""
-Avec BASE DE DONNEES Accidents :
-Se mettre a jour 1 fois tout les mois pour ne pas avoir a repasser la liste a chaque fois.
-Donc se creer une base traitée, des lieux de passages pietons a reutiliser (qui est donc mise a jour 1 fois par mois)
-
-"""
-"""
 Ce fichier va nous permettre d'identifier le nombre de passage piéton par intersections 
 en utilisant open street map ainsi que les bases de données récupéré sur les intersection en île de France.
 il va donc parcourir ligne par ligne les fichier csv une fois qu'ils ont été nettoyé pour associer à chaque intersections
@@ -35,6 +9,8 @@ import math
 import requests
 import pandas as pd
 from pathlib import Path
+from scipy.spatial import cKDTree   
+import numpy as np      
 
 # Carte de visite obligatoire exigée par la charte d'utilisation de l'API Nominatim (évite le blocage HTTP 403)
 HEADERS_NOMINATIM = {
@@ -47,7 +23,7 @@ CATEGORIES_PASSAGES_PIETONS = [
 ]
 
 
-def get_osm_area_id(ville: str) -> int | None:
+def get_osm_area_id(ville: str):
     """
     Interroge Nominatim (OpenStreetMap) pour récupérer l'osm_area_id
     de la commune. Cet identifiant sert uniquement à délimiter les
@@ -130,7 +106,7 @@ def get_osm_area_id(ville: str) -> int | None:
         # un seul except, bien aligné avec le try du dessus
 
 
-def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: float):
     """
     Calcule la distance en mètres entre deux points géographiques GPS.
     """
@@ -143,7 +119,7 @@ def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: flo
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
 
-def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) -> pd.DataFrame:
+def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20):
     """
     Interroge l'API Overpass pour extraire toutes les intersections topologiques 
     d'une commune et compte les passages piétons présents dans un rayon donné.
@@ -159,23 +135,12 @@ def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) 
     requete_overpass = f"""
     [out:json][timeout:180];
     area({id_zone_commune})->.zone_commune;
-
-    way["highway"~"primary|secondary|tertiary|residential|unclassified"]
-        ["highway"!="motorway"]
-        ["highway"!="trunk"]
-        ["highway"!="footway"]
-        ["highway"!="cycleway"]
-        ["highway"!="path"]
-        ["highway"!="service"]
-   (area.zone_commune)->.routes_pertinentes;
-
+    way["highway"~"primary|secondary|tertiary|residential|unclassified"]["access"!="private"](area.zone_commune)->.routes_pertinentes;
     node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
-
     (
-        node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-        way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
+      node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
+      way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
     )->.passages_pietons;
-
     (.toutes_les_intersections; .passages_pietons;);
     out body center;
     """
@@ -184,7 +149,15 @@ def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) 
     print(" Envoi de la requête à l'API Overpass (cela peut prendre un moment)...")
     
     try:
-        reponse = requests.post(url_api, data={"data": requete_overpass}, timeout=190)
+        reponse = requests.post(
+            url_api,
+            data={"data": requete_overpass},
+            timeout=190,
+            headers={
+                "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
+                "Content-Type": "application/x-www-form-urlencoded"
+            }
+        )
         reponse.raise_for_status()
         donnees = reponse.json()
     except Exception as e:
@@ -222,26 +195,48 @@ def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) 
     print(f" Analyse de {len(passages_pietons_extraits)} passages piétons face à {len(intersections_brutes)} intersections...")
 
     # Algorithme de déduplication : on attribue le passage piéton à l'intersection la plus proche uniquement
+    # --- Construction de l'index spatial KDTree ---
+    # On convertit les coordonnées GPS en radians pour que la distance
+    # soit calculable en mètres via la formule haversine approximée
+    coords_intersections = np.array([
+        [math.radians(i["latitude"]), math.radians(i["longitude"])]
+        for i in intersections_brutes
+    ])
+    arbre = cKDTree(coords_intersections)
+    # cKDTree est un index spatial : il organise les intersections dans
+    # une structure en arbre qui permet de trouver les voisins proches
+    # en O(log n) au lieu de O(n) — beaucoup plus rapide
+
+    # Conversion du rayon en radians (la KDTree travaille en radians)
+    # 6371000 = rayon moyen de la Terre en mètres
+    rayon_radians = rayon_metres / 6371000
+
+    # --- Attribution de chaque passage piéton à son intersection la plus proche ---
     for passage in passages_pietons_extraits:
-        distances = [
-            calculer_distance_haversine(passage["lat"], passage["lon"], intersection["latitude"], intersection["longitude"])
-            for intersection in intersections_brutes
-        ]
-        if distances:
-            distance_minimale = min(distances)
-            if distance_minimale <= rayon_metres:
-                index_plus_proche = distances.index(distance_minimale)
-                intersections_brutes[index_plus_proche]["nb_passages_pietons"] += 1
+        point = [math.radians(passage["lat"]), math.radians(passage["lon"])]
+        # on convertit ce passage piéton en radians aussi, pour être
+        # dans le même "langage" que l'arbre
+
+        distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
+        # arbre.query() cherche le voisin le plus proche (k=1) du passage piéton
+        # distance_upper_bound=rayon_radians : on ne regarde que dans le rayon défini
+        # retourne (distance, index) : l'index de l'intersection la plus proche
+        # si rien trouvé dans le rayon, index vaut len(intersections_brutes)
+
+        if index < len(intersections_brutes):
+            intersections_brutes[index]["nb_passages_pietons"] += 1
+            # on incrémente le compteur de l'intersection la plus proche
+            # la condition évite le cas "rien trouvé" où index serait hors limites
 
     # Conversion finale au format DataFrame tabulaire Pandas
     return pd.DataFrame(intersections_brutes)
 
 
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
-"""
+
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "Nanterre"
+    nom_commune = "Garches"  # à remplacer par la commune souhaitée
     print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
     
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
@@ -269,5 +264,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-```
-"""
+
+# concernant les test : 
+print(get_osm_area_id("Garches"))

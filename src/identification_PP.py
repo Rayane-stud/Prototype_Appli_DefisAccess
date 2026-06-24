@@ -159,14 +159,23 @@ def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) 
     requete_overpass = f"""
     [out:json][timeout:180];
     area({id_zone_commune})->.zone_commune;
-    way["highway"](area.zone_commune)->.toutes_les_routes;
-    node(way_cnt.toutes_les_routes:2-)->.toutes_les_intersections;
-    
+
+    way["highway"~"primary|secondary|tertiary|residential|unclassified"]
+        ["highway"!="motorway"]
+        ["highway"!="trunk"]
+        ["highway"!="footway"]
+        ["highway"!="cycleway"]
+        ["highway"!="path"]
+        ["highway"!="service"]
+   (area.zone_commune)->.routes_pertinentes;
+
+    node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
+
     (
-      node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-      way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
+        node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
+        way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
     )->.passages_pietons;
-    
+
     (.toutes_les_intersections; .passages_pietons;);
     out body center;
     """
@@ -229,7 +238,7 @@ def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) 
 
 
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
-""""
+"""
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
     nom_commune = "Nanterre"

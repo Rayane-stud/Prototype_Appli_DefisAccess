@@ -1,0 +1,6 @@
+path: /content/drive/MyDrive/DefiAccess2/testeIAPP/yolo
+train: images/train
+val: images/val
+
+nc: 1
+names: ['passage_pieton']

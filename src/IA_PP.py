@@ -7,6 +7,7 @@ Utilisation   : 100 images par exécution, ~0.5 s de délai entre requêtes.
 """
 
 import math
+import os
 import time
 
 import numpy as np
@@ -19,6 +20,26 @@ try:
     _CV2_DISPONIBLE = True
 except ImportError:
     _CV2_DISPONIBLE = False
+
+try:
+    from ultralytics import YOLO as _YOLO
+    _YOLO_DISPONIBLE = True
+except ImportError:
+    _YOLO_DISPONIBLE = False
+
+_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best.pt")
+_MODELE_YOLO = None
+
+
+def _charger_modele():
+    global _MODELE_YOLO
+    if _MODELE_YOLO is None:
+        if not _YOLO_DISPONIBLE:
+            raise ImportError("ultralytics est requis : pip install ultralytics")
+        if not os.path.exists(_CHEMIN_MODELE):
+            raise FileNotFoundError(f"Modèle introuvable : {_CHEMIN_MODELE}")
+        _MODELE_YOLO = _YOLO(_CHEMIN_MODELE)
+    return _MODELE_YOLO
 
 
 # ---------------------------------------------------------------------------
@@ -85,7 +106,36 @@ def get_image_ign(
 
 
 # ---------------------------------------------------------------------------
-# Étape 2 — Détection par vision par ordinateur (OpenCV)
+# Étape 2a — Détection par YOLO (modèle entraîné)
+# ---------------------------------------------------------------------------
+
+def detect_passages_pietons_yolo(image: np.ndarray) -> dict:
+    """
+    Détecte les passages piétons avec le modèle YOLOv8 entraîné (best.pt).
+
+    Args:
+        image : Tableau numpy RGB.
+
+    Returns:
+        dict avec les clés :
+            detecte (bool)       – True si au moins un passage piéton détecté.
+            nb_traversee (int)   – Nombre de passages piétons détectés.
+            confiance (float)    – Confiance moyenne des détections (0 à 1).
+    """
+    model = _charger_modele()
+    results = model(image, verbose=False)
+    boxes = results[0].boxes
+    nb = len(boxes)
+    confiance = float(boxes.conf.mean()) if nb > 0 else 0.0
+    return {
+        "detecte": nb > 0,
+        "nb_traversee": nb,
+        "confiance": round(confiance, 2),
+    }
+
+
+# ---------------------------------------------------------------------------
+# Étape 2b — Détection par vision par ordinateur (OpenCV, fallback)
 # ---------------------------------------------------------------------------
 
 def _masque_routes(image: np.ndarray) -> np.ndarray:
@@ -303,7 +353,7 @@ def analyser_intersection(
         "image_ok": False,
         "pp_detecte": False,
         "pp_confiance": 0.0,
-        "pp_nb_bandes": 0,
+        "nb_traversee": 0,
         "erreur": None,
     }
 
@@ -314,10 +364,17 @@ def analyser_intersection(
         if sauvegarder_image:
             Image.fromarray(image).save(sauvegarder_image)
 
-        detection = detect_passages_pietons_cv(image, emprise_m=emprise_m)
-        resultat["pp_detecte"] = detection["detecte"]
-        resultat["pp_confiance"] = detection["confiance"]
-        resultat["pp_nb_bandes"] = detection["nb_bandes"]
+        # YOLO en priorité, OpenCV en fallback si le modèle est absent
+        if _YOLO_DISPONIBLE and os.path.exists(_CHEMIN_MODELE):
+            detection = detect_passages_pietons_yolo(image)
+            resultat["pp_detecte"] = detection["detecte"]
+            resultat["pp_confiance"] = detection["confiance"]
+            resultat["nb_traversee"] = detection["nb_traversee"]
+        else:
+            detection = detect_passages_pietons_cv(image, emprise_m=emprise_m)
+            resultat["pp_detecte"] = detection["detecte"]
+            resultat["pp_confiance"] = detection["confiance"]
+            resultat["nb_traversee"] = detection["nb_bandes"]
 
     except ImportError as e:
         resultat["erreur"] = f"Dépendance manquante : {e}"
@@ -371,18 +428,18 @@ def analyser_toutes_intersections(
         if res["erreur"]:
             print(f"ERREUR : {res['erreur']}")
         else:
-            statut = "PP detecte" if res["pp_detecte"] else "aucun PP"
-            print(f"{statut}  (confiance={res['pp_confiance']}, bandes={res['pp_nb_bandes']})")
+            statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+            print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
 
         resultats.append(res)
         if i < total:
             time.sleep(delai_s)
 
     df_sortie = df.copy()
-    df_sortie["pp_detecte"] = [r["pp_detecte"] for r in resultats]
-    df_sortie["pp_confiance"] = [r["pp_confiance"] for r in resultats]
-    df_sortie["pp_nb_bandes"] = [r["pp_nb_bandes"] for r in resultats]
-    df_sortie["pp_image_ok"] = [r["image_ok"] for r in resultats]
-    df_sortie["pp_erreur"] = [r["erreur"] for r in resultats]
+    df_sortie["pp_detecte"]   = [r["pp_detecte"]   for r in resultats]
+    df_sortie["pp_confiance"] = [r["pp_confiance"]  for r in resultats]
+    df_sortie["nb_traversee"] = [r["nb_traversee"]  for r in resultats]
+    df_sortie["pp_image_ok"]  = [r["image_ok"]      for r in resultats]
+    df_sortie["pp_erreur"]    = [r["erreur"]         for r in resultats]
 
     return df_sortie

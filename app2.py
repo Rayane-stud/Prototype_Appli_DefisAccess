@@ -2,7 +2,7 @@
 app.py — Interface Streamlit no-code pour DEFIACCESS
 Permet aux bénévoles de générer des feuilles terrain sans ligne de code.
 """
-
+import numpy as np
 import io                                   # Pour gerer les données en mémoire
 import zipfile                              # Crer des fichier zip sans ecrire sur disque ( rester sur RAM)
 import contextlib                           # Pour capturer les print(...) de identification_PM
@@ -11,7 +11,8 @@ import streamlit as st                      # framework principal, c'est la bibl
 import folium                               # Pour     cartes
 from streamlit_folium import st_folium      #      les         intéractives
 from pathlib import Path
-import numpy as np
+
+import streamlit_folium  # Pour afficher les cartes Folium dans Streamlit
 
 
 
@@ -132,7 +133,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────
 # 2b. Génération des lieux via identification_PM
 # ─────────────────────────────────────────────
-with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expanded=False):
+with st.expander(" Générer le fichier lieux.xlsx automatiquement", expanded=False):
     st.markdown(
         "Récupère automatiquement les points d'intérêt de la commune "
         "(écoles, mairie, supermarchés, pharmacies…) depuis les sources "
@@ -221,7 +222,9 @@ with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expa
     # L'affichage en direct ci-dessus disparaît au rerun ; cet expander
     # permet de revoir l'historique complet de la dernière génération.
     if "pm_logs" in st.session_state:
+
         with st.expander("📜 Revoir les messages de la dernière génération", expanded=False):
+
             st.code(st.session_state["pm_logs"] or "(aucun message)", language="text")
 
     if "df_pm" in st.session_state:
@@ -236,14 +239,14 @@ with st.expander("🏗️ Générer le fichier lieux.xlsx automatiquement", expa
             st.dataframe(df_pm.head(30), use_container_width=True)
             st.caption(f"{len(df_pm)} lieux au total · {df_pm['type'].nunique()} types")
             st.info(
-                "✅ Ce fichier est déjà chargé dans l'outil ci-dessous : "
+                " Ce fichier est déjà chargé dans l'outil ci-dessous : "
                 "pas besoin de le télécharger ni de le re-déposer."
             )
 
             # Téléchargement optionnel (si l'utilisateur veut garder une copie)
             if "pm_buffer" in st.session_state:
                 st.download_button(
-                    label="⬇️ Télécharger lieux.xlsx (optionnel)",
+                    label="Télécharger lieux.xlsx (optionnel)",
                     data=st.session_state["pm_buffer"],
                     file_name=f"lieux_{st.session_state.get('pm_commune', 'commune').lower().replace(' ', '_')}.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -264,20 +267,20 @@ col_upload1, col_upload2 = st.columns(2)
 
 with col_upload1:
     intersections_file = st.file_uploader(
-        "📂 intersections.csv (export GeoJSON)",
+        "intersections.csv (export GeoJSON)",
         type=["csv"],
         help="Fichier CSV des intersections exporté depuis l'outil GeoJSON.",
     )
 
 with col_upload2:
     lieux_file = st.file_uploader(
-        "📍 lieux.xlsx (points d'intérêt)",
+        "lieux.xlsx (points d'intérêt)",
         type=["xlsx"],
         help="Fichier Excel listant les lieux à auditer. "
              "Inutile si vous avez utilisé la génération automatique ci-dessus.",
     )
     if lieux_file is None and st.session_state.get("pm_buffer"):
-        st.success("📍 Fichier lieux généré automatiquement détecté — il sera utilisé.")
+        st.success(" Fichier lieux généré automatiquement détecté — il sera utilisé.")
 
 # ── Résolution de la source "lieux" : upload manuel OU fichier généré ──
 # lieux_source = ce qu'on utilisera partout ensuite, peu importe l'origine.
@@ -347,7 +350,7 @@ if not ready:
     st.info(f"En attente : **{', '.join(manquants)}**") # encadré bleu
 
 generate_btn = st.button(
-    "⚙️ Générer les feuilles terrain",
+    " Générer les feuilles terrain",
     disabled=not ready,
     type="primary",
     use_container_width=True,
@@ -408,7 +411,7 @@ if generate_btn and ready:
         progress.progress(90)
         output_files = export_final_equipes(teams_dict, str(output_dir))
 
-        progress.progress(100, text="Terminé ✅")
+        progress.progress(100, text="Terminé ")
         status.success(
             f"**{len(output_files)} feuille(s) terrain générée(s)** pour {n_teams} équipe(s)."
         )
@@ -416,7 +419,7 @@ if generate_btn and ready:
         # ─────────────────────────────────────────
         # 7. Carte Folium
         # ─────────────────────────────────────────
-        st.subheader("🗺️ Carte des intersections par équipe")
+        st.subheader(" Carte des intersections par équipe")
 
         # Palette couleurs pour les équipes
         COLORS = [
@@ -470,7 +473,7 @@ if generate_btn and ready:
         # ─────────────────────────────────────────
         # 8. Statistiques par équipe
         # ─────────────────────────────────────────
-        st.subheader("📊 Répartition par équipe")
+        st.subheader(" Répartition par équipe")
         import pandas as pd
 
         stats_rows = []
@@ -485,7 +488,7 @@ if generate_btn and ready:
         # ─────────────────────────────────────────
         # 9. Téléchargement ZIP
         # ─────────────────────────────────────────
-        st.subheader("⬇️ Téléchargement")
+        st.subheader(" Téléchargement")
 
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -494,7 +497,7 @@ if generate_btn and ready:
         zip_buffer.seek(0)
 
         st.download_button(
-            label=f"📦 Télécharger les {len(output_files)} feuilles terrain (.zip)",
+            label=f" Télécharger les {len(output_files)} feuilles terrain (.zip)",
             data=zip_buffer,
             file_name=f"defiaccess_{commune_str.split(',')[0].strip().lower().replace(' ', '_')}.zip",
             mime="application/zip",

@@ -8,7 +8,6 @@ les passages piétons associés.
 import math
 import requests
 import pandas as pd
-from pathlib import Path
 from scipy.spatial import cKDTree   
 import numpy as np      
 
@@ -120,123 +119,93 @@ def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: flo
 
 
 def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20):
-    """
-    Interroge l'API Overpass pour extraire toutes les intersections topologiques 
-    d'une commune et compte les passages piétons présents dans un rayon donné.
-    """
-    # Construction du filtre dynamique basé sur tes catégories déclarées plus haut
+
     filtre_osm = CATEGORIES_PASSAGES_PIETONS[0]["osm_filters"]
-
-    # Requête Overpass compilée :
-    # 1. Filtre sur la zone géospatiale de la commune.
-    # 2. Extrait les axes routiers (ways).
-    # 3. Repère les intersections (noeuds partagés par au moins 2 routes : way_cnt:2-).
-    # 4. Extrait les passages piétons dans le rayon autour de ces intersections.
-    requete_overpass = f"""
-    [out:json][timeout:180];
-    area({id_zone_commune})->.zone_commune;
-    way["highway"~"primary|secondary|tertiary|residential|unclassified"]["access"!="private"](area.zone_commune)->.routes_pertinentes;
-    node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
-    (
-      node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-      way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-    )->.passages_pietons;
-    (.toutes_les_intersections; .passages_pietons;);
-    out body center;
-    """
-
     url_api = "https://overpass-api.de/api/interpreter"
-    print(" Envoi de la requête à l'API Overpass (cela peut prendre un moment)...")
-    
+    headers = {
+        "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
+
+    # --- REQUÊTE 1 : uniquement les intersections ---
+    requete_intersections = f"""
+[out:json][timeout:120];
+area({id_zone_commune})->.zone_commune;
+way["highway"~"primary|secondary|tertiary|residential|unclassified"]["access"!="private"](area.zone_commune)->.routes_pertinentes;
+node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
+.toutes_les_intersections out body;
+"""
+
+    print(" Étape 1/2 — Récupération des intersections...")
     try:
-        reponse = requests.post(
-            url_api,
-            data={"data": requete_overpass},
-            timeout=190,
-            headers={
-                "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
-                "Content-Type": "application/x-www-form-urlencoded"
-            }
-        )
+        reponse = requests.post(url_api, data={"data": requete_intersections}, timeout=130, headers=headers)
         reponse.raise_for_status()
-        donnees = reponse.json()
+        intersections_brutes = [
+            {
+                "intersection_id_osm": el["id"],
+                "latitude": el["lat"],
+                "longitude": el["lon"],
+                "nb_passages_pietons": 0
+            }
+            for el in reponse.json().get("elements", [])
+            if el["type"] == "node"
+        ]
     except Exception as e:
-        print(f" Erreur lors de l'extraction Overpass : {e}")
+        print(f" Erreur intersections : {e}")
         return pd.DataFrame()
 
-    elements = donnees.get("elements", [])
-    
-    intersections_brutes = []
-    passages_pietons_extraits = []
+    if not intersections_brutes:
+        print(" Aucune intersection trouvée.")
+        return pd.DataFrame()
 
-    # Tri des données reçues entre carrefours physiques et passages piétons
-    for el in elements:
-        tags = el.get("tags", {})
-        # Si le noeud ou la ligne possède une propriété d'aménagement piéton
-        if "highway" in tags and tags["highway"] == "crossing":
+    print(f" {len(intersections_brutes)} intersections trouvées.")
+
+    # --- REQUÊTE 2 : uniquement les passages piétons ---
+    requete_passages = f"""
+        [out:json][timeout:120];
+        area({id_zone_commune})->.zone_commune;
+            (node{filtre_osm}(area.zone_commune);way{filtre_osm}(area.zone_commune);)->.passages_pietons;.passages_pietons out body center;
+        """
+
+    print(" Étape 2/2 — Récupération des passages piétons...")
+    try:
+        reponse = requests.post(url_api, data={"data": requete_passages}, timeout=130, headers=headers)
+        reponse.raise_for_status()
+        passages_pietons_extraits = []
+        for el in reponse.json().get("elements", []):
             lat = el.get("lat") or el.get("center", {}).get("lat")
             lon = el.get("lon") or el.get("center", {}).get("lon")
             if lat and lon:
                 passages_pietons_extraits.append({"lat": lat, "lon": lon})
-        else:
-            # C'est un point d'intersection de structure routière
-            if el["type"] == "node":
-                intersections_brutes.append({
-                    "intersection_id_osm": el["id"], 
-                    "latitude": el["lat"], 
-                    "longitude": el["lon"], 
-                    "nb_passages_pietons": 0
-                })
-
-    if not intersections_brutes:
-        print(" Aucune intersection structurelle trouvée dans cette zone.")
+    except Exception as e:
+        print(f" Erreur passages piétons : {e}")
         return pd.DataFrame()
 
+    print(f" {len(passages_pietons_extraits)} passages piétons trouvés.")
+
+    # --- ATTRIBUTION KDTree (inchangé) ---
     print(f" Analyse de {len(passages_pietons_extraits)} passages piétons face à {len(intersections_brutes)} intersections...")
 
-    # Algorithme de déduplication : on attribue le passage piéton à l'intersection la plus proche uniquement
-    # --- Construction de l'index spatial KDTree ---
-    # On convertit les coordonnées GPS en radians pour que la distance
-    # soit calculable en mètres via la formule haversine approximée
     coords_intersections = np.array([
         [math.radians(i["latitude"]), math.radians(i["longitude"])]
         for i in intersections_brutes
     ])
     arbre = cKDTree(coords_intersections)
-    # cKDTree est un index spatial : il organise les intersections dans
-    # une structure en arbre qui permet de trouver les voisins proches
-    # en O(log n) au lieu de O(n) — beaucoup plus rapide
-
-    # Conversion du rayon en radians (la KDTree travaille en radians)
-    # 6371000 = rayon moyen de la Terre en mètres
     rayon_radians = rayon_metres / 6371000
 
-    # --- Attribution de chaque passage piéton à son intersection la plus proche ---
     for passage in passages_pietons_extraits:
         point = [math.radians(passage["lat"]), math.radians(passage["lon"])]
-        # on convertit ce passage piéton en radians aussi, pour être
-        # dans le même "langage" que l'arbre
-
         distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
-        # arbre.query() cherche le voisin le plus proche (k=1) du passage piéton
-        # distance_upper_bound=rayon_radians : on ne regarde que dans le rayon défini
-        # retourne (distance, index) : l'index de l'intersection la plus proche
-        # si rien trouvé dans le rayon, index vaut len(intersections_brutes)
-
         if index < len(intersections_brutes):
             intersections_brutes[index]["nb_passages_pietons"] += 1
-            # on incrémente le compteur de l'intersection la plus proche
-            # la condition évite le cas "rien trouvé" où index serait hors limites
 
-    # Conversion finale au format DataFrame tabulaire Pandas
     return pd.DataFrame(intersections_brutes)
-
 
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
 
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "Garches"  # à remplacer par la commune souhaitée
+    nom_commune = "Versailles"  # à remplacer par la commune souhaitée
     print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
     
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
@@ -248,7 +217,7 @@ def main():
         
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-            nom_fichier_sortie = f"intersections_{nom_commune.lower()}_passages.csv"
+            nom_fichier_sortie = f"data/output/intersections_{nom_commune.lower()}_passages.csv"
             df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
             
             print(f"\n Traitement terminé avec succès !")
@@ -266,4 +235,4 @@ if __name__ == "__main__":
 
 
 # concernant les test : 
-print(get_osm_area_id("Garches"))
+print(get_osm_area_id("Versailles"))  

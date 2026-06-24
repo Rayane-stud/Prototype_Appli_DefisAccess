@@ -21,6 +21,11 @@ CATEGORIES_PASSAGES_PIETONS = [
     {"type": "passage_pieton_general", "osm_filters": '["highway"="crossing"]'}
 ]
 
+SERVEURS_OVERPASS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+]
 
 def get_osm_area_id(ville: str):
     """
@@ -117,11 +122,26 @@ def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: flo
     a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlon / 2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
+def envoyer_requete_overpass(requete: str, headers: dict) -> dict:
+    """
+    Essaie chaque serveur Overpass dans l'ordre jusqu'à en trouver un qui répond.
+    """
+    for url in SERVEURS_OVERPASS:
+        try:
+            print(f"   Tentative sur {url}...")
+            reponse = requests.post(url, data={"data": requete}, timeout=130, headers=headers)
+            reponse.raise_for_status()
+            return reponse.json()
+        except Exception as e:
+            print(f"   Échec ({e}) → serveur suivant...")
+            continue
+
+    print(" Tous les serveurs Overpass sont indisponibles.")
+    return {}
 
 def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20):
 
     filtre_osm = CATEGORIES_PASSAGES_PIETONS[0]["osm_filters"]
-    url_api = "https://overpass-api.de/api/interpreter"
     headers = {
         "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
         "Content-Type": "application/x-www-form-urlencoded"
@@ -137,22 +157,19 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
 """
 
     print(" Étape 1/2 — Récupération des intersections...")
-    try:
-        reponse = requests.post(url_api, data={"data": requete_intersections}, timeout=130, headers=headers)
-        reponse.raise_for_status()
-        intersections_brutes = [
-            {
-                "intersection_id_osm": el["id"],
-                "latitude": el["lat"],
-                "longitude": el["lon"],
-                "nb_passages_pietons": 0
-            }
-            for el in reponse.json().get("elements", [])
-            if el["type"] == "node"
-        ]
-    except Exception as e:
-        print(f" Erreur intersections : {e}")
+    donnees = envoyer_requete_overpass(requete_intersections, headers)
+    if not donnees:
         return pd.DataFrame()
+    intersections_brutes = [
+        {
+            "intersection_id_osm": el["id"],
+            "latitude": el["lat"],
+            "longitude": el["lon"],
+            "nb_passages_pietons": 0
+        }
+        for el in donnees.get("elements", [])
+        if el["type"] == "node"
+    ]
 
     if not intersections_brutes:
         print(" Aucune intersection trouvée.")
@@ -168,18 +185,15 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
         """
 
     print(" Étape 2/2 — Récupération des passages piétons...")
-    try:
-        reponse = requests.post(url_api, data={"data": requete_passages}, timeout=130, headers=headers)
-        reponse.raise_for_status()
-        passages_pietons_extraits = []
-        for el in reponse.json().get("elements", []):
-            lat = el.get("lat") or el.get("center", {}).get("lat")
-            lon = el.get("lon") or el.get("center", {}).get("lon")
-            if lat and lon:
-                passages_pietons_extraits.append({"lat": lat, "lon": lon})
-    except Exception as e:
-        print(f" Erreur passages piétons : {e}")
+    donnees = envoyer_requete_overpass(requete_passages, headers)
+    if not donnees:
         return pd.DataFrame()
+    passages_pietons_extraits = []
+    for el in donnees.get("elements", []):
+        lat = el.get("lat") or el.get("center", {}).get("lat")
+        lon = el.get("lon") or el.get("center", {}).get("lon")
+        if lat and lon:
+            passages_pietons_extraits.append({"lat": lat, "lon": lon})
 
     print(f" {len(passages_pietons_extraits)} passages piétons trouvés.")
 
@@ -205,7 +219,7 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
 
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "Versailles"  # à remplacer par la commune souhaitée
+    nom_commune = "garches"  # à remplacer par la commune souhaitée
     print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
     
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
@@ -235,4 +249,4 @@ if __name__ == "__main__":
 
 
 # concernant les test : 
-print(get_osm_area_id("Versailles"))  
+print(get_osm_area_id("Garches"))  

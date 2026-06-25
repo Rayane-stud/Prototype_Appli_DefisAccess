@@ -8,6 +8,14 @@ Utilisation :
     python src/generer_dataset.py Garches
     python src/generer_dataset.py "Fontenay-aux-Roses"
     python src/generer_dataset.py "Fontenay-aux-Roses" --max 50
+    python src/generer_dataset.py Levallois-Perret --pm
+    python src/generer_dataset.py Levallois-Perret --pm --rayon 0.3
+
+Options :
+    --pm           Filtre les intersections par proximité aux Points de Mobilité
+                   (écoles, mairies, hôpitaux, supermarchés…) via identification_PM.py
+    --rayon FLOAT  Rayon de proximité en km pour le filtre PM (défaut : 0.2 = 200 m)
+    --max INT      Limite le nombre d'images téléchargées
 
 Sortie :
     dataset/images/{ville}_{YYYY-MM-DD_HH-MM-SS}/<nom_safe>.jpg
@@ -44,6 +52,67 @@ DELAI_S   = 0.5
 # ---------------------------------------------------------------------------
 # Étape 1 — Charger les intersections depuis le CSV
 # ---------------------------------------------------------------------------
+
+def charger_intersections_avec_pm(ville: str, rayon_km: float = 0.2) -> pd.DataFrame:
+    """
+    Charge les intersections de la ville et les filtre par proximité
+    aux Points de Mobilité (PM) générés via identification_PM.py.
+
+    Args:
+        ville    : Nom de la commune.
+        rayon_km : Rayon de sélection autour de chaque PM en km (défaut 200 m).
+
+    Returns:
+        DataFrame avec colonnes lat, lon, nom — intersections proches des PM.
+    """
+    from identification_PM import construire_dataframe_PM
+    from proximite import filtre_distance
+
+    # Génération des PM via les APIs gouvernementales + OSM
+    print(f"\nGénération des Points de Mobilité pour '{ville}' (APIs gouvernementales + OSM)...")
+    df_pm = construire_dataframe_PM(ville)
+
+    if df_pm.empty:
+        raise ValueError(
+            f"Aucun PM trouvé pour '{ville}'. Vérifiez la connexion internet."
+        )
+
+    # Sauvegarder le fichier PM dans data/raw/ pour réutilisation
+    chemin_pm = os.path.join(
+        os.path.dirname(__file__), "..", "data", "raw", f"PM_{ville}.xlsx"
+    )
+    df_pm.to_excel(chemin_pm, index=False)
+    print(f"PM sauvegardés : {chemin_pm}  ({len(df_pm)} lieux)\n")
+
+    # Charger toutes les intersections de la ville (colonnes lat, lon, nom)
+    df_inter = charger_intersections(ville)
+
+    # Renommer pour filtre_distance() qui attend latitude / longitude / intersection
+    df_inter_compat = df_inter.rename(columns={
+        "lat": "latitude",
+        "lon": "longitude",
+        "nom": "intersection",
+    })
+
+    # filtre_distance() attend aussi latitude/longitude dans df_lieux
+    df_lieux_pm = df_pm[["latitude", "longitude"]].copy()
+
+    print(f"Filtrage : intersections à moins de {rayon_km * 1000:.0f} m d'un PM...")
+    df_filtre = filtre_distance(df_lieux_pm, df_inter_compat, rayon_km=rayon_km)
+
+    print(
+        f"{len(df_filtre)} intersections retenues près des PM "
+        f"(sur {len(df_inter)} dans {ville}).\n"
+    )
+
+    # Renommer en retour vers le format attendu par generer_images()
+    return (
+        df_filtre
+        .rename(columns={"latitude": "lat", "longitude": "lon", "intersection": "nom"})
+        [["lat", "lon", "nom"]]
+        .reset_index(drop=True)
+    )
+
 
 def charger_intersections(ville: str, max_images: int = None) -> pd.DataFrame:
     """
@@ -193,19 +262,40 @@ if __name__ == "__main__":
         default=None,
         help="Nombre maximum d'images à télécharger (défaut : toutes)",
     )
+    parser.add_argument(
+        "--pm",
+        action="store_true",
+        help=(
+            "Filtre les intersections par proximité aux Points de Mobilité "
+            "(écoles, mairies, hôpitaux, supermarchés…) via identification_PM.py"
+        ),
+    )
+    parser.add_argument(
+        "--rayon",
+        type=float,
+        default=0.2,
+        help="Rayon de proximité en km pour le filtre PM (défaut : 0.2 = 200 m)",
+    )
     args = parser.parse_args()
 
     ville = args.ville
     print(f"=== Génération dataset YOLO — {ville} — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
 
-    print(f"Chargement des intersections de '{ville}'...")
     try:
-        df_intersections = charger_intersections(ville, max_images=args.max)
+        if args.pm:
+            print(f"Mode PM activé — rayon {args.rayon * 1000:.0f} m autour des Points de Mobilité")
+            df_intersections = charger_intersections_avec_pm(ville, rayon_km=args.rayon)
+        else:
+            print(f"Chargement des intersections de '{ville}'...")
+            df_intersections = charger_intersections(ville, max_images=args.max)
     except ValueError as e:
         print(f"\nERREUR : {e}")
         sys.exit(1)
 
-    print(f"{len(df_intersections)} intersections trouvées.\n")
+    if args.pm and args.max:
+        df_intersections = df_intersections.head(args.max)
+
+    print(f"{len(df_intersections)} intersections à télécharger.\n")
 
     dossier_out = nom_dossier_sortie(ville)
     print(f"Téléchargement des images vers :\n  {dossier_out}\n")

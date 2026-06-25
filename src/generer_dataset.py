@@ -110,18 +110,18 @@ def nom_dossier_sortie(ville: str) -> str:
 # Étape 3 — Nom de fichier sûr
 # ---------------------------------------------------------------------------
 
-def nom_fichier_safe(nom: str, index: int) -> str:
-    """Génère un nom de fichier valide à partir du nom d'intersection."""
-    safe = re.sub(r"[^\w\-]", "_", nom)
-    safe = re.sub(r"_+", "_", safe).strip("_")[:60]
-    return f"{index:03d}_{safe}.jpg"
+def nom_fichier_safe(ville: str, index: int) -> str:
+    """Génère un nom de fichier au format fichier_analyse_{ville}_{index}.jpg."""
+    ville_safe = re.sub(r"[^\w]", "_", ville)
+    ville_safe = re.sub(r"_+", "_", ville_safe).strip("_")
+    return f"fichier_analyse_{ville_safe}_{index:03d}.jpg"
 
 
 # ---------------------------------------------------------------------------
 # Étape 4 — Télécharger et sauvegarder les images
 # ---------------------------------------------------------------------------
 
-def generer_images(df: pd.DataFrame, dossier_out: str) -> pd.DataFrame:
+def generer_images(df: pd.DataFrame, dossier_out: str, ville: str) -> pd.DataFrame:
     """
     Télécharge une image IGN par intersection et la sauvegarde.
     Retourne le DataFrame enrichi avec le chemin du fichier image.
@@ -131,7 +131,7 @@ def generer_images(df: pd.DataFrame, dossier_out: str) -> pd.DataFrame:
     chemins = []
 
     for i, row in df.iterrows():
-        nom_fichier = nom_fichier_safe(row["nom"], i)
+        nom_fichier = nom_fichier_safe(ville, i)
         chemin_complet = os.path.join(dossier_out, nom_fichier)
 
         print(f"[{i+1}/{total}] {row['nom'][:50]} ...", end=" ", flush=True)
@@ -210,7 +210,7 @@ if __name__ == "__main__":
     dossier_out = nom_dossier_sortie(ville)
     print(f"Téléchargement des images vers :\n  {dossier_out}\n")
 
-    df_final = generer_images(df_intersections, dossier_out)
+    df_final = generer_images(df_intersections, dossier_out, ville)
     sauvegarder_index(df_final, dossier_out)
 
     ok = df_final["image"].notna().sum()

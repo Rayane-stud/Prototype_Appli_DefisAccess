@@ -27,6 +27,8 @@ SERVEURS_OVERPASS = [
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
 ]
 
+DOSSIER_OUTPUT = "data/output"
+
 def get_osm_area_id(ville: str):
     """
     Interroge Nominatim (OpenStreetMap) pour récupérer l'osm_area_id
@@ -214,12 +216,52 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
             intersections_brutes[index]["nb_passages_pietons"] += 1
 
     return pd.DataFrame(intersections_brutes)
+#_____________________________ test répartition___________________________________
+def analyser_repartition_passages(nom_commune: str) -> None:
+    """
+    Charge le CSV d'une commune et affiche la répartition
+    du nombre de passages piétons par intersection.
+    """
+    import os
+
+    nom_fichier = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
+
+    # --- Vérification que le fichier existe ---
+    if not os.path.exists(nom_fichier):
+        print(f" Aucun fichier trouvé pour '{nom_commune}'. Lancez d'abord le pipeline.")
+        return
+
+    df = pd.read_csv(nom_fichier, encoding="utf-8-sig")
+
+    if df.empty:
+        print(" Le fichier est vide.")
+        return
+
+    total_intersections = len(df)
+    total_passages      = df["nb_passages_pietons"].sum()
+
+    # --- Répartition : combien d'intersections ont 0, 1, 2, 3... passages ---
+    repartition = df["nb_passages_pietons"].value_counts().sort_index()
+
+    print(f"\n=== Répartition des passages piétons — {nom_commune} ===\n")
+    print(f"  Total intersections      : {total_intersections}")
+    print(f"  Total passages piétons   : {int(total_passages)}")
+    print(f"  Moyenne par intersection : {total_passages / total_intersections:.2f}\n")
+
+    print(f"  {'Nb passages':<15} {'Nb intersections':<20} {'%'}")
+    print(f"  {'-'*45}")
+
+    for nb_passages, nb_intersections in repartition.items():
+        pourcentage = nb_intersections / total_intersections * 100
+        barre = "█" * int(pourcentage / 2)
+        # barre visuelle proportionnelle au pourcentage
+        print(f"  {nb_passages:<15} {nb_intersections:<20} {pourcentage:5.1f}%  {barre}")
 
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
 
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "garches"  # à remplacer par la commune souhaitée
+    nom_commune = "Garches"  # à remplacer par la commune souhaitée
     print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
     
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
@@ -231,13 +273,15 @@ def main():
         
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-            nom_fichier_sortie = f"data/output/intersections_{nom_commune.lower()}_passages.csv"
+            nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
             df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
+            
             
             print(f"\n Traitement terminé avec succès !")
             print(f" Fichier sauvegardé sous : {nom_fichier_sortie}")
             print("\nAperçu des premières lignes générées :")
             print(df_resultat.head(10).to_string(index=False))
+            analyser_repartition_passages(nom_commune)
         else:
             print(" Échec de la génération du tableau de données.")
     else:

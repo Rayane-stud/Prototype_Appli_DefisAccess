@@ -257,6 +257,46 @@ def analyser_repartition_passages(nom_commune: str) -> None:
         # barre visuelle proportionnelle au pourcentage
         print(f"  {nb_passages:<15} {nb_intersections:<20} {pourcentage:5.1f}%  {barre}")
 
+#__________________________test de repartition sur le fichier xsls________________________
+
+def analyser_repartition_xlsx(chemin_fichier: str) -> pd.DataFrame:
+    """
+    Charge le fichier Excel et affiche la répartition
+    du nombre de traversées par intersection.
+    """
+    import os
+
+    if not os.path.exists(chemin_fichier):
+        print(f" Fichier introuvable : {chemin_fichier}")
+        return pd.DataFrame()
+
+    df = pd.read_excel(chemin_fichier)
+    print(f" {len(df)} lignes chargées")
+
+    # --- Regroupement par intersection (colonne "intersection") ---
+    repartition_par_intersection = df.groupby("intersection")["traversee"].count().reset_index()
+    repartition_par_intersection.columns = ["intersection", "nb_traversees"]
+    repartition_par_intersection = repartition_par_intersection.sort_values("nb_traversees", ascending=False)
+
+    # --- Affichage ---
+    total_intersections = len(repartition_par_intersection)
+    total_traversees    = repartition_par_intersection["nb_traversees"].sum()
+
+    print(f"\n=== Répartition des traversées par intersection ===\n")
+    print(f"  Total intersections      : {total_intersections}")
+    print(f"  Total traversées         : {total_traversees}")
+    print(f"  Moyenne par intersection : {total_traversees / total_intersections:.1f}\n")
+
+    repartition = repartition_par_intersection["nb_traversees"].value_counts().sort_index()
+    print(f"  {'Nb traversées':<16} {'Nb intersections':<20} {'%'}")
+    print(f"  {'-'*50}")
+    for nb, count in repartition.items():
+        pct = count / total_intersections * 100
+        barre = "█" * int(pct / 2)
+        print(f"  {nb:<16} {count:<20} {pct:5.1f}%  {barre}")
+
+    return repartition_par_intersection
+
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
 
 def main():
@@ -286,6 +326,7 @@ def main():
             print(" Échec de la génération du tableau de données.")
     else:
         print(" Impossible de poursuivre sans identifiant de zone valide.")
+    df_xlsx = analyser_repartition_xlsx("data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx")
 
 
 if __name__ == "__main__":

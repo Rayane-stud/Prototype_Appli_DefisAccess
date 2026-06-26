@@ -27,17 +27,22 @@ try:
 except ImportError:
     _YOLO_DISPONIBLE = False
 
-_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best (2).pt")
+_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best.pt")
 _MODELE_YOLO = None
 
 
 def _charger_modele():
+    # ETAPE 1 : on utilise une variable globale pour ne charger le modèle qu'une seule fois
+    # sans ça, YOLO rechargerait best.pt à chaque intersection ce qui prendrait plusieurs secondes
     global _MODELE_YOLO
     if _MODELE_YOLO is None:
+        # ETAPE 2 : on vérifie que la bibliothèque ultralytics est bien installée dans le venv
         if not _YOLO_DISPONIBLE:
             raise ImportError("ultralytics est requis : pip install ultralytics")
+        # ETAPE 3 : on vérifie que le fichier best.pt existe avant de tenter de le charger
         if not os.path.exists(_CHEMIN_MODELE):
             raise FileNotFoundError(f"Modèle introuvable : {_CHEMIN_MODELE}")
+        # ETAPE 4 : on charge le modèle et on le garde en mémoire pour les prochains appels
         _MODELE_YOLO = _YOLO(_CHEMIN_MODELE)
     return _MODELE_YOLO
 
@@ -76,11 +81,18 @@ def get_image_ign(
         requests.HTTPError : Erreur HTTP du serveur IGN.
         ValueError         : L'IGN a renvoyé une exception WMS au lieu d'une image.
     """
+    # ETAPE 1 : on calcule les décalages en degrés autour du point central
+    # 111 000 m = longueur approximative d'un degré de latitude sur Terre
+    # le cosinus corrige la longitude qui "rétrécit" en s'éloignant de l'équateur
     delta_lat = (emprise_m / 2.0) / 111_000.0
     delta_lon = (emprise_m / 2.0) / (111_000.0 * math.cos(math.radians(lat)))
 
+    # ETAPE 2 : on construit la bounding box au format "lat_min,lon_min,lat_max,lon_max"
+    # attendu par le service WMS de l'IGN en projection EPSG:4326
     bbox = f"{lat - delta_lat},{lon - delta_lon},{lat + delta_lat},{lon + delta_lon}"
 
+    # ETAPE 3 : on prépare les paramètres de la requête WMS
+    # ORTHOIMAGERY.ORTHOPHOTOS = couche des photos aériennes IGN (gratuite, France entière)
     params = {
         "SERVICE": "WMS",
         "REQUEST": "GetMap",
@@ -94,13 +106,17 @@ def get_image_ign(
         "FORMAT": "image/jpeg",
     }
 
+    # ETAPE 4 : on envoie la requête et on vérifie qu'on reçoit bien une image
+    # raise_for_status() lève une erreur si le serveur répond avec un code HTTP d'erreur (4xx, 5xx)
     reponse = requests.get(_IGN_WMS_URL, params=params, timeout=15)
     reponse.raise_for_status()
 
+    # ETAPE 5 : on vérifie que l'IGN n'a pas renvoyé une erreur XML déguisée en réponse 200
     content_type = reponse.headers.get("Content-Type", "")
     if "xml" in content_type or b"ServiceException" in reponse.content[:300]:
         raise ValueError(f"Erreur WMS IGN : {reponse.text[:400]}")
 
+    # ETAPE 6 : on convertit les bytes de la réponse en tableau numpy RGB utilisable par YOLO et OpenCV
     image_pil = Image.open(BytesIO(reponse.content)).convert("RGB")
     return np.array(image_pil)
 
@@ -109,12 +125,13 @@ def get_image_ign(
 # Étape 2a — Détection par YOLO (modèle entraîné)
 # ---------------------------------------------------------------------------
 
-def detect_passages_pietons_yolo(image: np.ndarray) -> dict:
+def detect_passages_pietons_yolo(image: np.ndarray, chemin_sauvegarde: str = None) -> dict:
     """
     Détecte les passages piétons avec le modèle YOLOv8 entraîné (best.pt).
 
     Args:
-        image : Tableau numpy RGB.
+        image             : Tableau numpy RGB.
+        chemin_sauvegarde : Chemin fichier pour sauvegarder l'image annotée (optionnel).
 
     Returns:
         dict avec les clés :
@@ -122,11 +139,22 @@ def detect_passages_pietons_yolo(image: np.ndarray) -> dict:
             nb_traversee (int)   – Nombre de passages piétons détectés.
             confiance (float)    – Confiance moyenne des détections (0 à 1).
     """
+    # ETAPE 1 : on charge le modèle YOLO (mis en cache après le premier appel)
     model = _charger_modele()
+    # ETAPE 2 : on lance la détection sur l'image — verbose=False désactive les logs YOLO dans le terminal
     results = model(image, verbose=False)
+    # ETAPE 3 : on récupère les bounding boxes détectées et on compte les passages piétons trouvés
     boxes = results[0].boxes
     nb = len(boxes)
+    # ETAPE 4 : on calcule la confiance moyenne (0 si aucune détection pour éviter une division par zéro)
     confiance = float(boxes.conf.mean()) if nb > 0 else 0.0
+
+    # ETAPE optionnelle : si un chemin est fourni, on sauvegarde l'image annotée
+    # results[0].plot() demande à YOLO de dessiner les bounding boxes directement sur l'image
+    # Image.fromarray() convertit le tableau numpy en image PIL pour pouvoir l'enregistrer
+    if chemin_sauvegarde:
+        Image.fromarray(results[0].plot()).save(chemin_sauvegarde)
+
     return {
         "detecte": nb > 0,
         "nb_traversee": nb,
@@ -331,6 +359,7 @@ def analyser_intersection(
     emprise_m: float = 80,
     taille_px: int = 512,
     sauvegarder_image: str = None,
+    sauvegarder_image_annotee: str = None,
 ) -> dict:
     """
     Télécharge l'image IGN d'une intersection et détecte les passages piétons.
@@ -347,6 +376,8 @@ def analyser_intersection(
             lat, lon, image_ok (bool), pp_detecte (bool),
             pp_confiance (float), pp_nb_bandes (int), erreur (str|None).
     """
+    # ETAPE 1 : on prépare le dictionnaire de résultat avec des valeurs par défaut
+    # image_ok=False et pp_detecte=False seront mis à jour si tout se passe bien
     resultat = {
         "lat": lat,
         "lon": lon,
@@ -358,24 +389,29 @@ def analyser_intersection(
     }
 
     try:
+        # ETAPE 2 : on télécharge l'orthophoto IGN centrée sur les coordonnées de l'intersection
         image = get_image_ign(lat, lon, emprise_m=emprise_m, taille_px=taille_px)
         resultat["image_ok"] = True
 
+        # ETAPE optionnelle : si un chemin est fourni, on sauvegarde l'image brute (sans annotations)
         if sauvegarder_image:
             Image.fromarray(image).save(sauvegarder_image)
 
-        # YOLO en priorité, OpenCV en fallback si le modèle est absent
+        # ETAPE 3 : on choisit la méthode de détection selon ce qui est disponible
+        # YOLO en priorité car plus précis — OpenCV en fallback si best.pt est absent
         if _YOLO_DISPONIBLE and os.path.exists(_CHEMIN_MODELE):
-            detection = detect_passages_pietons_yolo(image)
+            detection = detect_passages_pietons_yolo(image, chemin_sauvegarde=sauvegarder_image_annotee)
             resultat["pp_detecte"] = detection["detecte"]
             resultat["pp_confiance"] = detection["confiance"]
             resultat["nb_traversee"] = detection["nb_traversee"]
         else:
+            # fallback OpenCV : détection par bandes blanches parallèles (moins précis)
             detection = detect_passages_pietons_cv(image, emprise_m=emprise_m)
             resultat["pp_detecte"] = detection["detecte"]
             resultat["pp_confiance"] = detection["confiance"]
             resultat["nb_traversee"] = detection["nb_bandes"]
 
+    # ETAPE 4 : on capture les erreurs sans interrompre l'analyse des autres intersections
     except ImportError as e:
         resultat["erreur"] = f"Dépendance manquante : {e}"
     except requests.RequestException as e:
@@ -397,6 +433,7 @@ def analyser_toutes_intersections(
     emprise_m: float = 80,
     taille_px: int = 512,
     delai_s: float = 0.5,
+    dossier_images: str = None,
 ):
     """
     Analyse toutes les intersections d'un DataFrame pandas.
@@ -415,6 +452,11 @@ def analyser_toutes_intersections(
         Copie du DataFrame avec les colonnes ajoutées :
             pp_detecte, pp_confiance, pp_nb_bandes, pp_image_ok, pp_erreur.
     """
+    # ETAPE 1 : si un dossier de sauvegarde est demandé, on le crée maintenant
+    # exist_ok=True évite une erreur si le dossier existe déjà (ex : double exécution)
+    if dossier_images:
+        os.makedirs(dossier_images, exist_ok=True)
+
     resultats = []
     total = len(df)
 
@@ -423,8 +465,18 @@ def analyser_toutes_intersections(
         lon_i = float(ligne[col_lon])
         print(f"[{i}/{total}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
 
-        res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px)
+        # ETAPE 2 : on construit le chemin de l'image annotée pour cette intersection
+        # le nom inclut le numéro d'ordre (4 chiffres) et les coordonnées pour retrouver facilement l'image
+        # si pas de dossier demandé, chemin_img vaut None et aucune image n'est sauvegardée
+        chemin_img = (
+            os.path.join(dossier_images, f"{i:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+            if dossier_images else None
+        )
+        # ETAPE 3 : on analyse l'intersection et on passe le chemin image pour la sauvegarde annotée
+        res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+                                    sauvegarder_image_annotee=chemin_img)
 
+        # ETAPE 4 : on affiche le résultat dans le terminal pour suivre la progression
         if res["erreur"]:
             print(f"ERREUR : {res['erreur']}")
         else:
@@ -432,9 +484,12 @@ def analyser_toutes_intersections(
             print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
 
         resultats.append(res)
+        # ETAPE 5 : on attend entre chaque requête pour ne pas surcharger le serveur IGN
         if i < total:
             time.sleep(delai_s)
 
+    # ETAPE 6 : on ajoute les colonnes de résultats au DataFrame original
+    # df.copy() évite de modifier le tableau d'origine passé en argument
     df_sortie = df.copy()
     df_sortie["pp_detecte"]   = [r["pp_detecte"]   for r in resultats]
     df_sortie["pp_confiance"] = [r["pp_confiance"]  for r in resultats]

@@ -70,6 +70,8 @@ import json
 import requests
 import pandas as pd
 from geopy.distance import geodesic
+from export  import _creer_dossier_horodate
+import os
 
 # URL de l'API officielle geo.api.gouv.fr (INSEE/IGN)
 # Contrairement au fichier CSV brut de l'INSEE, c'est une vraie API
@@ -694,6 +696,7 @@ out center;
         # pause de 5 secondes entre chaque categorie
 
     # ---- DEUXIEME PASSE : on retente uniquement celles qui ont echoue ----
+    categories_echouees_2 = []
     if categories_echouees:
         print(f"\n    Deuxieme passe pour {len(categories_echouees)} categorie(s) en echec...")
         time.sleep(10)
@@ -701,9 +704,20 @@ out center;
         # Overpass se "reposer" et reinitialiser sa limite de frequence
 
         for categorie in categories_echouees:
+            succes = interroger_categorie(categorie)
+            if not succes:
+                categories_echouees_2.append(categorie)
+            time.sleep(5)
+
+    # ---- TROISIEME PASSE : derniere tentative pour celles qui ont encore echoue ----
+    if categories_echouees_2:
+        print(f"\n    Troisieme passe pour {len(categories_echouees_2)} categorie(s) en echec...")
+        time.sleep(15)
+        # pause plus longue avant la 3e tentative
+
+        for categorie in categories_echouees_2:
             interroger_categorie(categorie)
-            # on ne retient plus les echecs cette fois : si ca echoue
-            # encore, on abandonne definitivement cette categorie
+            # si ca echoue encore, on abandonne definitivement cette categorie
             time.sleep(5)
 
     print(f"\n   {len(resultats)} lieu(x) OSM trouve(s) au total")
@@ -783,12 +797,16 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     # ETAPE 4 : export en Excel
     nom_fichier = f"PM_{ville}.xlsx"
-    df.to_excel(nom_fichier, index=False)
-    print(f"Fichier exporte : {nom_fichier}")
+    dossier_export = _creer_dossier_horodate(dossier_sortie=".", ville=f"PM_{ville}")
+    chemin_fichier = os.path.join(dossier_export, nom_fichier)
+    df.to_excel(chemin_fichier, index=False)
+    print(f"Fichier exporté : {chemin_fichier}")
 
     return df
 
-def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx") -> str | None:
+
+
+def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dossier_sortie: str = ".") -> str | None:
  
     if df is None or df.empty:
         print(" DataFrame vide : aucun fichier Excel genere.")
@@ -796,10 +814,13 @@ def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx") -> 
  
     # index=False : on n'ecrit pas la colonne d'index du DataFrame
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
+    dossier_export = _creer_dossier_horodate(dossier_sortie, ville="PM")
+    chemin_fichier = os.path.join(dossier_export, nom_fichier)
     df.to_excel(nom_fichier, index=False)
  
     print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
     return nom_fichier
+
 
 
 #TESTES : ---------------------------------------------------------------------------------------------------------

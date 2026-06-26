@@ -1,0 +1,22 @@
+var _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgUprightPin = function SvgUprightPin(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    fill: "none",
+    ref: ref
+  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeWidth: 2,
+    d: "M12 18v4M9 11.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 16.24V17a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 11.76V8a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 1 0 0 4 1 1 0 0 1 1 1z"
+  })));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgUprightPin);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDE4VjIyTTkgMTEuNzZDOC45OTk4IDEyLjEzMjEgOC44OTU4MSAxMi40OTY3IDguNjk5NzIgMTIuODEzQzguNTAzNjMgMTMuMTI5MiA4LjIyMzIxIDEzLjM4NDQgNy44OSAxMy41NUw2LjExIDE0LjQ1QzUuNzc2NzkgMTQuNjE1NiA1LjQ5NjM3IDE0Ljg3MDggNS4zMDAyOCAxNS4xODdDNS4xMDQxOSAxNS41MDMzIDUuMDAwMiAxNS44Njc5IDUgMTYuMjRWMTdDNSAxNy4yNjUyIDUuMTA1MzYgMTcuNTE5NiA1LjI5Mjg5IDE3LjcwNzFDNS40ODA0MyAxNy44OTQ2IDUuNzM0NzggMTggNiAxOEgxOEMxOC4yNjUyIDE4IDE4LjUxOTYgMTcuODk0NiAxOC43MDcxIDE3LjcwNzFDMTguODk0NiAxNy41MTk2IDE5IDE3LjI2NTIgMTkgMTdWMTYuMjRDMTguOTk5OCAxNS44Njc5IDE4Ljg5NTggMTUuNTAzMyAxOC42OTk3IDE1LjE4N0MxOC41MDM2IDE0Ljg3MDggMTguMjIzMiAxNC42MTU2IDE3Ljg5IDE0LjQ1TDE2LjExIDEzLjU1QzE1Ljc3NjggMTMuMzg0NCAxNS40OTY0IDEzLjEyOTIgMTUuMzAwMyAxMi44MTNDMTUuMTA0MiAxMi40OTY3IDE1LjAwMDIgMTIuMTMyMSAxNSAxMS43NlY4QzE1IDcuNzM0NzggMTUuMTA1NCA3LjQ4MDQzIDE1LjI5MjkgNy4yOTI4OUMxNS40ODA0IDcuMTA1MzYgMTUuNzM0OCA3IDE2IDdDMTYuNTMwNCA3IDE3LjAzOTEgNi43ODkyOSAxNy40MTQyIDYuNDE0MjFDMTcuNzg5MyA2LjAzOTE0IDE4IDUuNTMwNDMgMTggNUMxOCA0LjQ2OTU3IDE3Ljc4OTMgMy45NjA4NiAxNy40MTQyIDMuNTg1NzlDMTcuMDM5MSAzLjIxMDcxIDE2LjUzMDQgMyAxNiAzSDhDNy40Njk1NyAzIDYuOTYwODYgMy4yMTA3MSA2LjU4NTc5IDMuNTg1NzlDNi4yMTA3MSAzLjk2MDg2IDYgNC40Njk1NyA2IDVDNiA1LjUzMDQzIDYuMjEwNzEgNi4wMzkxNCA2LjU4NTc5IDYuNDE0MjFDNi45NjA4NiA2Ljc4OTI5IDcuNDY5NTcgNyA4IDdDOC4yNjUyMiA3IDguNTE5NTcgNy4xMDUzNiA4LjcwNzExIDcuMjkyODlDOC44OTQ2NCA3LjQ4MDQzIDkgNy43MzQ3OCA5IDhWMTEuNzZaIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==";

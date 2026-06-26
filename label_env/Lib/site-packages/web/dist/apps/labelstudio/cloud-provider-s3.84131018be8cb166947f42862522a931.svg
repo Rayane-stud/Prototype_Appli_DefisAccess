@@ -1,0 +1,39 @@
+var _defs, _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgCloudProviderS3 = function SvgCloudProviderS3(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 428,
+    height: 512,
+    ref: ref
+  }, props), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("style", null, ".cloud-provider-s3_svg__cls-1{fill:#e25444}.cloud-provider-s3_svg__cls-1,.cloud-provider-s3_svg__cls-2,.cloud-provider-s3_svg__cls-3{fill-rule:evenodd}.cloud-provider-s3_svg__cls-2{fill:#7b1d13}.cloud-provider-s3_svg__cls-3{fill:#58150d}"))), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "m378 99-83 158 83 158 34-19V118Z",
+    className: "cloud-provider-s3_svg__cls-1"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "m378 99-166 19-84.5 139L212 396l166 19z",
+    className: "cloud-provider-s3_svg__cls-2"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "m43 99-27 12v292l27 12 169-158Z",
+    className: "cloud-provider-s3_svg__cls-3"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "m42.637 98.667 169.587 47.111v226.666L42.637 415.111z",
+    className: "cloud-provider-s3_svg__cls-1"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "m212.313 170.667-72.008-11.556 72.008-81.778 71.83 81.778Z",
+    className: "cloud-provider-s3_svg__cls-3"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "m284.143 159.111-71.919 11.733-71.919-11.733V77.333M212.313 342.222l-72.008 13.334 72.008 70.222 71.83-70.222Z",
+    className: "cloud-provider-s3_svg__cls-3"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    d: "m212 16-72 38v105l72.224-20.333ZM212.224 196.444l-71.919 7.823v104.838l71.919 8.228zM212.224 373.333 140.305 355.3v103.063L212.224 496z",
+    className: "cloud-provider-s3_svg__cls-2"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    d: "m284.143 355.3-71.919 18.038V496l71.919-37.637zM212.224 196.444l71.919 7.823v104.838l-71.919 8.228zM212 16l72 38v105l-72-20z",
+    className: "cloud-provider-s3_svg__cls-1"
+  })));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgCloudProviderS3);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MjgiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNDI4IDUxMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogI2UyNTQ0NDsKICAgICAgfQoKICAgICAgLmNscy0xLCAuY2xzLTIsIC5jbHMtMyB7CiAgICAgICAgZmlsbC1ydWxlOiBldmVub2RkOwogICAgICB9CgogICAgICAuY2xzLTIgewogICAgICAgIGZpbGw6ICM3YjFkMTM7CiAgICAgIH0KCiAgICAgIC5jbHMtMyB7CiAgICAgICAgZmlsbDogIzU4MTUwZDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzc4LDk5TDI5NSwyNTdsODMsMTU4LDM0LTE5VjExOFoiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0zNzgsOTlMMjEyLDExOCwxMjcuNSwyNTcsMjEyLDM5NmwxNjYsMTlWOTlaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDMsOTlMMTYsMTExVjQwM2wyNywxMkwyMTIsMjU3WiIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQyLjYzNyw5OC42NjdsMTY5LjU4Nyw0Ny4xMTFWMzcyLjQ0NEw0Mi42MzcsNDE1LjExMVY5OC42NjdaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMjEyLjMxMywxNzAuNjY3bC03Mi4wMDgtMTEuNTU2LDcyLjAwOC04MS43NzgsNzEuODMsODEuNzc4WiIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTI4NC4xNDMsMTU5LjExMWwtNzEuOTE5LDExLjczMy03MS45MTktMTEuNzMzVjc3LjMzMyIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTIxMi4zMTMsMzQyLjIyMmwtNzIuMDA4LDEzLjMzNCw3Mi4wMDgsNzAuMjIyLDcxLjgzLTcwLjIyMloiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik0yMTIsMTZMMTQwLDU0VjE1OWw3Mi4yMjQtMjAuMzMzWiIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTIxMi4yMjQsMTk2LjQ0NGwtNzEuOTE5LDcuODIzVjMwOS4xMDVsNzEuOTE5LDguMjI4VjE5Ni40NDRaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjEyLjIyNCwzNzMuMzMzTDE0MC4zMDUsMzU1LjNWNDU4LjM2M0wyMTIuMjI0LDQ5NlYzNzMuMzMzWiIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTI4NC4xNDMsMzU1LjNsLTcxLjkxOSwxOC4wMzhWNDk2bDcxLjkxOS0zNy42MzdWMzU1LjNaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjEyLjIyNCwxOTYuNDQ0bDcxLjkxOSw3LjgyM1YzMDkuMTA1bC03MS45MTksOC4yMjhWMTk2LjQ0NFoiLz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yMTIsMTZsNzIsMzhWMTU5bC03Mi0yMFYxNloiLz4KPC9zdmc+Cg==";

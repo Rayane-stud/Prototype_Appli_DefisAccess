@@ -1,1 +1,5 @@
 .venv/
+label_env/
+__pycache__/
+*.pyc
+*.pyo

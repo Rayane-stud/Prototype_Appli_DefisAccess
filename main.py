@@ -4,6 +4,7 @@ import os    # bibliothèque pour manipuler les chemins d'accès aux fichiers
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))  # ajoute le dossier src/ à la liste
                                                                        # des endroits où Python cherche ses modules
 # Import des modules du src
+from datetime import datetime
 import routage
 import nettoyage
 import proximite
@@ -61,8 +62,12 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     nomFich = identification_PM.exporter_PM_excel(
         identification_PM.construire_dataframe_PM(ville),
-        str(BASE_DIR / "data" / "raw" / (ville + "_lieux.xlsx"))
-    )
+        dossier_sortie=str(BASE_DIR / "data" / "raw"),
+        nom_fichier=f"{ville}_lieux.xlsx"
+   )
+    # None signifie que la ville n'a pas été trouvée sur geo.api.gouv.fr
+    if nomFich is None:
+        return None
     xlsx_path_lieux = Path(nomFich)  # on réutilise ce que la fonction a écrit
 
     BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
@@ -82,25 +87,86 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         #on rajoute pp ici
             proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)),nb_equipes, rdv_lat, rdv_long)
 
+    # ── Détection des passages piétons par YOLO ────────────────────────
+    # on construit le chemin du dossier de sauvegarde des images annotées
+    # le nom inclut la ville et la date au format français pour retrouver facilement l'analyse
+    dossier_images = str(
+        BASE_DIR / "data" / "output" / f"images_{ville}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
+    )
+    # YOLO analyse chaque intersection et sauvegarde les images avec les bounding boxes dans le dossier
+    # la colonne nb_traversees est ajoutée au tableau avec le nombre de passages piétons détectés
     tab_croisement = IA_PP.analyser_toutes_intersections(
-        tab_croisement, col_lat="latitude", col_lon="longitude"
+        tab_croisement, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
     )
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
-    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output", ville)
-
+    liste_chemins = export.export_final_equipes(
+        dict_route_par_equipe,
+        str(BASE_DIR / "data" / "output" / "fiches_equipes"),
+        ville
+    )
     return liste_chemins
+
+
+# ──────────────────────────────────────────────
+# VÉRIFICATION D'ANALYSE EXISTANTE
+# ──────────────────────────────────────────────
+
+def _normaliser(texte: str) -> str:
+    # Traite tirets et espaces comme identiques pour comparer les noms de villes
+    return texte.lower().replace("-", " ").replace("_", " ")
+
+
+
+def verifier_analyse_existante(ville: str) -> list:
+    """
+    Cherche si une analyse a déjà été faite pour cette ville.
+    Retourne la liste des dossiers de résultats existants (vide si aucun).
+    """
+    dossier_fiches = Path(__file__).parent / "data" / "output" / "fiches_equipes"
+    if not dossier_fiches.exists():
+        return []
+    ville_norm = _normaliser(ville)
+    # Un dossier par analyse, nommé "{ville}_{horodatage}"
+    # On normalise pour que "Rueil Malmaison" == "Rueil-Malmaison"
+    return sorted([
+        str(d) for d in dossier_fiches.iterdir()
+        if d.is_dir() and _normaliser(d.name).startswith(ville_norm + " ")
+    ])
 
 
 # Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
-    ville = input("Nom de la ville à analyser : ").strip()
-    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
-    
+    # Demande le nom de la ville à analyser — .strip() supprime les espaces accidentels en début/fin
+    while True:
+        ville = input("Nom de la ville à analyser : ").strip()
+
+        # ── Vérification d'une analyse déjà existante ──────────────────────
+        analyses_existantes = verifier_analyse_existante(ville)
+        if analyses_existantes:
+            print(f"\n  Une analyse existe déjà pour '{ville}' :")
+            for dossier in analyses_existantes:
+                print(f"   → {dossier}")
+            reponse = input("\nVoulez-vous refaire une nouvelle analyse ? (o/n) : ").strip().lower()
+            if reponse != "o":
+                print(f"\nConservation de l'analyse existante. Aucune nouvelle analyse lancée.")
+                exit(0)
+            print()
+
+        liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
+
+        # None = ville non trouvée sur geo.api.gouv.fr → message et on redemande
+        if liste_chemins is None:
+            print(f"\n❌ La ville '{ville}' est introuvable.")
+            print("   Vérifiez l'orthographe et réessayez (majuscules et tirets optionnels).\n")
+        continue
+
+        break  # ville valide, analyse terminée
+
     # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
-    print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
-    
+    print(f"\n Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
+
     # Parcourt la liste des chemins et affiche chacun d'eux
     for chemin in liste_chemins:
         print(f"   → {chemin}")  # affiche le chemin du fichier exporté

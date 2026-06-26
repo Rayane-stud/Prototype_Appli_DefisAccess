@@ -1,0 +1,3 @@
+Airplane
+Car
+passage_pieton

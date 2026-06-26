@@ -114,6 +114,47 @@ def charger_intersections_avec_pm(ville: str, rayon_km: float = 0.2) -> pd.DataF
     )
 
 
+def dedupliquer_proches(df: pd.DataFrame, seuil_m: float = None) -> pd.DataFrame:
+    """
+    Supprime les intersections trop proches les unes des autres.
+
+    Deux intersections séparées de moins de seuil_m produiraient des images
+    quasi-identiques (l'image couvre EMPRISE_M mètres de côté).
+    Par défaut on utilise EMPRISE_M / 2 comme seuil.
+
+    Args:
+        df      : DataFrame avec colonnes lat, lon.
+        seuil_m : Distance minimale en mètres entre deux intersections conservées.
+
+    Returns:
+        DataFrame sans doublons géographiques.
+    """
+    if seuil_m is None:
+        seuil_m = EMPRISE_M / 2  # 40 m par défaut
+
+    seuil_deg = seuil_m / 111_000.0  # approximation rapide en degrés
+
+    lignes = df.reset_index(drop=True).copy()
+    garder = [True] * len(lignes)
+
+    for i in range(len(lignes)):
+        if not garder[i]:
+            continue
+        for j in range(i + 1, len(lignes)):
+            if not garder[j]:
+                continue
+            dlat = abs(lignes.at[i, "lat"] - lignes.at[j, "lat"])
+            dlon = abs(lignes.at[i, "lon"] - lignes.at[j, "lon"])
+            if dlat < seuil_deg and dlon < seuil_deg:
+                garder[j] = False  # on garde i, on supprime j
+
+    avant = len(lignes)
+    lignes["_garder"] = garder
+    df_filtre = lignes[lignes["_garder"]].drop(columns=["_garder"]).reset_index(drop=True)
+    print(f"Déduplication : {avant} → {len(df_filtre)} intersections ({avant - len(df_filtre)} doublons supprimés)")
+    return df_filtre
+
+
 def charger_intersections(ville: str, max_images: int = None) -> pd.DataFrame:
     """
     Lit intersections-92.csv et retourne les intersections de la ville demandée.
@@ -154,6 +195,8 @@ def charger_intersections(ville: str, max_images: int = None) -> pd.DataFrame:
         .drop_duplicates(subset=["lat", "lon"])
         .reset_index(drop=True)
     )
+
+    df_ville = dedupliquer_proches(df_ville)
 
     if max_images:
         df_ville = df_ville.head(max_images)

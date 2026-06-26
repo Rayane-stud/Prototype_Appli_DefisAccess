@@ -9,6 +9,7 @@ import nettoyage
 import proximite
 import export
 import  identification_PM
+import IA_PP
 import numpy as np
 
 from pathlib import Path
@@ -84,21 +85,21 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         nb_equipes, rdv_lat, rdv_long
     )
 
-    # ⚠️ Provisoire — nombre de traversées aléatoire, à remplacer
-    tab_croisement["nb_traversees"] = np.random.randint(1, 5, size=len(tab_croisement))
+    tab_croisement = IA_PP.analyser_toutes_intersections(
+        tab_croisement, col_lat="latitude", col_lon="longitude"
+    )
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
-    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output")
+    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output", ville)
 
     return liste_chemins
 
 
 # Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
-    
-    # Lance le pipeline complet avec les constantes définies en haut du fichier
-    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville = "Garches")
+    ville = input("Nom de la ville à analyser : ").strip()
+    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
     
     # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
     print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")

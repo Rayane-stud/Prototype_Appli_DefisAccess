@@ -1,7 +1,7 @@
 """
 FICHIER : identifier_PM_hybride.py
  
-# BUT : Identifier automatiquement les Points de Mesure (PM) d'une ville
+# BUT : automatiquement les Points de Mesure (PM) d'une ville
       en combinant deux sources de données gratuites :
         1. Sources gouvernementales officielles (data.gouv.fr, data.education.gouv.fr)
            pour les lieux les plus importants (écoles, mairies, hôpitaux, pharmacies)
@@ -816,7 +816,7 @@ def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dos
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
     dossier_export = _creer_dossier_horodate(dossier_sortie, ville="PM")
     chemin_fichier = os.path.join(dossier_export, nom_fichier)
-    df.to_excel(nom_fichier, index=False)
+    df.to_excel(chemin_fichier, index=False)
  
     print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
     return nom_fichier

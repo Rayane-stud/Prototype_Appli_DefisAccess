@@ -46,6 +46,7 @@ remplir les questionnaires
 import os
 import pandas as pd
 import numpy as np
+from datetime import datetime
 
 
 
@@ -131,9 +132,33 @@ def vers_xlsx(df, id_equipe, dossier_sortie, ville="Garches"):
     return chemin_fichier
 
 
+def _creer_dossier_horodate(dossier_sortie, ville="Garches"):
+    # ETAPE 1 : on génère un horodatage au format YYYYMMDD_HHMMSS
+    # ex : "20250625_143022" → lisible, triable alphabétiquement, sans caractères spéciaux
+    horodatage = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    # ETAPE 2 : on construit le nom du sous-dossier
+    # ex : "Garches_20250625_143022"
+    nom_dossier = f"{ville}_{horodatage}"
+
+    # ETAPE 3 : on construit le chemin complet et on crée le dossier
+    # exist_ok=True évite une erreur si le dossier existe déjà (normalement impossible
+    # avec l'horodatage à la seconde, mais bonne pratique défensive)
+    chemin_dossier = os.path.join(dossier_sortie, nom_dossier)
+    os.makedirs(chemin_dossier, exist_ok=True)
+
+    return chemin_dossier
+
+
+
+
+
+
 # FONCTION : exporter_toutes_equipes() -----------------------------------------
 
 def exporter_toutes_equipes(dict_equipes, dossier_sortie, ville="Garches"):
+    
+    dossier_export = _creer_dossier_horodate(dossier_sortie, ville)
     # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
     liste_chemins = []
 
@@ -145,7 +170,7 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie, ville="Garches"):
 
         # ETAPE 3 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin
-        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie, ville)
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_export, ville)
 
         # ETAPE 4 : on ajoute le chemin du fichier genere a la liste
         liste_chemins.append(chemin)
@@ -158,6 +183,8 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie, ville="Garches"):
 # FONCTION : export_final_equipes() --------------------------------------------
 
 def export_final_equipes(dict_equipes, dossier_sortie, ville="Garches"):
+
+    dossier_export = _creer_dossier_horodate(dossier_sortie, ville)
     # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
     liste_chemins = []
 
@@ -179,7 +206,7 @@ def export_final_equipes(dict_equipes, dossier_sortie, ville="Garches"):
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin
-        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie, ville)
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_export, ville)
 
         # ETAPE 5 : on ajoute le chemin du fichier genere a la liste
         liste_chemins.append(chemin)

@@ -22,6 +22,7 @@ import pandas as pd
 import csv
 from geopy.distance import geodesic
 
+import identification_PP as pp
 from nettoyage import charger_intersections
 from proximite import fusion_croisement 
 
@@ -108,34 +109,42 @@ def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
 
     for i in inter:
         nb=0
+        x=0
         for j in pp:
             dist= geodesic((i["latitude"], i["longitude"])
                     ,(j["latitude"], j["longitude"])).meters
 
-
             if dist<=rayon:
                 nb+=1
+                x+=1
+                i["latitude_pp"+str(x)]=j["latitude"]
+                i["longitude_pp"+str(x)]=j["longitude"]
         i["nb_pp"]=nb
-        i["latitude_pp"]=j["latitude"]
-        i["longitude_pp"]=j["longitude"]
     
     inter = pd.DataFrame(inter)
     inter= inter[inter["nb_pp"] != 0]
+
+    colonnes = ["latitude", "longitude", "intersection", "Ville/Commune", "nb_pp"]
+    for col in inter.columns:
+        if col not in colonnes:
+            colonnes.append(col)
+    inter = inter[colonnes]
 
     return inter
 
 
 Ville= input("Entrez le nom de la ville : ")
-nomF = input("Entrez le nom du fichier (sans l'extension .csv) : ")
-path="data/raw/source_pp/accidents-corporels-de-la-circulation-routiere fichier entier.csv"
+#nomF = input("Entrez le nom du fichier (sans l'extension .csv) : ")
+#path="data/raw/source_pp/accidents-corporels-de-la-circulation-routiere fichier entier.csv"
 csv_path = "data/raw/intersections-92.csv"
 intersections=charger_intersections(csv_path, Ville)
 
-tableau = charger_accidents(path, Ville)
-print (tableau.head)
-nettoyer=fusion_croisement(intersections)
-final=comparer_coordonnees(tableau, nettoyer)
+final=pp.main(Ville,intersections)
+#tableau = charger_accidents(path, Ville)
+#print (tableau.head)
+#nettoyer=fusion_croisement(intersections)
+#final=comparer_coordonnees(tableau, nettoyer)
 
 final.to_csv(
-    "data/output/passages_pietons_accidents"+Ville+".csv",
+    "data/output/passages_pietons"+Ville+".csv",
     sep=";", index=False, encoding="utf-8-sig")

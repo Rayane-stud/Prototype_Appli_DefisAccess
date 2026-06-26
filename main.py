@@ -79,11 +79,8 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     # ── Calcul de proximité et assignation aux équipes ─────────────────
     tab_croisement = proximite.assigner_equipes(
-        proximite.fusion_croisement(
-            proximite.filtre_distance(tableau_villes, tableau_nettoye)
-        ),
-        nb_equipes, rdv_lat, rdv_long
-    )
+        #on rajoute pp ici
+            proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)),nb_equipes, rdv_lat, rdv_long)
 
     tab_croisement = IA_PP.analyser_toutes_intersections(
         tab_croisement, col_lat="latitude", col_lon="longitude"

@@ -32,6 +32,12 @@ SERVEURS_OVERPASS = [
 
 DOSSIER_OUTPUT = "data/output"
 
+
+"""
+------------------------------------------------------------------------------------------
+METHODE OSM:
+"""
+
 def get_osm_area_id(ville: str):
     """
     Interroge Nominatim (OpenStreetMap) pour récupérer l'osm_area_id
@@ -301,7 +307,10 @@ def analyser_repartition_xlsx(chemin_fichier: str) -> pd.DataFrame:
     return repartition_par_intersection
 
 
-
+"""
+------------------------------------------------------------------------------------------
+METHODE PP_ACCIDENTS:
+"""
 
 def charger_accidents(path, ville):
     # charger le fichier CSV
@@ -386,6 +395,7 @@ def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
 
     for i in inter:
         nb=0
+        x=0
         for j in pp:
             dist= geodesic((i["latitude"], i["longitude"])
                     ,(j["latitude"], j["longitude"])).meters
@@ -393,25 +403,127 @@ def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
 
             if dist<=rayon:
                 nb+=1
+                x+=1
+                i["latitude_pp"+str(x)]=j["latitude"]
+                i["longitude_pp"+str(x)]=j["longitude"]
         i["nb_pp"]=nb
-        i["latitude_pp"]=j["latitude"]
-        i["longitude_pp"]=j["longitude"]
     
     inter = pd.DataFrame(inter)
     inter= inter[inter["nb_pp"] != 0]
 
+    colonnes = ["latitude", "longitude", "intersection", "Ville/Commune", "nb_pp"]
+    for col in inter.columns:
+        if col not in colonnes:
+            colonnes.append(col)
+    inter = inter[colonnes]
+
     return inter
 
 
+"""
+------------------------------------------------------------------------------------------
+METHODE DE LIAISONS:
+"""
+#a rajouter la ou les fonctions qui trie les pp entre ppaccident et pp OSM
+
+def trie_intersections(final_accident,df_resultat, rayon=20):
+    #On trie ici seulement les intersections
+    df_acc=final_accident.copy().to_dict("records")
+    df_osm=df_resultat.copy().to_dict("records")
+    final_pp = []
+
+    for i in df_osm:
+        trouve= False
+
+        for j in df_acc:
+            dist= geodesic((i["latitude"], i["longitude"])
+                    ,(j["latitude"], j["longitude"])).meters
+
+            if dist<=rayon:
+                nb=comparer_passages(i,j)
+                
+                final_pp.append({
+                "latitude": i["latitude"],
+                "longitude": i["longitude"],
+                "nb_pp": nb
+                })
+            
+            j["fusionner"] = True
+            trouve = True 
+            break
+
+        if not trouve:
+            final_pp.append({
+                "latitude": i["latitude"],
+                "longitude": i["longitude"],
+                "nb_pp": nb
+                })
+    
+    for j in df_acc:
+        if not j["fusionner"]:
+            final_pp.append({
+                "latitude": j["latitude"],
+                "longitude": j["longitude"],
+                "nb_pp": j["nb_pp"]
+            })
+   
+    return pd.DataFrame(final_pp)
+
+
+def comparer_passages(inter_osm, inter_accident, rayon=5):
+
+    passages_uniques = []
+
+    # Ajout des passages OSM
+    for i in range(1, inter_osm["nb_passages_pietons"] + 1):
+
+        passages_uniques.append((
+            inter_osm[f"latitude_pp{i}"],
+            inter_osm[f"longitude_pp{i}"]
+        ))
+
+    # Comparaison avec les passages Accidents
+    for i in range(1, inter_accident["nb_pp"] + 1):
+
+        lat = inter_accident[f"latitude_pp{i}"]
+        lon = inter_accident[f"longitude_pp{i}"]
+
+        double = False
+
+        for lat2, lon2 in passages_uniques:
+
+            dist = geodesic((lat, lon), (lat2, lon2)).meters
+
+            if dist <= rayon:
+                double = True
+                break
+
+        if not double:
+            passages_uniques.append((lat, lon))
+
+    return len(passages_uniques)
+
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
 
-def main():
-    # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "Garches"  # à remplacer par la commune souhaitée
-    print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
+
+def main(Ville, intersections):
     
+    # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
+    print(f"--- Démarrage du traitement pour la commune : {Ville} ---")
+    
+    """
+    CODE PP_ACCIDENTS:
+    """
+    path="data/raw/source_pp/accidents-corporels-de-la-circulation-routiere fichier entier.csv"
+    tableau_accident = charger_accidents(path, Ville)
+    final_accident=comparer_coordonnees(tableau_accident, intersections)
+    
+    
+    """
+    CODE OSM :
+    """
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
-    id_zone = get_osm_area_id(nom_commune)
+    id_zone = get_osm_area_id(Ville)
     
     if id_zone:
         # Étape 2 : Extraction et calcul topologique des passages par carrefour
@@ -419,7 +531,7 @@ def main():
         
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-            nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
+            nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{Ville.lower()}_passages.csv"
             df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
             
             
@@ -427,12 +539,20 @@ def main():
             print(f" Fichier sauvegardé sous : {nom_fichier_sortie}")
             print("\nAperçu des premières lignes générées :")
             print(df_resultat.head(10).to_string(index=False))
-            analyser_repartition_passages(nom_commune)
+            analyser_repartition_passages(Ville)
         else:
             print(" Échec de la génération du tableau de données.")
     else:
         print(" Impossible de poursuivre sans identifiant de zone valide.")
+    
     df_xlsx = analyser_repartition_xlsx("data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx")
+
+    """
+    CODE DE LIAISON DES 2 METHODES:
+    """
+    df_final=trie_intersections(final_accident,df_resultat)
+
+    return df_final
 
 
 if __name__ == "__main__":

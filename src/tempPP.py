@@ -114,6 +114,7 @@ def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
             dist= geodesic((i["latitude"], i["longitude"])
                     ,(j["latitude"], j["longitude"])).meters
 
+
             if dist<=rayon:
                 nb+=1
                 x+=1

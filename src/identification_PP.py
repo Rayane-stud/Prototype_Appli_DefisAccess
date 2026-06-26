@@ -223,6 +223,11 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
         distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
         if index < len(intersections_brutes):
             intersections_brutes[index]["nb_passages_pietons"] += 1
+            
+            valeur = intersections_brutes[index]["nb_passages_pietons"]
+            intersections_brutes[index]["latitude_pp"+str(valeur)]=passage["lat"]
+            intersections_brutes[index]["longitude_pp"+str(valeur)]=passage["lon"]
+
 
     return pd.DataFrame(intersections_brutes)
 #_____________________________ test répartition___________________________________

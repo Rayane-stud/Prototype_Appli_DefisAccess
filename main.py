@@ -4,6 +4,7 @@ import os    # bibliothèque pour manipuler les chemins d'accès aux fichiers
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))  # ajoute le dossier src/ à la liste
                                                                        # des endroits où Python cherche ses modules
 # Import des modules du src
+from datetime import datetime
 import routage
 import nettoyage
 import proximite
@@ -85,8 +86,16 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         nb_equipes, rdv_lat, rdv_long
     )
 
+    # ── Détection des passages piétons par YOLO ────────────────────────
+    # on construit le chemin du dossier de sauvegarde des images annotées
+    # le nom inclut la ville et la date au format français pour retrouver facilement l'analyse
+    dossier_images = str(
+        BASE_DIR / "data" / "output" / f"images_{ville}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
+    )
+    # YOLO analyse chaque intersection et sauvegarde les images avec les bounding boxes dans le dossier
+    # la colonne nb_traversees est ajoutée au tableau avec le nombre de passages piétons détectés
     tab_croisement = IA_PP.analyser_toutes_intersections(
-        tab_croisement, col_lat="latitude", col_lon="longitude"
+        tab_croisement, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
     )
 
     # ── Calcul des routes optimales et export ──────────────────────────
@@ -98,6 +107,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
 # Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
+    # Demande le nom de la ville à analyser — .strip() supprime les espaces accidentels en début/fin
     ville = input("Nom de la ville à analyser : ").strip()
     liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
     

@@ -27,7 +27,7 @@ try:
 except ImportError:
     _YOLO_DISPONIBLE = False
 
-_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best (2).pt")
+_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best.pt")
 _MODELE_YOLO = None
 
 

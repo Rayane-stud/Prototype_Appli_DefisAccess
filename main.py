@@ -64,6 +64,9 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         identification_PM.construire_dataframe_PM(ville),
         str(BASE_DIR / "data" / "raw" / (ville + "_lieux.xlsx"))
     )
+    # None signifie que la ville n'a pas été trouvée sur geo.api.gouv.fr
+    if nomFich is None:
+        return None
     xlsx_path_lieux = Path(nomFich)  # on réutilise ce que la fonction a écrit
 
     BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
@@ -127,24 +130,34 @@ def verifier_analyse_existante(ville: str) -> list:
 # Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
     # Demande le nom de la ville à analyser — .strip() supprime les espaces accidentels en début/fin
-    ville = input("Nom de la ville à analyser : ").strip()
+    while True:
+        ville = input("Nom de la ville à analyser : ").strip()
 
-    # ── Vérification d'une analyse déjà existante ──────────────────────
-    analyses_existantes = verifier_analyse_existante(ville)
-    if analyses_existantes:
-        print(f"\n⚠️  Une analyse existe déjà pour '{ville}' :")
-        for dossier in analyses_existantes:
-            print(f"   → {dossier}")
-        reponse = input("\nVoulez-vous refaire une nouvelle analyse ? (o/n) : ").strip().lower()
-        if reponse != "o":
-            print(f"\n✅ Conservation de l'analyse existante. Aucune nouvelle analyse lancée.")
-            exit(0)
-        print()  # ligne vide pour aérer avant de lancer l'analyse
+        # ── Vérification d'une analyse déjà existante ──────────────────────
+        analyses_existantes = verifier_analyse_existante(ville)
+        if analyses_existantes:
+            print(f"\n  Une analyse existe déjà pour '{ville}' :")
+            for dossier in analyses_existantes:
+                print(f"   → {dossier}")
+            reponse = input("\nVoulez-vous refaire une nouvelle analyse ? (o/n) : ").strip().lower()
+            if reponse != "o":
+                print(f"\nConservation de l'analyse existante. Aucune nouvelle analyse lancée.")
+                exit(0)
+            print()
 
-    liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
+        liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
+
+        # None = ville non trouvée sur geo.api.gouv.fr → on redemande
+        if liste_chemins is None:
+            print(f"\n La ville '{ville}' n'a pas été trouvée.")
+            print("   Vérifiez l'orthographe (ex: 'Rueil-Malmaison', 'Issy-les-Moulineaux').")
+            print("   Veuillez réessayer.\n")
+            continue
+
+        break  # ville valide, analyse terminée
 
     # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
-    print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
+    print(f"\n Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
 
     # Parcourt la liste des chemins et affiche chacun d'eux
     for chemin in liste_chemins:

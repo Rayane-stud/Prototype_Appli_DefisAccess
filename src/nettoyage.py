@@ -1,5 +1,201 @@
 import pandas as pd
-import csv
+import requests
+
+# ---------------------------------------------------------------------------
+# Sources en ligne pour les intersections
+# ---------------------------------------------------------------------------
+
+_OSM_BASE = "https://osm13.openstreetmap.fr/~cquest/osm_poi/intersections-geojson"
+_DATAGOUV_API = "https://www.data.gouv.fr/api/1/datasets/intersections-des-rues-et-routes-de-france/"
+
+
+def _get_dep_code(ville: str) -> str:
+    """
+    Retourne le code département (ex: '92') pour une ville via geo.api.gouv.fr.
+    Retourne None si la ville est introuvable.
+    """
+    try:
+        resp = requests.get(
+            "https://geo.api.gouv.fr/communes",
+            params={"nom": ville, "fields": "codeDepartement", "limit": 5},
+            timeout=10,
+        )
+        resp.raise_for_status()
+        communes = resp.json()
+        if not communes:
+            return None
+        # Préférer la correspondance exacte sur le nom
+        ville_low = ville.lower()
+        for c in communes:
+            if c.get("nom", "").lower() == ville_low:
+                return c.get("codeDepartement")
+        # Sinon, prendre le premier résultat
+        return communes[0].get("codeDepartement")
+    except Exception as e:
+        print(f"  [geo.api.gouv.fr] Erreur : {e}")
+        return None
+
+
+def _telecharger_geojson_osm(dep_code: str) -> dict:
+    """
+    Tente de télécharger le GeoJSON du département depuis le serveur OSM.
+    Retourne le dict GeoJSON ou None en cas d'échec.
+    """
+    # Le serveur utilise le code à 2 chiffres : "92", "01", "2A"…
+    dep = dep_code.zfill(2)
+    url = f"{_OSM_BASE}/{dep}.geojson"
+    try:
+        print(f"  [OSM] {url}")
+        resp = requests.get(url, timeout=120)
+        if resp.status_code == 404:
+            print(f"  [OSM] Fichier introuvable (404) pour le département {dep}")
+            return None
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as e:
+        print(f"  [OSM] Échec : {e}")
+        return None
+
+
+def _telecharger_geojson_datagouv(dep_code: str) -> dict:
+    """
+    Fallback : cherche la ressource du département dans le dataset data.gouv.fr
+    et la télécharge. Retourne le dict GeoJSON ou None.
+    """
+    dep = dep_code.zfill(2)
+    try:
+        # 1. Récupérer la liste des ressources du dataset
+        resp = requests.get(_DATAGOUV_API, timeout=15)
+        resp.raise_for_status()
+        dataset = resp.json()
+
+        # 2. Chercher la ressource dont le titre contient le code département
+        for resource in dataset.get("resources", []):
+            titre = resource.get("title", "").lower()
+            # Patterns courants : "92", "dep92", "dep-92", "intersections-92"
+            if (
+                f"-{dep}" in titre
+                or f"_{dep}" in titre
+                or titre.endswith(dep)
+                or f"dep{dep}" in titre
+            ):
+                url = resource.get("url", "")
+                if not url:
+                    continue
+                print(f"  [data.gouv.fr] {url}")
+                r2 = requests.get(url, timeout=180)
+                r2.raise_for_status()
+                return r2.json()
+
+        print(f"  [data.gouv.fr] Aucune ressource trouvée pour le département {dep}")
+        return None
+
+    except Exception as e:
+        print(f"  [data.gouv.fr] Échec : {e}")
+        return None
+
+
+def _geojson_vers_dataframe(geojson: dict, ville: str) -> pd.DataFrame:
+    """
+    Convertit un GeoJSON FeatureCollection d'intersections en DataFrame,
+    filtré sur la ville demandée.
+
+    Colonnes retournées : latitude, longitude, intersection, Ville/Commune
+    (compatible avec le reste du pipeline).
+    """
+    features = geojson.get("features", [])
+    ville_low = ville.lower()
+    lignes = []
+
+    for feat in features:
+        props = feat.get("properties", {})
+        context = props.get("context", "")
+        nom = props.get("name", "")
+
+        # Le champ context contient le nom de la ville, ex: "Garches, Hauts-de-Seine"
+        if ville_low not in context.lower():
+            continue
+
+        coords = feat.get("geometry", {}).get("coordinates", [])
+        if len(coords) < 2:
+            continue
+
+        lignes.append({
+            "longitude": float(coords[0]),
+            "latitude": float(coords[1]),
+            "intersection": nom,
+            "Ville/Commune": context,
+        })
+
+    if not lignes:
+        raise ValueError(
+            f"Aucune intersection trouvée pour '{ville}' dans le GeoJSON téléchargé.\n"
+            f"Vérifiez l'orthographe du nom de ville (doit correspondre au champ 'context')."
+        )
+
+    df = pd.DataFrame(lignes)
+    df = df.drop_duplicates(subset=["longitude", "latitude"]).reset_index(drop=True)
+    return df
+
+
+
+
+
+
+"""fonction qui telcharge les intersections d'une ville depuis internet et retourne un DataFrame"""
+
+
+
+
+def telecharger_intersections(ville: str) -> pd.DataFrame:
+    """
+    Télécharge les intersections d'une ville depuis internet et retourne un DataFrame.
+
+    Sources essayées dans l'ordre :
+      1. https://osm13.openstreetmap.fr/~cquest/osm_poi/intersections-geojson/{dep}.geojson
+      2. https://www.data.gouv.fr/datasets/intersections-des-rues-et-routes-de-france
+
+    Args:
+        ville : Nom de la ville (ex: "Garches", "Levallois-Perret").
+
+    Returns:
+        DataFrame avec colonnes latitude, longitude, intersection, Ville/Commune.
+
+    Raises:
+        ValueError  : Ville introuvable ou aucune intersection dans le fichier.
+        RuntimeError: Aucune source n'a pu être téléchargée.
+    """
+    print(f"Recherche du département pour '{ville}'...")
+    dep_code = _get_dep_code(ville)
+    if dep_code is None:
+        raise ValueError(
+            f"Ville '{ville}' introuvable via geo.api.gouv.fr.\n"
+            f"Vérifiez l'orthographe (ex: 'Levallois-Perret', 'Boulogne-Billancourt')."
+        )
+    print(f"  → Département : {dep_code}")
+
+    # Tentative 1 : serveur OSM
+    geojson = _telecharger_geojson_osm(dep_code)
+
+    # Tentative 2 : data.gouv.fr en fallback
+    if geojson is None:
+        print("  → Tentative sur data.gouv.fr...")
+        geojson = _telecharger_geojson_datagouv(dep_code)
+
+    if geojson is None:
+        dep = dep_code.zfill(2)
+        raise RuntimeError(
+            f"Impossible de télécharger les intersections pour le département {dep_code}.\n"
+            f"Sources essayées :\n"
+            f"  - {_OSM_BASE}/{dep}.geojson\n"
+            f"  - {_DATAGOUV_API} (ressource département {dep})"
+        )
+
+    print(f"  → GeoJSON téléchargé ({len(geojson.get('features', []))} features), filtrage sur '{ville}'...")
+    return _geojson_vers_dataframe(geojson, ville)
+
+
+# ---------------------------------------------------------------------------
 
 def charger_intersections(path, ville):
     # charger le fichier CSV

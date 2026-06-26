@@ -91,7 +91,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     # on construit le chemin du dossier de sauvegarde des images annotées
     # le nom inclut la ville et la date au format français pour retrouver facilement l'analyse
     dossier_images = str(
-        BASE_DIR / "data" / "output" / f"images_{ville}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
+        BASE_DIR / "data" / "output" / "images_pp" / f"images_{ville}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
     )
     # YOLO analyse chaque intersection et sauvegarde les images avec les bounding boxes dans le dossier
     # la colonne nb_traversees est ajoutée au tableau avec le nombre de passages piétons détectés
@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
         # None = ville non trouvée sur geo.api.gouv.fr → message et on redemande
         if liste_chemins is None:
-            print(f"\n❌ La ville '{ville}' est introuvable.")
+            print(f"\n La ville '{ville}' est introuvable.")
             print("   Vérifiez l'orthographe et réessayez (majuscules et tirets optionnels).\n")
         continue
 

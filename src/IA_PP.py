@@ -433,7 +433,7 @@ def analyser_toutes_intersections(
     emprise_m: float = 80,
     taille_px: int = 512,
     delai_s: float = 0.5,
-    dossier_images: str = None,
+    dossier_images: str = None, # Dossier de stockage de l'image annotée
 ):
     """
     Analyse toutes les intersections d'un DataFrame pandas.

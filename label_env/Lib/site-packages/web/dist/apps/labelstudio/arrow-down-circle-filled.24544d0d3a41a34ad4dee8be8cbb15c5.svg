@@ -1,0 +1,28 @@
+var _g, _defs;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgArrowDownCircleFilled = function SvgArrowDownCircleFilled(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 34,
+    height: 34,
+    fill: "none",
+    ref: ref
+  }, props), _g || (_g = /*#__PURE__*/React.createElement("g", {
+    clipPath: "url(#arrow-down-circle-filled_svg__a)"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    fillRule: "evenodd",
+    d: "M34 17c0 9.389-7.611 17-17 17S0 26.389 0 17 7.611 0 17 0s17 7.611 17 17m-10.293.707a1 1 0 1 0-1.414-1.414L18 20.586V11a1 1 0 1 0-2 0v9.586l-4.293-4.293a1 1 0 1 0-1.414 1.414l6 6a1 1 0 0 0 1.414 0z",
+    clipRule: "evenodd"
+  }))), _defs || (_defs = /*#__PURE__*/React.createElement("defs", null, /*#__PURE__*/React.createElement("clipPath", {
+    id: "arrow-down-circle-filled_svg__a"
+  }, /*#__PURE__*/React.createElement("path", {
+    fill: "#fff",
+    d: "M0 0h34v34H0z"
+  })))));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgArrowDownCircleFilled);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNCAzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzQ4NTFfMTAwOHopIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNCAxN0MzNCAyNi4zODg4IDI2LjM4ODggMzQgMTcgMzRDNy42MTExNiAzNCAxLjIzMTJlLTA2IDI2LjM4ODggMCAxN0MtMS4yMzEyZS0wNiA3LjYxMTE2IDcuNjExMTYgMS4yMzEyZS0wNiAxNyAwQzI2LjM4ODggLTEuMjMxMmUtMDYgMzQgNy42MTExNiAzNCAxN1pNMjMuNzA3IDE3LjcwN0MyNC4wOTc2IDE3LjMxNjUgMjQuMDk3NiAxNi42ODM1IDIzLjcwNyAxNi4yOTNDMjMuMzE2NSAxNS45MDI0IDIyLjY4MzUgMTUuOTAyNCAyMi4yOTMgMTYuMjkzTDE4IDIwLjU4NTlWMTFDMTggMTAuNDQ3NyAxNy41NTIzIDEwIDE3IDEwQzE2LjQ0NzcgMTAgMTYgMTAuNDQ3NyAxNiAxMUwxNiAyMC41ODU5TDExLjcwNyAxNi4yOTNDMTEuMzE2NSAxNS45MDI0IDEwLjY4MzUgMTUuOTAyNCAxMC4yOTMgMTYuMjkzQzkuOTAyNDQgMTYuNjgzNSA5LjkwMjQ0IDE3LjMxNjUgMTAuMjkzIDE3LjcwN0wxNi4yOTMgMjMuNzA3QzE2LjY4MzUgMjQuMDk3NiAxNy4zMTY1IDI0LjA5NzYgMTcuNzA3IDIzLjcwN0wyMy43MDcgMTcuNzA3WiIgZmlsbD0iY3VycmVudENvbG9yIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfNDg1MV8xMDA4eiI+CjxyZWN0IHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4=";

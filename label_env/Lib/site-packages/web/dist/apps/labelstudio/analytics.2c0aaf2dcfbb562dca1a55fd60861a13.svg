@@ -1,0 +1,47 @@
+var _rect, _rect2, _rect3, _rect4;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+import { forwardRef } from "react";
+var SvgAnalytics = function SvgAnalytics(props, ref) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    fill: "none",
+    ref: ref
+  }, props), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 3,
+    height: 5,
+    x: 3,
+    y: 15,
+    fill: "currentColor",
+    opacity: 0.4,
+    rx: 1
+  })), _rect2 || (_rect2 = /*#__PURE__*/React.createElement("rect", {
+    width: 3,
+    height: 7,
+    x: 8,
+    y: 13,
+    fill: "currentColor",
+    opacity: 0.6,
+    rx: 1
+  })), _rect3 || (_rect3 = /*#__PURE__*/React.createElement("rect", {
+    width: 3,
+    height: 10,
+    x: 13,
+    y: 10,
+    fill: "currentColor",
+    opacity: 0.8,
+    rx: 1
+  })), _rect4 || (_rect4 = /*#__PURE__*/React.createElement("rect", {
+    width: 3,
+    height: 16,
+    x: 18,
+    y: 4,
+    fill: "currentColor",
+    rx: 1
+  })));
+};
+var ForwardRef = /*#__PURE__*/forwardRef(SvgAnalytics);
+export { ForwardRef as ReactComponent };
+export default "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgb3BhY2l0eT0iMC40Ij4KPHJlY3QgeD0iMyIgeT0iMTUiIHdpZHRoPSIzIiBoZWlnaHQ9IjUiIHJ4PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz4KPC9nPgo8ZyBvcGFjaXR5PSIwLjYiPgo8cmVjdCB4PSI4IiB5PSIxMyIgd2lkdGg9IjMiIGhlaWdodD0iNyIgcng9IjEiIGZpbGw9ImN1cnJlbnRDb2xvciIvPgo8L2c+CjxnIG9wYWNpdHk9IjAuOCI+CjxyZWN0IHg9IjEzIiB5PSIxMCIgd2lkdGg9IjMiIGhlaWdodD0iMTAiIHJ4PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz4KPC9nPgo8cmVjdCB4PSIxOCIgeT0iNCIgd2lkdGg9IjMiIGhlaWdodD0iMTYiIHJ4PSIxIiBmaWxsPSJjdXJyZW50Q29sb3IiLz4KPC9zdmc+";

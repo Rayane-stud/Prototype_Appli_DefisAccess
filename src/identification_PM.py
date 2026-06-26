@@ -71,6 +71,7 @@ import requests
 import pandas as pd
 from geopy.distance import geodesic
 from export  import _creer_dossier_horodate
+import os
 
 # URL de l'API officielle geo.api.gouv.fr (INSEE/IGN)
 # Contrairement au fichier CSV brut de l'INSEE, c'est une vraie API
@@ -784,12 +785,16 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     # ETAPE 4 : export en Excel
     nom_fichier = f"PM_{ville}.xlsx"
-    df.to_excel(nom_fichier, index=False)
-    print(f"Fichier exporte : {nom_fichier}")
+    dossier_export = _creer_dossier_horodate(dossier_sortie=".", ville=f"PM_{ville}")
+    chemin_fichier = os.path.join(dossier_export, nom_fichier)
+    df.to_excel(chemin_fichier, index=False)
+    print(f"Fichier exporté : {chemin_fichier}")
 
     return df
 
-def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx") -> str | None:
+
+
+def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dossier_sortie: str = ".") -> str | None:
  
     if df is None or df.empty:
         print(" DataFrame vide : aucun fichier Excel genere.")
@@ -797,10 +802,13 @@ def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx") -> 
  
     # index=False : on n'ecrit pas la colonne d'index du DataFrame
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
+    dossier_export = _creer_dossier_horodate(dossier_sortie, ville="PM")
+    chemin_fichier = os.path.join(dossier_export, nom_fichier)
     df.to_excel(nom_fichier, index=False)
  
     print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
     return nom_fichier
+
 
 
 #TESTES : ---------------------------------------------------------------------------------------------------------

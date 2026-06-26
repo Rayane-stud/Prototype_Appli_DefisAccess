@@ -62,8 +62,9 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     nomFich = identification_PM.exporter_PM_excel(
         identification_PM.construire_dataframe_PM(ville),
-        str(BASE_DIR / "data" / "raw" / (ville + "_lieux.xlsx"))
-    )
+        dossier_sortie=str(BASE_DIR / "data" / "raw"),
+        nom_fichier=f"{ville}_lieux.xlsx"
+   )
     # None signifie que la ville n'a pas été trouvée sur geo.api.gouv.fr
     if nomFich is None:
         return None

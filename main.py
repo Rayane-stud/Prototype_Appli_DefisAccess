@@ -105,15 +105,47 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     return liste_chemins
 
 
+# ──────────────────────────────────────────────
+# VÉRIFICATION D'ANALYSE EXISTANTE
+# ──────────────────────────────────────────────
+
+def verifier_analyse_existante(ville: str) -> list:
+    """
+    Cherche si une analyse a déjà été faite pour cette ville.
+    Retourne la liste des dossiers de résultats existants (vide si aucun).
+    """
+    dossier_fiches = Path(__file__).parent / "data" / "output" / "fiches_equipes"
+    if not dossier_fiches.exists():
+        return []
+    # Un dossier par analyse, nommé "{ville}_{horodatage}"
+    return sorted([
+        str(d) for d in dossier_fiches.iterdir()
+        if d.is_dir() and d.name.lower().startswith(ville.lower() + "_")
+    ])
+
+
 # Vérifie que ce fichier est exécuté directement (et non importé depuis un autre script)
 if __name__ == "__main__":
     # Demande le nom de la ville à analyser — .strip() supprime les espaces accidentels en début/fin
     ville = input("Nom de la ville à analyser : ").strip()
+
+    # ── Vérification d'une analyse déjà existante ──────────────────────
+    analyses_existantes = verifier_analyse_existante(ville)
+    if analyses_existantes:
+        print(f"\n⚠️  Une analyse existe déjà pour '{ville}' :")
+        for dossier in analyses_existantes:
+            print(f"   → {dossier}")
+        reponse = input("\nVoulez-vous refaire une nouvelle analyse ? (o/n) : ").strip().lower()
+        if reponse != "o":
+            print(f"\n✅ Conservation de l'analyse existante. Aucune nouvelle analyse lancée.")
+            exit(0)
+        print()  # ligne vide pour aérer avant de lancer l'analyse
+
     liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
-    
+
     # Affiche le nombre de fichiers générés (le \n ajoute une ligne vide avant pour aérer l'affichage)
     print(f"\n✅ Export terminé — {len(liste_chemins)} fichier(s) généré(s) :")
-    
+
     # Parcourt la liste des chemins et affiche chacun d'eux
     for chemin in liste_chemins:
         print(f"   → {chemin}")  # affiche le chemin du fichier exporté

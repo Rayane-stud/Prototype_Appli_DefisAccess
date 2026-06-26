@@ -6,11 +6,11 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))
 # Import des modules du src
 from datetime import datetime
 import routage
-import nettoyage
 import proximite
 import export
 import  identification_PM
 import IA_PP
+import telecharger_intersections
 import numpy as np
 
 from pathlib import Path
@@ -60,6 +60,16 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     #xlsx_path_lieux = BASE_DIR.parent / "data" / "raw" / "garches_lieu.xlsx   # fichier des lieux (commun aux deux cas)
 
+    # ── Téléchargement des intersections EN PREMIER ────────────────────
+    # On valide la ville et on télécharge ses données AVANT de chercher les PMs,
+    # pour ne pas faire de requêtes inutiles si la ville est introuvable ou le
+    # téléchargement échoue. Les données locales déjà présentes sont réutilisées.
+    fichiers = telecharger_intersections.telecharger_intersections_ville(ville)
+    if not fichiers:
+        print(f"  Données introuvables pour '{ville}'. Vérifiez le nom ou votre connexion.")
+        return None
+
+    # ── Récupération des PMs (seulement si la ville est valide) ────────
     nomFich = identification_PM.exporter_PM_excel(
         identification_PM.construire_dataframe_PM(ville),
         dossier_sortie=str(BASE_DIR / "data" / "raw"),
@@ -70,13 +80,9 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         return None
     xlsx_path_lieux = Path(nomFich)  # on réutilise ce que la fonction a écrit
 
-    BASE_DIR = Path(__file__).parent                           # dossier du fichier .py courant
-    csv_path = BASE_DIR / "data" / "raw" / "intersections-92.csv"   #chemin du fichier csv avec les intersections du 92
-    #xlsx_path_lieux = BASE_DIR/ "data" / "raw" / (ville + "_lieux.xlsx")   #chemin du fichier xlsx avec les lieux de Garches
-
     try:
         # ── Chargement et nettoyage des données ────────────────────────────
-        tableau_nettoye = nettoyage.charger_intersections(csv_path, ville)
+        tableau_nettoye = telecharger_intersections.charger_en_dataframe(fichiers[0])
         tableau_villes  = proximite.charger_points(xlsx_path_lieux)
     except Exception as e:
         print(f"Erreur lors du chargement des données : {e}")
@@ -156,11 +162,11 @@ if __name__ == "__main__":
 
         liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
 
-        # None = ville non trouvée sur geo.api.gouv.fr → message et on redemande
+        # None = ville non trouvée → message et on redemande
         if liste_chemins is None:
             print(f"\n La ville '{ville}' est introuvable.")
             print("   Vérifiez l'orthographe et réessayez (majuscules et tirets optionnels).\n")
-        continue
+            continue
 
         break  # ville valide, analyse terminée
 

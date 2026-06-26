@@ -91,7 +91,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
-    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output", ville)
+    liste_chemins = export.export_final_equipes(dict_route_par_equipe, BASE_DIR / "data" / "output" / "fiches_equipes" , ville)
 
     return liste_chemins
 

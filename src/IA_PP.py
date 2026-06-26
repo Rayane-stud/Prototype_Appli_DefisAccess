@@ -27,7 +27,7 @@ try:
 except ImportError:
     _YOLO_DISPONIBLE = False
 
-_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best.pt")
+_CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best (2).pt")
 _MODELE_YOLO = None
 
 
@@ -438,7 +438,7 @@ def analyser_toutes_intersections(
     df_sortie = df.copy()
     df_sortie["pp_detecte"]   = [r["pp_detecte"]   for r in resultats]
     df_sortie["pp_confiance"] = [r["pp_confiance"]  for r in resultats]
-    df_sortie["nb_traversee"] = [r["nb_traversee"]  for r in resultats]
+    df_sortie["nb_traversees"] = [r["nb_traversee"]  for r in resultats]
     df_sortie["pp_image_ok"]  = [r["image_ok"]      for r in resultats]
     df_sortie["pp_erreur"]    = [r["erreur"]         for r in resultats]
 

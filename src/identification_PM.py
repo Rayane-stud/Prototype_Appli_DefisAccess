@@ -696,6 +696,7 @@ out center;
         # pause de 5 secondes entre chaque categorie
 
     # ---- DEUXIEME PASSE : on retente uniquement celles qui ont echoue ----
+    categories_echouees_2 = []
     if categories_echouees:
         print(f"\n    Deuxieme passe pour {len(categories_echouees)} categorie(s) en echec...")
         time.sleep(10)
@@ -703,9 +704,20 @@ out center;
         # Overpass se "reposer" et reinitialiser sa limite de frequence
 
         for categorie in categories_echouees:
+            succes = interroger_categorie(categorie)
+            if not succes:
+                categories_echouees_2.append(categorie)
+            time.sleep(5)
+
+    # ---- TROISIEME PASSE : derniere tentative pour celles qui ont encore echoue ----
+    if categories_echouees_2:
+        print(f"\n    Troisieme passe pour {len(categories_echouees_2)} categorie(s) en echec...")
+        time.sleep(15)
+        # pause plus longue avant la 3e tentative
+
+        for categorie in categories_echouees_2:
             interroger_categorie(categorie)
-            # on ne retient plus les echecs cette fois : si ca echoue
-            # encore, on abandonne definitivement cette categorie
+            # si ca echoue encore, on abandonne definitivement cette categorie
             time.sleep(5)
 
     print(f"\n   {len(resultats)} lieu(x) OSM trouve(s) au total")

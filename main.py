@@ -112,6 +112,12 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 # VÉRIFICATION D'ANALYSE EXISTANTE
 # ──────────────────────────────────────────────
 
+def _normaliser(texte: str) -> str:
+    # Traite tirets et espaces comme identiques pour comparer les noms de villes
+    return texte.lower().replace("-", " ").replace("_", " ")
+
+
+
 def verifier_analyse_existante(ville: str) -> list:
     """
     Cherche si une analyse a déjà été faite pour cette ville.
@@ -120,10 +126,12 @@ def verifier_analyse_existante(ville: str) -> list:
     dossier_fiches = Path(__file__).parent / "data" / "output" / "fiches_equipes"
     if not dossier_fiches.exists():
         return []
+    ville_norm = _normaliser(ville)
     # Un dossier par analyse, nommé "{ville}_{horodatage}"
+    # On normalise pour que "Rueil Malmaison" == "Rueil-Malmaison"
     return sorted([
         str(d) for d in dossier_fiches.iterdir()
-        if d.is_dir() and d.name.lower().startswith(ville.lower() + "_")
+        if d.is_dir() and _normaliser(d.name).startswith(ville_norm + " ")
     ])
 
 
@@ -147,12 +155,11 @@ if __name__ == "__main__":
 
         liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
 
-        # None = ville non trouvée sur geo.api.gouv.fr → on redemande
+        # None = ville non trouvée sur geo.api.gouv.fr → message et on redemande
         if liste_chemins is None:
-            print(f"\n La ville '{ville}' n'a pas été trouvée.")
-            print("   Vérifiez l'orthographe (ex: 'Rueil-Malmaison', 'Issy-les-Moulineaux').")
-            print("   Veuillez réessayer.\n")
-            continue
+            print(f"\n❌ La ville '{ville}' est introuvable.")
+            print("   Vérifiez l'orthographe et réessayez (majuscules et tirets optionnels).\n")
+        continue
 
         break  # ville valide, analyse terminée
 

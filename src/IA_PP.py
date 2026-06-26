@@ -435,7 +435,7 @@ def analyser_toutes_intersections(
     delai_s: float = 0.5,
     dossier_images: str = None, # Dossier de stockage de l'image annotée
 ):
-    """
+    """  
     Analyse toutes les intersections d'un DataFrame pandas.
 
     Compatible avec la sortie de nettoyage.py (mêmes noms de colonnes par défaut).
@@ -450,12 +450,21 @@ def analyser_toutes_intersections(
 
     Returns:
         Copie du DataFrame avec les colonnes ajoutées :
-            pp_detecte, pp_confiance, pp_nb_bandes, pp_image_ok, pp_erreur.
+            pp_detecte, pp_confiance, pp_nb_bandes, pp_image_ok, pp_erreur.     
     """
-    # ETAPE 1 : si un dossier de sauvegarde est demandé, on le crée maintenant
-    # exist_ok=True évite une erreur si le dossier existe déjà (ex : double exécution)
+    # ETAPE 1 : On crée le sous-dossier avec la ville, la date et l'heure
     if dossier_images:
-        os.makedirs(dossier_images, exist_ok=True)
+        from datetime import datetime
+        date_heure = datetime.now().strftime("%Y-%m-%d_%Hh%M")
+        
+        # On récupère le nom de la ville si la colonne existe dans ton df
+        nom_ville = str(df["ville"].iloc[0]).replace(" ", "_") if "ville" in df.columns else "ville"
+        
+        # On fusionne le tout pour créer le dossier final (ex: outputs/Paris_2026-06-26_14h38)
+        dossier_final = os.path.join(dossier_images, f"{nom_ville}_{date_heure}")
+        os.makedirs(dossier_final, exist_ok=True)
+    else:
+        dossier_final = None
 
     resultats = []
     total = len(df)

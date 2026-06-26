@@ -158,7 +158,7 @@ if __name__ == "__main__":
 
         # None = ville non trouvée sur geo.api.gouv.fr → message et on redemande
         if liste_chemins is None:
-            print(f"\n❌ La ville '{ville}' est introuvable.")
+            print(f"\n La ville '{ville}' est introuvable.")
             print("   Vérifiez l'orthographe et réessayez (majuscules et tirets optionnels).\n")
         continue
 

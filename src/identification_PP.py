@@ -1,34 +1,3 @@
-Voici ton code complété. J'ai ajouté les imports manquants, la configuration réseau (`HEADERS_NOMINATIM` pour éviter l'erreur de blocage 403), la fonction de téléchargement et d'analyse géospatiale par zone, ainsi qu'un bloc `main()` d'exemple pour orchestrer le tout.
-
-La logique prend désormais l'ID récupéré par `get_osm_area_id`, interroge Overpass pour générer les intersections de la ville et calcule les passages piétons adjacents.
-
-```python
-"""
-Méthodologie :
-    Récuperations des coordonnées GPS des intersections selectioner par l'algorithme.
-
-    Récuperer les informations de la présence de passage piétons :
-     - Premiere étape : Utiliser l'API overpass avec OpenStreetMap pour récupérer les passages piétons référencés
-     - les attribués à leur intersection respective
-
-     - Deuxieme étape : Récuperer les passages piétons des bases de données publiques disponibles
-     - les attribués à leur intersection respective
-
-     - Troisieme étape : Detecter a l'aide d'images (par exemple de 
-                l'institut national de l'information géographique et forestiere) les passages piétons
-                - ou alors les orthophotos disponibles 
-            - pour cela : utiliser probablement DETECTRON2 pour detecter les passages piétons sur les images
-     
-     - Quatrieme étape :
-     - Comparer ce que detecte DETECTRON2 et les recuperations de OpenStreetMap
-     - Fusinoner les resultat pour avoir un resultat fiable pour chaque intersections
-"""
-"""
-Avec BASE DE DONNEES Accidents :
-Se mettre a jour 1 fois tout les mois pour ne pas avoir a repasser la liste a chaque fois.
-Donc se creer une base traitée, des lieux de passages pietons a reutiliser (qui est donc mise a jour 1 fois par mois)
-
-"""
 """
 Ce fichier va nous permettre d'identifier le nombre de passage piéton par intersections 
 en utilisant open street map ainsi que les bases de données récupéré sur les intersection en île de France.
@@ -38,8 +7,12 @@ les passages piétons associés.
 
 import math
 import requests
-import pandas as pd
-from pathlib import Path
+import pandas as pd 
+import numpy as np
+import csv
+
+from geopy.distance import geodesic 
+from scipy.spatial import cKDTree     
 
 # Carte de visite obligatoire exigée par la charte d'utilisation de l'API Nominatim (évite le blocage HTTP 403)
 HEADERS_NOMINATIM = {
@@ -51,8 +24,15 @@ CATEGORIES_PASSAGES_PIETONS = [
     {"type": "passage_pieton_general", "osm_filters": '["highway"="crossing"]'}
 ]
 
+SERVEURS_OVERPASS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+]
 
-def get_osm_area_id(ville: str) -> int | None:
+DOSSIER_OUTPUT = "data/output"
+
+def get_osm_area_id(ville: str):
     """
     Interroge Nominatim (OpenStreetMap) pour récupérer l'osm_area_id
     de la commune. Cet identifiant sert uniquement à délimiter les
@@ -135,7 +115,7 @@ def get_osm_area_id(ville: str) -> int | None:
         # un seul except, bien aligné avec le try du dessus
 
 
-def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: float):
     """
     Calcule la distance en mètres entre deux points géographiques GPS.
     """
@@ -147,97 +127,287 @@ def calculer_distance_haversine(lat1: float, lon1: float, lat2: float, lon2: flo
     a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlon / 2)**2
     return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
+def envoyer_requete_overpass(requete: str, headers: dict) -> dict:
+    """
+    Essaie chaque serveur Overpass dans l'ordre jusqu'à en trouver un qui répond.
+    """
+    for url in SERVEURS_OVERPASS:
+        try:
+            print(f"   Tentative sur {url}...")
+            reponse = requests.post(url, data={"data": requete}, timeout=130, headers=headers)
+            reponse.raise_for_status()
+            return reponse.json()
+        except Exception as e:
+            print(f"   Échec ({e}) → serveur suivant...")
+            continue
 
-def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20) -> pd.DataFrame:
-    """
-    Interroge l'API Overpass pour extraire toutes les intersections topologiques 
-    d'une commune et compte les passages piétons présents dans un rayon donné.
-    """
-    # Construction du filtre dynamique basé sur tes catégories déclarées plus haut
+    print(" Tous les serveurs Overpass sont indisponibles.")
+    return {}
+
+def telecharger_passages_par_zone(id_zone_commune: int, rayon_metres: int = 20):
+
     filtre_osm = CATEGORIES_PASSAGES_PIETONS[0]["osm_filters"]
+    headers = {
+        "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
+        "Content-Type": "application/x-www-form-urlencoded"
+    }
 
-    # Requête Overpass compilée :
-    # 1. Filtre sur la zone géospatiale de la commune.
-    # 2. Extrait les axes routiers (ways).
-    # 3. Repère les intersections (noeuds partagés par au moins 2 routes : way_cnt:2-).
-    # 4. Extrait les passages piétons dans le rayon autour de ces intersections.
-    requete_overpass = f"""
-    [out:json][timeout:180];
-    area({id_zone_commune})->.zone_commune;
-    way["highway"](area.zone_commune)->.toutes_les_routes;
-    node(way_cnt.toutes_les_routes:2-)->.toutes_les_intersections;
-    
-    (
-      node{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-      way{filtre_osm}(around.toutes_les_intersections:{rayon_metres});
-    )->.passages_pietons;
-    
-    (.toutes_les_intersections; .passages_pietons;);
-    out body center;
-    """
+    # --- REQUÊTE 1 : uniquement les intersections ---
+    requete_intersections = f"""
+[out:json][timeout:120];
+area({id_zone_commune})->.zone_commune;
+way["highway"~"primary|secondary|tertiary|residential|unclassified"]["access"!="private"](area.zone_commune)->.routes_pertinentes;
+node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
+.toutes_les_intersections out body;
+"""
 
-    url_api = "https://overpass-api.de/api/interpreter"
-    print(" Envoi de la requête à l'API Overpass (cela peut prendre un moment)...")
-    
-    try:
-        reponse = requests.post(url_api, data={"data": requete_overpass}, timeout=190)
-        reponse.raise_for_status()
-        donnees = reponse.json()
-    except Exception as e:
-        print(f" Erreur lors de l'extraction Overpass : {e}")
+    print(" Étape 1/2 — Récupération des intersections...")
+    donnees = envoyer_requete_overpass(requete_intersections, headers)
+    if not donnees:
         return pd.DataFrame()
-
-    elements = donnees.get("elements", [])
-    
-    intersections_brutes = []
-    passages_pietons_extraits = []
-
-    # Tri des données reçues entre carrefours physiques et passages piétons
-    for el in elements:
-        tags = el.get("tags", {})
-        # Si le noeud ou la ligne possède une propriété d'aménagement piéton
-        if "highway" in tags and tags["highway"] == "crossing":
-            lat = el.get("lat") or el.get("center", {}).get("lat")
-            lon = el.get("lon") or el.get("center", {}).get("lon")
-            if lat and lon:
-                passages_pietons_extraits.append({"lat": lat, "lon": lon})
-        else:
-            # C'est un point d'intersection de structure routière
-            if el["type"] == "node":
-                intersections_brutes.append({
-                    "intersection_id_osm": el["id"], 
-                    "latitude": el["lat"], 
-                    "longitude": el["lon"], 
-                    "nb_passages_pietons": 0
-                })
+    intersections_brutes = [
+        {
+            "intersection_id_osm": el["id"],
+            "latitude": el["lat"],
+            "longitude": el["lon"],
+            "nb_passages_pietons": 0
+        }
+        for el in donnees.get("elements", [])
+        if el["type"] == "node"
+    ]
 
     if not intersections_brutes:
-        print(" Aucune intersection structurelle trouvée dans cette zone.")
+        print(" Aucune intersection trouvée.")
         return pd.DataFrame()
 
+    print(f" {len(intersections_brutes)} intersections trouvées.")
+
+    # --- REQUÊTE 2 : uniquement les passages piétons ---
+    requete_passages = f"""
+        [out:json][timeout:120];
+        area({id_zone_commune})->.zone_commune;
+            (node{filtre_osm}(area.zone_commune);way{filtre_osm}(area.zone_commune);)->.passages_pietons;.passages_pietons out body center;
+        """
+
+    print(" Étape 2/2 — Récupération des passages piétons...")
+    donnees = envoyer_requete_overpass(requete_passages, headers)
+    if not donnees:
+        return pd.DataFrame()
+    passages_pietons_extraits = []
+    for el in donnees.get("elements", []):
+        lat = el.get("lat") or el.get("center", {}).get("lat")
+        lon = el.get("lon") or el.get("center", {}).get("lon")
+        if lat and lon:
+            passages_pietons_extraits.append({"lat": lat, "lon": lon})
+
+    print(f" {len(passages_pietons_extraits)} passages piétons trouvés.")
+
+    # --- ATTRIBUTION KDTree (inchangé) ---
     print(f" Analyse de {len(passages_pietons_extraits)} passages piétons face à {len(intersections_brutes)} intersections...")
 
-    # Algorithme de déduplication : on attribue le passage piéton à l'intersection la plus proche uniquement
-    for passage in passages_pietons_extraits:
-        distances = [
-            calculer_distance_haversine(passage["lat"], passage["lon"], intersection["latitude"], intersection["longitude"])
-            for intersection in intersections_brutes
-        ]
-        if distances:
-            distance_minimale = min(distances)
-            if distance_minimale <= rayon_metres:
-                index_plus_proche = distances.index(distance_minimale)
-                intersections_brutes[index_plus_proche]["nb_passages_pietons"] += 1
+    coords_intersections = np.array([
+        [math.radians(i["latitude"]), math.radians(i["longitude"])]
+        for i in intersections_brutes
+    ])
+    arbre = cKDTree(coords_intersections)
+    rayon_radians = rayon_metres / 6371000
 
-    # Conversion finale au format DataFrame tabulaire Pandas
+    for passage in passages_pietons_extraits:
+        point = [math.radians(passage["lat"]), math.radians(passage["lon"])]
+        distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
+        if index < len(intersections_brutes):
+            intersections_brutes[index]["nb_passages_pietons"] += 1
+
     return pd.DataFrame(intersections_brutes)
+#_____________________________ test répartition___________________________________
+def analyser_repartition_passages(nom_commune: str) -> None:
+    """
+    Charge le CSV d'une commune et affiche la répartition
+    du nombre de passages piétons par intersection.
+    """
+    import os
+
+    nom_fichier = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
+
+    # --- Vérification que le fichier existe ---
+    if not os.path.exists(nom_fichier):
+        print(f" Aucun fichier trouvé pour '{nom_commune}'. Lancez d'abord le pipeline.")
+        return
+
+    df = pd.read_csv(nom_fichier, encoding="utf-8-sig")
+
+    if df.empty:
+        print(" Le fichier est vide.")
+        return
+
+    total_intersections = len(df)
+    total_passages      = df["nb_passages_pietons"].sum()
+
+    # --- Répartition : combien d'intersections ont 0, 1, 2, 3... passages ---
+    repartition = df["nb_passages_pietons"].value_counts().sort_index()
+
+    print(f"\n=== Répartition des passages piétons — {nom_commune} ===\n")
+    print(f"  Total intersections      : {total_intersections}")
+    print(f"  Total passages piétons   : {int(total_passages)}")
+    print(f"  Moyenne par intersection : {total_passages / total_intersections:.2f}\n")
+
+    print(f"  {'Nb passages':<15} {'Nb intersections':<20} {'%'}")
+    print(f"  {'-'*45}")
+
+    for nb_passages, nb_intersections in repartition.items():
+        pourcentage = nb_intersections / total_intersections * 100
+        barre = "█" * int(pourcentage / 2)
+        # barre visuelle proportionnelle au pourcentage
+        print(f"  {nb_passages:<15} {nb_intersections:<20} {pourcentage:5.1f}%  {barre}")
+
+#__________________________test de repartition sur le fichier xsls________________________
+
+def analyser_repartition_xlsx(chemin_fichier: str) -> pd.DataFrame:
+    """
+    Charge le fichier Excel et affiche la répartition
+    du nombre de traversées par intersection.
+    """
+    import os
+
+    if not os.path.exists(chemin_fichier):
+        print(f" Fichier introuvable : {chemin_fichier}")
+        return pd.DataFrame()
+
+    df = pd.read_excel(chemin_fichier)
+    print(f" {len(df)} lignes chargées")
+
+    # --- Regroupement par intersection (colonne "intersection") ---
+    repartition_par_intersection = df.groupby("intersection")["traversee"].count().reset_index()
+    repartition_par_intersection.columns = ["intersection", "nb_traversees"]
+    repartition_par_intersection = repartition_par_intersection.sort_values("nb_traversees", ascending=False)
+
+    # --- Affichage ---
+    total_intersections = len(repartition_par_intersection)
+    total_traversees    = repartition_par_intersection["nb_traversees"].sum()
+
+    print(f"\n=== Répartition des traversées par intersection ===\n")
+    print(f"  Total intersections      : {total_intersections}")
+    print(f"  Total traversées         : {total_traversees}")
+    print(f"  Moyenne par intersection : {total_traversees / total_intersections:.1f}\n")
+
+    repartition = repartition_par_intersection["nb_traversees"].value_counts().sort_index()
+    print(f"  {'Nb traversées':<16} {'Nb intersections':<20} {'%'}")
+    print(f"  {'-'*50}")
+    for nb, count in repartition.items():
+        pct = count / total_intersections * 100
+        barre = "█" * int(pct / 2)
+        print(f"  {nb:<16} {count:<20} {pct:5.1f}%  {barre}")
+
+    return repartition_par_intersection
+
+
+
+
+def charger_accidents(path, ville):
+    # charger le fichier CSV
+    df = pd.read_csv(path, sep=";").copy()
+
+    #on trie celon le nom de la ville
+    col="commune"
+    df_ville = df[df[col].str.contains(ville, case=False, na=False)]
+    df_ville = df_ville.reset_index(drop=True)
+
+    #on garde les colonnes souhaitées
+    garde=["geo_point_2d","commune","adresse"
+           ,"usager1","loc_usa1"
+           ,"usager2","loc_usa2"
+           ,"usager3","loc_usa3"
+           ,"usager4","loc_usa4"
+           ,"usager5","loc_usa5"
+           ,"usager6","loc_usa6"]
+    df_ville=df_ville[garde]
+
+    tableau = df_ville.rename(columns={"geo_point_2d": "coordonnees",})
+
+    tableau=trier_accidents(tableau)
+    tableau=coordonnees_accident(tableau)
+
+    
+    return tableau
+
+def trier_accidents(df_ville):
+    #Trier par contient "Sur le passage piéton"
+    #dans les colonnes : "AZ"=loc_usa1 , "BI"=loc_usa2 , "BR"=loc_usa3 , "CA"=loc_usa4 etc
+    #Attention, passage pieton peut etre dans l'un mais pas dans les autres, 
+    # donc ne pas trier à la suite à causes des pertes de données
+    df = df_ville.copy()
+    colonne=["loc_usa1","loc_usa2","loc_usa3","loc_usa4","loc_usa5","loc_usa6"]
+    trie= df[colonne].apply(lambda col: col.str.contains("Sur le passage piéton"
+                        , case=False, na=False)).any(axis=1)
+    df= df[trie]
+    df = df.reset_index(drop=True)
+
+    return df
+
+
+def coordonnees_accident(tableau, rayon=5):
+    #on separe la longitude et la latitude en 2 colonnes distinctes
+    #on traitre les doublons
+    #On regroupe les accidents a moins de 5m
+
+    df=tableau.copy()
+    df[["latitude", "longitude"]] = (df["coordonnees"].str.split(",", expand=True))
+    df = df.drop(columns=["coordonnees"])
+
+    df["longitude"] = pd.to_numeric(df["longitude"])
+    df["latitude"] = pd.to_numeric(df["latitude"])
+    df= df.drop_duplicates(subset=["longitude", "latitude"],keep="first")
+
+    lignes = df.to_dict("records")
+
+    i = 0
+    while i < len(lignes):
+        j = i + 1
+        while j < len(lignes):
+            dist= geodesic((lignes[i]["latitude"], lignes[i]["longitude"]),
+                (lignes[j]["latitude"], lignes[j]["longitude"])).meters
+            
+            if dist <= rayon:
+                lignes.pop(j)
+            else:
+                j += 1
+        i += 1
+
+    df_final= pd.DataFrame(lignes)
+    df_final = df_final.reset_index(drop=True)
+    return df_final
+
+
+def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
+    #on compare les coordonnées des intersections avec celles des passage piétons
+    #a qq metres pres et on ajoute le nb de passage pietons à l'intersections
+    pp=passage_pieton.copy().to_dict("records")
+    inter=intersection_retenue.copy().to_dict("records")
+
+    for i in inter:
+        nb=0
+        for j in pp:
+            dist= geodesic((i["latitude"], i["longitude"])
+                    ,(j["latitude"], j["longitude"])).meters
+
+
+            if dist<=rayon:
+                nb+=1
+        i["nb_pp"]=nb
+        i["latitude_pp"]=j["latitude"]
+        i["longitude_pp"]=j["longitude"]
+    
+    inter = pd.DataFrame(inter)
+    inter= inter[inter["nb_pp"] != 0]
+
+    return inter
 
 
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
-""""
+
 def main():
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
-    nom_commune = "Nanterre"
+    nom_commune = "Garches"  # à remplacer par la commune souhaitée
     print(f"--- Démarrage du traitement pour la commune : {nom_commune} ---")
     
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
@@ -249,21 +419,25 @@ def main():
         
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-            nom_fichier_sortie = f"intersections_{nom_commune.lower()}_passages.csv"
+            nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
             df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
+            
             
             print(f"\n Traitement terminé avec succès !")
             print(f" Fichier sauvegardé sous : {nom_fichier_sortie}")
             print("\nAperçu des premières lignes générées :")
             print(df_resultat.head(10).to_string(index=False))
+            analyser_repartition_passages(nom_commune)
         else:
             print(" Échec de la génération du tableau de données.")
     else:
         print(" Impossible de poursuivre sans identifiant de zone valide.")
+    df_xlsx = analyser_repartition_xlsx("data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx")
 
 
 if __name__ == "__main__":
     main()
 
-```
-"""
+
+# concernant les test : 
+print(get_osm_area_id("Garches"))  

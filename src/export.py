@@ -113,10 +113,8 @@ def ajouter_col_notation_terrain(df):
 
 # FONCTION : vers_xlsx() -------------------------------------------------------
 
-def vers_xlsx(df, id_equipe, dossier_sortie):
-    # ETAPE 1 : on construit le nom du fichier comme dans le Stata
-    # en Stata : "Garches_Equipe_`i'_feuille.xlsx"
-    nom_fichier = f"Garches_Equipe_{id_equipe}_feuille.xlsx"
+def vers_xlsx(df, id_equipe, dossier_sortie, ville="Garches"):
+    nom_fichier = f"{ville}_Equipe_{id_equipe}_feuille.xlsx"
 
     # ETAPE 2 : on construit le chemin complet du fichier (nom + adresse)
     # os.path.join colle le dossier et le nom de fichier avec le bon separateur
@@ -135,7 +133,7 @@ def vers_xlsx(df, id_equipe, dossier_sortie):
 
 # FONCTION : exporter_toutes_equipes() -----------------------------------------
 
-def exporter_toutes_equipes(dict_equipes, dossier_sortie):
+def exporter_toutes_equipes(dict_equipes, dossier_sortie, ville="Garches"):
     # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
     liste_chemins = []
 
@@ -147,7 +145,7 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
 
         # ETAPE 3 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin
-        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie)
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie, ville)
 
         # ETAPE 4 : on ajoute le chemin du fichier genere a la liste
         liste_chemins.append(chemin)
@@ -159,7 +157,7 @@ def exporter_toutes_equipes(dict_equipes, dossier_sortie):
 
 # FONCTION : export_final_equipes() --------------------------------------------
 
-def export_final_equipes(dict_equipes, dossier_sortie):
+def export_final_equipes(dict_equipes, dossier_sortie, ville="Garches"):
     # ETAPE 1 : on cree une liste vide qui va accumuler les chemins de chaque fichier genere
     liste_chemins = []
 
@@ -181,7 +179,7 @@ def export_final_equipes(dict_equipes, dossier_sortie):
 
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin
-        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie)
+        chemin = vers_xlsx(df_equipe, id_equipe, dossier_sortie, ville)
 
         # ETAPE 5 : on ajoute le chemin du fichier genere a la liste
         liste_chemins.append(chemin)

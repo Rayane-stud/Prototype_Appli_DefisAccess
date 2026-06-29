@@ -65,6 +65,7 @@ LISTE DES FONCTIONS :
                 nom | type | source | latitude | longitude | coordonnees
 """
 
+import math
 import time
 import json
 import datetime
@@ -75,9 +76,10 @@ import os
 from pathlib import Path
 
 # URL de l'API officielle geo.api.gouv.fr (INSEE/IGN)
-# Contrairement au fichier CSV brut de l'INSEE, c'est une vraie API
-# conçue pour être interrogée automatiquement (pas de blocage 403)
 URL_GEO_API = "https://geo.api.gouv.fr/communes"
+
+# URL de l'API SNCF (Opendatasoft v2.1) pour la liste officielle des gares
+URL_SNCF_GARES_API = "https://ressources.data.sncf.com/api/explore/v2.1/catalog/datasets/liste-des-gares/records"
 
 # Carte de visite obligatoire pour utiliser Nominatim (contr la surchage du site)
 HEADERS_NOMINATIM = {
@@ -87,7 +89,7 @@ HEADERS_NOMINATIM = {
 # TOUTES LES CATEGORIES OSM DISPONIBLES (avec leur label d'affichage)
 CATEGORIES_OSM_DISPONIBLES = [
     {"type": "gare",             "osm_filters": '["railway"="station"]',            "label": "Gares"},
-    {"type": "commissariat",     "osm_filters": '["amenity"="police"]',             "label": "Commissariats / gendarmeries"},
+    {"type": "gendarmerie",      "osm_filters": '["amenity"="police"]',             "label": "Gendarmeries (OSM)"},
     {"type": "lieu de culte",    "osm_filters": '["amenity"="place_of_worship"]',  "label": "Lieux de culte (églises, mosquées, synagogues…)"},
     {"type": "poste",            "osm_filters": '["amenity"="post_office"]',       "label": "Bureaux de poste"},
     {"type": "pharmacie",        "osm_filters": '["amenity"="pharmacy"]',          "label": "Pharmacies"},
@@ -593,6 +595,141 @@ def get_equipements_gouv(code_insee: str) -> list[dict]:
 
 
 
+# ETAPE 3b — Récupérer les commissariats via l'Annuaire de l'Administration -------------------------
+
+
+def get_commissariats_service_public(code_insee: str) -> list[dict]:
+    """
+    Interroge la même API Annuaire de l'Administration que get_equipements_gouv()
+    mais filtre sur type_service_local == "commissariat_police".
+    Géocode chaque adresse avec la BAN pour des coordonnées fiables.
+    """
+
+    params = {
+        "where": f'code_insee_commune="{code_insee}"',
+        "limit": 50
+    }
+    resultats = []
+
+    try:
+        print("   Interrogation de l'Annuaire de l'Administration (commissariats)...")
+        reponse = requests.get(URL_ANNUAIRE_API, params=params, timeout=15)
+        reponse.raise_for_status()
+        data = reponse.json()
+
+        for record in data.get("results", []):
+            pivot = record.get("pivot", [])
+            if isinstance(pivot, str):
+                try:
+                    pivot = json.loads(pivot)
+                except (json.JSONDecodeError, TypeError):
+                    continue
+            if not pivot:
+                continue
+
+            if pivot[0].get("type_service_local", "") != "commissariat_police":
+                continue
+
+            adresse = record.get("adresse", [])
+            if isinstance(adresse, str):
+                try:
+                    adresse = json.loads(adresse)
+                except (json.JSONDecodeError, TypeError):
+                    continue
+            if not adresse:
+                continue
+
+            premiere_adresse = adresse[0]
+            numero_voie = premiere_adresse.get("numero_voie", "")
+            code_postal = premiere_adresse.get("code_postal", "")
+            nom_commune = premiere_adresse.get("nom_commune", "")
+            adresse_texte = f"{numero_voie} {code_postal} {nom_commune}".strip()
+
+            if not adresse_texte:
+                continue
+
+            coords = geocoder_adresse(adresse_texte)
+            if coords is None:
+                print(f"  Géocodage impossible pour : {adresse_texte}")
+                continue
+
+            resultats.append({
+                "nom":       record.get("nom", "Commissariat sans nom"),
+                "type":      "commissariat",
+                "source":    "lannuaire.service-public.fr + géocodage BAN",
+                "latitude":  coords["latitude"],
+                "longitude": coords["longitude"]
+            })
+            time.sleep(0.1)
+
+        print(f"   {len(resultats)} commissariat(s) trouvé(s) pour le code INSEE {code_insee}")
+        return resultats
+
+    except Exception as e:
+        if "ConnectionError" in str(type(e)):
+            print("Pas de connexion internet, impossible d'interroger l'Annuaire de l'Administration.")
+        elif "Timeout" in str(type(e)):
+            print("L'Annuaire de l'Administration ne répond pas, réessayez dans quelques instants.")
+        else:
+            print(f"Erreur inattendue lors de l'appel à l'Annuaire de l'Administration : {e}")
+        return []
+
+
+# ETAPE 3c — Récupérer les gares via l'API SNCF (source prioritaire) --------------------------------
+
+
+def get_gares_sncf(ville: str) -> list[dict]:
+    """
+    Interroge l'API officielle SNCF (data.sncf.com / liste-des-gares)
+    pour récupérer les gares d'une commune.
+    Source utilisée EN PREMIER, avant OSM, pour les gares.
+    Les éventuels doublons avec OSM sont ensuite supprimés par coordonnées.
+    """
+    params = {
+        "where":  f'commune like "{ville}"',
+        "limit":  50,
+        "select": "libelle,commune,coordonnees_geographiques"
+    }
+
+    resultats = []
+
+    try:
+        print("   Interrogation de l'API SNCF (liste-des-gares)...")
+        reponse = requests.get(URL_SNCF_GARES_API, params=params, timeout=15)
+        reponse.raise_for_status()
+
+        data = reponse.json()
+
+        for record in data.get("results", []):
+            coords = record.get("coordonnees_geographiques")
+            if not coords:
+                continue
+            lat = coords.get("lat")
+            lon = coords.get("lon")
+            if lat is None or lon is None:
+                continue
+
+            resultats.append({
+                "nom":       record.get("libelle", "Gare sans nom"),
+                "type":      "gare",
+                "source":    "SNCF (data.sncf.com)",
+                "latitude":  float(lat),
+                "longitude": float(lon)
+            })
+
+        print(f"   {len(resultats)} gare(s) SNCF trouvée(s) pour '{ville}'")
+        return resultats
+
+    except Exception as e:
+        if "ConnectionError" in str(type(e)):
+            print("   Pas de connexion internet, impossible d'interroger l'API SNCF.")
+        elif "Timeout" in str(type(e)):
+            print("   L'API SNCF ne répond pas, réessayez dans quelques instants.")
+        else:
+            print(f"   Erreur inattendue lors de l'appel à l'API SNCF : {e}")
+        return []
+
+
 # ETAPE 4a — Récupérer les établissements de santé via FINESS (registre officiel) ------------------
 
 
@@ -902,6 +1039,66 @@ out center;
 
 
 
+# Dédoublonnage géographique inter-sources --------------------------------------------------------
+
+
+def _distance_metres(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    """Distance approximative en mètres entre deux points GPS (formule haversine)."""
+    R = 6_371_000
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    dphi    = math.radians(lat2 - lat1)
+    dlambda = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def dedoublonner_par_coordonnees(pm_list: list[dict], seuil_metres: int = 30) -> list[dict]:
+    """
+    Supprime les doublons géographiques ENTRE SOURCES DIFFÉRENTES uniquement.
+    Deux PM de la même source (ex. deux entrées FINESS) sont toujours conservés
+    même s'ils sont proches (bâtiments distincts d'un même campus hospitalier).
+    En cas de doublon inter-sources, on garde celui de la source la plus fiable.
+
+    Ordre de priorité (0 = meilleur) :
+        SNCF > gouvernemental (education / annuaire / FINESS) > OSM
+    """
+    PRIORITE_SOURCE = {
+        "SNCF (data.sncf.com)":                                      0,
+        "data.education.gouv.fr":                                     1,
+        "api-lannuaire.service-public.fr + geocodage BAN":            1,
+        "lannuaire.service-public.fr + géocodage BAN":                1,
+        "FINESS":                                                      1,
+        "OpenStreetMap":                                               2,
+    }
+
+    gardes = []
+
+    for pm in pm_list:
+        lat, lon = pm["latitude"], pm["longitude"]
+        doublon_trouve = False
+
+        for i, garde in enumerate(gardes):
+            # On ne considère le doublon que si les deux PM viennent de sources différentes
+            if pm["source"] == garde["source"]:
+                continue
+            if _distance_metres(lat, lon, garde["latitude"], garde["longitude"]) <= seuil_metres:
+                prio_nouveau  = PRIORITE_SOURCE.get(pm["source"],    99)
+                prio_existant = PRIORITE_SOURCE.get(garde["source"], 99)
+                if prio_nouveau < prio_existant:
+                    gardes[i] = pm  # on remplace par la source plus fiable
+                doublon_trouve = True
+                break
+
+        if not doublon_trouve:
+            gardes.append(pm)
+
+    nb_supprimes = len(pm_list) - len(gardes)
+    if nb_supprimes > 0:
+        print(f"   Dédoublonnage inter-sources : {nb_supprimes} doublon(s) supprimé(s) sur {len(pm_list)} PM")
+
+    return gardes
+
+
 # ETAPE 5 — Orchestrer toutes les sources et exporter en Excel ------------------------------------
 
 
@@ -987,6 +1184,13 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
     mairies = get_equipements_gouv(code_insee)
     tous_les_pm.extend(mairies)
 
+    commissariats = get_commissariats_service_public(code_insee)
+    tous_les_pm.extend(commissariats)
+
+    # Gares via l'API SNCF (source prioritaire) — OSM complète si nécessaire
+    gares_sncf = get_gares_sncf(ville)
+    tous_les_pm.extend(gares_sncf)
+
     # Établissements de santé via FINESS (hôpitaux, cliniques, centres de soins)
     base_dir_finess = Path(__file__).parent.parent
     etablissements_sante = get_etablissements_finess(code_insee, base_dir_finess)
@@ -1002,6 +1206,9 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
         else:
             lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies)
         tous_les_pm.extend(lieux_osm)
+
+    # Dédoublonnage géographique (SNCF + OSM pour les gares, et inter-sources en général)
+    tous_les_pm = dedoublonner_par_coordonnees(tous_les_pm)
 
     # ETAPE 3 : construction du DataFrame a partir de la liste de dictionnaires
     df = pd.DataFrame(tous_les_pm, columns=["nom", "type", "source", "latitude", "longitude"])

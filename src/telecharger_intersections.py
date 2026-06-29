@@ -119,7 +119,7 @@ GEO_API_URL = "https://geo.api.gouv.fr/communes"
 
 # Dossier local où seront sauvegardés les fichiers GeoJSON téléchargés
 # Il sera créé automatiquement s'il n'existe pas (voir sauvegarder())
-DOSSIER_SORTIE = "intersections"
+DOSSIER_SORTIE = "data/raw/intersections"
 
 # Types de voies disponibles pour le filtrage interactif
 # L'utilisateur pourra choisir lesquels conserver dans le DataFrame final

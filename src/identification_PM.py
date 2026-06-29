@@ -794,15 +794,6 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     print(f"\n {len(df)} PM au total pour {ville}")
 
-    # ETAPE 4 : export en Excel
-    nom_fichier = f"PM_{ville}.xlsx"
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    dossier_pm = os.path.join(project_root, "data", "raw", "PM")
-    os.makedirs(dossier_pm, exist_ok=True)
-    chemin_fichier = os.path.join(dossier_pm, nom_fichier)
-    df.to_excel(chemin_fichier, index=False)
-    print(f"Fichier exporté : {chemin_fichier}")
-
     return df
 
 

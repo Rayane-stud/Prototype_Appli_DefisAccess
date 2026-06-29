@@ -75,23 +75,52 @@ def chemin_geojson_commune(code_insee: str) -> Path:
     return INTERSECTIONS_DIR / f"intersections_{code_insee}.geojson"
 
 
+def sauvegarder_index(ville: str, chemin: Path):
+    import json
+    index_path = INTERSECTIONS_DIR / "index.json"
+    index = {}
+    if index_path.exists():
+        with open(index_path) as f:
+            index = json.load(f)
+    index[ville.lower().strip()] = str(chemin)
+    with open(index_path, "w") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
+
+
 def trouver_geojson_existant(ville: str) -> Path | None:
-    """
-    Cherche si un fichier intersections_{code_insee}.geojson existe déjà
-    pour la commune donnée, en récupérant le code INSEE via geo.api.gouv.fr.
-    Retourne le Path si trouvé, None sinon.
-    """
+    import json
+    ville_norm = ville.lower().strip()
+    index_path = INTERSECTIONS_DIR / "index.json"
+
+    # Priorité 1 : index.json (survit au refresh, O(1))
+    if index_path.exists():
+        with open(index_path) as f:
+            index = json.load(f)
+        chemin = index.get(ville_norm)
+        if chemin:
+            p = Path(chemin)
+            if p.exists():
+                return p
+            else:
+                # Fichier supprimé → nettoyer l'index
+                del index[ville_norm]
+                with open(index_path, "w") as f:
+                    json.dump(index, f, ensure_ascii=False, indent=2)
+
+    # Priorité 2 : fallback API (première fois uniquement)
     try:
         from src.telecharger_intersections import trouver_departements
         resultats = trouver_departements(ville)
         if not resultats:
             return None
-        # On prend le premier résultat (commune la plus peuplée)
         _, _, code_insee = resultats[0]
         chemin = chemin_geojson_commune(code_insee)
-        return chemin if chemin.exists() else None
+        if chemin.exists():
+            sauvegarder_index(ville, chemin)
+            return chemin
     except Exception:
-        return None
+        pass
+    return None
 
 
 def recuperer_coords_mairie(commune_str: str):
@@ -193,242 +222,426 @@ with st.sidebar:
     st.caption("v1.2 — DEFIACCESS © 2025")
 
 
-# ─────────────────────────────────────────────
-# 2a. Intersections — téléchargement automatique
-# ─────────────────────────────────────────────
-with st.expander("🗂️ Intersections — téléchargement automatique", expanded=True):
+# ─────────────────────────────────────────────────────────────────────────────────────────
+# 2a. Intersections — bloc unifié à 3 modes, sans désynchronisation
+# ─────────────────────────────────────────────────────────────────────────────────────────
+ 
+with st.expander("🗂️ Intersections", expanded=True):
+ 
     st.markdown(
-        "Télécharge automatiquement les intersections de la commune depuis "
-        "**data.gouv.fr** (source officielle OpenStreetMap), les filtre par ville "
-        "et les sauvegarde localement. Pas besoin d'uploader un CSV à la main."
+        "Choisissez comment charger les intersections de la commune. "
+        "Le fichier automatique provient de **data.gouv.fr** (source OpenStreetMap officielle)."
     )
-
+ 
     if not commune_str.strip():
         st.info("Saisissez d'abord le nom de la commune dans la barre latérale.")
     else:
         ville_inter = commune_str.split(",")[0].strip()
-        st.write(f"Commune ciblée : **{ville_inter}**")
-
-        # ── Détection d'un fichier déjà téléchargé ────────────────────
+ 
+        # ── Détecter si un fichier automatique existe sur le disque ──────────────────────
         geojson_existant = trouver_geojson_existant(ville_inter)
+        fichier_auto_present = geojson_existant is not None
+ 
+        # ── Sélecteur de mode — TOUJOURS VISIBLE ─────────────────────────────────────────
+        options_mode = [
+            "⬇️  Télécharger automatiquement",
+            "📁  Importer mon propre fichier",
+        ]
+        # Si un fichier auto existe, on ajoute une 3ᵉ option pour l'utiliser directement
+        if fichier_auto_present:
+            options_mode = ["✅  Utiliser le fichier local existant"] + options_mode
+ 
+        # Valeur par défaut intelligente : si un fichier auto existe → option 0, sinon → option 0 (télécharger)
+        default_idx = 0
+        mode_key = "radio_mode_intersections"
+ 
+        mode_selection = st.radio(
+            "Source des intersections",
+            options=options_mode,
+            index=st.session_state.get(mode_key + "_idx", default_idx),
+            key=mode_key,
+            horizontal=False,
+        )
+        # Mémoriser l'index sélectionné pour survivre aux reruns
+        st.session_state[mode_key + "_idx"] = options_mode.index(mode_selection)
+ 
+        st.divider()
+ 
+        # ══════════════════════════════════════════════════════════════════════════════════
+        # CAS A : Utiliser le fichier local existant
+        # ══════════════════════════════════════════════════════════════════════════════════
+        if "Utiliser le fichier local existant" in mode_selection:
+            col_info, col_del = st.columns([3, 1])
+            with col_info:
+                st.success(f"📂 `{geojson_existant.name}` — prêt à l'emploi.")
+            with col_del:
+                if st.button("🗑️ Supprimer ce fichier", key="btn_suppr_geojson", use_container_width=True):
+                    try:
+                        chemin_supprime = str(geojson_existant)
+                        geojson_existant.unlink()
 
-        if geojson_existant is not None:
-            st.success(f"✅ Fichier déjà présent : `{geojson_existant.name}`")
-            st.caption(
-                "Les intersections seront chargées depuis ce fichier local. "
-                "Cliquez sur 'Forcer le re-téléchargement' pour actualiser depuis data.gouv.fr."
-            )
+                        # Nettoyer l'index pour toutes les communes liées à ce fichier
+                        import json
+                        index_path = INTERSECTIONS_DIR / "index.json"
+                        if index_path.exists():
+                            with open(index_path) as f:
+                                index = json.load(f)
+                            index = {v: c for v, c in index.items() if c != chemin_supprime}
+                            with open(index_path, "w") as f:
+                                json.dump(index, f, ensure_ascii=False, indent=2)
 
-            col_inter_use, col_inter_force = st.columns([3, 2])
-            with col_inter_use:
-                # Indique que le fichier existant sera utilisé automatiquement
-                st.info("📂 Fichier local utilisé — aucune action requise.")
-            with col_inter_force:
-                forcer_btn = st.button(
-                    "🔄 Forcer le re-téléchargement",
-                    key="btn_forcer_retelecharge",
-                    use_container_width=True,
+                        for k in ("inter_geojson_path", "inter_df_preview", "is_fichier_perso",
+                                "last_uploaded_name", "radio_mode_intersections_idx"):
+                            st.session_state.pop(k, None)
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Suppression impossible : {e}")
+ 
+            # Enregistrer le chemin pour le pipeline
+            st.session_state["inter_geojson_path"] = str(geojson_existant)
+            st.session_state["is_fichier_perso"] = False
+ 
+        # ══════════════════════════════════════════════════════════════════════════════════
+        # CAS B : Télécharger automatiquement
+        # ══════════════════════════════════════════════════════════════════════════════════
+        elif "Télécharger" in mode_selection:
+            # Si le fichier auto existe déjà on prévient (l'utilisateur est en mode "télécharger" volontairement)
+            if fichier_auto_present:
+                st.info(
+                    f"Un fichier local existe déjà (`{geojson_existant.name}`). "
+                    "Le téléchargement l'écrasera."
                 )
-
-            if forcer_btn:
-                # Supprime le fichier local pour forcer le re-téléchargement
-                try:
-                    geojson_existant.unlink()
-                    st.session_state.pop("inter_geojson_path", None)
-                    st.session_state.pop("inter_df_preview", None)
-                    st.success("Fichier supprimé — cliquez sur 'Télécharger les intersections' pour relancer.")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Impossible de supprimer le fichier : {e}")
-            else:
-                # Fichier existant → on l'enregistre en session directement
-                st.session_state["inter_geojson_path"] = str(geojson_existant)
-
-        else:
-            # Aucun fichier local → bouton de téléchargement
-            col_inter_dl, col_inter_rst = st.columns([3, 1])
-            with col_inter_dl:
+ 
+            col_dl, col_rst = st.columns([3, 1])
+            with col_dl:
                 telecharger_inter_btn = st.button(
-                    "⬇️ Télécharger les intersections",
+                    "⬇️ Lancer le téléchargement",
                     key="btn_telecharger_inter",
                     type="secondary",
                     use_container_width=True,
-                    disabled=not commune_str.strip(),
                 )
-            with col_inter_rst:
-                reset_inter_btn = st.button(
-                    "Réinitialiser",
-                    key="btn_reset_inter",
-                    use_container_width=True,
-                )
-
-            if reset_inter_btn:
-                st.session_state.pop("inter_geojson_path", None)
-                st.session_state.pop("inter_df_preview", None)
-                st.rerun()
-
-            if telecharger_inter_btn and commune_str.strip():
+            with col_rst:
+                if st.button("Réinitialiser", key="btn_reset_inter", use_container_width=True):
+                    for k in ("inter_geojson_path", "inter_df_preview", "is_fichier_perso"):
+                        st.session_state.pop(k, None)
+                    st.rerun()
+ 
+            if telecharger_inter_btn:
                 from src.telecharger_intersections import telecharger_intersections_ville
-
                 zone_logs_inter = st.empty()
-
+ 
                 class InterLogger(io.StringIO):
                     def write(self, texte):
                         super().write(texte)
                         lignes = self.getvalue().splitlines()
                         zone_logs_inter.code("\n".join(lignes[-20:]) or "…", language="text")
                         return len(texte)
-
+ 
                 logs_inter = InterLogger()
-                with st.spinner(f"Téléchargement des intersections pour **{ville_inter}**… (peut prendre 1-2 min)"):
+                with st.spinner(f"Téléchargement pour **{ville_inter}**…"):
                     with contextlib.redirect_stdout(logs_inter):
-                        # departements_preresolus=None → la fonction détecte automatiquement
-                        # le département via geo.api.gouv.fr, sans interaction console
-                        fichiers = telecharger_intersections_ville(
-                            ville_inter,
-                            departements_preresolus=None,
-                        )
-
+                        fichiers = telecharger_intersections_ville(ville_inter, departements_preresolus=None)
+ 
                 if fichiers:
+                    sauvegarder_index(ville_inter, Path(fichiers[0]))
                     st.session_state["inter_geojson_path"] = fichiers[0]
-                    st.success(f"✅ Intersections téléchargées : `{Path(fichiers[0]).name}`")
+                    st.session_state["is_fichier_perso"] = False
+                    # Forcer le mode "fichier local" au prochain rerun
+                    st.session_state["radio_mode_intersections_idx"] = 0
+                    # Effacer l'aperçu mis en cache
+                    st.session_state.pop("inter_df_preview", None)
+                    st.rerun()
                 else:
-                    st.error(
-                        "Téléchargement échoué. Vérifiez le nom de la commune ou votre connexion internet. "
-                        "Vous pouvez aussi uploader un CSV manuellement ci-dessous."
-                    )
-
-        # ── Filtre types de voies (dans le même expander) ─────────────
-        st.divider()
-        st.markdown("**Filtrer par types de voies**")
-        st.caption(
-            "Sélectionnez les types de voies à inclure. "
-            "Par défaut tous les types sont conservés."
-        )
-
-        col_sel_all, col_desel_all = st.columns(2)
-        with col_sel_all:
-            if st.button("Tout sélectionner", key="voies_select_all", use_container_width=True):
-                st.session_state["voies_selectionnees"] = TYPES_VOIES.copy()
-                st.rerun()
-        with col_desel_all:
-            if st.button("Tout désélectionner", key="voies_desel_all", use_container_width=True):
-                st.session_state["voies_selectionnees"] = []
-                st.rerun()
-
-        _default_voies = st.session_state.get("voies_selectionnees", TYPES_VOIES.copy())
-        voies_selectionnees = st.multiselect(
-            "Types de voies à inclure",
-            options=TYPES_VOIES,
-            default=_default_voies,
-            key="voies_multiselect",
-            help="Laissez vide pour conserver toutes les intersections.",
-        )
-        st.session_state["voies_selectionnees"] = voies_selectionnees
-
-        if voies_selectionnees:
-            st.caption(f"Filtre actif : {', '.join(voies_selectionnees)}")
-        else:
-            st.caption("Aucun filtre — toutes les intersections seront conservées.")
-
-        # ── Aperçu du GeoJSON chargé ───────────────────────────────────
+                    st.error("Téléchargement échoué. Vérifiez l'orthographe de la commune.")
+ 
+            # Si un chemin auto est déjà mémorisé (session précédente), on l'utilise
+            elif st.session_state.get("inter_geojson_path") and not st.session_state.get("is_fichier_perso"):
+                st.info("Un fichier téléchargé précédemment est en mémoire — il sera utilisé.")
+ 
+        # ══════════════════════════════════════════════════════════════════════════════════
+        # CAS C : Importer son propre fichier
+        # ══════════════════════════════════════════════════════════════════════════════════
+        else:  # "Importer mon propre fichier"
+            fichier_perso = st.file_uploader(
+                "Votre fichier d'intersections (.xlsx, .csv ou .geojson)",
+                type=["xlsx", "csv", "geojson"],
+                key="uploader_intersections_manuel",
+            )
+ 
+            if fichier_perso is not None:
+                st.session_state["inter_geojson_path"] = fichier_perso
+                st.session_state["is_fichier_perso"] = True
+                # Vider le cache aperçu si le fichier change
+                if st.session_state.get("last_uploaded_name") != fichier_perso.name:
+                    st.session_state.pop("inter_df_preview", None)
+                    st.session_state["last_uploaded_name"] = fichier_perso.name
+            else:
+                # L'utilisateur est en mode manuel mais n'a rien uploadé encore
+                st.session_state.pop("inter_geojson_path", None)
+                st.session_state.pop("inter_df_preview", None)
+                st.caption("Aucun fichier sélectionné.")
+ 
+        # ── Filtre types de voies (commun aux 3 modes) ───────────────────────────────────
         if st.session_state.get("inter_geojson_path"):
-            _geojson_path = st.session_state["inter_geojson_path"]
+            st.divider()
+            st.markdown("**Filtrer par types de voies**")
+            st.caption("Laissez tout coché pour conserver toutes les voies.")
+ 
+            col_sel_all, col_desel_all = st.columns(2)
+            with col_sel_all:
+                if st.button("Tout sélectionner", key="voies_select_all", use_container_width=True):
+                    st.session_state["voies_selectionnees"] = TYPES_VOIES.copy()
+                    st.session_state.pop("inter_df_preview", None)
+                    st.rerun()
+            with col_desel_all:
+                if st.button("Tout désélectionner", key="voies_desel_all", use_container_width=True):
+                    st.session_state["voies_selectionnees"] = []
+                    st.session_state.pop("inter_df_preview", None)
+                    st.rerun()
+ 
+            _default_voies = st.session_state.get("voies_selectionnees", TYPES_VOIES.copy())
+            voies_selectionnees = st.multiselect(
+                "Types de voies à inclure",
+                options=TYPES_VOIES,
+                default=_default_voies,
+                key="voies_multiselect",
+            )
+            st.session_state["voies_selectionnees"] = voies_selectionnees
+ 
+            # ── Aperçu ───────────────────────────────────────────────────────────────────
+            _source_fichier = st.session_state["inter_geojson_path"]
+            _est_perso = st.session_state.get("is_fichier_perso", False)
+ 
             if "inter_df_preview" not in st.session_state:
                 try:
-                    from src.telecharger_intersections import charger_en_dataframe_sans_input
                     import pandas as pd
-                    _df_inter_prev = charger_en_dataframe_sans_input(
-                        _geojson_path,
-                        types_voies=voies_selectionnees or [],
-                    )
+ 
+                    if _est_perso:
+                        _nom = getattr(_source_fichier, "name", "")
+                        if _nom.endswith(".csv"):
+                            _df_inter_prev = pd.read_csv(_source_fichier)
+                        elif _nom.endswith(".geojson"):
+                            from src.telecharger_intersections import charger_en_dataframe_sans_input
+                            _df_inter_prev = charger_en_dataframe_sans_input(_source_fichier, types_voies=[])
+                        else:
+                            _df_inter_prev = pd.read_excel(_source_fichier)
+ 
+                        # Filtrer par voies si la colonne existe
+                        if "intersection" in _df_inter_prev.columns and voies_selectionnees:
+                            pattern = "|".join(voies_selectionnees)
+                            _df_inter_prev = _df_inter_prev[
+                                _df_inter_prev["intersection"].str.contains(pattern, case=False, na=False)
+                            ].reset_index(drop=True)
+ 
+                    else:
+                        from src.telecharger_intersections import charger_en_dataframe_sans_input
+                        _df_inter_prev = charger_en_dataframe_sans_input(
+                            _source_fichier,
+                            types_voies=voies_selectionnees or [],
+                        )
+ 
                     st.session_state["inter_df_preview"] = _df_inter_prev
+ 
                 except Exception as e:
                     st.warning(f"Aperçu impossible : {e}")
-
+ 
             if "inter_df_preview" in st.session_state:
                 _df_prev = st.session_state["inter_df_preview"]
                 st.dataframe(_df_prev.head(20), use_container_width=True)
-                st.caption(f"{len(_df_prev):,} intersections chargées après filtrage")
+                st.caption(f"{len(_df_prev):,} intersections chargées")
 
+# ─────────────────────────────────────────────────────────────────────────────────────────
+# 2b. Génération des lieux via identification_PM (Avec détection et sauvegarde locale)
+# ─────────────────────────────────────────────────────────────────────────────────────────
 
-# ─────────────────────────────────────────────
-# 2b. Génération des lieux via identification_PM
-# ─────────────────────────────────────────────
+# On crée un bloc repliable (un "accordéon") dans l'interface pour la gestion des lieux (PM).
+# "expanded=False" signifie que par défaut, ce bloc est affiché fermé pour ne pas encombrer l'écran.
 with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expanded=False):
+    
+    # On affiche un petit texte d'explication pour guider l'utilisateur sur le rôle de cette zone.
     st.markdown(
         "Récupère automatiquement les points d'intérêt de la commune "
         "(écoles, mairie, supermarchés, pharmacies…) depuis les sources "
         "officielles et OpenStreetMap."
     )
 
+    # VÉRIFICATION : On contrôle si l'utilisateur a bien tapé un nom de commune dans la barre latérale.
+    # ".strip()" retire les espaces inutiles au début et à la fin (ex: " Paris " devient "Paris").
     if not commune_str.strip():
+        # Si le champ est vide, on affiche un message d'information bleu et on bloque la suite.
         st.info("Saisissez d'abord le nom de la commune dans la barre latérale.")
+        
     else:
-        st.write(f"Commune ciblée : **{commune_str.split(',')[0].strip()}**")
-
-    col_gen, col_reset = st.columns([3, 1])
-    with col_gen:
-        generer_pm_btn = st.button(
-            "Générer les lieux",
-            key="btn_generer_pm",
-            type="secondary",
-            use_container_width=True,
-            disabled=not commune_str.strip(),
-        )
-    with col_reset:
-        reset_pm_btn = st.button("Réinitialiser", key="btn_reset_pm", use_container_width=True)
-
-    if reset_pm_btn:
-        for cle in ("df_pm", "pm_logs", "pm_buffer", "pm_commune"):
-            st.session_state.pop(cle, None)
-        st.rerun()
-
-    if generer_pm_btn and commune_str.strip():
-        from src.identification_PM import construire_dataframe_PM
+        # Si une commune est saisie, on extrait uniquement le nom de la ville avant la première virgule.
+        # Exemple : "Garches, Hauts-de-Seine" devient "Garches".
         ville_cible = commune_str.split(",")[0].strip()
-        st.markdown("**Progression :**")
-        zone_logs = st.empty()
+        
+        # On affiche à l'écran la commune qui va être analysée.
+        st.write(f"Commune ciblée : **{ville_cible}**")
+        
+        # ── CONFIGURATION DU CHEMIN DE SAUVEGARDE ────────────────────────────────────────
+        # On définit l'emplacement sur l'ordinateur où on va stocker le fichier Excel généré.
+        # On choisit le dossier "data/raw" (qui existe déjà pour les autres fichiers du projet).
+        LIEUX_DIR = Path("data/raw")
+        
+        # Sécurité : Si le dossier "data/raw" n'existe pas sur le disque dur, on le crée automatiquement.
+        LIEUX_DIR.mkdir(parents=True, exist_ok=True)
+        
+        # On crée un nom de fichier propre et standardisé pour la ville en cours.
+        # ".lower()" met tout en minuscules, ".replace(' ', '_')" remplace les espaces par des tirets bas.
+        # Exemple : Pour "Le Mans", le fichier s'appellera "lieux_le_mans.xlsx".
+        nom_fichier_lieux = f"lieux_{ville_cible.lower().replace(' ', '_')}.xlsx"
+        
+        # On combine le dossier et le nom pour obtenir le chemin d'accès complet sur le disque dur.
+        chemin_lieux_existant = LIEUX_DIR / nom_fichier_lieux
 
-        class StreamlitLogger(io.StringIO):
-            def write(self, texte):
-                super().write(texte)
-                zone_logs.code("\n".join(self.getvalue().splitlines()[-25:]) or "…", language="text")
-                return len(texte)
+        # ── DÉTECTION : RECHERCHE D'UN FICHIER DÉJÀ EXISTANT ──────────────────────────────
+        # CAS N°1 : Le fichier Excel existe physiquement sur le disque dur 
+        # ET la mémoire de l'application confirme qu'on travaille bien sur cette même ville.
+        if chemin_lieux_existant.exists() and st.session_state.get("pm_commune") == ville_cible:
+            
+            # On affiche un grand message de succès vert pour rassurer l'utilisateur.
+            st.success(f"✅ Fichier lieux déjà présent localement : `{nom_fichier_lieux}`")
+            
+            # RE-CHARGEMENT AUTOMATIQUE EN MÉMOIRE (si nécessaire) :
+            # Si l'application a été rafraîchie mais que le fichier est présent sur le disque dur,
+            # on recharge ses données en mémoire (session_state) pour que le reste du pipeline puisse travailler avec.
+            if "df_pm" not in st.session_state:
+                import pandas as pd
+                # 1. On lit le fichier Excel local et on le transforme en tableau de données (DataFrame)
+                st.session_state["df_pm"] = pd.read_excel(chemin_lieux_existant)
+                # 2. On mémorise le nom de la commune associée
+                st.session_state["pm_commune"] = ville_cible
+                # 3. On crée une copie binaire (en octets) pour le bouton de téléchargement optionnel
+                with open(chemin_lieux_existant, "rb") as f:
+                    st.session_state["pm_buffer"] = f.read()
 
-        logs_buffer = StreamlitLogger()
-        with st.spinner(f"Récupération des lieux pour **{ville_cible}**… (1-2 min)"):
-            with contextlib.redirect_stdout(logs_buffer):
-                df_pm = construire_dataframe_PM(ville_cible)
+            # On prépare 2 colonnes dans l'interface : une large à gauche (3), une plus étroite à droite (2).
+            col_pm_use, col_pm_force = st.columns([3, 2])
+            
+            with col_pm_use:
+                # Dans la colonne de gauche, on affiche une info bulle pour dire que tout est prêt.
+                st.info("📂 Données locales chargées — aucune action requise.")
+                
+            with col_pm_force:
+                # Dans la colonne de droite, on place le bouton magique pour forcer la mise à jour.
+                forcer_pm_btn = st.button(
+                    "🔄 Forcer le re-téléchargement",
+                    key="btn_forcer_lieux", # Identifiant unique pour ce bouton dans Streamlit
+                    use_container_width=True, # Le bouton s'étire sur toute la largeur de sa colonne
+                )
 
-        st.session_state["df_pm"]      = df_pm
-        st.session_state["pm_logs"]    = logs_buffer.getvalue()
-        st.session_state["pm_commune"] = ville_cible
+            # ACTION DU BOUTON "FORCER LE RE-TÉLÉCHARGEMENT" :
+            if forcer_pm_btn:
+                try:
+                    # 1. On supprime physiquement le fichier Excel du disque dur (.unlink)
+                    chemin_lieux_existant.unlink()
+                    
+                    # 2. On vide complètement la mémoire (session_state) liée aux anciens lieux
+                    for cle in ("df_pm", "pm_logs", "pm_buffer", "pm_commune"):
+                        st.session_state.pop(cle, None)
+                        
+                    # 3. On affiche un message de confirmation rapide
+                    st.success("Fichier local supprimé. Relancez la recherche.")
+                    
+                    # 4. On recharge instantanément la page pour effacer l'aperçu et afficher le bouton de téléchargement initial
+                    st.rerun()
+                except Exception as e:
+                    # En cas de problème technique (ex: fichier ouvert ailleurs), on affiche l'erreur en rouge
+                    st.error(f"Impossible de supprimer le fichier : {e}")
 
-        if not df_pm.empty:
-            buf = io.BytesIO()
-            df_pm.to_excel(buf, index=False)
-            buf.seek(0)
-            st.session_state["pm_buffer"] = buf.getvalue()
-
-    if "pm_logs" in st.session_state:
-        with st.expander("📜 Revoir les messages de la dernière génération", expanded=False):
-            st.code(st.session_state["pm_logs"] or "(aucun message)", language="text")
-
-    if "df_pm" in st.session_state:
-        df_pm_disp = st.session_state["df_pm"]
-        if df_pm_disp.empty:
-            st.warning("Aucun lieu trouvé. Vérifiez le nom saisi.")
+        # CAS N°2 : Le fichier n'existe pas encore sur l'ordinateur pour cette ville
         else:
-            st.success(f"**{len(df_pm_disp)} lieux** trouvés pour {st.session_state.get('pm_commune', commune_str)}.")
+            # On crée 2 colonnes pour organiser les boutons "Générer" et "Réinitialiser"
+            col_gen, col_reset = st.columns([3, 1])
+            
+            with col_gen:
+                # Le bouton principal pour lancer l'appel API sur Internet
+                generer_pm_btn = st.button(
+                    "Générer les lieux",
+                    key="btn_generer_pm",
+                    type="secondary",
+                    use_container_width=True,
+                    disabled=not commune_str.strip(), # Désactivé si la case commune est vide
+                )
+                
+            with col_reset:
+                # Un bouton secondaire pour nettoyer la mémoire manuellement en cas de bug
+                reset_pm_btn = st.button("Réinitialiser", key="btn_reset_pm", use_container_width=True)
+
+            # ACTION DU BOUTON "RÉINITIALISER" :
+            if reset_pm_btn:
+                # On nettoie toutes les variables en mémoire et on recharge la page
+                for cle in ("df_pm", "pm_logs", "pm_buffer", "pm_commune"):
+                    st.session_state.pop(cle, None)
+                st.rerun()
+
+            # ACTION DU BOUTON "GÉNÉRER LES LIEUX" :
+            if generer_pm_btn and commune_str.strip():
+                # On importe la fonction interne chargée de faire les requêtes Internet (DataGouv / OSM)
+                from src.identification_PM import construire_dataframe_PM
+                
+                st.markdown("**Progression :**")
+                # On crée une zone de texte vide qui va servir à afficher les lignes de logs en temps réel
+                zone_logs = st.empty()
+
+                # SCRIPT TECHNIQUE (StreamlitLogger) : Cette classe intercepte les messages secrets
+                # qui s'écrivent normalement dans la console noire du développeur pour les copier à l'écran.
+                class StreamlitLogger(io.StringIO):
+                    def write(self, texte):
+                        super().write(texte)
+                        lignes = self.getvalue().splitlines()
+                        # On n'affiche que les 25 dernières lignes pour éviter de surcharger l'écran
+                        zone_logs.code("\n".join(lignes[-25:]) or "…", language="text")
+                        return len(texte)
+
+                logs_buffer = StreamlitLogger()
+                
+                # On affiche un témoin de chargement animé (un "spinner") pendant les calculs
+                with st.spinner(f"Récupération des lieux pour **{ville_cible}**… (1-2 min)"):
+                    # On redirige les messages de la console vers notre afficheur personnalisé
+                    with contextlib.redirect_stdout(logs_buffer):
+                        # Lancement de la grosse fonction qui télécharge les données sur internet
+                        df_pm = construire_dataframe_PM(ville_cible)
+
+                # SI LE TÉLÉCHARGEMENT A RÉUSSI ET RENVOIE DES DONNÉES :
+                if not df_pm.empty:
+                    # 1. SAUVEGARDE SUR LE DISQUE : On enregistre immédiatement le résultat dans un fichier Excel local.
+                    # Ainsi, la prochaine fois, l'application passera directement par le "CAS N°1" (Instantané !).
+                    df_pm.to_excel(chemin_lieux_existant, index=False)
+                    
+                    # 2. ENREGISTREMENT EN MÉMOIRE : On remplit le session_state pour le reste de l'application
+                    st.session_state["df_pm"]      = df_pm
+                    st.session_state["pm_logs"]    = logs_buffer.getvalue()
+                    st.session_state["pm_commune"] = ville_cible
+
+                    # 3. CRÉATION DU COMPRESSÉ BINAIRE : Nécessaire pour faire fonctionner le bouton de téléchargement Excel
+                    buf = io.BytesIO()
+                    df_pm.to_excel(buf, index=False)
+                    buf.seek(0)
+                    st.session_state["pm_buffer"] = buf.getvalue()
+                    
+                    # 4. ACTUALISATION : On force la page à se recharger. Comme le fichier existe maintenant sur le disque, 
+                    # l'écran va se redessiner proprement en affichant la boîte verte du CAS N°1.
+                    st.rerun()
+
+    # ── AFFICHAGE DE L'APERÇU (Commun au CAS N°1 et CAS N°2) ──────────────────────────────
+    # Si le tableau de données existe en mémoire et qu'il correspond bien à la commune sélectionnée :
+    if "df_pm" in st.session_state and st.session_state.get("pm_commune") == commune_str.split(",")[0].strip():
+        df_pm_disp = st.session_state["df_pm"]
+        
+        if not df_pm_disp.empty:
+            # On affiche le nombre de lignes trouvées
+            st.success(f"**{len(df_pm_disp)} lieux** trouvés pour {st.session_state.get('pm_commune')}.")
+            # On affiche le tableau interactif (les 30 premières lignes) style Excel
             st.dataframe(df_pm_disp.head(30), use_container_width=True)
-            st.caption(f"{len(df_pm_disp)} lieux · {df_pm_disp['type'].nunique()} types")
-            st.info("✅ Déjà chargé — pas besoin de le re-déposer.")
+            
+            # Si le fichier binaire est prêt en mémoire, on affiche le bouton pour exporter l'Excel manuellement (optionnel)
             if "pm_buffer" in st.session_state:
                 st.download_button(
-                    label="Télécharger lieux.xlsx (optionnel)",
+                    label="Télécharger lieux.xlsx (Copie de sauvegarde)",
                     data=st.session_state["pm_buffer"],
-                    file_name=f"lieux_{st.session_state.get('pm_commune', 'commune').lower().replace(' ', '_')}.xlsx",
+                    file_name=f"lieux_{st.session_state.get('pm_commune').lower().replace(' ', '_')}.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                     use_container_width=True,
                 )
@@ -437,131 +650,92 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
 # ─────────────────────────────────────────────
 # 2b-bis. PIPELINE TOUT-EN-UN
 # ─────────────────────────────────────────────
+# On crée un accordéon nommé "🚀 Générer tout automatiquement (depuis le nom de la ville)".
+# "expanded=False" signifie que par défaut, ce bloc reste fermé/replié pour ne pas encombrer l'écran.
 with st.expander("🚀 Générer tout automatiquement (depuis le nom de la ville)", expanded=False):
+    
+    # Message d'introduction textuel pour expliquer ce que fait le bouton.
     st.markdown(
         "Lance **toutes les étapes** à la suite : détection de la mairie, "
         "téléchargement des intersections, génération des lieux, "
         "des passages piétons (OSM) — sans manipulation manuelle."
     )
 
+    # SÉCURITÉ : On vérifie si l'utilisateur a écrit un nom de ville dans la barre latérale.
     if not commune_str.strip():
+        # Si c'est vide, on affiche une alerte d'information bleue et le script s'arrête là.
         st.info("Saisissez d'abord le nom de la commune dans la barre latérale.")
     else:
+        # Si une ville est saisie, on extrait son nom propre (avant la virgule) et on l'affiche à l'écran.
         st.write(f"Commune ciblée : **{commune_str.split(',')[0].strip()}**")
 
+    # On prépare 2 colonnes asymétriques pour les boutons d'action (une large de taille 3, une petite de taille 1).
     col_auto_run, col_auto_reset = st.columns([3, 1])
+    
     with col_auto_run:
+        # Création du bouton principal "Tout générer".
         auto_run_btn = st.button(
             "🚀 Tout générer",
             key="btn_auto_run",
-            type="primary",
-            use_container_width=True,
+            type="primary",              # Le bouton s'affiche en couleur principale (souvent rouge ou bleu)
+            use_container_width=True,    # Il s'étire sur toute la largeur de sa colonne
+            # IMPORTANT : Le bouton se désactive tout seul si le nom de la commune est vide 
+            # OU si une génération automatique est déjà en cours d'exécution.
             disabled=not commune_str.strip() or st.session_state.get("auto_running", False),
         )
+        
     with col_auto_reset:
+        # Création du bouton secondaire "Réinitialiser" pour tout remettre à zéro en cas de besoin.
         auto_reset_btn = st.button("🔄 Réinitialiser", key="btn_auto_reset", use_container_width=True)
 
+    # ACTION DU BOUTON RÉINITIALISER :
     if auto_reset_btn:
+        # On fait la liste de TOUTES les variables enregistrées en mémoire concernant cette ville :
+        # (les tableaux de lieux, les logs de texte, les coordonnées de la mairie, les intersections...)
         for cle in ("df_pm", "pm_logs", "pm_buffer", "pm_commune",
                     "df_pp", "pp_methode", "pp_commune",
                     "mairie_lat", "mairie_lon", "auto_running",
                     "inter_geojson_path", "inter_df_preview"):
+            # On efface chaque élément un par un de la mémoire globale de l'application (.pop())
             st.session_state.pop(cle, None)
+        # On recharge instantanément la page pour repartir sur une application toute propre.
         st.rerun()
 
+    # ACTION DU BOUTON PRINCIPAL "TOUT GÉNÉRER" :
     if auto_run_btn and commune_str.strip():
+        # On passe un interrupteur à True pour indiquer à l'ordinateur qu'un gros calcul est en cours.
         st.session_state["auto_running"] = True
+        # On nettoie le nom de la ville pour les calculs (ex: "Paris").
         ville_auto = commune_str.split(",")[0].strip()
 
-        # ── A : Mairie ────────────────────────────────────────────────
+        # ──────────────────────────────────────────────────────────────
+        # ── ÉTAPE 1/4 : Trouver l'emplacement géographique de la Mairie
+        # ──────────────────────────────────────────────────────────────
+        # On affiche une icône animée de chargement avec un texte d'attente.
         with st.spinner("📍 Étape 1/4 — Détection de la mairie…"):
+            # On appelle une fonction qui interroge une API géographique pour obtenir la Latitude et la Longitude de la mairie.
             _lat_a, _lon_a = recuperer_coords_mairie(commune_str)
+            
         if _lat_a is not None:
+            # Si on trouve la mairie, on enregistre ses coordonnées GPS précises en mémoire.
             st.session_state["mairie_lat"] = _lat_a
             st.session_state["mairie_lon"] = _lon_a
+            # On valide visuellement l'étape avec un encadré vert affichant les coordonnées.
             st.success(f"Mairie : {_lat_a:.6f}, {_lon_a:.6f}")
         else:
+            # Si l'API ne trouve pas la mairie, on affiche une alerte orange et on appliquera des coordonnées génériques.
             st.warning("Mairie introuvable — coordonnées par défaut utilisées.")
 
-        # ── B : Intersections ─────────────────────────────────────────
+        # ──────────────────────────────────────────────────────────────
+        # ── ÉTAPE 2/4 : Récupérer les intersections (Rues)
+        # ──────────────────────────────────────────────────────────────
+        # On regarde d'abord si le fichier GeoJSON des intersections de cette ville est déjà enregistré localement.
         geojson_auto = trouver_geojson_existant(ville_auto)
+        
         if geojson_auto is not None:
+            # Si le fichier existe déjà, pas besoin de le retélécharger ! On l'utilise directement (gain de temps).
             st.info(f"📂 Étape 2/4 — Fichier intersections déjà présent : `{geojson_auto.name}`")
-            st.session_state["inter_geojson_path"] = str(geojson_auto)
-        else:
-            from src.telecharger_intersections import telecharger_intersections_ville
-            zone_auto_inter = st.empty()
-
-            class AutoInterLogger(io.StringIO):
-                def write(self, texte):
-                    super().write(texte)
-                    zone_auto_inter.code("\n".join(self.getvalue().splitlines()[-15:]) or "…", language="text")
-                    return len(texte)
-
-            logs_auto_inter = AutoInterLogger()
-            with st.spinner(f"⬇️ Étape 2/4 — Téléchargement des intersections pour **{ville_auto}**…"):
-                with contextlib.redirect_stdout(logs_auto_inter):
-                    fichiers_auto = telecharger_intersections_ville(
-                        ville_auto,
-                        departements_preresolus=None,
-                    )
-
-            if fichiers_auto:
-                st.session_state["inter_geojson_path"] = fichiers_auto[0]
-                st.success(f"✅ Intersections : `{Path(fichiers_auto[0]).name}`")
-            else:
-                st.error("Téléchargement des intersections échoué.")
-                st.session_state["auto_running"] = False
-                st.stop()
-
-        # ── C : Lieux (POI) ───────────────────────────────────────────
-        from src.identification_PM import construire_dataframe_PM
-        zone_auto_pm = st.empty()
-
-        class AutoPMLogger(io.StringIO):
-            def write(self, texte):
-                super().write(texte)
-                zone_auto_pm.code("\n".join(self.getvalue().splitlines()[-10:]) or "…", language="text")
-                return len(texte)
-
-        logs_auto_pm = AutoPMLogger()
-        with st.spinner(f"🏪 Étape 3/4 — Génération des lieux pour **{ville_auto}**…"):
-            with contextlib.redirect_stdout(logs_auto_pm):
-                df_pm_auto = construire_dataframe_PM(ville_auto)
-
-        if df_pm_auto.empty:
-            st.error("Aucun lieu trouvé — vérifiez le nom de la commune.")
-            st.session_state["auto_running"] = False
-            st.stop()
-
-        buf_auto = io.BytesIO()
-        df_pm_auto.to_excel(buf_auto, index=False)
-        buf_auto.seek(0)
-        st.session_state["df_pm"]      = df_pm_auto
-        st.session_state["pm_buffer"]  = buf_auto.getvalue()
-        st.session_state["pm_commune"] = ville_auto
-        st.success(f"✅ {len(df_pm_auto)} lieux générés.")
-
-        # ── D : Passages piétons OSM ──────────────────────────────────
-        from src.identification_PP import get_osm_area_id, telecharger_passages_par_zone
-        with st.spinner(f"🚶 Étape 4/4 — Passages piétons OSM pour **{ville_auto}**…"):
-            id_zone_auto = get_osm_area_id(ville_auto)
-            if id_zone_auto:
-                df_pp_auto = telecharger_passages_par_zone(id_zone_auto, rayon_metres=25)
-                if not df_pp_auto.empty:
-                    st.session_state["df_pp"]       = df_pp_auto
-                    st.session_state["pp_methode"]  = "OSM"
-                    st.session_state["pp_commune"]  = ville_auto
-                    st.success(f"✅ {len(df_pp_auto)} passages piétons chargés.")
-                else:
-                    st.warning("Aucun passage piéton trouvé via OSM.")
-            else:
-                st.warning("Zone OSM introuvable — passages piétons ignorés.")
-
-        st.session_state["auto_running"] = False
-        st.session_state.pop("inter_df_preview", None)  # force refresh aperçu
-        st.success("✅ **Tout est prêt !** Cliquez sur **Générer les feuilles terrain** ci-dessous.")
-        st.rerun()
+            st.session_state
 
 
 # ─────────────────────────────────────────────

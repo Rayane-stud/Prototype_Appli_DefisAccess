@@ -1,0 +1,8181 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491675944,
+          48.838722989
+        ]
+      },
+      "properties": {
+        "name": "Allée Bettola / Allée de Ferriere",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491649905,
+          48.838737465
+        ]
+      },
+      "properties": {
+        "name": "Allée Bettola / Allée Farini",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491643703,
+          48.838730925
+        ]
+      },
+      "properties": {
+        "name": "Allée de Ferriere / Allée Farini",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489055394,
+          48.842966301
+        ]
+      },
+      "properties": {
+        "name": "Allée de Plaisance / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484597879,
+          48.842548396
+        ]
+      },
+      "properties": {
+        "name": "Allée des Épivans / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472206285,
+          48.832279946
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Guy Labarbe / Allée Jean-Guy Labarbe",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474742628,
+          48.833421928
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Guy Labarbe / Avenue Victor Hugo",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471736026,
+          48.831505979
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472818135,
+          48.830287775
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Boulevard de la Marne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469567564,
+          48.830025292
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Diane / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469559497,
+          48.830013486
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Diane / Avenue de la Mésange",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47086485,
+          48.829298335
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Diane / Boulevard de la Marne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472419146,
+          48.834094323
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Allée Victor Baltard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.464804002,
+          48.82748736
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue de la Belle Gabrielle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471317547,
+          48.833221876
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue des Châtaigniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471174335,
+          48.833046883
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue des Marronniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473552431,
+          48.835291162
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473352001,
+          48.834913787
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue Victor Hugo",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471501695,
+          48.833254136
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Avenue Watteau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.464523992,
+          48.827285905
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Carrefour de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473993614,
+          48.835370648
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473840254,
+          48.835272997
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / Rue Victor Basch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473867623,
+          48.835338687
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Joinville D86 / D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.464736056,
+          48.827576021
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.464679459,
+          48.828904322
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Avenue de la Source",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469786719,
+          48.836491349
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Avenue de Nogent D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469834517,
+          48.836411136
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.464793624,
+          48.829900954
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Rivière de Joinville",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.465048829,
+          48.830490827
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Route de la Cascade",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.465510373,
+          48.83145139
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Belle Gabrielle / Route des Merisiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470330351,
+          48.83385002
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Source / Avenue des Châtaigniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470702074,
+          48.836061552
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Source / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483254947,
+          48.836252022
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lattre de Tassigny D120 / Esplanade Nungesser et Coli",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482000354,
+          48.836374811
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lattre de Tassigny D120 / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482156356,
+          48.836298221
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lattre de Tassigny D120 / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483532897,
+          48.836206701
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lattre de Tassigny D120 / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470469963,
+          48.830860757
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Neptune / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471744828,
+          48.829915985
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Neptune / Boulevard de la Marne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471336166,
+          48.833218936
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Châtaigniers / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469473876,
+          48.834462761
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Châtaigniers / Avenue de la Belle Gabrielle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470308408,
+          48.833900431
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Châtaigniers / Avenue de la Source",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471214337,
+          48.833249083
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Châtaigniers / Avenue des Marronniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471345963,
+          48.833217765
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Châtaigniers / Avenue Watteau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471149479,
+          48.833096254
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Marronniers / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471165556,
+          48.833284911
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Marronniers / Avenue des Châtaigniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471463483,
+          48.835878926
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Marronniers / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.468843372,
+          48.831012828
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Merisiers / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.465555337,
+          48.83145479
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Merisiers / Avenue de la Belle Gabrielle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.467350357,
+          48.831232353
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Merisiers / Avenue de la Source",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.465544497,
+          48.831453387
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Merisiers / Route des Merisiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.466658933,
+          48.83132812
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Merisiers / Villa des Chênes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474587513,
+          48.832024257
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Tilleuls / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474250916,
+          48.831085819
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Tilleuls / Avenue Franklin Roosevelt",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48927945,
+          48.84403811
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Fayolle / Avenue du Maréchal Franchet d'Esperey",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489168241,
+          48.845210273
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Fayolle / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4891855,
+          48.84524453
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Fayolle / Rue Édouard Renard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489289726,
+          48.844023492
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Franchet d'Esperey / Avenue du Maréchal Fayolle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489935529,
+          48.84394467
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Franchet d'Esperey / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488248857,
+          48.845531049
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Lyautey / Avenue Polton",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487865542,
+          48.844630897
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Lyautey / Rond-Point du Maréchal Foch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488252717,
+          48.845490773
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Lyautey / Rue Édouard Renard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488863676,
+          48.84665059
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Lyautey / Rue Marceau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488918567,
+          48.84632971
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Lyautey / Sentier des Hauts Villemains",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487142583,
+          48.844268342
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Maunoury / Rond-Point du Maréchal Foch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486646141,
+          48.845533667
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal Maunoury / Rue Édouard Renard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477021819,
+          48.832410896
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Val de Beauté / Chemin de l'Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479648012,
+          48.832660512
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Val de Beauté / Passage Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478378017,
+          48.832565809
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Val de Beauté / Rue Leprince",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476967426,
+          48.832431154
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Val de Beauté / Rue Victor Basch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474440441,
+          48.835556192
+        ]
+      },
+      "properties": {
+        "name": "Avenue Duvelleroy / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474518922,
+          48.835489869
+        ]
+      },
+      "properties": {
+        "name": "Avenue Duvelleroy / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475619568,
+          48.833670818
+        ]
+      },
+      "properties": {
+        "name": "Avenue Duvelleroy / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47285904,
+          48.831985135
+        ]
+      },
+      "properties": {
+        "name": "Avenue Franklin Roosevelt / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474382092,
+          48.830855778
+        ]
+      },
+      "properties": {
+        "name": "Avenue Franklin Roosevelt / Boulevard de la Marne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472900649,
+          48.832075511
+        ]
+      },
+      "properties": {
+        "name": "Avenue Franklin Roosevelt / Le Chemin en Marne et Bois",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473610586,
+          48.835333512
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469851868,
+          48.836384936
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Avenue de la Belle Gabrielle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470685333,
+          48.836166836
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Avenue de la Source",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469831277,
+          48.836409104
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Avenue de Nogent D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471417295,
+          48.835942206
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Avenue des Marronniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474020636,
+          48.83554508
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474174445,
+          48.835465867
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472069914,
+          48.835834483
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clemenceau D120 / Place Pierre Semard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49364431,
+          48.834720935
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494144607,
+          48.832145549
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Promenade Jean Sablon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494141175,
+          48.832171557
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Quai du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494122779,
+          48.832155988
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Rue de Nazaré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493856987,
+          48.834097886
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Rue Henry Dunant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493642964,
+          48.834714223
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4832611,
+          48.833005897
+        ]
+      },
+      "properties": {
+        "name": "Avenue Madeleine Smith Champion / Avenue du Val de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483280181,
+          48.833011829
+        ]
+      },
+      "properties": {
+        "name": "Avenue Madeleine Smith Champion / Rue Agnès Sorel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489344617,
+          48.83336642
+        ]
+      },
+      "properties": {
+        "name": "Avenue Madeleine Smith Champion / Rue du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4893793,
+          48.833360398
+        ]
+      },
+      "properties": {
+        "name": "Avenue Madeleine Smith Champion / Rue Hoche",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.467321808,
+          48.839114128
+        ]
+      },
+      "properties": {
+        "name": "Avenue Odette / Avenue de la Belle Gabrielle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469086129,
+          48.8398312
+        ]
+      },
+      "properties": {
+        "name": "Avenue Odette / Avenue des Marronniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.467315088,
+          48.839112914
+        ]
+      },
+      "properties": {
+        "name": "Avenue Odette / Route Odette",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487706306,
+          48.846173802
+        ]
+      },
+      "properties": {
+        "name": "Avenue Polton / Rue Hoche",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491906151,
+          48.835662395
+        ]
+      },
+      "properties": {
+        "name": "Avenue Simone / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476419817,
+          48.834089092
+        ]
+      },
+      "properties": {
+        "name": "Avenue Suzanne / Villa Sainte-Marthe",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474464942,
+          48.833544919
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Allée Victor Baltard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473343615,
+          48.834896965
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475263681,
+          48.833401947
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472514808,
+          48.833253658
+        ]
+      },
+      "properties": {
+        "name": "Avenue Watteau / Accès Urgences",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472293961,
+          48.833981092
+        ]
+      },
+      "properties": {
+        "name": "Avenue Watteau / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471299804,
+          48.833234305
+        ]
+      },
+      "properties": {
+        "name": "Avenue Watteau / Avenue des Châtaigniers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493955494,
+          48.835510462
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er N486 / Boulevard Albert 1er D245",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493827442,
+          48.838138852
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er D245 / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493958499,
+          48.838006871
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er D245 / Pont de Mulhouse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493053017,
+          48.83203251
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er N486 / Pont de Nogent N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493997962,
+          48.835557922
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er D245 / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494057266,
+          48.837287272
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Albert 1er D245 / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476496255,
+          48.832064956
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Marne / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47695724,
+          48.832421781
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Marne / Avenue du Val de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476958401,
+          48.832413696
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Marne / Chemin de l'Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476053339,
+          48.831498129
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Marne / Promenade Yvette Horner",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476955563,
+          48.832422787
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Marne / Rue Victor Basch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491803561,
+          48.838241351
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la République / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474092445,
+          48.835523405
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491881195,
+          48.846833803
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Boulevard d'Alsace-Lorraine D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474352205,
+          48.8355148
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487299379,
+          48.844151934
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Rond-Point du Maréchal Foch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489941159,
+          48.845700892
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Sentier des Hauts Villemains",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491618061,
+          48.846676094
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474328908,
+          48.835541013
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Strasbourg D86 / D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472780883,
+          48.839929798
+        ]
+      },
+      "properties": {
+        "name": "Boulevard des Deux Communes / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482795986,
+          48.841281373
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gallieni / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487263923,
+          48.83804921
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gallieni / Passage du Lido",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487007418,
+          48.838326943
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gallieni / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483403956,
+          48.840840546
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gallieni / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473283399,
+          48.835624475
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gambetta D240 / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469518005,
+          48.840013902
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gambetta D240 / Boulevard Henri Ruel D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472963361,
+          48.836075692
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gambetta D240 / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472775429,
+          48.836316887
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Gambetta D240 / Villa du Parc",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48278343,
+          48.841290219
+        ]
+      },
+      "properties": {
+        "name": "Boulevard George V / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482789706,
+          48.841285604
+        ]
+      },
+      "properties": {
+        "name": "Boulevard George V / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481515012,
+          48.842213407
+        ]
+      },
+      "properties": {
+        "name": "Boulevard George V / Rue de Bir-Hakeim",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481514665,
+          48.842203421
+        ]
+      },
+      "properties": {
+        "name": "Boulevard George V / Rue Gaston Margerie",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494611224,
+          48.835492199
+        ]
+      },
+      "properties": {
+        "name": "Carrefour Jean Mermoz / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477013454,
+          48.831701289
+        ]
+      },
+      "properties": {
+        "name": "Chemin de l'Île de Beauté / Promenade Yvette Horner",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476958232,
+          48.832423197
+        ]
+      },
+      "properties": {
+        "name": "Chemin de l'Île de Beauté / Rue Victor Basch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483632647,
+          48.837765003
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pressoir / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482007604,
+          48.836379681
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Avenue de Lattre de Tassigny D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475388743,
+          48.83570357
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Avenue Suzanne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49382022,
+          48.838169097
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Boulevard Albert 1er",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474471982,
+          48.835576494
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487680027,
+          48.837667818
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483851116,
+          48.837072126
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Chemin du Pressoir",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48406795,
+          48.8370964
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Impasse Berger",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481668105,
+          48.836379126
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Impasse de l'Ouest",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488501472,
+          48.837972737
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Impasse des Pains",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484998464,
+          48.837045436
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Impasse du Luxembourg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483269835,
+          48.83689922
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Impasse du Nord",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487419051,
+          48.837531547
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Impasse Jeanne Marguerite",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485363955,
+          48.837049895
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Place Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481668698,
+          48.836297489
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485508597,
+          48.83700541
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Charles VII",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486791977,
+          48.837341217
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Curé Carreau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488249824,
+          48.837818421
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Dagobert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483540197,
+          48.836988172
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue du Jeu de l'Arc",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484354021,
+          48.83708574
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue du Jeu de Paume",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486566659,
+          48.837272467
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue du Lieutenant Ohresser",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491153221,
+          48.838301458
+        ]
+      },
+      "properties": {
+        "name": "Grande rue Charles de Gaulle / Rue du Maréchal Vaillant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487699042,
+          48.837648387
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Edmond Vitry",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488808955,
+          48.838090834
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Eugène Galbrun",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49344844,
+          48.838323535
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Jean Monnet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482855349,
+          48.836761788
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Jules Ferry",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486646066,
+          48.837270713
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Pasteur",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484540078,
+          48.837108975
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Paul Bert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484996892,
+          48.837068828
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Rue Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493782483,
+          48.838227989
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480354084,
+          48.836281333
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue Charles de Gaulle D120 / Villa de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484999789,
+          48.8370561
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Luxembourg / Rue Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472594588,
+          48.832314866
+        ]
+      },
+      "properties": {
+        "name": "Le Chemin en Marne et Bois / Allée Jean-Guy Labarbe",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472885286,
+          48.832081837
+        ]
+      },
+      "properties": {
+        "name": "Le Chemin en Marne et Bois / Avenue Charles V",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479504729,
+          48.839054109
+        ]
+      },
+      "properties": {
+        "name": "Passage Cury / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479492087,
+          48.839061891
+        ]
+      },
+      "properties": {
+        "name": "Passage Cury / Rue Manessier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480181206,
+          48.83862352
+        ]
+      },
+      "properties": {
+        "name": "Passage Cury / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479796556,
+          48.832156396
+        ]
+      },
+      "properties": {
+        "name": "Passage Île de Beauté / Chemin de l'Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479786876,
+          48.832187494
+        ]
+      },
+      "properties": {
+        "name": "Passage Île de Beauté / Promenade Yvette Horner",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47847842,
+          48.836889837
+        ]
+      },
+      "properties": {
+        "name": "Passage Jules-Marcel Nicole / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480722717,
+          48.839919444
+        ]
+      },
+      "properties": {
+        "name": "Passage sous Châteaudun / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491088904,
+          48.831785401
+        ]
+      },
+      "properties": {
+        "name": "Passerelle des Arts / Promenade de Siegburg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473115655,
+          48.834837079
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Leclerc / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472666807,
+          48.835554771
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Leclerc / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490553766,
+          48.831806946
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevalier / Promenade de Siegburg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490283111,
+          48.832421679
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevalier / Rue du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490339595,
+          48.831855384
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevalier / Square Tino Rossi",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471938269,
+          48.835737263
+        ]
+      },
+      "properties": {
+        "name": "Place Pierre Semard / Avenue Georges Clemenceau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472467759,
+          48.836644677
+        ]
+      },
+      "properties": {
+        "name": "Place Pierre Semard / Boulevard Gambetta D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491952129,
+          48.839543369
+        ]
+      },
+      "properties": {
+        "name": "Place Roland Nungesser / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491417869,
+          48.839480702
+        ]
+      },
+      "properties": {
+        "name": "Place Roland Nungesser / Rue de la Mairie",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490443901,
+          48.839355496
+        ]
+      },
+      "properties": {
+        "name": "Place Roland Nungesser / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49396348,
+          48.83800637
+        ]
+      },
+      "properties": {
+        "name": "Pont de Mulhouse / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493064255,
+          48.831892567
+        ]
+      },
+      "properties": {
+        "name": "Pont de Nogent N486 / Promenade Jean Sablon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491231927,
+          48.831803802
+        ]
+      },
+      "properties": {
+        "name": "Promenade de Siegburg / Passerelle des Arts",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490666891,
+          48.831868385
+        ]
+      },
+      "properties": {
+        "name": "Promenade de Siegburg / Place Maurice Chevalier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491702673,
+          48.831884158
+        ]
+      },
+      "properties": {
+        "name": "Promenade de Siegburg / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4927496,
+          48.831845874
+        ]
+      },
+      "properties": {
+        "name": "Promenade Jean Sablon / Promenade de Siegburg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.496662067,
+          48.832416504
+        ]
+      },
+      "properties": {
+        "name": "Promenade Jean Sablon / Quai de l'Artois",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4952285,
+          48.832328631
+        ]
+      },
+      "properties": {
+        "name": "Promenade Jean Sablon / Quai du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492796736,
+          48.831916725
+        ]
+      },
+      "properties": {
+        "name": "Promenade Jean Sablon / Rue de Nazaré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4807427,
+          48.832142496
+        ]
+      },
+      "properties": {
+        "name": "Promenade Yvette Horner / Chemin de l'Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49587289,
+          48.832429674
+        ]
+      },
+      "properties": {
+        "name": "Quai du Port / Promenade Jean Sablon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.496546902,
+          48.832638286
+        ]
+      },
+      "properties": {
+        "name": "Quai du Port / Rue Latérale au Viaduc",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487874313,
+          48.844216823
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Maréchal Foch / Avenue du Maréchal Franchet d'Esperey",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487569554,
+          48.844282355
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Maréchal Foch / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481000852,
+          48.840091999
+        ]
+      },
+      "properties": {
+        "name": "Route de Stalingrad D241 / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483243161,
+          48.832999821
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Avenue du Val de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485381644,
+          48.835729331
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Avenue Gugnon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483177173,
+          48.83224636
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Chemin de l'Île de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483251212,
+          48.832668532
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Impasse Agnès Sorel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483309445,
+          48.833524933
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Impasse Marchand",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483182335,
+          48.83226995
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Promenade Yvette Horner",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483535193,
+          48.833654457
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485699054,
+          48.836473904
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485675376,
+          48.83649394
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484814465,
+          48.83468477
+        ]
+      },
+      "properties": {
+        "name": "Rue Agnès Sorel / Rue Yvon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485945429,
+          48.83822148
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Ancellet / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484961931,
+          48.838897966
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Ancellet / Rue Thiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482045865,
+          48.836365628
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Avenue de Lattre de Tassigny D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481989061,
+          48.836393855
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48015896,
+          48.838593026
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Passage Cury",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48208196,
+          48.836302497
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480667346,
+          48.838119018
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Rue Cury",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481590469,
+          48.83702873
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481227331,
+          48.837496441
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Rue Gustave Lebègue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48013851,
+          48.838559657
+        ]
+      },
+      "properties": {
+        "name": "Rue André Pontier / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48481868,
+          48.84265604
+        ]
+      },
+      "properties": {
+        "name": "Rue Anquetil / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488677361,
+          48.842231838
+        ]
+      },
+      "properties": {
+        "name": "Rue Anquetil / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486447715,
+          48.842340611
+        ]
+      },
+      "properties": {
+        "name": "Rue Anquetil / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486831333,
+          48.84233935
+        ]
+      },
+      "properties": {
+        "name": "Rue Anquetil / Rue Thiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489379269,
+          48.834939906
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Péchinez / Sentier de Bellevue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473821385,
+          48.838600922
+        ]
+      },
+      "properties": {
+        "name": "Rue Aunier / Impasse Camille",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481973984,
+          48.836302241
+        ]
+      },
+      "properties": {
+        "name": "Rue Bauyn de Perreuse / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483550239,
+          48.833665073
+        ]
+      },
+      "properties": {
+        "name": "Rue Bauyn de Perreuse / Rue Agnès Sorel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482532819,
+          48.837447043
+        ]
+      },
+      "properties": {
+        "name": "Rue Brillet / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482130229,
+          48.837823324
+        ]
+      },
+      "properties": {
+        "name": "Rue Brillet / Rue Gustave Lebègue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480871566,
+          48.839101025
+        ]
+      },
+      "properties": {
+        "name": "Rue Brillet / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486599224,
+          48.838634254
+        ]
+      },
+      "properties": {
+        "name": "Rue Cabit / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483370898,
+          48.83408265
+        ]
+      },
+      "properties": {
+        "name": "Rue Carnot / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47868254,
+          48.83316787
+        ]
+      },
+      "properties": {
+        "name": "Rue Carnot / Rue Leprince",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47693194,
+          48.832939108
+        ]
+      },
+      "properties": {
+        "name": "Rue Carnot / Rue Victor Basch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485435744,
+          48.837032736
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles VII / Place Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485693845,
+          48.8365026
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles VII / Rue Agnès Sorel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485685181,
+          48.836522011
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles VII D120 / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485990425,
+          48.838209428
+        ]
+      },
+      "properties": {
+        "name": "Rue Curé Carreau / Rue Alphonse Ancellet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486011128,
+          48.838198217
+        ]
+      },
+      "properties": {
+        "name": "Rue Curé Carreau / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488659753,
+          48.83584975
+        ]
+      },
+      "properties": {
+        "name": "Rue Dagobert / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488693726,
+          48.835856018
+        ]
+      },
+      "properties": {
+        "name": "Rue Dagobert / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473148559,
+          48.840045799
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bapaume / Boulevard des Deux Communes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474198253,
+          48.83897978
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bapaume / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478890881,
+          48.836399481
+        ]
+      },
+      "properties": {
+        "name": "Rue de Beauté / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479740982,
+          48.834105176
+        ]
+      },
+      "properties": {
+        "name": "Rue de Beauté / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476313922,
+          48.841935482
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Boulevard des Deux Communes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479810468,
+          48.841029153
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Passage sous Châteaudun",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480297908,
+          48.840791581
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Route de Stalingrad D241",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478975396,
+          48.841373867
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476349641,
+          48.841953339
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Rue Désiré Richebois",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476310501,
+          48.841938493
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Rue Pierre Brossolette",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476312721,
+          48.841940954
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaudun / Rue Squéville",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492315219,
+          48.838519417
+        ]
+      },
+      "properties": {
+        "name": "Rue de Coulmiers / Allée Bettola",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492493637,
+          48.838292654
+        ]
+      },
+      "properties": {
+        "name": "Rue de Coulmiers / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492123107,
+          48.839210346
+        ]
+      },
+      "properties": {
+        "name": "Rue de Coulmiers / Rue de la Gare",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491324561,
+          48.845431464
+        ]
+      },
+      "properties": {
+        "name": "Rue de Coulmiers / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49250499,
+          48.838281198
+        ]
+      },
+      "properties": {
+        "name": "Rue de Coulmiers / Rue Lemancel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472783389,
+          48.839944171
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay / Boulevard des Deux Communes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472959333,
+          48.836086622
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay / Boulevard Gambetta D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472347968,
+          48.841458005
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay / Résidence les Cèdres",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47331476,
+          48.837818391
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay / Villa des Grillons",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473579499,
+          48.836629566
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay / Villa du Parc",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486963797,
+          48.83633242
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Abbé Guilleminault / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473686807,
+          48.83883522
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue Aunier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478999635,
+          48.841371441
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue de Châteaudun",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473086904,
+          48.838720438
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477304641,
+          48.840405098
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue des Viselets",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474700784,
+          48.839066617
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue du Général Faidherbe",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477355294,
+          48.840369877
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Rue Manessier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474681578,
+          48.839086409
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Courbet / Villa Lebègue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491860606,
+          48.843731992
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardillière / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493378659,
+          48.843793096
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardillière / Rue de Nancy",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490218843,
+          48.843928916
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardillière / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493436251,
+          48.843798097
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardillière / Rue du Bel-Air",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492779453,
+          48.843727007
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardillière / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489448407,
+          48.838248617
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Armistice / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489723745,
+          48.837532389
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Armistice / Impasse Jean-Baptiste Coignard",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490457312,
+          48.83575627
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Armistice / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492114032,
+          48.839221683
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492722156,
+          48.839338703
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Sentier sous Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486783594,
+          48.844041641
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Libération / Rond-Point du Maréchal Foch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491398052,
+          48.839481019
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Mairie / Place Roland Nungesser",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48221315,
+          48.835772062
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Muette / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479473787,
+          48.834887008
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Muette / Rue de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49194371,
+          48.837623187
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Boulevard de la République",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491005307,
+          48.838267316
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Grande rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492993097,
+          48.836187673
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Rue du Colonel Fabien",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490987314,
+          48.838301601
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Rue du Maréchal Vaillant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493128463,
+          48.8355896
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492917105,
+          48.836473088
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Rue José Dupuis",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492453224,
+          48.837133807
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Rue Marcelle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492793098,
+          48.836791535
+        ]
+      },
+      "properties": {
+        "name": "Rue de Larboust / Villa Marie Éléonore",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493058739,
+          48.832004395
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nazaré / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493059362,
+          48.831953974
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nazaré / Pont de Nogent N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492777709,
+          48.831952942
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nazaré / Promenade de Siegburg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493518488,
+          48.831998115
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nazaré / Promenade Jean Sablon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494129786,
+          48.832154016
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nazaré / Quai du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48939603,
+          48.84336063
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Avenue du Maréchal Fayolle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491311499,
+          48.846489674
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489958072,
+          48.83834273
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49133826,
+          48.84548379
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489373983,
+          48.839207745
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491342814,
+          48.845489428
+        ]
+      },
+      "properties": {
+        "name": "Rue de Plaisance / Rue des Marlières",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487859363,
+          48.839851626
+        ]
+      },
+      "properties": {
+        "name": "Rue de Pont Noyelles / Rue des Clamarts",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478713182,
+          48.838552946
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saint-Quentin / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475262597,
+          48.840860853
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saint-Quentin / Boulevard des Deux Communes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476563765,
+          48.839890018
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saint-Quentin / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475248732,
+          48.840868772
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saint-Quentin / Rue Maurice Barthelemy",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485754914,
+          48.839197327
+        ]
+      },
+      "properties": {
+        "name": "Rue des Clamarts / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488836607,
+          48.84007046
+        ]
+      },
+      "properties": {
+        "name": "Rue des Clamarts / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490720859,
+          48.838300461
+        ]
+      },
+      "properties": {
+        "name": "Rue des Défenseurs de Verdun / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491839414,
+          48.83751993
+        ]
+      },
+      "properties": {
+        "name": "Rue des Défenseurs de Verdun / Rue de Larboust",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490809435,
+          48.838269518
+        ]
+      },
+      "properties": {
+        "name": "Rue des Défenseurs de Verdun / Rue du Maréchal Vaillant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492421,
+          48.837141723
+        ]
+      },
+      "properties": {
+        "name": "Rue des Défenseurs de Verdun / Rue Marcelle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491229333,
+          48.836964758
+        ]
+      },
+      "properties": {
+        "name": "Rue des Défenseurs de Verdun / Rue Nouvelle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487011393,
+          48.83833057
+        ]
+      },
+      "properties": {
+        "name": "Rue des Héros Nogentais / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488374521,
+          48.838797428
+        ]
+      },
+      "properties": {
+        "name": "Rue des Héros Nogentais / Passage de la Taverne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486734746,
+          48.838244407
+        ]
+      },
+      "properties": {
+        "name": "Rue des Héros Nogentais / Passage du Lido",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484294303,
+          48.838039489
+        ]
+      },
+      "properties": {
+        "name": "Rue des Héros Nogentais / Rue Paul Bert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484699812,
+          48.838078666
+        ]
+      },
+      "properties": {
+        "name": "Rue des Héros Nogentais / Rue Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491350534,
+          48.845478919
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marlières / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492675398,
+          48.845685705
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marlières / Rue de la Paix",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492670685,
+          48.845675084
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marlières / Rue de Nancy",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491338797,
+          48.845483269
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marlières / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492094749,
+          48.845596465
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marlières / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477288914,
+          48.840410121
+        ]
+      },
+      "properties": {
+        "name": "Rue des Viselets / Rue Manessier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494121744,
+          48.836225805
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Boulevard Albert 1er D245",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49418554,
+          48.836230674
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481579549,
+          48.840472715
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482085716,
+          48.840003822
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478018047,
+          48.838084535
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Chanzy / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475492994,
+          48.839287735
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Chanzy / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476920822,
+          48.838343171
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Chanzy / Rue du Commandant Marchand",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476567308,
+          48.83710163
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Faidherbe / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474845365,
+          48.838860624
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Faidherbe / Rue Aunier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475927644,
+          48.837722963
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Faidherbe / Rue du Commandant Marchand",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476533677,
+          48.837058465
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Faidherbe / Rue Gabriel Péri",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474687936,
+          48.839075211
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Faidherbe / Villa Lebègue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483286221,
+          48.837675768
+        ]
+      },
+      "properties": {
+        "name": "Rue du Jeu de l'Arc / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484499384,
+          48.836331623
+        ]
+      },
+      "properties": {
+        "name": "Rue du Jeu de Paume / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488808269,
+          48.840580438
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lac / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489911439,
+          48.840598435
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lac / Rue du Maréchal Vaillant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485666657,
+          48.838165
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lieutenant Ohresser / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491002646,
+          48.846326506
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Joffre / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491192895,
+          48.838466875
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Allée Farini",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490879037,
+          48.838301445
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490456615,
+          48.839353914
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Place Roland Nungesser",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49161466,
+          48.841121836
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490432667,
+          48.839356777
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48991141,
+          48.840610173
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Vaillant / Rue du Lac",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488691431,
+          48.834890193
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Auguste Péchinez",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488642378,
+          48.835841274
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488661618,
+          48.835846092
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Dagobert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489379362,
+          48.833360575
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Hoche",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488663904,
+          48.835843195
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488810005,
+          48.834293535
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Rue Marceau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488645342,
+          48.835340704
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port / Sentier de Bellevue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494730872,
+          48.835455587
+        ]
+      },
+      "properties": {
+        "name": "Rue du Viaduc / Avenue de Bry D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494615266,
+          48.835483608
+        ]
+      },
+      "properties": {
+        "name": "Rue du Viaduc / Carrefour Jean Mermoz",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.496279601,
+          48.832594953
+        ]
+      },
+      "properties": {
+        "name": "Rue du Viaduc / Quai du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.495180136,
+          48.834332707
+        ]
+      },
+      "properties": {
+        "name": "Rue du Viaduc / Rue Henry Dunant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494626218,
+          48.835477843
+        ]
+      },
+      "properties": {
+        "name": "Rue du Viaduc / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487688888,
+          48.837660695
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Vitry / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488139165,
+          48.835972115
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Vitry / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48801747,
+          48.836994126
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Vitry / Rue de l'Abbé Guilleminault",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488214494,
+          48.845514694
+        ]
+      },
+      "properties": {
+        "name": "Rue Édouard Renard / Avenue Polton",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489169476,
+          48.845252053
+        ]
+      },
+      "properties": {
+        "name": "Rue Édouard Renard / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477017806,
+          48.837362675
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Brisson / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478467636,
+          48.836888796
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Brisson / Passage Jules-Marcel Nicole",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4784733,
+          48.836946461
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Brisson / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47901501,
+          48.838724603
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481306101,
+          48.836348454
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480047733,
+          48.83787714
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Rue Cury",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480985526,
+          48.836817695
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480947255,
+          48.836814365
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Rue Paul Doumer",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47967707,
+          48.838227113
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48901114,
+          48.838168503
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Galbrun / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488576808,
+          48.838263344
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Galbrun / Passage de la Taverne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487537919,
+          48.838407317
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Galbrun / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47644489,
+          48.833831222
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rolland / Avenue Suzanne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483043679,
+          48.834711922
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rolland / Rue Bauyn de Perreuse",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479759552,
+          48.834101198
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rolland / Rue de Beauté",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476610613,
+          48.833859978
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rolland / Villa Sainte-Marthe",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476493271,
+          48.837014756
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476715641,
+          48.836063815
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480140444,
+          48.841311786
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Margerie / Route de Stalingrad D241",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47991995,
+          48.841715121
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillaume Achille Vivier / Route de Stalingrad D241",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479633082,
+          48.841829503
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillaume Achille Vivier / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478086913,
+          48.843076806
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillaume Achille Vivier / Rue de la Corneille",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484971458,
+          48.838142074
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy Môquet / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482402433,
+          48.840184717
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy Môquet / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484620301,
+          48.83843346
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy Môquet / Rue Thiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493165324,
+          48.83398917
+        ]
+      },
+      "properties": {
+        "name": "Rue Henry Dunant / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493211638,
+          48.833999167
+        ]
+      },
+      "properties": {
+        "name": "Rue Henry Dunant / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49287295,
+          48.833798119
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49238311,
+          48.833816406
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue de Nazaré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489399395,
+          48.833352043
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue du Port",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493947261,
+          48.835523262
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Kablé D120 / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494605678,
+          48.835489478
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Kablé D120 / Carrefour Jean Mermoz",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488661612,
+          48.835846141
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Kablé D120 / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494831547,
+          48.835466496
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Kablé D120 / Rue Latérale au Viaduc",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494095169,
+          48.835490365
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Kablé D120 / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493444593,
+          48.838315094
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Monnet / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492861618,
+          48.841030281
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Monnet / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476767973,
+          48.837201803
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Moulin / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477822856,
+          48.836348392
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Moulin / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479488901,
+          48.83663621
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Soulès / Passage Jules-Marcel Nicole",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47958673,
+          48.836655895
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Soulès / Rue Paul Doumer",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479021774,
+          48.837666267
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Soulès / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494114517,
+          48.836604607
+        ]
+      },
+      "properties": {
+        "name": "Rue José Dupuis / Boulevard Albert 1er D245",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482536277,
+          48.837442362
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Rue Brillet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.482534383,
+          48.837430925
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492513579,
+          48.838270282
+        ]
+      },
+      "properties": {
+        "name": "Rue Lemancel / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478702026,
+          48.834019324
+        ]
+      },
+      "properties": {
+        "name": "Rue Leprince / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484656818,
+          48.839946669
+        ]
+      },
+      "properties": {
+        "name": "Rue Lequesne / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488709875,
+          48.841687324
+        ]
+      },
+      "properties": {
+        "name": "Rue Lequesne / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487123513,
+          48.841299839
+        ]
+      },
+      "properties": {
+        "name": "Rue Lequesne / Rue de Pont Noyelles",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483513259,
+          48.83919081
+        ]
+      },
+      "properties": {
+        "name": "Rue Lequesne / Rue Guy Môquet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485957472,
+          48.840795192
+        ]
+      },
+      "properties": {
+        "name": "Rue Lequesne / Rue Thiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491647215,
+          48.842590281
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Léon Lepoutre / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489006444,
+          48.842859
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Léon Lepoutre / Rue de Plaisance",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491757956,
+          48.840482934
+        ]
+      },
+      "properties": {
+        "name": "Rue Lucien Bellivier / Rue de Coulmiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490950187,
+          48.840440462
+        ]
+      },
+      "properties": {
+        "name": "Rue Lucien Bellivier / Rue de la Mairie",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489947513,
+          48.840411524
+        ]
+      },
+      "properties": {
+        "name": "Rue Lucien Bellivier / Rue du Maréchal Vaillant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479477618,
+          48.839068197
+        ]
+      },
+      "properties": {
+        "name": "Rue Manessier / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.476028758,
+          48.841162954
+        ]
+      },
+      "properties": {
+        "name": "Rue Manessier / Boulevard des Deux Communes",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477298892,
+          48.840399667
+        ]
+      },
+      "properties": {
+        "name": "Rue Manessier / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477201168,
+          48.840495057
+        ]
+      },
+      "properties": {
+        "name": "Rue Manessier / Rue des Viselets",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493502685,
+          48.835026535
+        ]
+      },
+      "properties": {
+        "name": "Rue Marceau / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493955792,
+          48.837340553
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelle / Boulevard Albert 1er D245",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49393143,
+          48.837337493
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelle / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491170712,
+          48.835708649
+        ]
+      },
+      "properties": {
+        "name": "Rue Nouvelle / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483798815,
+          48.841960368
+        ]
+      },
+      "properties": {
+        "name": "Rue Odile Laurent / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484395332,
+          48.841511901
+        ]
+      },
+      "properties": {
+        "name": "Rue Odile Laurent / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479985275,
+          48.839406349
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.47750206,
+          48.841848382
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Rue de Châteaudun",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478326777,
+          48.840949521
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Rue de l'Amiral Courbet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486932728,
+          48.836339926
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486717736,
+          48.837309897
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Curé Carreau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486962028,
+          48.836362449
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue de l'Abbé Guilleminault",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486610747,
+          48.837270153
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue du Lieutenant Ohresser",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48101008,
+          48.840078178
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Boulevard de Strasbourg D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48100877,
+          48.840086881
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Route de Stalingrad D241",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484298488,
+          48.838026077
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48156274,
+          48.839622326
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue Théodore Honoré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479165431,
+          48.836426993
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.479379034,
+          48.836617159
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Passage Jules-Marcel Nicole",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.480969092,
+          48.836814012
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483559969,
+          48.836166371
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette D120 / Avenue de Lattre de Tassigny D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485674121,
+          48.836458247
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette D120 / Rue Agnès Sorel",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48569268,
+          48.836493773
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette D120 / Rue Charles VII D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483581367,
+          48.83614466
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette D120 / Rue Yvon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483863115,
+          48.836157042
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette D120 / Square de la Fontaine",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.471718377,
+          48.837600544
+        ]
+      },
+      "properties": {
+        "name": "Rue Plisson / Boulevard Gambetta D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473217535,
+          48.838157203
+        ]
+      },
+      "properties": {
+        "name": "Rue Plisson / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487549244,
+          48.843993196
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Josserand / Rond-Point du Maréchal Foch",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486863809,
+          48.842363922
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Josserand / Rue Anquetil",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.486851682,
+          48.842354304
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Josserand / Rue Thiers",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.48588614,
+          48.837089863
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Sébastien / Grande Rue Charles de Gaulle",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485005689,
+          48.83811868
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Sébastien / Rue des Héros Nogentais",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484986324,
+          48.838130205
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Sébastien / Rue Guy Môquet",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485126814,
+          48.837322893
+        ]
+      },
+      "properties": {
+        "name": "Rue Sainte-Anne / Place Sainte-Anne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478310926,
+          48.83642698
+        ]
+      },
+      "properties": {
+        "name": "Rue Théodore Honoré / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.478459151,
+          48.836829344
+        ]
+      },
+      "properties": {
+        "name": "Rue Théodore Honoré / Passage Jules-Marcel Nicole",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.481561862,
+          48.839606287
+        ]
+      },
+      "properties": {
+        "name": "Rue Théodore Honoré / Rue Paul Bert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.485274275,
+          48.839520356
+        ]
+      },
+      "properties": {
+        "name": "Rue Thiers / Boulevard Gallieni",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484237659,
+          48.838164772
+        ]
+      },
+      "properties": {
+        "name": "Rue Thiers / Rue Paul Bert",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475229887,
+          48.833348617
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Avenue Victor Hugo",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.475299787,
+          48.833443383
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483553983,
+          48.83616145
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvon / Avenue de Lattre de Tassigny D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4843381,
+          48.8354615
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvon / Avenue Gugnon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483572955,
+          48.836179304
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvon / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484143923,
+          48.83563488
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvon / Square de la Fontaine",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489558688,
+          48.83453163
+        ]
+      },
+      "properties": {
+        "name": "Sentier de Bellevue / Impasse Bellevue",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489582901,
+          48.834369409
+        ]
+      },
+      "properties": {
+        "name": "Sentier de Bellevue / Rue Marceau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.484342453,
+          48.835468671
+        ]
+      },
+      "properties": {
+        "name": "Square de la Fontaine / Avenue Gugnon",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.483851657,
+          48.836186424
+        ]
+      },
+      "properties": {
+        "name": "Square de la Fontaine / Rue Pierre Brossolette D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490367792,
+          48.83184783
+        ]
+      },
+      "properties": {
+        "name": "Square Tino Rossi / Place Maurice Chevalier",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.488768798,
+          48.831764187
+        ]
+      },
+      "properties": {
+        "name": "Square Tino Rossi / Promenade Yvette Horner",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.489874549,
+          48.830216698
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Autoroute de l’Est A4",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493529825,
+          48.834842553
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Boulevard Albert 1er N486",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491178899,
+          48.831230342
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / La Marne",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.491611714,
+          48.831805944
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Passerelle des Arts",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.49193285,
+          48.8318056
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Promenade de Siegburg",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490205506,
+          48.830760548
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Quai de Polangis",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493239649,
+          48.844099879
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue de Nancy",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492556416,
+          48.832919681
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue de Nazaré",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494080807,
+          48.836226757
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue du Colonel Fabien",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493100124,
+          48.833993231
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue Henry Dunant",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.492834429,
+          48.833782629
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue Hoche",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493956994,
+          48.835553953
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue Jacques Kablé D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.494078414,
+          48.836600128
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue José Dupuis",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493504192,
+          48.8350012
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Nogent A86 / Rue Marceau",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.470599327,
+          48.838835987
+        ]
+      },
+      "properties": {
+        "name": "Villa André / Boulevard Gambetta D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472805399,
+          48.839714113
+        ]
+      },
+      "properties": {
+        "name": "Villa André / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.477955774,
+          48.834001928
+        ]
+      },
+      "properties": {
+        "name": "Villa Clémence Henriette / Rue François Rolland",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.469946422,
+          48.83957199
+        ]
+      },
+      "properties": {
+        "name": "Villa Ledoux / Boulevard Gambetta D240",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.472570882,
+          48.840621119
+        ]
+      },
+      "properties": {
+        "name": "Villa Ledoux / Rue de Fontenay",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473639911,
+          48.835328064
+        ]
+      },
+      "properties": {
+        "name": "D120 / Avenue de Joinville D86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473764596,
+          48.835433718
+        ]
+      },
+      "properties": {
+        "name": "D86 / Avenue Georges Clemenceau D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.474097153,
+          48.835407887
+        ]
+      },
+      "properties": {
+        "name": "D86 / Grande Rue Charles de Gaulle D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.493884431,
+          48.838012471
+        ]
+      },
+      "properties": {
+        "name": "D245 / Tunnel de Nogent A86",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.473877211,
+          48.83539944
+        ]
+      },
+      "properties": {
+        "name": "D86 / D120",
+        "context": "Nogent-sur-Marne, Val-de-Marne",
+        "citycode": "94052",
+        "depcode": "94"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6981 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271980798,
+          44.546526992
+        ]
+      },
+      "properties": {
+        "name": "Allée du Piolit / Giratoire de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269180713,
+          44.547757926
+        ]
+      },
+      "properties": {
+        "name": "Allée du Piolit / Rue de la Pousterle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.297110571,
+          44.561949755
+        ]
+      },
+      "properties": {
+        "name": "Ancienne Route Du Bourget / Place Edmond Trinquier",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.282437323,
+          44.543072859
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Impasse Saint-Lazare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27806796,
+          44.545012157
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279585285,
+          44.544574742
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269781823,
+          44.546305594
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Gare / Chemin du Pontilla",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271699197,
+          44.546314628
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Gare / Giratoire de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27356038,
+          44.546092091
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Martyrs / Allée du 19 Mars 1962",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272097741,
+          44.546560399
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Martyrs / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281482875,
+          44.5553109
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Coste Amare / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280094294,
+          44.554892616
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Coste Amare / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277275735,
+          44.548179863
+        ]
+      },
+      "properties": {
+        "name": "Chemin de l'Iscle / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28779543,
+          44.531533244
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Baie de Chanteloube C4 / D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281729954,
+          44.562740686
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Andrieux / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.31452691,
+          44.535104051
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bernards / Chemin des Néviers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.299920104,
+          44.558137441
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bertrands C21 / Route de la Blache",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283663547,
+          44.552386036
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons / Route du Bourget C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278787586,
+          44.553758745
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27874315,
+          44.553719837
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278616876,
+          44.553810973
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Route du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281747772,
+          44.552396871
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.282374931,
+          44.552669135
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279214613,
+          44.551529698
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Impasse des Trémouilles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277917742,
+          44.55023472
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275970059,
+          44.546904138
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Marais / Rue des Hirondelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278924494,
+          44.547208063
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283224831,
+          44.55234657
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283236449,
+          44.552343958
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278821001,
+          44.547054352
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Route du Moulin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277739944,
+          44.547250071
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin Neuf / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281602279,
+          44.55310195
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Impasse du Chaume",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28323982,
+          44.552373481
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278853836,
+          44.553784279
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270314094,
+          44.549197954
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pic Épeiche / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.267278101,
+          44.54559697
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pontilla / Route de Montgardin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272471667,
+          44.550925619
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Chemin du Pic Épeiche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277195308,
+          44.548068864
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258485725,
+          44.556718102
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Route des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258331565,
+          44.55674558
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Rue du Réallon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275014745,
+          44.554463297
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Chemin des Vignes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276577091,
+          44.548401265
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275038969,
+          44.554442338
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Route du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.293792954,
+          44.504248013
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Serre du Bois / Arête de Peyre Grosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269892712,
+          44.546583907
+        ]
+      },
+      "properties": {
+        "name": "Chemin Félix Dioque / Avenue de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280079979,
+          44.546339414
+        ]
+      },
+      "properties": {
+        "name": "Chemin la Butte / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278061311,
+          44.545022816
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Avenue d'Embrun D9",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274951407,
+          44.545660906
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278052041,
+          44.545020397
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276610516,
+          44.54529058
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278056197,
+          44.545033177
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route du Moulin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277355917,
+          44.545270938
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276546162,
+          44.545259875
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278556529,
+          44.554077004
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Ancien Réservoir / Chemin des Foulons du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281744599,
+          44.555146146
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Essillon / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276470782,
+          44.548785934
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Garenne / Chemin du Pré du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280099207,
+          44.546351409
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Loube / Chemin la Butte",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28010287,
+          44.546345612
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Loube / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274106214,
+          44.549947896
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Écrins / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281774196,
+          44.555162089
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Maïts / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281762187,
+          44.555153209
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Maïts / Impasse de l'Essillon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27888584,
+          44.549520567
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Mésanges / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276248579,
+          44.544277389
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276168043,
+          44.54432985
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276310466,
+          44.544501041
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276443528,
+          44.544381708
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258469714,
+          44.553318932
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Sagnes C15 / Rue Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277979651,
+          44.55065053
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Bois Garret / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.255620423,
+          44.552542166
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Devezet / Impasse de l'Île",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277521867,
+          44.548195383
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Petit Bourg / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277750527,
+          44.547760267
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Petit Bourg / Passage du Petit Bourg",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.273458089,
+          44.5503803
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Sagnas / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.257355961,
+          44.553579645
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Saluchet / Rue du Réallon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270614603,
+          44.549038794
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Tétras / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27782713,
+          44.547278594
+        ]
+      },
+      "properties": {
+        "name": "Impasse Saint-Jullien / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277739624,
+          44.547250735
+        ]
+      },
+      "properties": {
+        "name": "Impasse Saint-Jullien / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280727556,
+          44.553307692
+        ]
+      },
+      "properties": {
+        "name": "Lotissement les Vignes / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283849704,
+          44.553617042
+        ]
+      },
+      "properties": {
+        "name": "Montée de la Digue Madame / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.273143832,
+          44.549457779
+        ]
+      },
+      "properties": {
+        "name": "Passage de Combe Belle / Impasse des Écrins",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272628802,
+          44.549225587
+        ]
+      },
+      "properties": {
+        "name": "Passage de Combe Belle / Rue de Combe Belle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276360911,
+          44.544211884
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276662817,
+          44.544262797
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2764684,
+          44.54426614
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270808209,
+          44.548974312
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270977157,
+          44.549021196
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Place de l'Astragale",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271401848,
+          44.549367422
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Place du Pic de Bure",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277402728,
+          44.547648564
+        ]
+      },
+      "properties": {
+        "name": "Passage du Petit Bourg / Place du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270759073,
+          44.548986318
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Astragale / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270689304,
+          44.549004527
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Astragale / Impasse du Tétras",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276067363,
+          44.54427477
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275697426,
+          44.544424012
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275542974,
+          44.544275501
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275453224,
+          44.544891017
+        ]
+      },
+      "properties": {
+        "name": "Place du Fort / Rue du Fort",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.305031584,
+          44.561710091
+        ]
+      },
+      "properties": {
+        "name": "Route de la Blache C22 / Route de la Blache C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283403431,
+          44.534736458
+        ]
+      },
+      "properties": {
+        "name": "Route de Pralong C3 / D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.268696642,
+          44.56226203
+        ]
+      },
+      "properties": {
+        "name": "Route des Girards / Chemin de Pré Guérins",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272076367,
+          44.560080589
+        ]
+      },
+      "properties": {
+        "name": "Route des Girards / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.309307966,
+          44.550701021
+        ]
+      },
+      "properties": {
+        "name": "Route des Lagiers / Chemin des Berards",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.302094247,
+          44.55773709
+        ]
+      },
+      "properties": {
+        "name": "Route des Lagiers C23 / Chemin des Bertrands C21",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279202338,
+          44.542112432
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / Rue du Béal",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278152767,
+          44.543542178
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27991907,
+          44.540873802
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / N94",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258729103,
+          44.558002248
+        ]
+      },
+      "properties": {
+        "name": "Route des Réallons / Route de Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274857433,
+          44.559810266
+        ]
+      },
+      "properties": {
+        "name": "Route des Thomassons / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.295181013,
+          44.56162937
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Ancienne Route Du Bourget",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.296511026,
+          44.562270071
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin des Beaujours C20",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.294967449,
+          44.558752709
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin des Bertrands C21",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283229684,
+          44.552297239
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin du Moulin C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283236458,
+          44.552343888
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283912882,
+          44.553399704
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275022521,
+          44.554467172
+        ]
+      },
+      "properties": {
+        "name": "Route du Château / Chemin des Vignes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278705373,
+          44.553769707
+        ]
+      },
+      "properties": {
+        "name": "Route du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276591953,
+          44.545297618
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276069143,
+          44.543719525
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue Casanova",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27689203,
+          44.544571001
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27651193,
+          44.544040752
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276701091,
+          44.544899138
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276281385,
+          44.543906824
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276192875,
+          44.54233406
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / N94",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278074056,
+          44.545026208
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Avenue d'Embrun D9",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278814009,
+          44.547053866
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278783895,
+          44.546534608
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Chemin la Butte",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278061315,
+          44.545022795
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270862421,
+          44.54783909
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Allée de la Gardette",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270413987,
+          44.547326215
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272057642,
+          44.548765497
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Place de la Rochette",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275819837,
+          44.544584961
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276298271,
+          44.544932871
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276268187,
+          44.544980189
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277206696,
+          44.545624712
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôpital / Rue du Relais",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272167154,
+          44.550661338
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Chemin du Pic Épeiche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272024932,
+          44.549836731
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Impasse du Gapian",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271907736,
+          44.549711768
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Impasse du Héron Cendré",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271582728,
+          44.549507311
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Place du Pic de Bure",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269601858,
+          44.548368895
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pousterle / Chemin des Roselières",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271665559,
+          44.546874458
+        ]
+      },
+      "properties": {
+        "name": "Rue de Salados / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275706991,
+          44.544418867
+        ]
+      },
+      "properties": {
+        "name": "Rue des Andrônes / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275938424,
+          44.545452368
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276103137,
+          44.545307107
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Impasse des Ligures",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276325422,
+          44.545221989
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27656807,
+          44.545201935
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275347569,
+          44.545392887
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274900863,
+          44.545340345
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276211042,
+          44.545053629
+        ]
+      },
+      "properties": {
+        "name": "Rue des Echelles / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276146132,
+          44.544394334
+        ]
+      },
+      "properties": {
+        "name": "Rue des Echelles / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277377633,
+          44.544446354
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Passage des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277891996,
+          44.544455352
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276579655,
+          44.545324975
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276893407,
+          44.54625601
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Impasse du Cèdre",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276592434,
+          44.545297824
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276629624,
+          44.545862306
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276533212,
+          44.545270726
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276863492,
+          44.546258694
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276010776,
+          44.545204594
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Impasse des Ligures",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276149469,
+          44.545100826
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276249596,
+          44.545006898
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274898616,
+          44.545327048
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276845381,
+          44.5481924
+        ]
+      },
+      "properties": {
+        "name": "Rue des Hirondelles / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275427537,
+          44.546286701
+        ]
+      },
+      "properties": {
+        "name": "Rue des Hirondelles / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27491145,
+          44.549395641
+        ]
+      },
+      "properties": {
+        "name": "Rue des Nays / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27410609,
+          44.54914167
+        ]
+      },
+      "properties": {
+        "name": "Rue des Nays / Impasse des Cardes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278245639,
+          44.552104369
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vergers du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279039712,
+          44.54173675
+        ]
+      },
+      "properties": {
+        "name": "Rue du Béal / Impasse du Grand Pré",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277367936,
+          44.543564182
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur David Falik / Passage des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27494424,
+          44.545656855
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274957799,
+          44.54565649
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276294949,
+          44.544214472
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276253068,
+          44.544367892
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Impasse des Remparts",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276372809,
+          44.544213281
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Passage de l'Escarmouche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276076311,
+          44.544380003
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275670594,
+          44.544758437
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Place du Fort",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276371778,
+          44.543987476
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275860535,
+          44.544607022
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275609729,
+          44.544665853
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274952618,
+          44.545432439
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276199387,
+          44.544453147
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274930747,
+          44.545363674
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276448544,
+          44.544050816
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274890519,
+          44.545698973
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276366059,
+          44.544223382
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27548467,
+          44.544795771
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274874836,
+          44.545292913
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274775404,
+          44.545718938
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274901412,
+          44.545706001
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276897875,
+          44.546264919
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Impasse du Cèdre",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275043783,
+          44.545947591
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274812381,
+          44.545696195
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278888126,
+          44.542514196
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275823009,
+          44.543340498
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274668626,
+          44.545477177
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.257364713,
+          44.553123929
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Impasse des Sagnes C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258409424,
+          44.55673075
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Route des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258129338,
+          44.555966757
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Rue Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2763608,
+          44.54421199
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276604275,
+          44.545095079
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276516938,
+          44.545146907
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274815943,
+          44.545679399
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274897505,
+          44.545662716
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275661099,
+          44.544129684
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Rue Casanova",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274609233,
+          44.545278985
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.267614307,
+          44.517502868
+        ]
+      },
+      "properties": {
+        "name": "Voie communale Voiecommunale / D203",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283026216,
+          44.534983195
+        ]
+      },
+      "properties": {
+        "name": "D3 / Route de Pralong C3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279981132,
+          44.540791376
+        ]
+      },
+      "properties": {
+        "name": "N94 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.252922548,
+          44.559428002
+        ]
+      },
+      "properties": {
+        "name": "C15 / Rue du Pré de Lobre D614",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.288289674,
+          44.538983044
+        ]
+      },
+      "properties": {
+        "name": "N94 / D9_B1",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271980798,
+          44.546526992
+        ]
+      },
+      "properties": {
+        "name": "Allée du Piolit / Giratoire de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269180713,
+          44.547757926
+        ]
+      },
+      "properties": {
+        "name": "Allée du Piolit / Rue de la Pousterle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.297110571,
+          44.561949755
+        ]
+      },
+      "properties": {
+        "name": "Ancienne Route Du Bourget / Place Edmond Trinquier",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.282437323,
+          44.543072859
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Impasse Saint-Lazare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27806796,
+          44.545012157
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279585285,
+          44.544574742
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280600058,
+          44.544265432
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Embrun D9 / Torrent des Moulettes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269781823,
+          44.546305594
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Gare / Chemin du Pontilla",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271699197,
+          44.546314628
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Gare / Giratoire de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27356038,
+          44.546092091
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Martyrs / Allée du 19 Mars 1962",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272097741,
+          44.546560399
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Martyrs / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281482875,
+          44.5553109
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Coste Amare / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280094294,
+          44.554892616
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Coste Amare / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277275735,
+          44.548179863
+        ]
+      },
+      "properties": {
+        "name": "Chemin de l'Iscle / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.291206394,
+          44.530329512
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Baie de Chanteloube C4 / Torrent de Malefosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28779543,
+          44.531533244
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Baie de Chanteloube C4 / D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281729954,
+          44.562740686
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Andrieux / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.31452691,
+          44.535104051
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bernards / Chemin des Néviers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.299920104,
+          44.558137441
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bertrands C21 / Route de la Blache",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283663547,
+          44.552386036
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons / Route du Bourget C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283806363,
+          44.552398746
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons / Torrent des Moulettes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278787586,
+          44.553758745
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27874315,
+          44.553719837
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278616876,
+          44.553810973
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Foulons du Château / Route du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281747772,
+          44.552396871
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.282374931,
+          44.552669135
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279214613,
+          44.551529698
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Impasse des Trémouilles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277917742,
+          44.55023472
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Graviers / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275970059,
+          44.546904138
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Marais / Rue des Hirondelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278924494,
+          44.547208063
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283224831,
+          44.55234657
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283236449,
+          44.552343958
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278821001,
+          44.547054352
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin C205 / Route du Moulin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277739944,
+          44.547250071
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin Neuf / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281194993,
+          44.547969199
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Moulin Neuf / Torrent des Moulettes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281602279,
+          44.55310195
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Impasse du Chaume",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28323982,
+          44.552373481
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278853836,
+          44.553784279
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Petit Clos Lachaup / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270314094,
+          44.549197954
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pic Épeiche / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.267278101,
+          44.54559697
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pontilla / Route de Montgardin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272471667,
+          44.550925619
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Chemin du Pic Épeiche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277195308,
+          44.548068864
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258485725,
+          44.556718102
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Route des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258331565,
+          44.55674558
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Rue du Réallon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.256442081,
+          44.557638597
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Torrent des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.253107731,
+          44.559380383
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré de l'Obre C15 / Torrent du Dévezet",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275014745,
+          44.554463297
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Chemin des Vignes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276577091,
+          44.548401265
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275038969,
+          44.554442338
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Pré du Château / Route du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.293792954,
+          44.504248013
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Serre du Bois / Arête de Peyre Grosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269892712,
+          44.546583907
+        ]
+      },
+      "properties": {
+        "name": "Chemin Félix Dioque / Avenue de la Gare",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280079979,
+          44.546339414
+        ]
+      },
+      "properties": {
+        "name": "Chemin la Butte / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278061311,
+          44.545022816
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Avenue d'Embrun D9",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274951407,
+          44.545660906
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278052041,
+          44.545020397
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276610516,
+          44.54529058
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278056197,
+          44.545033177
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Route du Moulin",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277355917,
+          44.545270938
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276546162,
+          44.545259875
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D3 / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278556529,
+          44.554077004
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Ancien Réservoir / Chemin des Foulons du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281744599,
+          44.555146146
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Essillon / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276470782,
+          44.548785934
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Garenne / Chemin du Pré du Château",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280099207,
+          44.546351409
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Loube / Chemin la Butte",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28010287,
+          44.546345612
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Loube / Rue du Champ de Foire",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274106214,
+          44.549947896
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Écrins / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281774196,
+          44.555162089
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Maïts / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.281762187,
+          44.555153209
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Maïts / Impasse de l'Essillon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27888584,
+          44.549520567
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Mésanges / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276248579,
+          44.544277389
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276168043,
+          44.54432985
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276310466,
+          44.544501041
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276443528,
+          44.544381708
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Remparts / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258469714,
+          44.553318932
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Sagnes C15 / Rue Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277979651,
+          44.55065053
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Bois Garret / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.255620423,
+          44.552542166
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Devezet / Impasse de l'Île",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277521867,
+          44.548195383
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Petit Bourg / Chemin de l'Iscle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277750527,
+          44.547760267
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Petit Bourg / Passage du Petit Bourg",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.273458089,
+          44.5503803
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Sagnas / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.257355961,
+          44.553579645
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Saluchet / Rue du Réallon",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270614603,
+          44.549038794
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Tétras / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27782713,
+          44.547278594
+        ]
+      },
+      "properties": {
+        "name": "Impasse Saint-Jullien / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277739624,
+          44.547250735
+        ]
+      },
+      "properties": {
+        "name": "Impasse Saint-Jullien / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270727526,
+          44.549557903
+        ]
+      },
+      "properties": {
+        "name": "L'Avance / Chemin du Pic Épeiche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.252330209,
+          44.550541798
+        ]
+      },
+      "properties": {
+        "name": "L'Avance / Rue Coste Belle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280727556,
+          44.553307692
+        ]
+      },
+      "properties": {
+        "name": "Lotissement les Vignes / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283849704,
+          44.553617042
+        ]
+      },
+      "properties": {
+        "name": "Montée de la Digue Madame / Chemin de la Clape",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.273143832,
+          44.549457779
+        ]
+      },
+      "properties": {
+        "name": "Passage de Combe Belle / Impasse des Écrins",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272628802,
+          44.549225587
+        ]
+      },
+      "properties": {
+        "name": "Passage de Combe Belle / Rue de Combe Belle",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276360911,
+          44.544211884
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276662817,
+          44.544262797
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2764684,
+          44.54426614
+        ]
+      },
+      "properties": {
+        "name": "Passage de l'Escarmouche / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270808209,
+          44.548974312
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270977157,
+          44.549021196
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Place de l'Astragale",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271401848,
+          44.549367422
+        ]
+      },
+      "properties": {
+        "name": "Passage du Bouvreuil / Place du Pic de Bure",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277402728,
+          44.547648564
+        ]
+      },
+      "properties": {
+        "name": "Passage du Petit Bourg / Place du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270759073,
+          44.548986318
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Astragale / Impasse du Pré Vert",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270689304,
+          44.549004527
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Astragale / Impasse du Tétras",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276067363,
+          44.54427477
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275697426,
+          44.544424012
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275542974,
+          44.544275501
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Église / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275453224,
+          44.544891017
+        ]
+      },
+      "properties": {
+        "name": "Place du Fort / Rue du Fort",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.305031584,
+          44.561710091
+        ]
+      },
+      "properties": {
+        "name": "Route de la Blache C22 / Route de la Blache C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.305460184,
+          44.559797899
+        ]
+      },
+      "properties": {
+        "name": "Route de la Blache C205 / Torrent de Malefosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283403431,
+          44.534736458
+        ]
+      },
+      "properties": {
+        "name": "Route de Pralong C3 / D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.291863453,
+          44.546047281
+        ]
+      },
+      "properties": {
+        "name": "Route des Augiers / Torrent de Malefosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.268696642,
+          44.56226203
+        ]
+      },
+      "properties": {
+        "name": "Route des Girards / Chemin de Pré Guérins",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272076367,
+          44.560080589
+        ]
+      },
+      "properties": {
+        "name": "Route des Girards / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.265755985,
+          44.569121146
+        ]
+      },
+      "properties": {
+        "name": "Route des Girards / Torrent des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.309307966,
+          44.550701021
+        ]
+      },
+      "properties": {
+        "name": "Route des Lagiers / Chemin des Berards",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.302094247,
+          44.55773709
+        ]
+      },
+      "properties": {
+        "name": "Route des Lagiers C23 / Chemin des Bertrands C21",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.304249808,
+          44.556536221
+        ]
+      },
+      "properties": {
+        "name": "Route des Lagiers C23 / Torrent de Malefosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279202338,
+          44.542112432
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / Rue du Béal",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278152767,
+          44.543542178
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280605207,
+          44.537256763
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / Torrent des Moulettes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27991907,
+          44.540873802
+        ]
+      },
+      "properties": {
+        "name": "Route des Moulettes D3 / N94",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258729103,
+          44.558002248
+        ]
+      },
+      "properties": {
+        "name": "Route des Réallons / Route de Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.25847711,
+          44.560751444
+        ]
+      },
+      "properties": {
+        "name": "Route des Réallons / Torrent des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274857433,
+          44.559810266
+        ]
+      },
+      "properties": {
+        "name": "Route des Thomassons / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.295181013,
+          44.56162937
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Ancienne Route Du Bourget",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.296511026,
+          44.562270071
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin des Beaujours C20",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.294967449,
+          44.558752709
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin des Bertrands C21",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283229684,
+          44.552297239
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin du Moulin C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283236458,
+          44.552343888
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Chemin du Petit Clos Lachaup",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283912882,
+          44.553399704
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Montée de la Digue Madame",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.28466552,
+          44.554109193
+        ]
+      },
+      "properties": {
+        "name": "Route du Bourget C205 / Torrent des Moulettes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275022521,
+          44.554467172
+        ]
+      },
+      "properties": {
+        "name": "Route du Château / Chemin des Vignes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278705373,
+          44.553769707
+        ]
+      },
+      "properties": {
+        "name": "Route du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276591953,
+          44.545297618
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276069143,
+          44.543719525
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue Casanova",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27689203,
+          44.544571001
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27651193,
+          44.544040752
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276701091,
+          44.544899138
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276281385,
+          44.543906824
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276192875,
+          44.54233406
+        ]
+      },
+      "properties": {
+        "name": "Route du Fein D3 / N94",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278074056,
+          44.545026208
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Avenue d'Embrun D9",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278814009,
+          44.547053866
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Chemin du Moulin Neuf",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278783895,
+          44.546534608
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Chemin la Butte",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278061315,
+          44.545022795
+        ]
+      },
+      "properties": {
+        "name": "Route du Moulin / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270862421,
+          44.54783909
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Allée de la Gardette",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.270413987,
+          44.547326215
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272057642,
+          44.548765497
+        ]
+      },
+      "properties": {
+        "name": "Rue de Combe Belle / Place de la Rochette",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275819837,
+          44.544584961
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276298271,
+          44.544932871
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276268187,
+          44.544980189
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277206696,
+          44.545624712
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôpital / Rue du Relais",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272167154,
+          44.550661338
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Chemin du Pic Épeiche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.272024932,
+          44.549836731
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Impasse du Gapian",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271907736,
+          44.549711768
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Impasse du Héron Cendré",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271582728,
+          44.549507311
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Coupa / Place du Pic de Bure",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.269601858,
+          44.548368895
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pousterle / Chemin des Roselières",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.271665559,
+          44.546874458
+        ]
+      },
+      "properties": {
+        "name": "Rue de Salados / Allée du Piolit",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275706991,
+          44.544418867
+        ]
+      },
+      "properties": {
+        "name": "Rue des Andrônes / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275938424,
+          44.545452368
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276103137,
+          44.545307107
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Impasse des Ligures",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276325422,
+          44.545221989
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27656807,
+          44.545201935
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275347569,
+          44.545392887
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274900863,
+          44.545340345
+        ]
+      },
+      "properties": {
+        "name": "Rue des Balcons / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276211042,
+          44.545053629
+        ]
+      },
+      "properties": {
+        "name": "Rue des Echelles / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276146132,
+          44.544394334
+        ]
+      },
+      "properties": {
+        "name": "Rue des Echelles / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277377633,
+          44.544446354
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Passage des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277891996,
+          44.544455352
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276579655,
+          44.545324975
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276893407,
+          44.54625601
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Impasse du Cèdre",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276592434,
+          44.545297824
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276629624,
+          44.545862306
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276533212,
+          44.545270726
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276863492,
+          44.546258694
+        ]
+      },
+      "properties": {
+        "name": "Rue des Eyguières / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276010776,
+          44.545204594
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Impasse des Ligures",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276149469,
+          44.545100826
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Impasse des Templiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276249596,
+          44.545006898
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274898616,
+          44.545327048
+        ]
+      },
+      "properties": {
+        "name": "Rue des Granges / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276845381,
+          44.5481924
+        ]
+      },
+      "properties": {
+        "name": "Rue des Hirondelles / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275427537,
+          44.546286701
+        ]
+      },
+      "properties": {
+        "name": "Rue des Hirondelles / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27491145,
+          44.549395641
+        ]
+      },
+      "properties": {
+        "name": "Rue des Nays / Chemin du Pré de l'Obre C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27410609,
+          44.54914167
+        ]
+      },
+      "properties": {
+        "name": "Rue des Nays / Impasse des Cardes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278245639,
+          44.552104369
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vergers du Château / Route de la Montagne D469",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279039712,
+          44.54173675
+        ]
+      },
+      "properties": {
+        "name": "Rue du Béal / Impasse du Grand Pré",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.277367936,
+          44.543564182
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur David Falik / Passage des Écoles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27494424,
+          44.545656855
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274957799,
+          44.54565649
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276294949,
+          44.544214472
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276253068,
+          44.544367892
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Impasse des Remparts",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276372809,
+          44.544213281
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Passage de l'Escarmouche",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276076311,
+          44.544380003
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Place de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275670594,
+          44.544758437
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Place du Fort",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276371778,
+          44.543987476
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275860535,
+          44.544607022
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue de l'Église",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275609729,
+          44.544665853
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Andrônes",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274952618,
+          44.545432439
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276199387,
+          44.544453147
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Echelles",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274930747,
+          44.545363674
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue des Granges",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276448544,
+          44.544050816
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue du Docteur David Falik",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274890519,
+          44.545698973
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue du Grand Logis",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276366059,
+          44.544223382
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue Porte Réveline",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.27548467,
+          44.544795771
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274874836,
+          44.545292913
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fort / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274775404,
+          44.545718938
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274901412,
+          44.545706001
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276897875,
+          44.546264919
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Impasse du Cèdre",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275043783,
+          44.545947591
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Rue de l'Hôpital",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274812381,
+          44.545696195
+        ]
+      },
+      "properties": {
+        "name": "Rue du Grand Logis / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.278888126,
+          44.542514196
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275823009,
+          44.543340498
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Route du Fein D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274668626,
+          44.545477177
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pavillon / Rue sous le Barry",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.257364713,
+          44.553123929
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Impasse des Sagnes C15",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258409424,
+          44.55673075
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Route des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258129338,
+          44.555966757
+        ]
+      },
+      "properties": {
+        "name": "Rue du Réallon / Rue Serre Vial",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2763608,
+          44.54421199
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Impasse de l'Abbé Jacques",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276604275,
+          44.545095079
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Route du Fein",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.276516938,
+          44.545146907
+        ]
+      },
+      "properties": {
+        "name": "Rue Porte Réveline / Rue des Balcons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274815943,
+          44.545679399
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Avenue des Martyrs",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274897505,
+          44.545662716
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Grande Rue D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.275661099,
+          44.544129684
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Rue Casanova",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.274609233,
+          44.545278985
+        ]
+      },
+      "properties": {
+        "name": "Rue sous le Barry / Ruelle du Bastion",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.305822984,
+          44.560321495
+        ]
+      },
+      "properties": {
+        "name": "Torrent de Malefosse / Route de la Blache C205",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.291655484,
+          44.546162301
+        ]
+      },
+      "properties": {
+        "name": "Torrent de Malefosse / Route des Augiers",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.318023978,
+          44.503518741
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Moulettes / La Durance",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.280443363,
+          44.538781299
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Moulettes / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.290654036,
+          44.529825538
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Moulettes / Torrent de Malefosse",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.298102847,
+          44.517246147
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Moulettes / Torrent du Chazonnet",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.306386045,
+          44.509286459
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Moulettes / Viaduc de Chanteloube",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.251962664,
+          44.550618615
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Réallons / L'Avance",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.265662498,
+          44.569235264
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Réallons / Route des Girards",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.258860252,
+          44.561153916
+        ]
+      },
+      "properties": {
+        "name": "Torrent des Réallons / Route des Réallons",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.250609152,
+          44.551049559
+        ]
+      },
+      "properties": {
+        "name": "Torrent du Dévezet / L'Avance",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.267614307,
+          44.517502868
+        ]
+      },
+      "properties": {
+        "name": "Voie communale Voiecommunale / D203",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.283026216,
+          44.534983195
+        ]
+      },
+      "properties": {
+        "name": "D3 / Route de Pralong C3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.279981132,
+          44.540791376
+        ]
+      },
+      "properties": {
+        "name": "N94 / Route des Moulettes D3",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.252922548,
+          44.559428002
+        ]
+      },
+      "properties": {
+        "name": "C15 / Rue du Pré de Lobre D614",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.288289674,
+          44.538983044
+        ]
+      },
+      "properties": {
+        "name": "N94 / D9_B1",
+        "context": "Chorges, Hautes-Alpes",
+        "citycode": "05040",
+        "depcode": "05"
+      }
+    }
+  ]
+}

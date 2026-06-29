@@ -3,3 +3,7 @@ label_env/
 __pycache__/
 *.pyc
 *.pyo
+label_env/
+.pytest_cache/
+.vscode
+_pycache_

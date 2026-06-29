@@ -13,7 +13,8 @@ import numpy as np
 import csv
 
 from geopy.distance import geodesic 
-from scipy.spatial import cKDTree     
+from scipy.spatial import cKDTree
+from proximite import fusion_croisement     
 
 # Carte de visite obligatoire exigée par la charte d'utilisation de l'API Nominatim (évite le blocage HTTP 403)
 HEADERS_NOMINATIM = {
@@ -174,7 +175,7 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
         return pd.DataFrame()
     intersections_brutes = [
         {
-            "intersection_id_osm": el["id"],
+            "intersection": str(el["id"]),
             "latitude": el["lat"],
             "longitude": el["lon"],
             "nb_passages_pietons": 0
@@ -190,7 +191,11 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
     print(f" {len(intersections_brutes)} intersections trouvées.")
 
 
-#faire la fusion des intersections proches
+    #faire la fusion des intersections proches
+    df_intersections_brutes = pd.DataFrame(intersections_brutes)
+    df_intersections_brutes = fusion_croisement(df_intersections_brutes)
+
+    intersections_brutes = df_intersections_brutes.to_dict("records")
 
 
     # --- REQUÊTE 2 : uniquement les passages piétons ---

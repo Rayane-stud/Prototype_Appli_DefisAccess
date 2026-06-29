@@ -67,10 +67,12 @@ LISTE DES FONCTIONS :
 
 import time
 import json
+import datetime
 import requests
 import pandas as pd
-from geopy.distance import geodesic
+
 import os
+from pathlib import Path
 
 # URL de l'API officielle geo.api.gouv.fr (INSEE/IGN)
 # Contrairement au fichier CSV brut de l'INSEE, c'est une vraie API
@@ -82,21 +84,31 @@ HEADERS_NOMINATIM = {
     "User-Agent": "DefiaccessPM/1.0 (association accessibilite)"
 }
 
-# CATEGORIES OSM (uniquement ce qui n'a pas de source gouvernementale)
-    # demander celle qui ne sont pas necessaire 
-
-CATEGORIES_OSM = [
-    {"type": "hôpital",        "osm_filters": '["amenity"="hospital"]'},
-    {"type": "clinique",       "osm_filters": '["amenity"="clinic"]'},
-    {"type": "pharmacie",      "osm_filters": '["amenity"="pharmacy"]'},
-    {"type": "poste",          "osm_filters": '["amenity"="post_office"]'},
-    {"type": "commissariat",   "osm_filters": '["amenity"="police"]'},
-    {"type": "lieu de culte",  "osm_filters": '["amenity"="place_of_worship"]'},
-    {"type": "centre sportif", "osm_filters": '["leisure"="sports_centre"]'},
-    {"type": "gare",           "osm_filters": '["railway"="station"]'},
-    {"type": "supermarché",    "osm_filters": '["shop"="supermarket"]'},
+# TOUTES LES CATEGORIES OSM DISPONIBLES (avec leur label d'affichage)
+CATEGORIES_OSM_DISPONIBLES = [
+    {"type": "gare",             "osm_filters": '["railway"="station"]',            "label": "Gares"},
+    {"type": "commissariat",     "osm_filters": '["amenity"="police"]',             "label": "Commissariats / gendarmeries"},
+    {"type": "lieu de culte",    "osm_filters": '["amenity"="place_of_worship"]',  "label": "Lieux de culte (églises, mosquées, synagogues…)"},
+    {"type": "poste",            "osm_filters": '["amenity"="post_office"]',       "label": "Bureaux de poste"},
+    {"type": "pharmacie",        "osm_filters": '["amenity"="pharmacy"]',          "label": "Pharmacies"},
+    {"type": "centre sportif",   "osm_filters": '["leisure"="sports_centre"]',     "label": "Centres sportifs"},
+    {"type": "centre culturel",  "osm_filters": '["amenity"="community_centre"]',  "label": "Centres culturels / associatifs"},
+    {"type": "supermarché",      "osm_filters": '["shop"="supermarket"]',           "label": "Supermarchés"},
 ]
-    
+
+# Catégories OSM utilisées uniquement si FINESS est indisponible (fallback)
+CATEGORIES_OSM_SANTE_FALLBACK = [
+    {"type": "hôpital",  "osm_filters": '["amenity"="hospital"]'},
+    {"type": "clinique", "osm_filters": '["amenity"="clinic"]'},
+]
+
+# ──────────────────────────────────────────────
+# CONFIGURATION FINESS
+# ──────────────────────────────────────────────
+
+# ID du jeu de données FINESS sur data.gouv.fr
+FINESS_DATASET_ID = "53699569a3a729239d2046eb"
+
 
 
 
@@ -581,12 +593,174 @@ def get_equipements_gouv(code_insee: str) -> list[dict]:
 
 
 
+# ETAPE 4a — Récupérer les établissements de santé via FINESS (registre officiel) ------------------
 
 
-# ETAPE 4 — Récupérer les lieux complémentaires via OpenStreetMap (Overpass) -----------------------
+def _telecharger_finess(chemin_cache: Path, nb_essais: int = 3) -> bool:
+    """
+    Télécharge le CSV FINESS géolocalisé et le sauvegarde.
+    Retente jusqu'à nb_essais fois en cas d'échec. Retourne True si succès.
+    """
+    # Récupération de l'URL une seule fois (pas besoin de la re-chercher à chaque essai)
+    try:
+        print("   Recherche du fichier FINESS sur data.gouv.fr...")
+        meta = requests.get(
+            f"https://www.data.gouv.fr/api/1/datasets/{FINESS_DATASET_ID}/",
+            timeout=30
+        ).json()
+
+        csv_url = None
+        for resource in meta.get("resources", []):
+            taille = resource.get("filesize") or 0
+            if str(resource.get("format", "")).upper() == "CSV" and taille > 40_000_000:
+                csv_url = resource.get("url")
+                break
+
+        if not csv_url:
+            print("   URL du CSV FINESS géolocalisé introuvable.")
+            return False
+
+    except Exception as e:
+        print(f"   Impossible de contacter data.gouv.fr : {e}")
+        return False
+
+    # Téléchargement avec retry
+    for essai in range(1, nb_essais + 1):
+        try:
+            print(f"   Téléchargement FINESS (~47 Mo) — essai {essai}/{nb_essais}...")
+            reponse = requests.get(csv_url, timeout=300, stream=True)
+            reponse.raise_for_status()
+
+            chemin_cache.parent.mkdir(parents=True, exist_ok=True)
+            with open(chemin_cache, "wb") as f:
+                for chunk in reponse.iter_content(chunk_size=65536):
+                    f.write(chunk)
+
+            print(f"   FINESS mis en cache : {chemin_cache.name}")
+            return True
+
+        except Exception as e:
+            print(f"   Essai {essai} échoué : {e}")
+            if essai < nb_essais:
+                pause = 10 * essai  # 10s, puis 20s
+                print(f"   Nouvelle tentative dans {pause} secondes...")
+                time.sleep(pause)
+
+    print("   Téléchargement FINESS abandonné après 3 essais.")
+    return False
 
 
-def get_PM_osm(osm_area_id: int) -> list[dict]:
+def get_etablissements_finess(code_insee: str, base_dir: Path) -> list[dict]:
+    """
+    Récupère les établissements de santé d'une commune depuis le registre FINESS.
+
+    Le CSV FINESS (format etalab, sans en-tête) contient deux types de lignes :
+      - 'structureet' : infos établissement — [1]=nofinesset, [3]=nom, [12]=code commune
+        3 chiffres, [13]=département 2 chiffres, [18]=code catégorie, [19]=libellé catégorie
+      - 'geolocalisation' : [1]=nofinesset, [2]=X Lambert-93, [3]=Y Lambert-93
+
+    INSEE reconstitué = col[13].zfill(2) + col[12].zfill(3)
+    """
+    import csv as csv_module
+
+    chemin_cache = base_dir / "data" / "raw" / "finess_etablissements.csv"
+
+    if chemin_cache.exists():
+        age_jours = (datetime.datetime.now() - datetime.datetime.fromtimestamp(
+            chemin_cache.stat().st_mtime
+        )).days
+        if age_jours < 30:
+            print(f"   FINESS : cache local ({age_jours}j).")
+        else:
+            print("   Cache FINESS expiré (> 30 jours), re-téléchargement...")
+            if not _telecharger_finess(chemin_cache):
+                return []
+    else:
+        if not _telecharger_finess(chemin_cache):
+            return []
+
+    MOTS_CLES_SANTE = ("hospitalier", "clinique", "de santé", "de soins", "médical")
+
+    geolocalisations = {}  # nofinesset → (x_l93, y_l93)
+    etablissements   = []  # (nofinesset, nom, type_pm)
+
+    try:
+        with open(chemin_cache, encoding="utf-8", errors="replace", newline="") as f:
+            reader = csv_module.reader(f, delimiter=";")
+            for row in reader:
+                if not row:
+                    continue
+                type_ligne = row[0]
+
+                if type_ligne == "structureet" and len(row) >= 20:
+                    dept        = row[13].strip().zfill(2)
+                    commune_suf = row[12].strip().zfill(3)
+                    if dept + commune_suf != code_insee.strip():
+                        continue
+
+                    libelle = row[19].strip().lower()
+                    if not any(mc in libelle for mc in MOTS_CLES_SANTE):
+                        continue
+
+                    nofinesset = row[1].strip()
+                    nom        = row[3].strip() or row[4].strip() or "Établissement sans nom"
+                    etablissements.append((nofinesset, nom, row[19].strip()))
+
+                elif type_ligne == "geolocalisation" and len(row) >= 4:
+                    try:
+                        x = float(row[2].replace(",", "."))
+                        y = float(row[3].replace(",", "."))
+                        geolocalisations[row[1].strip()] = (x, y)
+                    except ValueError:
+                        pass
+
+    except Exception as e:
+        print(f"   Erreur lecture FINESS : {e}")
+        return []
+
+    if not etablissements:
+        print(f"   Aucun établissement de santé FINESS pour {code_insee}.")
+        return []
+
+    from pyproj import Transformer
+    transformer = Transformer.from_crs("EPSG:2154", "EPSG:4326", always_xy=True)
+
+    resultats = []
+    noms_vus  = set()
+
+    for nofinesset, nom, type_pm in etablissements:
+        coords_l93 = geolocalisations.get(nofinesset)
+        if not coords_l93:
+            continue
+
+        lon, lat = transformer.transform(coords_l93[0], coords_l93[1])
+
+        if not (41 < lat < 52 and -6 < lon < 10):
+            continue
+
+        cle = f"{nom}_{round(lat, 4)}_{round(lon, 4)}"
+        if cle in noms_vus:
+            continue
+        noms_vus.add(cle)
+
+        resultats.append({
+            "nom":       nom,
+            "type":      type_pm,
+            "source":    "FINESS",
+            "latitude":  lat,
+            "longitude": lon
+        })
+
+    print(f"   {len(resultats)} établissement(s) de santé FINESS trouvé(s) pour {code_insee} :")
+    for r in resultats:
+        print(f"      • {r['nom']} ({r['type']})")
+    return resultats
+
+
+# ETAPE 4b — Récupérer les lieux complémentaires via OpenStreetMap (Overpass) ----------------------
+
+
+def get_PM_osm(osm_area_id: int, categories: list = None, categories_supplementaires: list = None) -> list[dict]:
     """
     Interroge l'API Overpass pour récupérer les lieux complémentaires
     (hôpital, clinique, pharmacie, poste, commissariat, lieu de culte,
@@ -685,7 +859,8 @@ out center;
             # on signale que cette categorie a echoue
 
     # ---- PREMIERE PASSE : on essaie toutes les categories une fois ----
-    for categorie in CATEGORIES_OSM:
+    toutes_categories = (categories if categories is not None else CATEGORIES_OSM_DISPONIBLES) + (categories_supplementaires or [])
+    for categorie in toutes_categories:
         succes = interroger_categorie(categorie)
         if not succes:
             categories_echouees.append(categorie)
@@ -727,9 +902,49 @@ out center;
 
 
 
-
-
 # ETAPE 5 — Orchestrer toutes les sources et exporter en Excel ------------------------------------
+
+
+def _choisir_categories_osm() -> list[dict]:
+    """
+    Affiche les catégories OSM disponibles et demande à l'utilisateur
+    lesquelles inclure dans la recherche de PM (comme le choix des types de voies).
+    """
+    print("\n" + "=" * 62)
+    print("   SÉLECTION DES CATÉGORIES DE POINTS DE MESURE (PM) OSM")
+    print("=" * 62)
+    print("\n  Attention : certaines communes ont beaucoup de PM.")
+    print("  Les écoles, mairies et établissements de santé sont")
+    print("  toujours inclus. Choisissez les catégories OSM à ajouter :\n")
+
+    for i, cat in enumerate(CATEGORIES_OSM_DISPONIBLES, 1):
+        print(f"   {i:2d}. {cat['label']}")
+
+    print("\n  Entrez les numéros séparés par des virgules  (ex: 1,4,7)")
+    print("  ou appuyez sur Entrée pour toutes les inclure.")
+    choix = input("\n  Votre sélection : ").strip()
+
+    if not choix:
+        print("  → Toutes les catégories OSM seront incluses.\n")
+        return [{"type": c["type"], "osm_filters": c["osm_filters"]} for c in CATEGORIES_OSM_DISPONIBLES]
+
+    categories_choisies = []
+    for segment in choix.split(","):
+        try:
+            idx = int(segment.strip()) - 1
+            if 0 <= idx < len(CATEGORIES_OSM_DISPONIBLES):
+                cat = CATEGORIES_OSM_DISPONIBLES[idx]
+                categories_choisies.append({"type": cat["type"], "osm_filters": cat["osm_filters"]})
+                print(f"   ✓ {cat['label']}")
+        except ValueError:
+            pass
+
+    if not categories_choisies:
+        print("  → Aucune sélection valide, toutes les catégories incluses par défaut.\n")
+        return [{"type": c["type"], "osm_filters": c["osm_filters"]} for c in CATEGORIES_OSM_DISPONIBLES]
+
+    print(f"\n  → {len(categories_choisies)} catégorie(s) sélectionnée(s).\n")
+    return categories_choisies
 
 
 def construire_dataframe_PM(ville: str) -> pd.DataFrame:
@@ -772,8 +987,20 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
     mairies = get_equipements_gouv(code_insee)
     tous_les_pm.extend(mairies)
 
+    # Établissements de santé via FINESS (hôpitaux, cliniques, centres de soins)
+    base_dir_finess = Path(__file__).parent.parent
+    etablissements_sante = get_etablissements_finess(code_insee, base_dir_finess)
+    tous_les_pm.extend(etablissements_sante)
+
     if osm_area_id:
-        lieux_osm = get_PM_osm(osm_area_id)
+        categories_choisies = _choisir_categories_osm()
+        # Si FINESS n'a rien retourné, on utilise OSM comme filet de sécurité
+        if not etablissements_sante:
+            print("   FINESS indisponible — recherche hôpitaux/cliniques via OSM (fallback)...")
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies,
+                                   categories_supplementaires=CATEGORIES_OSM_SANTE_FALLBACK)
+        else:
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies)
         tous_les_pm.extend(lieux_osm)
 
     # ETAPE 3 : construction du DataFrame a partir de la liste de dictionnaires

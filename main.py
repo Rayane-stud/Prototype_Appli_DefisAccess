@@ -1,5 +1,6 @@
 import sys   # bibliothèque pour interagir avec l'interpréteur Python
 import os    # bibliothèque pour manipuler les chemins d'accès aux fichiers
+import shutil
 
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src'))  # ajoute le dossier src/ à la liste
                                                                        # des endroits où Python cherche ses modules
@@ -73,12 +74,14 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     nomFich = identification_PM.exporter_PM_excel(
         identification_PM.construire_dataframe_PM(ville),
         dossier_sortie=str(BASE_DIR / "data" / "raw"),
-        nom_fichier=f"{ville}_lieux.xlsx"
+        nom_fichier=f"PM_{ville}.xlsx"
    )
     # None signifie que la ville n'a pas été trouvée sur geo.api.gouv.fr
     if nomFich is None:
         return None
     xlsx_path_lieux = Path(nomFich)  # on réutilise ce que la fonction a écrit
+
+    nettoyer_anciennes_villes(BASE_DIR)
 
     try:
         # ── Chargement et nettoyage des données ────────────────────────────
@@ -122,6 +125,40 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 def _normaliser(texte: str) -> str:
     # Traite tirets et espaces comme identiques pour comparer les noms de villes
     return texte.lower().replace("-", " ").replace("_", " ")
+
+
+def nettoyer_anciennes_villes(base_dir: Path, garder: int = 2):
+    """
+    Supprime les données (PM + images_pp) des villes les plus anciennes
+    quand le nombre de villes dépasse `garder`.
+    Le tri se fait par date de modification du fichier PM_{ville}.xlsx.
+    """
+    dossier_pm     = base_dir / "data" / "raw" / "PM"
+    dossier_images = base_dir / "data" / "raw" / "images_pp"
+
+    if not dossier_pm.exists():
+        return
+
+    fichiers_pm = sorted(
+        [f for f in dossier_pm.iterdir()
+         if f.is_file() and f.name.startswith("PM_") and f.suffix == ".xlsx"],
+        key=lambda f: f.stat().st_mtime
+    )
+
+    while len(fichiers_pm) > garder:
+        fichier = fichiers_pm.pop(0)
+        ville_ancienne = fichier.stem[3:]  # enlève le préfixe "PM_"
+
+        fichier.unlink()
+        print(f"  Nettoyage — supprimé : {fichier.name}")
+
+        if dossier_images.exists():
+            for dossier in dossier_images.iterdir():
+                if dossier.is_dir() and _normaliser(dossier.name).startswith(
+                    "images_" + _normaliser(ville_ancienne) + "_"
+                ):
+                    shutil.rmtree(dossier)
+                    print(f"  Nettoyage — supprimé : {dossier.name}")
 
 
 

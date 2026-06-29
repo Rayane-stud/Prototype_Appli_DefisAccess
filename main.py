@@ -198,7 +198,6 @@ if __name__ == "__main__":
             print()
 
         liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
-
         # None = ville non trouvée → message et on redemande
         if liste_chemins is None:
             print(f"\n La ville '{ville}' est introuvable.")

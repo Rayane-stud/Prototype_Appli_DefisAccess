@@ -102,6 +102,7 @@ import gzip
 import json
 import os
 import pandas as pd
+from pathlib import Path
 
 # URL du fichier GeoJSON compressé par département sur le serveur OpenStreetMap
 # {dept} sera remplacé par le numéro de département (ex: 94, 75, 2A, 971...)
@@ -118,8 +119,9 @@ BASE_URL_DATAGOUV = "https://www.data.gouv.fr/api/1/datasets/intersections-des-r
 GEO_API_URL = "https://geo.api.gouv.fr/communes"
 
 # Dossier local où seront sauvegardés les fichiers GeoJSON téléchargés
-# Il sera créé automatiquement s'il n'existe pas (voir sauvegarder())
-DOSSIER_SORTIE = "data/raw/intersections"
+# Chemin absolu calculé depuis l'emplacement de ce fichier (src/ → projet/ → data/raw/intersections/)
+# Garantit que le dossier est toujours créé au bon endroit quel que soit le répertoire de lancement
+DOSSIER_SORTIE = Path(__file__).parent.parent / "data" / "raw" / "intersections"
 
 # Types de voies disponibles pour le filtrage interactif
 # L'utilisateur pourra choisir lesquels conserver dans le DataFrame final

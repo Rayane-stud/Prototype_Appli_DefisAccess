@@ -146,9 +146,9 @@ def _geojson_vers_dataframe(geojson: dict, ville: str) -> pd.DataFrame:
 
 
 
-
+"""
 def telecharger_intersections(ville: str) -> pd.DataFrame:
-    """
+    
     Télécharge les intersections d'une ville depuis internet et retourne un DataFrame.
 
     Sources essayées dans l'ordre :
@@ -164,7 +164,7 @@ def telecharger_intersections(ville: str) -> pd.DataFrame:
     Raises:
         ValueError  : Ville introuvable ou aucune intersection dans le fichier.
         RuntimeError: Aucune source n'a pu être téléchargée.
-    """
+    
     print(f"Recherche du département pour '{ville}'...")
     dep_code = _get_dep_code(ville)
     if dep_code is None:
@@ -193,8 +193,7 @@ def telecharger_intersections(ville: str) -> pd.DataFrame:
 
     print(f"  → GeoJSON téléchargé ({len(geojson.get('features', []))} features), filtrage sur '{ville}'...")
     return _geojson_vers_dataframe(geojson, ville)
-
-
+"""
 # ---------------------------------------------------------------------------
 
 def charger_intersections(path, ville):

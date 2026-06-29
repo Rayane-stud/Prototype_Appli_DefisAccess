@@ -6,6 +6,7 @@ les passages piétons associés.
 """
 
 import math
+from pandas import DataFrame
 import requests
 import pandas as pd 
 import numpy as np
@@ -187,6 +188,10 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
         return pd.DataFrame()
 
     print(f" {len(intersections_brutes)} intersections trouvées.")
+
+
+#faire la fusion des intersections proches
+
 
     # --- REQUÊTE 2 : uniquement les passages piétons ---
     requete_passages = f"""
@@ -439,6 +444,7 @@ def trie_intersections(final_accident,df_resultat, rayon=20):
 
     for i in df_osm:
         trouve= False
+        
 
         for j in df_acc:
             dist= geodesic((i["latitude"], i["longitude"])
@@ -453,19 +459,19 @@ def trie_intersections(final_accident,df_resultat, rayon=20):
                 "nb_pp": nb
                 })
             
-            j["fusionner"] = True
-            trouve = True 
-            break
+                j["fusionner"] = True
+                trouve = True 
+                break
 
         if not trouve:
             final_pp.append({
                 "latitude": i["latitude"],
                 "longitude": i["longitude"],
-                "nb_pp": nb
+                "nb_pp": i["nb_passages_pietons"]
                 })
     
     for j in df_acc:
-        if not j["fusionner"]:
+        if not j.get("fusionner", False):
             final_pp.append({
                 "latitude": j["latitude"],
                 "longitude": j["longitude"],

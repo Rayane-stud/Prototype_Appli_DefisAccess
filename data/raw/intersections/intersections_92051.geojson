@@ -1,0 +1,7189 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27324303,
+          48.882908591
+        ]
+      },
+      "properties": {
+        "name": "Allée d'Orléans / Rue d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270678909,
+          48.896374526
+        ]
+      },
+      "properties": {
+        "name": "Allée des Impressionnistes / Boulevard Georges Seurat",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270084586,
+          48.896903563
+        ]
+      },
+      "properties": {
+        "name": "Allée des Impressionnistes / Boulevard Vital Bouhot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268743182,
+          48.882407225
+        ]
+      },
+      "properties": {
+        "name": "Allée Ferrand / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273518099,
+          48.883407998
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261734575,
+          48.886352768
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Place du Général Gouraud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27351068,
+          48.883416952
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Place Winston Churchill",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263362475,
+          48.885748886
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Rue Chartran",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273506293,
+          48.88340419
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Rue d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26383414,
+          48.885642289
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Rue de l'Église",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271049192,
+          48.883963721
+        ]
+      },
+      "properties": {
+        "name": "Avenue Achille Peretti / Rue Devès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267283126,
+          48.886820627
+        ]
+      },
+      "properties": {
+        "name": "Avenue Céline / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268618275,
+          48.887952478
+        ]
+      },
+      "properties": {
+        "name": "Avenue Céline / Jardin Lucien Wargny",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279856303,
+          48.878781802
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Avenue de Neuilly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262785825,
+          48.883756827
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Passage Saint-Ferdinand",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276246345,
+          48.879932493
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle N13 / Place du Marché",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256044171,
+          48.885983817
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Pont de Neuilly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278025786,
+          48.878947624
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue Charles Laffitte",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272186419,
+          48.881140111
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle N13 / Rue d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258719047,
+          48.885064527
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265199255,
+          48.883529953
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue des Huissiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257078115,
+          48.885588939
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue du Général Lanrezac",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278487451,
+          48.879282942
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278206825,
+          48.878889028
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue Raoul Nordling",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266618775,
+          48.883078374
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Rue Rigaud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257079388,
+          48.885665764
+        ]
+      },
+      "properties": {
+        "name": "Avenue Charles de Gaulle / Tunnel de Neuilly N13",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255929447,
+          48.875637112
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bretteville / Boulevard du Commandant Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25205247,
+          48.876267407
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bretteville / Rue de Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283476471,
+          48.886536162
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Porte de Villiers / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260415905,
+          48.884532055
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258961426,
+          48.881509887
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Avenue du Parc Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258606457,
+          48.880772728
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Boulevard du Commandant Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260033053,
+          48.883780061
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Rue Boutard",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258707433,
+          48.881044244
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Rue du Bois de Boulogne",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259793847,
+          48.883263156
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Rue du Général Henrion Bertier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2598252,
+          48.883242561
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Rue Pierret",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258981403,
+          48.881479103
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Rue Salignac Fénelon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259647927,
+          48.882955355
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Villa de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260055656,
+          48.883724206
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Madrid / Villa Houssay",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267507678,
+          48.889446718
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Boulevard du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258949485,
+          48.881483541
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Parc Saint-James / Avenue de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274127006,
+          48.88325827
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Allée d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274578963,
+          48.8831799
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Rue du Général Cordonnier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27727501,
+          48.882512948
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Rue Madeleine Michelis",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280178994,
+          48.881877286
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Rue Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274568653,
+          48.883158384
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Villa des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275137921,
+          48.88305395
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Roule / Villa du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263977759,
+          48.889711406
+        ]
+      },
+      "properties": {
+        "name": "Avenue Perronet / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264010347,
+          48.889752909
+        ]
+      },
+      "properties": {
+        "name": "Avenue Perronet / Rue de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277246648,
+          48.884501304
+        ]
+      },
+      "properties": {
+        "name": "Avenue Philippe le Boucher / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262388498,
+          48.888533501
+        ]
+      },
+      "properties": {
+        "name": "Avenue Sainte-Foy / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267726303,
+          48.885073879
+        ]
+      },
+      "properties": {
+        "name": "Avenue Sainte-Foy / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265167382,
+          48.886714947
+        ]
+      },
+      "properties": {
+        "name": "Avenue Sainte-Foy / Rue de l'Église",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267014745,
+          48.885546595
+        ]
+      },
+      "properties": {
+        "name": "Avenue Sainte-Foy / Villa Sainte-Foy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283458846,
+          48.886535281
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Avenue de la Porte de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26756389,
+          48.893776121
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Boulevard Bourdon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268808265,
+          48.892277614
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266847984,
+          48.894161789
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Boulevard du Parc",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267033057,
+          48.894242416
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Boulevard Georges Seurat",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266220593,
+          48.89481763
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Impasse Terrier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267449026,
+          48.89383664
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Petit Bras de la Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266959893,
+          48.894080172
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Pont du Maréchal-Juin D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272948293,
+          48.889376166
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283239789,
+          48.886799749
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Rue de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283235431,
+          48.886509865
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bineau D908 / Rue Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26770614,
+          48.893582079
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bourdon / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267490176,
+          48.893848786
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bourdon / Petit Bras de la Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272802895,
+          48.896592203
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bourdon D1 / Quai Charles Pasqua D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267972964,
+          48.893730465
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Bourdon D1 / D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26304588,
+          48.889038556
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Argenson / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264669549,
+          48.888199396
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Argenson / Boulevard du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260940153,
+          48.890266112
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Argenson / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268823882,
+          48.885988209
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Argenson / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275572247,
+          48.888041757
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276374456,
+          48.889545689
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Place du Duc d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273370881,
+          48.883874051
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Place Winston Churchill",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276308283,
+          48.889558201
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Rue Chauveau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274811551,
+          48.886527054
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274052026,
+          48.885106215
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274437606,
+          48.88585523
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Rue Pierrard",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273766699,
+          48.884583581
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Inkermann / Villa Gally",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262377758,
+          48.888523523
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Saussaye / Avenue Sainte-Foy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268929442,
+          48.892324796
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Saussaye / Boulevard Bineau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264042586,
+          48.889794728
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Saussaye / Rue de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263784988,
+          48.887635979
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château / Avenue Sainte-Foy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270463915,
+          48.890709355
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264638137,
+          48.88819917
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274314849,
+          48.892377314
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272449456,
+          48.891558883
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / Rue Chauveau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276428649,
+          48.893257694
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / Rue de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276431313,
+          48.893265985
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / Rue Paul Vaillant-Couturier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265925991,
+          48.888741215
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château / Rue Sylvie",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270555332,
+          48.890745856
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Château D16 / D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258584374,
+          48.880836464
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Avenue de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25849205,
+          48.880248762
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255075486,
+          48.874232939
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Boulevard Richard Wallace",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25523399,
+          48.874250662
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Porte de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258487477,
+          48.8802295
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Route de La Muette à Neuilly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256483084,
+          48.876758221
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Commandant Charcot / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246325899,
+          48.876230632
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Kœnig / Pont de Puteaux D104",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.248816866,
+          48.878511533
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Kœnig D1 / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256476128,
+          48.886329015
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Leclerc / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260955955,
+          48.890299267
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Leclerc D1 / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256996875,
+          48.887366636
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Leclerc D1 / Rue Garnier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264036973,
+          48.89167128
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général Leclerc D1 / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262034403,
+          48.892600541
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Parc / Boulevard Paul-Émile Victor",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264550263,
+          48.893080548
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Parc / Rue Benjamin Constant",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263654418,
+          48.892575593
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Parc / Rue du Lieutenant Boncour",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268837094,
+          48.885980995
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jean Mermoz / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268849705,
+          48.885973338
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jean Mermoz / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269815367,
+          48.885455812
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jean Mermoz / Rue Edmond Bloud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269377194,
+          48.885678701
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jean Mermoz / Villa des Acacias",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2776442,
+          48.8780377
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maillot / Boulevard André Maurois",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27078181,
+          48.878900711
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maillot / Boulevard des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270766299,
+          48.878894697
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maillot / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2743546,
+          48.878459745
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maillot / Rue Paul Déroulède",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258553466,
+          48.880429776
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maurice Barrès / Avenue de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270761698,
+          48.878899765
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maurice Barrès / Boulevard des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258461488,
+          48.88037592
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maurice Barrès / Boulevard du Commandant Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258504836,
+          48.880245733
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maurice Barrès / Route de La Muette à Neuilly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261595214,
+          48.880057607
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maurice Barrès / Rue des Graviers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265754863,
+          48.895281209
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul-Émile Victor / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263466591,
+          48.893959802
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul-Émile Victor / Rue Benjamin Constant",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246563727,
+          48.876147361
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace D104 / Boulevard du Général Kœnig",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.247874427,
+          48.875892372
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Boulevard Julien Potin",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246530772,
+          48.876097256
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Chemin de la Seine à Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246556972,
+          48.876120505
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace D104 / Pont de Puteaux D104",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25497658,
+          48.874156756
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Porte de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.249627823,
+          48.875439565
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Route de Sèvres à Neuilly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.251344913,
+          48.875034766
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Rue de Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.249653398,
+          48.875448638
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Richard Wallace / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278453242,
+          48.887543293
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281861301,
+          48.8836254
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Boulevard d'Aurelle de Paladines",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272822625,
+          48.894088726
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274329515,
+          48.892384861
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Boulevard du Château D16",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276568085,
+          48.889746457
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Place du Duc d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281739502,
+          48.88379433
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Rue Cino Del Duca",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275274385,
+          48.891237016
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281570091,
+          48.883954534
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Rue Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28018035,
+          48.885561531
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281750477,
+          48.883716654
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278709515,
+          48.887262998
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Victor Hugo / Square Daniel Rops",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265943795,
+          48.895343198
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Vital Bouhot / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265881563,
+          48.89538293
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Vital Bouhot / Pont de Courbevoie D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.243141708,
+          48.87777598
+        ]
+      },
+      "properties": {
+        "name": "La Seine / Pont de Puteaux",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270228031,
+          48.895803607
+        ]
+      },
+      "properties": {
+        "name": "Petit Bras de la Seine / La Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.245705091,
+          48.876351613
+        ]
+      },
+      "properties": {
+        "name": "Petit Bras de la Seine / Pont de Puteaux",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.251996574,
+          48.876498015
+        ]
+      },
+      "properties": {
+        "name": "Place de Bagatelle / Rue de Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250922498,
+          48.876887895
+        ]
+      },
+      "properties": {
+        "name": "Place de Bagatelle / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250762405,
+          48.876726811
+        ]
+      },
+      "properties": {
+        "name": "Place de Bagatelle / Rue Ernest Deloison",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.251076384,
+          48.877089797
+        ]
+      },
+      "properties": {
+        "name": "Place de Bagatelle / Villa des Peupliers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276613971,
+          48.889682138
+        ]
+      },
+      "properties": {
+        "name": "Place du Duc d'Orléans / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261722569,
+          48.886291202
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Gouraud / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261495669,
+          48.886162016
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Gouraud / Rue des Poissonniers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261324625,
+          48.886221872
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Gouraud / Rue du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275140699,
+          48.880389933
+        ]
+      },
+      "properties": {
+        "name": "Place du Marché / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27923653,
+          48.880474923
+        ]
+      },
+      "properties": {
+        "name": "Place Parmentier / Rue de Chartres",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279328757,
+          48.880463843
+        ]
+      },
+      "properties": {
+        "name": "Place Parmentier / Rue de Sablonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279178316,
+          48.880385005
+        ]
+      },
+      "properties": {
+        "name": "Place Parmentier / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272534699,
+          48.88363231
+        ]
+      },
+      "properties": {
+        "name": "Place Winston Churchill / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273527524,
+          48.883411351
+        ]
+      },
+      "properties": {
+        "name": "Place Winston Churchill / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272749119,
+          48.88389994
+        ]
+      },
+      "properties": {
+        "name": "Place Winston Churchill / Boulevard Jean Mermoz",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26581774,
+          48.895396216
+        ]
+      },
+      "properties": {
+        "name": "Pont de Courbevoie D908 / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265757351,
+          48.895357695
+        ]
+      },
+      "properties": {
+        "name": "Pont de Courbevoie D908 / Boulevard Paul-Émile Victor",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265340214,
+          48.895960409
+        ]
+      },
+      "properties": {
+        "name": "Pont de Courbevoie D908 / La Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256043594,
+          48.886049605
+        ]
+      },
+      "properties": {
+        "name": "Pont de Neuilly N13 / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.253692111,
+          48.88684968
+        ]
+      },
+      "properties": {
+        "name": "Pont de Neuilly N13 / La Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255391847,
+          48.886328367
+        ]
+      },
+      "properties": {
+        "name": "Pont de Neuilly N13 / Petit Bras de la Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25288273,
+          48.886932462
+        ]
+      },
+      "properties": {
+        "name": "Pont de Neuilly / Quai de Dion Bouton D7",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254771676,
+          48.886523445
+        ]
+      },
+      "properties": {
+        "name": "Pont de Neuilly N13 / N1014",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246567038,
+          48.876196543
+        ]
+      },
+      "properties": {
+        "name": "Pont de Puteaux D104 / Boulevard du Général Kœnig",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246596829,
+          48.876148496
+        ]
+      },
+      "properties": {
+        "name": "Pont de Puteaux D104 / Boulevard Richard Wallace",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246529888,
+          48.876144922
+        ]
+      },
+      "properties": {
+        "name": "Pont de Puteaux D104 / Chemin de la Seine à Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267241158,
+          48.893986585
+        ]
+      },
+      "properties": {
+        "name": "Pont du Maréchal-Juin D908 / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267476647,
+          48.893814978
+        ]
+      },
+      "properties": {
+        "name": "Pont du Maréchal-Juin D908 / Boulevard Bourdon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266907855,
+          48.894114744
+        ]
+      },
+      "properties": {
+        "name": "Pont du Maréchal-Juin D908 / Boulevard du Parc",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267088965,
+          48.894198879
+        ]
+      },
+      "properties": {
+        "name": "Pont du Maréchal-Juin D908 / Boulevard Georges Seurat",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267328703,
+          48.893837337
+        ]
+      },
+      "properties": {
+        "name": "Pont du Maréchal-Juin D908 / Petit Bras de la Seine",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254623222,
+          48.879169778
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point Saint-James / Rue Delabordère",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254396447,
+          48.879124405
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point Saint-James / Rue du Centre",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255607041,
+          48.881735653
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Bertereaux / Avenue du Parc Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255311422,
+          48.882146281
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Bertereaux / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25583267,
+          48.881258999
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Bertereaux / Rue du Bois de Boulogne",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26906341,
+          48.881767258
+        ]
+      },
+      "properties": {
+        "name": "Rue Ancelle / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268108606,
+          48.879216308
+        ]
+      },
+      "properties": {
+        "name": "Rue Ancelle / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268325663,
+          48.87996816
+        ]
+      },
+      "properties": {
+        "name": "Rue Ancelle / Rue Charles Laffitte",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26823487,
+          48.879711072
+        ]
+      },
+      "properties": {
+        "name": "Rue Ancelle / Square Capitaine Claude Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275108918,
+          48.883035942
+        ]
+      },
+      "properties": {
+        "name": "Rue Angélique Vérien / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274656403,
+          48.881357087
+        ]
+      },
+      "properties": {
+        "name": "Rue Angélique Vérien / Place Raymond Poincaré",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274686844,
+          48.881281735
+        ]
+      },
+      "properties": {
+        "name": "Rue Angélique Vérien / Rue Berteaux-Dumas",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275132111,
+          48.883043372
+        ]
+      },
+      "properties": {
+        "name": "Rue Angélique Vérien / Villa du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261134143,
+          48.88594157
+        ]
+      },
+      "properties": {
+        "name": "Rue Bailly / Rue du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260485174,
+          48.887192933
+        ]
+      },
+      "properties": {
+        "name": "Rue Beffroy / Place Beffroy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261539807,
+          48.886463441
+        ]
+      },
+      "properties": {
+        "name": "Rue Beffroy / Place du Général Gouraud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26013162,
+          48.887445788
+        ]
+      },
+      "properties": {
+        "name": "Rue Beffroy / Rue Ybry",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274902616,
+          48.88129013
+        ]
+      },
+      "properties": {
+        "name": "Rue Bellanger / Place Raymond Poincaré",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264563624,
+          48.893088334
+        ]
+      },
+      "properties": {
+        "name": "Rue Benjamin Constant / Boulevard du Parc",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263454885,
+          48.893948217
+        ]
+      },
+      "properties": {
+        "name": "Rue Benjamin Constant / Boulevard Paul-Émile Victor",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274337249,
+          48.880633656
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275795918,
+          48.882886168
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274760611,
+          48.881295253
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Place Raymond Poincaré",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27473919,
+          48.881380278
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Rue Angélique Vérien",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274860674,
+          48.88133525
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Rue Bellanger",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275105405,
+          48.881787211
+        ]
+      },
+      "properties": {
+        "name": "Rue Berteaux-Dumas / Rue de l'École de Mars",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257460278,
+          48.885984639
+        ]
+      },
+      "properties": {
+        "name": "Rue Blaise Pascal / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258144184,
+          48.886884759
+        ]
+      },
+      "properties": {
+        "name": "Rue Blaise Pascal / Rue Garnier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257757643,
+          48.886358097
+        ]
+      },
+      "properties": {
+        "name": "Rue Blaise Pascal / Villa Blaise Pascal",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258599312,
+          48.884796312
+        ]
+      },
+      "properties": {
+        "name": "Rue Boutard / Rue Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258553494,
+          48.884865331
+        ]
+      },
+      "properties": {
+        "name": "Rue Boutard / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26004459,
+          48.883753294
+        ]
+      },
+      "properties": {
+        "name": "Rue Boutard / Villa Houssay",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257525709,
+          48.884060684
+        ]
+      },
+      "properties": {
+        "name": "Rue Casimir Pinel / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257530029,
+          48.884047113
+        ]
+      },
+      "properties": {
+        "name": "Rue Casimir Pinel / Rue du Général Henrion Bertier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255639112,
+          48.884864367
+        ]
+      },
+      "properties": {
+        "name": "Rue Casimir Pinel / Rue du Général Lanrezac",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256921409,
+          48.88438924
+        ]
+      },
+      "properties": {
+        "name": "Rue Casimir Pinel / Rue Théophile Gautier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258549761,
+          48.884852771
+        ]
+      },
+      "properties": {
+        "name": "Rue Charcot / Rue Boutard",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258505284,
+          48.884851969
+        ]
+      },
+      "properties": {
+        "name": "Rue Charcot / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258027933,
+          48.883805316
+        ]
+      },
+      "properties": {
+        "name": "Rue Charcot / Rue du Général Henrion Bertier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277995086,
+          48.87892876
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271140408,
+          48.87962177
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Boulevard des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264827453,
+          48.880406392
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Rue Deleau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26190232,
+          48.880770058
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Rue des Graviers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274849991,
+          48.879158523
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Rue Paul Déroulède",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262798779,
+          48.880644634
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Laffitte / Villa Maillot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.249969018,
+          48.879423167
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles-Bernard Metman / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263381071,
+          48.885776715
+        ]
+      },
+      "properties": {
+        "name": "Rue Chartran / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269527479,
+          48.894428624
+        ]
+      },
+      "properties": {
+        "name": "Rue Chauveau / Boulevard Bourdon D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270784789,
+          48.893185377
+        ]
+      },
+      "properties": {
+        "name": "Rue Chauveau / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276273391,
+          48.889583952
+        ]
+      },
+      "properties": {
+        "name": "Rue Chauveau / Place du Duc d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281732862,
+          48.883758939
+        ]
+      },
+      "properties": {
+        "name": "Rue Cino Del Duca / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279783374,
+          48.881287846
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Armenonville / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278120905,
+          48.881674173
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Armenonville / Villa Blanche",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272098971,
+          48.880976955
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Orléans / Avenue Charles de Gaulle N13",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273523749,
+          48.883400367
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Orléans / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273518076,
+          48.883408004
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Orléans / Place Winston Churchill",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279243478,
+          48.880479767
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Place Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278061848,
+          48.881623816
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Rue d'Armenonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280163997,
+          48.879635398
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Rue de Dreux",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279354672,
+          48.880442507
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Rue de Sablonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277253283,
+          48.882346282
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Rue Madeleine Michelis",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279043515,
+          48.880682172
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27807092,
+          48.881664906
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chartres / Villa Blanche",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267475761,
+          48.884805689
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chézy / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272979992,
+          48.889369357
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chézy / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27436009,
+          48.890524398
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chézy / Rue Chauveau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266852443,
+          48.887049403
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral de Joinville / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26820715,
+          48.888157429
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral de Joinville / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269703378,
+          48.884294361
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Fournier / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2703615,
+          48.885163871
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Amiral Fournier / Boulevard Jean Mermoz",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27579306,
+          48.881564727
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'École de Mars / Rue Bellanger",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263784062,
+          48.885627059
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262318042,
+          48.884432557
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26901951,
+          48.88443388
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôtel de Ville / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267705919,
+          48.882730298
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôtel de Ville / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269026186,
+          48.884438904
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôtel de Ville / Rue Edmond Bloud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256503119,
+          48.876750747
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Ferme / Boulevard du Commandant Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256587,
+          48.8767332
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Ferme / Route de la Porte Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269326268,
+          48.895521387
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marine / Boulevard Georges Seurat",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268451899,
+          48.896273033
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marine / Boulevard Vital Bouhot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276602085,
+          48.88973636
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lesseps / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276591037,
+          48.889732688
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lesseps / Place du Duc d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279102485,
+          48.890683005
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lesseps / Rue de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250764632,
+          48.876723123
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Place de Bagatelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258525028,
+          48.884876377
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Rue Boutard",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258372929,
+          48.884635325
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Rue Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25171133,
+          48.877823347
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250741641,
+          48.876721903
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Rue Ernest Deloison",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25643718,
+          48.883102019
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Villa de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.251103444,
+          48.877137182
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Villa des Peupliers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2524439,
+          48.878657181
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longchamp / Villa Léonard de Vinci",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254022885,
+          48.883390524
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longpont / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255540202,
+          48.88238825
+        ]
+      },
+      "properties": {
+        "name": "Rue de Longpont / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27859152,
+          48.887511087
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rouvray / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278543951,
+          48.887505694
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rouvray / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281569346,
+          48.888349168
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rouvray / Rue de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2815883,
+          48.8883523
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rouvray / Rue Louis Rouquier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276234943,
+          48.880198921
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sablonville / Place du Marché",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279207192,
+          48.880474772
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sablonville / Place Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279117436,
+          48.880505948
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sablonville / Rue de Chartres",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277508102,
+          48.880290639
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sablonville / Rue du Midi",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279126149,
+          48.880418035
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sablonville / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254559209,
+          48.879067557
+        ]
+      },
+      "properties": {
+        "name": "Rue Delabordère / Rond-Point Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255838786,
+          48.8812509
+        ]
+      },
+      "properties": {
+        "name": "Rue Delabordère / Rue Alexandre Bertereaux",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.253580064,
+          48.877420734
+        ]
+      },
+      "properties": {
+        "name": "Rue Delabordère / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255836149,
+          48.881244586
+        ]
+      },
+      "properties": {
+        "name": "Rue Delabordère / Rue du Bois de Boulogne",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264624763,
+          48.879672915
+        ]
+      },
+      "properties": {
+        "name": "Rue Deleau / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28307463,
+          48.88661193
+        ]
+      },
+      "properties": {
+        "name": "Rue des Dames Augustines / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280222537,
+          48.885547395
+        ]
+      },
+      "properties": {
+        "name": "Rue des Dames Augustines / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280214243,
+          48.885545466
+        ]
+      },
+      "properties": {
+        "name": "Rue des Dames Augustines / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264626843,
+          48.883192773
+        ]
+      },
+      "properties": {
+        "name": "Rue des Graviers / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262034524,
+          48.881396295
+        ]
+      },
+      "properties": {
+        "name": "Rue des Graviers / Rue Pierret",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2620353,
+          48.8813901
+        ]
+      },
+      "properties": {
+        "name": "Rue des Graviers / Rue Salignac Fénelon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263412982,
+          48.882305038
+        ]
+      },
+      "properties": {
+        "name": "Rue des Graviers / Rue Victor Noir",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26673194,
+          48.884948119
+        ]
+      },
+      "properties": {
+        "name": "Rue des Huissiers / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261447528,
+          48.886164861
+        ]
+      },
+      "properties": {
+        "name": "Rue des Poissonniers / Place du Général Gouraud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263224584,
+          48.885172919
+        ]
+      },
+      "properties": {
+        "name": "Rue des Poissonniers / Rue de l'Église",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265539087,
+          48.883949711
+        ]
+      },
+      "properties": {
+        "name": "Rue des Poissonniers / Rue des Huissiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271037834,
+          48.883934828
+        ]
+      },
+      "properties": {
+        "name": "Rue Devès / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25870356,
+          48.881042101
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bois de Boulogne / Avenue de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258646805,
+          48.881042937
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bois de Boulogne / Boulevard du Commandant Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.252412129,
+          48.881521077
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bois de Boulogne / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254595386,
+          48.881347555
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bois de Boulogne / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250793915,
+          48.880077825
+        ]
+      },
+      "properties": {
+        "name": "Rue du Centre / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254555259,
+          48.879078336
+        ]
+      },
+      "properties": {
+        "name": "Rue du Centre / Rond-Point Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.253110208,
+          48.879461133
+        ]
+      },
+      "properties": {
+        "name": "Rue du Centre / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255845807,
+          48.878749249
+        ]
+      },
+      "properties": {
+        "name": "Rue du Centre / Rue Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25183989,
+          48.879784302
+        ]
+      },
+      "properties": {
+        "name": "Rue du Centre / Rue WIndsor",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261750774,
+          48.88639907
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260632835,
+          48.884966078
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263771164,
+          48.887627988
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Avenue Sainte-Foy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.263778589,
+          48.887631707
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Boulevard du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261569058,
+          48.886298146
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Place du Général Gouraud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261140048,
+          48.885943437
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue Bailly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262620698,
+          48.886897587
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue Chartran",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261446073,
+          48.886156854
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue des Poissonniers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262763225,
+          48.887016057
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue Soyer",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278015616,
+          48.88163165
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Pilot / Rue d'Armenonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278017465,
+          48.881602152
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Pilot / Rue de Chartres",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277210112,
+          48.880301926
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Pilot / Rue de Sablonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278061408,
+          48.881651017
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Pilot / Villa Blanche",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274592867,
+          48.883223653
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Cordonnier / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275425365,
+          48.884831578
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Cordonnier / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274594123,
+          48.883212796
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Cordonnier / Villa des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275194907,
+          48.884322293
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Cordonnier / Villa du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.256407758,
+          48.885189742
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Delanne / Rue du Général Lanrezac",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257305961,
+          48.884826759
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Delanne / Rue Théophile Gautier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257968914,
+          48.883840842
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Henrion Bertier / Rue Charcot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257540113,
+          48.884035029
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Henrion Bertier / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26254614,
+          48.893271999
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lieutenant Boncour / Boulevard Paul-Émile Victor",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.252961864,
+          48.876059293
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal de Lattre de Tassigny / Avenue de Bretteville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.252261857,
+          48.874792804
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal de Lattre de Tassigny / Boulevard Richard Wallace",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278824866,
+          48.879850378
+        ]
+      },
+      "properties": {
+        "name": "Rue du Midi / Rue Montrosier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257733212,
+          48.88808153
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259820777,
+          48.887102481
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont / Rue Paul Chatrousse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269031536,
+          48.884444193
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Bloud / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.269827476,
+          48.88544424
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Bloud / Boulevard Jean Mermoz",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266926132,
+          48.891418102
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26849563,
+          48.889849379
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Boulevard du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265817706,
+          48.892511329
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271563626,
+          48.888220775
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271571099,
+          48.888217199
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26739932,
+          48.890951896
+        ]
+      },
+      "properties": {
+        "name": "Rue Edouard Nortier / Square Chanton",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.247674472,
+          48.877473433
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Deloison / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.24858414,
+          48.877228541
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Deloison / Boulevard Julien Potin",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25075879,
+          48.876732371
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Deloison / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.253157213,
+          48.882382173
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Passy / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.254830458,
+          48.881649206
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Passy / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257011842,
+          48.887376627
+        ]
+      },
+      "properties": {
+        "name": "Rue Garnier / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260950403,
+          48.885588756
+        ]
+      },
+      "properties": {
+        "name": "Rue Garnier / Rue du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274243654,
+          48.880072949
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271493943,
+          48.880290834
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Boulevard des Sablons",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268520935,
+          48.880620632
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue Ancelle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271703927,
+          48.880280767
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue d'Orléans",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265000429,
+          48.88102811
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue Deleau",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262076211,
+          48.881386212
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue des Graviers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262035438,
+          48.881390311
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue Pierret",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262036118,
+          48.881388423
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue Salignac Fénelon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265925993,
+          48.880940915
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Dulud / Rue Victor Noir",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272527327,
+          48.883621214
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis-Philippe / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271325614,
+          48.881463374
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis-Philippe / Avenue Charles de Gaulle N13",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272531194,
+          48.883626601
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis-Philippe / Place Winston Churchill",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27727683,
+          48.882552623
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277826962,
+          48.883651772
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Avenue Philippe le Boucher",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275921137,
+          48.880619972
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Place du Marché",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278602164,
+          48.885261156
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Rue Alfred de Musset",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276441176,
+          48.881373568
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Rue de l'École de Mars",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278839106,
+          48.885779967
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27820668,
+          48.884338837
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277760716,
+          48.883457077
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine Michelis / Villa Méquillet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278475189,
+          48.879322845
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280155979,
+          48.881869906
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279229854,
+          48.880410879
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Place Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27925329,
+          48.880389332
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Rue de Chartres",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279615535,
+          48.8805207
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Rue de Sablonville",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280174599,
+          48.8818719
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrosier / Rue Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280120715,
+          48.881895862
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283239392,
+          48.886524238
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281567597,
+          48.88400392
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281421495,
+          48.883756413
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261303897,
+          48.886277058
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Chatrousse / Place du Général Gouraud",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261300214,
+          48.886261295
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Chatrousse / Rue du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275282424,
+          48.879771975
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Déroulède / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272727163,
+          48.887617828
+        ]
+      },
+      "properties": {
+        "name": "Rue Pauline Borghèse / Allée Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27157844,
+          48.888213614
+        ]
+      },
+      "properties": {
+        "name": "Rue Pauline Borghèse / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273463145,
+          48.887198124
+        ]
+      },
+      "properties": {
+        "name": "Rue Pauline Borghèse / Villa Pasteur",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268628392,
+          48.887932572
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Avenue Céline",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.265665033,
+          48.889926457
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Avenue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26508082,
+          48.890553482
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266596105,
+          48.889043261
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Boulevard du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.264066526,
+          48.891702672
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268608504,
+          48.887972379
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Jardin Lucien Wargny",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270210034,
+          48.88711272
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Rue de Chézy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271108627,
+          48.886647694
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Rue Martin de Thezillat",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.268405831,
+          48.888080428
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Square Guillaume Apollinaire",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272484809,
+          48.885923921
+        ]
+      },
+      "properties": {
+        "name": "Rue Perronet / Villa des Tilleuls",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280973487,
+          48.883086902
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Cherest / Rue Parmentier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280294072,
+          48.883948682
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Cherest / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261048781,
+          48.882240369
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierret / Passage Saint-Ferdinand",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262035088,
+          48.881389976
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierret / Rue des Graviers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259808701,
+          48.883256001
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierret / Rue du Général Henrion Bertier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262011614,
+          48.88138947
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierret / Rue Salignac Fénelon",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271745469,
+          48.890037143
+        ]
+      },
+      "properties": {
+        "name": "Rue Puvis de Chavanne / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278192178,
+          48.878879885
+        ]
+      },
+      "properties": {
+        "name": "Rue Raoul Nordling / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27766287,
+          48.878044233
+        ]
+      },
+      "properties": {
+        "name": "Rue Raoul Nordling / Boulevard André Maurois",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277640591,
+          48.878042163
+        ]
+      },
+      "properties": {
+        "name": "Rue Raoul Nordling / Boulevard Maillot",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277898187,
+          48.8787785
+        ]
+      },
+      "properties": {
+        "name": "Rue Raoul Nordling / Rue Charles Laffitte",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.25501003,
+          48.877093175
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-James / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257079657,
+          48.881152182
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-James / Rue du Bois de Boulogne",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275671151,
+          48.890839124
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Paul / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277878065,
+          48.891849417
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Paul / Rue de Villiers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277882866,
+          48.891856247
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Paul / Rue Kléber",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271696129,
+          48.883808686
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Pierre / Avenue Achille Peretti",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270473989,
+          48.88186276
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Pierre / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.271264787,
+          48.883018148
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Pierre / Rue Devès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258964839,
+          48.881457999
+        ]
+      },
+      "properties": {
+        "name": "Rue Salignac Fénelon / Avenue de Madrid",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258975828,
+          48.881501558
+        ]
+      },
+      "properties": {
+        "name": "Rue Salignac Fénelon / Avenue du Parc Saint-James",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.262026395,
+          48.881366815
+        ]
+      },
+      "properties": {
+        "name": "Rue Salignac Fénelon / Rue des Graviers",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.261443895,
+          48.887834688
+        ]
+      },
+      "properties": {
+        "name": "Rue Soyer / Boulevard de la Saussaye",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259213217,
+          48.889157402
+        ]
+      },
+      "properties": {
+        "name": "Rue Soyer / Boulevard du Général Leclerc D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260793823,
+          48.888193877
+        ]
+      },
+      "properties": {
+        "name": "Rue Soyer / Rue Ybry",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257779263,
+          48.885347191
+        ]
+      },
+      "properties": {
+        "name": "Rue Théophile Gautier / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.253587366,
+          48.882928589
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Daix / Boulevard du Général Kœnig D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255310855,
+          48.882165514
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Daix / Rue Alexandre Bertereaux",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.255305433,
+          48.882169046
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Daix / Rue de Longchamp",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.251215052,
+          48.879088118
+        ]
+      },
+      "properties": {
+        "name": "Rue WIndsor / Rue Charles-Bernard Metman",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.250460841,
+          48.87812115
+        ]
+      },
+      "properties": {
+        "name": "Rue WIndsor / Rue de la Ferme",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.258627404,
+          48.88561023
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259951669,
+          48.887225784
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Place Beffroy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259566495,
+          48.886823107
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Rue Bailly",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.260127328,
+          48.887430956
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Rue Beffroy",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259806994,
+          48.887110712
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Rue du Pont",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259229637,
+          48.886471
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Rue Garnier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.259829792,
+          48.887091111
+        ]
+      },
+      "properties": {
+        "name": "Rue Ybry / Rue Paul Chatrousse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267593081,
+          48.879287112
+        ]
+      },
+      "properties": {
+        "name": "Square Capitaine Claude Barrès / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276969374,
+          48.886139291
+        ]
+      },
+      "properties": {
+        "name": "Square Daniel Rops / Rue Pauline Borghèse",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279082369,
+          48.8841684
+        ]
+      },
+      "properties": {
+        "name": "Square du Roule / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26089539,
+          48.885433511
+        ]
+      },
+      "properties": {
+        "name": "Square Neuilly-Château / Rue du Château",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276163037,
+          48.884721172
+        ]
+      },
+      "properties": {
+        "name": "Square Perronet / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.257081942,
+          48.885651878
+        ]
+      },
+      "properties": {
+        "name": "Tunnel de Neuilly N13 / Rue du Général Lanrezac",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278406527,
+          48.882270164
+        ]
+      },
+      "properties": {
+        "name": "Villa Blanche / Avenue du Roule",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27375954,
+          48.893034973
+        ]
+      },
+      "properties": {
+        "name": "Villa de Villiers / Boulevard Victor Hugo",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.274577462,
+          48.883168408
+        ]
+      },
+      "properties": {
+        "name": "Villa des Sablons / Rue du Général Cordonnier",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.273276863,
+          48.880969001
+        ]
+      },
+      "properties": {
+        "name": "Villa Émile Bergerat / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26259745,
+          48.879933289
+        ]
+      },
+      "properties": {
+        "name": "Villa Maillot / Boulevard Maurice Barrès",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278586848,
+          48.884258256
+        ]
+      },
+      "properties": {
+        "name": "Villa Méquillet / Rue Perronet",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.270370929,
+          48.881354209
+        ]
+      },
+      "properties": {
+        "name": "Villa Régent / Avenue Charles de Gaulle",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.26804166,
+          48.886388812
+        ]
+      },
+      "properties": {
+        "name": "Villa Sainte-Foy / Boulevard d'Argenson",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.267639612,
+          48.893643657
+        ]
+      },
+      "properties": {
+        "name": "D1 / Boulevard Bineau D908",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.246437386,
+          48.876240439
+        ]
+      },
+      "properties": {
+        "name": "D1 / Pont de Puteaux D104",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.266037643,
+          48.892596704
+        ]
+      },
+      "properties": {
+        "name": "N13 / D1",
+        "context": "Neuilly-sur-Seine, Hauts-de-Seine",
+        "citycode": "92051",
+        "depcode": "92"
+      }
+    }
+  ]
+}

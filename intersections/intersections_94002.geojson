@@ -1,0 +1,7685 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415936638,
+          48.80232765
+        ]
+      },
+      "properties": {
+        "name": "Allée Antoine Sartori / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42811853,
+          48.791305449
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Commune / Place du 11 Novembre 1918",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426015599,
+          48.785289823
+        ]
+      },
+      "properties": {
+        "name": "Allée des Jardins / Rue d'Alembert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427227168,
+          48.791575762
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Place du 11 Novembre 1918",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425787593,
+          48.790901298
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410338236,
+          48.80627577
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411564581,
+          48.806279802
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Rue des Pontons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428019654,
+          48.791734835
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Baptiste Lulli / Place du 11 Novembre 1918",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428322778,
+          48.778931179
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Baptiste Preux / Chemin de Villeneuve",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428512419,
+          48.778925202
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Baptiste Preux / Chemin de Villeneuve-Saint-Georges D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418666045,
+          48.776823791
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Baptiste Preux / Rue du Capitaine Alfred Dreyfus",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418661912,
+          48.776815985
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean-Baptiste Preux / Rue Jean-Baptiste Preux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428657134,
+          48.780638748
+        ]
+      },
+      "properties": {
+        "name": "Allée Louis Warnier / Chemin de Villeneuve",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428718087,
+          48.78063444
+        ]
+      },
+      "properties": {
+        "name": "Allée Louis Warnier / Chemin de Villeneuve-Saint-Georges D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416277148,
+          48.809543148
+        ]
+      },
+      "properties": {
+        "name": "Allée Marguerite Yourcenar / Rue Jean Colly",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419636321,
+          48.782093076
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Alfortville / Digue d'Alfortville D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418453602,
+          48.780369494
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Alfortville / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417281515,
+          48.778629831
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Alfortville / Rue du Capitaine Alfred Dreyfus",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421306915,
+          48.799539252
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Tilleuls / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425457215,
+          48.80267758
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Avenue Malleret-Joinville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418767091,
+          48.799703419
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422665093,
+          48.80142043
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Rue d'Alsace Lorraine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423278937,
+          48.801722328
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Rue des Bleuets",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424355114,
+          48.802203862
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421959414,
+          48.801119012
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426048692,
+          48.80210156
+        ]
+      },
+      "properties": {
+        "name": "Avenue Malleret-Joinville / Place de la Gare",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424400077,
+          48.803725794
+        ]
+      },
+      "properties": {
+        "name": "Avenue Malleret-Joinville / Rue du Président Kennedy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42886204,
+          48.796303103
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Cours Beethoven",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422576889,
+          48.795149824
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423465513,
+          48.795355362
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue des Myosotis",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425281848,
+          48.795713197
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42723283,
+          48.795176036
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Erevan / Allée du Douanier Rousseau",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428279329,
+          48.795303128
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Erevan / Allée Modigliani",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428997654,
+          48.795392402
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Erevan / Cours Beethoven",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426849901,
+          48.795142197
+        ]
+      },
+      "properties": {
+        "name": "Boulevard d'Erevan / Redoute des Petits Quarreaux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423173606,
+          48.808495402
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Déportation / Chemin Latéral",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423170246,
+          48.808474248
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Déportation / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428675372,
+          48.780637922
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve / Allée Louis Warnier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428582524,
+          48.779733809
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve / Chemin de Villeneuve-Saint-Georges D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428510432,
+          48.778911148
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve-Saint-Georges D228 / Allée Jean-Baptiste Preux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428782418,
+          48.78062881
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve-Saint-Georges D228 / Allée Louis Warnier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42848928,
+          48.779177245
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve-Saint-Georges D228 / Chemin de Villeneuve",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428219058,
+          48.776629504
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Villeneuve-Saint-Georges D228 / Chemin des Marais D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420227556,
+          48.81139057
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Allée des Prévoyants",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423174355,
+          48.80849548
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Chemin de la Déportation",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416690675,
+          48.81471726
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420976233,
+          48.810796696
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Rue de Seine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423171198,
+          48.808495629
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417350297,
+          48.813885186
+        ]
+      },
+      "properties": {
+        "name": "Chemin Latéral / Rue Pelletan",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430344752,
+          48.791823756
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Allée Jean-Baptiste Lulli",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430663102,
+          48.791044026
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Allée Jean-Sébastien Bach",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429502839,
+          48.794013451
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Allée Michel Ange",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42997498,
+          48.792784298
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Allée Mozart",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429066647,
+          48.795360442
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Boulevard d'Erevan",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431115753,
+          48.789951926
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Rue de Constantinople",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431127534,
+          48.789948295
+        ]
+      },
+      "properties": {
+        "name": "Cours Beethoven / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428294282,
+          48.78199333
+        ]
+      },
+      "properties": {
+        "name": "Digue d'Alfortville D228 / Chemin de Villeneuve",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428483535,
+          48.782154807
+        ]
+      },
+      "properties": {
+        "name": "Digue d'Alfortville D228 / Rond-Point de Cantanhede",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424436795,
+          48.781755298
+        ]
+      },
+      "properties": {
+        "name": "Digue d'Alfortville / Rue Descartes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429018164,
+          48.795423423
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Choisy / Boulevard d'Erevan",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428997088,
+          48.795723676
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Choisy / Cours Beethoven",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42673353,
+          48.795538666
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Groupe Manouchian / Rue du Groupe Manouchian",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412030712,
+          48.814608462
+        ]
+      },
+      "properties": {
+        "name": "Mail Jacques Prévert / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412023365,
+          48.814589145
+        ]
+      },
+      "properties": {
+        "name": "Mail Jacques Prévert / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413012885,
+          48.815250083
+        ]
+      },
+      "properties": {
+        "name": "Mail Jacques Prévert / Rue du Parc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412514681,
+          48.81458633
+        ]
+      },
+      "properties": {
+        "name": "Mail Jacques Prévert / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418365183,
+          48.780369847
+        ]
+      },
+      "properties": {
+        "name": "Passerelle GRT Gaz / Avenue d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417346345,
+          48.780683925
+        ]
+      },
+      "properties": {
+        "name": "Passerelle GRT Gaz / La Seine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418388719,
+          48.78036253
+        ]
+      },
+      "properties": {
+        "name": "Passerelle GRT Gaz / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428690645,
+          48.789463225
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Europe / Rue de Constantinople",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428673721,
+          48.789465985
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Europe / Rue de l'Abbé Jaeger",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428691768,
+          48.789421998
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Europe / Rue de Londres",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42891748,
+          48.788882632
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Europe / Rue de Petrograd",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428543134,
+          48.788618799
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Europe / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42604986,
+          48.802101606
+        ]
+      },
+      "properties": {
+        "name": "Place de la Gare / Avenue Malleret-Joinville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425935732,
+          48.801971225
+        ]
+      },
+      "properties": {
+        "name": "Place de la Gare / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426239571,
+          48.801647271
+        ]
+      },
+      "properties": {
+        "name": "Place de la Gare / Rue Joffrin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425302903,
+          48.786807813
+        ]
+      },
+      "properties": {
+        "name": "Place de San Benedetto del Tronto / Rue des Goujons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425706166,
+          48.786822745
+        ]
+      },
+      "properties": {
+        "name": "Place de San Benedetto del Tronto / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425318513,
+          48.786797625
+        ]
+      },
+      "properties": {
+        "name": "Place de San Benedetto del Tronto / Sente de Villiers",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42799318,
+          48.792172066
+        ]
+      },
+      "properties": {
+        "name": "Place du 11 Novembre 1918 / Place du 9 Décembre",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427985155,
+          48.792169829
+        ]
+      },
+      "properties": {
+        "name": "Place du 9 Décembre / Place du 11 Novembre 1918",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41120933,
+          48.81484785
+        ]
+      },
+      "properties": {
+        "name": "Place du Confluent France-Chine / Quai Pierre Cosmi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42578231,
+          48.789913727
+        ]
+      },
+      "properties": {
+        "name": "Place du Petit Pont / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420192389,
+          48.805064136
+        ]
+      },
+      "properties": {
+        "name": "Place François Mitterrand / Rue Joseph Franceschi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42006622,
+          48.805211869
+        ]
+      },
+      "properties": {
+        "name": "Place François Mitterrand / Rue Jules Cuillerier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41961091,
+          48.804357468
+        ]
+      },
+      "properties": {
+        "name": "Place Jean Jaurès / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419702998,
+          48.804435597
+        ]
+      },
+      "properties": {
+        "name": "Place Jean Jaurès / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419857239,
+          48.804433662
+        ]
+      },
+      "properties": {
+        "name": "Place Jean Jaurès / Rue Victor Hugo",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423218843,
+          48.787163612
+        ]
+      },
+      "properties": {
+        "name": "Place Ochagan D138 / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423247744,
+          48.787088503
+        ]
+      },
+      "properties": {
+        "name": "Place Ochagan D138 / Rue des Goujons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410312722,
+          48.806268933
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui / Allée Jean Moulin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418796993,
+          48.79970008
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Avenue du Général Leclerc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412024598,
+          48.814588301
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Mail Jacques Prévert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420466626,
+          48.79822844
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411877549,
+          48.814643815
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Quai Pierre Cosmi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411772427,
+          48.814532155
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41174294,
+          48.814253866
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue de Charenton",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411985064,
+          48.814568248
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue de la Marne",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415488929,
+          48.802062086
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419932007,
+          48.798789361
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410842733,
+          48.805660322
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue du Port à l'Anglais",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420471298,
+          48.798234095
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413091874,
+          48.803357435
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui / Rue Jules Guesde",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41185825,
+          48.804404323
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / Rue Micolon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410004169,
+          48.807402754
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui / Rue Volta",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420461566,
+          48.798229837
+        ]
+      },
+      "properties": {
+        "name": "Quai Blanqui D138 / D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415853023,
+          48.815918798
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Allée des Soupirs",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413033548,
+          48.815880175
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Mail Jacques Prévert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413579468,
+          48.815885043
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Passerelle d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416123899,
+          48.815951105
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Quai du Docteur Mass",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412215251,
+          48.815903107
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Rue de la Marne",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414846622,
+          48.815800348
+        ]
+      },
+      "properties": {
+        "name": "Quai d'Alfortville / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41728944,
+          48.778703827
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Avenue d'Alfortville D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419662626,
+          48.782095751
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Digue d'Alfortville D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422900187,
+          48.78705466
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Place Ochagan D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422689695,
+          48.786679037
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417305211,
+          48.778606557
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Rue du Capitaine Alfred Dreyfus",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422341073,
+          48.786084693
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Rue Jean-Jacques Rousseau",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422239809,
+          48.785982143
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution / Rue Montesquieu",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421448915,
+          48.784768357
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution D138 / Rue Nelson Mandela",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42192669,
+          48.785500079
+        ]
+      },
+      "properties": {
+        "name": "Quai de la Révolution / Rue Olympe de Gouges",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422532074,
+          48.795140134
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423012389,
+          48.787193372
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Place Ochagan D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422798277,
+          48.786906981
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423237541,
+          48.787538023
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Rue de Choisy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42160225,
+          48.796794592
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423926853,
+          48.791237539
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément / Rue de la Carpe",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42390037,
+          48.789672299
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Rue des Gardons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420511726,
+          48.798215052
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423982801,
+          48.790375965
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean-Baptiste Clément D138 / Rue Komitas",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428560549,
+          48.781903911
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point de Cantanhede / Chemin de Villeneuve",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428784553,
+          48.781918689
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point de Cantanhede / Chemin de Villeneuve-Saint-Georges D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428738434,
+          48.782117236
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point de Cantanhede / Digue d'Alfortville D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428711379,
+          48.782228251
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point de Cantanhede / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424772649,
+          48.804545465
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Lubin / Rue Marcel Bourdarias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419012109,
+          48.811189867
+        ]
+      },
+      "properties": {
+        "name": "Rue André Soladier / Allée des Prévoyants",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417622014,
+          48.811746957
+        ]
+      },
+      "properties": {
+        "name": "Rue André Soladier / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418048334,
+          48.813183123
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Dalidet / Chemin Latéral",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417074194,
+          48.812997714
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Dalidet / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415998453,
+          48.81281767
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Dalidet / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427586216,
+          48.798059873
+        ]
+      },
+      "properties": {
+        "name": "Rue Babeuf / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427595614,
+          48.798056102
+        ]
+      },
+      "properties": {
+        "name": "Rue Babeuf / Rue de Verdun",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425279168,
+          48.7992688
+        ]
+      },
+      "properties": {
+        "name": "Rue Babeuf / Rue des Pâquerettes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427127506,
+          48.799900235
+        ]
+      },
+      "properties": {
+        "name": "Rue Babeuf / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427117284,
+          48.799904597
+        ]
+      },
+      "properties": {
+        "name": "Rue Babeuf / Rue Joffrin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422224153,
+          48.784558489
+        ]
+      },
+      "properties": {
+        "name": "Rue Beaumarchais / Rue Nelson Mandela",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421296293,
+          48.797475235
+        ]
+      },
+      "properties": {
+        "name": "Rue Blanche / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423720598,
+          48.798116761
+        ]
+      },
+      "properties": {
+        "name": "Rue Blanche / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412381872,
+          48.814594469
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Mail Jacques Prévert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414551699,
+          48.814511322
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Place Tony Garnier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411175257,
+          48.81454265
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Pont d'Ivry D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411759917,
+          48.814540412
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411914042,
+          48.814571448
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Rue de la Marne",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412516379,
+          48.81453857
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415320868,
+          48.814531636
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles de Gaulle D19 / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426059952,
+          48.785287005
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alembert / Allée des Jardins",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426252254,
+          48.784089822
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alembert / Rue Nelson Mandela",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426113328,
+          48.784568481
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alembert / Rue Olympe de Gouges",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423202677,
+          48.800558285
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alsace Lorraine / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422772685,
+          48.808900711
+        ]
+      },
+      "properties": {
+        "name": "Rue Daunot / Chemin Latéral",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425713012,
+          48.787386396
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bordeaux / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431682725,
+          48.788718238
+        ]
+      },
+      "properties": {
+        "name": "Rue de Budapest / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429216858,
+          48.788273687
+        ]
+      },
+      "properties": {
+        "name": "Rue de Budapest / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411515815,
+          48.810084335
+        ]
+      },
+      "properties": {
+        "name": "Rue de Charenton / Rue Jean Albert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425693651,
+          48.789791921
+        ]
+      },
+      "properties": {
+        "name": "Rue de Choisy / Place du Petit Pont",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423317178,
+          48.787535865
+        ]
+      },
+      "properties": {
+        "name": "Rue de Choisy / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424169872,
+          48.788258375
+        ]
+      },
+      "properties": {
+        "name": "Rue de Choisy / Rue des Epinoches",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42566336,
+          48.789731871
+        ]
+      },
+      "properties": {
+        "name": "Rue de Choisy / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430733062,
+          48.786635096
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dijon / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429392114,
+          48.786391556
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dijon / Rue de Toulon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426484471,
+          48.785859424
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dijon / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421613421,
+          48.796795476
+        ]
+      },
+      "properties": {
+        "name": "Rue de Flore / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424104354,
+          48.797438033
+        ]
+      },
+      "properties": {
+        "name": "Rue de Flore / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.432254739,
+          48.786888008
+        ]
+      },
+      "properties": {
+        "name": "Rue de Genève / Rue de Dijon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.432281401,
+          48.786905711
+        ]
+      },
+      "properties": {
+        "name": "Rue de Genève / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430690642,
+          48.782443287
+        ]
+      },
+      "properties": {
+        "name": "Rue de Grenoble / Digue d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430745001,
+          48.786625219
+        ]
+      },
+      "properties": {
+        "name": "Rue de Grenoble / Rue de Dijon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430965647,
+          48.785543541
+        ]
+      },
+      "properties": {
+        "name": "Rue de Grenoble / Rue de Lyon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430922532,
+          48.786107845
+        ]
+      },
+      "properties": {
+        "name": "Rue de Grenoble / Rue de Mâcon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430743207,
+          48.786631101
+        ]
+      },
+      "properties": {
+        "name": "Rue de Grenoble / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428658211,
+          48.789512217
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Abbé Jaeger / Rue de Constantinople",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427298481,
+          48.790150127
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Abbé Jaeger / Rue de Lisbonne",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42859601,
+          48.789575085
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Abbé Jaeger / Rue de Londres",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410969588,
+          48.806687279
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Place de la République",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410523912,
+          48.806279756
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410976047,
+          48.806675652
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue des Pontons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422033874,
+          48.796095598
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Écluse / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424547136,
+          48.796753242
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Écluse / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417979824,
+          48.807590878
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Union / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412240439,
+          48.805495839
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Baignade / Rue du Port à l'Anglais",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42397489,
+          48.791228762
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Carpe / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425788003,
+          48.790374581
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Carpe / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41204757,
+          48.814652431
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Mail Jacques Prévert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411958821,
+          48.814600224
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411942695,
+          48.814692908
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Quai Pierre Cosmi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411972557,
+          48.81457297
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423881425,
+          48.791740444
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Perche / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424705363,
+          48.791760268
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Perche / Rue des Barbillons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425676489,
+          48.79180713
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Perche / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423740283,
+          48.792360125
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Tanche / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425603572,
+          48.792437987
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Tanche / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42860707,
+          48.788299941
+        ]
+      },
+      "properties": {
+        "name": "Rue de Liège / Rue de Toulon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425714516,
+          48.787990532
+        ]
+      },
+      "properties": {
+        "name": "Rue de Liège / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427702762,
+          48.790557475
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lisbonne / Rue de Londres",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427947939,
+          48.790469758
+        ]
+      },
+      "properties": {
+        "name": "Rue de Londres / Allée de la Commune",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428674047,
+          48.789513396
+        ]
+      },
+      "properties": {
+        "name": "Rue de Londres / Rue de Constantinople",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428600411,
+          48.785120129
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lyon / Rue de Nice",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429824104,
+          48.785355519
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lyon / Rue de Toulon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426905141,
+          48.785337273
+        ]
+      },
+      "properties": {
+        "name": "Rue de Mâcon / Allée des Jardins",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429610608,
+          48.785867684
+        ]
+      },
+      "properties": {
+        "name": "Rue de Mâcon / Rue de Toulon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426905863,
+          48.785363444
+        ]
+      },
+      "properties": {
+        "name": "Rue de Mâcon / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428121865,
+          48.788815916
+        ]
+      },
+      "properties": {
+        "name": "Rue de Madrid / Place de l'Europe",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428161936,
+          48.788781262
+        ]
+      },
+      "properties": {
+        "name": "Rue de Madrid / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425715504,
+          48.788708882
+        ]
+      },
+      "properties": {
+        "name": "Rue de Madrid / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430758479,
+          48.783473894
+        ]
+      },
+      "properties": {
+        "name": "Rue de Marseille / Rue de Grenoble",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429320486,
+          48.783361383
+        ]
+      },
+      "properties": {
+        "name": "Rue de Marseille / Rue de Nice",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429773752,
+          48.78341854
+        ]
+      },
+      "properties": {
+        "name": "Rue de Marseille / Rue de Toulon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428307524,
+          48.783196914
+        ]
+      },
+      "properties": {
+        "name": "Rue de Marseille / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426934982,
+          48.789422342
+        ]
+      },
+      "properties": {
+        "name": "Rue de Milan / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425726627,
+          48.789352495
+        ]
+      },
+      "properties": {
+        "name": "Rue de Milan / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431125807,
+          48.789945753
+        ]
+      },
+      "properties": {
+        "name": "Rue de Naples / Rue de Constantinople",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.432273046,
+          48.786909397
+        ]
+      },
+      "properties": {
+        "name": "Rue de Naples / Rue de Dijon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428582639,
+          48.785116889
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nice / Rue de Lyon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431233307,
+          48.786735798
+        ]
+      },
+      "properties": {
+        "name": "Rue de Nîmes / Rue de Dijon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431435692,
+          48.78933289
+        ]
+      },
+      "properties": {
+        "name": "Rue de Petrograd / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425861536,
+          48.789985231
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rome / Place du Petit Pont",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430750594,
+          48.786639305
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rome / Rue de Dijon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428740518,
+          48.788477572
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rome / Rue de Liège",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430597471,
+          48.787160029
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rome / Rue de Nîmes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425866999,
+          48.790016882
+        ]
+      },
+      "properties": {
+        "name": "Rue de Rome / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410125868,
+          48.809438688
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415632718,
+          48.810136686
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Anatole France",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419340623,
+          48.81060784
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue André Soladier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41153292,
+          48.809619181
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue de Charenton",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418102449,
+          48.810435095
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420080451,
+          48.810673174
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Marcel Bourdarias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41296485,
+          48.809787191
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416948655,
+          48.81028906
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410695312,
+          48.809490446
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Rue Simone de Beauvoir",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428613674,
+          48.788306073
+        ]
+      },
+      "properties": {
+        "name": "Rue de Toulon / Rue de Liège",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.429818558,
+          48.785329964
+        ]
+      },
+      "properties": {
+        "name": "Rue de Toulon / Rue de Lyon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.431920062,
+          48.788118389
+        ]
+      },
+      "properties": {
+        "name": "Rue de Turin / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.43008115,
+          48.787792109
+        ]
+      },
+      "properties": {
+        "name": "Rue de Turin / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426939965,
+          48.796005594
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427588692,
+          48.798048246
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426618552,
+          48.795920998
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Rue du Groupe Manouchian",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.432120734,
+          48.787519737
+        ]
+      },
+      "properties": {
+        "name": "Rue de Vienne / Rue de Naples",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430587905,
+          48.787258802
+        ]
+      },
+      "properties": {
+        "name": "Rue de Vienne / Rue de Nîmes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.430510703,
+          48.787310618
+        ]
+      },
+      "properties": {
+        "name": "Rue de Vienne / Rue de Rome",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424728848,
+          48.788223113
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anguilles / Rue des Epinoches",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42471473,
+          48.786897492
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anguilles / Rue des Goujons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424748364,
+          48.790898864
+        ]
+      },
+      "properties": {
+        "name": "Rue des Barbillons / Rue de la Carpe",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424723626,
+          48.791761444
+        ]
+      },
+      "properties": {
+        "name": "Rue des Barbillons / Rue de la Perche",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424901997,
+          48.801459246
+        ]
+      },
+      "properties": {
+        "name": "Rue des Camélias / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423510798,
+          48.803401786
+        ]
+      },
+      "properties": {
+        "name": "Rue des Camélias / Rue du Président Kennedy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425873309,
+          48.800082409
+        ]
+      },
+      "properties": {
+        "name": "Rue des Camélias / Rue Pierre Philippot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425430714,
+          48.800720721
+        ]
+      },
+      "properties": {
+        "name": "Rue des Camélias / Rue Roger Girodit",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414715947,
+          48.80268097
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Allée Antoine Sartori",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417190601,
+          48.804102094
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Allée Martin Luther King",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414469783,
+          48.80257361
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416661695,
+          48.803774337
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Rue Lafayette",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424140428,
+          48.788246183
+        ]
+      },
+      "properties": {
+        "name": "Rue des Epinoches / Rue de Choisy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425680157,
+          48.788225285
+        ]
+      },
+      "properties": {
+        "name": "Rue des Epinoches / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416435662,
+          48.801756616
+        ]
+      },
+      "properties": {
+        "name": "Rue des Essertes / Allée Antoine Sartori",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416264193,
+          48.801640001
+        ]
+      },
+      "properties": {
+        "name": "Rue des Essertes / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420111855,
+          48.803773582
+        ]
+      },
+      "properties": {
+        "name": "Rue des Essertes / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423902313,
+          48.789670941
+        ]
+      },
+      "properties": {
+        "name": "Rue des Gardons / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424974391,
+          48.78913732
+        ]
+      },
+      "properties": {
+        "name": "Rue des Gardons / Rue de Choisy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425298784,
+          48.786805231
+        ]
+      },
+      "properties": {
+        "name": "Rue des Goujons / Sente de Villiers",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418209738,
+          48.80018404
+        ]
+      },
+      "properties": {
+        "name": "Rue des Lilas / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421548434,
+          48.801681552
+        ]
+      },
+      "properties": {
+        "name": "Rue des Lilas / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417307876,
+          48.800848706
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420771587,
+          48.802803346
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424997787,
+          48.79611575
+        ]
+      },
+      "properties": {
+        "name": "Rue des Myosotis / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424955557,
+          48.797588706
+        ]
+      },
+      "properties": {
+        "name": "Rue des Oeillets / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426618355,
+          48.795927411
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pâquerettes / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425879369,
+          48.797748157
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pâquerettes / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426635083,
+          48.79596031
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pâquerettes / Rue de Verdun",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4266175,
+          48.7959212
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pâquerettes / Rue du Groupe Manouchian",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417879424,
+          48.800452622
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pivoines / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421147902,
+          48.802253191
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pivoines / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411559905,
+          48.806289396
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pontons / Allée Jean Moulin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410973916,
+          48.806687263
+        ]
+      },
+      "properties": {
+        "name": "Rue des Pontons / Place de la République",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423498224,
+          48.792956698
+        ]
+      },
+      "properties": {
+        "name": "Rue des Roses / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42554561,
+          48.793072491
+        ]
+      },
+      "properties": {
+        "name": "Rue des Roses / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425948617,
+          48.795850353
+        ]
+      },
+      "properties": {
+        "name": "Rue des Violettes / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424972841,
+          48.797568086
+        ]
+      },
+      "properties": {
+        "name": "Rue des Violettes / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4249634,
+          48.7975782
+        ]
+      },
+      "properties": {
+        "name": "Rue des Violettes / Rue des Oeillets",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425897525,
+          48.795842338
+        ]
+      },
+      "properties": {
+        "name": "Rue des Violettes / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42443629,
+          48.781799829
+        ]
+      },
+      "properties": {
+        "name": "Rue Descartes / Digue d'Alfortville D228",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424642582,
+          48.783421363
+        ]
+      },
+      "properties": {
+        "name": "Rue Descartes / Rue Emmanuel Kant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424813861,
+          48.784403075
+        ]
+      },
+      "properties": {
+        "name": "Rue Descartes / Rue Olympe de Gouges",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418478219,
+          48.809556849
+        ]
+      },
+      "properties": {
+        "name": "Rue Diderot / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415959996,
+          48.80232629
+        ]
+      },
+      "properties": {
+        "name": "Rue du 14 Juillet / Allée Antoine Sartori",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415465914,
+          48.802071496
+        ]
+      },
+      "properties": {
+        "name": "Rue du 14 Juillet / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41743122,
+          48.803159414
+        ]
+      },
+      "properties": {
+        "name": "Rue du 14 Juillet / Rue Lafayette",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417307313,
+          48.77864302
+        ]
+      },
+      "properties": {
+        "name": "Rue du Capitaine Alfred Dreyfus / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418479853,
+          48.777035366
+        ]
+      },
+      "properties": {
+        "name": "Rue du Capitaine Alfred Dreyfus / Rue de la Batellerie",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418651467,
+          48.776818066
+        ]
+      },
+      "properties": {
+        "name": "Rue du Capitaine Alfred Dreyfus / Rue Jean-Baptiste Preux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41080853,
+          48.811741271
+        ]
+      },
+      "properties": {
+        "name": "Rue du Confluent / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411462503,
+          48.811763816
+        ]
+      },
+      "properties": {
+        "name": "Rue du Confluent / Rue de Charenton",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412766189,
+          48.81181246
+        ]
+      },
+      "properties": {
+        "name": "Rue du Confluent / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426617021,
+          48.795914886
+        ]
+      },
+      "properties": {
+        "name": "Rue du Groupe Manouchian / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426854435,
+          48.7951473
+        ]
+      },
+      "properties": {
+        "name": "Rue du Groupe Manouchian / Boulevard d'Erevan",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426839098,
+          48.795146154
+        ]
+      },
+      "properties": {
+        "name": "Rue du Groupe Manouchian / Redoute des Petits Quarreaux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416428118,
+          48.808998811
+        ]
+      },
+      "properties": {
+        "name": "Rue du Marché / Allée Marguerite Yourcenar",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425924151,
+          48.801977668
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal de Lattre de Tassigny / Place de la Gare",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419864133,
+          48.798752344
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal de Lattre de Tassigny / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416108553,
+          48.815512845
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc / Allée des Soupirs",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413092544,
+          48.815254524
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc / Mail Jacques Prévert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414994589,
+          48.815344093
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410848545,
+          48.805669565
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port à l'Anglais / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411812758,
+          48.80559863
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port à l'Anglais / Rue des Pontons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424417666,
+          48.803731421
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Avenue Malleret-Joinville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425287125,
+          48.804234803
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Chemin de la Déportation",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422540976,
+          48.803005281
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Rue des Bleuets",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423497206,
+          48.803404209
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42522032,
+          48.804204807
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Rue Marcel Bourdarias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421061867,
+          48.802447177
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Kennedy / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411556001,
+          48.806282599
+        ]
+      },
+      "properties": {
+        "name": "Rue du Vingtième Siècle / Allée Jean Moulin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410644661,
+          48.806029961
+        ]
+      },
+      "properties": {
+        "name": "Rue du Vingtième Siècle / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411543475,
+          48.806279372
+        ]
+      },
+      "properties": {
+        "name": "Rue du Vingtième Siècle / Rue des Pontons",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418479606,
+          48.809598108
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Bernard / Rue Diderot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418477694,
+          48.809638746
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Bernard / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419207071,
+          48.809738802
+        ]
+      },
+      "properties": {
+        "name": "Rue Edmond Bernard / Rue Émile Goeury",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41974244,
+          48.806663739
+        ]
+      },
+      "properties": {
+        "name": "Rue Édouard Vaillant / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419344141,
+          48.807668601
+        ]
+      },
+      "properties": {
+        "name": "Rue Édouard Vaillant / Square Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423345872,
+          48.783499082
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile du Châtelet / Rue Emmanuel Kant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426139777,
+          48.799546317
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Eudes / Rue Babeuf",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426803374,
+          48.797910393
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Eudes / Rue de Flore",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42748384,
+          48.796228172
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Eudes / Rue de Verdun",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41922997,
+          48.809736761
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Goeury / Rue Edmond Bernard",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420995038,
+          48.807299211
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Goeury / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420020717,
+          48.808589026
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Goeury / Rue Marcel Buge",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420466805,
+          48.798230273
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420489493,
+          48.798225848
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42622197,
+          48.799590802
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue Babeuf",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426092529,
+          48.799724875
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424352213,
+          48.799029213
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue des Oeillets",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425221047,
+          48.799307706
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue des Pâquerettes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423380194,
+          48.798777283
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427105534,
+          48.79990934
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue Joffrin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423384156,
+          48.798791605
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42518476,
+          48.799386735
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola D148 / Rue Pierre Philippot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42295427,
+          48.783510735
+        ]
+      },
+      "properties": {
+        "name": "Rue Emmanuel Kant / Rue Manon Roland",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42690185,
+          48.785311255
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Allée des Jardins",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425636283,
+          48.795773477
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Boulevard Carnot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428775711,
+          48.782209586
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Digue d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427313051,
+          48.78488386
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue de Lyon",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.428313123,
+          48.783185064
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue de Marseille",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42774959,
+          48.784316468
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue Nelson Mandela",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427384946,
+          48.784747293
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue Olympe de Gouges",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42624994,
+          48.786100195
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Sente de Villiers",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41231491,
+          48.80859247
+        ]
+      },
+      "properties": {
+        "name": "Rue Félix Éboué / Allée Victor Schœlcher",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411117726,
+          48.80845714
+        ]
+      },
+      "properties": {
+        "name": "Rue Félix Éboué / Rue Simone de Beauvoir",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411517443,
+          48.810072189
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Albert / Rue de Charenton",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412927068,
+          48.810085412
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Albert / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414397696,
+          48.809317225
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Colly / Square Véron",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42625461,
+          48.80161859
+        ]
+      },
+      "properties": {
+        "name": "Rue Joffrin / Place de la Gare",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.427123658,
+          48.799911448
+        ]
+      },
+      "properties": {
+        "name": "Rue Joffrin / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42337888,
+          48.806076436
+        ]
+      },
+      "properties": {
+        "name": "Rue Joseph Franceschi / Rue Marcel Bourdarias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421398646,
+          48.805449815
+        ]
+      },
+      "properties": {
+        "name": "Rue Joseph Franceschi / Rue Raymond Jaclard",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419821378,
+          48.805542099
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Cuillerier / Place François Mitterrand",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420198608,
+          48.805069455
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Cuillerier / Rue Joseph Franceschi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419218768,
+          48.806469229
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Cuillerier / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42065146,
+          48.804340687
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Cuillerier / Rue Victor Hugo",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416340723,
+          48.804677292
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Allée Martin Luther King",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413132453,
+          48.803375863
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423978515,
+          48.790385393
+        ]
+      },
+      "properties": {
+        "name": "Rue Komitas / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425500707,
+          48.789649405
+        ]
+      },
+      "properties": {
+        "name": "Rue Komitas / Rue de Choisy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417445039,
+          48.803167214
+        ]
+      },
+      "properties": {
+        "name": "Rue Lafayette / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415156301,
+          48.805660598
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Rue du Port à l'Anglais",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418507207,
+          48.806272214
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415172612,
+          48.805667489
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Rue Véron",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422114007,
+          48.797713881
+        ]
+      },
+      "properties": {
+        "name": "Rue Louise / Rue Blanche",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421682809,
+          48.798434678
+        ]
+      },
+      "properties": {
+        "name": "Rue Louise / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425256792,
+          48.804250901
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Chemin de la Déportation",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421649602,
+          48.808516784
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue Daunot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420103461,
+          48.810670446
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue de Seine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425233714,
+          48.804211729
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue du Président Kennedy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420590941,
+          48.809930684
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue Edmond Bernard",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42337107,
+          48.806087208
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue Joseph Franceschi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422094964,
+          48.807887109
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422790997,
+          48.806882308
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Rue Roger Mordrel",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423107849,
+          48.806441108
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bourdarias / Villa Saint-Louis",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419056155,
+          48.808315452
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Buge / Rue Édouard Vaillant",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412924399,
+          48.810097525
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelin Berthelot / Rue Jean Albert",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41188231,
+          48.80441355
+        ]
+      },
+      "properties": {
+        "name": "Rue Micolon / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413781467,
+          48.803659068
+        ]
+      },
+      "properties": {
+        "name": "Rue Micolon / Rue Jules Guesde",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422283921,
+          48.785968003
+        ]
+      },
+      "properties": {
+        "name": "Rue Montesquieu / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422751922,
+          48.785979008
+        ]
+      },
+      "properties": {
+        "name": "Rue Montesquieu / Rue Jean-Jacques Rousseau",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421417816,
+          48.784769439
+        ]
+      },
+      "properties": {
+        "name": "Rue Nelson Mandela / Quai de la Révolution",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423732486,
+          48.784165589
+        ]
+      },
+      "properties": {
+        "name": "Rue Nelson Mandela / Rue des Alouettes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424735377,
+          48.783903317
+        ]
+      },
+      "properties": {
+        "name": "Rue Nelson Mandela / Rue Descartes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.42342603,
+          48.784212808
+        ]
+      },
+      "properties": {
+        "name": "Rue Nelson Mandela / Rue Émile du Châtelet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423056576,
+          48.784309658
+        ]
+      },
+      "properties": {
+        "name": "Rue Nelson Mandela / Rue Manon Roland",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421976535,
+          48.785490048
+        ]
+      },
+      "properties": {
+        "name": "Rue Olympe de Gouges / Quai de la Révolution D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424436048,
+          48.784596168
+        ]
+      },
+      "properties": {
+        "name": "Rue Olympe de Gouges / Rue des Alouettes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424803714,
+          48.784403927
+        ]
+      },
+      "properties": {
+        "name": "Rue Olympe de Gouges / Rue Descartes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423346118,
+          48.78530344
+        ]
+      },
+      "properties": {
+        "name": "Rue Olympe de Gouges / Rue Jean-Jacques Rousseau",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422749541,
+          48.785386256
+        ]
+      },
+      "properties": {
+        "name": "Rue Olympe de Gouges / Rue Montesquieu",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41088237,
+          48.806800357
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Place de la République",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410285588,
+          48.806702779
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41251558,
+          48.807118236
+        ]
+      },
+      "properties": {
+        "name": "Rue Parmentier / Rue Volta",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414906458,
+          48.813256634
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Anatole France",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415745365,
+          48.813364696
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419341367,
+          48.805012278
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Place François Mitterrand",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415309679,
+          48.814543973
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416955104,
+          48.810277498
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue de Seine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41732429,
+          48.809337107
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Diderot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419691285,
+          48.804354412
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417391431,
+          48.809064416
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue du Marché",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422549871,
+          48.800177136
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue du Maréchal de Lattre de Tassigny",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415030778,
+          48.8153434
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue du Parc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423367227,
+          48.798786622
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423378,
+          48.7987832
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Étienne Dolet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41716487,
+          48.809666939
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Jean Colly",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418869747,
+          48.805685528
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Jules Guesde",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418539107,
+          48.806281464
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.417663216,
+          48.808375185
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Marcel Sembat",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418638116,
+          48.806032335
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Traversière",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419813862,
+          48.804388491
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Vaillant Couturier / Rue Victor Hugo",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415694704,
+          48.813600609
+        ]
+      },
+      "properties": {
+        "name": "Rue Pelletan / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412746636,
+          48.812271884
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Leroux / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4258867,
+          48.800041617
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Philippot / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.425189674,
+          48.799377391
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Philippot / Rue des Pâquerettes",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41673459,
+          48.80128089
+        ]
+      },
+      "properties": {
+        "name": "Rue Raspail / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420436531,
+          48.803327769
+        ]
+      },
+      "properties": {
+        "name": "Rue Raspail / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423092573,
+          48.80397579
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Jaclard / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421393365,
+          48.805461616
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Jaclard / Rue Joseph Franceschi",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420439651,
+          48.806961094
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Jaclard / Rue Louis Blanc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420890864,
+          48.806279573
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Jaclard / Rue Roger Mordrel",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.426452083,
+          48.801205544
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Girodit / Rue Joffrin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422843803,
+          48.799702371
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Girodit / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420768587,
+          48.798314807
+        ]
+      },
+      "properties": {
+        "name": "Rue Sandrin / Rue Émile Zola D148",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.422895288,
+          48.799547822
+        ]
+      },
+      "properties": {
+        "name": "Rue Sandrin / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411064913,
+          48.808660667
+        ]
+      },
+      "properties": {
+        "name": "Rue Simone de Beauvoir / Allée Victor Schœlcher",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.411373467,
+          48.807657637
+        ]
+      },
+      "properties": {
+        "name": "Rue Simone de Beauvoir / Rue Volta",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413762531,
+          48.815859144
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Passerelle d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41377569,
+          48.815840122
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Quai d'Alfortville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413888396,
+          48.81453965
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Charles de Gaulle D19",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414875426,
+          48.807304946
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue de l'Union",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414328299,
+          48.80994807
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue de Seine",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414464878,
+          48.808838455
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue du Marché",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413813866,
+          48.815284749
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue du Parc",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415139031,
+          48.805653226
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue du Port à l'Anglais",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414414567,
+          48.809321997
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Jean Colly",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414618505,
+          48.808077801
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Marcel Sembat",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414534344,
+          48.808214039
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414751725,
+          48.807533908
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Parmentier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414033405,
+          48.813170891
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Pasteur",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414992552,
+          48.806494547
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Pierre Curie",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414081846,
+          48.81232907
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Pierre Leroux",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415031682,
+          48.806514136
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Rue Voltaire",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.414380446,
+          48.809317012
+        ]
+      },
+      "properties": {
+        "name": "Rue Véron / Square Véron",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4244026,
+          48.803731742
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Avenue Malleret-Joinville",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419564277,
+          48.804474237
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Place Jean Jaurès",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423887262,
+          48.803886052
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Alphonse Lubin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423130615,
+          48.803954404
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue des Camélias",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418167241,
+          48.804657137
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue des Écoles",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419587949,
+          48.804415767
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue du 14 Juillet",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424375047,
+          48.803734439
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue du Président Kennedy",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.416798173,
+          48.80486675
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Jules Guesde",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.419588847,
+          48.804508354
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.421976099,
+          48.804124519
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Raspail",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423020074,
+          48.804009294
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Raymond Jaclard",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415718238,
+          48.805039778
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Traversière",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.415216429,
+          48.805234603
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Véron",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.412720436,
+          48.806595594
+        ]
+      },
+      "properties": {
+        "name": "Rue Volta / Allée Jean Moulin",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.410055691,
+          48.807408159
+        ]
+      },
+      "properties": {
+        "name": "Rue Volta / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413219764,
+          48.805395456
+        ]
+      },
+      "properties": {
+        "name": "Rue Volta / Rue du Port à l'Anglais",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.41253317,
+          48.807121554
+        ]
+      },
+      "properties": {
+        "name": "Rue Volta / Rue Parmentier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.418257559,
+          48.806829731
+        ]
+      },
+      "properties": {
+        "name": "Rue Voltaire / Rue Paul Vaillant Couturier",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.424997489,
+          48.785548609
+        ]
+      },
+      "properties": {
+        "name": "Sente de Villiers / Allée des Jardins",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.423991602,
+          48.784930028
+        ]
+      },
+      "properties": {
+        "name": "Sente de Villiers / Rue Olympe de Gouges",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413135348,
+          48.809211402
+        ]
+      },
+      "properties": {
+        "name": "Square Berthelot / Rue Marcelin Berthelot",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.413761704,
+          48.809281355
+        ]
+      },
+      "properties": {
+        "name": "Square Berthelot / Square Véron",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420432377,
+          48.798227869
+        ]
+      },
+      "properties": {
+        "name": "D148 / Quai Blanqui D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.420461861,
+          48.798218161
+        ]
+      },
+      "properties": {
+        "name": "D148 / Quai Jean-Baptiste Clément D138",
+        "context": "Alfortville, Val-de-Marne",
+        "citycode": "94002",
+        "depcode": "94"
+      }
+    }
+  ]
+}

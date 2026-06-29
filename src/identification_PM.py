@@ -1,7 +1,7 @@
 """
 FICHIER : identifier_PM_hybride.py
  
-# BUT : Identifier automatiquement les Points de Mesure (PM) d'une ville
+# BUT : automatiquement les Points de Mesure (PM) d'une ville
       en combinant deux sources de données gratuites :
         1. Sources gouvernementales officielles (data.gouv.fr, data.education.gouv.fr)
            pour les lieux les plus importants (écoles, mairies, hôpitaux, pharmacies)
@@ -70,7 +70,6 @@ import json
 import requests
 import pandas as pd
 from geopy.distance import geodesic
-from export  import _creer_dossier_horodate
 import os
 
 # URL de l'API officielle geo.api.gouv.fr (INSEE/IGN)
@@ -795,13 +794,6 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
     print(f"\n {len(df)} PM au total pour {ville}")
 
-    # ETAPE 4 : export en Excel
-    nom_fichier = f"PM_{ville}.xlsx"
-    dossier_export = _creer_dossier_horodate(dossier_sortie=".", ville=f"PM_{ville}")
-    chemin_fichier = os.path.join(dossier_export, nom_fichier)
-    df.to_excel(chemin_fichier, index=False)
-    print(f"Fichier exporté : {chemin_fichier}")
-
     return df
 
 
@@ -814,12 +806,13 @@ def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dos
  
     # index=False : on n'ecrit pas la colonne d'index du DataFrame
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
-    dossier_export = _creer_dossier_horodate(dossier_sortie, ville="PM")
+    dossier_export = os.path.join(dossier_sortie, "PM")
+    os.makedirs(dossier_export, exist_ok=True)
     chemin_fichier = os.path.join(dossier_export, nom_fichier)
-    df.to_excel(nom_fichier, index=False)
+    df.to_excel(chemin_fichier, index=False)
  
     print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
-    return nom_fichier
+    return chemin_fichier
 
 
 

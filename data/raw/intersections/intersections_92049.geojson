@@ -1,0 +1,5381 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316223754,
+          48.817583526
+        ]
+      },
+      "properties": {
+        "name": "Allée Rol-Tanguy / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31659121,
+          48.817710482
+        ]
+      },
+      "properties": {
+        "name": "Allée Rol-Tanguy / Rue Sylvine Candas",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325496304,
+          48.81984863
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Boulevard Romain Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325639555,
+          48.817540515
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326151496,
+          48.812006362
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Rue de Thalheimer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325449357,
+          48.817527942
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325674977,
+          48.815998782
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Rue Louis Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30805937,
+          48.817502273
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Avenue du 12 Février 1934 D61E",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.303193338,
+          48.811613048
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308447841,
+          48.818074421
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307047581,
+          48.816218423
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308021504,
+          48.817411695
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Rue Camille Pelletan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.303413703,
+          48.811962549
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Marne / Rue Germain Dardan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309663123,
+          48.819004653
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix - Clarissa Jean-Philippe / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312211691,
+          48.818241884
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix - Clarissa Jean-Philippe / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315887604,
+          48.812391925
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Avenue de Verdun",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.306770414,
+          48.81078588
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31761382,
+          48.815318
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318869926,
+          48.817336244
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Place du Maréchal Leclerc",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319598647,
+          48.818513627
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314989194,
+          48.811053202
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316790305,
+          48.813941923
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32010988,
+          48.819288849
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Rabelais",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315581074,
+          48.811993027
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D63 / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31912425,
+          48.817691493
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Sadi Carnot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319680899,
+          48.818777667
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Sortie 3 : Place Émile Cresp |Le Befroi|",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300334843,
+          48.811446546
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Paris D906 / Allée Bernard de Jussieu",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300160817,
+          48.811447791
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Paris D906 / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300231247,
+          48.811513519
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Paris D906 / Boulevard Camélinat D61A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31602063,
+          48.812702094
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317028862,
+          48.81022471
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Passage Raymond",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316413476,
+          48.810716125
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Rue La Fontaine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316280466,
+          48.810781758
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315862018,
+          48.811914396
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308059775,
+          48.817480987
+        ]
+      },
+      "properties": {
+        "name": "Avenue du 12 Février 1934 D61E / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307889905,
+          48.817692049
+        ]
+      },
+      "properties": {
+        "name": "Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308061219,
+          48.817480936
+        ]
+      },
+      "properties": {
+        "name": "Avenue du 12 Février 1934 D61E / Rue Camille Pelletan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322568877,
+          48.809755882
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Fort / Avenue Marx Dormoy D161",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323991795,
+          48.812727756
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Fort / Place Jules Ferry",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32050721,
+          48.814495509
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Avenue Léon Gambetta D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320494179,
+          48.814504178
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324019172,
+          48.820182456
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Boulevard Romain Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318923951,
+          48.812027244
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319654654,
+          48.813148791
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue Carves",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32404037,
+          48.820204773
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue de la Légion Étrangère",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323389294,
+          48.819334505
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue Delerue",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322294248,
+          48.818014008
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319637822,
+          48.813153702
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320071975,
+          48.813794863
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Ginoux D128 / Villa Léger",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.303227292,
+          48.811672958
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.302748118,
+          48.811148798
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Avenue de la République",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.302770868,
+          48.811159309
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311711533,
+          48.816221388
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311129524,
+          48.816115762
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Camille Pelletan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319054723,
+          48.818591028
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309241754,
+          48.81498414
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Henri Barbusse",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311411308,
+          48.816135191
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312719938,
+          48.816489699
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Rue Pierre Boillaud",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316957971,
+          48.817844481
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Rue René Barthelemy",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.306017147,
+          48.813101527
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Roger Salengro",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316707059,
+          48.81773529
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D63A / Rue Sylvine Candas",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325849956,
+          48.813267626
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320517021,
+          48.814506306
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320502703,
+          48.814502306
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321596432,
+          48.81425817
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Rue de la Solidarité",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321616488,
+          48.814237782
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322110964,
+          48.814091014
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Gambetta D61 / Villa Édouard Renauld",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325594695,
+          48.809614099
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D161 / Aqueduc du Loing",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308700918,
+          48.810623383
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322573806,
+          48.809734659
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D161 / Avenue du Fort",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317635922,
+          48.809935883
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.302744389,
+          48.811148607
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319108834,
+          48.810029527
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Avenue Marx Dormoy D161",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300801906,
+          48.811981488
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325395646,
+          48.809577331
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D161 / Avenue Prieur de la Côte d'Or",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312847815,
+          48.81026352
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Rue Fénelon",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300735776,
+          48.812001919
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Rue Marc Séguin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316405414,
+          48.809966372
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marx Dormoy D62 / Villa de la République",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300387803,
+          48.811515214
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Allée Bernard de Jussieu",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.305844319,
+          48.816237565
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Avenue Augustin Dumont",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30027537,
+          48.811511413
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Avenue de Paris",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.305957276,
+          48.816262919
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300232078,
+          48.811535245
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310740664,
+          48.819839726
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Boulevard Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310853009,
+          48.819872012
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310255135,
+          48.819443884
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Brossolette D906 / Rue Marie Debos",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317628738,
+          48.815321953
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311361028,
+          48.81612754
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.305958415,
+          48.816274124
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31096306,
+          48.816155906
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Rue Camille Pelletan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316168423,
+          48.815726764
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Rue Marcelin Berthelot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311287137,
+          48.816075423
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312729953,
+          48.81610344
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Rue Pierre Boillaud",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319268763,
+          48.814847161
+        ]
+      },
+      "properties": {
+        "name": "Avenue Verdier D61 / Rue Victor Hugo",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326750884,
+          48.817363873
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général de Gaulle / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328453453,
+          48.815316591
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général de Gaulle / Rue de la Vanne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326748504,
+          48.8173572
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Général de Gaulle / Rue Louis Lejeune",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318173295,
+          48.816242309
+        ]
+      },
+      "properties": {
+        "name": "Cité Rondelet / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316699566,
+          48.816575417
+        ]
+      },
+      "properties": {
+        "name": "Cité Rondelet / Passage du Manège",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316748333,
+          48.816625439
+        ]
+      },
+      "properties": {
+        "name": "Cité Rondelet / Rue Marcelin Berthelot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318242093,
+          48.81629203
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Église / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318206869,
+          48.816267203
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Église / Cité Rondelet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322827283,
+          48.818665107
+        ]
+      },
+      "properties": {
+        "name": "Passage Draeger / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316650835,
+          48.816525436
+        ]
+      },
+      "properties": {
+        "name": "Passage du Manège / Rue Marcelin Berthelot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315772695,
+          48.816696346
+        ]
+      },
+      "properties": {
+        "name": "Passage du Manège / Villa Montplaisir",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316111662,
+          48.81751002
+        ]
+      },
+      "properties": {
+        "name": "Place des États-Unis / Allée Rol-Tanguy",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316066146,
+          48.817552676
+        ]
+      },
+      "properties": {
+        "name": "Place des États-Unis / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31699053,
+          48.817076969
+        ]
+      },
+      "properties": {
+        "name": "Place des États-Unis / Rue Marcelin Berthelot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316644395,
+          48.817733291
+        ]
+      },
+      "properties": {
+        "name": "Place des États-Unis / Rue Sylvine Candas",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318729294,
+          48.817103857
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal Leclerc / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326093467,
+          48.81222657
+        ]
+      },
+      "properties": {
+        "name": "Place Jules Ferry / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323895855,
+          48.812520211
+        ]
+      },
+      "properties": {
+        "name": "Place Jules Ferry / Avenue du Fort",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326148023,
+          48.812010617
+        ]
+      },
+      "properties": {
+        "name": "Place Jules Ferry / Rue de Thalheimer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324113194,
+          48.81772282
+        ]
+      },
+      "properties": {
+        "name": "Rue Amaury Duval / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323445979,
+          48.816379934
+        ]
+      },
+      "properties": {
+        "name": "Rue Amaury Duval / Rue Louis Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323558247,
+          48.816723763
+        ]
+      },
+      "properties": {
+        "name": "Rue Amaury Duval / Villa Leblanc",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307231173,
+          48.81382772
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Auger / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30878737,
+          48.816157156
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Auger / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308273871,
+          48.815467706
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Auger / Rue Henri Barbusse",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308260618,
+          48.815473779
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Auger / Rue Marcel Sembat",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313852828,
+          48.813406281
+        ]
+      },
+      "properties": {
+        "name": "Rue Auber / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312755651,
+          48.811667742
+        ]
+      },
+      "properties": {
+        "name": "Rue Auber / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313347919,
+          48.812600491
+        ]
+      },
+      "properties": {
+        "name": "Rue Auber / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331806242,
+          48.817008922
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Aqueduc de la Vanne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331781976,
+          48.817013907
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Aqueduc du Loing",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325651537,
+          48.817488689
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3317414,
+          48.8170263
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Avenue Paul Vaillant-Couturier D150",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328828088,
+          48.817220869
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Rue de la Vanne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328468215,
+          48.81723024
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès D50 / Villa des Roches",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320840846,
+          48.815802952
+        ]
+      },
+      "properties": {
+        "name": "Rue Blanche / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321848921,
+          48.815592732
+        ]
+      },
+      "properties": {
+        "name": "Rue Blanche / Rue Jean Vallet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321917972,
+          48.815545847
+        ]
+      },
+      "properties": {
+        "name": "Rue Blanche / Rue Myrtille Beer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316085264,
+          48.812813224
+        ]
+      },
+      "properties": {
+        "name": "Rue Boileau / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318930248,
+          48.81203861
+        ]
+      },
+      "properties": {
+        "name": "Rue Boileau / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313597117,
+          48.813501178
+        ]
+      },
+      "properties": {
+        "name": "Rue Boileau / Villa Bossuet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30806096,
+          48.817480813
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Pelletan / Avenue du 12 Février 1934",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311208011,
+          48.816088161
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Pelletan / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311150523,
+          48.816108735
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Pelletan / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311287174,
+          48.816075989
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Pelletan / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326272309,
+          48.811517653
+        ]
+      },
+      "properties": {
+        "name": "Rue Carves / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3236486,
+          48.812035405
+        ]
+      },
+      "properties": {
+        "name": "Rue Carves / Avenue du Fort",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319647716,
+          48.813137666
+        ]
+      },
+      "properties": {
+        "name": "Rue Carves / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319642801,
+          48.813145601
+        ]
+      },
+      "properties": {
+        "name": "Rue Carves / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320802702,
+          48.812827544
+        ]
+      },
+      "properties": {
+        "name": "Rue Carves / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321880535,
+          48.812995846
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaintron / Place Jules Ferry",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321030207,
+          48.813190355
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaintron / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321006916,
+          48.813182011
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaintron / Villa Parmentier",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318943499,
+          48.812027437
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Floquet / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3189353,
+          48.8120302
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Floquet / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320149034,
+          48.811705327
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Floquet / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.303035207,
+          48.811468341
+        ]
+      },
+      "properties": {
+        "name": "Rue Chopin / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314200965,
+          48.81467766
+        ]
+      },
+      "properties": {
+        "name": "Rue Constant Juif / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311721651,
+          48.812566819
+        ]
+      },
+      "properties": {
+        "name": "Rue Corneille / Rue Hippolyte Mulin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309895862,
+          48.813148521
+        ]
+      },
+      "properties": {
+        "name": "Rue Corneille / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317194302,
+          48.814639892
+        ]
+      },
+      "properties": {
+        "name": "Rue Couprie / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326511933,
+          48.810702487
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Arcueil / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323310562,
+          48.81132702
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Arcueil / Avenue du Fort",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32640185,
+          48.810705102
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Arcueil / Place de la Vache Noire",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325771393,
+          48.814375839
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320670219,
+          48.815497307
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322100184,
+          48.815166355
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Rue de la Solidarité",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321766723,
+          48.815259831
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Rue Myrtille Beer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324187446,
+          48.814740889
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Villa du Marchand",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324177378,
+          48.814719533
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Villa du Marché",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330773738,
+          48.817139049
+        ]
+      },
+      "properties": {
+        "name": "Rue Danton / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310528701,
+          48.811149599
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chateaubriand / Rue Hippolyte Mulin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308924202,
+          48.811828321
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chateaubriand / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30974778,
+          48.81146975
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chateaubriand / Rue Raoul Pugno",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331671431,
+          48.818430122
+        ]
+      },
+      "properties": {
+        "name": "Rue de Gentilly / Avenue du Docteur Lannelongue",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331423916,
+          48.817068681
+        ]
+      },
+      "properties": {
+        "name": "Rue de Gentilly / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321551667,
+          48.814270998
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Solidarité / Avenue Léon Gambetta D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321583737,
+          48.814252767
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Solidarité / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328807168,
+          48.817227669
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Vanne / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315999268,
+          48.81575446
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saisset / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31558637,
+          48.81508622
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saisset / Rue Couprie",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315142075,
+          48.814404934
+        ]
+      },
+      "properties": {
+        "name": "Rue de Saisset / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315761713,
+          48.812317034
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sévigné / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315820539,
+          48.812323624
+        ]
+      },
+      "properties": {
+        "name": "Rue de Sévigné / Avenue de Verdun",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326254924,
+          48.812103487
+        ]
+      },
+      "properties": {
+        "name": "Rue de Thalheimer / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327668063,
+          48.812336574
+        ]
+      },
+      "properties": {
+        "name": "Rue de Thalheimer / Rue de la Vanne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323381004,
+          48.819323701
+        ]
+      },
+      "properties": {
+        "name": "Rue Delerue / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3212949,
+          48.819988171
+        ]
+      },
+      "properties": {
+        "name": "Rue Delerue / Rue Edgar Quinet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322675827,
+          48.819511602
+        ]
+      },
+      "properties": {
+        "name": "Rue Delerue / Villa du Cadran Solaire",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318433519,
+          48.811218043
+        ]
+      },
+      "properties": {
+        "name": "Rue des Frères Henry / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318425198,
+          48.811220696
+        ]
+      },
+      "properties": {
+        "name": "Rue des Frères Henry / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318124908,
+          48.810783175
+        ]
+      },
+      "properties": {
+        "name": "Rue Descartes / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317490925,
+          48.810947158
+        ]
+      },
+      "properties": {
+        "name": "Rue Descartes / Passage Raymond",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316642048,
+          48.819829119
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre / Avenue Émile-Boutroux",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316242628,
+          48.8190618
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316720821,
+          48.820071752
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre / Rue Pasteur",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316487583,
+          48.819597978
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre / Rue Pierre Curie",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32064967,
+          48.820902555
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Avenue de la Porte de Montrouge",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319194392,
+          48.819193
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Avenue Émile-Boutroux",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320632485,
+          48.820893656
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Boulevard Romain Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319687104,
+          48.819740763
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Rue Gutenberg",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320036444,
+          48.820195129
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Villa des Ruelles",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320277937,
+          48.820525797
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Gillon / Villa des Vergers",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.305319812,
+          48.812699252
+        ]
+      },
+      "properties": {
+        "name": "Rue du Poitou / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308585216,
+          48.811454572
+        ]
+      },
+      "properties": {
+        "name": "Rue du Poitou / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322889475,
+          48.810710105
+        ]
+      },
+      "properties": {
+        "name": "Rue du Stade Buffalo / Avenue du Fort",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320288999,
+          48.811896243
+        ]
+      },
+      "properties": {
+        "name": "Rue du Stade Buffalo / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321275236,
+          48.819985734
+        ]
+      },
+      "properties": {
+        "name": "Rue Edgar Quinet / Rue Delerue",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320700283,
+          48.819132606
+        ]
+      },
+      "properties": {
+        "name": "Rue Edgar Quinet / Rue Rabelais",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314756059,
+          48.813174744
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314467477,
+          48.812673801
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue de Sévigné",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313309069,
+          48.810913749
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Georges Messier",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314915823,
+          48.813401986
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue La Bruyère",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31365362,
+          48.811412874
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313924701,
+          48.811785248
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Pascal",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315441646,
+          48.814302009
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314263087,
+          48.812347557
+        ]
+      },
+      "properties": {
+        "name": "Rue Fénelon / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329297174,
+          48.818956014
+        ]
+      },
+      "properties": {
+        "name": "Rue François Ory / Avenue du Docteur Lannelongue",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329280325,
+          48.818962979
+        ]
+      },
+      "properties": {
+        "name": "Rue François Ory / Boulevard Romain Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328835705,
+          48.817272673
+        ]
+      },
+      "properties": {
+        "name": "Rue François Ory / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329119738,
+          48.818301228
+        ]
+      },
+      "properties": {
+        "name": "Rue François Ory / Rue Danton",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328818164,
+          48.817265236
+        ]
+      },
+      "properties": {
+        "name": "Rue François Ory / Rue de la Vanne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325449652,
+          48.817521235
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319582687,
+          48.818502506
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Avenue de la République",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32233021,
+          48.818025459
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319130006,
+          48.818584587
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310800837,
+          48.819858386
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310760955,
+          48.819839019
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Boulevard Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320496327,
+          48.818371981
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Rue Edmond Champeaud",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312896512,
+          48.819687574
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D50 / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323324848,
+          48.819218188
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Bouzerait / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323870799,
+          48.81916625
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Bouzerait / Square des Combattants d'Afrique du Nord",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.303395547,
+          48.811942668
+        ]
+      },
+      "properties": {
+        "name": "Rue Germain Dardan / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.301586733,
+          48.812846615
+        ]
+      },
+      "properties": {
+        "name": "Rue Germain Dardan / Avenue Pierre Brossolette D906",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.302147628,
+          48.812537804
+        ]
+      },
+      "properties": {
+        "name": "Rue Germain Dardan / Rue Chopin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30161792,
+          48.812885248
+        ]
+      },
+      "properties": {
+        "name": "Rue Germain Dardan / Rue Étienne Dolet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314237712,
+          48.820006921
+        ]
+      },
+      "properties": {
+        "name": "Rue Gueudin / Rue Pierre Curie",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314222856,
+          48.820012773
+        ]
+      },
+      "properties": {
+        "name": "Rue Gueudin / Rue Radiguey",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313687971,
+          48.816035876
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillot / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313058949,
+          48.815048684
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillot / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313477255,
+          48.815657726
+        ]
+      },
+      "properties": {
+        "name": "Rue Guillot / Villa des Fleurs",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309274449,
+          48.814983774
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310698294,
+          48.814549657
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311339709,
+          48.81203335
+        ]
+      },
+      "properties": {
+        "name": "Rue Hippolyte Mulin / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321898165,
+          48.815576509
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Vallet / Rue Blanche",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321899959,
+          48.815590893
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Vallet / Rue Myrtille Beer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308236108,
+          48.813037968
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Chèret / Rue Jules Guesde",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307741306,
+          48.81244361
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Chèret / Rue Roger Salengro",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30529868,
+          48.814157024
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.306820598,
+          48.813581497
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308220173,
+          48.813043619
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Rue Jules Chèret",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309508522,
+          48.812635394
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316210938,
+          48.813050445
+        ]
+      },
+      "properties": {
+        "name": "Rue La Bruyère / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317497966,
+          48.812421573
+        ]
+      },
+      "properties": {
+        "name": "Rue La Fontaine / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316737364,
+          48.811163511
+        ]
+      },
+      "properties": {
+        "name": "Rue La Fontaine / Rue Descartes",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316979843,
+          48.81162216
+        ]
+      },
+      "properties": {
+        "name": "Rue La Fontaine / Rue Racine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326744208,
+          48.817392589
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Lejeune / Rue Barbès D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32678814,
+          48.819268045
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Lejeune / Rue Saint-Albin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325594762,
+          48.815997438
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Rolland / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321435664,
+          48.816714886
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Rolland / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318970549,
+          48.817164847
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Rolland / Place du Maréchal Leclerc",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320496653,
+          48.816870648
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Rolland / Rue Victor Hugo",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307049505,
+          48.816204935
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307077695,
+          48.816205999
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308265817,
+          48.815487645
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue Arthur Auger",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308268208,
+          48.815474405
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue Henri Barbusse",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316185253,
+          48.815722005
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelin Berthelot / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317268593,
+          48.817561437
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelin Berthelot / Rue Sylvine Candas",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307909791,
+          48.810671617
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314713016,
+          48.822264527
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Boulevard Périphérique Extérieur",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314664068,
+          48.82222483
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Boulevard Romain Rolland",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310006065,
+          48.813376758
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Résidence Maurice Arnoux",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312890819,
+          48.819694951
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313269148,
+          48.820195878
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Rue Gueudin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31247971,
+          48.818884846
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Rue Marie Debos",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313817982,
+          48.820940578
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Arnoux D59 / Rue Pasteur",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315007445,
+          48.81105057
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31436552,
+          48.811195878
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Rue Georges Messier",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311343992,
+          48.812055199
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Rue Hippolyte Mulin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3095173,
+          48.8126335
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Rue Jules Guesde",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316367685,
+          48.810754495
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Rue La Fontaine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309526102,
+          48.812631494
+        ]
+      },
+      "properties": {
+        "name": "Rue Molière / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318235051,
+          48.81223822
+        ]
+      },
+      "properties": {
+        "name": "Rue Morel / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318931012,
+          48.813338688
+        ]
+      },
+      "properties": {
+        "name": "Rue Morel / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321935335,
+          48.815541895
+        ]
+      },
+      "properties": {
+        "name": "Rue Myrtille Beer / Rue Blanche",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321784066,
+          48.81525607
+        ]
+      },
+      "properties": {
+        "name": "Rue Myrtille Beer / Rue d'Estienne d'Orves",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321883239,
+          48.815559642
+        ]
+      },
+      "properties": {
+        "name": "Rue Myrtille Beer / Rue Jean Vallet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315217057,
+          48.811430189
+        ]
+      },
+      "properties": {
+        "name": "Rue Pascal / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30972827,
+          48.816163866
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309939582,
+          48.816568564
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue Camille Pelletan",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311895263,
+          48.817417348
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316773681,
+          48.813937555
+        ]
+      },
+      "properties": {
+        "name": "Rue Périer / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31963107,
+          48.81314248
+        ]
+      },
+      "properties": {
+        "name": "Rue Périer / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313043367,
+          48.815056259
+        ]
+      },
+      "properties": {
+        "name": "Rue Périer / Rue Guillot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311205749,
+          48.815590218
+        ]
+      },
+      "properties": {
+        "name": "Rue Périer / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315838354,
+          48.811936996
+        ]
+      },
+      "properties": {
+        "name": "Rue Racine / Avenue de Verdun",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3184169,
+          48.811223121
+        ]
+      },
+      "properties": {
+        "name": "Rue Racine / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312007697,
+          48.812961292
+        ]
+      },
+      "properties": {
+        "name": "Rue Racine / Rue Hippolyte Mulin",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317011635,
+          48.811613707
+        ]
+      },
+      "properties": {
+        "name": "Rue Racine / Rue La Fontaine",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31012872,
+          48.813510932
+        ]
+      },
+      "properties": {
+        "name": "Rue Racine / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314022296,
+          48.819496636
+        ]
+      },
+      "properties": {
+        "name": "Rue Radiguey / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314453073,
+          48.820493834
+        ]
+      },
+      "properties": {
+        "name": "Rue Radiguey / Rue Pasteur",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314254718,
+          48.820003853
+        ]
+      },
+      "properties": {
+        "name": "Rue Radiguey / Rue Pierre Curie",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308936886,
+          48.810592566
+        ]
+      },
+      "properties": {
+        "name": "Rue Raoul Pugno / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316953845,
+          48.817865625
+        ]
+      },
+      "properties": {
+        "name": "Rue René Barthelemy / Avenue Jean Jaurès D63A",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31714258,
+          48.818823453
+        ]
+      },
+      "properties": {
+        "name": "Rue René Barthelemy / Rue Gabriel Péri D50",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.304787333,
+          48.813555513
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Salengro / Avenue de la Marne",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.305977173,
+          48.813098691
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Salengro / Avenue Jean Jaurès",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.307756847,
+          48.812437089
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Salengro / Rue Jules Chèret",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30899748,
+          48.81196367
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger Salengro / Rue Maurice Arnoux D59",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321641909,
+          48.81708578
+        ]
+      },
+      "properties": {
+        "name": "Rue Sadi Carnot / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325711942,
+          48.819383862
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Albin / Avenue Aristide Briand D920",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326784013,
+          48.819281018
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Albin / Rue Louis Lejeune",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318603992,
+          48.817235994
+        ]
+      },
+      "properties": {
+        "name": "Rue Sylvine Candas / Place du Maréchal Leclerc",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317304007,
+          48.817549807
+        ]
+      },
+      "properties": {
+        "name": "Rue Sylvine Candas / Rue Marcelin Berthelot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323304571,
+          48.819185137
+        ]
+      },
+      "properties": {
+        "name": "Rue Théophile Gautier / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323375442,
+          48.81917277
+        ]
+      },
+      "properties": {
+        "name": "Rue Théophile Gautier / Rue Georges Bouzerait",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319130315,
+          48.810040047
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320142386,
+          48.811694012
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue Charles Floquet",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319636417,
+          48.810877982
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue des Frères Henry",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319125393,
+          48.810050602
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue du Colonel Fabien",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320481341,
+          48.811856639
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue du Stade Buffalo",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319288132,
+          48.81033475
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Villa Agénor Logeais",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319285384,
+          48.814841968
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31844854,
+          48.813493708
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314720348,
+          48.810550932
+        ]
+      },
+      "properties": {
+        "name": "Villa de la République / Avenue de la République D63",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316426336,
+          48.809966127
+        ]
+      },
+      "properties": {
+        "name": "Villa de la République / Avenue Marx Dormoy D62",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316646417,
+          48.815603538
+        ]
+      },
+      "properties": {
+        "name": "Villa des Jardins / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322523839,
+          48.818781989
+        ]
+      },
+      "properties": {
+        "name": "Villa du Cadran Solaire / Passage Draeger",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3241924,
+          48.8147495
+        ]
+      },
+      "properties": {
+        "name": "Villa du Marché / Villa du Marchand",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312344386,
+          48.811758271
+        ]
+      },
+      "properties": {
+        "name": "Villa Henriette / Rue Molière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310894973,
+          48.811031484
+        ]
+      },
+      "properties": {
+        "name": "Villa Isabelle / Allée de la Vallière",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314235401,
+          48.814654597
+        ]
+      },
+      "properties": {
+        "name": "Villa Joséphine / Rue Constant Juif",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314269756,
+          48.814632486
+        ]
+      },
+      "properties": {
+        "name": "Villa Joséphine / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321639753,
+          48.817039769
+        ]
+      },
+      "properties": {
+        "name": "Villa Leblanc / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321648694,
+          48.817069064
+        ]
+      },
+      "properties": {
+        "name": "Villa Leblanc / Rue Sadi Carnot",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321185379,
+          48.813522279
+        ]
+      },
+      "properties": {
+        "name": "Villa Léger / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315250634,
+          48.816020017
+        ]
+      },
+      "properties": {
+        "name": "Villa Montplaisir / Avenue Verdier D61",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320984658,
+          48.813174533
+        ]
+      },
+      "properties": {
+        "name": "Villa Parmentier / Rue Victor Basch",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316830138,
+          48.812624709
+        ]
+      },
+      "properties": {
+        "name": "Villa Prévost / Rue Boileau",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317515313,
+          48.81372902
+        ]
+      },
+      "properties": {
+        "name": "Villa Prévost / Rue Périer",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317512323,
+          48.809915472
+        ]
+      },
+      "properties": {
+        "name": "D62 / Avenue Henri Ginoux D128",
+        "context": "Montrouge, Hauts-de-Seine",
+        "citycode": "92049",
+        "depcode": "92"
+      }
+    }
+  ]
+}

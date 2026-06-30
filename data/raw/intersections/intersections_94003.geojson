@@ -1,0 +1,8325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338141159,
+          48.809905964
+        ]
+      },
+      "properties": {
+        "name": "Allée Bellevue / Rue de Stalingrad",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341148841,
+          48.80339466
+        ]
+      },
+      "properties": {
+        "name": "Allée des Aubépines / Allée des Charmes",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341195857,
+          48.803354022
+        ]
+      },
+      "properties": {
+        "name": "Allée des Aubépines / Avenue du Général Malleret-Joinville",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341318544,
+          48.803406798
+        ]
+      },
+      "properties": {
+        "name": "Allée des Charmes / Avenue du Général Malleret-Joinville",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332981013,
+          48.811783143
+        ]
+      },
+      "properties": {
+        "name": "Allée Django Reinhardt / Allée Andrée Chedid",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343960243,
+          48.799970531
+        ]
+      },
+      "properties": {
+        "name": "Allée du Tilleul / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330870332,
+          48.799756796
+        ]
+      },
+      "properties": {
+        "name": "Allée Louise / Boulevard Jacques Desbrosses",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329502468,
+          48.810396318
+        ]
+      },
+      "properties": {
+        "name": "Allée Niki de Saint Phalle / Avenue du Président Salvador Allende D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333592962,
+          48.811469203
+        ]
+      },
+      "properties": {
+        "name": "Allée Simone de Beauvoir / Allée Andrée Chedid",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334163513,
+          48.812630965
+        ]
+      },
+      "properties": {
+        "name": "Allée Simone de Beauvoir / Avenue du Chaperon Vert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334169218,
+          48.812621224
+        ]
+      },
+      "properties": {
+        "name": "Allée Simone de Beauvoir / Rue Lounès Matoub",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330861681,
+          48.799728777
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Allée Louise",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329603097,
+          48.814340611
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326040699,
+          48.808299104
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332874361,
+          48.799321944
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Cousin de Méricourt D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332822169,
+          48.799388144
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325747487,
+          48.809559368
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Marx Dormoy D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324549586,
+          48.807424554
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Prieur de la Côte d'Or",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32376985,
+          48.80544882
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Victor Hugo D77a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330022548,
+          48.799870533
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Boulevard Jacques Desbrosses",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33270872,
+          48.799356442
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326433269,
+          48.810307342
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326696463,
+          48.803263677
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324013262,
+          48.80486235
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue Assia Djebar",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326577424,
+          48.810674737
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue d'Arcueil",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333027118,
+          48.799252798
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue de la Citadelle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331502477,
+          48.799511294
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue de Provigny D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328519609,
+          48.800112807
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue du Docteur Gosselin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331526079,
+          48.799623457
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue Émile Raspail D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336207616,
+          48.798781988
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue Maxime Bacquet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32780919,
+          48.801177812
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue Paul Bert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327810118,
+          48.800898279
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue Victor Carmignac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323398227,
+          48.804770027
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Villa Jean Marin Naudin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329301328,
+          48.813838623
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324641901,
+          48.80345595
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325592375,
+          48.809571523
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Avenue Marx Dormoy D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325230388,
+          48.808996608
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Avenue Prieur de la Côte d'Or",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325844123,
+          48.80643428
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Avenue Victor Hugo D77a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326289092,
+          48.810304546
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325138104,
+          48.804396211
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325654038,
+          48.805747485
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326521353,
+          48.810688568
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Rue d'Arcueil",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324270718,
+          48.802086407
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc du Loing / Rue Victor Carmignac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326719609,
+          48.810759428
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324964919,
+          48.804099658
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327111713,
+          48.810173201
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Avenue du Président Salvador Allende D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327150606,
+          48.810037563
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326235485,
+          48.809504707
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Avenue Marx Dormoy D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327017882,
+          48.809948979
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325147256,
+          48.804392798
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325677966,
+          48.805736605
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326541948,
+          48.810752586
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand / Rue d'Arcueil",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324269503,
+          48.802086629
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Rue Victor Carmignac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332956773,
+          48.79929795
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332954179,
+          48.799345386
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Rue Besson",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332944585,
+          48.799265904
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Rue de la Citadelle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332963408,
+          48.79936166
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Convention D127 / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332901593,
+          48.799386824
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Convention D127 / Avenue Cousin de Méricourt D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333967782,
+          48.801963926
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Convention D127 / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333373101,
+          48.800873049
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Convention D127 / Rue Aspasie Jules Caron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332966875,
+          48.799398471
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Convention D127 / Rue Besson",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334146836,
+          48.807539985
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Laplace",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330992199,
+          48.800241922
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Allée Louise",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328598403,
+          48.800147983
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328651183,
+          48.800169995
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Boulevard Jacques Desbrosses",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32854406,
+          48.800187894
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Rue du 8 Mai 1945",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328528747,
+          48.800155064
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Rue du Docteur Gosselin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331616345,
+          48.800198162
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Aqueducs / Rue Émile Raspail D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332835444,
+          48.813269951
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / 2e Avenue",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334199376,
+          48.811169878
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Allée Andrée Chedid",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334243381,
+          48.810884587
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Avenue Jean Jaurès D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332186718,
+          48.813395491
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Avenue Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332180961,
+          48.813385775
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Avenue Vladimir Ilitch Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334342801,
+          48.8129657
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Rue Danielle Mitterrand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334500086,
+          48.812555929
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Rue Lounès Matoub",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334189511,
+          48.810905945
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Chaperon Vert / Rue Voltaire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330675901,
+          48.808790247
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Docteur Durand / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329188385,
+          48.804414767
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Docteur Durand / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344497581,
+          48.804935348
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / Avenue Charles Gide D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343469439,
+          48.804453716
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / Avenue du Général Malleret-Joinville D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344403016,
+          48.804866035
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / Avenue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338663558,
+          48.802140131
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville / Avenue Paul Vaillant-Couturier D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34048645,
+          48.802655058
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154 / Cité Cherchefeuille",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341189362,
+          48.803132445
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154 / Rue Anatole France",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338619309,
+          48.802145208
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville / Rue Auguste Delaune",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344554854,
+          48.804995362
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / Rue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342413463,
+          48.803891247
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / Rue Marcel Vigneron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342286557,
+          48.803821038
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Malleret-Joinville D154b / D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327546942,
+          48.811587412
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Nelson Mandela / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327398904,
+          48.811504171
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Nelson Mandela / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326735282,
+          48.810757482
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Nelson Mandela / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326908474,
+          48.81077544
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Nelson Mandela / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328394448,
+          48.812469214
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Nelson Mandela / Rue Marguerite Lagrange",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32944114,
+          48.810382547
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Salvador Allende D262a / Allée Niki de Saint Phalle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327079287,
+          48.810197144
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Salvador Allende D262a / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327158019,
+          48.810136189
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Salvador Allende D262a / Avenue Laplace",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327205317,
+          48.810212071
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Salvador Allende D262a / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329422936,
+          48.810402043
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Salvador Allende D262a / Rue Antoine Marin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338661414,
+          48.805717745
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / Allée Paul Doumer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336395178,
+          48.8046087
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D259b / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337838939,
+          48.805475078
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / Avenue Paul Doumer D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339007354,
+          48.805850868
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / Impasse François Vincent Raspail",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341192467,
+          48.807282271
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342162732,
+          48.808437334
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / Rue Boulineau",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340018879,
+          48.80615877
+        ]
+      },
+      "properties": {
+        "name": "Avenue François Vincent Raspail D127 / Rue de la Division du Général Leclerc D263",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344512516,
+          48.804922816
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Avenue Charles Gide D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344466423,
+          48.804947198
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Avenue du Général Malleret-Joinville D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343534636,
+          48.80175805
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343326226,
+          48.799801748
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Avenue Paul Vaillant-Couturier D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344025481,
+          48.799522199
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126A / Rue Camille Desmoulins D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343378902,
+          48.79783911
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / Rue du Colonel Fabien",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343719537,
+          48.802898757
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Rue du Ricardo",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343581981,
+          48.799184186
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Rue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343915744,
+          48.803565223
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126B / Rue Léo Lagrange",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343554702,
+          48.798439629
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / A6b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330508399,
+          48.810492203
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D262a / Avenue du Président Salvador Allende D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334250302,
+          48.810852096
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D262a / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330517437,
+          48.810487495
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès D262a / Avenue Vladimir Ilitch Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339111084,
+          48.810887355
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Benoît Malon",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339004767,
+          48.810855395
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue Émile Bougard",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334248754,
+          48.810866841
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jeanne d'Arc / Avenue du Chaperon Vert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334234769,
+          48.810823983
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jeanne d'Arc / Avenue Jean Jaurès D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332161898,
+          48.809028375
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jeanne d'Arc / Rue du 11 Novembre 1918",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333334881,
+          48.809999569
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jeanne d'Arc / Rue Vaucouleurs",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334210807,
+          48.810846056
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jeanne d'Arc / Rue Voltaire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327911429,
+          48.809744511
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161b / Allée des Sophoras",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329057786,
+          48.809407854
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161b / Allée Niki de Saint Phalle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327167172,
+          48.810016791
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161b / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33414709,
+          48.807568059
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161 / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330665825,
+          48.808830481
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331547027,
+          48.808544948
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161 / Avenue Jeanne d'Arc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330645033,
+          48.808829889
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161b / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327266253,
+          48.810001523
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161b / Place de la Vache Noire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333422737,
+          48.807866907
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161 / Rue Ernest Renan",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332951414,
+          48.808000444
+        ]
+      },
+      "properties": {
+        "name": "Avenue Laplace D161 / Rue Laplace",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330590073,
+          48.807441854
+        ]
+      },
+      "properties": {
+        "name": "Avenue Massenet / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337960469,
+          48.805491928
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D61 / Avenue François Vincent Raspail D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335994197,
+          48.807005896
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D161 / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337983488,
+          48.805347105
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D61 / Avenue Paul Doumer D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338083808,
+          48.804391484
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer / Avenue Paul Vaillant-Couturier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337983839,
+          48.804768296
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D161 / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338006318,
+          48.804779403
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D161 / Promenade de la Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336006508,
+          48.807008389
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Doumer D161 / Rue de Stalingrad D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338706811,
+          48.802095631
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Avenue du Général Malleret-Joinville D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34334743,
+          48.799781027
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Avenue Gabriel Péri D126",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338038919,
+          48.804352416
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Avenue Paul Doumer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338155495,
+          48.803722694
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Impasse de la Blonde",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345243166,
+          48.798970077
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Impasse des Peupliers",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34561855,
+          48.798801883
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Impasse Marie Louise",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346221831,
+          48.798540539
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Impasse Simon",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345675086,
+          48.798750588
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Impasse Vuilleminot",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346807563,
+          48.798255816
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Passage Charles Dehan",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338588794,
+          48.802133057
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Rue Auguste Delaune",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344114935,
+          48.799427541
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Rue Camille Desmoulins D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338066694,
+          48.804352751
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Rue de la Division du Général Leclerc D263",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346894063,
+          48.798196633
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / Rue du Docteur Pinel",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343726742,
+          48.799623313
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier D161 / A6b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340394624,
+          48.806551556
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Avenue François Vincent Raspail D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340447034,
+          48.806528764
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338064903,
+          48.807699051
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Place de la Pléiade",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338786061,
+          48.80745778
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Rue Antoine Baïf",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338740492,
+          48.807482576
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Rue Étienne Jodelle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337114127,
+          48.807992426
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Rue Henri Barbusse D258b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338816922,
+          48.807284536
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pierre Ronsard / Rue Joachim du Bellay",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325419274,
+          48.809556267
+        ]
+      },
+      "properties": {
+        "name": "Avenue Prieur de la Côte d'Or / Avenue Marx Dormoy D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323569713,
+          48.805378523
+        ]
+      },
+      "properties": {
+        "name": "Avenue Prieur de la Côte d'Or / Avenue Victor Hugo D77a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330591266,
+          48.80872667
+        ]
+      },
+      "properties": {
+        "name": "Avenue Richaud / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330600204,
+          48.808834354
+        ]
+      },
+      "properties": {
+        "name": "Avenue Richaud / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329775463,
+          48.807792155
+        ]
+      },
+      "properties": {
+        "name": "Avenue Richaud / Avenue Massenet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330551515,
+          48.808858797
+        ]
+      },
+      "properties": {
+        "name": "Avenue Richaud / Avenue Vladimir Ilitch Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323949761,
+          48.805516149
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo D77a / Rue Assia Djebar",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322717379,
+          48.80494768
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo D77a / Rue Jean Marin Naudin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332023078,
+          48.813117384
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Allée Suzanne Penillault",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33066726,
+          48.80883075
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330495278,
+          48.810486676
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Avenue du Président Salvador Allende D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330517165,
+          48.810496385
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Avenue Jean Jaurès D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330596017,
+          48.808875039
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330622523,
+          48.808856955
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Avenue Richaud",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330597957,
+          48.809814679
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Impasse Doron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331232703,
+          48.812096131
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Rue Marguerite Lagrange",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331258608,
+          48.812098048
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vladimir Ilitch Lénine / Rue Voltaire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328536891,
+          48.800144672
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jacques Desbrosses / Rue du Docteur Gosselin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331497877,
+          48.799661126
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Jacques Desbrosses / Rue Émile Raspail D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340655639,
+          48.802786969
+        ]
+      },
+      "properties": {
+        "name": "Cité Cherchefeuille / Avenue du Général Malleret-Joinville",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34049588,
+          48.802180397
+        ]
+      },
+      "properties": {
+        "name": "Cité Cherchefeuille / Impasse Duroc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334844026,
+          48.799938469
+        ]
+      },
+      "properties": {
+        "name": "Impasse Clément Ader / Rue Clément Ader",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338137739,
+          48.803699191
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Blonde / Avenue Paul Vaillant-Couturier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339259641,
+          48.799091156
+        ]
+      },
+      "properties": {
+        "name": "Impasse Denis Papin / Place Gutenberg",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339217419,
+          48.799103662
+        ]
+      },
+      "properties": {
+        "name": "Impasse Denis Papin / Rue Fernand Forest",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330555039,
+          48.809838784
+        ]
+      },
+      "properties": {
+        "name": "Impasse Doron / Avenue Vladimir Ilitch Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339732505,
+          48.798685699
+        ]
+      },
+      "properties": {
+        "name": "Impasse Galilée / Impasse Gutenberg",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339727061,
+          48.798674893
+        ]
+      },
+      "properties": {
+        "name": "Impasse Galilée / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339738578,
+          48.798696252
+        ]
+      },
+      "properties": {
+        "name": "Impasse Gutenberg / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340331294,
+          48.798577201
+        ]
+      },
+      "properties": {
+        "name": "Impasse Guyton de Morveau / Impasse Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340333094,
+          48.798583135
+        ]
+      },
+      "properties": {
+        "name": "Impasse Guyton de Morveau / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335952168,
+          48.799777043
+        ]
+      },
+      "properties": {
+        "name": "Impasse Hardenberg / Rue Gay",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335686912,
+          48.799599387
+        ]
+      },
+      "properties": {
+        "name": "Impasse Hardenberg / Rue Maxime Bacquet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338528183,
+          48.799220903
+        ]
+      },
+      "properties": {
+        "name": "Impasse Jacquart / Impasse Arago",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339342176,
+          48.798788631
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marc Seguin / Place Gutenberg",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339405062,
+          48.798759051
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marc Seguin / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345646898,
+          48.798776499
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marie Louise / Impasse Vuilleminot",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346317296,
+          48.799504687
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marie Louise / Sentier des Vaudenaires",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347245091,
+          48.7991659
+        ]
+      },
+      "properties": {
+        "name": "Impasse Simon / Sentier des Vaudenaires",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340320226,
+          48.798573026
+        ]
+      },
+      "properties": {
+        "name": "Impasse Thimonnier / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332914225,
+          48.7985233
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Cousin de Méricourt D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340362769,
+          48.806434881
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue François Vincent Raspail D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338008567,
+          48.804717255
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Paul Doumer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342232225,
+          48.8084243
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rue Boulineau",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332754143,
+          48.799265946
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rue de la Citadelle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338299252,
+          48.810888151
+        ]
+      },
+      "properties": {
+        "name": "Passage Boutet / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339577309,
+          48.811548633
+        ]
+      },
+      "properties": {
+        "name": "Passage Boutet / Rue Benoît Malon",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338317127,
+          48.810944086
+        ]
+      },
+      "properties": {
+        "name": "Passage Boutet / Rue des Martyrs du 8 Février 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332179305,
+          48.803476862
+        ]
+      },
+      "properties": {
+        "name": "Passage des Carnots / Rue Marius Sidobre D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332432536,
+          48.803433374
+        ]
+      },
+      "properties": {
+        "name": "Passage des Carnots / Rue Montmort",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332723353,
+          48.806860342
+        ]
+      },
+      "properties": {
+        "name": "Passage Lavoisier / Rue Jean Pierre Timbaud",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332690004,
+          48.806817394
+        ]
+      },
+      "properties": {
+        "name": "Passage Lavoisier / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326607314,
+          48.809837382
+        ]
+      },
+      "properties": {
+        "name": "Place de la Vache Noire D161b / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327235835,
+          48.809988227
+        ]
+      },
+      "properties": {
+        "name": "Place de la Vache Noire D161b / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32608134,
+          48.809505335
+        ]
+      },
+      "properties": {
+        "name": "Place de la Vache Noire D161 / Avenue Marx Dormoy D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33946588,
+          48.798733211
+        ]
+      },
+      "properties": {
+        "name": "Place Gutenberg / Rue Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332404361,
+          48.802620805
+        ]
+      },
+      "properties": {
+        "name": "Place Jean-Baptiste Oudry / Rue de l'Église",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332481785,
+          48.802772162
+        ]
+      },
+      "properties": {
+        "name": "Place Jean-Baptiste Oudry / Ruelle de la Maison à la Colonne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337984468,
+          48.804729692
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Bièvre / Avenue Paul Doumer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338109029,
+          48.804758509
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Bièvre / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339498406,
+          48.80517455
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Bièvre / Rue de la Division du Général Leclerc D263",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326955176,
+          48.803310544
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Vanne / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325080928,
+          48.804403922
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Vanne / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327581718,
+          48.802138434
+        ]
+      },
+      "properties": {
+        "name": "Promenade de la Vanne / Rue Paul Bert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330202464,
+          48.806297192
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Legrand / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331425052,
+          48.806646013
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Legrand / Impasse Albert Legrand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332318177,
+          48.80723975
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Legrand / Rue Laplace",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331948357,
+          48.807000259
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Legrand / Rue Monge",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332418973,
+          48.812090702
+        ]
+      },
+      "properties": {
+        "name": "Rue Alice Milliat / Allée Andrée Chedid",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332721248,
+          48.81296889
+        ]
+      },
+      "properties": {
+        "name": "Rue Alice Milliat / Allée Suzanne Penillault",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332436268,
+          48.812115818
+        ]
+      },
+      "properties": {
+        "name": "Rue Alice Milliat / Rue de la Villa Mélanie",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33274612,
+          48.812916602
+        ]
+      },
+      "properties": {
+        "name": "Rue Alice Milliat / Rue Lounès Matoub",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34112048,
+          48.803163252
+        ]
+      },
+      "properties": {
+        "name": "Rue Anatole France / Avenue du Général Malleret-Joinville",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338436317,
+          48.807946378
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Baïf / Place de la Pléiade",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329469369,
+          48.810402635
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Marin / Allée Niki de Saint Phalle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329448814,
+          48.810412737
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Marin / Avenue du Président Salvador Allende D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330149961,
+          48.812288052
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Marin / Rue Marguerite Lagrange",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332772288,
+          48.802463228
+        ]
+      },
+      "properties": {
+        "name": "Rue Arthur Honegger / Rue Cauchy D259",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333247318,
+          48.800884285
+        ]
+      },
+      "properties": {
+        "name": "Rue Aspasie Jules Caron / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331662173,
+          48.801043731
+        ]
+      },
+      "properties": {
+        "name": "Rue Aspasie Jules Caron / Rue Émile Raspail D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339249746,
+          48.812178692
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Blanqui / Rue Camille Blanc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338012998,
+          48.811299761
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Blanqui / Rue des Martyrs du 8 Février 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338592451,
+          48.802110936
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Delaune / Avenue du Général Malleret-Joinville D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338556419,
+          48.802111316
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Delaune / Avenue Paul Vaillant-Couturier D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336767282,
+          48.801132469
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Delaune / Rue du Colonel Fabien",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325603213,
+          48.805760413
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329249033,
+          48.804384756
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332142694,
+          48.803475189
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Passage des Carnots",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330557063,
+          48.803801436
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Rue du 8 Mai 1945",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33213247,
+          48.803472357
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Rue Émile Raspail D58b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332142461,
+          48.803476622
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Rue Marius Sidobre D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329233867,
+          48.804378831
+        ]
+      },
+      "properties": {
+        "name": "Rue Berthollet / Rue Paul Bert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328623558,
+          48.804641698
+        ]
+      },
+      "properties": {
+        "name": "Rue Branly / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328208147,
+          48.803378876
+        ]
+      },
+      "properties": {
+        "name": "Rue Branly / Rue Paul Bert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338464157,
+          48.812482096
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Blanc / Place Camille Blanc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339264012,
+          48.812187891
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Blanc / Rue Auguste Blanqui",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337822578,
+          48.812792605
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Blanc / Rue des Champs-Élysées",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34402958,
+          48.799401746
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D126A / Avenue Gabriel Péri D126",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344033243,
+          48.799479776
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D126A / Avenue Paul Vaillant-Couturier D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344250497,
+          48.79781514
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D126A / A6b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333715918,
+          48.803473267
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy D259 / Avenue François Vincent Raspail D259b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33279809,
+          48.802524664
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy D259 / Rue Arthur Honegger",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332698935,
+          48.802494706
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy D259 / Rue de l'Église",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334834288,
+          48.805024361
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy / Rue Louis Frébault",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334814042,
+          48.805090513
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy / Rue Marius Sidobre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33284386,
+          48.802667178
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy D259 / Rue Montmort",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334900544,
+          48.805177133
+        ]
+      },
+      "properties": {
+        "name": "Rue Cauchy / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33339206,
+          48.800873517
+        ]
+      },
+      "properties": {
+        "name": "Rue Clément Ader / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333331894,
+          48.800881455
+        ]
+      },
+      "properties": {
+        "name": "Rue Clément Ader / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3333827,
+          48.800873103
+        ]
+      },
+      "properties": {
+        "name": "Rue Clément Ader / Rue Aspasie Jules Caron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333814364,
+          48.805899765
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334819622,
+          48.812480421
+        ]
+      },
+      "properties": {
+        "name": "Rue Danielle Mitterrand / Avenue du Chaperon Vert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336083432,
+          48.81100799
+        ]
+      },
+      "properties": {
+        "name": "Rue Danielle Mitterrand / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334813707,
+          48.812487016
+        ]
+      },
+      "properties": {
+        "name": "Rue Danielle Mitterrand / Rue Lounès Matoub",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333501584,
+          48.801384796
+        ]
+      },
+      "properties": {
+        "name": "Rue Darius Milhaud / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333423542,
+          48.801389648
+        ]
+      },
+      "properties": {
+        "name": "Rue Darius Milhaud / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336028861,
+          48.810579541
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chinon / Rue du 19 Mars 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334496142,
+          48.809380376
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chinon / Rue Vaucouleurs",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33528961,
+          48.803662346
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardenay / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33487386,
+          48.803887983
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardenay / Avenue François Vincent Raspail D259b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335926866,
+          48.80329304
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardenay / Cité des Irlandais",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33529654,
+          48.803661018
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ardenay / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346942026,
+          48.801891586
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Astronome / Rue Albert Laurenson",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346333426,
+          48.801298883
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Astronome / Rue Maurice Henri Guilbert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332366805,
+          48.802615598
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Place Jean-Baptiste Oudry",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332762614,
+          48.802494683
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue Arthur Honegger",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332705966,
+          48.802481433
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue Cauchy D259",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343831466,
+          48.802398989
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Etoile / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34599541,
+          48.802234001
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Etoile / Rue de la Villageoise",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343765579,
+          48.802414656
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Etoile / Tunnel de Bicêtre A6b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339500193,
+          48.797415345
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Aqueduc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340438505,
+          48.797977779
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Boulevard de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339436179,
+          48.797434013
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / La Montée aux Vignes",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333877739,
+          48.798431221
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Rue des Tournelles",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340012101,
+          48.79731363
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Rue du Coteau",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339107302,
+          48.797606366
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Villa de la Citadelle",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338075181,
+          48.804400619
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc D263 / Avenue Paul Doumer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338036717,
+          48.804343241
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc D263 / Avenue Paul Vaillant-Couturier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33590834,
+          48.803248542
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc / Cité des Irlandais",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339735273,
+          48.805412177
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc D263 / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335948653,
+          48.803332796
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc / Rue de l'Ardenay",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335277132,
+          48.802098505
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Division du Général Leclerc / Rue Maximilien Robespierre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333843969,
+          48.802377071
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333800988,
+          48.802384756
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332819272,
+          48.802512562
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Arthur Honegger",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332793276,
+          48.802526412
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Cauchy D259",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332761253,
+          48.802511169
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue de l'Église",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335252842,
+          48.802107838
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue de la Division du Général Leclerc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333324411,
+          48.802442419
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Erik Satie",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334458406,
+          48.802225488
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Germaine Tailleferre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335250522,
+          48.802084264
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Maximilien Robespierre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33283512,
+          48.802581517
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Rue Montmort",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334741019,
+          48.802156304
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine / Villa des Irlandais",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324048157,
+          48.801502226
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32403696,
+          48.801509682
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324641932,
+          48.801270989
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Villa de la Gare",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325401483,
+          48.800998245
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Villa Marguerite",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325803293,
+          48.800885786
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Villa Peyrabout",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32500773,
+          48.801123409
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Villa Pierre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326194071,
+          48.800767809
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Villa Serre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332494588,
+          48.812067414
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Mélanie / Allée Andrée Chedid",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333142712,
+          48.812096999
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Mélanie / Allée Django Reinhardt",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333895044,
+          48.81209852
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Mélanie / Allée Simone de Beauvoir",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33461861,
+          48.812095995
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Mélanie / Avenue du Chaperon Vert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343934822,
+          48.802876793
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villageoise / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343922532,
+          48.802885894
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villageoise / Rue du Ricardo",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335383826,
+          48.810923806
+        ]
+      },
+      "properties": {
+        "name": "Rue de Reims / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335448787,
+          48.810928509
+        ]
+      },
+      "properties": {
+        "name": "Rue de Reims / Rue du 19 Mars 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327360729,
+          48.802074713
+        ]
+      },
+      "properties": {
+        "name": "Rue de Ridder / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32459219,
+          48.802951527
+        ]
+      },
+      "properties": {
+        "name": "Rue de Ridder / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324560833,
+          48.802958628
+        ]
+      },
+      "properties": {
+        "name": "Rue de Ridder / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327019515,
+          48.80168199
+        ]
+      },
+      "properties": {
+        "name": "Rue de Ridder / Rue Roger-Simon Barboux",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326779024,
+          48.801314993
+        ]
+      },
+      "properties": {
+        "name": "Rue de Ridder / Rue Victor Carmignac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33818548,
+          48.809957557
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Allée Bellevue",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338998679,
+          48.810836852
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Avenue Jean Jaurès",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335990437,
+          48.807013702
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad D258 / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339080202,
+          48.810854998
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Avenue Pasteur D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339079158,
+          48.810855633
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Rue Benoît Malon",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339021653,
+          48.81081957
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Rue Émile Bougard",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336308977,
+          48.807382921
+        ]
+      },
+      "properties": {
+        "name": "Rue de Stalingrad / Rue Henri Barbusse D258b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328427995,
+          48.804742927
+        ]
+      },
+      "properties": {
+        "name": "Rue de Strasbourg / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324105397,
+          48.801740585
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324020065,
+          48.80175704
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336856488,
+          48.813301272
+        ]
+      },
+      "properties": {
+        "name": "Rue des Carriers / Rue des Martyrs du 8 Février 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337492682,
+          48.812154598
+        ]
+      },
+      "properties": {
+        "name": "Rue des Champs-Élysées / Place Camille Blanc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337810017,
+          48.812782853
+        ]
+      },
+      "properties": {
+        "name": "Rue des Champs-Élysées / Rue Camille Blanc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338432291,
+          48.813300399
+        ]
+      },
+      "properties": {
+        "name": "Rue des Champs-Élysées / Rue des Champs Élysées",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337350444,
+          48.812141719
+        ]
+      },
+      "properties": {
+        "name": "Rue des Champs-Élysées / Rue des Martyrs du 8 Février 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338253358,
+          48.810839301
+        ]
+      },
+      "properties": {
+        "name": "Rue des Martyrs du 8 Février 1962 / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337447376,
+          48.812119408
+        ]
+      },
+      "properties": {
+        "name": "Rue des Martyrs du 8 Février 1962 / Place Camille Blanc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33396216,
+          48.808269972
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre 1918 / Rue Ernest Renan",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33548661,
+          48.81093385
+        ]
+      },
+      "properties": {
+        "name": "Rue du 19 Mars 1962 / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32851421,
+          48.800154521
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328530395,
+          48.800175141
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Boulevard Jacques Desbrosses",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330543594,
+          48.803805112
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328523705,
+          48.800157279
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Rue du Docteur Gosselin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328984157,
+          48.801886827
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Rue Paul Signac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330904412,
+          48.799611667
+        ]
+      },
+      "properties": {
+        "name": "Rue du Chemin de Fer / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331422255,
+          48.799478023
+        ]
+      },
+      "properties": {
+        "name": "Rue du Chemin de Fer / Rue de Provigny D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32852344,
+          48.799722803
+        ]
+      },
+      "properties": {
+        "name": "Rue du Chemin de Fer / Rue du Docteur Gosselin",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34329921,
+          48.797860612
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Avenue Gabriel Péri D126",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337598601,
+          48.800599177
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Groupe Auguste Delaune",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339181541,
+          48.7996884
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Impasse Jacquart",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33527888,
+          48.802098843
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue de la Division du Général Leclerc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335278346,
+          48.802098149
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue de la Fontaine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33736033,
+          48.800701024
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue François Trubert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343281765,
+          48.797816156
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue Gabriel Péri D126",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336537878,
+          48.801263343
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue Gay Lussac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336896219,
+          48.801050993
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue Maxime Bacquet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335286399,
+          48.802085087
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue Maximilien Robespierre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34094244,
+          48.798938483
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Sentier des Vaudenaires",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341968234,
+          48.798491918
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Villa Denise",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343301205,
+          48.800654088
+        ]
+      },
+      "properties": {
+        "name": "Rue du Dispensaire / Avenue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342229374,
+          48.801089987
+        ]
+      },
+      "properties": {
+        "name": "Rue du Dispensaire / Rue Marcel Vigneron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329907213,
+          48.805618489
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général de Gaulle / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329210908,
+          48.809299479
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général de Gaulle / Avenue Laplace D161b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329572714,
+          48.805727415
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général de Gaulle / Villa des Chalets",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324783942,
+          48.803459427
+        ]
+      },
+      "properties": {
+        "name": "Rue du Midi / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324754039,
+          48.803468329
+        ]
+      },
+      "properties": {
+        "name": "Rue du Midi / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325399957,
+          48.803271206
+        ]
+      },
+      "properties": {
+        "name": "Rue du Midi / Cité du Midi",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327051864,
+          48.802710008
+        ]
+      },
+      "properties": {
+        "name": "Rue du Midi / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343705364,
+          48.802911108
+        ]
+      },
+      "properties": {
+        "name": "Rue du Ricardo / Avenue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342465495,
+          48.803309896
+        ]
+      },
+      "properties": {
+        "name": "Rue du Ricardo / Rue Marcel Vigneron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339016437,
+          48.810867003
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Bougard / Avenue Jean Jaurès",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339076935,
+          48.810877055
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Bougard / Rue Benoît Malon",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34233298,
+          48.809666084
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Bougard / Rue Fraysse",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332152981,
+          48.803461593
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Passage des Carnots",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33202756,
+          48.803223445
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Passage des Puits",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331651637,
+          48.801058967
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D258 / Rue Aspasie Jules Caron",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331704675,
+          48.801598355
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Rue Cauchy D259",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331670632,
+          48.802761535
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Rue de l'Église",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331699561,
+          48.80159221
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Rue Émile Raspail D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332143489,
+          48.803474768
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Rue Marius Sidobre D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331868065,
+          48.803031227
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Raspail D58b / Ruelle de la Maison à la Colonne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333054815,
+          48.801875614
+        ]
+      },
+      "properties": {
+        "name": "Rue Erik Satie / Rue Arthur Honegger",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337584919,
+          48.810977337
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Renan / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333393592,
+          48.807866097
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Renan / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336641621,
+          48.810256381
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Renan / Rue du 19 Mars 1962",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338426029,
+          48.807930704
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Jodelle / Place de la Pléiade",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33862316,
+          48.807714173
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Jodelle / Rue Antoine Baïf",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338010143,
+          48.808542293
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Jodelle / Rue Henri Barbusse D258b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333792997,
+          48.807696329
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Fournière / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332692588,
+          48.806824363
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Fournière / Passage Lavoisier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332762988,
+          48.806908099
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Fournière / Rue Jean Pierre Timbaud",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332695462,
+          48.806823324
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Fournière / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338521772,
+          48.799210337
+        ]
+      },
+      "properties": {
+        "name": "Rue Fernand Forest / Impasse Arago",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338531787,
+          48.799231967
+        ]
+      },
+      "properties": {
+        "name": "Rue Fernand Forest / Impasse Jacquart",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339285264,
+          48.799080225
+        ]
+      },
+      "properties": {
+        "name": "Rue Fernand Forest / Place Gutenberg",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33755941,
+          48.799399233
+        ]
+      },
+      "properties": {
+        "name": "Rue Fernand Forest / Rue Maxime Bacquet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344796477,
+          48.800078392
+        ]
+      },
+      "properties": {
+        "name": "Rue Florentin Lareyre / Rue Marius Barbieri",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336915303,
+          48.800350029
+        ]
+      },
+      "properties": {
+        "name": "Rue François Trubert / Impasse François Trubert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33651991,
+          48.800088788
+        ]
+      },
+      "properties": {
+        "name": "Rue François Trubert / Rue Gay Lussac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336484431,
+          48.800085102
+        ]
+      },
+      "properties": {
+        "name": "Rue Gay / Rue François Trubert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336445745,
+          48.800089617
+        ]
+      },
+      "properties": {
+        "name": "Rue Gay / Rue Gay Lussac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339595897,
+          48.812502085
+        ]
+      },
+      "properties": {
+        "name": "Rue Genova / Rue Auguste Blanqui",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338166232,
+          48.81306565
+        ]
+      },
+      "properties": {
+        "name": "Rue Genova / Rue des Champs-Élysées",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333500981,
+          48.804656917
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Politzer / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332982998,
+          48.806530806
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Politzer / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332528025,
+          48.806076584
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Politzer / Rue Victor Basch",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334138644,
+          48.80137587
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Taillefer / Rue Germaine Tailleferre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333605103,
+          48.801586031
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tailleferre / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333564722,
+          48.801606267
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tailleferre / La Bièvre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333500038,
+          48.801334753
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tailleferre / Rue Darius Milhaud",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334203288,
+          48.801844907
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tailleferre / Rue Germaine Taillefer",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326889881,
+          48.803318948
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy de Gouyon du Verger / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32498215,
+          48.803972532
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy de Gouyon du Verger / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324961438,
+          48.803979267
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy de Gouyon du Verger / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326892684,
+          48.803305384
+        ]
+      },
+      "properties": {
+        "name": "Rue Guy de Gouyon du Verger / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340293738,
+          48.809883115
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse D258b / Impasse Sous les Prés",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340685691,
+          48.810112606
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse D258b / Rue d'Arcueil D258A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336454796,
+          48.807526048
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse D258b / Rue de Stalingrad D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34067313,
+          48.8101108
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse D258b / Rue Émile Bougard",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33943436,
+          48.809373107
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse D258b / A6a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34499798,
+          48.798015142
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Grégoire / Impasse Vuilleminot",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345229488,
+          48.797783633
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Grégoire / Passage Charles Dehan",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344141789,
+          48.798375694
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Grégoire / Rue Camille Desmoulins D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333958758,
+          48.80677983
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Pierre Timbaud / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332735195,
+          48.806855667
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Pierre Timbaud / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338039856,
+          48.807692735
+        ]
+      },
+      "properties": {
+        "name": "Rue Joachim du Bellay / Place de la Pléiade",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332929122,
+          48.80798232
+        ]
+      },
+      "properties": {
+        "name": "Rue Laplace / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336431563,
+          48.804645318
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Frébault / Avenue de la Convention D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335917931,
+          48.804941972
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Frébault / Impasse du Bel Air",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335401758,
+          48.805245489
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Frébault / Mail Gaston Doiselet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334775797,
+          48.805054564
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Frébault / Rue Marius Sidobre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333466679,
+          48.812766981
+        ]
+      },
+      "properties": {
+        "name": "Rue Lounès Matoub / Allée Django Reinhardt",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334133822,
+          48.812628218
+        ]
+      },
+      "properties": {
+        "name": "Rue Lounès Matoub / Allée Simone de Beauvoir",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332734444,
+          48.812946371
+        ]
+      },
+      "properties": {
+        "name": "Rue Lounès Matoub / Allée Suzanne Penillault",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334180302,
+          48.812633264
+        ]
+      },
+      "properties": {
+        "name": "Rue Lounès Matoub / Avenue du Chaperon Vert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32834584,
+          48.812493661
+        ]
+      },
+      "properties": {
+        "name": "Rue Marguerite Lagrange / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328416296,
+          48.812482346
+        ]
+      },
+      "properties": {
+        "name": "Rue Marguerite Lagrange / Avenue du Président Nelson Mandela",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331246735,
+          48.812106267
+        ]
+      },
+      "properties": {
+        "name": "Rue Marguerite Lagrange / Avenue Vladimir Ilitch Lénine",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331249994,
+          48.81210009
+        ]
+      },
+      "properties": {
+        "name": "Rue Marguerite Lagrange / Rue Voltaire",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343891635,
+          48.800351891
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Barbieri / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344780972,
+          48.800084747
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Barbieri / Rue Florentin Lareyre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333546984,
+          48.804451943
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre D258 / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335943389,
+          48.806977501
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335986508,
+          48.80696081
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Avenue Paul Doumer D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335967602,
+          48.806977305
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Rue de Stalingrad D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334710054,
+          48.8050352
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Rue Louis Frébault",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332407128,
+          48.80357076
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre D258 / Rue Montmort",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335910689,
+          48.806927447
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Rue Pasteur",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334900996,
+          48.805195196
+        ]
+      },
+      "properties": {
+        "name": "Rue Marius Sidobre / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343729653,
+          48.801926171
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Henri Guilbert / Avenue Gabriel Péri D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347022493,
+          48.801114489
+        ]
+      },
+      "properties": {
+        "name": "Rue Maurice Henri Guilbert / Rue Maurice Guildebert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335381265,
+          48.800327767
+        ]
+      },
+      "properties": {
+        "name": "Rue Maxime Bacquet / Rue Clément Ader",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334348682,
+          48.800714759
+        ]
+      },
+      "properties": {
+        "name": "Rue Maximilien Robespierre / Rue Clément Ader",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33267561,
+          48.803128023
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Cours des Tulipiers",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332451297,
+          48.803389264
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Passage des Carnots",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332694105,
+          48.802904963
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Place Jean-Baptiste Oudry",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332820204,
+          48.802576899
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Rue Arthur Honegger",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332807776,
+          48.80257452
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Rue Cauchy D259",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332366428,
+          48.803603222
+        ]
+      },
+      "properties": {
+        "name": "Rue Montmort / Rue Marius Sidobre D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333841323,
+          48.806007371
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335966333,
+          48.807003085
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335995344,
+          48.807001433
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Avenue Paul Doumer D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334865891,
+          48.806460784
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue d'Estienne d'Orves",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335994111,
+          48.807005941
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue de Stalingrad D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333822407,
+          48.805973784
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Pierre Brossolette",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327870155,
+          48.800757246
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Aqueduc de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329183374,
+          48.804410708
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327564853,
+          48.802313403
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Promenade de la Vanne",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329165086,
+          48.804410709
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue Berthollet",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327557301,
+          48.800358819
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue de la Gare",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327828563,
+          48.800807715
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Bert / Rue Victor Carmignac",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333805107,
+          48.805968185
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334314428,
+          48.805609278
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette / Rue d'Estienne d'Orves",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334894152,
+          48.80517746
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette / Rue Marius Sidobre",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330403737,
+          48.8069401
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Curie / Avenue du Docteur Durand",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34753424,
+          48.801719786
+        ]
+      },
+      "properties": {
+        "name": "Rue Riquet / Rue Blaise Pascal",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347038466,
+          48.801117849
+        ]
+      },
+      "properties": {
+        "name": "Rue Riquet / Rue Maurice Guildebert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347019637,
+          48.80111986
+        ]
+      },
+      "properties": {
+        "name": "Rue Riquet / Rue Maurice Henri Guilbert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324427719,
+          48.802507427
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger-Simon Barboux / Aqueduc du Loing",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324398757,
+          48.802515361
+        ]
+      },
+      "properties": {
+        "name": "Rue Roger-Simon Barboux / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340127482,
+          48.802025201
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Just / Cité Cherchefeuille",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340187667,
+          48.802022771
+        ]
+      },
+      "properties": {
+        "name": "Rue Saint-Just / Impasse Duroc",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340337814,
+          48.798569696
+        ]
+      },
+      "properties": {
+        "name": "Rue Thimonnier / Impasse Thimonnier",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333902842,
+          48.809704597
+        ]
+      },
+      "properties": {
+        "name": "Rue Vaucouleurs / Rue de Reims",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335029322,
+          48.809063569
+        ]
+      },
+      "properties": {
+        "name": "Rue Vaucouleurs / Rue Ernest Renan",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333641074,
+          48.805318843
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333688491,
+          48.805263754
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Basch / Rue d'Estienne d'Orves",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327825147,
+          48.80085991
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Carmignac / Rue Paul Bert",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334134379,
+          48.81086481
+        ]
+      },
+      "properties": {
+        "name": "Rue Voltaire / Avenue Jean Jaurès D262a",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33244184,
+          48.802725454
+        ]
+      },
+      "properties": {
+        "name": "Ruelle de la Maison à la Colonne / Place Jean-Baptiste Oudry",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334144952,
+          48.807587938
+        ]
+      },
+      "properties": {
+        "name": "Villa Baudran / Avenue de la République",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334156921,
+          48.807611884
+        ]
+      },
+      "properties": {
+        "name": "Villa Baudran / Avenue Laplace D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336311078,
+          48.807459678
+        ]
+      },
+      "properties": {
+        "name": "Villa Gustave Édouard / Rue de Stalingrad D258",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336339862,
+          48.807438503
+        ]
+      },
+      "properties": {
+        "name": "Villa Gustave Édouard / Rue Henri Barbusse D258b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326436625,
+          48.80831404
+        ]
+      },
+      "properties": {
+        "name": "Villa Moderne / Avenue Aristide Briand D920",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344107833,
+          48.804782334
+        ]
+      },
+      "properties": {
+        "name": "D154b / Avenue du Général Malleret-Joinville D154",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341048314,
+          48.807194285
+        ]
+      },
+      "properties": {
+        "name": "A6a / Avenue François Vincent Raspail D127",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343637768,
+          48.800416694
+        ]
+      },
+      "properties": {
+        "name": "D154b / Avenue Gabriel Péri D126B",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337761543,
+          48.810944032
+        ]
+      },
+      "properties": {
+        "name": "A6a / Avenue Jean Jaurès D262",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342086753,
+          48.80034198
+        ]
+      },
+      "properties": {
+        "name": "A6a / Avenue Paul Vaillant-Couturier D161",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343996494,
+          48.798708588
+        ]
+      },
+      "properties": {
+        "name": "A6b / Rue Camille Desmoulins D126A",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3392757,
+          48.809257154
+        ]
+      },
+      "properties": {
+        "name": "A6a / Rue Henri Barbusse D258b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34435022,
+          48.804643301
+        ]
+      },
+      "properties": {
+        "name": "D154b / Tunnel de Bicêtre A6b",
+        "context": "Arcueil, Val-de-Marne",
+        "citycode": "94003",
+        "depcode": "94"
+      }
+    }
+  ]
+}

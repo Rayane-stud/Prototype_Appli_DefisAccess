@@ -30,6 +30,9 @@ except ImportError:
 _CHEMIN_MODELE = os.path.join(os.path.dirname(__file__), "..", "models", "best.pt")
 _MODELE_YOLO = None
 
+# Liste des intersections non analysées après les deux passes (lat, lon, message d'erreur)
+pp_erreur = []
+
 
 def _charger_modele():
     # ETAPE 1 : on utilise une variable globale pour ne charger le modèle qu'une seule fois
@@ -497,7 +500,57 @@ def analyser_toutes_intersections(
         if i < total:
             time.sleep(delai_s)
 
-    # ETAPE 6 : on ajoute les colonnes de résultats au DataFrame original
+    # ETAPE 6 : deuxième passe sur les intersections en erreur (erreur réseau IGN transitoire)
+    indices_echec = [idx for idx, r in enumerate(resultats) if r["erreur"]]
+    if indices_echec:
+        print(f"\n--- Deuxième passe : {len(indices_echec)} intersection(s) en erreur ---")
+        time.sleep(2)
+        for rang, idx in enumerate(indices_echec, 1):
+            ligne = df.iloc[idx]
+            lat_i = float(ligne[col_lat])
+            lon_i = float(ligne[col_lon])
+            print(f"[retry {rang}/{len(indices_echec)}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
+            chemin_img = (
+                os.path.join(dossier_images, f"{idx+1:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+                if dossier_images else None
+            )
+            res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+                                        sauvegarder_image_annotee=chemin_img)
+            if res["erreur"]:
+                print(f"ERREUR : {res['erreur']}")
+            else:
+                statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+                print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
+            resultats[idx] = res
+            if rang < len(indices_echec):
+                time.sleep(delai_s)
+
+    # ETAPE 6b : troisième passe sur les intersections encore en erreur
+    indices_echec2 = [idx for idx, r in enumerate(resultats) if r["erreur"]]
+    if indices_echec2:
+        print(f"\n--- Troisième passe : {len(indices_echec2)} intersection(s) encore en erreur ---")
+        time.sleep(5)
+        for rang, idx in enumerate(indices_echec2, 1):
+            ligne = df.iloc[idx]
+            lat_i = float(ligne[col_lat])
+            lon_i = float(ligne[col_lon])
+            print(f"[retry {rang}/{len(indices_echec2)}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
+            chemin_img = (
+                os.path.join(dossier_images, f"{idx+1:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+                if dossier_images else None
+            )
+            res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+                                        sauvegarder_image_annotee=chemin_img)
+            if res["erreur"]:
+                print(f"ERREUR : {res['erreur']}")
+            else:
+                statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+                print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
+            resultats[idx] = res
+            if rang < len(indices_echec2):
+                time.sleep(delai_s)
+
+    # ETAPE 7 : on ajoute les colonnes de résultats au DataFrame original
     # df.copy() évite de modifier le tableau d'origine passé en argument
     df_sortie = df.copy()
     df_sortie["pp_detecte"]   = [r["pp_detecte"]   for r in resultats]
@@ -505,5 +558,24 @@ def analyser_toutes_intersections(
     df_sortie["nb_traversees"] = [r["nb_traversee"]  for r in resultats]
     df_sortie["pp_image_ok"]  = [r["image_ok"]      for r in resultats]
     df_sortie["pp_erreur"]    = [r["erreur"]         for r in resultats]
+
+    # ETAPE 8 : on recense les intersections toujours en erreur et on met à jour pp_erreur (module)
+    global pp_erreur
+    pp_erreur = []
+    for idx, r in enumerate(resultats):
+        if r["erreur"]:
+            ligne = df.iloc[idx]
+            pp_erreur.append({
+                "lat": float(ligne[col_lat]),
+                "lon": float(ligne[col_lon]),
+                "erreur": r["erreur"],
+            })
+
+    if pp_erreur:
+        print(f"\n--- {len(pp_erreur)} intersection(s) non analysée(s) après les deux passes ---")
+        for entry in pp_erreur:
+            print(f"  ({entry['lat']:.5f}, {entry['lon']:.5f})  →  {entry['erreur']}")
+    else:
+        print("\nToutes les intersections ont été analysées avec succès.")
 
     return df_sortie

@@ -127,14 +127,23 @@ def _normaliser(texte: str) -> str:
     return texte.lower().replace("-", " ").replace("_", " ")
 
 
+def _rmtree_force(path):
+    # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
+    def _on_error(func, p, _):
+        os.chmod(p, 0o777)
+        func(p)
+    shutil.rmtree(path, onerror=_on_error)
+
+
 def nettoyer_anciennes_villes(base_dir: Path, garder: int = 2):
     """
-    Supprime les données (PM + images_pp) des villes les plus anciennes
-    quand le nombre de villes dépasse `garder`.
+    Supprime les données (PM + images_pp + fiches_equipes) des villes les plus
+    anciennes quand le nombre de villes dépasse `garder`.
     Le tri se fait par date de modification du fichier PM_{ville}.xlsx.
     """
     dossier_pm     = base_dir / "data" / "raw" / "PM"
     dossier_images = base_dir / "data" / "raw" / "images_pp"
+    dossier_fiches = base_dir / "data" / "output" / "fiches_equipes"
 
     if not dossier_pm.exists():
         return
@@ -152,12 +161,23 @@ def nettoyer_anciennes_villes(base_dir: Path, garder: int = 2):
         fichier.unlink()
         print(f"  Nettoyage — supprimé : {fichier.name}")
 
+        # images_pp : dossiers nommés "images_{ville}_{date}"
+        # _normaliser convertit les underscores en espaces, donc on compare
+        # "images garches 29 06 2026 14h30" avec le préfixe "images garches "
+        prefix_images = "images " + _normaliser(ville_ancienne) + " "
         if dossier_images.exists():
             for dossier in dossier_images.iterdir():
-                if dossier.is_dir() and _normaliser(dossier.name).startswith(
-                    "images_" + _normaliser(ville_ancienne) + "_"
-                ):
-                    shutil.rmtree(dossier)
+                if dossier.is_dir() and _normaliser(dossier.name).startswith(prefix_images):
+                    _rmtree_force(dossier)
+                    print(f"  Nettoyage — supprimé : {dossier.name}")
+
+        # fiches_equipes : dossiers nommés "{ville}_{horodatage}"
+        # ex. "Garches_20250625_143022" → normalisé "garches 20250625 143022"
+        prefix_fiches = _normaliser(ville_ancienne) + " "
+        if dossier_fiches.exists():
+            for dossier in dossier_fiches.iterdir():
+                if dossier.is_dir() and _normaliser(dossier.name).startswith(prefix_fiches):
+                    _rmtree_force(dossier)
                     print(f"  Nettoyage — supprimé : {dossier.name}")
 
 

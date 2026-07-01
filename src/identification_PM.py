@@ -1119,10 +1119,9 @@ def _choisir_categories_osm() -> list[dict]:
 
     print("\n  Entrez les numéros séparés par des virgules  (ex: 1,4,7)")
     print("  ou appuyez sur Entrée pour toutes les inclure.")
-    #choix = input("\n  Votre sélection : ").strip()
+    choix = input("\n  Votre sélection : ").strip()
 
-    '''ATTENTION CHANGEMENT PROVISOIR PCQ FLEMME DE TOUT CHANGER'''
-    choix = None
+   
 
     if not choix:
         print("  → Toutes les catégories OSM seront incluses.\n")

@@ -11,10 +11,12 @@ import proximite
 import export
 import  identification_PM
 import IA_PP
+import identification_PP
 import telecharger_intersections
 import numpy as np
 
 from pathlib import Path
+from geopy.distance import geodesic
 
 
 # ──────────────────────────────────────────────
@@ -24,6 +26,47 @@ from pathlib import Path
 RDV_LAT    = 48.8381857639848  # latitude du point de rendez-vous (coordonnées fictives)
 RDV_LONG   = 2.1865433360720927   # longitude du point de rendez-vous
 NB_EQUIPES = 5        # nombre d'équipes
+
+
+# ──────────────────────────────────────────────
+# FUSION OSM / IA — on garde le max des deux méthodes
+# ──────────────────────────────────────────────
+
+def fusionner_comptages_osm(tab_croisement, df_osm, rayon: int = 25):
+    """
+    Complète nb_traversees (IA) avec le comptage OSM : pour chaque intersection,
+    cherche l'intersection OSM la plus proche (dans le rayon) et garde le
+    maximum entre les deux méthodes, car chacune peut rater des passages
+    que l'autre détecte.
+    """
+    osm_records = df_osm.to_dict("records")
+    nb_osm_par_ligne = []
+
+    for _, ligne in tab_croisement.iterrows():
+        meilleur = 0
+        for osm in osm_records:
+            dist = geodesic(
+                (ligne["latitude"], ligne["longitude"]),
+                (osm["latitude"], osm["longitude"])
+            ).meters
+            if dist <= rayon:
+                meilleur = max(meilleur, osm["nb_passages_pietons"])
+        nb_osm_par_ligne.append(meilleur)
+
+    tab_croisement = tab_croisement.copy()
+    tab_croisement["nb_traversees_osm"] = nb_osm_par_ligne
+
+    nb_ia  = tab_croisement["nb_traversees"]
+    nb_osm = tab_croisement["nb_traversees_osm"]
+    nb_ameliorees = int((nb_osm > nb_ia).sum())
+
+    print(f"\n Fusion OSM / IA :")
+    print(f"   Total passages détectés par l'IA  : {int(nb_ia.sum())} (moyenne {nb_ia.mean():.2f}/intersection)")
+    print(f"   Total passages détectés par l'OSM : {int(nb_osm.sum())} (moyenne {nb_osm.mean():.2f}/intersection)")
+    print(f"   {nb_ameliorees} intersection(s) sur {len(tab_croisement)} mises à jour grâce à OSM (OSM > IA).")
+
+    tab_croisement["nb_traversees"] = tab_croisement[["nb_traversees", "nb_traversees_osm"]].max(axis=1)
+    return tab_croisement.drop(columns=["nb_traversees_osm"])
 
 
 # ──────────────────────────────────────────────
@@ -107,6 +150,13 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     tab_croisement = IA_PP.analyser_toutes_intersections(
         tab_croisement, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
     )
+
+    # ── Fusion avec le comptage OSM (méthode mixte : on garde le max) ──
+    osm_area_id = identification_PP.get_osm_area_id(ville)
+    if osm_area_id:
+        df_osm = identification_PP.telecharger_passages_par_zone(osm_area_id, rayon_metres=25)
+        if not df_osm.empty:
+            tab_croisement = fusionner_comptages_osm(tab_croisement, df_osm, rayon=25)
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)

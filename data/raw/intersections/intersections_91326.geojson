@@ -1,0 +1,6661 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.388951458,
+          48.692707977
+        ]
+      },
+      "properties": {
+        "name": "Allée Camille Claudel / Avenue d'Orainville",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387082217,
+          48.690258917
+        ]
+      },
+      "properties": {
+        "name": "Allée Camille Claudel / Rue des Montains",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.388113181,
+          48.69161857
+        ]
+      },
+      "properties": {
+        "name": "Allée Camille Claudel / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373888864,
+          48.687282801
+        ]
+      },
+      "properties": {
+        "name": "Allée de Thale / L'Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374404322,
+          48.688423119
+        ]
+      },
+      "properties": {
+        "name": "Allée de Thale / Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373286551,
+          48.686358236
+        ]
+      },
+      "properties": {
+        "name": "Allée de Thale / Pont des Belles Fontaines",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374537194,
+          48.688502828
+        ]
+      },
+      "properties": {
+        "name": "Allée de Thale / Rue Larigaldie",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376253707,
+          48.691546377
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Allée Jean Moulin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37590431,
+          48.69081823
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Allée Jean Olivier Nicolas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376161129,
+          48.692190268
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Avenue Honoré d'Estienne d'Orves",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376091637,
+          48.691271981
+        ]
+      },
+      "properties": {
+        "name": "Allée du 8 Mai 1945 / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385651936,
+          48.691228187
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Fourest / Rue Georges Jacques Danton",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376064234,
+          48.69107368
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Allée du 8 Mai 1945",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376055923,
+          48.690862839
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Allée Jean Olivier Nicolas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376542999,
+          48.692116949
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Avenue Honoré d'Estienne d'Orves",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376204417,
+          48.69125746
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Moulin / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375008364,
+          48.690762924
+        ]
+      },
+      "properties": {
+        "name": "Allée Jean Olivier Nicolas / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376842515,
+          48.6946546
+        ]
+      },
+      "properties": {
+        "name": "Allée Lucie Rivel / Avenue de la Terrasse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378134844,
+          48.694412229
+        ]
+      },
+      "properties": {
+        "name": "Allée Lucie Rivel / Impasse Blaise Pascal",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383682488,
+          48.685252335
+        ]
+      },
+      "properties": {
+        "name": "Allée Pierre Dac / Rue de Seine",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375590972,
+          48.694880335
+        ]
+      },
+      "properties": {
+        "name": "Avenue Botherel / Allée Lucie Rivel",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37598927,
+          48.695884556
+        ]
+      },
+      "properties": {
+        "name": "Avenue Botherel / Avenue Gounod",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374607361,
+          48.693526481
+        ]
+      },
+      "properties": {
+        "name": "Avenue Botherel / Avenue Raspail",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378672479,
+          48.692065546
+        ]
+      },
+      "properties": {
+        "name": "Avenue Claude Rouget de Lisle / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380830303,
+          48.684613719
+        ]
+      },
+      "properties": {
+        "name": "Avenue Condorcet / Rue Condorcet",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38083872,
+          48.684594289
+        ]
+      },
+      "properties": {
+        "name": "Avenue Condorcet / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364336152,
+          48.697638839
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Juvisy Cottages / Rue de Fromenteau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369177232,
+          48.690574687
+        ]
+      },
+      "properties": {
+        "name": "Avenue de l'Union / Impasse de l'Union",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.368369229,
+          48.69077382
+        ]
+      },
+      "properties": {
+        "name": "Avenue de l'Union / Rue Messidor",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370413546,
+          48.689939701
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / Avenue de Savigny",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375630531,
+          48.684213174
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Avenue du Général de Gaulle N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371897119,
+          48.698189957
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Avenue François Mitterrand N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371935237,
+          48.698190109
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Avenue Jules Vallès D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371543232,
+          48.688162569
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / Avenue Paul Sumien",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371996526,
+          48.687607279
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / Boulevard de Bellevue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370549311,
+          48.690660903
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Impasse de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373118465,
+          48.686417752
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / L'Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373078734,
+          48.686431627
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / Pont des Belles Fontaines N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375274218,
+          48.684597182
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France / Rue Blazy",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370878777,
+          48.692846095
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Rue de l'Observatoire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375272625,
+          48.684471849
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Rue de Savigny",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370772507,
+          48.692894688
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Cour de France N7 / Rue Petit",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380735744,
+          48.691375576
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Claude Rouget de Lisle",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380227959,
+          48.690749525
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Honoré d'Estienne d'Orves D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381471332,
+          48.692231995
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Jean Jaurès",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379621987,
+          48.689998735
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Kléber",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379003589,
+          48.689346891
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Marceau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381468059,
+          48.692226303
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Voltaire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377207256,
+          48.688004385
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379831462,
+          48.690308585
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Carnot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377634216,
+          48.68861044
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Victor Hugo",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360205849,
+          48.694690315
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Résistance / Avenue Guynemer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360312854,
+          48.694622373
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Résistance / Place Maurice Chevaux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363788633,
+          48.69831696
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Résistance / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363928017,
+          48.695957693
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Avenue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.365282482,
+          48.697317619
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Rue de Fromenteau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.365805728,
+          48.69786637
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364014538,
+          48.695935661
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Rue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364060474,
+          48.695974294
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Rue Lacroix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364664803,
+          48.696654609
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Solidarité / Rue Merot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376825602,
+          48.694656446
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Allée Lucie Rivel",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377971713,
+          48.697033697
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Avenue de la Terrasse Prolongée",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37695385,
+          48.694945778
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Avenue Gounod",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375895568,
+          48.692260085
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Avenue Honoré d'Estienne d'Orves",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376584694,
+          48.694191881
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Avenue Raspail",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37570868,
+          48.692249902
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Terrasse / Rue du Docteur Vinot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36617343,
+          48.69701498
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Paris Campagne / Rue de Fromenteau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3667371,
+          48.697634834
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Paris Campagne / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370402213,
+          48.68991324
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Savigny / Avenue de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370245542,
+          48.689827037
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Savigny / Impasse de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362547869,
+          48.698298983
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Alouettes / Avenue des Capucines",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359715315,
+          48.695433387
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Alouettes / Avenue Guynemer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358963451,
+          48.694662156
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Alouettes / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358945501,
+          48.6946548
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Alouettes / Rue Camille Desmoulins",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362759985,
+          48.698632172
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Alouettes / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363707246,
+          48.698309462
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Avenue de la Résistance",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362496104,
+          48.698276912
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Avenue des Alouettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361116574,
+          48.698193463
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Avenue des Violettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361139752,
+          48.698210787
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Avenue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36356893,
+          48.698379709
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359770409,
+          48.698123899
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Capucines / Rue Gaston Bocquillon",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360058139,
+          48.694493197
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Fauvettes / Place Maurice Chevaux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361170146,
+          48.698216225
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Violettes / Avenue des Capucines",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361150912,
+          48.698225552
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Violettes / Avenue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361820225,
+          48.698910452
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Violettes / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361824638,
+          48.698920918
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Violettes / Rue Ferdinand Buisson",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380452007,
+          48.695876098
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Avenue du 18 Avril 1944 D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379958976,
+          48.694849178
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Impasse Ampère",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37958947,
+          48.694139811
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Impasse Blaise Pascal",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380167781,
+          48.695212487
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Rue Corvisart",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380390906,
+          48.695715932
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Rue de l'Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379727664,
+          48.694339787
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D29 / Rue du Miroir",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372964015,
+          48.697479382
+        ]
+      },
+      "properties": {
+        "name": "Avenue Édouard Thiers / Rue Alexandre Dumas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372572202,
+          48.694515474
+        ]
+      },
+      "properties": {
+        "name": "Avenue Édouard Thiers / Rue Camille Flammarion",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372526347,
+          48.695447891
+        ]
+      },
+      "properties": {
+        "name": "Avenue Édouard Thiers / Rue Claude Bernard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371798323,
+          48.698118698
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D25 / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3718062,
+          48.698161746
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D25 / Avenue François Mitterrand N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371824578,
+          48.698160332
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D25 / Avenue Jules Vallès D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366068308,
+          48.694234097
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D25 / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.368324001,
+          48.696173516
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D25 / Rue de Fromenteau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376957388,
+          48.694898745
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gounod / Avenue de la Terrasse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374706997,
+          48.697157659
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gounod / Rue Marcelle Henry",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359721003,
+          48.695475024
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guynemer / Avenue des Alouettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359283754,
+          48.696345945
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guynemer / Avenue des Violettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359223571,
+          48.696374283
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guynemer / Rue Claude Debussy",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358836889,
+          48.697206858
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guynemer / Rue Gaston Bocquillon",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363261254,
+          48.696496951
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Avenue de Juvisy Cottages",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362594802,
+          48.697031247
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Avenue de la Résistance",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3618643,
+          48.697622801
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Avenue des Alouettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361167649,
+          48.698197272
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Avenue des Capucines",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36114475,
+          48.698187958
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Avenue des Violettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360888413,
+          48.699213327
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376560183,
+          48.692112641
+        ]
+      },
+      "properties": {
+        "name": "Avenue Honoré d'Estienne d'Orves / Allée Jean Moulin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378373089,
+          48.691568603
+        ]
+      },
+      "properties": {
+        "name": "Avenue Honoré d'Estienne d'Orves D29 / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376913985,
+          48.692045001
+        ]
+      },
+      "properties": {
+        "name": "Avenue Honoré d'Estienne d'Orves / Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381491061,
+          48.690245428
+        ]
+      },
+      "properties": {
+        "name": "Avenue Honoré d'Estienne d'Orves D29 / Rue des Gaulois D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378372625,
+          48.691553406
+        ]
+      },
+      "properties": {
+        "name": "Avenue Honoré d'Estienne d'Orves D29 / Rue Victor Hugo",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381145326,
+          48.689255763
+        ]
+      },
+      "properties": {
+        "name": "Avenue Kléber / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379213576,
+          48.689263179
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marceau / Rue de Bir Hakeim",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380543796,
+          48.688842893
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marceau / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371470008,
+          48.688130294
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Sumien / Avenue de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370912506,
+          48.687779671
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Sumien / Rue Georges Risler",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371884003,
+          48.686326919
+        ]
+      },
+      "properties": {
+        "name": "Avenue Raymond Lefèvre / Allée Jean Ferrat",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359916487,
+          48.699617411
+        ]
+      },
+      "properties": {
+        "name": "Avenue Séverine / Rue de la Concorde",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35990968,
+          48.699613705
+        ]
+      },
+      "properties": {
+        "name": "Avenue Séverine / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37260659,
+          48.694558695
+        ]
+      },
+      "properties": {
+        "name": "Avenue Thiers / Avenue Édouard Thiers",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372495897,
+          48.694523022
+        ]
+      },
+      "properties": {
+        "name": "Avenue Thiers / Rue Camille Flammarion",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379016465,
+          48.692854871
+        ]
+      },
+      "properties": {
+        "name": "Avenue Voltaire / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381463952,
+          48.69224295
+        ]
+      },
+      "properties": {
+        "name": "Avenue Voltaire / Avenue Jean Jaurès",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378994835,
+          48.692829399
+        ]
+      },
+      "properties": {
+        "name": "Avenue Voltaire / Impasse Henri Castex",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380179957,
+          48.692590085
+        ]
+      },
+      "properties": {
+        "name": "Avenue Voltaire / Rue de la Paix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370989683,
+          48.686954589
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Bellevue / Allée Jean Ferrat",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371883413,
+          48.687561597
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Bellevue / Avenue de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370488233,
+          48.686537305
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Bellevue / Rue Labourbe",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373417515,
+          48.6940437
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Avenue Édouard Thiers",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374709573,
+          48.697140779
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Avenue Gounod",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373107393,
+          48.693338744
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Rue Camille Flammarion",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373886342,
+          48.695201764
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Rue Claude Bernard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373088117,
+          48.693238354
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Rue de l'Observatoire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374699595,
+          48.697155001
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Cascade / Rue Marcelle Henry",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382415513,
+          48.683904855
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Meder / Livraisons",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38252409,
+          48.683934743
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Meder / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382542598,
+          48.683979501
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Meder / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377202345,
+          48.68801874
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Avenue de la République",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37589704,
+          48.689481614
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Place Anatole France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37729418,
+          48.687799339
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Rue de la Fronde",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37783944,
+          48.687189027
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375325295,
+          48.690080387
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Rue Montenard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377852499,
+          48.687154099
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue / Rue Pasteur",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378133029,
+          48.694377863
+        ]
+      },
+      "properties": {
+        "name": "Impasse Blaise Pascal / Allée Lucie Rivel",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379583404,
+          48.694128495
+        ]
+      },
+      "properties": {
+        "name": "Impasse Blaise Pascal / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370239192,
+          48.690329611
+        ]
+      },
+      "properties": {
+        "name": "Impasse de la Cour de France / Avenue de l'Union",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378973702,
+          48.69281856
+        ]
+      },
+      "properties": {
+        "name": "Impasse Henri Castex / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376253195,
+          48.69024742
+        ]
+      },
+      "properties": {
+        "name": "Orge / Allée Jean Olivier Nicolas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3758669,
+          48.689525018
+        ]
+      },
+      "properties": {
+        "name": "Orge / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375752849,
+          48.689442176
+        ]
+      },
+      "properties": {
+        "name": "Orge / Place Anatole France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376192135,
+          48.690086131
+        ]
+      },
+      "properties": {
+        "name": "Orge / Rue Du Marché",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376591647,
+          48.691191214
+        ]
+      },
+      "properties": {
+        "name": "Orge / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374538449,
+          48.688530021
+        ]
+      },
+      "properties": {
+        "name": "Place Anatole France / Allée de Thale",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374959885,
+          48.688972342
+        ]
+      },
+      "properties": {
+        "name": "Place Anatole France / Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374539249,
+          48.688529905
+        ]
+      },
+      "properties": {
+        "name": "Place Anatole France / Rue Larigaldie",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382641794,
+          48.688995854
+        ]
+      },
+      "properties": {
+        "name": "Place Banette et Planchon / Rampe Condorcet",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382447899,
+          48.689002294
+        ]
+      },
+      "properties": {
+        "name": "Place Banette et Planchon / Rue Pierre Semard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358138892,
+          48.698021675
+        ]
+      },
+      "properties": {
+        "name": "Place Guynemer / Avenue Anatole France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358590596,
+          48.698054718
+        ]
+      },
+      "properties": {
+        "name": "Place Guynemer / Avenue des Capucines",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358369611,
+          48.6980507
+        ]
+      },
+      "properties": {
+        "name": "Place Guynemer / Avenue Guynemer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358486414,
+          48.698175737
+        ]
+      },
+      "properties": {
+        "name": "Place Guynemer / Avenue Séverine",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363970071,
+          48.695933245
+        ]
+      },
+      "properties": {
+        "name": "Place Henri Barbusse / Avenue de la Solidarité",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363862641,
+          48.695987015
+        ]
+      },
+      "properties": {
+        "name": "Place Henri Barbusse / Avenue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364034753,
+          48.695865589
+        ]
+      },
+      "properties": {
+        "name": "Place Henri Barbusse / Rue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364091491,
+          48.695941514
+        ]
+      },
+      "properties": {
+        "name": "Place Henri Barbusse / Rue Lacroix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360287835,
+          48.694669884
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevaux / Avenue de la Résistance",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360116463,
+          48.694699522
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevaux / Avenue Guynemer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360077875,
+          48.694594768
+        ]
+      },
+      "properties": {
+        "name": "Place Maurice Chevaux / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38812762,
+          48.689044689
+        ]
+      },
+      "properties": {
+        "name": "Pont de la Première-Armée-Française D931 / La Seine",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38665984,
+          48.689482198
+        ]
+      },
+      "properties": {
+        "name": "Pont de la Première-Armée-Française D931 / Pont de la 1re Armée Française D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387044195,
+          48.689386608
+        ]
+      },
+      "properties": {
+        "name": "Pont de la Première-Armée-Française D931 / Quai Jean Pierre Timbaud",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386642719,
+          48.689456395
+        ]
+      },
+      "properties": {
+        "name": "Pont de la Première-Armée-Française D931 / Rue Jean Danaux D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373234724,
+          48.686341657
+        ]
+      },
+      "properties": {
+        "name": "Pont des Belles Fontaines N7 / Allée de Thale",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373030051,
+          48.686425778
+        ]
+      },
+      "properties": {
+        "name": "Pont des Belles Fontaines N7 / Avenue de la Cour de France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373238033,
+          48.686256339
+        ]
+      },
+      "properties": {
+        "name": "Pont des Belles Fontaines N7 / Avenue du Général de Gaulle N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373120951,
+          48.686363139
+        ]
+      },
+      "properties": {
+        "name": "Pont des Belles Fontaines N7 / L'Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382037105,
+          48.691766418
+        ]
+      },
+      "properties": {
+        "name": "Pont Supérieur SNCF D29 / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385233632,
+          48.685603389
+        ]
+      },
+      "properties": {
+        "name": "Quai Gambetta / Allée Pierre Dac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.384909994,
+          48.683694744
+        ]
+      },
+      "properties": {
+        "name": "Quai Gambetta / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387005038,
+          48.68931715
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Pont de la Première-Armée-Française D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.388906902,
+          48.692199999
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Quai de l'Industrie",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386675771,
+          48.688771809
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Quai Gambetta",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3875093,
+          48.690142751
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Rue des Montains",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386933786,
+          48.689229749
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Rue Jean Danaux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.388432902,
+          48.691528034
+        ]
+      },
+      "properties": {
+        "name": "Quai Jean Pierre Timbaud / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382935373,
+          48.689117222
+        ]
+      },
+      "properties": {
+        "name": "Rampe Condorcet / Pont Supérieur SNCF D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382948717,
+          48.689109094
+        ]
+      },
+      "properties": {
+        "name": "Rampe Condorcet / Rampe Monttessuy D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382544906,
+          48.688936681
+        ]
+      },
+      "properties": {
+        "name": "Rampe Condorcet / Rue Pierre Semard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381532535,
+          48.688159681
+        ]
+      },
+      "properties": {
+        "name": "Rampe Condorcet / Square du 19 Mars 1962",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382948402,
+          48.689117401
+        ]
+      },
+      "properties": {
+        "name": "Rampe Monttessuy D29 / Pont Supérieur SNCF D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.384697524,
+          48.688148497
+        ]
+      },
+      "properties": {
+        "name": "Rampe Monttessuy D29 / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379774009,
+          48.687628176
+        ]
+      },
+      "properties": {
+        "name": "Rue Adolphe Wurtz / Rue Bara",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375782646,
+          48.685944101
+        ]
+      },
+      "properties": {
+        "name": "Rue Adolphe Wurtz / Rue Jean-Jacques Rousseau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378026533,
+          48.686937998
+        ]
+      },
+      "properties": {
+        "name": "Rue Adolphe Wurtz / Rue Pasteur",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381095904,
+          48.688140881
+        ]
+      },
+      "properties": {
+        "name": "Rue Adolphe Wurtz / Rue Pierre Semard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381103824,
+          48.688134243
+        ]
+      },
+      "properties": {
+        "name": "Rue Adolphe Wurtz / Square du 19 Mars 1962",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361414506,
+          48.694514044
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Avenue de Juvisy Cottages",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360323544,
+          48.694626269
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Avenue de la Résistance",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.362581076,
+          48.694455775
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Avenue de la Solidarité",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363696721,
+          48.694386164
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Avenue de Paris Campagne",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366067215,
+          48.694235194
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366011525,
+          48.694202549
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360337988,
+          48.694568481
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Sarraut / Place Maurice Chevaux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371884554,
+          48.697683316
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Dumas / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372979879,
+          48.697474263
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Dumas / Avenue Édouard Thiers",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374699595,
+          48.69715499
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Dumas / Avenue Gounod",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374689146,
+          48.697151073
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Dumas / Boulevard de la Cascade",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374691159,
+          48.697164124
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Dumas / Rue Marcelle Henry",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371362037,
+          48.688603017
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Piver / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374864179,
+          48.690924606
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Piver / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374835799,
+          48.690953033
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Piver / Rue du Docteur Vinot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374836347,
+          48.690952498
+        ]
+      },
+      "properties": {
+        "name": "Rue Alexandre Piver / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36705809,
+          48.695246452
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse André / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371717874,
+          48.688773905
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Berthoux / Rue Alexandre Piver",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372855819,
+          48.688803218
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Berthoux / Rue Montenard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375272212,
+          48.684612294
+        ]
+      },
+      "properties": {
+        "name": "Rue Blazy / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375869465,
+          48.685221099
+        ]
+      },
+      "properties": {
+        "name": "Rue Blazy / Rue des Deux Communes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376305764,
+          48.685496242
+        ]
+      },
+      "properties": {
+        "name": "Rue Blazy / Rue Jean-Jacques Rousseau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378389405,
+          48.686473447
+        ]
+      },
+      "properties": {
+        "name": "Rue Blazy / Rue Pasteur",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379254454,
+          48.693361577
+        ]
+      },
+      "properties": {
+        "name": "Rue Branly / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358332178,
+          48.69400721
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins / Avenue Camille Desmoulins",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35892906,
+          48.694648373
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371398338,
+          48.695165119
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373230209,
+          48.693124997
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Avenue Raspail",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374868723,
+          48.690932744
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374830719,
+          48.690954247
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Rue Alexandre Piver",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373065695,
+          48.693235524
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Rue de l'Observatoire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374843198,
+          48.690982156
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Rue du Docteur Vinot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374842097,
+          48.690958368
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374045829,
+          48.691915938
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Flammarion / Urgences",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377999289,
+          48.690956399
+        ]
+      },
+      "properties": {
+        "name": "Rue Carnot / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378044887,
+          48.691000517
+        ]
+      },
+      "properties": {
+        "name": "Rue Carnot / Rue Victor Hugo",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371438452,
+          48.696063843
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Legendre / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369304266,
+          48.69671537
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Legendre / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3714696,
+          48.695635101
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Bernard / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.372520099,
+          48.695445493
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Bernard / Avenue Édouard Thiers",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359258765,
+          48.696359789
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Debussy / Avenue des Violettes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.357471457,
+          48.694758381
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Debussy / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.357340048,
+          48.695134108
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Debussy / Rue Gabriel Fauré",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380867503,
+          48.684555806
+        ]
+      },
+      "properties": {
+        "name": "Rue Condorcet / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381115941,
+          48.694932065
+        ]
+      },
+      "properties": {
+        "name": "Rue Corvisart / Rue de la Paix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379197124,
+          48.689268644
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bir Hakeim / Avenue Marceau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38252492,
+          48.683934096
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon D931 / Boulevard Meder",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382262994,
+          48.683978278
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon D931 / Livraisons",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.384896995,
+          48.683692371
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon D931 / Quai Gambetta D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382533829,
+          48.683973767
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon D931 / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383084602,
+          48.683734781
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon D931 / Square du Port aux Dames",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386655451,
+          48.688765949
+        ]
+      },
+      "properties": {
+        "name": "Rue de Draveil / Quai Gambetta",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386671412,
+          48.688777626
+        ]
+      },
+      "properties": {
+        "name": "Rue de Draveil / Quai Jean Pierre Timbaud",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385165991,
+          48.688980249
+        ]
+      },
+      "properties": {
+        "name": "Rue de Draveil / Rue Jean Danaux D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385142327,
+          48.688967417
+        ]
+      },
+      "properties": {
+        "name": "Rue de Draveil / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364301764,
+          48.697645537
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fromenteau / Avenue de Juvisy Cottages",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371288293,
+          48.695322961
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fromenteau / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363666613,
+          48.69810203
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fromenteau / Avenue de la Résistance",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.368369274,
+          48.696168529
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fromenteau / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382132847,
+          48.692028914
+        ]
+      },
+      "properties": {
+        "name": "Rue de Juvisy / Avenue Voltaire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382139209,
+          48.692019098
+        ]
+      },
+      "properties": {
+        "name": "Rue de Juvisy / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382164445,
+          48.686714795
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue Jean Argeliès",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383715541,
+          48.686268699
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370904097,
+          48.69285164
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Observatoire / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377282503,
+          48.687809317
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fronde / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37684615,
+          48.687396616
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fronde / Rue des Prés",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364764106,
+          48.698128384
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Voie Verte / Avenue de Juvisy Cottages",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359915782,
+          48.699618976
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Voie Verte / Rue de la Concorde",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383759413,
+          48.685266979
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Allée Pierre Dac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38508179,
+          48.684894288
+        ]
+      },
+      "properties": {
+        "name": "Rue de Seine / Quai Gambetta",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366715324,
+          48.69172426
+        ]
+      },
+      "properties": {
+        "name": "Rue des Acacias / Rue Paul Doumer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364160567,
+          48.692346592
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cailles / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3666995,
+          48.691727299
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cailles / Rue des Acacias",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.365467414,
+          48.692025175
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cailles / Rue Gaston Meunier",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366682145,
+          48.691730625
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cailles / Rue Paul Doumer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369901252,
+          48.69470115
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Rue Frédéric Merlet",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369493887,
+          48.693220373
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Rue Petit",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381161523,
+          48.689263374
+        ]
+      },
+      "properties": {
+        "name": "Rue des Gaulois / Avenue Kléber",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382162645,
+          48.692064901
+        ]
+      },
+      "properties": {
+        "name": "Rue des Gaulois / Rue de Juvisy",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381751236,
+          48.690380271
+        ]
+      },
+      "properties": {
+        "name": "Rue des Gaulois D29 / Voie tramway",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385675971,
+          48.690736309
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Allée Jean Fourest",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387502165,
+          48.690131845
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Quai Jean Pierre Timbaud",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385678965,
+          48.690707695
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Rue George Sand",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385263221,
+          48.690882832
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Rue Georges Jacques Danton",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386302742,
+          48.690465749
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Rue Jean Danaux D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38639395,
+          48.690452872
+        ]
+      },
+      "properties": {
+        "name": "Rue des Montains / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375667382,
+          48.687910859
+        ]
+      },
+      "properties": {
+        "name": "Rue des Prés / Rue Jules Ferry",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375590367,
+          48.692252177
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vinot / Avenue de la Terrasse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375895376,
+          48.692259799
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vinot / Avenue Honoré d'Estienne d'Orves",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374877803,
+          48.690934512
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vinot / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375229763,
+          48.691146716
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vinot / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37742666,
+          48.688261644
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lieutenant Legourd / Avenue de la République",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378307189,
+          48.687990823
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lieutenant Legourd / Rue de Bir Hakeim",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378915538,
+          48.687782926
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lieutenant Legourd / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376777207,
+          48.689980836
+        ]
+      },
+      "properties": {
+        "name": "Rue Du Marché / Allée Jean Lurçat",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376170137,
+          48.690088658
+        ]
+      },
+      "properties": {
+        "name": "Rue Du Marché / Allée Jean Olivier Nicolas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380842,
+          48.694004532
+        ]
+      },
+      "properties": {
+        "name": "Rue du Miroir / Rue de la Paix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354852673,
+          48.69707601
+        ]
+      },
+      "properties": {
+        "name": "Rue Erik Satie / Rue des Palombes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354799637,
+          48.697063823
+        ]
+      },
+      "properties": {
+        "name": "Rue Erik Satie / Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371106206,
+          48.694440316
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Merlet / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.367268236,
+          48.695477963
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Merlet / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.369455628,
+          48.694817147
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Merlet / Rue Alphonse André",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355629084,
+          48.695552052
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Fauré / Rue des Palombes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355580388,
+          48.695547852
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Fauré / Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360835808,
+          48.699162768
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Bocquillon / Avenue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.360857234,
+          48.69923346
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Bocquillon / Rue de la Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364984396,
+          48.691496402
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Meunier / Rue Joseph Dessent",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.365964531,
+          48.692661435
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Meunier / Rue Louis Le Baux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385678548,
+          48.690723365
+        ]
+      },
+      "properties": {
+        "name": "Rue George Sand / Allée Jean Fourest",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.384348866,
+          48.689107578
+        ]
+      },
+      "properties": {
+        "name": "Rue George Sand / Rue de Draveil",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383772523,
+          48.689192375
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Jacques Danton / Rue de Draveil",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36889354,
+          48.688523439
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Risler / Avenue de Savigny",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.368841801,
+          48.688490069
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Risler / Cité Passage du Panorama",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.388177005,
+          48.692443198
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tillion / Rue La Roselys",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387646427,
+          48.691765974
+        ]
+      },
+      "properties": {
+        "name": "Rue Germaine Tillion / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363972204,
+          48.695870042
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Avenue de la Solidarité",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364634819,
+          48.695386299
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Avenue de Paris Campagne",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366067878,
+          48.694254614
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366064568,
+          48.694234068
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366011876,
+          48.694252441
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Barbusse / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363771773,
+          48.69207277
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Rouelle / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364994203,
+          48.691506086
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Rouelle / Rue Gaston Meunier",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36497452,
+          48.691487545
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Rouelle / Rue Joseph Dessent",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366193734,
+          48.690956737
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Rouelle / Rue Paul Doumer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38108918,
+          48.688127411
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Adolphe Wurtz",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380479446,
+          48.686932493
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Bara",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.379005466,
+          48.685800931
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Pasteur",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381103866,
+          48.688134403
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Pierre Semard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381113321,
+          48.688120486
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Square du 19 Mars 1962",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382813211,
+          48.684453649
+        ]
+      },
+      "properties": {
+        "name": "Rue Horace Vernet / Rue Monttessuy D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383335488,
+          48.688873472
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Argeliès / Rampe Monttessuy D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381656405,
+          48.684362164
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Argeliès / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38375646,
+          48.689185045
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Argeliès / Rue de Draveil",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38375557,
+          48.689186655
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Argeliès / Rue Georges Jacques Danton",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381728359,
+          48.684757384
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Argeliès / Rue Horace Vernet",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.363058979,
+          48.691576403
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bouyer / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364396122,
+          48.690947721
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bouyer / Rue Henri Dessent",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364406274,
+          48.69095792
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bouyer / Rue Joseph Dessent",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38640722,
+          48.689543189
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Danaux D931 / Pont de la 1re Armée Française D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386959988,
+          48.689271315
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Danaux / Quai Jean Pierre Timbaud",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38511252,
+          48.688978723
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Danaux D931 / Rue de Draveil",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386318279,
+          48.690460039
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Danaux D931 / Rue des Montains",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38636022,
+          48.690453215
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Danaux D931 / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376324825,
+          48.685495435
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Jacques Rousseau / Rue Blazy",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38663304,
+          48.691435635
+        ]
+      },
+      "properties": {
+        "name": "Rue Jorge Semprun / Dépose minute",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386106912,
+          48.691641038
+        ]
+      },
+      "properties": {
+        "name": "Rue Jorge Semprun / Rue Georges Jacques Danton",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387204941,
+          48.691247482
+        ]
+      },
+      "properties": {
+        "name": "Rue Jorge Semprun / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364421161,
+          48.690950741
+        ]
+      },
+      "properties": {
+        "name": "Rue Joseph Dessent / Rue Jean Bouyer",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373898615,
+          48.6876067
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules César / L'Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.373507384,
+          48.688441782
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules César / Rue Vercingétorix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374139178,
+          48.686190189
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Chemin des Écoliers",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376576023,
+          48.688637001
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36399365,
+          48.695907751
+        ]
+      },
+      "properties": {
+        "name": "Rue Lacroix / Avenue de la Solidarité",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364930231,
+          48.695697659
+        ]
+      },
+      "properties": {
+        "name": "Rue Lacroix / Avenue de Paris Campagne",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366828026,
+          48.695058065
+        ]
+      },
+      "properties": {
+        "name": "Rue Lacroix / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364098329,
+          48.695887227
+        ]
+      },
+      "properties": {
+        "name": "Rue Lacroix / Rue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374503898,
+          48.688526531
+        ]
+      },
+      "properties": {
+        "name": "Rue Larigaldie / Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375653196,
+          48.687916995
+        ]
+      },
+      "properties": {
+        "name": "Rue Larigaldie / Rue des Prés",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375638085,
+          48.687923405
+        ]
+      },
+      "properties": {
+        "name": "Rue Larigaldie / Rue Jules Ferry",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.367084496,
+          48.692382993
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Le Baux / Allée du Plateau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364845149,
+          48.692948037
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Le Baux / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37621722,
+          48.691281403
+        ]
+      },
+      "properties": {
+        "name": "Rue Maréchal Juin / Allée Jean Moulin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374903833,
+          48.690925995
+        ]
+      },
+      "properties": {
+        "name": "Rue Maréchal Juin / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37508055,
+          48.691080636
+        ]
+      },
+      "properties": {
+        "name": "Rue Maréchal Juin / Rue du Docteur Vinot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.365549083,
+          48.69635308
+        ]
+      },
+      "properties": {
+        "name": "Rue Merot / Avenue de Paris Campagne",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36748929,
+          48.695687347
+        ]
+      },
+      "properties": {
+        "name": "Rue Merot / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375545542,
+          48.689905837
+        ]
+      },
+      "properties": {
+        "name": "Rue Montenard / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374131988,
+          48.688742603
+        ]
+      },
+      "properties": {
+        "name": "Rue Montenard / Rue Vercingétorix",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383602521,
+          48.685964345
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Allée Pierre Dac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382542958,
+          48.683979442
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Boulevard Meder",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.382537706,
+          48.683967542
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Rue de Châtillon D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385095135,
+          48.688966643
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Rue de Draveil",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.383272753,
+          48.685318352
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Rue de Seine",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.385139124,
+          48.688971092
+        ]
+      },
+      "properties": {
+        "name": "Rue Monttessuy D931 / Rue Jean Danaux D931",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.371637216,
+          48.697070145
+        ]
+      },
+      "properties": {
+        "name": "Rue Nouvelle / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370223168,
+          48.697222685
+        ]
+      },
+      "properties": {
+        "name": "Rue Nouvelle / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370238822,
+          48.697242453
+        ]
+      },
+      "properties": {
+        "name": "Rue Nouvelle / Rue de la Solidarité",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380179105,
+          48.684377492
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Achille Robelti",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377854176,
+          48.6871669
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue des Gaulois",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.380192049,
+          48.684377949
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue Victor Basch D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.367100373,
+          48.692378242
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Allée du Plateau",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366423343,
+          48.691271565
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Avenue de l'Union",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36706851,
+          48.692386621
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue Louis Le Baux",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36604248,
+          48.690650103
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue Messidor",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.367845276,
+          48.693637301
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue Petit",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376841101,
+          48.689950039
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Allée Jean Lurçat",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37630673,
+          48.68958758
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Allée Jean Olivier Nicolas",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375915656,
+          48.689486958
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Grande Rue",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375985254,
+          48.689544797
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Orge",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.375906005,
+          48.689485694
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Place Anatole France",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.376925192,
+          48.689925791
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Marais / Rue Du Marché",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.370828582,
+          48.692886755
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Avenue de la Cour de France N7",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366083683,
+          48.69423697
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Avenue Gabriel Péri D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366071505,
+          48.69422696
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Boulevard Aristide Briand D25",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366068186,
+          48.694233644
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Rue Albert Sarraut",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37087898,
+          48.692859066
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Rue de l'Observatoire",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366948048,
+          48.69392962
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Rue Gaston Meunier",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36606866,
+          48.694234358
+        ]
+      },
+      "properties": {
+        "name": "Rue Petit / Rue Henri Barbusse",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355186352,
+          48.696420706
+        ]
+      },
+      "properties": {
+        "name": "rue Sidney BECHET / Rue des Palombes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355538687,
+          48.697172546
+        ]
+      },
+      "properties": {
+        "name": "Rue Sidney Bechet / Rue Erik Satie",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355140087,
+          48.696410042
+        ]
+      },
+      "properties": {
+        "name": "rue Sidney BECHET / Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.386588967,
+          48.692078328
+        ]
+      },
+      "properties": {
+        "name": "Rue Sophie et Hans Scholl / Rue Georges Jacques Danton",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.387630544,
+          48.69177061
+        ]
+      },
+      "properties": {
+        "name": "Rue Sophie et Hans Scholl / Rue Germaine Tillion",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.38761991,
+          48.691760366
+        ]
+      },
+      "properties": {
+        "name": "Rue Sophie et Hans Scholl / Rue Lucie Aubrac",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37768678,
+          48.690519238
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Allée Jean Lurçat",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377633169,
+          48.688593395
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Avenue de la République",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.378373289,
+          48.691560803
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Avenue du Général de Gaulle D29",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37800783,
+          48.690950122
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Carnot",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377958638,
+          48.690912174
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Maréchal Juin",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.377419384,
+          48.690171325
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Hugo / Rue Paul Marais",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.381107989,
+          48.688135811
+        ]
+      },
+      "properties": {
+        "name": "Square du 19 Mars 1962 / Rue Pierre Semard",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.374038706,
+          48.691935001
+        ]
+      },
+      "properties": {
+        "name": "Urgences / Rue Camille Flammarion",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355440441,
+          48.695930387
+        ]
+      },
+      "properties": {
+        "name": "Voie Edgard Varèse / Rue des Palombes",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.355391969,
+          48.695918939
+        ]
+      },
+      "properties": {
+        "name": "Voie Edgard Varèse / Voie Verte",
+        "context": "Juvisy-sur-Orge, Essonne",
+        "citycode": "91326",
+        "depcode": "91"
+      }
+    }
+  ]
+}

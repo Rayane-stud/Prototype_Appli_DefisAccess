@@ -986,7 +986,7 @@ if generate_btn and ready:
     status   = st.empty()
 
     try:
-        # ── Étape 1 — Chargement des intersections ────────────────────
+        # ── Etape 1 — Chargement des intersections ────────────────────
         status.info("**Étape 1/6** — Chargement et nettoyage des intersections…")
         progress.progress(8)
 

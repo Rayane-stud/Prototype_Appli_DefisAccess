@@ -1119,7 +1119,10 @@ def _choisir_categories_osm() -> list[dict]:
 
     print("\n  Entrez les numéros séparés par des virgules  (ex: 1,4,7)")
     print("  ou appuyez sur Entrée pour toutes les inclure.")
-    choix = input("\n  Votre sélection : ").strip()
+    #choix = input("\n  Votre sélection : ").strip()
+
+    '''ATTENTION CHANGEMENT PROVISOIR PCQ FLEMME DE TOUT CHANGER'''
+    choix = None
 
     if not choix:
         print("  → Toutes les catégories OSM seront incluses.\n")
@@ -1266,3 +1269,58 @@ if __name__ == "__main__":
 
 
 
+def construire_dataframe_PM_sans_input(ville: str, categories_osm: list[dict] | None = None) -> pd.DataFrame:
+    """
+    Identique à construire_dataframe_PM(), mais sans aucun appel à input().
+    categories_osm : liste de catégories OSM déjà choisies via l'interface graphique
+                      (ex: cases cochées en Streamlit), au format
+                      [{"type": "gare", "osm_filters": '["railway"="station"]'}, ...].
+                      None ou [] = toutes les catégories de CATEGORIES_OSM_DISPONIBLES.
+    """
+    print(f"\n=== Construction du DataFrame PM pour '{ville}' (mode interface) ===\n")
+
+    code_insee = get_code_insee_api(ville)
+    if code_insee is None:
+        print(" Impossible de continuer sans code INSEE valide.")
+        return pd.DataFrame()
+
+    osm_area_id = get_osm_area_id(ville)
+    if osm_area_id is None:
+        print("  osm_area_id non trouvé, la recherche OSM sera ignorée.")
+
+    tous_les_pm = []
+
+    tous_les_pm.extend(get_ecoles_gouv(code_insee))
+    tous_les_pm.extend(get_equipements_gouv(code_insee))
+    tous_les_pm.extend(get_commissariats_service_public(code_insee))
+    tous_les_pm.extend(get_gares_sncf(ville))
+
+    base_dir_finess = Path(__file__).parent.parent
+    etablissements_sante = get_etablissements_finess(code_insee, base_dir_finess)
+    tous_les_pm.extend(etablissements_sante)
+
+    if osm_area_id:
+        # Pas d'input ici : on utilise directement ce qui a été coché dans l'interface
+        categories_choisies = categories_osm if categories_osm else [
+            {"type": c["type"], "osm_filters": c["osm_filters"]} for c in CATEGORIES_OSM_DISPONIBLES
+        ]
+        if not etablissements_sante:
+            print("   FINESS indisponible — recherche hôpitaux/cliniques via OSM (fallback)...")
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies,
+                                   categories_supplementaires=CATEGORIES_OSM_SANTE_FALLBACK)
+        else:
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies)
+        tous_les_pm.extend(lieux_osm)
+
+    tous_les_pm = dedoublonner_par_coordonnees(tous_les_pm)
+
+    df = pd.DataFrame(tous_les_pm, columns=["nom", "type", "source", "latitude", "longitude"])
+    if df.empty:
+        print(" Aucun PM trouvé pour cette commune.")
+        return df
+
+    df["coordonnees"] = df["latitude"].astype(str) + ", " + df["longitude"].astype(str)
+    df = df.sort_values(["type", "nom"]).reset_index(drop=True)
+
+    print(f"\n {len(df)} PM au total pour {ville}")
+    return df

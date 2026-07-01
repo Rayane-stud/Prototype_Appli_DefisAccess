@@ -1326,60 +1326,48 @@ def construire_dataframe_PM_sans_input(ville: str, categories_osm: list[dict] | 
     return df
 
 
-def construire_dataframe_PM2(ville_cible, categories_filtrees=None):
-    """
-    Version 2 de la génération des Points d'Intérêt (PM) avec filtrage
-    thématique à la source et nettoyage des colonnes pour le pipeline terrain.
     
-    :param ville_cible: Nom de la commune (ex: "Garches")
-    :param categories_filtrees: Liste des catégories sélectionnées dans l'interface.
-                                Si None ou vide, toutes les catégories sont conservées.
+def construire_dataframe_PM2(ville, categories_filtrees=None):
+    """
+    Version 2 de la génération des Points d'Intérêt (PM).
+    Appelle la fonction d'origine pour tout récupérer, puis filtre le résultat
+    en fonction des cases cochées dans l'interface Streamlit.
     """
     import pandas as pd
-    print(f"[PM2] Lancement de la génération filtrée pour : {ville_cible}")
-    
-    # 1. On appelle ta fonction d'origine pour récupérer le gros DataFrame brut unifié
-    df_global = construire_dataframe_PM(ville_cible)
-    
+    print(f"\n[PM2] Lancement de la génération pour : {ville}")
+    print(f"[PM2] Filtres cochés dans l'interface : {categories_filtrees}")
+
+    # 1. Si aucune case n'est cochée, on s'arrête tout de suite
+    if not categories_filtrees:
+        print("[PM2] Aucune catégorie sélectionnée.")
+        return pd.DataFrame()
+
+    # 2. On appelle TA fonction d'origine complète qui marche parfaitement
+    df_global = construire_dataframe_PM(ville)
+
     if df_global.empty:
-        print("[PM2] Attention : Le DataFrame brut renvoyé est vide.")
+        print("[PM2] Le tableau brut récupéré est vide.")
         return df_global
 
-    # 2. Normalisation ou création d'une colonne de catégorie claire
-    # Si ton script d'origine n'a pas de colonne 'categorie', on la déduit de la 'source' ou du 'type'
-    if 'categorie' not in df_global.columns:
-        if 'source' in df_global.columns:
-            df_global['categorie'] = df_global['source']
-        elif 'type' in df_global.columns:
-            df_global['categorie'] = df_global['type']
-        else:
-            # Fallback si aucune colonne de type n'est trouvée
-            df_global['categorie'] = "Autre POI"
+    # 3. On applique le filtre sur la colonne 'source' (ou 'categorie')
+    # On crée une correspondance entre le nom de ta case à cocher et le texte dans la colonne 'source'
+    filtre_sources = []
+    if "Mairie" in categories_filtrees:
+        filtre_sources.extend(["DataGouv_Mairie", "ServicePublic_Commissariat"])
+    if "Écoles" in categories_filtrees:
+        filtre_sources.append("DataEducation_Ecoles")
+    if "Pharmacies" in categories_filtrees:
+        filtre_sources.append("FINESS")
+    if "Supermarchés" in categories_filtrees:
+        filtre_sources.extend(["Supermarché / Commerce", "Marché"])
+    if "Administrations" in categories_filtrees:
+        filtre_sources.extend(["Lieu de culte", "Parc / Jardin", "Gare_SNCF", "Gare SNCF"])
 
-    # 3. Application du filtre si l'utilisateur a fait un choix dans Streamlit
-    if categories_filtrees:
-        print(f"[PM2] Application du filtre. Catégories demandées : {categories_filtrees}")
-        # On ne garde que les lignes dont la catégorie est dans la liste
-        df_global = df_global[df_global['categorie'].isin(categories_filtrees)].reset_index(drop=True)
-    else:
-        print("[PM2] Aucun filtre spécifié, conservation de l'intégralité des lieux.")
+    # On applique le filtre strict sur le DataFrame
+    if 'source' in df_global.columns:
+        df_global = df_global[df_global['source'].isin(filtre_sources)].reset_index(drop=True)
+    elif 'categorie' in df_global.columns:
+        df_global = df_global[df_global['categorie'].isin(filtre_sources)].reset_index(drop=True)
 
-    # 4. Nettoyage de sécurité pour le pipeline de routage (lat/lon valides et colonnes requises)
-    colonnes_majeures = ['lieu', 'latitude', 'longitude', 'categorie']
-    for col in colonnes_majeures:
-        if col == 'lieu' and 'lieu' not in df_global.columns:
-            # Si 'lieu' n'existe pas, on prend le nom de l'établissement ou de la rue
-            for nom_col in ['nom', 'name', 'etablissement', 'intersection']:
-                if nom_col in df_global.columns:
-                    df_global['lieu'] = df_global[nom_col]
-                    break
-            else:
-                df_global['lieu'] = "Lieu sans nom"
-
-    # On s'assure que la latitude et la longitude sont bien au format numérique (float)
-    df_global['latitude'] = pd.to_numeric(df_global['latitude'], errors='coerce')
-    df_global['longitude'] = pd.to_numeric(df_global['longitude'], errors='coerce')
-    df_global = df_global.dropna(subset=['latitude', 'longitude']).reset_index(drop=True)
-
-    print(f"[PM2] Fin du filtrage. {len(df_global)} lieux conservés.")
+    print(f"[PM2] Filtrage terminé : {len(df_global)} lieux conservés.")
     return df_global

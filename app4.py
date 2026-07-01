@@ -28,6 +28,7 @@ from src.proximite import (
 )
 from src.routage import route_toutes_equipes
 from src.export import export_final_equipes
+from src.identification_PM import get_code_insee_api, get_equipements_gouv, construire_dataframe_PM2
 
 # ─────────────────────────────────────────────
 # 0. Configuration de la page
@@ -564,6 +565,18 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
             col_gen, col_reset = st.columns([3, 1])
             
             with col_gen:
+                # ── LISTE DES CATÉGORIES DISPONIBLES ──────────────────────────────────────────
+                LISTE_CATEGORIES = ["Écoles", "Mairie", "Supermarchés", "Pharmacies", "Administrations"] # À adapter selon tes données
+                
+                categories_choisies = st.multiselect(
+                    "Filtrer les types de lieux à récupérer :",
+                    options=LISTE_CATEGORIES,
+                    default=LISTE_CATEGORIES, # Tout coché par défaut
+                    help="Décochez les catégories que vous ne souhaitez pas inclure sur le terrain."
+                )
+
+                # On crée 2 colonnes pour organiser les boutons "Générer" et "Réinitialiser"
+                col_gen, col_reset = st.columns([3, 1])
                 # Le bouton principal pour lancer l'appel API sur Internet
                 generer_pm_btn = st.button(
                     "Générer les lieux",
@@ -610,7 +623,8 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
                     # On redirige les messages de la console vers notre afficheur personnalisé
                     with contextlib.redirect_stdout(logs_buffer):
                         # Lancement de la grosse fonction qui télécharge les données sur internet
-                        df_pm = construire_dataframe_PM(ville_cible)
+                        # Lancement de la nouvelle fonction PM2 avec les filtres de l'interface
+                        df_pm = construire_dataframe_PM2(ville_cible, categories_filtrees=categories_choisies)
 
                 # SI LE TÉLÉCHARGEMENT A RÉUSSI ET RENVOIE DES DONNÉES :
                 if not df_pm.empty:
@@ -987,7 +1001,7 @@ generate_btn = st.button(
 if generate_btn and ready:
     import pandas as pd
 
-    output_dir = Path("data/output")
+    output_dir = Path("data/output/fiches_equipes")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     progress = st.progress(0, text="Initialisation…")

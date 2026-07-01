@@ -11,7 +11,6 @@ import proximite
 import export
 import  identification_PM
 import identification_PP as pp
-import IA_PP
 import telecharger_intersections
 import numpy as np
 

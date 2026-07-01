@@ -10,6 +10,7 @@ import routage
 import proximite
 import export
 import  identification_PM
+import identification_PP as pp
 import IA_PP
 import telecharger_intersections
 import numpy as np
@@ -93,20 +94,10 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     # ── Calcul de proximité et assignation aux équipes ─────────────────
     tab_croisement = proximite.assigner_equipes(
-        #on rajoute pp ici
-            proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)),nb_equipes, rdv_lat, rdv_long)
+        pp.main(ville,
+        proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)))
+        ,nb_equipes, rdv_lat, rdv_long)
 
-    # ── Détection des passages piétons par YOLO ────────────────────────
-    # on construit le chemin du dossier de sauvegarde des images annotées
-    # le nom inclut la ville et la date au format français pour retrouver facilement l'analyse
-    dossier_images = str(
-        BASE_DIR / "data" / "raw" / "images_pp" / f"images_{ville}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
-    )
-    # YOLO analyse chaque intersection et sauvegarde les images avec les bounding boxes dans le dossier
-    # la colonne nb_traversees est ajoutée au tableau avec le nombre de passages piétons détectés
-    tab_croisement = IA_PP.analyser_toutes_intersections(
-        tab_croisement, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
-    )
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)

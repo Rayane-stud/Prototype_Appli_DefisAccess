@@ -129,9 +129,13 @@ def _normaliser(texte: str) -> str:
 
 def _rmtree_force(path):
     # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
+    # Si un fichier est verrouillé (ouvert dans Excel), on l'ignore avec un avertissement
     def _on_error(func, p, _):
-        os.chmod(p, 0o777)
-        func(p)
+        try:
+            os.chmod(p, 0o777)
+            func(p)
+        except PermissionError:
+            print(f"  Avertissement : impossible de supprimer '{Path(p).name}' (fichier ouvert). Fermez Excel et relancez pour nettoyer.")
     shutil.rmtree(path, onerror=_on_error)
 
 

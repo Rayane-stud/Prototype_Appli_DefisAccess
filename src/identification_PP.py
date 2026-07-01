@@ -190,13 +190,12 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
 
     print(f" {len(intersections_brutes)} intersections trouvées.")
 
-
-    #faire la fusion des intersections proches
+    """ 
+    #faire la fusion des intersections proches (faites plus tôt dans le main donc inutiles ici)
     df_intersections_brutes = pd.DataFrame(intersections_brutes)
     df_intersections_brutes = fusion_croisement(df_intersections_brutes)
-
     intersections_brutes = df_intersections_brutes.to_dict("records")
-
+    """
 
     # --- REQUÊTE 2 : uniquement les passages piétons ---
     requete_passages = f"""

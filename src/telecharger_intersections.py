@@ -731,14 +731,18 @@ def charger_en_dataframe(chemin_geojson: str) -> pd.DataFrame:
     # demande à l'utilisateur quels types de voies il veut garder
 
     if types_voies:
-        pattern = "|".join(types_voies)
-        # construit une expression de recherche : "Avenue|Boulevard|Route"
-        df = df[df["intersection"].str.contains(pattern, case=False, na=False)]
-        # filtre les lignes dont le nom d'intersection contient au moins un des types choisis
-        # case=False : insensible à la casse (Avenue = avenue)
-        # na=False : les valeurs manquantes ne passent pas le filtre
+        import re
+        types_pattern = [re.compile(r'\b' + re.escape(t) + r'\b', re.IGNORECASE) for t in types_voies]
+
+        def compter_segments_matchants(nom):
+            segments = [s.strip() for s in nom.split("/")]
+            return sum(
+                any(p.search(segment) for p in types_pattern)
+                for segment in segments
+            )
+
+        df = df[df["intersection"].apply(compter_segments_matchants) >= 2]
         df = df.reset_index(drop=True)
-        # remet les index à zéro après le filtrage
         print(f"  {len(df)} intersections après filtrage par type de voie.")
 
     return df
@@ -816,9 +820,18 @@ def charger_en_dataframe_sans_input(
     # Déduplication géographique
     df = df.drop_duplicates(subset=["longitude", "latitude"]).reset_index(drop=True)
 
-    # Filtre types de voies (optionnel)
+    # Filtre types de voies (optionnel) ??????? comment ca optionnel ???????????
     if types_voies:
-        pattern = "|".join(types_voies)
-        df = df[df["intersection"].str.contains(pattern, case=False, na=False)].reset_index(drop=True)
+        import re
+        types_pattern = [re.compile(r'\b' + re.escape(t) + r'\b', re.IGNORECASE) for t in types_voies]
+
+        def compter_segments_matchants(nom):
+            segments = [s.strip() for s in nom.split("/")]
+            return sum(
+                any(p.search(segment) for p in types_pattern)
+                for segment in segments
+            )
+
+        df = df[df["intersection"].apply(compter_segments_matchants) >= 2].reset_index(drop=True)
 
     return df

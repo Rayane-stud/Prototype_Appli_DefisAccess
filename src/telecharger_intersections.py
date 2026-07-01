@@ -816,7 +816,7 @@ def charger_en_dataframe_sans_input(
     # Déduplication géographique
     df = df.drop_duplicates(subset=["longitude", "latitude"]).reset_index(drop=True)
 
-    # Filtre types de voies (optionnel)
+    # Filtre types de voies (optionnel) ??????? comment ca optionnel ???????????
     if types_voies:
         pattern = "|".join(types_voies)
         df = df[df["intersection"].str.contains(pattern, case=False, na=False)].reset_index(drop=True)

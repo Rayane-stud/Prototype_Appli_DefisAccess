@@ -189,7 +189,15 @@ with st.sidebar:
         if _lat_m is not None:
             st.session_state["mairie_lat"] = _lat_m
             st.session_state["mairie_lon"] = _lon_m
+
+            # AJOUT ICI : Mettre à jour directement l'état des inputs numériques
+            st.session_state["input_lat"] = _lat_m
+            st.session_state["input_lon"] = _lon_m
+
             st.success(f"Mairie trouvée : {_lat_m:.6f}, {_lon_m:.6f}")
+
+            # Forcer le re-calcul visuel de la page
+            st.rerun()
         else:
             st.warning("Mairie introuvable — saisissez les coordonnées manuellement.")
 

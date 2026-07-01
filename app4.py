@@ -987,7 +987,7 @@ generate_btn = st.button(
 if generate_btn and ready:
     import pandas as pd
 
-    output_dir = Path("data/output")
+    output_dir = Path("data/output/fiches_equipes")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     progress = st.progress(0, text="Initialisation…")

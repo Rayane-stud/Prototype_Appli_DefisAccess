@@ -102,6 +102,7 @@ import gzip
 import json
 import os
 import pandas as pd
+from pathlib import Path
 
 # URL du fichier GeoJSON compressé par département sur le serveur OpenStreetMap
 # {dept} sera remplacé par le numéro de département (ex: 94, 75, 2A, 971...)
@@ -118,8 +119,9 @@ BASE_URL_DATAGOUV = "https://www.data.gouv.fr/api/1/datasets/intersections-des-r
 GEO_API_URL = "https://geo.api.gouv.fr/communes"
 
 # Dossier local où seront sauvegardés les fichiers GeoJSON téléchargés
-# Il sera créé automatiquement s'il n'existe pas (voir sauvegarder())
-DOSSIER_SORTIE = "data/raw/intersections"
+# Chemin absolu calculé depuis l'emplacement de ce fichier (src/ → projet/ → data/raw/intersections/)
+# Garantit que le dossier est toujours créé au bon endroit quel que soit le répertoire de lancement
+DOSSIER_SORTIE = Path(__file__).parent.parent / "data" / "raw" / "intersections"
 
 # Types de voies disponibles pour le filtrage interactif
 # L'utilisateur pourra choisir lesquels conserver dans le DataFrame final
@@ -756,3 +758,67 @@ if __name__ == "__main__":
             print(df.head())
     else:
         print("Nom de ville vide.")
+
+
+
+
+
+
+# Ajoute charger_en_dataframe_sans_input() : version de charger_en_dataframe()
+# sans appel à input() ni choisir_types_voies(), compatible avec Streamlit.
+# Le filtre types de voies est passé directement en argument.
+# ─────────────────────────────────────────────────────────────────────────────
+
+def charger_en_dataframe_sans_input(
+    chemin_geojson: str,
+    types_voies: list[str] | None = None,
+) -> "pd.DataFrame":
+    """
+    Lit le fichier GeoJSON local et le convertit en DataFrame compatible
+    avec le pipeline DEFIACCESS — sans aucun appel à input() ni menu console.
+
+    Utilisée par app.py (Streamlit) à la place de charger_en_dataframe(),
+    qui nécessite une interaction console incompatible avec l'interface web.
+
+    Args:
+        chemin_geojson : Chemin vers le fichier .geojson local
+                         (ex: "intersections/intersections_92033.geojson").
+        types_voies    : Liste des types à conserver, ex. ["Rue", "Avenue"].
+                         [] ou None = pas de filtre, toutes les intersections.
+
+    Returns:
+        pd.DataFrame avec colonnes : latitude | longitude | intersection | Ville/Commune
+    """
+    import json
+    import pandas as pd
+
+    with open(chemin_geojson, encoding="utf-8") as f:
+        geojson = json.load(f)
+
+    lignes = []
+    for feat in geojson.get("features", []):
+        props  = feat.get("properties", {})
+        coords = feat.get("geometry", {}).get("coordinates", [])
+        if len(coords) < 2:
+            continue
+        lignes.append({
+            "longitude":     float(coords[0]),
+            "latitude":      float(coords[1]),
+            "intersection":  normaliser_nom_intersection(props.get("name", "")),
+            "Ville/Commune": props.get("context", ""),
+        })
+
+    df = pd.DataFrame(lignes)
+
+    if df.empty:
+        return df
+
+    # Déduplication géographique
+    df = df.drop_duplicates(subset=["longitude", "latitude"]).reset_index(drop=True)
+
+    # Filtre types de voies (optionnel)
+    if types_voies:
+        pattern = "|".join(types_voies)
+        df = df[df["intersection"].str.contains(pattern, case=False, na=False)].reset_index(drop=True)
+
+    return df

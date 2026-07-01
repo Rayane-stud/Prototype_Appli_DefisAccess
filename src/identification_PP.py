@@ -32,7 +32,7 @@ SERVEURS_OVERPASS = [
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
 ]
 
-DOSSIER_OUTPUT = "data/output"
+DOSSIER_OUTPUT = "data/output"  # valeur par défaut si aucun base_dir n'est fourni à main()
 
 
 """
@@ -241,14 +241,14 @@ node(way_cnt.routes_pertinentes:2-)->.toutes_les_intersections;
 
     return pd.DataFrame(intersections_brutes)
 #_____________________________ test répartition___________________________________
-def analyser_repartition_passages(nom_commune: str) -> None:
+def analyser_repartition_passages(nom_commune: str, dossier_output: str = DOSSIER_OUTPUT) -> None:
     """
     Charge le CSV d'une commune et affiche la répartition
     du nombre de passages piétons par intersection.
     """
     import os
 
-    nom_fichier = f"{DOSSIER_OUTPUT}/intersections_{nom_commune.lower()}_passages.csv"
+    nom_fichier = f"{dossier_output}/intersections_{nom_commune.lower()}_passages.csv"
 
     # --- Vérification que le fichier existe ---
     if not os.path.exists(nom_fichier):
@@ -522,58 +522,97 @@ def comparer_passages(inter_osm, inter_accident, rayon=5):
 # ──────────────────────────── Point d'entrée d'Exécution ────────────────────────
 
 
-def main(Ville, intersections):
-    
+def main(Ville, intersections, base_dir=None):
+    """
+    Identifie le nombre de passages piétons par intersection en combinant
+    deux méthodes :
+      - les accidents corporels impliquant un passage piéton (data.gouv)
+      - les passages piétons répertoriés sur OpenStreetMap (Overpass)
+
+    Arguments :
+        Ville        : nom de la commune traitée
+        intersections: DataFrame des intersections (colonnes latitude/longitude)
+        base_dir     : dossier racine du projet (contenant data/raw, data/output).
+                        Si None, on utilise les chemins relatifs par défaut
+                        (utile en exécution standalone depuis la racine du projet).
+
+    Retourne :
+        un DataFrame avec les colonnes latitude, longitude, nb_pp
+        (nombre de passages piétons identifiés), ou None en cas d'échec total.
+    """
+    from pathlib import Path
+
+    base_dir = Path(base_dir) if base_dir is not None else Path(".")
+    dossier_output = str(base_dir / "data" / "output")
+    path_accidents = str(
+        base_dir / "data" / "raw" / "source_pp"
+        / "accidents-corporels-de-la-circulation-routiere fichier entier.csv"
+    )
+
     # Exemple d'application sur une commune d'Île-de-France (ex: Nanterre ou Versailles)
     print(f"--- Démarrage du traitement pour la commune : {Ville} ---")
-    
+
     """
     CODE PP_ACCIDENTS:
     """
-    path="data/raw/source_pp/accidents-corporels-de-la-circulation-routiere fichier entier.csv"
-    tableau_accident = charger_accidents(path, Ville)
-    final_accident=comparer_coordonnees(tableau_accident, intersections)
-    
-    
+    final_accident = None
+    try:
+        tableau_accident = charger_accidents(path_accidents, Ville)
+        final_accident = comparer_coordonnees(tableau_accident, intersections)
+    except FileNotFoundError:
+        print(f" Fichier des accidents introuvable ({path_accidents}) — étape ignorée.")
+    except Exception as e:
+        print(f" Erreur lors du traitement des accidents : {e} — étape ignorée.")
+
     """
     CODE OSM :
     """
+    df_resultat = pd.DataFrame()
     # Étape 1 : Conversion Nom -> ID de Relation OSM (Surface)
     id_zone = get_osm_area_id(Ville)
-    
+
     if id_zone:
         # Étape 2 : Extraction et calcul topologique des passages par carrefour
         df_resultat = telecharger_passages_par_zone(id_zone, rayon_metres=25)
-        
+
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-            nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{Ville.lower()}_passages.csv"
+            Path(dossier_output).mkdir(parents=True, exist_ok=True)
+            nom_fichier_sortie = f"{dossier_output}/intersections_{Ville.lower()}_passages.csv"
             df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
-            
-            
+
             print(f"\n Traitement terminé avec succès !")
             print(f" Fichier sauvegardé sous : {nom_fichier_sortie}")
             print("\nAperçu des premières lignes générées :")
             print(df_resultat.head(10).to_string(index=False))
-            analyser_repartition_passages(Ville)
+            analyser_repartition_passages(Ville, dossier_output=dossier_output)
         else:
-            print(" Échec de la génération du tableau de données.")
+            print(" Échec de la génération du tableau de données OSM.")
     else:
-        print(" Impossible de poursuivre sans identifiant de zone valide.")
-    
-    df_xlsx = analyser_repartition_xlsx("data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx")
+        print(" Impossible de poursuivre sans identifiant de zone valide (OSM).")
 
     """
     CODE DE LIAISON DES 2 METHODES:
     """
-    df_final=trie_intersections(final_accident,df_resultat)
+    if final_accident is None and df_resultat.empty:
+        print(" Aucune des deux méthodes n'a produit de résultat exploitable.")
+        return None
+    if final_accident is None:
+        # Seule la méthode OSM a fonctionné
+        df_final = df_resultat.rename(columns={"nb_passages_pietons": "nb_pp"})[
+            ["latitude", "longitude", "nb_pp"]
+        ]
+    elif df_resultat.empty:
+        # Seule la méthode accidents a fonctionné
+        df_final = final_accident.rename(columns={"nb_pp": "nb_pp"})[
+            ["latitude", "longitude", "nb_pp"]
+        ]
+    else:
+        df_final = trie_intersections(final_accident, df_resultat)
 
     return df_final
 
 
 if __name__ == "__main__":
-    main()
-
-
-# concernant les test : 
-print(get_osm_area_id("Garches"))  
+    # Exemple d'utilisation en standalone (nécessite un DataFrame d'intersections déjà chargé)
+    print("Ce module est conçu pour être importé et appelé via main(ville, intersections, base_dir).")

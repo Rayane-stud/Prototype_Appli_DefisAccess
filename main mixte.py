@@ -10,9 +10,12 @@ import routage
 import proximite
 import export
 import  identification_PM
+import identification_PP
 import IA_PP
 import telecharger_intersections
 import numpy as np
+from scipy.spatial import cKDTree
+import math
 
 from pathlib import Path
 
@@ -24,6 +27,47 @@ from pathlib import Path
 RDV_LAT    = 48.8381857639848  # latitude du point de rendez-vous (coordonnées fictives)
 RDV_LONG   = 2.1865433360720927   # longitude du point de rendez-vous
 NB_EQUIPES = 5        # nombre d'équipes
+
+
+# ──────────────────────────────────────────────
+# FUSION DES RÉSULTATS identification_PP
+# ──────────────────────────────────────────────
+
+def ajouter_nb_pp(tab_croisement, df_pp, rayon_metres: float = 20):
+    """
+    Ajoute la colonne 'nb_pp' (nombre de passages piétons identifiés par la
+    méthode identification_PP : OSM + accidents corporels) au tableau des
+    intersections, en rapprochant chaque intersection du point de df_pp le
+    plus proche (à moins de `rayon_metres`).
+
+    Si df_pp est None ou vide, la colonne 'nb_pp' est simplement remplie à 0
+    (la méthode complémentaire n'aura pas fonctionné mais le pipeline
+    continue normalement).
+    """
+    tab_croisement = tab_croisement.copy()
+
+    if df_pp is None or df_pp.empty:
+        tab_croisement["nb_pp"] = 0
+        return tab_croisement
+
+    coords_pp = np.array([
+        [math.radians(lat), math.radians(lon)]
+        for lat, lon in zip(df_pp["latitude"], df_pp["longitude"])
+    ])
+    arbre = cKDTree(coords_pp)
+    rayon_radians = rayon_metres / 6371000
+
+    nb_pp_valeurs = []
+    for lat, lon in zip(tab_croisement["latitude"], tab_croisement["longitude"]):
+        point = [math.radians(lat), math.radians(lon)]
+        distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
+        if index < len(df_pp):
+            nb_pp_valeurs.append(int(df_pp.iloc[index]["nb_pp"]))
+        else:
+            nb_pp_valeurs.append(0)
+
+    tab_croisement["nb_pp"] = nb_pp_valeurs
+    return tab_croisement
 
 
 # ──────────────────────────────────────────────
@@ -108,6 +152,15 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         tab_croisement, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
     )
 
+    # ── Détection complémentaire des passages piétons (OSM + accidents) ─
+    # identification_PP croise les données OpenStreetMap et les accidents corporels
+    # impliquant un passage piéton pour estimer un nombre de passages piétons par
+    # intersection (colonne "nb_pp"), en complément de la détection YOLO ci-dessus
+    # (colonne "nb_traversees"). En cas d'échec (pas d'accès réseau, données
+    # manquantes, etc.), la colonne "nb_pp" est simplement remplie à 0.
+    df_pp = identification_PP.main(ville, tab_croisement, base_dir=BASE_DIR)
+    tab_croisement = ajouter_nb_pp(tab_croisement, df_pp)
+
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
     liste_chemins = export.export_final_equipes(
@@ -127,14 +180,23 @@ def _normaliser(texte: str) -> str:
     return texte.lower().replace("-", " ").replace("_", " ")
 
 
+def _rmtree_force(path):
+    # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
+    def _on_error(func, p, _):
+        os.chmod(p, 0o777)
+        func(p)
+    shutil.rmtree(path, onerror=_on_error)
+
+
 def nettoyer_anciennes_villes(base_dir: Path, garder: int = 2):
     """
-    Supprime les données (PM + images_pp) des villes les plus anciennes
-    quand le nombre de villes dépasse `garder`.
+    Supprime les données (PM + images_pp + fiches_equipes) des villes les plus
+    anciennes quand le nombre de villes dépasse `garder`.
     Le tri se fait par date de modification du fichier PM_{ville}.xlsx.
     """
     dossier_pm     = base_dir / "data" / "raw" / "PM"
     dossier_images = base_dir / "data" / "raw" / "images_pp"
+    dossier_fiches = base_dir / "data" / "output" / "fiches_equipes"
 
     if not dossier_pm.exists():
         return
@@ -152,12 +214,23 @@ def nettoyer_anciennes_villes(base_dir: Path, garder: int = 2):
         fichier.unlink()
         print(f"  Nettoyage — supprimé : {fichier.name}")
 
+        # images_pp : dossiers nommés "images_{ville}_{date}"
+        # _normaliser convertit les underscores en espaces, donc on compare
+        # "images garches 29 06 2026 14h30" avec le préfixe "images garches "
+        prefix_images = "images " + _normaliser(ville_ancienne) + " "
         if dossier_images.exists():
             for dossier in dossier_images.iterdir():
-                if dossier.is_dir() and _normaliser(dossier.name).startswith(
-                    "images_" + _normaliser(ville_ancienne) + "_"
-                ):
-                    shutil.rmtree(dossier)
+                if dossier.is_dir() and _normaliser(dossier.name).startswith(prefix_images):
+                    _rmtree_force(dossier)
+                    print(f"  Nettoyage — supprimé : {dossier.name}")
+
+        # fiches_equipes : dossiers nommés "{ville}_{horodatage}"
+        # ex. "Garches_20250625_143022" → normalisé "garches 20250625 143022"
+        prefix_fiches = _normaliser(ville_ancienne) + " "
+        if dossier_fiches.exists():
+            for dossier in dossier_fiches.iterdir():
+                if dossier.is_dir() and _normaliser(dossier.name).startswith(prefix_fiches):
+                    _rmtree_force(dossier)
                     print(f"  Nettoyage — supprimé : {dossier.name}")
 
 
@@ -198,7 +271,6 @@ if __name__ == "__main__":
             print()
 
         liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
-
         # None = ville non trouvée → message et on redemande
         if liste_chemins is None:
             print(f"\n La ville '{ville}' est introuvable.")

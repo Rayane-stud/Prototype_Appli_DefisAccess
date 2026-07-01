@@ -1,0 +1,8117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324870644,
+          48.776076868
+        ]
+      },
+      "properties": {
+        "name": "Allée Baudelaire / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333863214,
+          48.766251724
+        ]
+      },
+      "properties": {
+        "name": "Allée Bertrand Dauvin / Allée des Camélias",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33386995,
+          48.766302881
+        ]
+      },
+      "properties": {
+        "name": "Allée Bertrand Dauvin / Rue de Fresnes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345138159,
+          48.783219643
+        ]
+      },
+      "properties": {
+        "name": "Allée Claude Debussy / Avenue du Général de Gaulle D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328777706,
+          48.784000194
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Futaie / Allée des Troënes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354801372,
+          48.777800512
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Plaine / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329597838,
+          48.776261005
+        ]
+      },
+      "properties": {
+        "name": "Allée des Églantines / Sentier des Garennes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347194752,
+          48.777761405
+        ]
+      },
+      "properties": {
+        "name": "Allée des Pervenches / Allée des Violettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347206714,
+          48.778044964
+        ]
+      },
+      "properties": {
+        "name": "Allée des Pervenches / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329546167,
+          48.776058536
+        ]
+      },
+      "properties": {
+        "name": "Allée des Saules / Sentier des Garennes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343059078,
+          48.776373864
+        ]
+      },
+      "properties": {
+        "name": "Allée des Tilleuls / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328783737,
+          48.784024622
+        ]
+      },
+      "properties": {
+        "name": "Allée des Troënes / Allée de la Futaie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330908313,
+          48.784429764
+        ]
+      },
+      "properties": {
+        "name": "Allée des Troënes / Rue de Bretagne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331387789,
+          48.784403219
+        ]
+      },
+      "properties": {
+        "name": "Allée des Troënes / Rue de Normandie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331079167,
+          48.78441
+        ]
+      },
+      "properties": {
+        "name": "Allée des Troënes / Rue de Provence",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331790757,
+          48.784366351
+        ]
+      },
+      "properties": {
+        "name": "Allée des Troënes / Rue François Rude",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324153874,
+          48.776373534
+        ]
+      },
+      "properties": {
+        "name": "Allée du Parc de la Bièvre / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342908626,
+          48.775940882
+        ]
+      },
+      "properties": {
+        "name": "Allée du Stade / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335876523,
+          48.780035931
+        ]
+      },
+      "properties": {
+        "name": "Allée Mendès France / Rue des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336438334,
+          48.78130176
+        ]
+      },
+      "properties": {
+        "name": "Allée Mendès France / Sentier des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335305293,
+          48.779506242
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Allée des Polyanthas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333999153,
+          48.7834416
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Avenue Beauséjour",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335199423,
+          48.780077314
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Rue des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335546338,
+          48.778934081
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335428802,
+          48.779085245
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Ruelle de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334536657,
+          48.781156322
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Sentier des Mamies",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33516845,
+          48.780587488
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D254 / Voie des Saussaies",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34743506,
+          48.784675184
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D148 / Avenue du Général de Gaulle D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339162112,
+          48.783752103
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République D157 / Avenue Léon Blum D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348124404,
+          48.774821064
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Dahlias / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351897818,
+          48.777813872
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Dahlias / Rue des Lilas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35265284,
+          48.778000243
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Dahlias / Rue des Tulipes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351103028,
+          48.777444208
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Dahlias / Rue Jules Ferry",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345172771,
+          48.783201168
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148 / Allée Claude Debussy",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340231314,
+          48.780460609
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343214542,
+          48.782033293
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Avenue du Général de Gaulle D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346086636,
+          48.771730451
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D160 / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340269405,
+          48.78047877
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341190534,
+          48.780864834
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346879674,
+          48.771589402
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D160 / Impasse des Écoles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346693855,
+          48.771646825
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D160 / Lidl",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341998144,
+          48.781186289
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Résidence Pierre Tabanou",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339209105,
+          48.780042995
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Rue Dispan D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34037396,
+          48.780532768
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Rue du 19 Mars 1962",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339217491,
+          48.780058391
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D148B / Rue Gabriel Péri D255a",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345700088,
+          48.773848991
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D160 / A6a",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348248885,
+          48.771409166
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335865696,
+          48.773551388
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Avenue du Général De Gaulle / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344614414,
+          48.771970831
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Avenue du Général Leclerc / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330231929,
+          48.776042455
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Avenue Jules Gravereaux D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330234106,
+          48.776035179
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34690658,
+          48.771634779
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Impasse des Écoles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346711153,
+          48.77167715
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Lidl",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331421278,
+          48.774267294
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Rue de Chalais",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348774106,
+          48.771307851
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Rue de Verdun",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348075056,
+          48.77149895
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Rue des Marronniers",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329961104,
+          48.774913741
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / Sentier des Sureaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345696626,
+          48.771812416
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D160 / A6a",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342889201,
+          48.772270103
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc / Avenue du Général de Gaulle D160 / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333347352,
+          48.781389579
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dunois / Rue Bronzac",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326353365,
+          48.775414203
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326354321,
+          48.775410151
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319099476,
+          48.767202452
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Avenue Victor-Hugo",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323843494,
+          48.773377844
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Impasse Pierre de Ronsard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323860978,
+          48.773276666
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322287149,
+          48.770209443
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Ponton",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324979535,
+          48.774108484
+        ]
+      },
+      "properties": {
+        "name": "Avenue Flouquet D127 / Rue du Gué",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342861475,
+          48.788013025
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / Allée des Hautes Bruyères",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343287123,
+          48.789380432
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / Rue de la Concorde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341963755,
+          48.786152152
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / Rue des Saussaies D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341439864,
+          48.784430789
+        ]
+      },
+      "properties": {
+        "name": "Avenue Gabriel Péri D126 / Rue du Belvédère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331411311,
+          48.78068295
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327668835,
+          48.782093363
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33093695,
+          48.781285788
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / Avenue Savornin",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327754626,
+          48.782090655
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33141017,
+          48.780675397
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / Rue Albert 1er",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328768993,
+          48.781876946
+        ]
+      },
+      "properties": {
+        "name": "Avenue Hache / Rue des Épinettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32809768,
+          48.779482127
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326361477,
+          48.775418534
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327313466,
+          48.78037995
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327388754,
+          48.777629808
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Passage d'Orléans",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328034908,
+          48.779299484
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Rond-Point du Petit Robinson",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328032677,
+          48.778743512
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Rue Carmen",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32810088,
+          48.779345056
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327963515,
+          48.779311932
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Rue du Général Castelnau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327829464,
+          48.778252226
+        ]
+      },
+      "properties": {
+        "name": "Avenue Henri Barbusse D127 / Rue Vanel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330487037,
+          48.776129863
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jules Gravereaux D160 / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330467324,
+          48.776194158
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jules Gravereaux D160 / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331122263,
+          48.779140107
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jules Gravereaux D160 / Rue Albert 1er",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331291489,
+          48.779089519
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jules Gravereaux D160 / Rue de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330793951,
+          48.777336964
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jules Gravereaux D160 / Sentier des Garennes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324819531,
+          48.776106067
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Allée Baudelaire",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329591592,
+          48.775830435
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Allée des Saules",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33033618,
+          48.776070037
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326331841,
+          48.775439647
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330316347,
+          48.77615357
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Avenue Jules Gravereaux D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32576073,
+          48.775650011
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328280612,
+          48.775339106
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Rue du Gué",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333938201,
+          48.777834499
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Rue Jean Jaurès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329842314,
+          48.77593599
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Sentier des Garennes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328771702,
+          48.775484845
+        ]
+      },
+      "properties": {
+        "name": "Avenue Larroumès D148 / Sentier des Sureaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327955776,
+          48.780205974
+        ]
+      },
+      "properties": {
+        "name": "Avenue Savornin / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328973454,
+          48.78056374
+        ]
+      },
+      "properties": {
+        "name": "Avenue Savornin / Rue des Épinettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31907607,
+          48.767160611
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor-Hugo / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318845438,
+          48.767265695
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor-Hugo / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340352657,
+          48.779887666
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34024906,
+          48.780510283
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Avenue du Général de Gaulle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341031765,
+          48.779722666
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341804468,
+          48.778764856
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Rue de l'Avenir",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342001936,
+          48.778258998
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336583355,
+          48.78250738
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Sentier des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338185231,
+          48.781806926
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Voie des Frettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336018864,
+          48.78275298
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Voie des Saussaies",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341215791,
+          48.780899076
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Avenue du Général de Gaulle D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340825348,
+          48.77979338
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341251675,
+          48.783368898
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Passage Gambetta",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339563898,
+          48.774650664
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Rue Albert Schweitzer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34011684,
+          48.77635951
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341244797,
+          48.784143794
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Rue Gabriel Péri D255b",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340718676,
+          48.778409466
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Paul Vaillant-Couturier D126 / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364490192,
+          48.780332026
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bouteilles / Coulée Verte",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.366970521,
+          48.779323081
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Bouteilles / Rue Paul Hochart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345331515,
+          48.775354883
+        ]
+      },
+      "properties": {
+        "name": "Cité Minou / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334196204,
+          48.783504243
+        ]
+      },
+      "properties": {
+        "name": "Impasse Beauséjour / Avenue Beauséjour",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330332106,
+          48.767052198
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Abbé Derry / Sentier des Cochettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346895661,
+          48.771588245
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Écoles / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346891447,
+          48.771637108
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Écoles / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346851077,
+          48.771652088
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Écoles / Lidl",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342144146,
+          48.781321188
+        ]
+      },
+      "properties": {
+        "name": "Impasse Gounod / Avenue du Général de Gaulle D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342327905,
+          48.782054896
+        ]
+      },
+      "properties": {
+        "name": "Impasse Gounod / Rue Madeleine D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323819985,
+          48.773381194
+        ]
+      },
+      "properties": {
+        "name": "Impasse Pierre de Ronsard / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329324621,
+          48.786706602
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue de l'Europe D257",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3294145,
+          48.786468771
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue de la Division Leclerc D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332365147,
+          48.789664181
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue du Maréchal de Lattre de Tassigny D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332419195,
+          48.789647267
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Dumotel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320593078,
+          48.768640899
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325692152,
+          48.775685254
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331796185,
+          48.789143993
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Vatier D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31876125,
+          48.767262634
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Avenue Victor-Hugo",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322153567,
+          48.770240936
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Ponton",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326965508,
+          48.779586654
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328135049,
+          48.783555627
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rue de Strasbourg",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332561124,
+          48.789689039
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rue du Moulin de Cachan",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33360404,
+          48.770483114
+        ]
+      },
+      "properties": {
+        "name": "Les Cochettes / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334481094,
+          48.77028593
+        ]
+      },
+      "properties": {
+        "name": "Les Cochettes / Sentier Mignon",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351035355,
+          48.774128415
+        ]
+      },
+      "properties": {
+        "name": "Mail des Coquelicots / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34131561,
+          48.781507437
+        ]
+      },
+      "properties": {
+        "name": "Passage du Clos Hallé / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341757,
+          48.78213035
+        ]
+      },
+      "properties": {
+        "name": "Passage du Clos Hallé / Sentier du Clos Hallé",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34134526,
+          48.783315195
+        ]
+      },
+      "properties": {
+        "name": "Passage Gambetta / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342236828,
+          48.783119965
+        ]
+      },
+      "properties": {
+        "name": "Passage Gambetta / Sentier du Clos Hallé",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336412388,
+          48.782141568
+        ]
+      },
+      "properties": {
+        "name": "Passage Joseph Lenoir / Sentier des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335776554,
+          48.782263773
+        ]
+      },
+      "properties": {
+        "name": "Passage Joseph Lenoir / Voie des Saussaies",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34133868,
+          48.782892038
+        ]
+      },
+      "properties": {
+        "name": "Passage Lorin / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342046663,
+          48.782734599
+        ]
+      },
+      "properties": {
+        "name": "Passage Lorin / Sentier du Clos Hallé",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322070742,
+          48.770247625
+        ]
+      },
+      "properties": {
+        "name": "Ponton / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347053366,
+          48.775107933
+        ]
+      },
+      "properties": {
+        "name": "Résidence des Acacias / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328158245,
+          48.779456312
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Petit Robinson / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328033841,
+          48.779506356
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Petit Robinson / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327868546,
+          48.779422025
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Petit Robinson / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331399838,
+          48.780661249
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert 1er / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331205457,
+          48.77913339
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert 1er / Rue de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322330063,
+          48.766376672
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Camus / Rue Marc Sangnier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339669267,
+          48.774688693
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Schweitzer / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332515894,
+          48.764565269
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Avenue de la Paix",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331966574,
+          48.764718527
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Résidence des Groux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33075789,
+          48.765021009
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Rue Brulart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332551754,
+          48.76458198
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Rue de Fresnes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32778636,
+          48.765720039
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Rue Émile Zola",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329325351,
+          48.765340685
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Thomas / Sentier des Cochettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350511459,
+          48.779634678
+        ]
+      },
+      "properties": {
+        "name": "Rue André Ancelin / Rue André Speeckaert",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350449112,
+          48.780800918
+        ]
+      },
+      "properties": {
+        "name": "Rue André Ancelin / Rue Clôtrier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.357899932,
+          48.776056787
+        ]
+      },
+      "properties": {
+        "name": "Rue Béatrice / Rue Paul Hochart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.357933558,
+          48.77610428
+        ]
+      },
+      "properties": {
+        "name": "Rue Béatrice / Rue Sainte-Colombe",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335687841,
+          48.778123511
+        ]
+      },
+      "properties": {
+        "name": "Rue Bourgeot / Rue des Tournelles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336175328,
+          48.779014624
+        ]
+      },
+      "properties": {
+        "name": "Rue Bourgeot / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336185055,
+          48.778762249
+        ]
+      },
+      "properties": {
+        "name": "Rue Bourgeot / Square Léon Elmelik",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335007536,
+          48.780732082
+        ]
+      },
+      "properties": {
+        "name": "Rue Bronzac / Avenue Aristide Briand D254",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33334347,
+          48.78137842
+        ]
+      },
+      "properties": {
+        "name": "Rue Bronzac / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3334986,
+          48.780845592
+        ]
+      },
+      "properties": {
+        "name": "Rue Bronzac / Rue de la Pléiade",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33334975,
+          48.781387442
+        ]
+      },
+      "properties": {
+        "name": "Rue Bronzac / Rue Eugène Givors",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331046536,
+          48.767114501
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Résidence Charles Gide",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329852424,
+          48.765272744
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Rue Albert Thomas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331406634,
+          48.767621195
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Rue Charles Perrault",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329823095,
+          48.765267931
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Rue du Docteur Charcot",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330581412,
+          48.766531321
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Rue du Docteur Vaillant",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331582567,
+          48.767876008
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Rue du Puits",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331348094,
+          48.767448214
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Villa les Roses",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331166868,
+          48.767276259
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Gide / Villa Parmentier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339078266,
+          48.777101251
+        ]
+      },
+      "properties": {
+        "name": "Rue Chevreul / Rue de la Reine Blanche",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339244445,
+          48.778023703
+        ]
+      },
+      "properties": {
+        "name": "Rue Chevreul / Rue de la Villa Romaine",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339365258,
+          48.778568237
+        ]
+      },
+      "properties": {
+        "name": "Rue Chevreul / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351639184,
+          48.780156158
+        ]
+      },
+      "properties": {
+        "name": "Rue Clôtrier / Rue André Speeckaert",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348423158,
+          48.780471008
+        ]
+      },
+      "properties": {
+        "name": "Rue Clôtrier / Rue du Commandant Louis Bouchet",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351381643,
+          48.780414033
+        ]
+      },
+      "properties": {
+        "name": "Rue Clôtrier / Rue Lucie Aubrac",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349933248,
+          48.780537428
+        ]
+      },
+      "properties": {
+        "name": "Rue Clôtrier / Rue Marcel Buron Lavigne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351026125,
+          48.780740826
+        ]
+      },
+      "properties": {
+        "name": "Rue Clôtrier / Rue Robert Desnos",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344165606,
+          48.776887
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Anjou / Rue de Picardie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345697841,
+          48.778101649
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Anjou / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342277071,
+          48.784231018
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bellevue / Rue du Belvédère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343163192,
+          48.78623648
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bellevue / Rue Jules Guesde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354810748,
+          48.777816525
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Allée de la Plaine",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354794976,
+          48.778601065
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Avenue des Dahlias",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349877176,
+          48.771147106
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349774613,
+          48.771204929
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349953303,
+          48.771251637
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Promenade Sœur Gabrielle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352783579,
+          48.775488694
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3506984,
+          48.772459999
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue des Marronniers",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354758221,
+          48.777874098
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue des Primevères",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353874851,
+          48.776388628
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue des Tulipes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350919694,
+          48.772758655
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue du Clos Saint-Michel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35481643,
+          48.778366905
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bicêtre / Rue Julien Victor",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332922868,
+          48.769374227
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331234446,
+          48.769759013
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Rue de la Fée",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3291629,
+          48.769625899
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Rue du Commandant L'Herminier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33207275,
+          48.769575948
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Rue du Puits",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33091041,
+          48.769319161
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Sentier des Closeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330261684,
+          48.769475658
+        ]
+      },
+      "properties": {
+        "name": "Rue de Cendrillon / Villa Cendrillon",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329301152,
+          48.771774376
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Passage Élisée Reclus",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327780044,
+          48.765735565
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue Albert Thomas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329174428,
+          48.769628348
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue de Cendrillon",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328841429,
+          48.771056048
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue des Blondeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329152448,
+          48.769624403
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue du Commandant L'Herminier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328869422,
+          48.771022342
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue du Hameau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330825288,
+          48.773642195
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue du Val",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327773809,
+          48.765732999
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue Émile Zola",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328705333,
+          48.768772503
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Rue Thuret",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328666017,
+          48.768609576
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Sentier des Closeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32827992,
+          48.767598616
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Sentier des Cottainvilles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327863094,
+          48.766153072
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Villa Pierre Loti",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32790519,
+          48.766450172
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chalais / Villa Thérèse",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34009002,
+          48.776364054
+        ]
+      },
+      "properties": {
+        "name": "Rue de Chevilly / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332568055,
+          48.764585685
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fresnes / Avenue de la Paix",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323666652,
+          48.765007158
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ancienne École / Allée du Capitaine Dupont",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341739823,
+          48.778704172
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341804735,
+          48.778703793
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329971654,
+          48.774849888
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Orme Sec / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327558929,
+          48.77308384
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Orme Sec / Rue des Blondeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329930555,
+          48.774895094
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Orme Sec / Sentier des Sureaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335870392,
+          48.773545325
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bergère / Avenue du Général De Gaulle / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335848692,
+          48.773545286
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bergère / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334867874,
+          48.772173142
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bergère / Rue des Closeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334342506,
+          48.771562861
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bergère / Rue Leforestier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334990233,
+          48.772389099
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bergère / Sentier du Val",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328204112,
+          48.779423651
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331113649,
+          48.779137797
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Avenue Jules Gravereaux D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333641044,
+          48.777732182
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328177741,
+          48.779383251
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Rond-Point du Petit Robinson",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331109247,
+          48.779142696
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Rue Albert 1er",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331937156,
+          48.779139424
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde / Rue de Gâtine",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325015801,
+          48.779905204
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Rue de la Bièvre D74",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332666041,
+          48.77904384
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde / Rue de la Pléiade",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330573172,
+          48.779139919
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde D160 / Rue du 8 Mai 1945",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332642843,
+          48.779030595
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cosarde / Ruelle de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331539266,
+          48.770466055
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fée / Rue du Hameau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328707426,
+          48.784012454
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Futaie / Allée de la Futaie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329283402,
+          48.783956707
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Futaie / Allée des Fusains",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328864895,
+          48.784039395
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Futaie / Allée des Troënes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328378057,
+          48.784076565
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Futaie / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332696669,
+          48.779035165
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Rue de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332934074,
+          48.779038032
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Ruelle de la Cosarde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325462459,
+          48.770446221
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Vallée aux Renards / Rue du Commandant L'Herminier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35338337,
+          48.775789597
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lallier / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354742706,
+          48.774634431
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lallier / Rue de l'Adjudant-Chef Dericbourg",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35473991,
+          48.774639368
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lallier / Rue Paul Hochart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327943452,
+          48.779558671
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Avenue Henri Barbusse D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327199828,
+          48.78032756
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32791112,
+          48.779475789
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Rond-Point du Petit Robinson",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327860115,
+          48.779463058
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326444066,
+          48.78119789
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Rue Marcel Sembat",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344292057,
+          48.778150814
+        ]
+      },
+      "properties": {
+        "name": "Rue de Picardie / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343955662,
+          48.776192777
+        ]
+      },
+      "properties": {
+        "name": "Rue Denis Papin / Allée des Tilleuls",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34430384,
+          48.776824616
+        ]
+      },
+      "properties": {
+        "name": "Rue Denis Papin / Rue d'Anjou",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343734162,
+          48.775760203
+        ]
+      },
+      "properties": {
+        "name": "Rue Denis Papin / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344227926,
+          48.776856677
+        ]
+      },
+      "properties": {
+        "name": "Rue Denis Papin / Rue de Picardie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349706941,
+          48.774435162
+        ]
+      },
+      "properties": {
+        "name": "Rue Des Acacias / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351668989,
+          48.776173833
+        ]
+      },
+      "properties": {
+        "name": "Rue Des Acacias / Rue des Coquelicots",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353664632,
+          48.778301373
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bleuets / Avenue des Dahlias",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32885049,
+          48.771037204
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blondeaux / Rue de Chalais",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326557877,
+          48.771840811
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blondeaux / Rue de la Vallée aux Renards",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328373313,
+          48.771211296
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blondeaux / Rue des Écoles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328851417,
+          48.771037512
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blondeaux / Rue du Hameau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352634139,
+          48.775642017
+        ]
+      },
+      "properties": {
+        "name": "Rue des Coquelicots / Mail des Coquelicots",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353036298,
+          48.775434658
+        ]
+      },
+      "properties": {
+        "name": "Rue des Coquelicots / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351117773,
+          48.776498843
+        ]
+      },
+      "properties": {
+        "name": "Rue des Coquelicots / Rue des Fauvettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348975656,
+          48.774610876
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cyclamens / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351107115,
+          48.776493932
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cyclamens / Rue des Coquelicots",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351107366,
+          48.776498066
+        ]
+      },
+      "properties": {
+        "name": "Rue des Cyclamens / Rue des Fauvettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328326736,
+          48.771213156
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Rue des Blondeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326369441,
+          48.770222485
+        ]
+      },
+      "properties": {
+        "name": "Rue des Écoles / Rue du Commandant L'Herminier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353255706,
+          48.775686284
+        ]
+      },
+      "properties": {
+        "name": "Rue des Fauvettes / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34728836,
+          48.776039409
+        ]
+      },
+      "properties": {
+        "name": "Rue des Iris / Allée des Pervenches",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347252528,
+          48.775062774
+        ]
+      },
+      "properties": {
+        "name": "Rue des Iris / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33520033,
+          48.78008958
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Avenue Aristide Briand D254",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338835989,
+          48.779562864
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Avenue du Général de Gaulle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338839201,
+          48.779553945
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Rue Dispan D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329979555,
+          48.776738106
+        ]
+      },
+      "properties": {
+        "name": "Rue des Maraîchers / Sentier des Garennes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351114704,
+          48.77743418
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Avenue des Dahlias",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353600198,
+          48.776062605
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351870025,
+          48.777034494
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Rue des Primevères",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351109292,
+          48.777439494
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marguerites / Rue Jules Ferry",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348057445,
+          48.771471685
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marronniers / Avenue du Général de Gaulle D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348059019,
+          48.77147763
+        ]
+      },
+      "properties": {
+        "name": "Rue des Marronniers / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352702537,
+          48.779119862
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue des Bleuets",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.351382665,
+          48.778513791
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue des Lilas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353458484,
+          48.779464107
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue des Roses",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352048197,
+          48.778819137
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue des Tulipes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352486349,
+          48.779046941
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue Émile Gœury",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350136764,
+          48.777952132
+        ]
+      },
+      "properties": {
+        "name": "Rue des Paquerettes / Rue Jules Ferry",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354794549,
+          48.777843589
+        ]
+      },
+      "properties": {
+        "name": "Rue des Primevères / Allée de la Plaine",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.354746038,
+          48.77782357
+        ]
+      },
+      "properties": {
+        "name": "Rue des Primevères / Rue de Bicêtre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.353089535,
+          48.777398761
+        ]
+      },
+      "properties": {
+        "name": "Rue des Primevères / Rue des Tulipes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35454124,
+          48.778552572
+        ]
+      },
+      "properties": {
+        "name": "Rue des Roses / Avenue des Dahlias",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326346613,
+          48.773815415
+        ]
+      },
+      "properties": {
+        "name": "Rue des Roux / Rue du Gué",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322543933,
+          48.76923528
+        ]
+      },
+      "properties": {
+        "name": "Rue des Roux / Sentier des Roux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341657779,
+          48.77826195
+        ]
+      },
+      "properties": {
+        "name": "Rue des Toudouze / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34102467,
+          48.776271704
+        ]
+      },
+      "properties": {
+        "name": "Rue des Toudouze / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341623743,
+          48.778279555
+        ]
+      },
+      "properties": {
+        "name": "Rue des Toudouze / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340019635,
+          48.776348671
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338988215,
+          48.776356191
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue Chevreul",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340030299,
+          48.776354255
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336730827,
+          48.776738639
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue de la Reine Blanche",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336017332,
+          48.777430019
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue de la Villa Romaine",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335162522,
+          48.778470553
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue Jean Jaurès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335918729,
+          48.777557087
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue Watel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338964787,
+          48.77975384
+        ]
+      },
+      "properties": {
+        "name": "Rue Dispan D148B / Avenue du Général de Gaulle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338576016,
+          48.778787383
+        ]
+      },
+      "properties": {
+        "name": "Rue Dispan D148B / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337625114,
+          48.782111537
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre 1918 / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337591971,
+          48.781996613
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre 1918 / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336867455,
+          48.780003976
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre 1918 / Rue des Jardins",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337834023,
+          48.782730296
+        ]
+      },
+      "properties": {
+        "name": "Rue du 11 Novembre 1918 / Sentier des Frettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339931409,
+          48.780915122
+        ]
+      },
+      "properties": {
+        "name": "Rue du 19 Mars 1962 / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340350498,
+          48.780557865
+        ]
+      },
+      "properties": {
+        "name": "Rue du 19 Mars 1962 / Avenue du Général de Gaulle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339944357,
+          48.780924359
+        ]
+      },
+      "properties": {
+        "name": "Rue du 19 Mars 1962 / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328649344,
+          48.776926787
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Allée des Églantines",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328371919,
+          48.776587921
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Allée des Saules",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328786428,
+          48.777107703
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Passage d'Orléans",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328976653,
+          48.777241217
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Rue des Maraîchers",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329473166,
+          48.77772453
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 / Rue Vanel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344029197,
+          48.786113598
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue Jules Guesde",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343225288,
+          48.784214546
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue Traversière",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323105241,
+          48.771355523
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant L'Herminier / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325456257,
+          48.770459077
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant L'Herminier / Rue de la Vallée aux Renards",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324052439,
+          48.771009651
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant L'Herminier / Rue des Roux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324660001,
+          48.770747788
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant L'Herminier / Villa du Capitaine René Bizien",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349685113,
+          48.779262895
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Louis Bouchet / Rue André Speeckaert",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350068295,
+          48.77883627
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Louis Bouchet / Rue Antoine Hajje",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349098175,
+          48.779796367
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Louis Bouchet / Rue Ferrer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349745496,
+          48.779305903
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Louis Bouchet / Rue Marcel Buron Lavigne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333298696,
+          48.767487607
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Calmette / Allée Ambroise Paré",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331586791,
+          48.767869565
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Calmette / Rue Charles Gide",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334330537,
+          48.767235146
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Calmette / Rue de Fresnes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332145966,
+          48.767748055
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Calmette / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331593034,
+          48.767879506
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Calmette / Rue du Puits",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33362688,
+          48.765826201
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vaillant / Rue de Fresnes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331525535,
+          48.766291908
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vaillant / Rue Pierre Curie",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332433088,
+          48.766084705
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Vaillant / Rue Renner",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327900249,
+          48.779338079
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Castelnau / Rond-Point du Petit Robinson",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327879165,
+          48.77937858
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Castelnau / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327170837,
+          48.778804322
+        ]
+      },
+      "properties": {
+        "name": "Rue du Général Castelnau / Rue Guynemer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324963013,
+          48.774101719
+        ]
+      },
+      "properties": {
+        "name": "Rue du Gué / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326627687,
+          48.773982478
+        ]
+      },
+      "properties": {
+        "name": "Rue du Gué / Rue des Blondeaux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327877048,
+          48.774965385
+        ]
+      },
+      "properties": {
+        "name": "Rue du Gué / Venelle du Gué",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333352504,
+          48.770102255
+        ]
+      },
+      "properties": {
+        "name": "Rue du Hameau / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328142704,
+          48.78332268
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342300751,
+          48.777340142
+        ]
+      },
+      "properties": {
+        "name": "Rue du Plateau / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342223766,
+          48.777362099
+        ]
+      },
+      "properties": {
+        "name": "Rue du Plateau / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34186987,
+          48.776141303
+        ]
+      },
+      "properties": {
+        "name": "Rue du Plateau / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331711759,
+          48.768497874
+        ]
+      },
+      "properties": {
+        "name": "Rue du Puits / Allée Montaigne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332320034,
+          48.770301712
+        ]
+      },
+      "properties": {
+        "name": "Rue du Puits / Rue du Hameau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331818402,
+          48.768706165
+        ]
+      },
+      "properties": {
+        "name": "Rue du Puits / Rue Moïse",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33083642,
+          48.773651681
+        ]
+      },
+      "properties": {
+        "name": "Rue du Val / Rue de Chalais",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332238936,
+          48.773079845
+        ]
+      },
+      "properties": {
+        "name": "Rue du Val / Rue Leforestier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331881993,
+          48.773256426
+        ]
+      },
+      "properties": {
+        "name": "Rue du Val / Sentier du Val",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331023668,
+          48.771383478
+        ]
+      },
+      "properties": {
+        "name": "Rue Duguesclin / Rue Élisée Reclus",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331780636,
+          48.772429311
+        ]
+      },
+      "properties": {
+        "name": "Rue Duguesclin / Rue Leforestier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330357873,
+          48.771534631
+        ]
+      },
+      "properties": {
+        "name": "Rue Élisée Reclus / Passage Élisée Reclus",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333676834,
+          48.770666912
+        ]
+      },
+      "properties": {
+        "name": "Rue Élisée Reclus / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333662447,
+          48.770616731
+        ]
+      },
+      "properties": {
+        "name": "Rue Élisée Reclus / Sentier Mignon",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350460603,
+          48.778571507
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Gœury / Rue Antoine Hajje",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.350224452,
+          48.778832434
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Gœury / Rue du Commandant Louis Bouchet",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319798423,
+          48.766979681
+        ]
+      },
+      "properties": {
+        "name": "Rue Estienne d'Orves / Rue Marc Sangnier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331262815,
+          48.783719567
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Allée des Fusains",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33172713,
+          48.784313114
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Allée des Troënes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333291294,
+          48.781390443
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Avenue Dunois",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332227751,
+          48.781686154
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Impasse Eugène Givors",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333333716,
+          48.781408696
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Rue Bronzac",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331874174,
+          48.784458836
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Rue de Flandre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331808174,
+          48.784395773
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Rue de Provence",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33096659,
+          48.782892755
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Rue du Parc",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331840564,
+          48.784406312
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Givors / Rue François Rude",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3411714,
+          48.781183236
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Varlin / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339601238,
+          48.781425768
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Varlin / Rue du 19 Mars 1962",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349101352,
+          48.77980786
+        ]
+      },
+      "properties": {
+        "name": "Rue Ferrer / Rue du Commandant Louis Bouchet",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349803811,
+          48.78008851
+        ]
+      },
+      "properties": {
+        "name": "Rue Ferrer / Rue Marcel Buron Lavigne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339480273,
+          48.781241593
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339996428,
+          48.782616424
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255b / Avenue de la République D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339198999,
+          48.780086345
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Avenue du Général de Gaulle",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339510978,
+          48.781315389
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341252577,
+          48.784125215
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255b / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340694276,
+          48.783485808
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255b / Passage Gambetta",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339202227,
+          48.780044404
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Rue Dispan D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339556585,
+          48.781384276
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Rue du 19 Mars 1962",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339571204,
+          48.781464136
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Rue Eugène Varlin",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339999897,
+          48.782594434
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Rue Gabriel Péri D255b",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340002676,
+          48.782587587
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255a / Rue Madeleine D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341013895,
+          48.784095553
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D255b / Sentier Eugène Brégeard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321705882,
+          48.769475491
+        ]
+      },
+      "properties": {
+        "name": "Rue Geneviève / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32435459,
+          48.768753993
+        ]
+      },
+      "properties": {
+        "name": "Rue Geneviève / Rue de la Vallée aux Renards",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322561536,
+          48.769247867
+        ]
+      },
+      "properties": {
+        "name": "Rue Geneviève / Rue des Roux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324348452,
+          48.76874273
+        ]
+      },
+      "properties": {
+        "name": "Rue Geneviève / Rue Léon Blum",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322534055,
+          48.769228319
+        ]
+      },
+      "properties": {
+        "name": "Rue Geneviève / Sentier des Roux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364231012,
+          48.77833355
+        ]
+      },
+      "properties": {
+        "name": "Rue Gustave Charpentier / Allée du Jura",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.364284886,
+          48.778369892
+        ]
+      },
+      "properties": {
+        "name": "Rue Gustave Charpentier / Rue Paul Hochart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326089426,
+          48.77696642
+        ]
+      },
+      "properties": {
+        "name": "Rue Guynemer / Chemin du Tennis",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326585809,
+          48.777728901
+        ]
+      },
+      "properties": {
+        "name": "Rue Guynemer / Impasse Guynemer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326323131,
+          48.777401579
+        ]
+      },
+      "properties": {
+        "name": "Rue Guynemer / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347212135,
+          48.778058612
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Thirard / Allée des Pervenches",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341707554,
+          48.77827675
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Thirard / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340651,
+          48.77840848
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Thirard / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3387787,
+          48.778759594
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Thirard / Rue Dispan D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338778554,
+          48.778759387
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Thirard / Rue Jean Jaurès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327956226,
+          48.782732587
+        ]
+      },
+      "properties": {
+        "name": "Rue Isabeau / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337823937,
+          48.778843111
+        ]
+      },
+      "properties": {
+        "name": "Rue Isabeau de Bavière / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335517486,
+          48.778923893
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès D148 / Avenue Aristide Briand D254",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335169965,
+          48.778481917
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès D148 / Rue des Tournelles",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336667939,
+          48.778872128
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès D148 / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334374833,
+          48.777970508
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès D148 / Rue Watel",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347224317,
+          48.778051242
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Allée des Pervenches",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348513978,
+          48.77803125
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Rue Ferrer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.347217,
+          48.778061801
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Ferry / Rue Henri Thirard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342202695,
+          48.786376749
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Guesde / Avenue Gabriel Péri D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35692797,
+          48.778763416
+        ]
+      },
+      "properties": {
+        "name": "Rue Julien Victor / Rue Béatrice",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334332471,
+          48.771552954
+        ]
+      },
+      "properties": {
+        "name": "Rue Leforestier / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332251403,
+          48.773075887
+        ]
+      },
+      "properties": {
+        "name": "Rue Leforestier / Sentier du Val",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324061428,
+          48.768203535
+        ]
+      },
+      "properties": {
+        "name": "Rue Léo Lagrange / Rue Léon Blum",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322160702,
+          48.768659078
+        ]
+      },
+      "properties": {
+        "name": "Rue Léo Lagrange / Rue Pierre Brossolette",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322161597,
+          48.768672721
+        ]
+      },
+      "properties": {
+        "name": "Rue Léo Lagrange / Sentier des Roux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324359799,
+          48.7687459
+        ]
+      },
+      "properties": {
+        "name": "Rue Léon Blum / Rue de la Vallée aux Renards",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32333406,
+          48.766173802
+        ]
+      },
+      "properties": {
+        "name": "Rue Léon Blum / Rue Jean Moulin",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323330319,
+          48.766180928
+        ]
+      },
+      "properties": {
+        "name": "Rue Léon Blum / Rue Marc Sangnier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324282049,
+          48.768551183
+        ]
+      },
+      "properties": {
+        "name": "Rue Léon Blum / Rue Roger Salengro",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340000193,
+          48.782594553
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Avenue de la République D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343091494,
+          48.782049269
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Avenue du Général de Gaulle D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341259582,
+          48.782239434
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Boulevard Paul Vaillant-Couturier D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342322988,
+          48.782029309
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Impasse Gounod",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341742295,
+          48.782103951
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Passage du Clos Hallé",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340000912,
+          48.782583177
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Rue Gabriel Péri D255b",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341771677,
+          48.782156767
+        ]
+      },
+      "properties": {
+        "name": "Rue Madeleine D157 / Sentier du Clos Hallé",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326768385,
+          48.778979854
+        ]
+      },
+      "properties": {
+        "name": "Rue Mangin / La Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324722315,
+          48.779326798
+        ]
+      },
+      "properties": {
+        "name": "Rue Mangin / Rue Charpentier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327069099,
+          48.778929998
+        ]
+      },
+      "properties": {
+        "name": "Rue Mangin / Rue du Général Castelnau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319122929,
+          48.767179204
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Avenue Flouquet D127",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319114868,
+          48.767202545
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Avenue Victor-Hugo",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349839163,
+          48.779348694
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Buron Lavigne / Rue André Speeckaert",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325015881,
+          48.77990517
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue Charpentier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325014138,
+          48.77990826
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue de la Bièvre D74",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325045664,
+          48.779912378
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue de la Cosarde D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326442509,
+          48.78122197
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Sembat / Rue de Metz",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332526549,
+          48.768577434
+        ]
+      },
+      "properties": {
+        "name": "Rue Moïse / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345217925,
+          48.776633758
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue d'Anjou",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344618615,
+          48.775507282
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Rue de Chevilly",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.361434112,
+          48.777331807
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Hochart / Coulée Verte",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35352495,
+          48.773133161
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Hochart / Rue Henri Cretté",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.358053553,
+          48.776129342
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Hochart / Rue Sainte-Colombe",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321883275,
+          48.767904934
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette / Rue Estienne d'Orves",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32133598,
+          48.766562588
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Brossolette / Rue Marc Sangnier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330918578,
+          48.7650058
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Curie / Rue Albert Thomas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330839091,
+          48.765015589
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Curie / Rue Brulart",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331828981,
+          48.764768436
+        ]
+      },
+      "properties": {
+        "name": "Rue Renner / Résidence des Groux",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331831429,
+          48.764779565
+        ]
+      },
+      "properties": {
+        "name": "Rue Renner / Rue Albert Thomas",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349343463,
+          48.780529673
+        ]
+      },
+      "properties": {
+        "name": "Rue Robic / Rue Clôtrier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349735795,
+          48.780094398
+        ]
+      },
+      "properties": {
+        "name": "Rue Robic / Rue Ferrer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.349859504,
+          48.780043465
+        ]
+      },
+      "properties": {
+        "name": "Rue Robic / Rue Marcel Buron Lavigne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.359604727,
+          48.778588039
+        ]
+      },
+      "properties": {
+        "name": "Rue Sainte-Colombe / Rue Gustave Charpentier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326813509,
+          48.76848413
+        ]
+      },
+      "properties": {
+        "name": "Rue Thuret / Impasse Thuret",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325735523,
+          48.76671258
+        ]
+      },
+      "properties": {
+        "name": "Rue Thuret / Villa Thérèse",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342426836,
+          48.784392311
+        ]
+      },
+      "properties": {
+        "name": "Rue Traversière / Rue de Bellevue",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348408489,
+          48.780473128
+        ]
+      },
+      "properties": {
+        "name": "Rue Ulysse Benne / Rue Clôtrier",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348407918,
+          48.780451634
+        ]
+      },
+      "properties": {
+        "name": "Rue Ulysse Benne / Rue du Commandant Louis Bouchet",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.348502725,
+          48.778496241
+        ]
+      },
+      "properties": {
+        "name": "Rue Ulysse Benne / Rue Ferrer",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3344068,
+          48.77802984
+        ]
+      },
+      "properties": {
+        "name": "Rue Watel / Rue Jean Jaurès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326796101,
+          48.768487401
+        ]
+      },
+      "properties": {
+        "name": "Rue Winston Churchill / Impasse Thuret",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324520673,
+          48.768981139
+        ]
+      },
+      "properties": {
+        "name": "Rue Winston Churchill / Rue de la Vallée aux Renards",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326779999,
+          48.768490669
+        ]
+      },
+      "properties": {
+        "name": "Rue Winston Churchill / Rue Thuret",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334279614,
+          48.779006405
+        ]
+      },
+      "properties": {
+        "name": "Ruelle de la Cosarde / Résidence du Coteau",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329623987,
+          48.776297635
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Allée des Églantines",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329990651,
+          48.77674734
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Rue des Maraîchers",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336606043,
+          48.782532534
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Jardins / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322152019,
+          48.768669497
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Roux / Rue Pierre Brossolette",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329974955,
+          48.774901246
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sureaux / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342840719,
+          48.784288953
+        ]
+      },
+      "properties": {
+        "name": "Sentier du Clos Hallé / Rue Traversière",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333940248,
+          48.770433223
+        ]
+      },
+      "properties": {
+        "name": "Sentier Mignon / Les Cochettes",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333651906,
+          48.770564656
+        ]
+      },
+      "properties": {
+        "name": "Sentier Mignon / Rue de la Bergère",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337151292,
+          48.778953577
+        ]
+      },
+      "properties": {
+        "name": "Square Léon Elmelik / Rue Jean Jaurès D148B",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324198075,
+          48.776369883
+        ]
+      },
+      "properties": {
+        "name": "Villa Maurice / Allée du Parc de la Bièvre",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324260252,
+          48.776348646
+        ]
+      },
+      "properties": {
+        "name": "Villa Maurice / Avenue Larroumès D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325036892,
+          48.77725482
+        ]
+      },
+      "properties": {
+        "name": "Villa Maurice / Chemin du Tennis",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330554762,
+          48.76741169
+        ]
+      },
+      "properties": {
+        "name": "Villa Parmentier / Impasse de l'Abbé Derry",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339162758,
+          48.783731015
+        ]
+      },
+      "properties": {
+        "name": "Voie des Frettes / Avenue de la République D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339161295,
+          48.783777202
+        ]
+      },
+      "properties": {
+        "name": "Voie des Frettes / Avenue Léon Blum D157",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339512826,
+          48.784261323
+        ]
+      },
+      "properties": {
+        "name": "Voie des Frettes / Sentier Eugène Brégeard",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343540094,
+          48.790544212
+        ]
+      },
+      "properties": {
+        "name": "Voie des Postes / Avenue Gabriel Péri D126",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336048117,
+          48.782785704
+        ]
+      },
+      "properties": {
+        "name": "Voie des Saussaies / Aqueduc de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335173211,
+          48.780527779
+        ]
+      },
+      "properties": {
+        "name": "Voie des Saussaies / Avenue Aristide Briand D254",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336032502,
+          48.782752106
+        ]
+      },
+      "properties": {
+        "name": "Voie des Saussaies / Boulevard de la Vanne",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.346554879,
+          48.784084966
+        ]
+      },
+      "properties": {
+        "name": "A6b / Avenue du Général de Gaulle D148",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.345495835,
+          48.771842616
+        ]
+      },
+      "properties": {
+        "name": "A6a / Avenue du Général Leclerc D160",
+        "context": "L'Haÿ-les-Roses, Val-de-Marne",
+        "citycode": "94038",
+        "depcode": "94"
+      }
+    }
+  ]
+}

@@ -1122,7 +1122,7 @@ def _choisir_categories_osm() -> list[dict]:
     choix = input("\n  Votre sélection : ").strip()
 
     '''ATTENTION CHANGEMENT PROVISOIR PCQ FLEMME DE TOUT CHANGER'''
-    choix = None
+    #1choix = None
 
     if not choix:
         print("  → Toutes les catégories OSM seront incluses.\n")

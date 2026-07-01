@@ -420,12 +420,12 @@ def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
                 x+=1
                 i["latitude_pp"+str(x)]=j["latitude"]
                 i["longitude_pp"+str(x)]=j["longitude"]
-        i["nb_pp"]=nb
+        i["nb_traversees"]=nb
     
     inter = pd.DataFrame(inter)
-    inter= inter[inter["nb_pp"] != 0]
+    inter= inter[inter["nb_traversees"] != 0]
 
-    colonnes = ["latitude", "longitude", "intersection", "Ville/Commune", "nb_pp"]
+    colonnes = ["latitude", "longitude", "intersection", "Ville/Commune", "nb_traversees"]
     for col in inter.columns:
         if col not in colonnes:
             colonnes.append(col)
@@ -460,7 +460,8 @@ def trie_intersections(final_accident,df_resultat, rayon=20):
                 final_pp.append({
                 "latitude": i["latitude"],
                 "longitude": i["longitude"],
-                "nb_pp": nb
+                "intersection":i["intersection"], 
+                "nb_traversees": nb
                 })
             
                 j["fusionner"] = True
@@ -471,7 +472,8 @@ def trie_intersections(final_accident,df_resultat, rayon=20):
             final_pp.append({
                 "latitude": i["latitude"],
                 "longitude": i["longitude"],
-                "nb_pp": i["nb_passages_pietons"]
+                "intersection":i["intersection"], 
+                "nb_traversees": i["nb_passages_pietons"]
                 })
     
     for j in df_acc:
@@ -479,7 +481,8 @@ def trie_intersections(final_accident,df_resultat, rayon=20):
             final_pp.append({
                 "latitude": j["latitude"],
                 "longitude": j["longitude"],
-                "nb_pp": j["nb_pp"]
+                "intersection":i["intersection"], 
+                "nb_traversees": j["nb_traversees"]
             })
    
     return pd.DataFrame(final_pp)
@@ -498,7 +501,7 @@ def comparer_passages(inter_osm, inter_accident, rayon=5):
         ))
 
     # Comparaison avec les passages Accidents
-    for i in range(1, inter_accident["nb_pp"] + 1):
+    for i in range(1, inter_accident["nb_traversees"] + 1):
 
         lat = inter_accident[f"latitude_pp{i}"]
         lon = inter_accident[f"longitude_pp{i}"]

@@ -773,6 +773,7 @@ if __name__ == "__main__":
 # Le filtre types de voies est passé directement en argument.
 # ─────────────────────────────────────────────────────────────────────────────
 
+
 def charger_en_dataframe_sans_input(
     chemin_geojson: str,
     types_voies: list[str] | None = None,

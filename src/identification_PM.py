@@ -1252,17 +1252,6 @@ def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dos
 
 
 
-#TESTES : ---------------------------------------------------------------------------------------------------------
-if __name__ == "__main__":
-
-    ville = input("Entrez le nom de la commune : ").strip()
-
-    df_pm = construire_dataframe_PM(ville)
-
-    if not df_pm.empty:
-        print("\n=== Apercu du DataFrame final ===")
-        print(df_pm.to_string(index=False))
-
 
 
 
@@ -1341,32 +1330,38 @@ def construire_dataframe_PM2(ville, categories_filtrees=None):
         print("[PM2] Aucune catégorie sélectionnée.")
         return pd.DataFrame()
 
-    # 2. On appelle TA fonction d'origine complète qui marche parfaitement
-    df_global = construire_dataframe_PM(ville)
+    # 2. On appelle la version sans input() (Streamlit n'a pas de terminal interactif)
+    df_global = construire_dataframe_PM_sans_input(ville)
 
     if df_global.empty:
         print("[PM2] Le tableau brut récupéré est vide.")
         return df_global
 
-    # 3. On applique le filtre sur la colonne 'source' (ou 'categorie')
-    # On crée une correspondance entre le nom de ta case à cocher et le texte dans la colonne 'source'
-    filtre_sources = []
-    if "Mairie" in categories_filtrees:
-        filtre_sources.extend(["DataGouv_Mairie", "ServicePublic_Commissariat"])
+    # 3. Correspondance case cochée -> valeurs réelles produites par construire_dataframe_PM :
+    # les PM gouvernementaux se distinguent par 'source', les PM OSM par 'type'
+    # (leur 'source' vaut toujours "OpenStreetMap", peu importe la catégorie).
+    filtre_source = []
+    filtre_type = []
     if "Écoles" in categories_filtrees:
-        filtre_sources.append("DataEducation_Ecoles")
+        filtre_source.append("data.education.gouv.fr")
+    if "Mairie" in categories_filtrees:
+        filtre_source.extend([
+            "api-lannuaire.service-public.fr + geocodage BAN",
+            "lannuaire.service-public.fr + géocodage BAN",
+        ])
     if "Pharmacies" in categories_filtrees:
-        filtre_sources.append("FINESS")
+        filtre_source.append("FINESS")
+        filtre_type.append("pharmacie")
     if "Supermarchés" in categories_filtrees:
-        filtre_sources.extend(["Supermarché / Commerce", "Marché"])
+        filtre_type.append("supermarché")
     if "Administrations" in categories_filtrees:
-        filtre_sources.extend(["Lieu de culte", "Parc / Jardin", "Gare_SNCF", "Gare SNCF"])
+        filtre_type.append("gendarmerie")
 
-    # On applique le filtre strict sur le DataFrame
-    if 'source' in df_global.columns:
-        df_global = df_global[df_global['source'].isin(filtre_sources)].reset_index(drop=True)
-    elif 'categorie' in df_global.columns:
-        df_global = df_global[df_global['categorie'].isin(filtre_sources)].reset_index(drop=True)
+    # On applique le filtre : match sur 'source' OU sur 'type'
+    masque = df_global['source'].isin(filtre_source)
+    if 'type' in df_global.columns:
+        masque = masque | df_global['type'].isin(filtre_type)
+    df_global = df_global[masque].reset_index(drop=True)
 
     print(f"[PM2] Filtrage terminé : {len(df_global)} lieux conservés.")
     return df_global

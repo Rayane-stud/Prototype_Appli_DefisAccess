@@ -918,3 +918,83 @@ def filtrer_par_combinaisons_voies(df, combinaisons, types_disponibles=None):
         return type_des_segments(nom) in combos_normalisees
 
     return df[df["intersection"].apply(correspond)].reset_index(drop=True)
+
+
+def choisir_combinaisons_voies(combinaisons_disponibles=None):
+    """
+    Affiche un menu interactif pour que l'utilisateur choisisse les
+    combinaisons de types de voies à conserver (ex: "Rue / Avenue").
+
+    Contrairement à choisir_types_voies() (qui choisit des types "larges"
+    appliqués indépendamment à chaque segment), ce menu ne garde que les
+    intersections dont la PAIRE de types correspond exactement à l'une des
+    combinaisons choisies.
+
+    ARGUMENTS : "combinaisons_disponibles" liste de tuples
+                 (par défaut generer_combinaisons_voies())
+    REPONSE : list[tuple[str, str]] des combinaisons choisies, ou [] pour tout garder
+    """
+    combinaisons_disponibles = combinaisons_disponibles or generer_combinaisons_voies()
+    labels_disponibles = [f"{type_a} / {type_b}" for type_a, type_b in combinaisons_disponibles]
+
+    # Même gabarit d'affichage que le menu de choix des catégories de santé
+    # (_choisir_dans_liste dans identification_PM.py) — bandeau, numéros
+    # alignés, prompt "Votre sélection" — pour une expérience console cohérente.
+    print("\n" + "=" * 62)
+    print("   SÉLECTION DES COMBINAISONS DE TYPES DE VOIES")
+    print("=" * 62)
+
+    for i, label in enumerate(labels_disponibles, 1):
+        print(f"   {i:2d}. {label}")
+
+    print("\n  Entrez les numéros séparés par des virgules  (ex: 1,2)")
+    print("  ou appuyez sur Entrée pour toutes les inclure.")
+    choix = input("\n  Votre sélection : ").strip()
+
+    if not choix:
+        print("  → Toutes les combinaisons seront incluses (pas de filtre par voies).\n")
+        return []
+
+    combos_choisies = []
+    for segment in choix.split(","):
+        try:
+            idx = int(segment.strip()) - 1
+            if 0 <= idx < len(combinaisons_disponibles):
+                combos_choisies.append(combinaisons_disponibles[idx])
+                print(f"   ✓ {labels_disponibles[idx]}")
+        except ValueError:
+            pass
+
+    if not combos_choisies:
+        print("  → Aucune sélection valide, toutes les combinaisons incluses par défaut.\n")
+        return []
+
+    print(f"\n  → {len(combos_choisies)} combinaison(s) sélectionnée(s).\n")
+    return combos_choisies
+
+
+def charger_en_dataframe_avec_combinaisons(chemin_geojson: str) -> pd.DataFrame:
+    """
+    Équivalent console du filtre par combinaisons de app5.py, pour le
+    pipeline CLI (main.py) : lit le GeoJSON local, demande à l'utilisateur
+    quelles combinaisons de types de voies garder (ex: Rue/Avenue), puis
+    applique le filtre.
+
+    ARGUMENTS : "chemin_geojson" str
+    REPONSE : pd.DataFrame avec colonnes latitude | longitude | intersection | Ville/Commune
+    """
+    df = charger_en_dataframe_sans_input(chemin_geojson, types_voies=[])
+
+    if df.empty:
+        print(f"  Aucune intersection chargée depuis {chemin_geojson}.")
+        return df
+
+    print(f"  {len(df)} intersections chargées depuis {chemin_geojson}.")
+
+    combinaisons = choisir_combinaisons_voies()
+    if combinaisons:
+        avant = len(df)
+        df = filtrer_par_combinaisons_voies(df, combinaisons)
+        print(f"  {len(df)} intersections après filtrage par combinaison de voies (sur {avant}).")
+
+    return df

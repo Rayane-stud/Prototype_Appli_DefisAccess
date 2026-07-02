@@ -1234,21 +1234,68 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
 
 
 
+def _nom_alternatif_disponible(chemin_fichier: str) -> str:
+    """
+    Retourne un chemin de fichier disponible en ajoutant _2, _3... avant
+    l'extension si le chemin demande est deja pris (ou verrouille).
+    """
+    racine, extension = os.path.splitext(chemin_fichier)
+    compteur = 2
+    nouveau_chemin = f"{racine}_{compteur}{extension}"
+    while os.path.exists(nouveau_chemin):
+        compteur += 1
+        nouveau_chemin = f"{racine}_{compteur}{extension}"
+    return nouveau_chemin
+
+
+def _ecrire_excel_avec_retry(
+    df: pd.DataFrame, chemin_fichier: str, tentatives: int = 3, delai_secondes: int = 3
+) -> str:
+    """
+    Ecrit un DataFrame en Excel avec re-essais si le fichier est verrouille
+    (ex: ouvert dans Excel, ou en cours de synchronisation OneDrive).
+
+    Si toutes les tentatives echouent, sauvegarde sous un nom alternatif
+    (suffixe _2, _3...) plutot que de laisser planter le script avec une
+    PermissionError.
+    """
+    for tentative in range(1, tentatives + 1):
+        try:
+            df.to_excel(chemin_fichier, index=False)
+            return chemin_fichier
+        except PermissionError:
+            if tentative < tentatives:
+                print(
+                    f"  Fichier verrouille (ouvert dans Excel ou synchro OneDrive en cours ?) : "
+                    f"{os.path.basename(chemin_fichier)} — nouvelle tentative dans {delai_secondes}s "
+                    f"({tentative}/{tentatives})..."
+                )
+                time.sleep(delai_secondes)
+            else:
+                chemin_fichier = _nom_alternatif_disponible(chemin_fichier)
+                print(
+                    f"  Fichier toujours verrouille apres {tentatives} tentatives. "
+                    f"Fermez-le dans Excel si besoin. Sauvegarde sous : {os.path.basename(chemin_fichier)}"
+                )
+                df.to_excel(chemin_fichier, index=False)
+    return chemin_fichier
+
+
 def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dossier_sortie: str = ".") -> str | None:
- 
+
     if df is None or df.empty:
         print(" DataFrame vide : aucun fichier Excel genere.")
         return None
- 
+
     # index=False : on n'ecrit pas la colonne d'index du DataFrame
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
     dossier_export = os.path.join(dossier_sortie, "PM")
     os.makedirs(dossier_export, exist_ok=True)
     chemin_fichier = os.path.join(dossier_export, nom_fichier)
-    df.to_excel(chemin_fichier, index=False)
- 
-    print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
-    return chemin_fichier
+    chemin_final = _ecrire_excel_avec_retry(df, chemin_fichier)
+
+    print(f" Fichier Excel exporte : {os.path.basename(chemin_final)}  ({len(df)} PM)")
+    return chemin_final
 
 
 

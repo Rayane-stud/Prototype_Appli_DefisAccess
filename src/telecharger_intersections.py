@@ -142,6 +142,15 @@ TYPES_VOIES = [
     "Rond-Point",
 ]
 
+# Liste courte des types de voies utilisés pour composer les combinaisons
+# proposées dans l'interface (ex: "Rue / Avenue", "Boulevard / Boulevard"...)
+TYPES_VOIES_COMBO = [
+    "Rue",
+    "Avenue",
+    "Boulevard",
+    "Rond-Point",
+]
+
 
 # ETAPE 0 — Normalisation des noms de villes pour la comparaison -----------------------------------
 
@@ -836,3 +845,76 @@ def charger_en_dataframe_sans_input(
         df = df[df["intersection"].apply(compter_segments_matchants) >= 2].reset_index(drop=True)
 
     return df
+
+
+# ETAPE 7 — Filtrage par combinaisons exactes de types de voies -----------------------------------
+#
+# Contrairement au filtre par TYPES_VOIES (choisir_types_voies / compter_segments_matchants),
+# qui garde une intersection dès qu'au moins 2 segments matchent N'IMPORTE LEQUEL des types
+# choisis, ce filtre garde uniquement les intersections dont la PAIRE de types correspond
+# exactement à l'une des combinaisons demandées (ex: "Rue / Avenue" garde "Rue X / Avenue Y"
+# mais pas "Rue X / Rue Y" ni "Avenue X / Boulevard Y").
+
+
+def generer_combinaisons_voies(types=None):
+    """
+    Génère toutes les combinaisons possibles (paires non ordonnées, avec
+    répétition) à partir d'une liste de types de voies.
+
+    ARGUMENTS : "types" liste de str (par défaut TYPES_VOIES_COMBO)
+    REPONSE : list[tuple[str, str]], ex. [("Rue", "Rue"), ("Rue", "Avenue"), ...]
+    """
+    import itertools
+
+    types = types or TYPES_VOIES_COMBO
+    return list(itertools.combinations_with_replacement(types, 2))
+
+
+def filtrer_par_combinaisons_voies(df, combinaisons, types_disponibles=None):
+    """
+    Filtre un DataFrame d'intersections pour ne garder que celles dont les deux
+    voies qui se croisent correspondent exactement à l'une des combinaisons
+    demandées.
+
+    ARGUMENTS :
+        df                : DataFrame avec une colonne "intersection" du type
+                             "Type1 Nom / Type2 Nom"
+        combinaisons      : liste de tuples (type_a, type_b), non ordonnée.
+                             [] ou None = pas de filtre, DataFrame inchangé.
+        types_disponibles : liste des types à reconnaître dans les segments
+                             (par défaut, déduite de "combinaisons")
+    REPONSE : DataFrame filtré (nouvel index 0..n)
+    """
+    if not combinaisons:
+        return df
+
+    import re
+
+    if types_disponibles is None:
+        types_disponibles = sorted(
+            {t for paire in combinaisons for t in paire}, key=len, reverse=True
+        )
+        # tri par longueur décroissante : "Rond-Point" doit être testé avant
+        # un éventuel type plus court qui serait un sous-mot
+
+    patterns = {
+        t: re.compile(r'\b' + re.escape(t) + r'\b', re.IGNORECASE) for t in types_disponibles
+    }
+    combos_normalisees = {tuple(sorted(paire)) for paire in combinaisons}
+
+    def type_des_segments(nom):
+        segments = [s.strip() for s in str(nom).split("/")]
+        if len(segments) != 2:
+            return None
+        types_trouves = []
+        for segment in segments:
+            trouve = next((t for t in types_disponibles if patterns[t].search(segment)), None)
+            if trouve is None:
+                return None
+            types_trouves.append(trouve)
+        return tuple(sorted(types_trouves))
+
+    def correspond(nom):
+        return type_des_segments(nom) in combos_normalisees
+
+    return df[df["intersection"].apply(correspond)].reset_index(drop=True)

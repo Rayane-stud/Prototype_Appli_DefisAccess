@@ -651,7 +651,7 @@ with st.expander("**Étape 1 — 🗂️ Intersections**", expanded=True):
                     "Aperçu des croisements de rues trouvés — ex. \"Rue Victor Hugo / "
                     "Avenue de la République\" — utilisés ensuite pour générer les feuilles terrain."
                 )
-                with st.expander(f"📋 Voir le tableau ({len(_df_prev):,} intersections)", expanded=True):
+                with st.expander(f"📋 Voir le tableau ({len(_df_prev):,} intersections)", expanded=False):
                     st.dataframe(_df_prev.head(20), use_container_width=True)
                     st.caption(f"{len(_df_prev):,} intersections chargées")
                 st.download_button(
@@ -818,7 +818,7 @@ with st.expander("**Étape 2 — 📍 Générer le fichier des lieux Importants 
                 "garder que les intersections situées à proximité d'un de ces lieux."
             )
             # On affiche le tableau interactif (les 30 premières lignes) style Excel
-            with st.expander(f"📋 Voir le tableau ({len(df_pm_disp):,} lieux)", expanded=True):
+            with st.expander(f"📋 Voir le tableau ({len(df_pm_disp):,} lieux)", expanded=False):
                 st.dataframe(df_pm_disp.head(30), use_container_width=True)
 
             # Si le fichier binaire est prêt en mémoire, on affiche le bouton pour exporter l'Excel manuellement (optionnel)
@@ -1019,7 +1019,7 @@ with st.expander("**Étape 3 — 🚶 Générer les passages piétons**", expand
         if _m == "IA" and "df_pp" in st.session_state:
             _df_pp_r = st.session_state["df_pp"]
             st.success(f"✅ **{len(_df_pp_r)} intersections analysées** via IA pour {_c}.")
-            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=True):
+            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
                 st.dataframe(_df_pp_r.head(15), use_container_width=True)
                 st.caption(f"{len(_df_pp_r)} lignes au total")
 
@@ -1043,7 +1043,7 @@ with st.expander("**Étape 3 — 🚶 Générer les passages piétons**", expand
         elif "df_pp" in st.session_state:
             _df_pp_r = st.session_state["df_pp"]
             st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m} pour {_c}.")
-            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=True):
+            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
                 st.dataframe(_df_pp_r.head(15), use_container_width=True)
                 st.caption(f"{len(_df_pp_r)} lignes au total")
             st.download_button(
@@ -1169,13 +1169,13 @@ with st.expander("**Étape 4 — 📄 Générer les fiches équipes**", expanded
             with tabs[idx]:
                 if intersections_source == "geojson" and "inter_df_preview" in st.session_state:
                     _df_p = st.session_state["inter_df_preview"]
-                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=True):
+                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=False):
                         st.dataframe(_df_p.head(20), use_container_width=True)
                         st.caption(f"{len(_df_p):,} intersections · filtrage voies appliqué")
                 elif intersections_source == "csv" and intersections_file:
                     _df_p = pd.read_csv(intersections_file)
                     intersections_file.seek(0)
-                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=True):
+                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=False):
                         st.dataframe(_df_p.head(20), use_container_width=True)
                         st.caption(f"{len(_df_p):,} lignes · {len(_df_p.columns)} colonnes")
             idx += 1
@@ -1185,7 +1185,7 @@ with st.expander("**Étape 4 — 📄 Générer les fiches équipes**", expanded
                 _df_l = pd.read_excel(lieux_source)
                 if hasattr(lieux_source, "seek"):
                     lieux_source.seek(0)
-                with st.expander(f"📋 Voir le tableau ({len(_df_l):,} lignes)", expanded=True):
+                with st.expander(f"📋 Voir le tableau ({len(_df_l):,} lignes)", expanded=False):
                     st.dataframe(_df_l.head(20), use_container_width=True)
                     st.caption(f"{len(_df_l):,} points d'intérêt")
             idx += 1
@@ -1195,7 +1195,7 @@ with st.expander("**Étape 4 — 📄 Générer les fiches équipes**", expanded
                 _df_pp_p = st.session_state["df_pp"]
                 _pp_methode_p = st.session_state.get("pp_methode", "")
                 _pp_commune_p = st.session_state.get("pp_commune", "")
-                with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=True):
+                with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=False):
                     st.dataframe(_df_pp_p.head(20), use_container_width=True)
                     st.caption(f"{len(_df_pp_p):,} lignes · méthode {_pp_methode_p} · {_pp_commune_p}")
 

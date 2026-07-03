@@ -576,17 +576,10 @@ def main(Ville, intersections, base_dir=None):
 
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
-<<<<<<< HEAD
             nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{Ville.lower()}_passages.csv"
             #df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
             
             
-=======
-            Path(dossier_output).mkdir(parents=True, exist_ok=True)
-            nom_fichier_sortie = f"{dossier_output}/intersections_{Ville.lower()}_passages.csv"
-            df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
-
->>>>>>> 6db93df5b0d0e46c33a241315cb6c1d7b78b9b71
             print(f"\n Traitement terminé avec succès !")
             print(f" Fichier sauvegardé sous : {nom_fichier_sortie}")
             print("\nAperçu des premières lignes générées :")

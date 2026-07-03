@@ -173,6 +173,72 @@ COMBINAISONS_VOIES = generer_combinaisons_voies(TYPES_VOIES_COMBO)
 INTERSECTIONS_DIR = Path("intersections")
 
 
+def _normaliser_ville(texte: str) -> str:
+    # Traite tirets et espaces comme identiques pour comparer les noms de villes
+    return texte.lower().replace("-", " ").replace("_", " ")
+
+
+def _rmtree_force(path):
+    # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
+    # Si un fichier est verrouillé (ouvert dans Excel), on l'ignore avec un avertissement
+    import shutil
+    import os
+    def _on_error(func, p, _):
+        try:
+            os.chmod(p, 0o777)
+            func(p)
+        except PermissionError:
+            st.warning(f"Impossible de supprimer '{Path(p).name}' (fichier ouvert).")
+    shutil.rmtree(path, onerror=_on_error)
+
+
+def nettoyer_anciennes_villes_gui(base_dir: Path, garder: int = 2):
+    """
+    Supprime les données (images_pp + fiches_equipes) des villes les plus
+    anciennes quand le nombre de villes distinctes dépasse `garder`.
+
+    Contrairement aux scripts CLI (main.py / main_mixte.py), l'interface
+    n'écrit pas de PM_{ville}.xlsx persistant par ville (les lieux sont
+    regénérés à la volée dans data/raw/lieux_upload.xlsx à chaque run) :
+    le suivi des villes se fait donc via les dossiers fiches_equipes,
+    nommés "{ville}_{horodatage}" par export_final_equipes().
+    """
+    import os
+    dossier_images = base_dir / "data" / "raw" / "images_pp"
+    dossier_fiches = base_dir / "data" / "output" / "fiches_equipes"
+
+    if not dossier_fiches.exists():
+        return
+
+    # Regroupe les dossiers par ville normalisée, en retenant la génération
+    # la plus récente de chacune comme référence pour le tri par ancienneté.
+    par_ville = {}
+    for dossier in dossier_fiches.iterdir():
+        if not dossier.is_dir():
+            continue
+        ville_brute = dossier.name.rsplit("_", 2)[0]  # retire "_YYYYMMDD_HHMMSS"
+        ville_norm = _normaliser_ville(ville_brute)
+        mtime = dossier.stat().st_mtime
+        if ville_norm not in par_ville or mtime > par_ville[ville_norm][1]:
+            par_ville[ville_norm] = (ville_brute, mtime)
+
+    villes_par_anciennete = sorted(par_ville.items(), key=lambda kv: kv[1][1])
+
+    while len(villes_par_anciennete) > garder:
+        ville_norm, (ville_brute, _) = villes_par_anciennete.pop(0)
+
+        prefix_fiches = ville_norm + " "
+        for dossier in dossier_fiches.iterdir():
+            if dossier.is_dir() and _normaliser_ville(dossier.name).startswith(prefix_fiches):
+                _rmtree_force(dossier)
+
+        if dossier_images.exists():
+            prefix_images = "images " + ville_norm + " "
+            for dossier in dossier_images.iterdir():
+                if dossier.is_dir() and _normaliser_ville(dossier.name).startswith(prefix_images):
+                    _rmtree_force(dossier)
+
+
 def chemin_geojson_commune(code_insee: str) -> Path:
     """Chemin du fichier GeoJSON local pour un code INSEE donné."""
     return INTERSECTIONS_DIR / f"intersections_{code_insee}.geojson"
@@ -366,23 +432,6 @@ with st.sidebar:
     st.caption("Modifiez les valeurs ci-dessus pour ajuster le point de RDV.")
 
     st.divider()
-
-    # --- Sliders ---
-    st.subheader("Paramètres de recherche")
-    radius_km = st.slider(
-        "Rayon autour des POI (km)",
-        min_value=0.05, max_value=1.0,
-        value=float(cfg.get("radius_km", 0.2)), step=0.05,
-        help="Seules les intersections dans ce rayon autour d'un point d'intérêt sont conservées.",
-    )
-    n_teams = st.slider(
-        "Nombre d'équipes",
-        min_value=1, max_value=20,
-        value=int(cfg.get("n_teams", 5)), step=1,
-        help="Les intersections seront réparties en N groupes géographiques.",
-    )
-
-    st.divider()
     st.caption("v1.2 — DEFIACCESS © 2025")
 
 
@@ -393,17 +442,13 @@ st.title("|DF| DEFIACCESS — Générateur de feuilles terrain accessibilité")
 st.markdown(
     """
 Cette application prépare automatiquement les tournées terrain d'évaluation de
-l'accessibilité PMR d'une commune. Voici ce que fait l'algorithme, étape par étape :
+l'accessibilité PMR d'une commune. Réglez les paramètres dans la barre latérale,
+puis suivez les 4 étapes ci-dessous :
 
-1. **Intersections** — téléchargement des croisements de rues de la commune, avec filtre par types de voies.
+1. **Intersections** — téléchargement automatique des croisements de rues de la commune, avec filtre par types de voies.
 2. **Lieux d'intérêt (PM)** — recherche des écoles, de la mairie, des établissements de santé, commerces, etc. via les sources officielles et OpenStreetMap.
-3. **Filtrage géographique** — seules les intersections situées dans un rayon donné autour d'un lieu d'intérêt sont conservées.
-4. **Passages piétons** — détection des passages piétons proches de chaque intersection (OpenStreetMap, accidents ou IA).
-5. **Répartition en équipes** — les intersections retenues sont regroupées géographiquement en plusieurs équipes.
-6. **Calcul d'itinéraires** — un itinéraire optimisé est calculé pour chaque équipe depuis le point de rendez-vous.
-7. **Export** — une feuille terrain Excel est générée pour chaque équipe, prête à imprimer.
-
-Réglez les paramètres dans la barre latérale, puis suivez les étapes ci-dessous.
+3. **Passages piétons** — détection des passages piétons proches des intersections (OpenStreetMap, accidents corporels ou IA).
+4. **Fiches équipes** — filtrage des intersections autour des lieux d'intérêt, répartition en équipes, calcul des itinéraires et export des feuilles terrain Excel prêtes à imprimer.
 """
 )
 st.divider()
@@ -413,7 +458,7 @@ st.divider()
 # 2a. Intersections — automatique par défaut, fichier personnalisé en option repliée
 # ─────────────────────────────────────────────────────────────────────────────────────────
  
-with st.expander("**🗂️ Intersections**", expanded=True):
+with st.expander("**Étape 1 — 🗂️ Intersections**", expanded=True):
  
     st.markdown("**Objectif :** récupérer les intersections de la commune — automatique, rien à faire.")
 
@@ -606,8 +651,9 @@ with st.expander("**🗂️ Intersections**", expanded=True):
                     "Aperçu des croisements de rues trouvés — ex. \"Rue Victor Hugo / "
                     "Avenue de la République\" — utilisés ensuite pour générer les feuilles terrain."
                 )
-                st.dataframe(_df_prev.head(20), use_container_width=True)
-                st.caption(f"{len(_df_prev):,} intersections chargées")
+                with st.expander(f"📋 Voir le tableau ({len(_df_prev):,} intersections)", expanded=True):
+                    st.dataframe(_df_prev.head(20), use_container_width=True)
+                    st.caption(f"{len(_df_prev):,} intersections chargées")
                 st.download_button(
                     label="📥 Télécharger intersections.csv",
                     data=_df_prev.to_csv(index=False).encode("utf-8"),
@@ -623,13 +669,20 @@ with st.expander("**🗂️ Intersections**", expanded=True):
 
 # On crée un bloc repliable (un "accordéon") dans l'interface pour la gestion des lieux (PM).
 # "expanded=False" signifie que par défaut, ce bloc est affiché fermé pour ne pas encombrer l'écran.
-with st.expander("**📍 Générer le fichier des lieux Importants (PM, sous format xlsx)**", expanded=False):
+with st.expander("**Étape 2 — 📍 Générer le fichier des lieux Importants (PM, sous format xlsx)**", expanded=False):
     
     # On affiche un petit texte d'explication pour guider l'utilisateur sur le rôle de cette zone.
     st.markdown(
         "**Objectif :** récupérer automatiquement les points d'intérêt de la commune "
         "(écoles, mairie, supermarchés, pharmacies…) depuis les sources "
         "officielles et OpenStreetMap."
+    )
+
+    radius_km = st.slider(
+        "Veuillez choisir le rayon autour des PM (km)",
+        min_value=0.05, max_value=1.0,
+        value=float(cfg.get("radius_km", 0.2)), step=0.05,
+        help="Seules les intersections dans ce rayon autour d'un point d'intérêt sont conservées.",
     )
 
     # VÉRIFICATION : On contrôle si l'utilisateur a bien tapé un nom de commune dans la barre latérale.
@@ -739,6 +792,7 @@ with st.expander("**📍 Générer le fichier des lieux Importants (PM, sous for
 
             if df_pm_local.empty:
                 st.error(f"Aucun lieu d'intérêt trouvé pour '{ville_cible}' avec les filtres sélectionnés.")
+                st.toast(f"Aucun lieu trouvé pour {ville_cible}.", icon="⚠️", duration="long")
             else:
                 st.session_state["df_pm"] = df_pm_local
                 st.session_state["pm_commune"] = ville_cible
@@ -747,6 +801,7 @@ with st.expander("**📍 Générer le fichier des lieux Importants (PM, sous for
                 df_pm_local.to_excel(_buf_pm_local, index=False)
                 _buf_pm_local.seek(0)
                 st.session_state["pm_buffer"] = _buf_pm_local.getvalue()
+                st.toast(f"{len(df_pm_local)} lieux trouvés pour {ville_cible}.", icon="✅", duration="long")
                 st.rerun()
 
     # ── AFFICHAGE DE L'APERÇU (rempli par ce bouton ou par le pipeline principal) ──────────
@@ -763,12 +818,13 @@ with st.expander("**📍 Générer le fichier des lieux Importants (PM, sous for
                 "garder que les intersections situées à proximité d'un de ces lieux."
             )
             # On affiche le tableau interactif (les 30 premières lignes) style Excel
-            st.dataframe(df_pm_disp.head(30), use_container_width=True)
-            
+            with st.expander(f"📋 Voir le tableau ({len(df_pm_disp):,} lieux)", expanded=True):
+                st.dataframe(df_pm_disp.head(30), use_container_width=True)
+
             # Si le fichier binaire est prêt en mémoire, on affiche le bouton pour exporter l'Excel manuellement (optionnel)
             if "pm_buffer" in st.session_state:
                 st.download_button(
-                    label="Télécharger lieux.xlsx (Copie de sauvegarde)",
+                    label="📥 Télécharger lieux.xlsx (Copie de sauvegarde)",
                     data=st.session_state["pm_buffer"],
                     file_name=f"lieux_{st.session_state.get('pm_commune').lower().replace(' ', '_')}.xlsx",
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -777,101 +833,9 @@ with st.expander("**📍 Générer le fichier des lieux Importants (PM, sous for
 
 
 # ─────────────────────────────────────────────
-# 2b-bis. PIPELINE TOUT-EN-UN
-# ─────────────────────────────────────────────
-# On crée un accordéon nommé "🚀 Générer les fiches intersections et PM".
-# "expanded=False" signifie que par défaut, ce bloc reste fermé/replié pour ne pas encombrer l'écran.
-with st.expander("**🚀 Générer les fiches intersections et PM**", expanded=False):
-    
-    # Message d'introduction textuel pour expliquer ce que fait le bouton.
-    st.markdown(
-        "**Objectif :** lancer **toutes les étapes** à la suite : détection de la mairie, "
-        "téléchargement des intersections, génération des lieux, "
-        "des passages piétons (OSM) — sans manipulation manuelle."
-    )
-
-    # SÉCURITÉ : On vérifie si l'utilisateur a écrit un nom de ville dans la barre latérale.
-    if not commune_str.strip():
-        # Si c'est vide, on affiche une alerte d'information bleue et le script s'arrête là.
-        st.info("Saisissez d'abord le nom de la commune dans la barre latérale.")
-    else:
-        # Si une ville est saisie, on extrait son nom propre (avant la virgule) et on l'affiche à l'écran.
-        st.write(f"Commune ciblée : **{commune_str.split(',')[0].strip()}**")
-
-    # On prépare 2 colonnes asymétriques pour les boutons d'action (une large de taille 3, une petite de taille 1).
-    col_auto_run, col_auto_reset = st.columns([3, 1])
-    
-    with col_auto_run:
-        # Création du bouton principal "Tout générer".
-        auto_run_btn = st.button(
-            "🚀 Tout générer",
-            key="btn_auto_run",
-            type="primary",              # Le bouton s'affiche en couleur principale (souvent rouge ou bleu)
-            use_container_width=True,    # Il s'étire sur toute la largeur de sa colonne
-            # IMPORTANT : Le bouton se désactive tout seul si le nom de la commune est vide 
-            # OU si une génération automatique est déjà en cours d'exécution.
-            disabled=not commune_str.strip() or st.session_state.get("auto_running", False),
-        )
-        
-    with col_auto_reset:
-        # Création du bouton secondaire "Réinitialiser" pour tout remettre à zéro en cas de besoin.
-        auto_reset_btn = st.button("🔄 Réinitialiser", key="btn_auto_reset", use_container_width=True)
-
-    # ACTION DU BOUTON RÉINITIALISER :
-    if auto_reset_btn:
-        # On fait la liste de TOUTES les variables enregistrées en mémoire concernant cette ville :
-        # (les tableaux de lieux, les logs de texte, les coordonnées de la mairie, les intersections...)
-        for cle in ("df_pm", "pm_logs", "pm_buffer", "pm_commune", "pm_filters_signature",
-                    "df_pp", "pp_methode", "pp_commune",
-                    "mairie_lat", "mairie_lon", "auto_running",
-                    "inter_geojson_path", "inter_df_preview",
-                    "intersections_auto_ville", "intersections_auto_echec", "is_fichier_perso"):
-            # On efface chaque élément un par un de la mémoire globale de l'application (.pop())
-            st.session_state.pop(cle, None)
-        # On recharge instantanément la page pour repartir sur une application toute propre.
-        st.rerun()
-
-    # ACTION DU BOUTON PRINCIPAL "TOUT GÉNÉRER" :
-    if auto_run_btn and commune_str.strip():
-        # On passe un interrupteur à True pour indiquer à l'ordinateur qu'un gros calcul est en cours.
-        st.session_state["auto_running"] = True
-        # On nettoie le nom de la ville pour les calculs (ex: "Paris").
-        ville_auto = commune_str.split(",")[0].strip()
-
-        # ──────────────────────────────────────────────────────────────
-        # ── ÉTAPE 1/4 : Trouver l'emplacement géographique de la Mairie
-        # ──────────────────────────────────────────────────────────────
-        # On affiche une icône animée de chargement avec un texte d'attente.
-        with st.spinner("📍 Étape 1/4 — Détection de la mairie…"):
-            # On appelle une fonction qui interroge une API géographique pour obtenir la Latitude et la Longitude de la mairie.
-            _lat_a, _lon_a = recuperer_coords_mairie(commune_str)
-            
-        if _lat_a is not None:
-            # Si on trouve la mairie, on enregistre ses coordonnées GPS précises en mémoire.
-            st.session_state["mairie_lat"] = _lat_a
-            st.session_state["mairie_lon"] = _lon_a
-            # On valide visuellement l'étape avec un encadré vert affichant les coordonnées.
-            st.success(f"Mairie : {_lat_a:.6f}, {_lon_a:.6f}")
-        else:
-            # Si l'API ne trouve pas la mairie, on affiche une alerte orange et on appliquera des coordonnées génériques.
-            st.warning("Mairie introuvable — coordonnées par défaut utilisées.")
-
-        # ──────────────────────────────────────────────────────────────
-        # ── ÉTAPE 2/4 : Récupérer les intersections (Rues)
-        # ──────────────────────────────────────────────────────────────
-        # On regarde d'abord si le fichier GeoJSON des intersections de cette ville est déjà enregistré localement.
-        geojson_auto = trouver_geojson_existant(ville_auto)
-        
-        if geojson_auto is not None:
-            # Si le fichier existe déjà, pas besoin de le retélécharger ! On l'utilise directement (gain de temps).
-            st.info(f"📂 Étape 2/4 — Fichier intersections déjà présent : `{geojson_auto.name}`")
-            st.session_state
-
-
-# ─────────────────────────────────────────────
 # 2c. Génération des passages piétons (PP)
 # ─────────────────────────────────────────────
-with st.expander("**🚶 Générer les passages piétons**", expanded=False):
+with st.expander("**Étape 3 — 🚶 Générer les passages piétons**", expanded=False):
     st.markdown(
         "**Objectif :** identifier les passages piétons autour des intersections selon la méthode choisie."
     )
@@ -914,7 +878,7 @@ with st.expander("**🚶 Générer les passages piétons**", expanded=False):
         reset_pp_btn = st.button("Réinitialiser", key="btn_reset_pp", use_container_width=True)
 
     if reset_pp_btn:
-        for cle in ("df_pp", "pp_methode", "pp_commune"):
+        for cle in ("df_pp", "pp_methode", "pp_commune", "pp_ia_dossier"):
             st.session_state.pop(cle, None)
         st.rerun()
 
@@ -931,14 +895,18 @@ with st.expander("**🚶 Générer les passages piétons**", expanded=False):
                         st.session_state["df_pp"]      = df_pp
                         st.session_state["pp_methode"] = "OSM"
                         st.session_state["pp_commune"] = ville_pp
+                        st.toast(f"{len(df_pp)} intersections analysées via OSM.", icon="✅", duration="long")
                     else:
                         st.warning("Aucun passage piéton trouvé via OSM.")
+                        st.toast("Aucun passage piéton trouvé via OSM.", icon="⚠️", duration="long")
                 else:
                     st.error(f"Zone OSM introuvable pour '{ville_pp}'.")
+                    st.toast(f"Zone OSM introuvable pour '{ville_pp}'.", icon="❌", duration="long")
 
         elif methode_pp == "Accidents (CSV)":
             if accidents_file is None:
                 st.error("Uploadez d'abord le fichier CSV d'accidents.")
+                st.toast("Uploadez d'abord le fichier CSV d'accidents.", icon="⚠️", duration="long")
             else:
                 from src.identification_PP import charger_accidents
                 import tempfile, os
@@ -953,33 +921,133 @@ with st.expander("**🚶 Générer les passages piétons**", expanded=False):
                             st.session_state["df_pp"]      = df_pp
                             st.session_state["pp_methode"] = "Accidents"
                             st.session_state["pp_commune"] = ville_pp
+                            st.toast(f"{len(df_pp)} accidents sur passages piétons trouvés.", icon="✅", duration="long")
                         else:
                             st.warning(f"Aucun accident sur PP trouvé pour '{ville_pp}'.")
+                            st.toast(f"Aucun accident sur PP trouvé pour '{ville_pp}'.", icon="⚠️", duration="long")
                     except Exception as e:
                         os.unlink(tmp_path)
                         st.error(f"Erreur CSV : {e}")
+                        st.toast(f"Erreur CSV : {e}", icon="❌", duration="long")
 
         elif methode_pp == "IA (YOLO — best.pt requis)":
             import os
+            _inter_prete = bool(
+                st.session_state.get("inter_geojson_path")
+                and Path(st.session_state["inter_geojson_path"]).exists()
+            )
+            _pm_prete = (
+                "df_pm" in st.session_state
+                and st.session_state.get("pm_commune") == ville_pp
+            )
+
             if not os.path.exists(os.path.join("models", "best.pt")):
                 st.error("Modèle introuvable.")
+                st.toast("Modèle models/best.pt introuvable.", icon="❌", duration="long")
+            elif not _inter_prete:
+                st.error(
+                    "Générez d'abord les intersections (bloc « 🗂️ Intersections » ci-dessus) "
+                    "avant de lancer la détection IA."
+                )
+                st.toast("Intersections manquantes pour lancer l'IA.", icon="⚠️", duration="long")
+            elif not _pm_prete:
+                st.error(
+                    "Générez d'abord les lieux d'intérêt (bloc « 📍 Générer le fichier des lieux "
+                    "Importants ») pour cette commune avant de lancer la détection IA."
+                )
+                st.toast("Lieux d'intérêt (PM) manquants pour lancer l'IA.", icon="⚠️", duration="long")
             else:
-                st.info("Détection IA lancée pendant la génération des feuilles terrain.")
-                st.session_state["pp_methode"] = "IA"
-                st.session_state["pp_commune"] = ville_pp
+                from src.telecharger_intersections import charger_en_dataframe_sans_input
+                from src.IA_PP import analyser_toutes_intersections
+                from datetime import datetime
+                import re
+
+                with st.spinner(f"Préparation de l'analyse IA pour **{ville_pp}**…"):
+                    _combos_ia = st.session_state.get("combos_selectionnes", [])
+                    df_inter_ia = charger_en_dataframe_sans_input(
+                        st.session_state["inter_geojson_path"], types_voies=[]
+                    )
+                    if _combos_ia:
+                        df_inter_ia = filtrer_par_combinaisons_voies(df_inter_ia, _combos_ia)
+
+                    df_inter_ia = filtre_distance(st.session_state["df_pm"], df_inter_ia, rayon_km=radius_km)
+                    df_inter_ia = fusion_croisement(df_inter_ia, threshold_km=0.03)
+
+                if df_inter_ia.empty:
+                    st.warning("Aucune intersection après filtrage géographique — IA non lancée.")
+                    st.toast("Aucune intersection à analyser après filtrage.", icon="⚠️", duration="long")
+                else:
+                    dossier_images_ia = str(
+                        Path("data/raw/images_pp")
+                        / f"images_{ville_pp}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
+                    )
+
+                    _total_ia = len(df_inter_ia)
+                    _progress_ia = st.progress(0, text=f"Détection IA — 0/{_total_ia} passages analysés…")
+                    _pattern_ia = re.compile(r"\[(\d+)/(\d+)\]")
+
+                    class StreamlitLoggerIA(io.StringIO):
+                        def write(self, texte):
+                            super().write(texte)
+                            match = _pattern_ia.search(texte)
+                            if match:
+                                _i_ia, _tot_ia = int(match.group(1)), int(match.group(2))
+                                _progress_ia.progress(
+                                    min(_i_ia / _tot_ia, 1.0),
+                                    text=f"Détection IA — {_i_ia}/{_tot_ia} passages analysés…",
+                                )
+                            return len(texte)
+
+                    logs_ia = StreamlitLoggerIA()
+                    with contextlib.redirect_stdout(logs_ia):
+                        df_pp = analyser_toutes_intersections(
+                            df_inter_ia, col_lat="latitude", col_lon="longitude",
+                            dossier_images=dossier_images_ia,
+                        )
+                    _progress_ia.progress(1.0, text=f"Détection IA terminée — {_total_ia}/{_total_ia} passages analysés.")
+
+                    st.session_state["df_pp"]         = df_pp
+                    st.session_state["pp_methode"]    = "IA"
+                    st.session_state["pp_commune"]    = ville_pp
+                    st.session_state["pp_ia_dossier"] = dossier_images_ia
+                    st.toast(f"Analyse IA terminée pour {len(df_pp)} intersections.", icon="✅", duration="long")
 
     if "pp_methode" in st.session_state:
         _m = st.session_state["pp_methode"]
         _c = st.session_state.get("pp_commune", "")
-        if _m == "IA":
-            st.success(f"✅ Méthode IA sélectionnée pour **{_c}**.")
+
+        if _m == "IA" and "df_pp" in st.session_state:
+            _df_pp_r = st.session_state["df_pp"]
+            st.success(f"✅ **{len(_df_pp_r)} intersections analysées** via IA pour {_c}.")
+            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=True):
+                st.dataframe(_df_pp_r.head(15), use_container_width=True)
+                st.caption(f"{len(_df_pp_r)} lignes au total")
+
+            _dossier_ia = st.session_state.get("pp_ia_dossier")
+            if _dossier_ia and Path(_dossier_ia).is_dir():
+                _zip_buf_ia = io.BytesIO()
+                with zipfile.ZipFile(_zip_buf_ia, "w", zipfile.ZIP_DEFLATED) as zf:
+                    for _f in Path(_dossier_ia).iterdir():
+                        if _f.is_file():
+                            zf.write(_f, arcname=_f.name)
+                _zip_buf_ia.seek(0)
+                st.download_button(
+                    label="📥 Télécharger l'analyse des passages piétons",
+                    data=_zip_buf_ia,
+                    file_name=f"images_pp_{_c.lower().replace(' ', '_')}.zip",
+                    mime="application/zip",
+                    key="dl_pp_ia_zip",
+                    use_container_width=True,
+                )
+
         elif "df_pp" in st.session_state:
             _df_pp_r = st.session_state["df_pp"]
             st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m} pour {_c}.")
-            st.dataframe(_df_pp_r.head(15), use_container_width=True)
-            st.caption(f"{len(_df_pp_r)} lignes au total")
+            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=True):
+                st.dataframe(_df_pp_r.head(15), use_container_width=True)
+                st.caption(f"{len(_df_pp_r)} lignes au total")
             st.download_button(
-                label="📥 Télécharger passages_pietons.csv",
+                label="📥 Télécharger l'analyse des passages piétons",
                 data=_df_pp_r.to_csv(index=False).encode("utf-8"),
                 file_name=f"passages_pietons_{_c.lower().replace(' ', '_')}.csv",
                 mime="text/csv",
@@ -989,312 +1057,451 @@ with st.expander("**🚶 Générer les passages piétons**", expanded=False):
 
 
 # ─────────────────────────────────────────────
-# 3. Zone principale — Upload lieux + fallback intersections CSV
+# 3. Génération des fiches équipes
 # ─────────────────────────────────────────────
-st.subheader("📄 Génération des feuilles terrain")
-
-# ── Résolution source intersections ───────────────────────────────────
-# Priorité : GeoJSON téléchargé auto > CSV uploadé manuellement
-_inter_geojson_path = st.session_state.get("inter_geojson_path")
-
-col_upload_inter, col_upload_lieux = st.columns(2)
-
-with col_upload_inter:
-    if _inter_geojson_path and Path(_inter_geojson_path).exists():
-        st.success(
-            f"✅ Intersections chargées automatiquement : "
-            f"`{Path(_inter_geojson_path).name}`"
-        )
-        intersections_file = None          # pas d'upload manuel nécessaire
-        intersections_source = "geojson"   # marqueur pour le pipeline
-    else:
-        st.markdown("**intersections.csv** — upload manuel (si pas de téléchargement auto)")
-        intersections_file = st.file_uploader(
-            "intersections.csv",
-            type=["csv"],
-            help="CSV des intersections — utilisez l'expander ci-dessus pour l'obtenir automatiquement.",
-        )
-        intersections_source = "csv" if intersections_file else None
-
-with col_upload_lieux:
-    lieux_file = st.file_uploader(
-        "lieux.xlsx (points d'intérêt)",
-        type=["xlsx"],
-        help=(
-            "Optionnel — si vous n'uploadez rien, les lieux sont générés "
-            "automatiquement au clic sur « ⚡ Générer les feuilles terrain », "
-            "avec les filtres cochés dans « 📍 Générer le fichier des lieux Importants (PM, sous format xlsx) » ci-dessus."
-        ),
+with st.expander("**Étape 4 — 📄 Générer les fiches équipes**", expanded=False):
+    st.markdown(
+        "**Objectif :** combiner intersections, lieux d'intérêt et passages piétons "
+        "pour répartir les équipes et générer les feuilles terrain prêtes à imprimer."
     )
 
-# ── Résolution source lieux ───────────────────────────────────────────
-if lieux_file is not None:
-    lieux_source = lieux_file
-elif st.session_state.get("pm_buffer"):
-    lieux_source = io.BytesIO(st.session_state["pm_buffer"])
-    lieux_source.name = "lieux_genere.xlsx"
-else:
-    lieux_source = None
-
-
-# ─────────────────────────────────────────────
-# 4. Prévisualisation
-# ─────────────────────────────────────────────
-_has_inter = intersections_source is not None
-_has_lieux = lieux_source is not None
-
-if _has_inter or _has_lieux:
-    st.divider()
-    st.subheader("Aperçu des données chargées")
-
-    import pandas as pd
-
-    tabs_preview = []
-    if _has_inter:
-        tabs_preview.append("Intersections")
-    if _has_lieux:
-        tabs_preview.append("Lieux d'intérêt")
-
-    tabs = st.tabs(tabs_preview)
-    idx = 0
-
-    if _has_inter:
-        with tabs[idx]:
-            if intersections_source == "geojson" and "inter_df_preview" in st.session_state:
-                _df_p = st.session_state["inter_df_preview"]
-                st.dataframe(_df_p.head(20), use_container_width=True)
-                st.caption(f"{len(_df_p):,} intersections · filtrage voies appliqué")
-            elif intersections_source == "csv" and intersections_file:
-                _df_p = pd.read_csv(intersections_file)
-                intersections_file.seek(0)
-                st.dataframe(_df_p.head(20), use_container_width=True)
-                st.caption(f"{len(_df_p):,} lignes · {len(_df_p.columns)} colonnes")
-        idx += 1
-
-    if _has_lieux:
-        with tabs[idx]:
-            _df_l = pd.read_excel(lieux_source)
-            if hasattr(lieux_source, "seek"):
-                lieux_source.seek(0)
-            st.dataframe(_df_l.head(20), use_container_width=True)
-            st.caption(f"{len(_df_l):,} points d'intérêt")
-
-
-# ─────────────────────────────────────────────
-# 5. Bouton Générer
-# ─────────────────────────────────────────────
-st.divider()
-
-ready = (
-    (intersections_source is not None)
-    and commune_str.strip() != ""
-)
-
-if not ready:
-    manquants = []
-    if intersections_source is None:
-        manquants.append("intersections (téléchargement auto ou CSV manuel)")
-    if not commune_str.strip():
-        manquants.append("nom de la commune")
-    st.info(f"En attente : **{', '.join(manquants)}**")
-elif lieux_source is None:
-    st.caption(
-        "Les lieux d'intérêt seront générés automatiquement au clic, avec les "
-        "filtres cochés dans « 📍 Générer le fichier des lieux Importants (PM, sous format xlsx) »."
+    n_teams = st.slider(
+        "Nombre d'équipes",
+        min_value=1, max_value=20,
+        value=int(cfg.get("n_teams", 5)), step=1,
+        help="Les intersections seront réparties en N groupes géographiques.",
     )
 
-generate_btn = st.button(
-    "⚡ Générer les feuilles terrain",
-    disabled=not ready,
-    type="primary",
-    use_container_width=True,
-)
+    # ── État des sources (auto par défaut) ──────────────────────────────────
+    _inter_geojson_path = st.session_state.get("inter_geojson_path")
 
+    col_status_inter, col_status_lieux = st.columns(2)
 
-# ─────────────────────────────────────────────
-# 6. Pipeline principal
-# ─────────────────────────────────────────────
-if generate_btn and ready:
-    import pandas as pd
-
-    output_dir = Path("data/output/fiches_equipes")
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    progress = st.progress(0, text="Initialisation…")
-    status   = st.empty()
-
-    try:
-        # ── Etape 1 — Chargement des intersections ────────────────────
-        status.info("**Étape 1/6** — Chargement et nettoyage des intersections…")
-        progress.progress(8)
-
-        if intersections_source == "geojson":
-            # Charger depuis le GeoJSON local sans interaction console
-            from src.telecharger_intersections import charger_en_dataframe_sans_input
-            _combos_pipeline = st.session_state.get("combos_selectionnes", [])
-            df = charger_en_dataframe_sans_input(_inter_geojson_path, types_voies=[])
-            if _combos_pipeline:
-                avant = len(df)
-                df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
-                status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
-        else:
-            # Fallback CSV uploadé manuellement
-            intersections_path = Path("data/raw/intersections_upload.csv")
-            intersections_path.parent.mkdir(parents=True, exist_ok=True)
-            intersections_path.write_bytes(intersections_file.read())
-            df = charger_intersections(str(intersections_path), commune_str)
-
-            # Filtre combinaisons de voies sur le CSV aussi
-            _combos_pipeline = st.session_state.get("combos_selectionnes", [])
-            if _combos_pipeline:
-                avant = len(df)
-                df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
-                status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
-
-        progress.progress(15)
-
-        if df.empty:
-            st.error(
-                "Aucune intersection après chargement/filtrage. "
-                "Vérifiez le nom de la commune ou les types de voies sélectionnés."
+    with col_status_inter:
+        if _inter_geojson_path and Path(_inter_geojson_path).exists():
+            st.success(
+                f"✅ Intersections chargées automatiquement : "
+                f"`{Path(_inter_geojson_path).name}`"
             )
-            st.stop()
-
-        # ── Étape 2 — Chargement des POI ──────────────────────────────
-        lieux_path = Path("data/raw/lieux_upload.xlsx")
-        lieux_path.parent.mkdir(parents=True, exist_ok=True)
-
-        _ville_actuelle = commune_str.split(",")[0].strip()
-
-        if lieux_file is not None:
-            status.info("**Étape 2/6** — Chargement des points d'intérêt (fichier fourni)…")
-            progress.progress(30)
-            lieux_path.write_bytes(lieux_file.read())
-        elif (
-            st.session_state.get("pm_buffer")
-            and st.session_state.get("pm_commune") == _ville_actuelle
-        ):
-            # Déjà généré via le bouton "🏗️ Générer les PM" (ou un run précédent) pour
-            # cette même commune -> on réutilise directement, pas besoin de refaire les appels API.
-            status.info("**Étape 2/6** — Réutilisation des lieux déjà générés…")
-            progress.progress(30)
-            lieux_path.write_bytes(st.session_state["pm_buffer"])
         else:
-            # Pas de fichier fourni manuellement, ni de PM déjà généré pour cette commune
-            # -> génération automatique avec les filtres cochés dans le bloc "📍 Générer
-            # le fichier des lieux Importants (PM, sous format xlsx)" plus haut.
-            _ville_pm = _ville_actuelle
-            status.info(f"**Étape 2/6** — Génération des points d'intérêt pour **{_ville_pm}**… (1-2 min)")
-            progress.progress(30)
+            st.info(
+                "Aucune intersection auto-chargée — importez un fichier ci-dessous ou utilisez "
+                "le bloc « Étape 1 — 🗂️ Intersections » ci-dessus."
+            )
 
-            _cs_choisies  = st.session_state.get("pm_categories_sante_choisies", LABELS_SANTE)
-            _ce_choisies  = st.session_state.get("pm_categories_ecoles_choisies", LABELS_ECOLES)
-            _co_labels    = st.session_state.get("pm_categories_osm_labels_choisies", LABELS_OSM)
-            _co_choisies  = st.session_state.get("pm_categories_osm_choisies")
+    with col_status_lieux:
+        if st.session_state.get("pm_buffer"):
+            st.success(
+                f"✅ Lieux d'intérêt (PM) déjà générés pour "
+                f"**{st.session_state.get('pm_commune', '')}**."
+            )
+        else:
+            st.info(
+                "Les lieux seront générés automatiquement au clic sur « ⚡ Générer les feuilles "
+                "terrain », avec les filtres cochés dans « Étape 2 — 📍 Générer le fichier des "
+                "lieux Importants » ci-dessus."
+            )
 
-            # "Tout coché" (cas par défaut) -> None, pour garder le filet de sécurité
-            # OSM en cas d'échec réel de FINESS. Toute sélection partielle (y compris
-            # "aucune case cochée") est respectée telle quelle.
-            _categories_sante  = None if set(_cs_choisies) == set(LABELS_SANTE) else _cs_choisies
-            _categories_ecoles = None if set(_ce_choisies) == set(LABELS_ECOLES) else _ce_choisies
-            _categories_osm    = None if set(_co_labels) == set(LABELS_OSM) else _co_choisies
+    # ── Importer mes propres fichiers (optionnel, remplace l'auto) ─────────
+    with st.expander("📂 Importer mes propres fichiers (avancé)", expanded=False):
+        col_upload_inter, col_upload_lieux = st.columns(2)
 
-            zone_logs_pm = st.empty()
+        with col_upload_inter:
+            intersections_file = st.file_uploader(
+                "Votre fichier intersections.csv",
+                type=["csv"],
+                key="uploader_intersections_manuel_e4",
+                help="Remplace le téléchargement automatique si un fichier est fourni ici.",
+            )
 
-            class StreamlitLoggerPM(io.StringIO):
-                def write(self, texte):
-                    super().write(texte)
-                    lignes = self.getvalue().splitlines()
-                    zone_logs_pm.code("\n".join(lignes[-20:]) or "…", language="text")
-                    return len(texte)
+        with col_upload_lieux:
+            lieux_file = st.file_uploader(
+                "Votre fichier lieux.xlsx (points d'intérêt)",
+                type=["xlsx"],
+                key="uploader_lieux_manuel",
+                help="Remplace les lieux déjà générés si un fichier est fourni ici.",
+            )
 
-            logs_pm = StreamlitLoggerPM()
-            with contextlib.redirect_stdout(logs_pm):
-                df_pm_genere = construire_dataframe_PM_sans_input_avec_filtres(
-                    _ville_pm,
-                    categories_osm=_categories_osm,
-                    categories_sante=_categories_sante,
-                    categories_ecoles=_categories_ecoles,
-                )
+    # ── Résolution source intersections ─────────────────────────────────────
+    # Priorité : CSV uploadé manuellement > GeoJSON téléchargé auto
+    if intersections_file is not None:
+        intersections_source = "csv"
+    elif _inter_geojson_path and Path(_inter_geojson_path).exists():
+        intersections_source = "geojson"
+    else:
+        intersections_source = None
 
-            if df_pm_genere.empty:
+    # ── Résolution source lieux ───────────────────────────────────────────
+    if lieux_file is not None:
+        lieux_source = lieux_file
+    elif st.session_state.get("pm_buffer"):
+        lieux_source = io.BytesIO(st.session_state["pm_buffer"])
+        lieux_source.name = "lieux_genere.xlsx"
+    else:
+        lieux_source = None
+
+
+    # ─────────────────────────────────────────────
+    # 4. Prévisualisation
+    # ─────────────────────────────────────────────
+    _has_inter = intersections_source is not None
+    _has_lieux = lieux_source is not None
+    _has_pp    = "df_pp" in st.session_state
+
+    if _has_inter or _has_lieux or _has_pp:
+        st.divider()
+        st.subheader("Aperçu des données chargées")
+
+        import pandas as pd
+
+        tabs_preview = []
+        if _has_inter:
+            tabs_preview.append("Intersections")
+        if _has_lieux:
+            tabs_preview.append("Lieux d'intérêt")
+        if _has_pp:
+            tabs_preview.append("Passages piétons")
+
+        tabs = st.tabs(tabs_preview)
+        idx = 0
+
+        if _has_inter:
+            with tabs[idx]:
+                if intersections_source == "geojson" and "inter_df_preview" in st.session_state:
+                    _df_p = st.session_state["inter_df_preview"]
+                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=True):
+                        st.dataframe(_df_p.head(20), use_container_width=True)
+                        st.caption(f"{len(_df_p):,} intersections · filtrage voies appliqué")
+                elif intersections_source == "csv" and intersections_file:
+                    _df_p = pd.read_csv(intersections_file)
+                    intersections_file.seek(0)
+                    with st.expander(f"📋 Voir le tableau ({len(_df_p):,} lignes)", expanded=True):
+                        st.dataframe(_df_p.head(20), use_container_width=True)
+                        st.caption(f"{len(_df_p):,} lignes · {len(_df_p.columns)} colonnes")
+            idx += 1
+
+        if _has_lieux:
+            with tabs[idx]:
+                _df_l = pd.read_excel(lieux_source)
+                if hasattr(lieux_source, "seek"):
+                    lieux_source.seek(0)
+                with st.expander(f"📋 Voir le tableau ({len(_df_l):,} lignes)", expanded=True):
+                    st.dataframe(_df_l.head(20), use_container_width=True)
+                    st.caption(f"{len(_df_l):,} points d'intérêt")
+            idx += 1
+
+        if _has_pp:
+            with tabs[idx]:
+                _df_pp_p = st.session_state["df_pp"]
+                _pp_methode_p = st.session_state.get("pp_methode", "")
+                _pp_commune_p = st.session_state.get("pp_commune", "")
+                with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=True):
+                    st.dataframe(_df_pp_p.head(20), use_container_width=True)
+                    st.caption(f"{len(_df_pp_p):,} lignes · méthode {_pp_methode_p} · {_pp_commune_p}")
+
+
+    @st.dialog("🎉 Feuilles terrain générées !")
+    def _popup_resultat_final(nb_feuilles: int, n_equipes: int, ville: str):
+        st.success(f"**{nb_feuilles} feuille(s)** générée(s) pour **{n_equipes} équipe(s)** — {ville}.")
+        st.caption("La carte, les statistiques par équipe et le téléchargement ZIP sont juste en dessous, sur la page.")
+        if st.button("Fermer", use_container_width=True):
+            st.rerun()
+
+
+    # ─────────────────────────────────────────────
+    # 5. Bouton Générer
+    # ─────────────────────────────────────────────
+    st.divider()
+
+    ready = (
+        (intersections_source is not None)
+        and commune_str.strip() != ""
+    )
+
+    if not ready:
+        manquants = []
+        if intersections_source is None:
+            manquants.append("intersections (téléchargement auto ou CSV manuel)")
+        if not commune_str.strip():
+            manquants.append("nom de la commune")
+        st.info(f"En attente : **{', '.join(manquants)}**")
+    elif lieux_source is None:
+        st.caption(
+            "Les lieux d'intérêt seront générés automatiquement au clic, avec les "
+            "filtres cochés dans « 📍 Générer le fichier des lieux Importants (PM, sous format xlsx) »."
+        )
+
+    generate_btn = st.button(
+        "⚡ Générer les feuilles terrain",
+        disabled=not ready,
+        type="primary",
+        use_container_width=True,
+    )
+
+
+    # ─────────────────────────────────────────────
+    # 6. Pipeline principal
+    # ─────────────────────────────────────────────
+    if generate_btn and ready:
+        import pandas as pd
+
+        output_dir = Path("data/output/fiches_equipes")
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        progress = st.progress(0, text="Initialisation…")
+        status   = st.empty()
+
+        try:
+            # ── Etape 1 — Chargement des intersections ────────────────────
+            status.info("**Étape 1/6** — Chargement et nettoyage des intersections…")
+            progress.progress(8)
+
+            if intersections_source == "geojson":
+                # Charger depuis le GeoJSON local sans interaction console
+                from src.telecharger_intersections import charger_en_dataframe_sans_input
+                _combos_pipeline = st.session_state.get("combos_selectionnes", [])
+                df = charger_en_dataframe_sans_input(_inter_geojson_path, types_voies=[])
+                if _combos_pipeline:
+                    avant = len(df)
+                    df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
+                    status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
+            else:
+                # Fallback CSV uploadé manuellement
+                intersections_path = Path("data/raw/intersections_upload.csv")
+                intersections_path.parent.mkdir(parents=True, exist_ok=True)
+                intersections_path.write_bytes(intersections_file.read())
+                df = charger_intersections(str(intersections_path), commune_str)
+
+                # Filtre combinaisons de voies sur le CSV aussi
+                _combos_pipeline = st.session_state.get("combos_selectionnes", [])
+                if _combos_pipeline:
+                    avant = len(df)
+                    df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
+                    status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
+
+            progress.progress(15)
+
+            if df.empty:
                 st.error(
-                    f"Aucun lieu d'intérêt trouvé pour '{_ville_pm}' avec les filtres sélectionnés. "
-                    "Cochez plus de catégories dans « 📍 Générer le fichier des lieux Importants (PM, sous format xlsx) »."
+                    "Aucune intersection après chargement/filtrage. "
+                    "Vérifiez le nom de la commune ou les types de voies sélectionnés."
                 )
                 st.stop()
 
-            df_pm_genere.to_excel(lieux_path, index=False)
+            # ── Étape 2 — Chargement des POI ──────────────────────────────
+            lieux_path = Path("data/raw/lieux_upload.xlsx")
+            lieux_path.parent.mkdir(parents=True, exist_ok=True)
 
-            # Mémorisation pour l'aperçu / téléchargement affichés dans le bloc
-            # "📍 Générer le fichier des lieux Importants (PM, sous format xlsx)" plus haut sur la page.
-            st.session_state["df_pm"]      = df_pm_genere
-            st.session_state["pm_commune"] = _ville_pm
-            st.session_state["pm_filters_signature"] = signature_filtres_pm(_cs_choisies, _ce_choisies, _co_labels)
-            _buf_pm = io.BytesIO()
-            df_pm_genere.to_excel(_buf_pm, index=False)
-            _buf_pm.seek(0)
-            st.session_state["pm_buffer"] = _buf_pm.getvalue()
+            _ville_actuelle = commune_str.split(",")[0].strip()
 
-        pois = charger_points(str(lieux_path))
-
-        # ── Étape 3 — Filtrage géographique ───────────────────────────
-        status.info("**Étape 3/6** — Filtrage des intersections proches des POI…")
-        progress.progress(45)
-        df = filtre_distance(pois, df, rayon_km=radius_km)
-        df = fusion_croisement(df, threshold_km=0.03)
-
-        # ── Étape 4 — Passages piétons ────────────────────────────────
-        status.info("**Étape 4/6** — Intégration des passages piétons…")
-        progress.progress(58)
-
-        _pp_methode = st.session_state.get("pp_methode")
-
-        if _pp_methode == "IA":
-            from src.IA_PP import analyser_toutes_intersections
-            from datetime import datetime
-            dossier_images = str(
-                Path("data/raw/images_pp")
-                / f"images_{commune_str.split(',')[0].strip()}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
-            )
-            df = analyser_toutes_intersections(
-                df, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
-            )
-
-        elif _pp_methode in ("OSM", "Accidents") and "df_pp" in st.session_state:
-            from src.identification_PP import comparer_coordonnees
-            df_pp_session = st.session_state["df_pp"]
-            df = comparer_coordonnees(df_pp_session, df)
-            if "nb_pp" in df.columns:
-                df["nb_traversees"] = df["nb_pp"]
-            elif "nb_passages_pietons" in df.columns:
-                df["nb_traversees"] = df["nb_passages_pietons"]
+            if lieux_file is not None:
+                status.info("**Étape 2/6** — Chargement des points d'intérêt (fichier fourni)…")
+                progress.progress(30)
+                lieux_path.write_bytes(lieux_file.read())
+            elif (
+                st.session_state.get("pm_buffer")
+                and st.session_state.get("pm_commune") == _ville_actuelle
+            ):
+                # Déjà généré via le bouton "🏗️ Générer les PM" (ou un run précédent) pour
+                # cette même commune -> on réutilise directement, pas besoin de refaire les appels API.
+                status.info("**Étape 2/6** — Réutilisation des lieux déjà générés…")
+                progress.progress(30)
+                lieux_path.write_bytes(st.session_state["pm_buffer"])
             else:
-                df["nb_traversees"] = 0
+                # Pas de fichier fourni manuellement, ni de PM déjà généré pour cette commune
+                # -> génération automatique avec les filtres cochés dans le bloc "📍 Générer
+                # le fichier des lieux Importants (PM, sous format xlsx)" plus haut.
+                _ville_pm = _ville_actuelle
+                status.info(f"**Étape 2/6** — Génération des points d'intérêt pour **{_ville_pm}**… (1-2 min)")
+                progress.progress(30)
 
-        else:
-            df["nb_traversees"] = np.random.randint(1, 5, size=len(df))
-            status.info("**Étape 4/6** — Aucune méthode PP configurée, valeurs provisoires utilisées.")
+                _cs_choisies  = st.session_state.get("pm_categories_sante_choisies", LABELS_SANTE)
+                _ce_choisies  = st.session_state.get("pm_categories_ecoles_choisies", LABELS_ECOLES)
+                _co_labels    = st.session_state.get("pm_categories_osm_labels_choisies", LABELS_OSM)
+                _co_choisies  = st.session_state.get("pm_categories_osm_choisies")
 
-        progress.progress(65)
+                # "Tout coché" (cas par défaut) -> None, pour garder le filet de sécurité
+                # OSM en cas d'échec réel de FINESS. Toute sélection partielle (y compris
+                # "aucune case cochée") est respectée telle quelle.
+                _categories_sante  = None if set(_cs_choisies) == set(LABELS_SANTE) else _cs_choisies
+                _categories_ecoles = None if set(_ce_choisies) == set(LABELS_ECOLES) else _ce_choisies
+                _categories_osm    = None if set(_co_labels) == set(LABELS_OSM) else _co_choisies
 
-        # ── Étape 5 — Clustering & routing ────────────────────────────
-        status.info("**Étape 5/6** — Répartition par équipes et calcul des itinéraires…")
-        progress.progress(75)
-        df = assigner_equipes(df, n_equipes=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
-        teams_dict = route_toutes_equipes(df, meetup_lat, meetup_lon)
+                zone_logs_pm = st.empty()
 
-        # ── Étape 6 — Export XLSX ─────────────────────────────────────
-        status.info("**Étape 6/6** — Génération des feuilles terrain XLSX…")
-        progress.progress(90)
-        output_files = export_final_equipes(teams_dict, str(output_dir))
+                class StreamlitLoggerPM(io.StringIO):
+                    def write(self, texte):
+                        super().write(texte)
+                        lignes = self.getvalue().splitlines()
+                        zone_logs_pm.code("\n".join(lignes[-20:]) or "…", language="text")
+                        return len(texte)
 
-        progress.progress(100, text="Terminé ✅")
-        status.success(f"**{len(output_files)} feuille(s) générée(s)** pour {n_teams} équipe(s).")
+                logs_pm = StreamlitLoggerPM()
+                with contextlib.redirect_stdout(logs_pm):
+                    df_pm_genere = construire_dataframe_PM_sans_input_avec_filtres(
+                        _ville_pm,
+                        categories_osm=_categories_osm,
+                        categories_sante=_categories_sante,
+                        categories_ecoles=_categories_ecoles,
+                    )
 
-        # ─────────────────────────────────────────
-        # 7. Carte Folium
-        # ─────────────────────────────────────────
+                if df_pm_genere.empty:
+                    st.error(
+                        f"Aucun lieu d'intérêt trouvé pour '{_ville_pm}' avec les filtres sélectionnés. "
+                        "Cochez plus de catégories dans « 📍 Générer le fichier des lieux Importants (PM, sous format xlsx) »."
+                    )
+                    st.toast(f"Aucun lieu trouvé pour {_ville_pm}.", icon="⚠️", duration="long")
+                    st.stop()
+
+                df_pm_genere.to_excel(lieux_path, index=False)
+
+                # Mémorisation pour l'aperçu / téléchargement affichés dans le bloc
+                # "📍 Générer le fichier des lieux Importants (PM, sous format xlsx)" plus haut sur la page.
+                st.session_state["df_pm"]      = df_pm_genere
+                st.session_state["pm_commune"] = _ville_pm
+                st.session_state["pm_filters_signature"] = signature_filtres_pm(_cs_choisies, _ce_choisies, _co_labels)
+                _buf_pm = io.BytesIO()
+                df_pm_genere.to_excel(_buf_pm, index=False)
+                _buf_pm.seek(0)
+                st.session_state["pm_buffer"] = _buf_pm.getvalue()
+                st.toast(f"{len(df_pm_genere)} lieux générés pour {_ville_pm}.", icon="✅", duration="long")
+
+            pois = charger_points(str(lieux_path))
+
+            # ── Étape 3 — Filtrage géographique ───────────────────────────
+            status.info("**Étape 3/6** — Filtrage des intersections proches des POI…")
+            progress.progress(45)
+            df = filtre_distance(pois, df, rayon_km=radius_km)
+            df = fusion_croisement(df, threshold_km=0.03)
+
+            # ── Étape 4 — Passages piétons ────────────────────────────────
+            status.info("**Étape 4/6** — Intégration des passages piétons…")
+            progress.progress(58)
+
+            _pp_methode = st.session_state.get("pp_methode")
+
+            if _pp_methode == "IA":
+                _df_pp_cache = st.session_state.get("df_pp")
+                _ia_deja_faite = (
+                    _df_pp_cache is not None
+                    and st.session_state.get("pp_commune") == _ville_actuelle
+                    and "intersection" in df.columns
+                    and "intersection" in _df_pp_cache.columns
+                    and set(df["intersection"]) == set(_df_pp_cache["intersection"])
+                )
+                if _ia_deja_faite:
+                    status.info("**Étape 4/6** — Réutilisation de l'analyse IA déjà effectuée dans « 🚶 Générer les passages piétons »…")
+                    df = _df_pp_cache
+                else:
+                    from src.IA_PP import analyser_toutes_intersections
+                    from datetime import datetime
+                    import re
+                    dossier_images = str(
+                        Path("data/raw/images_pp")
+                        / f"images_{_ville_actuelle}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
+                    )
+
+                    _pattern_ia2 = re.compile(r"\[(\d+)/(\d+)\]")
+
+                    class StreamlitLoggerIA2(io.StringIO):
+                        def write(self, texte):
+                            super().write(texte)
+                            match = _pattern_ia2.search(texte)
+                            if match:
+                                _i2, _tot2 = int(match.group(1)), int(match.group(2))
+                                status.info(f"**Étape 4/6** — Détection IA — {_i2}/{_tot2} passages analysés…")
+                            return len(texte)
+
+                    logs_ia2 = StreamlitLoggerIA2()
+                    with contextlib.redirect_stdout(logs_ia2):
+                        df = analyser_toutes_intersections(
+                            df, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
+                        )
+                    st.session_state["df_pp"]         = df
+                    st.session_state["pp_commune"]    = _ville_actuelle
+                    st.session_state["pp_ia_dossier"] = dossier_images
+
+            elif _pp_methode in ("OSM", "Accidents") and "df_pp" in st.session_state:
+                from src.identification_PP import comparer_coordonnees
+                df_pp_session = st.session_state["df_pp"]
+                df = comparer_coordonnees(df_pp_session, df)
+                if "nb_pp" in df.columns:
+                    df["nb_traversees"] = df["nb_pp"]
+                elif "nb_passages_pietons" in df.columns:
+                    df["nb_traversees"] = df["nb_passages_pietons"]
+                else:
+                    df["nb_traversees"] = 0
+
+            else:
+                df["nb_traversees"] = np.random.randint(1, 5, size=len(df))
+                status.info("**Étape 4/6** — Aucune méthode PP configurée, valeurs provisoires utilisées.")
+
+            progress.progress(65)
+
+            # ── Étape 5 — Clustering & routing ────────────────────────────
+            status.info("**Étape 5/6** — Répartition par équipes et calcul des itinéraires…")
+            progress.progress(75)
+            df = assigner_equipes(df, n_equipes=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
+            teams_dict = route_toutes_equipes(df, meetup_lat, meetup_lon)
+
+            # ── Étape 6 — Export XLSX ─────────────────────────────────────
+            status.info("**Étape 6/6** — Génération des feuilles terrain XLSX…")
+            progress.progress(90)
+            output_files = export_final_equipes(teams_dict, str(output_dir), _ville_actuelle)
+
+            # Nettoyage des anciennes villes (images_pp + fiches_equipes) une fois
+            # la nouvelle génération terminée, pour ne pas accumuler indéfiniment.
+            nettoyer_anciennes_villes_gui(Path(__file__).parent)
+
+            progress.progress(100, text="Terminé ✅")
+            status.success(f"**{len(output_files)} feuille(s) générée(s)** pour {n_teams} équipe(s).")
+
+            # Mémorisation du résultat pour qu'il reste affiché (carte, stats, ZIP)
+            # même après un rerun (ex: fermeture du popup de confirmation ci-dessous).
+            st.session_state["final_teams_dict"]  = teams_dict
+            st.session_state["final_pois"]        = pois
+            st.session_state["final_output_files"] = output_files
+            st.session_state["final_meetup"]      = (meetup_lat, meetup_lon)
+            st.session_state["final_pp_methode"]  = _pp_methode
+            st.session_state["final_ville"]       = _ville_actuelle
+            st.session_state["final_n_teams"]     = n_teams
+
+            _popup_resultat_final(len(output_files), n_teams, commune_str.split(",")[0].strip())
+
+        except FileNotFoundError as e:
+            progress.empty()
+            st.error(f"Fichier introuvable : {e}")
+            st.toast(f"Fichier introuvable : {e}", icon="❌", duration="long")
+        except KeyError as e:
+            progress.empty()
+            st.error(f"Colonne manquante : **{e}** — vérifiez que vos données contiennent latitude, longitude et intersection.")
+            st.toast(f"Colonne manquante : {e}", icon="❌", duration="long")
+        except Exception as e:
+            progress.empty()
+            st.error(f"Erreur inattendue : {e}")
+            st.toast(f"Erreur inattendue : {e}", icon="❌", duration="long")
+            with st.expander("Détails (débogage)"):
+                import traceback
+                st.code(traceback.format_exc())
+
+    # ─────────────────────────────────────────────
+    # 7-9. Résultat de la dernière génération (persiste après un rerun,
+    #      ex: fermeture du popup de confirmation) — carte, stats, ZIP.
+    # ─────────────────────────────────────────────
+    if "final_teams_dict" in st.session_state:
+        import pandas as pd
+
+        _teams_dict_f    = st.session_state["final_teams_dict"]
+        _pois_f          = st.session_state["final_pois"]
+        _output_files_f  = st.session_state["final_output_files"]
+        _meetup_lat_f, _meetup_lon_f = st.session_state["final_meetup"]
+        _pp_methode_f    = st.session_state.get("final_pp_methode")
+        _ville_f         = st.session_state.get("final_ville", "")
+        _n_teams_f       = st.session_state.get("final_n_teams", len(_teams_dict_f))
+
+        st.divider()
+
+        # ── Carte Folium ────────────────────────────────────────────
         st.subheader("🗺️ Carte des intersections par équipe")
 
         COLORS = [
@@ -1304,22 +1511,30 @@ if generate_btn and ready:
             "black", "lightgray", "white", "darkpurple", "salmon",
         ]
 
-        m = folium.Map(location=[meetup_lat, meetup_lon], zoom_start=14, tiles="CartoDB positron")
+        m = folium.Map(location=[_meetup_lat_f, _meetup_lon_f], zoom_start=14, tiles="CartoDB positron")
         folium.Marker(
-            location=[meetup_lat, meetup_lon],
+            location=[_meetup_lat_f, _meetup_lon_f],
             popup="<b>Point de rendez-vous</b>",
             icon=folium.Icon(color="black", icon="home", prefix="fa"),
         ).add_to(m)
 
-        for _, poi in pois.iterrows():
-            folium.CircleMarker(
+        for _, poi in _pois_f.iterrows():
+            _label_poi = str(poi.get("lieu", "POI"))
+            folium.Marker(
                 location=[poi["latitude"], poi["longitude"]],
-                radius=8, color="#FF6B35", fill=True, fill_opacity=0.9,
-                popup=folium.Popup(str(poi.get("lieu", "POI")), max_width=200),
-                tooltip=str(poi.get("lieu", "POI")),
+                icon=folium.DivIcon(
+                    icon_size=(14, 14),
+                    icon_anchor=(7, 7),
+                    html=(
+                        '<div style="width:14px;height:14px;background-color:#FF6B35;'
+                        'border:2px solid white;box-shadow:0 0 2px rgba(0,0,0,0.6);"></div>'
+                    ),
+                ),
+                popup=folium.Popup(_label_poi, max_width=200),
+                tooltip=_label_poi,
             ).add_to(m)
 
-        for equipe_id, team_df in teams_dict.items():
+        for equipe_id, team_df in _teams_dict_f.items():
             color = COLORS[(equipe_id - 1) % len(COLORS)]
             for _, row in team_df.iterrows():
                 nb_pp = int(row.get("nb_traversees", 0))
@@ -1335,14 +1550,12 @@ if generate_btn and ready:
                     popup=folium.Popup(popup_html, max_width=250),
                 ).add_to(m)
 
-        st_folium(m, width=None, height=500, returned_objects=[])
+        st_folium(m, width=None, height=500, returned_objects=[], key="carte_resultat_final")
 
-        # ─────────────────────────────────────────
-        # 8. Statistiques
-        # ─────────────────────────────────────────
+        # ── Statistiques ────────────────────────────────────────────
         st.subheader("📊 Répartition par équipe")
         stats_rows = []
-        for equipe_id, team_df in teams_dict.items():
+        for equipe_id, team_df in _teams_dict_f.items():
             stats_rows.append({
                 "Équipe": f"Équipe {equipe_id}",
                 "Intersections": len(team_df),
@@ -1357,37 +1570,23 @@ if generate_btn and ready:
             "Accidents": "Accidents corporels (CSV)",
             "IA":        "Détection IA YOLOv8",
             None:        "Valeurs provisoires",
-        }.get(_pp_methode, "Inconnue")
+        }.get(_pp_methode_f, "Inconnue")
         st.caption(f"Méthode passages piétons : {_pp_label}")
 
-        # ─────────────────────────────────────────
-        # 9. Téléchargement ZIP
-        # ─────────────────────────────────────────
+        # ── Téléchargement ZIP ──────────────────────────────────────
         st.subheader("📥 Téléchargement")
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-            for fpath in output_files:
+            for fpath in _output_files_f:
                 zf.write(fpath, arcname=Path(fpath).name)
         zip_buffer.seek(0)
 
         st.download_button(
-            label=f"📦 Télécharger les {len(output_files)} feuilles terrain (.zip)",
+            label=f"📦 Télécharger les {len(_output_files_f)} feuilles terrain (.zip)",
             data=zip_buffer,
-            file_name=f"defiaccess_{commune_str.split(',')[0].strip().lower().replace(' ', '_')}.zip",
+            file_name=f"defiaccess_{_ville_f.lower().replace(' ', '_')}.zip",
             mime="application/zip",
             type="primary",
             use_container_width=True,
+            key="dl_zip_final",
         )
-
-    except FileNotFoundError as e:
-        progress.empty()
-        st.error(f"Fichier introuvable : {e}")
-    except KeyError as e:
-        progress.empty()
-        st.error(f"Colonne manquante : **{e}** — vérifiez que vos données contiennent latitude, longitude et intersection.")
-    except Exception as e:
-        progress.empty()
-        st.error(f"Erreur inattendue : {e}")
-        with st.expander("Détails (débogage)"):
-            import traceback
-            st.code(traceback.format_exc())

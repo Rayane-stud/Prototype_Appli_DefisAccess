@@ -31,11 +31,31 @@ B)-  route_toutes_equipes(df, rdv_lat, rdv_long) :
         - optimiser la répartition des points entre les équipes
         - minimiser la distance totale parcourue par toutes les équipes
 
+        
+C)- voisin_leplus_proche_pieton(df, start_lat, start_long, G):
+    Paramètres : 
+        df :  dataframe contenant tous les points que l'equipe doit visiter
+        start_lat : (Float) latitude du point de depart initial de la tournée 
+        start_long : (Float) longitude du pts de depart initial 
+        G : (Graph) c'est la structure  de donnée qui conitnet les "itinéraires", la vraie carte de zone ( rues, trotoirs, parcs, escaliers)
+    Retourne : 
+        DataFrame : les memes data frame trié dans l'ordre optimal de la tournée avec une colonne supplémentaire ordre contenant des entiers croissant qui indiquent la sequence exaacte 
+    Ce que ca fait : 
+        appliquation du principe du plus proche voisin mais en utilisant la realité du terrain plutot que la geometrie 
+        1- projette le pts de depart et les poitns du data frame sur le vrais reseau de pieton OpenStreetMap (G) 
+        2- a partir de la position actuelle , elel calcule le temp de marche reelle a travers les rues trotoires et parcs pour atteindre chacun des points restants 
+        3- selectionne le point le plus rapide d'ccès , m'ajoute a la liste des points visités et se depalce virtuellement sur ce point
+        4- retir ce point de la liste des choix xrestants et repete l'opération jusqu'a ce que tous les points aient été planifiés 
+        5- recontrstruit le dataframe numéroté de 1 a N 
 
+        
 Docu imports : 
     pandas : pour la manipulation des dataframes
     geodesic de geopy.distance : pour calculer les distances géodésiques entre deux points GPS
     KDTree de scipy.spatial : pour une recherche efficace du plus proche voisin ( optimisation de l'algorithme du plus proche voisin pour plus tard)
+
+    osmnx : manipulation des graphes de reseaux routiers 
+    networkx : manipulation des graphes 
 
 """
 
@@ -44,6 +64,9 @@ Docu imports :
 import pandas as pd
 from geopy.distance import geodesic 
 from scipy.spatial import KDTree
+
+import osmnx as ox
+import networkx as nx 
 
 
 '''
@@ -168,3 +191,97 @@ def voisin_lePlus_proche_opti_sans_rondeur(df, start_lat, start_long):
 
 
 # POSSIBILITE DE FAIRE QLQ CHOSE D'OPTI ET QUI PREND EN COMPTE LA RONDEUR DE LA TERRE, EN UTILISANT BallTree + Haversine
+
+
+# 1. Charger le réseau PIÉTON (Ex: à l'échelle d'une ville ou d'un code postal)
+# À faire une seule fois au chargement de ton application
+# G = ox.graph_from_place("Garches, France", network_type="walk")
+
+# 2. Ajouter les vitesses de marche estimées et les temps de trajet sur chaque tronçon
+# G = ox.routing.add_edge_speeds(G, walk_speed=4.5) # 4.5 km/h en moyenne
+# G = ox.routing.add_edge_travel_times(G)
+
+def voisin_lePlus_proche_pieton(df, start_lat, start_long, G):
+    """
+    Calcule l'itinéraire optimal pour UNE équipe sur le réseau piéton réel.
+    """
+    intersections_restantes = df.copy()
+    intersections_visitees = []
+    
+    # Trouver le nœud piéton le plus proche du point de départ
+    noeud_actuel = ox.nearest_nodes(G, start_long, start_lat)
+    
+    # On associe chaque point du dataframe au nœud piéton OSM le plus proche
+    intersections_restantes['osm_node'] = ox.nearest_nodes(
+        G, intersections_restantes['longitude'].values, intersections_restantes['latitude'].values
+    )
+
+    while not intersections_restantes.empty:
+        temps_trajet_réels = {}
+        
+        # 3. Calculer la distance (en temps) via le réseau pour tous les points restants
+        for idx, row in intersections_restantes.iterrows():
+            target_node = row['osm_node']
+            try:
+                # On cherche à minimiser le TEMPS de marche (travel_time) 
+                # ou la distance ('length') selon la préférence
+                temps = nx.shortest_path_length(G, source=noeud_actuel, target=target_node, weight='travel_time')
+            except nx.NetworkXNoPath:
+                # Au cas où un point est isolé (ex: copropriété fermée dans OSM)
+                temps = float('inf') 
+            temps_trajet_réels[idx] = temps
+        
+        # Trouver l'intersection la plus proche en temps de marche
+        indice_proche = min(temps_trajet_réels, key=temps_trajet_réels.get)
+        intersection_proche = intersections_restantes.loc[indice_proche]
+        
+        intersections_visitees.append(indice_proche)
+        
+        # Le point d'arrivée devient le nouveau point de départ
+        noeud_actuel = intersection_proche['osm_node']
+        intersections_restantes = intersections_restantes.drop(indice_proche)
+        
+    # Reconstruction du DataFrame final
+    df_ordonne = df.loc[intersections_visitees].copy()
+    df_ordonne["ordre"] = range(1, len(df_ordonne) + 1)
+    
+    return df_ordonne
+
+
+# Due au probleme de ville en argument, j'opte pr avoir la carte en fonction des coordonnées gps extreme avec une securite de a peu pres 1 km et dmi soit 0.015 degres sur les coo
+
+def route_toutes_equipes2(df, rdv_lat, rdv_long):
+    """
+    Détermine la zone géographique globale, télécharge la carte adéquate,
+    et lance le calcul d'itinéraire pour chaque équipe.
+    """
+
+    # 1. On trouve les coordonnées minimales et maximales de TOUS les points + le RDV
+    toutes_lats = pd.concat([df['latitude'], pd.Series([rdv_lat])])
+    toutes_longs = pd.concat([df['longitude'], pd.Series([rdv_long])])
+    
+    # 2. On définit les limites géographiques (nord, sud, est, ouest)
+    # On ajoute un petit "buffer" (ici ~0.015 degré, soit environ 1.5km) pour ne pas couper le réseau routier aux bords
+    buffer = 0.015
+    nord = toutes_lats.max() + buffer
+    sud = toutes_lats.min() - buffer
+    est = toutes_longs.max() + buffer
+    ouest = toutes_longs.min() - buffer
+    
+    # 3. On télécharge la carte de cette zone exacte, peu importe les villes traversées !
+    print("Téléchargement du réseau piéton pour la zone détectée . . .")
+    G = ox.graph_from_bbox(bbox=(nord, sud, est, ouest), network_type="walk")
+
+    # 4. Paramétrer la vitesse de marche (4.5 km/h) et calculer les temps de trajet
+    G = ox.routing.add_edge_speeds(G, walk_speed=4.5)
+    G = ox.routing.add_edge_travel_times(G)
+    
+    # 5. Dispatcher le calcul par équipe
+    equipes = df["equipe"].unique()                 
+    routes = {}                                     
+    for equipe_id in equipes:
+        df_equipe = df[df["equipe"] == equipe_id].copy()                        
+        df_equipe_ordonne = voisin_lePlus_proche_pieton(df_equipe, rdv_lat, rdv_long, G)  
+        routes[equipe_id] = df_equipe_ordonne       
+
+    return routes

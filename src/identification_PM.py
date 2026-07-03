@@ -1121,8 +1121,7 @@ def _choisir_categories_osm() -> list[dict]:
     print("  ou appuyez sur Entrée pour toutes les inclure.")
     choix = input("\n  Votre sélection : ").strip()
 
-    '''ATTENTION CHANGEMENT PROVISOIR PCQ FLEMME DE TOUT CHANGER'''
-    #1choix = None
+   
 
     if not choix:
         print("  → Toutes les catégories OSM seront incluses.\n")
@@ -1324,3 +1323,50 @@ def construire_dataframe_PM_sans_input(ville: str, categories_osm: list[dict] | 
 
     print(f"\n {len(df)} PM au total pour {ville}")
     return df
+
+
+    
+def construire_dataframe_PM2(ville, categories_filtrees=None):
+    """
+    Version 2 de la génération des Points d'Intérêt (PM).
+    Appelle la fonction d'origine pour tout récupérer, puis filtre le résultat
+    en fonction des cases cochées dans l'interface Streamlit.
+    """
+    import pandas as pd
+    print(f"\n[PM2] Lancement de la génération pour : {ville}")
+    print(f"[PM2] Filtres cochés dans l'interface : {categories_filtrees}")
+
+    # 1. Si aucune case n'est cochée, on s'arrête tout de suite
+    if not categories_filtrees:
+        print("[PM2] Aucune catégorie sélectionnée.")
+        return pd.DataFrame()
+
+    # 2. On appelle TA fonction d'origine complète qui marche parfaitement
+    df_global = construire_dataframe_PM(ville)
+
+    if df_global.empty:
+        print("[PM2] Le tableau brut récupéré est vide.")
+        return df_global
+
+    # 3. On applique le filtre sur la colonne 'source' (ou 'categorie')
+    # On crée une correspondance entre le nom de ta case à cocher et le texte dans la colonne 'source'
+    filtre_sources = []
+    if "Mairie" in categories_filtrees:
+        filtre_sources.extend(["DataGouv_Mairie", "ServicePublic_Commissariat"])
+    if "Écoles" in categories_filtrees:
+        filtre_sources.append("DataEducation_Ecoles")
+    if "Pharmacies" in categories_filtrees:
+        filtre_sources.append("FINESS")
+    if "Supermarchés" in categories_filtrees:
+        filtre_sources.extend(["Supermarché / Commerce", "Marché"])
+    if "Administrations" in categories_filtrees:
+        filtre_sources.extend(["Lieu de culte", "Parc / Jardin", "Gare_SNCF", "Gare SNCF"])
+
+    # On applique le filtre strict sur le DataFrame
+    if 'source' in df_global.columns:
+        df_global = df_global[df_global['source'].isin(filtre_sources)].reset_index(drop=True)
+    elif 'categorie' in df_global.columns:
+        df_global = df_global[df_global['categorie'].isin(filtre_sources)].reset_index(drop=True)
+
+    print(f"[PM2] Filtrage terminé : {len(df_global)} lieux conservés.")
+    return df_global

@@ -28,6 +28,7 @@ from src.proximite import (
 )
 from src.routage import route_toutes_equipes
 from src.export import export_final_equipes
+from src.identification_PM import get_code_insee_api, get_equipements_gouv, construire_dataframe_PM2
 
 # ─────────────────────────────────────────────
 # 0. Configuration de la page
@@ -558,8 +559,27 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
                     # En cas de problème technique (ex: fichier ouvert ailleurs), on affiche l'erreur en rouge
                     st.error(f"Impossible de supprimer le fichier : {e}")
 
+         # CAS N°2 : Le fichier n'existe pas encore sur l'ordinateur pour cette vill 
         # CAS N°2 : Le fichier n'existe pas encore sur l'ordinateur pour cette ville
         else:
+            # ── AJOUT : AFFICHAGE DES CASES À COCHER SUR 3 COLONNES ───────────────────
+            LISTE_CATEGORIES = ["Écoles", "Mairie", "Supermarchés", "Pharmacies", "Administrations"]
+            
+            st.write("📋 **Sélectionnez les types de lieux à récupérer :**")
+            
+            # On crée 3 colonnes pour ranger les cases horizontalement
+            cols_checkbox = st.columns(3)
+            categories_choisies = []
+            
+            # On distribue proprement les cases dans les colonnes
+            for i, cat in enumerate(LISTE_CATEGORIES):
+                with cols_checkbox[i % 3]:
+                    if st.checkbox(cat, value=True, key=f"chk_{cat}"):
+                        categories_choisies.append(cat)
+            
+            st.write("---") # Petite ligne de séparation visuelle
+            # ──────────────────────────────────────────────────────────────────────────
+
             # On crée 2 colonnes pour organiser les boutons "Générer" et "Réinitialiser"
             col_gen, col_reset = st.columns([3, 1])
             
@@ -586,15 +606,14 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
 
             # ACTION DU BOUTON "GÉNÉRER LES LIEUX" :
             if generer_pm_btn and commune_str.strip():
-                # On importe la fonction interne chargée de faire les requêtes Internet (DataGouv / OSM)
-                from src.identification_PM import construire_dataframe_PM
+                # On importe la NOUVELLE fonction interne (PM2) chargée d'appliquer ton filtre
+                from src.identification_PM import construire_dataframe_PM2
                 
                 st.markdown("**Progression :**")
                 # On crée une zone de texte vide qui va servir à afficher les lignes de logs en temps réel
                 zone_logs = st.empty()
 
                 # SCRIPT TECHNIQUE (StreamlitLogger) : Cette classe intercepte les messages secrets
-                # qui s'écrivent normalement dans la console noire du développeur pour les copier à l'écran.
                 class StreamlitLogger(io.StringIO):
                     def write(self, texte):
                         super().write(texte)
@@ -609,13 +628,12 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
                 with st.spinner(f"Récupération des lieux pour **{ville_cible}**… (1-2 min)"):
                     # On redirige les messages de la console vers notre afficheur personnalisé
                     with contextlib.redirect_stdout(logs_buffer):
-                        # Lancement de la grosse fonction qui télécharge les données sur internet
-                        df_pm = construire_dataframe_PM(ville_cible)
+                        # MODIFICATION ICI : On utilise construire_dataframe_PM2 avec tes filtres cochés !
+                        df_pm = construire_dataframe_PM2(ville_cible, categories_filtrees=categories_choisies)
 
                 # SI LE TÉLÉCHARGEMENT A RÉUSSI ET RENVOIE DES DONNÉES :
                 if not df_pm.empty:
                     # 1. SAUVEGARDE SUR LE DISQUE : On enregistre immédiatement le résultat dans un fichier Excel local.
-                    # Ainsi, la prochaine fois, l'application passera directement par le "CAS N°1" (Instantané !).
                     df_pm.to_excel(chemin_lieux_existant, index=False)
                     
                     # 2. ENREGISTREMENT EN MÉMOIRE : On remplit le session_state pour le reste de l'application
@@ -629,8 +647,7 @@ with st.expander("📍 Générer le fichier lieux.xlsx automatiquement", expande
                     buf.seek(0)
                     st.session_state["pm_buffer"] = buf.getvalue()
                     
-                    # 4. ACTUALISATION : On force la page à se recharger. Comme le fichier existe maintenant sur le disque, 
-                    # l'écran va se redessiner proprement en affichant la boîte verte du CAS N°1.
+                    # 4. ACTUALISATION : On force la page à se recharger.
                     st.rerun()
 
     # ── AFFICHAGE DE L'APERÇU (Commun au CAS N°1 et CAS N°2) ──────────────────────────────
@@ -987,7 +1004,7 @@ generate_btn = st.button(
 if generate_btn and ready:
     import pandas as pd
 
-    output_dir = Path("data/output")
+    output_dir = Path("data/output/fiches_equipes")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     progress = st.progress(0, text="Initialisation…")

@@ -3,3 +3,13 @@ label_env/
 __pycache__/
 *.pyc
 *.pyo
+# Ignorer les images générées par l'IA
+data/raw/images_pp/
+# Ignorer les fiches d'équipes et fichiers de sortie générés
+data/output/
+# Fichiers temporaires Excel
+~$*.xlsx
+
+# Caches Python
+**/__pycache__/
+*.pyc

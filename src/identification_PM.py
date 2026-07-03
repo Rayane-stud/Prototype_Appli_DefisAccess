@@ -111,6 +111,38 @@ CATEGORIES_OSM_SANTE_FALLBACK = [
 # ID du jeu de données FINESS sur data.gouv.fr
 FINESS_DATASET_ID = "53699569a3a729239d2046eb"
 
+# Catégories propres pour le choix utilisateur des établissements de santé FINESS.
+# Les libellés FINESS bruts (ex: "Centre Hospitalier Spécialisé lutte Maladies
+# Mentales") sont verbeux et changent d'une commune à l'autre : on les range
+# automatiquement dans l'une de ces catégories via mots-clés (voir
+# _categoriser_etablissement_sante()). Ordre = ordre d'affichage du menu.
+CATEGORIES_FINESS_SANTE = [
+    {"label": "Hôpitaux",       "mots_cles": ("hospitalier", "hôpital")},
+    {"label": "Cliniques",      "mots_cles": ("clinique",)},
+    {"label": "Laboratoires",   "mots_cles": ("laboratoire",)},
+    {"label": "Centres de santé", "mots_cles": ("centre de santé", "centre de soins", "santé sexuelle", "cpts")},
+]
+
+# Catégorie de repli pour tout établissement de santé FINESS qui ne correspond
+# à aucun mot-clé ci-dessus (ex: "Etab.Accueil Non Médicalisé pour personnes
+# handicapées", "Services de Prévention et de Santé au Travail (SPST)")
+CATEGORIE_FINESS_AUTRES = "Autres établissements médico-sociaux"
+
+# Catégories propres pour le choix utilisateur des types d'écoles (data.education.gouv.fr).
+# Le champ "nature_uai_libe" de l'API contient des libellés bruts (ex: "ECOLE
+# DE NIVEAU ELEMENTAIRE", "LYCEE D'ENSEIGNEMENT GENERAL ET TECHNOLOGIQUE"),
+# rangés ici par mots-clés — voir _categoriser_ecole().
+CATEGORIES_ECOLES = [
+    {"label": "Écoles maternelles",   "mots_cles": ("maternelle",)},
+    {"label": "Écoles élémentaires",  "mots_cles": ("elementaire", "élémentaire", "primaire")},
+    {"label": "Collèges",             "mots_cles": ("college", "collège")},
+    {"label": "Lycées",               "mots_cles": ("lycee", "lycée")},
+]
+
+# Catégorie de repli pour tout établissement scolaire qui ne correspond à
+# aucun mot-clé ci-dessus (ex: établissements spécialisés, EREA, etc.)
+CATEGORIE_ECOLE_AUTRES = "Autres établissements scolaires"
+
 
 
 
@@ -282,7 +314,21 @@ def get_osm_area_id(ville: str) -> int | None:
 URL_ECOLES_API = "https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre/records"
 
 
-def get_ecoles_gouv(code_insee: str) -> list[dict]:
+def _categoriser_ecole(libelle: str) -> str:
+    """
+    Classe un libellé brut "nature_uai_libe" (ex: "ECOLE DE NIVEAU
+    ELEMENTAIRE") dans l'une des catégories propres de CATEGORIES_ECOLES
+    (Maternelles, Élémentaires, Collèges, Lycées), via mots-clés. Retourne
+    CATEGORIE_ECOLE_AUTRES si aucun mot-clé ne correspond.
+    """
+    libelle_lower = libelle.lower()
+    for categorie in CATEGORIES_ECOLES:
+        if any(mc in libelle_lower for mc in categorie["mots_cles"]):
+            return categorie["label"]
+    return CATEGORIE_ECOLE_AUTRES
+
+
+def get_ecoles_gouv(code_insee: str, categories_ecoles: list[str] | None = None) -> list[dict]:
     """
     Interroge l'API officielle data.education.gouv.fr pour récupérer
     toutes les écoles d'une commune via son code INSEE.
@@ -292,6 +338,12 @@ def get_ecoles_gouv(code_insee: str) -> list[dict]:
     Contrairement a get_code_insee_api() et get_osm_area_id() qui retournent
     un seul resultat (str ou int), cette fonction retourne une LISTE de
     dictionnaires car une commune contient generalement plusieurs ecoles.
+
+    ARGUMENTS :
+        categories_ecoles : liste des labels de CATEGORIES_ECOLES (+ éventuellement
+                             CATEGORIE_ECOLE_AUTRES) à conserver. None = pas de
+                             filtre, comportement inchangé (tout garder), pour ne
+                             pas casser les appelants existants.
     """
 
     params = {
@@ -337,6 +389,11 @@ def get_ecoles_gouv(code_insee: str) -> list[dict]:
                 continue
                 # si une ecole n'a pas de coordonnees on la saute plutot que
                 # de planter ou de l'inclure avec des valeurs manquantes
+
+            if categories_ecoles is not None:
+                categorie = _categoriser_ecole(record.get("nature_uai_libe", ""))
+                if categorie not in categories_ecoles:
+                    continue
 
             resultats.append({
                 "nom":       record.get("appellation_officielle", "École sans nom"),
@@ -787,7 +844,24 @@ def _telecharger_finess(chemin_cache: Path, nb_essais: int = 3) -> bool:
     return False
 
 
-def get_etablissements_finess(code_insee: str, base_dir: Path) -> list[dict]:
+def _categoriser_etablissement_sante(libelle: str) -> str:
+    """
+    Classe un libellé FINESS brut (verbeux, ex: "Centre Hospitalier Spécialisé
+    lutte Maladies Mentales") dans l'une des catégories propres de
+    CATEGORIES_FINESS_SANTE (Hôpitaux, Cliniques, Laboratoires, Centres de
+    santé), via correspondance de mots-clés. Retourne CATEGORIE_FINESS_AUTRES
+    si aucun mot-clé ne correspond.
+    """
+    libelle_lower = libelle.lower()
+    for categorie in CATEGORIES_FINESS_SANTE:
+        if any(mc in libelle_lower for mc in categorie["mots_cles"]):
+            return categorie["label"]
+    return CATEGORIE_FINESS_AUTRES
+
+
+def get_etablissements_finess(
+    code_insee: str, base_dir: Path, categories_sante: list[str] | None = None
+) -> list[dict]:
     """
     Récupère les établissements de santé d'une commune depuis le registre FINESS.
 
@@ -797,6 +871,12 @@ def get_etablissements_finess(code_insee: str, base_dir: Path) -> list[dict]:
       - 'geolocalisation' : [1]=nofinesset, [2]=X Lambert-93, [3]=Y Lambert-93
 
     INSEE reconstitué = col[13].zfill(2) + col[12].zfill(3)
+
+    ARGUMENTS :
+        categories_sante : liste des labels de CATEGORIES_FINESS_SANTE (+ éventuellement
+                            CATEGORIE_FINESS_AUTRES) à conserver. None = pas de filtre,
+                            comportement inchangé (tout garder), pour ne pas casser les
+                            appelants existants (construire_dataframe_PM_sans_input, etc.)
     """
     import csv as csv_module
 
@@ -838,6 +918,11 @@ def get_etablissements_finess(code_insee: str, base_dir: Path) -> list[dict]:
                     libelle = row[19].strip().lower()
                     if not any(mc in libelle for mc in MOTS_CLES_SANTE):
                         continue
+
+                    if categories_sante is not None:
+                        categorie = _categoriser_etablissement_sante(row[19].strip())
+                        if categorie not in categories_sante:
+                            continue
 
                     nofinesset = row[1].strip()
                     nom        = row[3].strip() or row[4].strip() or "Établissement sans nom"
@@ -1146,6 +1231,70 @@ def _choisir_categories_osm() -> list[dict]:
     return categories_choisies
 
 
+def _choisir_dans_liste(titre: str, labels_disponibles: list[str]) -> list[str]:
+    """
+    Affiche un menu console générique numéroté à partir d'une liste de labels
+    et demande à l'utilisateur lesquels garder (Entrée = tout garder).
+    Utilisée par choisir_categories_sante() et choisir_categories_ecoles().
+
+    REPONSE : liste des labels choisis (toujours non vide — Entrée = tout garder)
+    """
+    print("\n" + "=" * 62)
+    print(f"   {titre}")
+    print("=" * 62)
+
+    for i, label in enumerate(labels_disponibles, 1):
+        print(f"   {i:2d}. {label}")
+
+    print("\n  Entrez les numéros séparés par des virgules  (ex: 1,2)")
+    print("  ou appuyez sur Entrée pour toutes les inclure.")
+    choix = input("\n  Votre sélection : ").strip()
+
+    if not choix:
+        print("  → Toutes les catégories seront incluses.\n")
+        return labels_disponibles.copy()
+
+    categories_choisies = []
+    for segment in choix.split(","):
+        try:
+            idx = int(segment.strip()) - 1
+            if 0 <= idx < len(labels_disponibles):
+                categories_choisies.append(labels_disponibles[idx])
+                print(f"   ✓ {labels_disponibles[idx]}")
+        except ValueError:
+            pass
+
+    if not categories_choisies:
+        print("  → Aucune sélection valide, toutes les catégories incluses par défaut.\n")
+        return labels_disponibles.copy()
+
+    print(f"\n  → {len(categories_choisies)} catégorie(s) sélectionnée(s).\n")
+    return categories_choisies
+
+
+def choisir_categories_sante() -> list[str]:
+    """
+    Affiche les catégories d'établissements de santé FINESS (Hôpitaux,
+    Cliniques, Laboratoires, Centres de santé, Autres) et demande à
+    l'utilisateur lesquelles inclure — même principe que _choisir_categories_osm().
+
+    REPONSE : liste des labels choisis (toujours non vide — Entrée = tout garder)
+    """
+    labels_disponibles = [c["label"] for c in CATEGORIES_FINESS_SANTE] + [CATEGORIE_FINESS_AUTRES]
+    return _choisir_dans_liste("SÉLECTION DES CATÉGORIES D'ÉTABLISSEMENTS DE SANTÉ (FINESS)", labels_disponibles)
+
+
+def choisir_categories_ecoles() -> list[str]:
+    """
+    Affiche les types d'écoles (Maternelles, Élémentaires, Collèges, Lycées,
+    Autres) et demande à l'utilisateur lesquels inclure.
+
+    REPONSE : liste des labels choisis (toujours non vide — Entrée = tout garder)
+    """
+    labels_disponibles = [c["label"] for c in CATEGORIES_ECOLES] + [CATEGORIE_ECOLE_AUTRES]
+    return _choisir_dans_liste("SÉLECTION DES TYPES D'ÉCOLES", labels_disponibles)
+
+
 def construire_dataframe_PM(ville: str) -> pd.DataFrame:
     """
     Fonction principale qui orchestre tout le pipeline d'identification des PM :
@@ -1233,35 +1382,219 @@ def construire_dataframe_PM(ville: str) -> pd.DataFrame:
     return df
 
 
+def construire_dataframe_PM_avec_filtres(ville: str) -> pd.DataFrame:
+    """
+    Identique à construire_dataframe_PM(), mais laisse en plus l'utilisateur
+    choisir :
+      - les catégories d'établissements de santé FINESS à garder
+        (Hôpitaux, Cliniques, Laboratoires, Centres de santé, Autres)
+      - les types d'écoles à garder (Maternelles, Élémentaires, Collèges, Lycées, Autres)
+    au lieu de toujours tout inclure.
+
+    Utilisée par main_filtre.py — construire_dataframe_PM() n'est pas modifiée
+    pour ne pas changer le comportement de main.py.
+    """
+
+    print(f"\n=== Construction du DataFrame PM pour '{ville}' (avec filtres) ===\n")
+
+    code_insee = get_code_insee_api(ville)
+    if code_insee is None:
+        print(" Impossible de continuer sans code INSEE valide.")
+        return pd.DataFrame()
+
+    osm_area_id = get_osm_area_id(ville)
+    if osm_area_id is None:
+        print("  osm_area_id non trouve, la recherche OSM sera ignoree.")
+
+    tous_les_pm = []
+
+    # Écoles — l'utilisateur choisit les types (maternelle, élémentaire, collège, lycée...)
+    categories_ecoles = choisir_categories_ecoles()
+    ecoles = get_ecoles_gouv(code_insee, categories_ecoles=categories_ecoles)
+    tous_les_pm.extend(ecoles)
+
+    mairies = get_equipements_gouv(code_insee)
+    tous_les_pm.extend(mairies)
+
+    commissariats = get_commissariats_service_public(code_insee)
+    tous_les_pm.extend(commissariats)
+
+    gares_sncf = get_gares_sncf(ville)
+    tous_les_pm.extend(gares_sncf)
+
+    # Établissements de santé via FINESS — l'utilisateur choisit les catégories
+    categories_sante = choisir_categories_sante()
+    base_dir_finess = Path(__file__).parent.parent
+    etablissements_sante = get_etablissements_finess(
+        code_insee, base_dir_finess, categories_sante=categories_sante
+    )
+    tous_les_pm.extend(etablissements_sante)
+
+    if osm_area_id:
+        categories_choisies = _choisir_categories_osm()
+        # Fallback OSM uniquement si FINESS est réellement indisponible (pas de
+        # filtre santé actif) — sinon un utilisateur qui a volontairement
+        # décoché toutes les catégories santé se verrait quand même proposer
+        # des hôpitaux/cliniques via OSM, ce qui ignorerait son choix.
+        if not etablissements_sante and categories_sante is None:
+            print("   FINESS indisponible — recherche hôpitaux/cliniques via OSM (fallback)...")
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies,
+                                   categories_supplementaires=CATEGORIES_OSM_SANTE_FALLBACK)
+        else:
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies)
+        tous_les_pm.extend(lieux_osm)
+
+    tous_les_pm = dedoublonner_par_coordonnees(tous_les_pm)
+
+    df = pd.DataFrame(tous_les_pm, columns=["nom", "type", "source", "latitude", "longitude"])
+
+    if df.empty:
+        print(" Aucun PM trouve pour cette commune.")
+        return df
+
+    df["coordonnees"] = df["latitude"].astype(str) + ", " + df["longitude"].astype(str)
+    df = df.sort_values(["type", "nom"]).reset_index(drop=True)
+
+    print(f"\n {len(df)} PM au total pour {ville}")
+
+    return df
+
+
+def construire_dataframe_PM_sans_input_avec_filtres(
+    ville: str,
+    categories_osm: list[dict] | None = None,
+    categories_sante: list[str] | None = None,
+    categories_ecoles: list[str] | None = None,
+) -> pd.DataFrame:
+    """
+    Identique à construire_dataframe_PM_avec_filtres(), mais sans aucun appel
+    à input() — pour l'interface Streamlit (app5.py), sur le modèle de
+    construire_dataframe_PM_sans_input().
+
+    ARGUMENTS :
+        categories_osm    : liste de catégories OSM (cf. CATEGORIES_OSM_DISPONIBLES) à garder.
+                             None = pas de filtre (tout garder) ; [] = aucune catégorie OSM.
+        categories_sante  : labels de CATEGORIES_FINESS_SANTE (+ CATEGORIE_FINESS_AUTRES)
+                             à garder. None = pas de filtre (tout garder) ;
+                             [] = aucun établissement de santé.
+        categories_ecoles : labels de CATEGORIES_ECOLES (+ CATEGORIE_ECOLE_AUTRES)
+                             à garder. None = pas de filtre (tout garder) ;
+                             [] = aucune école.
+    """
+    print(f"\n=== Construction du DataFrame PM pour '{ville}' (interface, avec filtres) ===\n")
+
+    code_insee = get_code_insee_api(ville)
+    if code_insee is None:
+        print(" Impossible de continuer sans code INSEE valide.")
+        return pd.DataFrame()
+
+    osm_area_id = get_osm_area_id(ville)
+    if osm_area_id is None:
+        print("  osm_area_id non trouvé, la recherche OSM sera ignorée.")
+
+    tous_les_pm = []
+
+    tous_les_pm.extend(get_ecoles_gouv(code_insee, categories_ecoles=categories_ecoles))
+    tous_les_pm.extend(get_equipements_gouv(code_insee))
+    tous_les_pm.extend(get_commissariats_service_public(code_insee))
+    tous_les_pm.extend(get_gares_sncf(ville))
+
+    base_dir_finess = Path(__file__).parent.parent
+    etablissements_sante = get_etablissements_finess(
+        code_insee, base_dir_finess, categories_sante=categories_sante
+    )
+    tous_les_pm.extend(etablissements_sante)
+
+    if osm_area_id:
+        categories_choisies = [
+            {"type": c["type"], "osm_filters": c["osm_filters"]} for c in CATEGORIES_OSM_DISPONIBLES
+        ] if categories_osm is None else categories_osm
+        if not etablissements_sante and categories_sante is None:
+            print("   FINESS indisponible — recherche hôpitaux/cliniques via OSM (fallback)...")
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies,
+                                   categories_supplementaires=CATEGORIES_OSM_SANTE_FALLBACK)
+        else:
+            lieux_osm = get_PM_osm(osm_area_id, categories=categories_choisies)
+        tous_les_pm.extend(lieux_osm)
+
+    tous_les_pm = dedoublonner_par_coordonnees(tous_les_pm)
+
+    df = pd.DataFrame(tous_les_pm, columns=["nom", "type", "source", "latitude", "longitude"])
+    if df.empty:
+        print(" Aucun PM trouvé pour cette commune.")
+        return df
+
+    df["coordonnees"] = df["latitude"].astype(str) + ", " + df["longitude"].astype(str)
+    df = df.sort_values(["type", "nom"]).reset_index(drop=True)
+
+    print(f"\n {len(df)} PM au total pour {ville}")
+    return df
+
+
+def _nom_alternatif_disponible(chemin_fichier: str) -> str:
+    """
+    Retourne un chemin de fichier disponible en ajoutant _2, _3... avant
+    l'extension si le chemin demande est deja pris (ou verrouille).
+    """
+    racine, extension = os.path.splitext(chemin_fichier)
+    compteur = 2
+    nouveau_chemin = f"{racine}_{compteur}{extension}"
+    while os.path.exists(nouveau_chemin):
+        compteur += 1
+        nouveau_chemin = f"{racine}_{compteur}{extension}"
+    return nouveau_chemin
+
+
+def _ecrire_excel_avec_retry(
+    df: pd.DataFrame, chemin_fichier: str, tentatives: int = 3, delai_secondes: int = 3
+) -> str:
+    """
+    Ecrit un DataFrame en Excel avec re-essais si le fichier est verrouille
+    (ex: ouvert dans Excel, ou en cours de synchronisation OneDrive).
+
+    Si toutes les tentatives echouent, sauvegarde sous un nom alternatif
+    (suffixe _2, _3...) plutot que de laisser planter le script avec une
+    PermissionError.
+    """
+    for tentative in range(1, tentatives + 1):
+        try:
+            df.to_excel(chemin_fichier, index=False)
+            return chemin_fichier
+        except PermissionError:
+            if tentative < tentatives:
+                print(
+                    f"  Fichier verrouille (ouvert dans Excel ou synchro OneDrive en cours ?) : "
+                    f"{os.path.basename(chemin_fichier)} — nouvelle tentative dans {delai_secondes}s "
+                    f"({tentative}/{tentatives})..."
+                )
+                time.sleep(delai_secondes)
+            else:
+                chemin_fichier = _nom_alternatif_disponible(chemin_fichier)
+                print(
+                    f"  Fichier toujours verrouille apres {tentatives} tentatives. "
+                    f"Fermez-le dans Excel si besoin. Sauvegarde sous : {os.path.basename(chemin_fichier)}"
+                )
+                df.to_excel(chemin_fichier, index=False)
+    return chemin_fichier
+
 
 def exporter_PM_excel(df: pd.DataFrame, nom_fichier: str = "PM_export.xlsx", dossier_sortie: str = ".") -> str | None:
- 
+
     if df is None or df.empty:
         print(" DataFrame vide : aucun fichier Excel genere.")
         return None
- 
+
     # index=False : on n'ecrit pas la colonne d'index du DataFrame
     # les titres de colonnes (header) sont ecrits automatiquement par to_excel
     dossier_export = os.path.join(dossier_sortie, "PM")
     os.makedirs(dossier_export, exist_ok=True)
     chemin_fichier = os.path.join(dossier_export, nom_fichier)
-    df.to_excel(chemin_fichier, index=False)
- 
-    print(f" Fichier Excel exporte : {nom_fichier}  ({len(df)} PM)")
-    return chemin_fichier
+    chemin_final = _ecrire_excel_avec_retry(df, chemin_fichier)
+
+    print(f" Fichier Excel exporte : {os.path.basename(chemin_final)}  ({len(df)} PM)")
+    return chemin_final
 
 
-
-#TESTES : ---------------------------------------------------------------------------------------------------------
-if __name__ == "__main__":
-
-    ville = input("Entrez le nom de la commune : ").strip()
-
-    df_pm = construire_dataframe_PM(ville)
-
-    if not df_pm.empty:
-        print("\n=== Apercu du DataFrame final ===")
-        print(df_pm.to_string(index=False))
 
 
 
@@ -1341,32 +1674,38 @@ def construire_dataframe_PM2(ville, categories_filtrees=None):
         print("[PM2] Aucune catégorie sélectionnée.")
         return pd.DataFrame()
 
-    # 2. On appelle TA fonction d'origine complète qui marche parfaitement
-    df_global = construire_dataframe_PM(ville)
+    # 2. On appelle la version sans input() (Streamlit n'a pas de terminal interactif)
+    df_global = construire_dataframe_PM_sans_input(ville)
 
     if df_global.empty:
         print("[PM2] Le tableau brut récupéré est vide.")
         return df_global
 
-    # 3. On applique le filtre sur la colonne 'source' (ou 'categorie')
-    # On crée une correspondance entre le nom de ta case à cocher et le texte dans la colonne 'source'
-    filtre_sources = []
-    if "Mairie" in categories_filtrees:
-        filtre_sources.extend(["DataGouv_Mairie", "ServicePublic_Commissariat"])
+    # 3. Correspondance case cochée -> valeurs réelles produites par construire_dataframe_PM :
+    # les PM gouvernementaux se distinguent par 'source', les PM OSM par 'type'
+    # (leur 'source' vaut toujours "OpenStreetMap", peu importe la catégorie).
+    filtre_source = []
+    filtre_type = []
     if "Écoles" in categories_filtrees:
-        filtre_sources.append("DataEducation_Ecoles")
+        filtre_source.append("data.education.gouv.fr")
+    if "Mairie" in categories_filtrees:
+        filtre_source.extend([
+            "api-lannuaire.service-public.fr + geocodage BAN",
+            "lannuaire.service-public.fr + géocodage BAN",
+        ])
     if "Pharmacies" in categories_filtrees:
-        filtre_sources.append("FINESS")
+        filtre_source.append("FINESS")
+        filtre_type.append("pharmacie")
     if "Supermarchés" in categories_filtrees:
-        filtre_sources.extend(["Supermarché / Commerce", "Marché"])
+        filtre_type.append("supermarché")
     if "Administrations" in categories_filtrees:
-        filtre_sources.extend(["Lieu de culte", "Parc / Jardin", "Gare_SNCF", "Gare SNCF"])
+        filtre_type.append("gendarmerie")
 
-    # On applique le filtre strict sur le DataFrame
-    if 'source' in df_global.columns:
-        df_global = df_global[df_global['source'].isin(filtre_sources)].reset_index(drop=True)
-    elif 'categorie' in df_global.columns:
-        df_global = df_global[df_global['categorie'].isin(filtre_sources)].reset_index(drop=True)
+    # On applique le filtre : match sur 'source' OU sur 'type'
+    masque = df_global['source'].isin(filtre_source)
+    if 'type' in df_global.columns:
+        masque = masque | df_global['type'].isin(filtre_type)
+    df_global = df_global[masque].reset_index(drop=True)
 
     print(f"[PM2] Filtrage terminé : {len(df_global)} lieux conservés.")
     return df_global

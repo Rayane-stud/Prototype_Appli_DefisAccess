@@ -21,9 +21,9 @@ from pathlib import Path
 # CONFIGURATION
 # ──────────────────────────────────────────────
 
-RDV_LAT    = 48.8381857639848  # latitude du point de rendez-vous (coordonnées fictives)
-RDV_LONG   = 2.1865433360720927   # longitude du point de rendez-vous
-NB_EQUIPES = 5        # nombre d'équipes
+RDV_LAT    = 48.81366369675517  # latitude du point de rendez-vous (coordonnées fictives)
+RDV_LONG   = 2.3259368821668933   # longitude du point de rendez-vous
+NB_EQUIPES = 4        # nombre d'équipes
 
 
 # ──────────────────────────────────────────────

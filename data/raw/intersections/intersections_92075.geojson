@@ -1,0 +1,5125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288063223,
+          48.820480227
+        ]
+      },
+      "properties": {
+        "name": "Allée Ballymoney / Place des Lavandières",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282551531,
+          48.815368815
+        ]
+      },
+      "properties": {
+        "name": "Allée Baudelaire / Rue de Châtillon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28255616,
+          48.81532916
+        ]
+      },
+      "properties": {
+        "name": "Allée Baudelaire / Rue de l'Avenir",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281106478,
+          48.81692095
+        ]
+      },
+      "properties": {
+        "name": "Allée Baudelaire / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290072098,
+          48.818429645
+        ]
+      },
+      "properties": {
+        "name": "Allée du Progrès / Rue René Coche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288420214,
+          48.82034323
+        ]
+      },
+      "properties": {
+        "name": "Allée Lehrle / Place des Lavandières",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288350604,
+          48.821863016
+        ]
+      },
+      "properties": {
+        "name": "Allée Léopoldine / Rue Lamartine",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288174634,
+          48.821808469
+        ]
+      },
+      "properties": {
+        "name": "Allée Léopoldine / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278239054,
+          48.814245932
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix D72 / Boulevard de Stalingrad D62",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27818175,
+          48.814277763
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix D72 / Boulevard des Frères Vigouroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278192547,
+          48.814275215
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix D72 / Place du Clos Montholon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277165423,
+          48.815347238
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix D72 / Rue du Clos Montholon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278098557,
+          48.814849007
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Paix D72 / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293294672,
+          48.819579295
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Avenue Victor et Hélène Basch",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293380382,
+          48.819683708
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Rue Ernest Laval D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293825973,
+          48.821972507
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Verdun / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277387334,
+          48.815247521
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Docteur François Arnaud / Avenue de la Paix D72",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277491809,
+          48.815335561
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Docteur François Arnaud / Rue Hoche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278952813,
+          48.81651579
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Docteur François Arnaud / Rue Mansart",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275044405,
+          48.816611036
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Avenue de la Paix D72",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281859792,
+          48.824768501
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282276733,
+          48.823286757
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282275894,
+          48.823406087
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Rue du Chevalier de La Barre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.272639501,
+          48.814404661
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle / Rue du Clos Montholon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275793296,
+          48.817172107
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Rue Jean-Baptiste Potin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.275752723,
+          48.817126211
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général de Gaulle D71 / Villa Jeanne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28352218,
+          48.820254912
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Parc / Place du Président Kennedy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283475598,
+          48.820267803
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Parc / Rue Valentine Jacquet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289745974,
+          48.821472178
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guy Moquet / Rue Mary Besseyre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290538207,
+          48.821894246
+        ]
+      },
+      "properties": {
+        "name": "Avenue Guy Moquet / Rue René Sahors",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291262779,
+          48.818997463
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Allée du Progrès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291675419,
+          48.81869804
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Avenue Victor et Hélène Basch",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290665132,
+          48.820239261
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291674619,
+          48.818689411
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Place Albert Culot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29043292,
+          48.820162541
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291554791,
+          48.818872888
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jacques Jézéquel D61A / Villa Léger",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290857337,
+          48.820472035
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marcel Martinie D61A / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292357216,
+          48.822918483
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marcel Martinie D61A / Rue Barbès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291239007,
+          48.821330499
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marcel Martinie D61A / Rue René Sahors",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292954001,
+          48.823809998
+        ]
+      },
+      "properties": {
+        "name": "Avenue Marcel Martinie D61A / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29300545,
+          48.823853028
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292515808,
+          48.825508371
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292464793,
+          48.825419661
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Carrefour Albert Legris",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292377445,
+          48.826140678
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Impasse Alexandre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29284744,
+          48.824285374
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Rue du Docteur Mailfaire",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292403022,
+          48.825468819
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Rue Jean Jaurès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293028343,
+          48.823875546
+        ]
+      },
+      "properties": {
+        "name": "Avenue Pasteur D61A / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291660098,
+          48.818690306
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor et Hélène Basch / Avenue Jacques Jézéquel D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2916741,
+          48.81868304
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor et Hélène Basch / Place Albert Culot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29326891,
+          48.819547183
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor et Hélène Basch / Rue Ernest Laval D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290573717,
+          48.818116433
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor et Hélène Basch / Rue René Coche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29062895,
+          48.818075211
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor et Hélène Basch / Villa d'Arcueil",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287112319,
+          48.822857001
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Allée Léopoldine",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292422635,
+          48.825323663
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Avenue Pasteur D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285277819,
+          48.822049272
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292396722,
+          48.825372359
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Carrefour Albert Legris",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285275503,
+          48.821979901
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Place du Maréchal de Lattre de Tassigny",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285304605,
+          48.822041892
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285281905,
+          48.822035333
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291523153,
+          48.824899961
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue du Docteur Mailfaire",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290378139,
+          48.824277189
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Henri Martin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287500556,
+          48.822969649
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Lamartine",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293789846,
+          48.826729896
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Louis Vicat",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288244649,
+          48.823218677
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Mary Besseyre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285281726,
+          48.822035729
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Lycée D50 / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285279959,
+          48.82203495
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Lycée D50 / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280831797,
+          48.825636598
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Voltaire D50 / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292493712,
+          48.825348688
+        ]
+      },
+      "properties": {
+        "name": "Carrefour Albert Legris / Avenue Pasteur D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292544172,
+          48.825468648
+        ]
+      },
+      "properties": {
+        "name": "Carrefour Albert Legris / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292595961,
+          48.825367587
+        ]
+      },
+      "properties": {
+        "name": "Carrefour Albert Legris / Rue Jean Jaurès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290739518,
+          48.820216569
+        ]
+      },
+      "properties": {
+        "name": "Carrefour de l'Insurrection / Avenue Jacques Jézéquel D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290702197,
+          48.820478999
+        ]
+      },
+      "properties": {
+        "name": "Carrefour de l'Insurrection / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290593584,
+          48.820293171
+        ]
+      },
+      "properties": {
+        "name": "Carrefour de l'Insurrection / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294850988,
+          48.824919211
+        ]
+      },
+      "properties": {
+        "name": "Carrefour du 8 Mai 1945 / Rue Jean Jaurès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295010558,
+          48.82464402
+        ]
+      },
+      "properties": {
+        "name": "Carrefour du 8 Mai 1945 / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286586217,
+          48.826188002
+        ]
+      },
+      "properties": {
+        "name": "Contre-allée du Quatre Septembre / Contre-allée Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286370916,
+          48.826639937
+        ]
+      },
+      "properties": {
+        "name": "Contre-allée du Quatre Septembre / Rue du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286517553,
+          48.826214892
+        ]
+      },
+      "properties": {
+        "name": "Contre-allée du Quatre Septembre / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286561366,
+          48.826157492
+        ]
+      },
+      "properties": {
+        "name": "Contre-allée Jullien / Rue du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286778237,
+          48.825690369
+        ]
+      },
+      "properties": {
+        "name": "Contre-allée Jullien / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285188405,
+          48.815832498
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Bagneux / Rue du Docteur Georges Lafosse",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.276479546,
+          48.815104729
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Clos Montholon / Rue du Clos Montholon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286233194,
+          48.821982319
+        ]
+      },
+      "properties": {
+        "name": "Impasse Sadi Carnot / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291689837,
+          48.818689179
+        ]
+      },
+      "properties": {
+        "name": "Place Albert Culot / Avenue Victor et Hélène Basch",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292236611,
+          48.818281506
+        ]
+      },
+      "properties": {
+        "name": "Place Albert Culot / Boulevard Camélinat D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285857542,
+          48.821000912
+        ]
+      },
+      "properties": {
+        "name": "Place de la République / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285267494,
+          48.820861785
+        ]
+      },
+      "properties": {
+        "name": "Place de la République / Rue Kleber",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296641854,
+          48.82574555
+        ]
+      },
+      "properties": {
+        "name": "Place du 19 Mars 1962 / Rue Auguste Comte",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296930176,
+          48.825593294
+        ]
+      },
+      "properties": {
+        "name": "Place du 19 Mars 1962 / Rue Rabelais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296809587,
+          48.825694861
+        ]
+      },
+      "properties": {
+        "name": "Place du 19 Mars 1962 / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288491105,
+          48.823358914
+        ]
+      },
+      "properties": {
+        "name": "Place du Général Leclerc / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28527064,
+          48.821980137
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal de Lattre de Tassigny / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285299751,
+          48.821968015
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal de Lattre de Tassigny / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284319972,
+          48.821656037
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal de Lattre de Tassigny / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285273496,
+          48.821918068
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal de Lattre de Tassigny / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284322949,
+          48.821648097
+        ]
+      },
+      "properties": {
+        "name": "Place du Maréchal de Lattre de Tassigny / Rue Gaudray",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283954826,
+          48.820085935
+        ]
+      },
+      "properties": {
+        "name": "Place du Président Kennedy / Rue Falret",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28436211,
+          48.8207021
+        ]
+      },
+      "properties": {
+        "name": "Place du Président Kennedy / Rue Vieille Forge",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288963892,
+          48.820964345
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Allée Lehrle",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290669666,
+          48.820481756
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285281465,
+          48.822035378
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290608026,
+          48.820416317
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286212409,
+          48.821952046
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Impasse Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285306466,
+          48.821944444
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Place du Maréchal de Lattre de Tassigny",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285314391,
+          48.821989879
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2880088,
+          48.821239081
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue Jacques Cabourg",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286125818,
+          48.821836814
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue Louis Blanc",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290362087,
+          48.820610335
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue Mary Besseyre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290562081,
+          48.820351099
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286286705,
+          48.821908917
+        ]
+      },
+      "properties": {
+        "name": "Rue Antoine Fratacci D50 / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285220702,
+          48.816790882
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Impasse Minard",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28639425,
+          48.817338586
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Rue des Frères Chapelle",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287745771,
+          48.817930388
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Rue Diderot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284661852,
+          48.816564306
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Rue du Docteur Georges Lafosse",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285595411,
+          48.8169811
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Rue Georges Clemenceau",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289529398,
+          48.818759229
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Rue René Coche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28687132,
+          48.817531262
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Villa des Matrais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285605044,
+          48.816957759
+        ]
+      },
+      "properties": {
+        "name": "Rue Aristide Briand / Villa Eugène Drouet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295947781,
+          48.825908953
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Comte / Allée des Carrières",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293971022,
+          48.82558028
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Comte / Place des Provinces",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293810398,
+          48.821972998
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès / Avenue de Verdun",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292363725,
+          48.822895738
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293060117,
+          48.822467612
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès / Rue François 1er",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293810818,
+          48.821979678
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291733959,
+          48.823294181
+        ]
+      },
+      "properties": {
+        "name": "Rue Barbès / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.298078592,
+          48.824092607
+        ]
+      },
+      "properties": {
+        "name": "Rue Danton / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29733763,
+          48.824720731
+        ]
+      },
+      "properties": {
+        "name": "Rue Danton / Rue Rabelais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296618828,
+          48.82524589
+        ]
+      },
+      "properties": {
+        "name": "Rue Danton / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283056452,
+          48.816222813
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon / Allée Eugénie",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283960238,
+          48.817906479
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283214181,
+          48.816501069
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon / Square Maurice Payret Dortail",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283528202,
+          48.817042301
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châtillon / Villa Franco Russe",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280130842,
+          48.815063281
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Allée Verne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282557815,
+          48.815329297
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue de Châtillon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278591605,
+          48.815165461
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285726715,
+          48.82122113
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Place de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285698575,
+          48.821240847
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284368631,
+          48.82135798
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue Gaudray",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286020855,
+          48.820054922
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Allée du Platane",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285022123,
+          48.818522812
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Impasse Larmeroux",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285299223,
+          48.822020435
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284641073,
+          48.818249552
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Falret",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284626601,
+          48.818204729
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285906941,
+          48.820266203
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Louis Dardenne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284700513,
+          48.818232697
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285867344,
+          48.820284374
+        ]
+      },
+      "properties": {
+        "name": "Rue de la République / Rue Vieille Forge",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285417793,
+          48.818333868
+        ]
+      },
+      "properties": {
+        "name": "Rue des Frères Chapelle / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286135156,
+          48.817596712
+        ]
+      },
+      "properties": {
+        "name": "Rue des Frères Chapelle / Sentier des Matrais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28773144,
+          48.817938732
+        ]
+      },
+      "properties": {
+        "name": "Rue Diderot / Rue Aristide Briand",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286812414,
+          48.818819168
+        ]
+      },
+      "properties": {
+        "name": "Rue Diderot / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287217643,
+          48.818402372
+        ]
+      },
+      "properties": {
+        "name": "Rue Diderot / Villa de la Gare",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282289843,
+          48.823420176
+        ]
+      },
+      "properties": {
+        "name": "Rue du Chevalier de La Barre / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28380983,
+          48.817522203
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Georges Lafosse / Rue de Châtillon",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292033559,
+          48.827239927
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin / Place des Insurgés de Varsovie",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286397139,
+          48.826536695
+        ]
+      },
+      "properties": {
+        "name": "Rue du Quatre Septembre / Contre-allée du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28619729,
+          48.826327485
+        ]
+      },
+      "properties": {
+        "name": "Rue du Quatre Septembre / Rue Gabrielle d'Estrées",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286222031,
+          48.826321524
+        ]
+      },
+      "properties": {
+        "name": "Rue du Quatre Septembre / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294070412,
+          48.819415318
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Avenue Arblade",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293304945,
+          48.819602229
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Avenue de Verdun",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293289444,
+          48.819581413
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Avenue Victor et Hélène Basch",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294140273,
+          48.819470144
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Boulevard Gabriel Péri D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290963684,
+          48.820323275
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292834155,
+          48.819739031
+        ]
+      },
+      "properties": {
+        "name": "Rue Ernest Laval D50 / Villa Léger",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284563389,
+          48.827510973
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Baudouin / Allée de l'Université",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285980574,
+          48.827442262
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Baudouin / Rue du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284617965,
+          48.827484407
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Baudouin / Rue Gabrielle d'Estrées",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283080676,
+          48.827094248
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Baudouin / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283068043,
+          48.82710362
+        ]
+      },
+      "properties": {
+        "name": "Rue Eugène Baudouin / Rue Michelet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284340591,
+          48.819186522
+        ]
+      },
+      "properties": {
+        "name": "Rue Falret / Allée du Platane",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284525268,
+          48.818819793
+        ]
+      },
+      "properties": {
+        "name": "Rue Falret / Impasse Larmeroux",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283980341,
+          48.820054473
+        ]
+      },
+      "properties": {
+        "name": "Rue Falret / Place du Président Kennedy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284622425,
+          48.818205838
+        ]
+      },
+      "properties": {
+        "name": "Rue Falret / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284631905,
+          48.818208484
+        ]
+      },
+      "properties": {
+        "name": "Rue Falret / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294793374,
+          48.823932314
+        ]
+      },
+      "properties": {
+        "name": "Rue François 1er / Rue Marceau",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295015278,
+          48.824632781
+        ]
+      },
+      "properties": {
+        "name": "Rue Gambetta / Carrefour du 8 Mai 1945",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29503905,
+          48.824626998
+        ]
+      },
+      "properties": {
+        "name": "Rue Gambetta / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28431718,
+          48.821650096
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaudray / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284369599,
+          48.821365022
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaudray / Rue de l'Église",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284629629,
+          48.818204464
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284626891,
+          48.818204619
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Rue Falret",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284621648,
+          48.818192973
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284654111,
+          48.818192674
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285363834,
+          48.817293146
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Sentier des Matrais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28509756,
+          48.81757248
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Villa des Nouzeaux",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285600498,
+          48.816969299
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Clemenceau / Villa Eugène Drouet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27891806,
+          48.816505791
+        ]
+      },
+      "properties": {
+        "name": "Rue Gresset / Avenue du Docteur François Arnaud",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278919553,
+          48.816527133
+        ]
+      },
+      "properties": {
+        "name": "Rue Gresset / Rue Mansart",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29029686,
+          48.824288994
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Martin / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289058872,
+          48.825309532
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Martin / Rue Marcelin Berthelot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289801929,
+          48.824701986
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Martin / Rue Murillo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289311292,
+          48.825117087
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Martin / Rue Raphaël",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29151251,
+          48.823256651
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri Martin / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277358176,
+          48.815267083
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Avenue de la Paix D72",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277424021,
+          48.815310749
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Avenue du Docteur François Arnaud",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277665196,
+          48.816399154
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Gresset",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277093472,
+          48.817441012
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Jean-Baptiste Potin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277154897,
+          48.817403569
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoche / Rue Mansart",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28763572,
+          48.82063548
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Cabourg / Allée Ballymoney",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28803641,
+          48.821270339
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Cabourg / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287448121,
+          48.820054927
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Cabourg / Rue Louis Dardenne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287604096,
+          48.820647215
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Cabourg / Rue Marc Sangnier",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29258801,
+          48.821233271
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Allée de la Ferme",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300275989,
+          48.825487899
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Avenue de la Porte Brancion",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293810131,
+          48.821965217
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Avenue de Verdun",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290918277,
+          48.820462023
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290940797,
+          48.820430398
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293795318,
+          48.821973164
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue Barbès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290983623,
+          48.820400136
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue Ernest Laval D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296778031,
+          48.82350322
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue Gambetta",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.300494968,
+          48.825410148
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue Louis Vicat",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.298000685,
+          48.824165165
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue Rabelais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291818858,
+          48.820850641
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Rue René Sahors",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.298556178,
+          48.824333334
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bleuzen D130 / Villa Rabelais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29255145,
+          48.825331445
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Avenue Pasteur D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292446666,
+          48.825404233
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292447342,
+          48.825410483
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Carrefour Albert Legris",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294805101,
+          48.824943621
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Carrefour du 8 Mai 1945",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.293235007,
+          48.825260825
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Auguste Comte",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289888567,
+          48.826001103
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue du Moulin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.297262232,
+          48.823740789
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289867476,
+          48.825995466
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Marcel Yol",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290683724,
+          48.825828275
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Michel-Ange",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29153039,
+          48.825611364
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Murillo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290629524,
+          48.825811685
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Raphaël",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295477543,
+          48.824809031
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Jaurès / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2837005,
+          48.820808903
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Baptiste Potin / Rue Gaudray",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283056323,
+          48.820628701
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Baptiste Potin / Rue Valentine Jacquet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292568353,
+          48.823140666
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Michelet / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294485205,
+          48.824050999
+        ]
+      },
+      "properties": {
+        "name": "Rue Jules Michelet / Rue Marceau",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288230983,
+          48.82322791
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286560229,
+          48.826157239
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Contre-allée du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286731525,
+          48.825780288
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Contre-allée Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28812735,
+          48.823404181
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Place du Général Leclerc",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28638717,
+          48.826225434
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Rue du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283150887,
+          48.827090576
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Rue Eugène Baudouin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286111065,
+          48.826354612
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Rue Gabrielle d'Estrées",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288231333,
+          48.823219754
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Rue Mary Besseyre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283066492,
+          48.827100624
+        ]
+      },
+      "properties": {
+        "name": "Rue Jullien / Rue Michelet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284856009,
+          48.820616793
+        ]
+      },
+      "properties": {
+        "name": "Rue Kleber / Place du Président Kennedy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287543977,
+          48.822988919
+        ]
+      },
+      "properties": {
+        "name": "Rue Lamartine / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288500643,
+          48.821792614
+        ]
+      },
+      "properties": {
+        "name": "Rue Lamartine / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279110898,
+          48.815649687
+        ]
+      },
+      "properties": {
+        "name": "Rue Larmeroux D130 / Allée Verne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278092661,
+          48.814846566
+        ]
+      },
+      "properties": {
+        "name": "Rue Larmeroux D130 / Avenue de la Paix D72",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279623745,
+          48.816157968
+        ]
+      },
+      "properties": {
+        "name": "Rue Larmeroux D130 / Rue Mansart",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284626992,
+          48.818204145
+        ]
+      },
+      "properties": {
+        "name": "Rue Larmeroux D130 / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285901823,
+          48.821196066
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Place de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286136963,
+          48.821866865
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Rue Antoine Fratacci D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285827937,
+          48.821201813
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Blanc / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285878208,
+          48.82029055
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Dardenne / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287430544,
+          48.820059124
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Dardenne / Rue Jacques Cabourg",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28838284,
+          48.819476841
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Dardenne / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285869399,
+          48.820286095
+        ]
+      },
+      "properties": {
+        "name": "Rue Louis Dardenne / Rue Vieille Forge",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.278963841,
+          48.816525418
+        ]
+      },
+      "properties": {
+        "name": "Rue Mansart / Avenue du Docteur François Arnaud",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.27973205,
+          48.8160915
+        ]
+      },
+      "properties": {
+        "name": "Rue Mansart / Rue de l'Avenir",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.277121472,
+          48.817451586
+        ]
+      },
+      "properties": {
+        "name": "Rue Mansart / Rue Jean-Baptiste Potin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.279663251,
+          48.816135682
+        ]
+      },
+      "properties": {
+        "name": "Rue Mansart / Rue Larmeroux D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287619192,
+          48.820643085
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Allée Ballymoney",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294772375,
+          48.823908001
+        ]
+      },
+      "properties": {
+        "name": "Rue Marceau / Rue François 1er",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295619943,
+          48.822954333
+        ]
+      },
+      "properties": {
+        "name": "Rue Marceau / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294543571,
+          48.824077043
+        ]
+      },
+      "properties": {
+        "name": "Rue Marceau / Rue Jules Michelet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294145948,
+          48.824313503
+        ]
+      },
+      "properties": {
+        "name": "Rue Marceau / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287035534,
+          48.825271646
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Yol / Contre-allée Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289867095,
+          48.825996443
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Yol / Rue du Moulin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288673116,
+          48.825664908
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Yol / Rue Henri Martin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287003032,
+          48.825247711
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Yol / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287278059,
+          48.824821885
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcelin Berthelot / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289719686,
+          48.821474887
+        ]
+      },
+      "properties": {
+        "name": "Rue Mary Besseyre / Avenue Guy Moquet",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288229713,
+          48.823211183
+        ]
+      },
+      "properties": {
+        "name": "Rue Mary Besseyre / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289238385,
+          48.82195154
+        ]
+      },
+      "properties": {
+        "name": "Rue Mary Besseyre / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292228979,
+          48.827179669
+        ]
+      },
+      "properties": {
+        "name": "Rue Michel-Ange / Avenue Pasteur D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292200575,
+          48.827220052
+        ]
+      },
+      "properties": {
+        "name": "Rue Michel-Ange / Place des Insurgés de Varsovie",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292054811,
+          48.827190421
+        ]
+      },
+      "properties": {
+        "name": "Rue Michel-Ange / Rue du Moulin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286233017,
+          48.826928037
+        ]
+      },
+      "properties": {
+        "name": "Rue Monge / Contre-allée du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.286224774,
+          48.826926345
+        ]
+      },
+      "properties": {
+        "name": "Rue Monge / Rue du Quatre Septembre",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28553899,
+          48.826779804
+        ]
+      },
+      "properties": {
+        "name": "Rue Monge / Rue Gabrielle d'Estrées",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287926612,
+          48.823740967
+        ]
+      },
+      "properties": {
+        "name": "Rue Murillo / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289889837,
+          48.824068407
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Lefèvre / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290986942,
+          48.823030427
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Lefèvre / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284523838,
+          48.822602649
+        ]
+      },
+      "properties": {
+        "name": "Rue Pruvot / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28373515,
+          48.822203348
+        ]
+      },
+      "properties": {
+        "name": "Rue Pruvot / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.287622198,
+          48.824258315
+        ]
+      },
+      "properties": {
+        "name": "Rue Raphaël / Rue Jullien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290675744,
+          48.825818226
+        ]
+      },
+      "properties": {
+        "name": "Rue Raphaël / Rue Michel-Ange",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289605719,
+          48.819905509
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Allée Gargantua",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290572013,
+          48.820331665
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Carrefour de l'Insurrection",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288398977,
+          48.819480994
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Rue Louis Dardenne",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.288638382,
+          48.819541088
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Rue René Coche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289208783,
+          48.819760759
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Villa Dupont",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289893879,
+          48.819995314
+        ]
+      },
+      "properties": {
+        "name": "Rue Raymond Marcheron D130 / Villa Juliette de Wills",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289510759,
+          48.818765837
+        ]
+      },
+      "properties": {
+        "name": "Rue René Coche / Rue Aristide Briand",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289060837,
+          48.819129133
+        ]
+      },
+      "properties": {
+        "name": "Rue René Coche / Villa de la Gare",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.291252089,
+          48.821298041
+        ]
+      },
+      "properties": {
+        "name": "Rue René Sahors / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289957161,
+          48.8223896
+        ]
+      },
+      "properties": {
+        "name": "Rue René Sahors / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289934063,
+          48.822412526
+        ]
+      },
+      "properties": {
+        "name": "Rue René Sahors / Rue Solferino",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295876664,
+          48.824973723
+        ]
+      },
+      "properties": {
+        "name": "Rue Sadi Carnot / Allée des Carrières",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292949448,
+          48.823804964
+        ]
+      },
+      "properties": {
+        "name": "Rue Sadi Carnot / Avenue Marcel Martinie D61A",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.295534546,
+          48.824813696
+        ]
+      },
+      "properties": {
+        "name": "Rue Sadi Carnot / Rue Jean Jaurès",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.296823984,
+          48.825578046
+        ]
+      },
+      "properties": {
+        "name": "Rue Sadi Carnot / Rue Rabelais",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289022678,
+          48.823627915
+        ]
+      },
+      "properties": {
+        "name": "Rue Solferino / Avenue Victor Hugo",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289939233,
+          48.822415344
+        ]
+      },
+      "properties": {
+        "name": "Rue Solferino / Rue René Sahors",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28992495,
+          48.822442001
+        ]
+      },
+      "properties": {
+        "name": "Rue Solferino / Rue Sadi Carnot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289456104,
+          48.82307975
+        ]
+      },
+      "properties": {
+        "name": "Rue Solferino / Villa Lucien",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.281780673,
+          48.821649573
+        ]
+      },
+      "properties": {
+        "name": "Rue Valentine Jacquet / Avenue du Général de Gaulle D71",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283522425,
+          48.820255402
+        ]
+      },
+      "properties": {
+        "name": "Rue Valentine Jacquet / Place du Président Kennedy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283024655,
+          48.820633673
+        ]
+      },
+      "properties": {
+        "name": "Rue Valentine Jacquet / Rue Jean-Baptiste Potin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284835746,
+          48.820611147
+        ]
+      },
+      "properties": {
+        "name": "Rue Vieille Forge / Place du Président Kennedy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285860064,
+          48.820293996
+        ]
+      },
+      "properties": {
+        "name": "Rue Vieille Forge / Rue de la République",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283752783,
+          48.820822524
+        ]
+      },
+      "properties": {
+        "name": "Rue Vieille Forge / Rue Gaudray",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.283700731,
+          48.820808566
+        ]
+      },
+      "properties": {
+        "name": "Rue Vieille Forge / Rue Jean-Baptiste Potin",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.284868325,
+          48.820618474
+        ]
+      },
+      "properties": {
+        "name": "Rue Vieille Forge / Rue Kleber",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.294290468,
+          48.822232456
+        ]
+      },
+      "properties": {
+        "name": "Villa Colsenet / Rue Jean Bleuzen D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28865306,
+          48.817199469
+        ]
+      },
+      "properties": {
+        "name": "Villa d'Arcueil / Rue Diderot",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.290653285,
+          48.818041248
+        ]
+      },
+      "properties": {
+        "name": "Villa d'Arcueil / Rue René Coche",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.28083042,
+          48.825627477
+        ]
+      },
+      "properties": {
+        "name": "Villa du Lycée / Boulevard du Lycée D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280819476,
+          48.825637361
+        ]
+      },
+      "properties": {
+        "name": "Villa du Lycée / Boulevard Voltaire D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280062341,
+          48.825198584
+        ]
+      },
+      "properties": {
+        "name": "Villa du Lycée / Rue d'Issy",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.280045199,
+          48.825205447
+        ]
+      },
+      "properties": {
+        "name": "Villa du Lycée / Rue de Vanves",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.285119047,
+          48.815980968
+        ]
+      },
+      "properties": {
+        "name": "Villa Eugène Drouet / Rue du Docteur Georges Lafosse",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.289913223,
+          48.819999163
+        ]
+      },
+      "properties": {
+        "name": "Villa Juliette de Wills / Rue Raymond Marcheron D130",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.292879608,
+          48.819781354
+        ]
+      },
+      "properties": {
+        "name": "Villa Léger / Rue Ernest Laval D50",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.282061913,
+          48.821975341
+        ]
+      },
+      "properties": {
+        "name": "Villa Quincy / Avenue du Général de Gaulle D71",
+        "context": "Vanves, Hauts-de-Seine",
+        "citycode": "92075",
+        "depcode": "92"
+      }
+    }
+  ]
+}

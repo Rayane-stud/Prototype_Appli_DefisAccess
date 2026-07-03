@@ -1,0 +1,8405 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337312457,
+          48.787031608
+        ]
+      },
+      "properties": {
+        "name": "Allée Bajou / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331110221,
+          48.797776455
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Croix Bossée / Rue de Provigny D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336848407,
+          48.790379562
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Pitancerie / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337984991,
+          48.792125113
+        ]
+      },
+      "properties": {
+        "name": "Allée de la Pitancerie / Rue Gaston Audat",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340894872,
+          48.7902869
+        ]
+      },
+      "properties": {
+        "name": "Allée des Arts / Allée Bellevue",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339436029,
+          48.788835588
+        ]
+      },
+      "properties": {
+        "name": "Allée des Joncs / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33509669,
+          48.792452224
+        ]
+      },
+      "properties": {
+        "name": "Allée des Tulipiers / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333888263,
+          48.792904057
+        ]
+      },
+      "properties": {
+        "name": "Allée des Tulipiers / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337137113,
+          48.784333347
+        ]
+      },
+      "properties": {
+        "name": "Allée du Panorama / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335394008,
+          48.787246422
+        ]
+      },
+      "properties": {
+        "name": "Allée Eugène Belgrand / Allée des Lours",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336922523,
+          48.788706551
+        ]
+      },
+      "properties": {
+        "name": "Allée Eugène Belgrand / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336972777,
+          48.788684434
+        ]
+      },
+      "properties": {
+        "name": "Allée Eugène Belgrand / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330523916,
+          48.787239166
+        ]
+      },
+      "properties": {
+        "name": "Allée Pierre de Montreuil / Allée Ronsard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330421043,
+          48.785956534
+        ]
+      },
+      "properties": {
+        "name": "Allée Ronsard / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322453717,
+          48.790073372
+        ]
+      },
+      "properties": {
+        "name": "Allée Victor Hugo / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322091222,
+          48.789779299
+        ]
+      },
+      "properties": {
+        "name": "Allée Victor Hugo / Avenue Victor Hugo",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339129847,
+          48.796896535
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc / La Montée aux Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33874077,
+          48.796405045
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339494692,
+          48.789381848
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Allée des Joncs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342113893,
+          48.792850413
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue du Panorama",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33779467,
+          48.785657084
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339881708,
+          48.789412321
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336736479,
+          48.783911535
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Impasse Antoine Trinty",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340413041,
+          48.797956175
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue de la Citadelle",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337415649,
+          48.784888434
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue des Amandiers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338674887,
+          48.786601911
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Rue des Saussaies D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342013002,
+          48.793834681
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Sentier de la Fontaine Couverte",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341058316,
+          48.796599141
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Sentier Defait",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341855474,
+          48.793273064
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341224409,
+          48.795981815
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Sentier des Goischères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336617254,
+          48.782544113
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Sentier des Jardins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341690973,
+          48.795060101
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Villa Le Clos des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338199008,
+          48.781853561
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Voie des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336044937,
+          48.782779425
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Voie des Saussaies",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341214786,
+          48.791451166
+        ]
+      },
+      "properties": {
+        "name": "Aqueduc de la Vanne / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323556504,
+          48.800325643
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319872257,
+          48.790826581
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319431989,
+          48.78993847
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Impasse du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320013364,
+          48.791174695
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Villa des Longchamps",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322011486,
+          48.796692852
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D920 / Voie Pompiers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335064551,
+          48.784849647
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Allée Beauséjour",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336020487,
+          48.787054337
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Rue des Saussaies D250",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336022506,
+          48.787065399
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335057823,
+          48.784908602
+        ]
+      },
+      "properties": {
+        "name": "Avenue Beauséjour / Sentier Henri Dupuis",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322994029,
+          48.798788496
+        ]
+      },
+      "properties": {
+        "name": "Avenue Benoît Guichon / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322936718,
+          48.798801275
+        ]
+      },
+      "properties": {
+        "name": "Avenue Benoît Guichon / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325994277,
+          48.797924965
+        ]
+      },
+      "properties": {
+        "name": "Avenue Benoît Guichon / Rue de l'Espérance",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323420608,
+          48.799889229
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323358939,
+          48.799907585
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3272091,
+          48.798392852
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Rue Auguste Rodin",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326594289,
+          48.798634056
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Rue de l'Espérance",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327785697,
+          48.798161246
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Rue de la Coopérative",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331146098,
+          48.796846139
+        ]
+      },
+      "properties": {
+        "name": "Avenue Carnot D157 / Rue de Provigny D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335452037,
+          48.795431164
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Allée Veyssière",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333880203,
+          48.797297857
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332864024,
+          48.79925577
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Rue de la Citadelle",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335157507,
+          48.794814482
+        ]
+      },
+      "properties": {
+        "name": "Avenue Cousin de Méricourt D127 / Rue Gallieni D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323484209,
+          48.793338624
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32400046,
+          48.792155067
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Avenue du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325358881,
+          48.789238032
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325310711,
+          48.789258368
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324504231,
+          48.791053884
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Place Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32498428,
+          48.790010683
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Rue de la Somme",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324754595,
+          48.790529426
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Rue des Lilas",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323486484,
+          48.793341919
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323445632,
+          48.793838093
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Chateaubriand / Rue Pascal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325634907,
+          48.786205043
+        ]
+      },
+      "properties": {
+        "name": "Avenue de l'Europe D257 / Rue Nouvelle",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329490323,
+          48.786691796
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127 / Avenue de l'Europe D257",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330351599,
+          48.788223962
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127B / Avenue de la Division Leclerc D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330385079,
+          48.7882257
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127B / Avenue Vatier D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329866029,
+          48.787364866
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127B / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3310178,
+          48.789670331
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127B / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331547841,
+          48.790471641
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Division Leclerc D127B / Rue Pierre Mauroy",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333658802,
+          48.7843631
+        ]
+      },
+      "properties": {
+        "name": "Avenue Defrance D254 / Avenue Aristide Briand D254",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332893753,
+          48.785771468
+        ]
+      },
+      "properties": {
+        "name": "Avenue Defrance D254 / Avenue du Maréchal de Lattre de Tassigny",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332854955,
+          48.785971827
+        ]
+      },
+      "properties": {
+        "name": "Avenue Defrance D254 / Carrefour des Poulets",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33277716,
+          48.785961078
+        ]
+      },
+      "properties": {
+        "name": "Avenue Defrance D254 / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333190584,
+          48.785402957
+        ]
+      },
+      "properties": {
+        "name": "Avenue Defrance D254 / Sentier Henri Dupuis",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322170644,
+          48.79666526
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Lumières / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322084302,
+          48.796676857
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Lumières / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323968899,
+          48.796442332
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Lumières / Rue du Bel Air",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322026539,
+          48.796688478
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Lumières / Voie Pompiers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331692925,
+          48.790426229
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D127 / Avenue de la Division Leclerc",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332674908,
+          48.788569857
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D250 / Avenue du Maréchal de Lattre de Tassigny D254",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332363665,
+          48.78963919
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D127 / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331787728,
+          48.788991759
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D250 / Avenue Vatier D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332797094,
+          48.786023642
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D254 / Carrefour des Poulets",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331698176,
+          48.789043765
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D250 / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332571011,
+          48.787676049
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D254 / Rue Albert Camus",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332999801,
+          48.7843638
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny / Rue Bronzac",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332686806,
+          48.788558205
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D254 / Rue des Saussaies D250",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332772101,
+          48.786155834
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Maréchal de Lattre de Tassigny D254 / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342141763,
+          48.792846815
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342149758,
+          48.792845929
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.344043091,
+          48.792772822
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342138871,
+          48.792876228
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320719763,
+          48.793123091
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Pont Royal / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321748051,
+          48.792835764
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Pont Royal / Rue de Reims",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328779445,
+          48.791894258
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D256 / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322064994,
+          48.787018506
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D256 / Avenue Aristide Briand D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331153001,
+          48.796828355
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D127 / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331204337,
+          48.794644736
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D157 / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325329271,
+          48.789222958
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D256 / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331156833,
+          48.796829596
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D127 / Rue de Provigny D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331011542,
+          48.795112957
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D157 / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322089857,
+          48.787022256
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Président Wilson D256 / D257",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335643532,
+          48.793043914
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33271293,
+          48.789845527
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333337316,
+          48.790461825
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / La Promenade du Loing et du Lunain",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332839366,
+          48.789928572
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / Rives de Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332611562,
+          48.789666931
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / Rue du Moulin de Cachan",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334068715,
+          48.791260732
+        ]
+      },
+      "properties": {
+        "name": "Avenue Dumotel / Rue Georges Vigor",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328328158,
+          48.791535662
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321416064,
+          48.790401554
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324814361,
+          48.791114261
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Place Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32247034,
+          48.790655786
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue d'Alsace",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326667102,
+          48.791471639
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue de Lorraine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327598008,
+          48.791559487
+        ]
+      },
+      "properties": {
+        "name": "Avenue Jean Jaurès / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337302148,
+          48.787188706
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Allée Bajou",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336794916,
+          48.790019636
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Allée de la Pitancerie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336868918,
+          48.79252036
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337912757,
+          48.78549064
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337522533,
+          48.7861085
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Rue Claude Cellier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338206127,
+          48.785040529
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Rue des Amandiers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336972426,
+          48.78849113
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336841536,
+          48.791529688
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336739778,
+          48.792571114
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Rue François Delage",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338839746,
+          48.784198344
+        ]
+      },
+      "properties": {
+        "name": "Avenue Léon Blum D157 / Sentier des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336891565,
+          48.792494252
+        ]
+      },
+      "properties": {
+        "name": "Avenue Louis Georgeon D157 / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334835696,
+          48.79338442
+        ]
+      },
+      "properties": {
+        "name": "Avenue Louis Georgeon D157 / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333890264,
+          48.793768285
+        ]
+      },
+      "properties": {
+        "name": "Avenue Louis Georgeon D157 / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336776869,
+          48.792606742
+        ]
+      },
+      "properties": {
+        "name": "Avenue Louis Georgeon D157 / Rue François Delage",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322429355,
+          48.790074189
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Allée Victor Hugo",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31981252,
+          48.790851369
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325356035,
+          48.789230004
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323796493,
+          48.789710899
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Rue de la Somme",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322643188,
+          48.790034224
+        ]
+      },
+      "properties": {
+        "name": "Avenue Paul Vaillant-Couturier / Rue des Lilas",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330320934,
+          48.788069349
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vatier D127 / Avenue de la Division Leclerc D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332333981,
+          48.789628086
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vatier D127 / Avenue du Maréchal de Lattre de Tassigny D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332361095,
+          48.789621887
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vatier D127 / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33102516,
+          48.788569335
+        ]
+      },
+      "properties": {
+        "name": "Avenue Vatier D127 / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319639583,
+          48.790172071
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323087303,
+          48.78942847
+        ]
+      },
+      "properties": {
+        "name": "Avenue Victor Hugo / Rue Pierre Curie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339484981,
+          48.789223386
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Allée des Joncs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340659835,
+          48.791094436
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342124756,
+          48.79284934
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Avenue du Panorama",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340139124,
+          48.79084269
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Rue de la Pléiade",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341230073,
+          48.791418951
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Rue Faure-Beaulieu",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341105283,
+          48.796568387
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Sentier Defait",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341788375,
+          48.793966715
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341240907,
+          48.795983868
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Sentier des Goischères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341179339,
+          48.791400342
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la Vanne / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332774966,
+          48.786054886
+        ]
+      },
+      "properties": {
+        "name": "Carrefour des Poulets / Avenue du Maréchal de Lattre de Tassigny D254",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332699068,
+          48.785974707
+        ]
+      },
+      "properties": {
+        "name": "Carrefour des Poulets / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337997281,
+          48.792128855
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Pitancerie / Allée de la Pitancerie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338008935,
+          48.792134175
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Pitancerie / Rue Gaston Audat",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336818628,
+          48.783883984
+        ]
+      },
+      "properties": {
+        "name": "Impasse Antoine Trinty / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326002453,
+          48.797674075
+        ]
+      },
+      "properties": {
+        "name": "Impasse Benoît Guichon / Place du Cèdre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326650311,
+          48.797539148
+        ]
+      },
+      "properties": {
+        "name": "Impasse Benoît Guichon / Rue Auguste Rodin",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325959141,
+          48.797700718
+        ]
+      },
+      "properties": {
+        "name": "Impasse Benoît Guichon / Rue de l'Espérance",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33955474,
+          48.785611812
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Frettes / Sentier des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339333954,
+          48.79718378
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Garennes / Aqueduc",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33933533,
+          48.797182513
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Garennes / La Montée aux Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340436891,
+          48.796851748
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Garennes / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324169553,
+          48.797749045
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Jardins / Rue des Jardins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321735645,
+          48.79555082
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Bon Air / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321663378,
+          48.795561635
+        ]
+      },
+      "properties": {
+        "name": "Impasse du Bon Air / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34332228,
+          48.795735068
+        ]
+      },
+      "properties": {
+        "name": "Impasse Germinal / Avenue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343277952,
+          48.79578562
+        ]
+      },
+      "properties": {
+        "name": "Impasse Germinal / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322550361,
+          48.797634826
+        ]
+      },
+      "properties": {
+        "name": "Impasse Louise Marguerite / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322466377,
+          48.797649967
+        ]
+      },
+      "properties": {
+        "name": "Impasse Louise Marguerite / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343117499,
+          48.797449418
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marcel Vergeat / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332460791,
+          48.790721734
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / La Promenade du Loing et du Lunain",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333550498,
+          48.792475309
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Rives de Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3387892,
+          48.795234964
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Sente des Lavandières",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338246061,
+          48.794684121
+        ]
+      },
+      "properties": {
+        "name": "La Bièvre / Sentier des Blanchisseries",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332497238,
+          48.790735251
+        ]
+      },
+      "properties": {
+        "name": "La Promenade du Loing et du Lunain / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331869847,
+          48.790895644
+        ]
+      },
+      "properties": {
+        "name": "La Promenade du Loing et du Lunain / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324401414,
+          48.7912658
+        ]
+      },
+      "properties": {
+        "name": "Place Chateaubriand / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324505633,
+          48.791048269
+        ]
+      },
+      "properties": {
+        "name": "Place Chateaubriand / Avenue Jean Jaurès",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325875006,
+          48.797709898
+        ]
+      },
+      "properties": {
+        "name": "Place du Cèdre / Rue de l'Espérance",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336723103,
+          48.793853474
+        ]
+      },
+      "properties": {
+        "name": "Place Eustache Deschamps / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335949004,
+          48.793619808
+        ]
+      },
+      "properties": {
+        "name": "Place Jacques Carat / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333919238,
+          48.792892731
+        ]
+      },
+      "properties": {
+        "name": "Rives de Bièvre / Allée des Tulipiers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334639745,
+          48.793447577
+        ]
+      },
+      "properties": {
+        "name": "Rives de Bièvre / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333194675,
+          48.791667602
+        ]
+      },
+      "properties": {
+        "name": "Rives de Bièvre / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332596785,
+          48.790684084
+        ]
+      },
+      "properties": {
+        "name": "Rives de Bièvre / La Promenade du Loing et du Lunain",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330494077,
+          48.788171752
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Camus / Avenue de la Division Leclerc",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332455346,
+          48.787681932
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Camus / Avenue du Maréchal de Lattre de Tassigny",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330586368,
+          48.788169996
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Camus / Avenue Vatier D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330532177,
+          48.788175126
+        ]
+      },
+      "properties": {
+        "name": "Rue Albert Camus / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326727681,
+          48.800618812
+        ]
+      },
+      "properties": {
+        "name": "Rue Alphonse Melun / Rue de la Gare",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328927051,
+          48.792010892
+        ]
+      },
+      "properties": {
+        "name": "Rue Amédée Picard / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3317822,
+          48.793304907
+        ]
+      },
+      "properties": {
+        "name": "Rue Amédée Picard / Place du Millénaire",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330587228,
+          48.792329742
+        ]
+      },
+      "properties": {
+        "name": "Rue Amédée Picard / Rue de la Belle Image",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33239416,
+          48.794139323
+        ]
+      },
+      "properties": {
+        "name": "Rue Amédée Picard / Rue Marx Dormoy",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321476363,
+          48.794769635
+        ]
+      },
+      "properties": {
+        "name": "Rue Ampère / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321377234,
+          48.794789704
+        ]
+      },
+      "properties": {
+        "name": "Rue Ampère / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322369242,
+          48.797172037
+        ]
+      },
+      "properties": {
+        "name": "Rue Anatole France / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322274156,
+          48.797188252
+        ]
+      },
+      "properties": {
+        "name": "Rue Anatole France / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324138503,
+          48.796854706
+        ]
+      },
+      "properties": {
+        "name": "Rue Anatole France / Rue du Centre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331997589,
+          48.786009777
+        ]
+      },
+      "properties": {
+        "name": "Rue Ange Rubaud / Allée Pierre de Montreuil",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332193249,
+          48.78511493
+        ]
+      },
+      "properties": {
+        "name": "Rue Ange Rubaud / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327223609,
+          48.798384193
+        ]
+      },
+      "properties": {
+        "name": "Rue Auguste Rodin / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332282956,
+          48.799476646
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332885396,
+          48.799381423
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33283742,
+          48.799427705
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / Avenue de la Convention D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331546749,
+          48.799644197
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / Boulevard Jacques Desbrosses",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332736373,
+          48.799434744
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331591303,
+          48.799649942
+        ]
+      },
+      "properties": {
+        "name": "Rue Besson / Rue Émile Raspail D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335159186,
+          48.794810808
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D127 / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333874517,
+          48.793767593
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333023131,
+          48.792608951
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins / Rives de Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335129452,
+          48.794805525
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D127 / Rue Gallieni D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335160539,
+          48.794805574
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins D127 / Rue Guichard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333836527,
+          48.793772048
+        ]
+      },
+      "properties": {
+        "name": "Rue Camille Desmoulins / Rue Marx Dormoy",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323444118,
+          48.793838996
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaptal / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323676424,
+          48.794288364
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaptal / Rue Ampère",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324002547,
+          48.794894393
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaptal / Rue de l'Armistice",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324591577,
+          48.795957876
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaptal / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323492958,
+          48.79387303
+        ]
+      },
+      "properties": {
+        "name": "Rue Chaptal / Rue Pascal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336081146,
+          48.784589521
+        ]
+      },
+      "properties": {
+        "name": "Rue Claude Cellier / Allée Beauséjour",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338701582,
+          48.796410699
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / Aqueduc",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338247572,
+          48.795951196
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338713365,
+          48.796412302
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / La Montée aux Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33752022,
+          48.795179754
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / Rue du Docteur Hénouille",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33865231,
+          48.796405764
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3379427,
+          48.795556953
+        ]
+      },
+      "properties": {
+        "name": "Rue Cousté / Sente des Lavandières",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322662668,
+          48.790087748
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alsace / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322004522,
+          48.791695195
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alsace / Rue d'Estienne d'Orves",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322697755,
+          48.790124627
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Alsace / Rue des Lilas",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320315903,
+          48.79211002
+        ]
+      },
+      "properties": {
+        "name": "Rue d'Estienne d'Orves / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330908543,
+          48.784470648
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bretagne / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330872107,
+          48.785112057
+        ]
+      },
+      "properties": {
+        "name": "Rue de Bretagne / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32525722,
+          48.795869809
+        ]
+      },
+      "properties": {
+        "name": "Rue de Condorcet / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324336188,
+          48.794110104
+        ]
+      },
+      "properties": {
+        "name": "Rue de Condorcet / Rue Pascal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331864222,
+          48.784463493
+        ]
+      },
+      "properties": {
+        "name": "Rue de Flandre / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331823819,
+          48.785059626
+        ]
+      },
+      "properties": {
+        "name": "Rue de Flandre / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321652075,
+          48.795337301
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Armistice / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321585098,
+          48.795348758
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Armistice / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32538281,
+          48.796265004
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Avenue des Lumières",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325906453,
+          48.797592679
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Place du Cèdre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3252599,
+          48.7958757
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue de Condorcet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325630521,
+          48.796790963
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue de la Liberté",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325841607,
+          48.797527658
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue des Jardins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325525045,
+          48.796624775
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue du Centre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32578602,
+          48.797181119
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue du Commandant Marchand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325262041,
+          48.79588153
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325669282,
+          48.796987544
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Espérance / Rue Médéric Vedy",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324739895,
+          48.793015965
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Yser / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324028163,
+          48.792159349
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Yser / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324020016,
+          48.792145241
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Yser / Avenue du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324738283,
+          48.793009093
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Yser / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32975308,
+          48.79267953
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Belle Image / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330580579,
+          48.792319658
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Belle Image / Rue Amédée Picard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340436583,
+          48.797981918
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340447215,
+          48.797988513
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341005547,
+          48.798885641
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Rue du Colonel Fabien",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340727968,
+          48.798497704
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Rue Thimonnier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340973997,
+          48.798913098
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Citadelle / Sentier des Vaudenaires",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342722799,
+          48.78995726
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Concorde / Allée des Arts",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343211418,
+          48.789411385
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Concorde / Avenue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327601745,
+          48.798257576
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gare / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323797542,
+          48.800865529
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323770867,
+          48.800874934
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32642217,
+          48.800056699
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Rue Alphonse Melun",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324704114,
+          48.800574986
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Villa de l'Avenir",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326034772,
+          48.800159517
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Villa de l'Espérance",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325318336,
+          48.800382406
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Villa de la Grange Ory",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325673101,
+          48.800271698
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Villa de la Paix",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324955098,
+          48.800495893
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grange Ory / Villa du Progrès",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32740519,
+          48.796482727
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Liberté / Rue de la Coopérative",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324026165,
+          48.792130142
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323958991,
+          48.792136281
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Avenue du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32201774,
+          48.79169193
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue d'Alsace",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322006243,
+          48.79169674
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue d'Estienne d'Orves",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32408306,
+          48.792161242
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue de l'Yser",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326190026,
+          48.792508934
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue de Lorraine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322029469,
+          48.791709159
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue de Verdun",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326183121,
+          48.79254059
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340157262,
+          48.790851922
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340110793,
+          48.790812947
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34017774,
+          48.793299963
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340161401,
+          48.79325201
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Rue Félix Choplin",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340709926,
+          48.791919942
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340653499,
+          48.791917386
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Sentier des Joncs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340201336,
+          48.791117227
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Sentier Pichot",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340715723,
+          48.791818962
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Pléiade / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341945273,
+          48.791221746
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Solidarité / Rue de la Concorde",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341939797,
+          48.791226715
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Solidarité / Rue Faure-Beaulieu",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343921747,
+          48.792227088
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Solidarité / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326786181,
+          48.79028239
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Somme / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323723557,
+          48.789734057
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Somme / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326252506,
+          48.792601557
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lorraine / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327144092,
+          48.790572756
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lorraine / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326235341,
+          48.79255694
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lorraine / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325840828,
+          48.781921631
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Rue de la Madeleine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325845962,
+          48.78188497
+        ]
+      },
+      "properties": {
+        "name": "Rue de Metz / Rue des Peupliers",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331387933,
+          48.784445808
+        ]
+      },
+      "properties": {
+        "name": "Rue de Normandie / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331351948,
+          48.785085367
+        ]
+      },
+      "properties": {
+        "name": "Rue de Normandie / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330452619,
+          48.785147427
+        ]
+      },
+      "properties": {
+        "name": "Rue de Provence / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321764522,
+          48.792830465
+        ]
+      },
+      "properties": {
+        "name": "Rue de Reims / Avenue du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321231396,
+          48.791899216
+        ]
+      },
+      "properties": {
+        "name": "Rue de Reims / Rue d'Estienne d'Orves",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323440906,
+          48.793335274
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323465422,
+          48.793335113
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322548117,
+          48.792629044
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Avenue du Pont Royal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321159622,
+          48.790462623
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322003148,
+          48.791658582
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Rue d'Alsace",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321997412,
+          48.791698307
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Rue d'Estienne d'Orves",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323474132,
+          48.793335276
+        ]
+      },
+      "properties": {
+        "name": "Rue de Verdun / Rue du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338156386,
+          48.785181369
+        ]
+      },
+      "properties": {
+        "name": "Rue des Amandiers / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337489175,
+          48.784858226
+        ]
+      },
+      "properties": {
+        "name": "Rue des Amandiers / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339095237,
+          48.786538531
+        ]
+      },
+      "properties": {
+        "name": "Rue des Amandiers / Rue des Saussaies D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335187302,
+          48.795892944
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anciens Combattants / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335216521,
+          48.795894137
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anciens Combattants / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335703972,
+          48.796860438
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anciens Combattants / Rue des Tournelles",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335686158,
+          48.796827206
+        ]
+      },
+      "properties": {
+        "name": "Rue des Anciens Combattants / Rue du Fief des Arcs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330971072,
+          48.792687479
+        ]
+      },
+      "properties": {
+        "name": "Rue des Deux Frères / Rue Amédée Picard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332617611,
+          48.792155335
+        ]
+      },
+      "properties": {
+        "name": "Rue des Deux Frères / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322702368,
+          48.798028194
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32262246,
+          48.798042583
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325793473,
+          48.797553242
+        ]
+      },
+      "properties": {
+        "name": "Rue des Jardins / Place du Cèdre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322689795,
+          48.79008053
+        ]
+      },
+      "properties": {
+        "name": "Rue des Lilas / Avenue Paul Vaillant-Couturier",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322705066,
+          48.790132343
+        ]
+      },
+      "properties": {
+        "name": "Rue des Lilas / Rue d'Alsace",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326875273,
+          48.790961773
+        ]
+      },
+      "properties": {
+        "name": "Rue des Lilas / Rue de Lorraine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328206999,
+          48.783779004
+        ]
+      },
+      "properties": {
+        "name": "Rue des Peupliers / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325836174,
+          48.781929105
+        ]
+      },
+      "properties": {
+        "name": "Rue des Peupliers / Rue de la Madeleine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32584355,
+          48.78192302
+        ]
+      },
+      "properties": {
+        "name": "Rue des Peupliers / Rue de Metz",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324273551,
+          48.791577093
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rosiers / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322241952,
+          48.791192186
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rosiers / Rue d'Alsace",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326410991,
+          48.791997213
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rosiers / Rue de Lorraine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335332114,
+          48.787267718
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Allée des Lours",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335458342,
+          48.787243986
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Allée Eugène Belgrand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341062214,
+          48.786303007
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D157 / Allée Gustave Courbet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337367484,
+          48.786794286
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338868316,
+          48.786576811
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D157 / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3373673,
+          48.786794299
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D157 / Rue des Saussaies D250",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33602571,
+          48.787077271
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333796997,
+          48.787980868
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339870878,
+          48.786434257
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D157 / Sentier des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338172312,
+          48.786684414
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D157 / Sentier des Joncs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335716351,
+          48.787132036
+        ]
+      },
+      "properties": {
+        "name": "Rue des Saussaies D250 / Sentier des Lours",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333826007,
+          48.798486068
+        ]
+      },
+      "properties": {
+        "name": "Rue des Tournelles / Rue de la Citadelle",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337001539,
+          48.788623522
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vignes / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340012167,
+          48.794807844
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vignes / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340004998,
+          48.794810199
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vignes / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339384796,
+          48.791662317
+        ]
+      },
+      "properties": {
+        "name": "Rue des Vignes / Rue Gaston Audat",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324121919,
+          48.796858234
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue Anatole France",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324155002,
+          48.796852272
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue du Centre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323832707,
+          48.796087344
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324306875,
+          48.797254676
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bel Air / Rue Médéric Vedy",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331624831,
+          48.785104809
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bourbonnais / Rue François Villon",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343297992,
+          48.797859721
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Avenue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343306201,
+          48.797808152
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Fabien / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327550128,
+          48.796870581
+        ]
+      },
+      "properties": {
+        "name": "Rue du Commandant Marchand / Rue de la Coopérative",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340409904,
+          48.795598797
+        ]
+      },
+      "properties": {
+        "name": "Rue du Coteau / Rue du Rungis",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328194359,
+          48.798018811
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Gosselin / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336849561,
+          48.796239565
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337530871,
+          48.795189678
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / Rue Cousté",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337021798,
+          48.796745128
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / Rue des Tournelles",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33701466,
+          48.796739994
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / Rue du Fief des Arcs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337039523,
+          48.796743073
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33676753,
+          48.796188433
+        ]
+      },
+      "properties": {
+        "name": "Rue du Docteur Hénouille / Rue Mirabeau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332817806,
+          48.798852971
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fief des Arcs / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335847856,
+          48.796944334
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fief des Arcs / Rue des Tournelles",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33703339,
+          48.796749635
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fief des Arcs / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325435404,
+          48.792836862
+        ]
+      },
+      "properties": {
+        "name": "Rue du Loing / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339448995,
+          48.788841911
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lunain / Allée des Joncs",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343015413,
+          48.788419736
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lunain / Avenue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339474656,
+          48.788822913
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lunain / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340184272,
+          48.788719707
+        ]
+      },
+      "properties": {
+        "name": "Rue du Lunain / Sentier des Sablons",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332601503,
+          48.789661319
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin de Cachan / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333530521,
+          48.7891311
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin de Cachan / Rue du Parc de Cachan",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334562445,
+          48.788466167
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin de Cachan / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334190199,
+          48.788681099
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin de Cachan / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336683407,
+          48.792566361
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc de Cachan / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336637988,
+          48.792623131
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc de Cachan / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336653487,
+          48.792605157
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc de Cachan / Rue François Delage",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335069049,
+          48.790913613
+        ]
+      },
+      "properties": {
+        "name": "Rue du Parc de Cachan / Rue Georges Vigor",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340625464,
+          48.795240592
+        ]
+      },
+      "properties": {
+        "name": "Rue du Rungis / Escalier du Rungis",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340400908,
+          48.795488624
+        ]
+      },
+      "properties": {
+        "name": "Rue du Rungis / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341006478,
+          48.797591791
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341008802,
+          48.797591301
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343032124,
+          48.797140774
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34204899,
+          48.797347501
+        ]
+      },
+      "properties": {
+        "name": "Rue Émile Zola / Sentier des Goischères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336759458,
+          48.791233273
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337560842,
+          48.792284317
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Avenue Louis Georgeon",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337989367,
+          48.792707582
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Chemin de la Pitancerie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338777061,
+          48.796394149
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / La Montée aux Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337033401,
+          48.796749701
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue des Tournelles",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339992147,
+          48.794781333
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340011418,
+          48.794831726
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33877881,
+          48.793482921
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue Félix Choplin",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337578931,
+          48.792282099
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue Gaston Audat",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336056788,
+          48.790505595
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Rue Georges Vigor",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33911976,
+          48.793899642
+        ]
+      },
+      "properties": {
+        "name": "Rue Étienne Dolet / Sentier des Blanchisseries",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341693535,
+          48.791291705
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Allée Bellevue",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341271814,
+          48.791447543
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341302256,
+          48.791453413
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341940329,
+          48.791221726
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Rue de la Concorde",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341251215,
+          48.79147177
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341260505,
+          48.791452765
+        ]
+      },
+      "properties": {
+        "name": "Rue Faure-Beaulieu / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340134546,
+          48.793225212
+        ]
+      },
+      "properties": {
+        "name": "Rue Félix Choplin / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336666263,
+          48.792644578
+        ]
+      },
+      "properties": {
+        "name": "Rue François Delage / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332776402,
+          48.78628145
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Avenue du Maréchal de Lattre de Tassigny D254",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332718608,
+          48.786001446
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Carrefour des Poulets",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332251638,
+          48.785221735
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Rue Ange Rubaud",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331920539,
+          48.784616835
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Rue de Flandre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331837537,
+          48.78440972
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332184838,
+          48.785045818
+        ]
+      },
+      "properties": {
+        "name": "Rue François Rude / Rue du Bourbonnais",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3434299,
+          48.795080607
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D126 / Avenue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343362467,
+          48.797786131
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D126 / Rue du Colonel Fabien",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343187646,
+          48.796021665
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D126 / Sentier Defait",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343409921,
+          48.797888865
+        ]
+      },
+      "properties": {
+        "name": "Rue Gabriel Péri D126 / A6a",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331156762,
+          48.796829567
+        ]
+      },
+      "properties": {
+        "name": "Rue Gallieni D258 / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331175737,
+          48.796796147
+        ]
+      },
+      "properties": {
+        "name": "Rue Gallieni D258 / Avenue du Président Wilson D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331160025,
+          48.796830248
+        ]
+      },
+      "properties": {
+        "name": "Rue Gallieni D258 / Rue de Provigny D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332839397,
+          48.795706673
+        ]
+      },
+      "properties": {
+        "name": "Rue Gallieni D258 / Rue Raspail",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33389459,
+          48.795001074
+        ]
+      },
+      "properties": {
+        "name": "Rue Gallieni D258 / Square de la Libération",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337969697,
+          48.792133371
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Audat / Allée de la Pitancerie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337567608,
+          48.792279908
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Audat / Avenue Louis Georgeon",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339374607,
+          48.791652251
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Audat / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337571887,
+          48.792270574
+        ]
+      },
+      "properties": {
+        "name": "Rue Gaston Audat / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334077817,
+          48.791271164
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Vigor / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335083249,
+          48.790868691
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Vigor / Rue du Parc de Cachan",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335176517,
+          48.794813093
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337398088,
+          48.7939439
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336855231,
+          48.794123513
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Place Eustache Deschamps",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336708269,
+          48.79423416
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Rue Cousté",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33872967,
+          48.793476314
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Rue Étienne Dolet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338750402,
+          48.793479005
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Rue Félix Choplin",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.337861839,
+          48.793753171
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Rue François Delage",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335159178,
+          48.794810768
+        ]
+      },
+      "properties": {
+        "name": "Rue Guichard / Rue Gallieni D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321390681,
+          48.794437439
+        ]
+      },
+      "properties": {
+        "name": "Rue Lavoisier / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321244709,
+          48.794469638
+        ]
+      },
+      "properties": {
+        "name": "Rue Lavoisier / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323434854,
+          48.793836063
+        ]
+      },
+      "properties": {
+        "name": "Rue Lavoisier / Avenue de Chateaubriand",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323438306,
+          48.793847625
+        ]
+      },
+      "properties": {
+        "name": "Rue Lavoisier / Rue Chaptal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323444091,
+          48.79383989
+        ]
+      },
+      "properties": {
+        "name": "Rue Lavoisier / Rue Pascal",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331911729,
+          48.786018086
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Allée Pierre de Montreuil",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330567351,
+          48.785972787
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Allée Ronsard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329133429,
+          48.785967066
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Avenue de la Division Leclerc D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332736573,
+          48.786026162
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Avenue du Maréchal de Lattre de Tassigny D254",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332689517,
+          48.786028832
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Carrefour des Poulets",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32905952,
+          48.785976534
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332083383,
+          48.786001259
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Rue Ange Rubaud",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329698718,
+          48.785920881
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Rue de Berry",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.330387772,
+          48.785944114
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Rue de Provence",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33267183,
+          48.785999848
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Rue François Rude",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331567163,
+          48.78595447
+        ]
+      },
+      "properties": {
+        "name": "Rue Marc Sangnier / Rue François Villon",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321988129,
+          48.796209092
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bonnet D248 / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321752878,
+          48.796204375
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bonnet D248 / Avenue Albert Petit",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321842074,
+          48.796208707
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bonnet D248 / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.327944237,
+          48.795501909
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bonnet D248 / Avenue Léon Eyrolles",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32703866,
+          48.795625355
+        ]
+      },
+      "properties": {
+        "name": "Rue Marcel Bonnet D248 / Rue de la Coopérative",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331316562,
+          48.794378989
+        ]
+      },
+      "properties": {
+        "name": "Rue Marx Dormoy D157 / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333827117,
+          48.793791269
+        ]
+      },
+      "properties": {
+        "name": "Rue Marx Dormoy / Avenue Louis Georgeon D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332374525,
+          48.794140761
+        ]
+      },
+      "properties": {
+        "name": "Rue Marx Dormoy D157 / Rue Amédée Picard",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333818052,
+          48.793792436
+        ]
+      },
+      "properties": {
+        "name": "Rue Marx Dormoy / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335206086,
+          48.795873668
+        ]
+      },
+      "properties": {
+        "name": "Rue Mirabeau / Avenue Cousin de Méricourt D127",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.336035321,
+          48.796041715
+        ]
+      },
+      "properties": {
+        "name": "Rue Mirabeau / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335225741,
+          48.795896158
+        ]
+      },
+      "properties": {
+        "name": "Rue Mirabeau / Rue des Anciens Combattants",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325652058,
+          48.786196867
+        ]
+      },
+      "properties": {
+        "name": "Rue Nouvelle / Avenue de l'Europe D257",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324383333,
+          48.794143577
+        ]
+      },
+      "properties": {
+        "name": "Rue Pascal / Rue de Condorcet",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326004085,
+          48.795754525
+        ]
+      },
+      "properties": {
+        "name": "Rue Pascal / Rue Marcel Bonnet D248",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321980409,
+          48.787678187
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Curie / Square Lamartine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322379726,
+          48.788638983
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Curie / Square Voltaire",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.329936308,
+          48.79147632
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Mauroy / Aqueduc du Loing",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.328688042,
+          48.791798461
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Mauroy / Avenue du Président Wilson D256",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.331571848,
+          48.790566713
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Mauroy / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333911741,
+          48.795585912
+        ]
+      },
+      "properties": {
+        "name": "Rue Raspail / Allée Veyssière",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333856581,
+          48.795013614
+        ]
+      },
+      "properties": {
+        "name": "Rue Raspail / Square de la Libération",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334057525,
+          48.791272068
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / Avenue Dumotel",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333244579,
+          48.791939935
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333276441,
+          48.791918506
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / Rives de Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332663701,
+          48.792141697
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / Rue Camille Desmoulins",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.332601002,
+          48.792160202
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / Rue des Deux Frères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3340654,
+          48.791268999
+        ]
+      },
+      "properties": {
+        "name": "Rue Victor Schœlcher / Rue Georges Vigor",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342023961,
+          48.793835187
+        ]
+      },
+      "properties": {
+        "name": "Sentier de la Fontaine Couverte / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340331983,
+          48.793807982
+        ]
+      },
+      "properties": {
+        "name": "Sentier de la Fontaine Couverte / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34198166,
+          48.793782015
+        ]
+      },
+      "properties": {
+        "name": "Sentier de la Fontaine Couverte / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341056196,
+          48.796606744
+        ]
+      },
+      "properties": {
+        "name": "Sentier Defait / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340456201,
+          48.796838301
+        ]
+      },
+      "properties": {
+        "name": "Sentier Defait / Impasse des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34047838,
+          48.796821308
+        ]
+      },
+      "properties": {
+        "name": "Sentier Defait / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341488114,
+          48.796417033
+        ]
+      },
+      "properties": {
+        "name": "Sentier Defait / Sentier des Goischères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3378984,
+          48.794356403
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Blanchisseries / La Bièvre",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338797728,
+          48.79522169
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Blanchisseries / Sente des Lavandières",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.338836567,
+          48.784164982
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Frettes / Avenue Léon Blum D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.342115291,
+          48.792878252
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Avenue du Panorama",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341914085,
+          48.79248669
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341115084,
+          48.795302428
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Escalier du Rungis",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340610121,
+          48.796433862
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Rue du Coteau",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341060555,
+          48.791627948
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Garennes / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341687217,
+          48.796351094
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Goischères / Sentier Defait",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339908514,
+          48.792211352
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Joncs / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.34066801,
+          48.791904315
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Joncs / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340698165,
+          48.791880153
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Joncs / Voie Gosse",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335201185,
+          48.786582119
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Lours / Allée des Lours",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340871851,
+          48.790287255
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Allée Bellevue",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340876983,
+          48.790277033
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Allée des Arts",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340058198,
+          48.788444473
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Allée des Hautes Bruyères",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340014196,
+          48.790501254
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Aqueduc de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340014246,
+          48.790501458
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340629656,
+          48.789775161
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Impasse des Sablons",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339576819,
+          48.78649973
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Rue des Saussaies D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340495517,
+          48.789452605
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Villa des Sablons",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339801592,
+          48.7878592
+        ]
+      },
+      "properties": {
+        "name": "Sentier des Sablons / Villa Fleurie",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33906959,
+          48.784360923
+        ]
+      },
+      "properties": {
+        "name": "Sentier Eugène Brégeard / Sentier des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33949266,
+          48.784263508
+        ]
+      },
+      "properties": {
+        "name": "Sentier Eugène Brégeard / Voie des Frettes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.335061655,
+          48.78487884
+        ]
+      },
+      "properties": {
+        "name": "Sentier Henri Dupuis / Allée Beauséjour",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.334574301,
+          48.785027157
+        ]
+      },
+      "properties": {
+        "name": "Sentier Henri Dupuis / Sentier des Lours",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.339273141,
+          48.791497697
+        ]
+      },
+      "properties": {
+        "name": "Sentier Pichot / Rue des Vignes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.333968211,
+          48.79500413
+        ]
+      },
+      "properties": {
+        "name": "Square de la Libération / Rue Gallieni D258",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3212002,
+          48.787993005
+        ]
+      },
+      "properties": {
+        "name": "Square Lamartine / Square Voltaire",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321234554,
+          48.788318337
+        ]
+      },
+      "properties": {
+        "name": "Square Voltaire / Square Lamartine",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324710636,
+          48.799375853
+        ]
+      },
+      "properties": {
+        "name": "Villa Carnot / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325353709,
+          48.799130145
+        ]
+      },
+      "properties": {
+        "name": "Villa de Chateaubriand / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319973957,
+          48.79118167
+        ]
+      },
+      "properties": {
+        "name": "Villa des Longchamps / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341703171,
+          48.795060635
+        ]
+      },
+      "properties": {
+        "name": "Villa Le Clos des Vignes / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341665125,
+          48.795024449
+        ]
+      },
+      "properties": {
+        "name": "Villa Le Clos des Vignes / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325968476,
+          48.798889836
+        ]
+      },
+      "properties": {
+        "name": "Villa Roger / Avenue Carnot D157",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.341270888,
+          48.791472558
+        ]
+      },
+      "properties": {
+        "name": "Voie Gosse / Boulevard de la Vanne",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.340736523,
+          48.791879557
+        ]
+      },
+      "properties": {
+        "name": "Voie Gosse / Sentier des Garennes",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321001608,
+          48.787314409
+        ]
+      },
+      "properties": {
+        "name": "D257 / Avenue Aristide Briand D920",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343473083,
+          48.797840075
+        ]
+      },
+      "properties": {
+        "name": "A6a / Rue Gabriel Péri D126",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.343831842,
+          48.797614731
+        ]
+      },
+      "properties": {
+        "name": "A6b / A6a",
+        "context": "Cachan, Val-de-Marne",
+        "citycode": "94016",
+        "depcode": "94"
+      }
+    }
+  ]
+}

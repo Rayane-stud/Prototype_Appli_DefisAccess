@@ -255,7 +255,7 @@ def route_toutes_equipes2(df, rdv_lat, rdv_long):
     Détermine la zone géographique globale, télécharge la carte adéquate,
     et lance le calcul d'itinéraire pour chaque équipe.
     """
-
+    
     # 1. On trouve les coordonnées minimales et maximales de TOUS les points + le RDV
     toutes_lats = pd.concat([df['latitude'], pd.Series([rdv_lat])])
     toutes_longs = pd.concat([df['longitude'], pd.Series([rdv_long])])

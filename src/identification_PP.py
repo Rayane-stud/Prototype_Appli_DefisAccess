@@ -550,7 +550,7 @@ def main(Ville, intersections):
         if not df_resultat.empty:
             # Étape 3 : Exportation des données nettoyées et calculées
             nom_fichier_sortie = f"{DOSSIER_OUTPUT}/intersections_{Ville.lower()}_passages.csv"
-            df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
+            #df_resultat.to_csv(nom_fichier_sortie, index=False, encoding="utf-8-sig")
             
             
             print(f"\n Traitement terminé avec succès !")

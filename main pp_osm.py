@@ -11,6 +11,7 @@ import proximite
 import export
 import  identification_PM
 import identification_PP as pp
+import comparaisons as comp
 import telecharger_intersections
 import numpy as np
 
@@ -96,7 +97,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         pp.main(ville,
         proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)))
         ,nb_equipes, rdv_lat, rdv_long)
-
+       
 
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
@@ -105,6 +106,23 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         str(BASE_DIR / "data" / "output" / "fiches_equipes"),
         ville
     )
+
+    # ── On enregistre le tableau actuelle pour la comparaison
+    rep=input("Enregistrer un fichier pour la comparaison ? (o/n)")
+    if rep=="o":
+
+        #Rajouter la date dans le nom du fichier
+        nom="data/output/comparaisons/"+ville+"pp_osm.csv"
+        tab_croisement.to_csv(nom,sep=";",index=False, encoding="utf-8-sig")
+        
+        rep=input("Avez vous un autre dossier existant avec lequel faire la comparaison ? (o/n)")
+        if rep=="o":
+            nom_fichier2=input("Veuillez donnée son nom seulement")
+            comp.recuperation_comp(nom, nom_fichier2)
+        else:
+            print("Veuillez enregistrer alors un autre fichier avec la methode que vous voulez en utilisant le bon main")
+
+
     return liste_chemins
 
 

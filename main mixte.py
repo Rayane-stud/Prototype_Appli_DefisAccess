@@ -10,10 +10,14 @@ import routage
 import proximite
 import export
 import  identification_PM
+import identification_PP
 import IA_PP
 import identification_PP
+import comparaisons as comp
 import telecharger_intersections
 import numpy as np
+from scipy.spatial import cKDTree
+import math
 
 from pathlib import Path
 from geopy.distance import geodesic
@@ -136,7 +140,6 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
 
     # ── Calcul de proximité et assignation aux équipes ─────────────────
     tab_croisement = proximite.assigner_equipes(
-        #on rajoute pp ici
             proximite.fusion_croisement(proximite.filtre_distance(tableau_villes, tableau_nettoye)),nb_equipes, rdv_lat, rdv_long)
 
     # ── Détection des passages piétons par YOLO ────────────────────────
@@ -157,7 +160,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         df_osm = identification_PP.telecharger_passages_par_zone(osm_area_id, rayon_metres=25)
         if not df_osm.empty:
             tab_croisement = fusionner_comptages_osm(tab_croisement, df_osm, rayon=25)
-
+    
     # ── Calcul des routes optimales et export ──────────────────────────
     dict_route_par_equipe = routage.route_toutes_equipes(tab_croisement, rdv_lat, rdv_long)
     liste_chemins = export.export_final_equipes(
@@ -165,6 +168,23 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         str(BASE_DIR / "data" / "output" / "fiches_equipes"),
         ville
     )
+
+    # ── On enregistre le tableau actuelle pour la comparaison
+    rep=input("Enregistrer un fichier pour la comparaison ? (o/n)")
+    if rep=="o":
+
+        #Rajouter la date dans le nom du fichier
+        nom="data/output/comparaisons/"+ville+"pp_osm.csv"
+        tab_croisement.to_csv(nom,sep=";",index=False, encoding="utf-8-sig")
+        
+        rep=input("Avez vous un autre dossier existant avec lequel faire la comparaison ? (o/n)")
+        if rep=="o":
+            nom_fichier2=input("Veuillez donnée son nom seulement")
+            comp.recuperation_comp(nom, nom_fichier2)
+        else:
+            print("Veuillez enregistrer alors un autre fichier avec la methode que vous voulez en utilisant le bon main")
+
+
     return liste_chemins
 
 
@@ -272,7 +292,6 @@ if __name__ == "__main__":
             print()
 
         liste_chemins = main(RDV_LAT, RDV_LONG, NB_EQUIPES, ville=ville)
-
         # None = ville non trouvée → message et on redemande
         if liste_chemins is None:
             print(f"\n La ville '{ville}' est introuvable.")

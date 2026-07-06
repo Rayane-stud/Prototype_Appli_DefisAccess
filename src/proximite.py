@@ -40,6 +40,7 @@ import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 from sklearn.cluster import KMeans
+from k_means_constrained import KMeansConstrained 
 # from nettoyage import charger_intersections
 
 
@@ -153,34 +154,66 @@ def assigner_equipes(df, n_equipes: int, meetup_lat: float, meetup_long: float):
     # ETAPE 1 : on travaille sur une copie pour ne pas modifier le DataFrame d'origine
     df = df.copy()
 
+    # Projection locale en mètres (suffisant à l'échelle d'une ville)
+    lat0 = df["latitude"].mean()
+    x = df["longitude"] * 111320 * np.cos(np.radians(lat0))
+    y = df["latitude"] * 110540
+    coordonnees = np.column_stack([x, y])
+
     # ETAPE 2 : on extrait les coordonnees pour le KMeans
-    coordonnees = df[["latitude", "longitude"]]
+    #coordonnees = df[["latitude", "longitude"]]
+
+    # Parametre pour le Kmeans constrained : pour avoir des equipes équilibrées 
+    n_total = len(df)
+    taille_min = n_total // n_equipes - 4
+    taille_max = int(np.ceil(n_total / n_equipes)) + 2 # ceil : pour arrondir au sup
+
+    # garde fou du taille_max 
+    if taille_max * n_equipes < n_total:
+        raise ValueError(
+            f"Contraintes infaisables : {n_total} points, {n_equipes} equipes, "
+            f"taille_max={taille_max} -> capacite max {taille_max * n_equipes}"
+        )
+
+    # Model kmeans avec les contraintes : 
+    kmeans = KMeansConstrained(
+        n_clusters=n_equipes,
+        size_min=max(taille_min, 1),
+        size_max=taille_max,
+        random_state=1479
+    )
+
 
     # ETAPE 3 : on cree le modele KMeans avec n_equipes groupes
     # random_state fixe pour que le resultat soit reproductible
-    kmeans = KMeans(n_clusters=n_equipes, random_state=1479)
+    kmeans2 = KMeans(n_clusters=n_equipes, random_state=1479, n_init=10)
 
     # ETAPE 4 : on assigne le numero d'equipe a chaque intersection
     # les numeros commencent a 0, on ajoute 1 pour commencer a 1
     df["equipe"] = kmeans.fit_predict(coordonnees) + 1
 
-    # ETAPE 5 : on calcule la distance de chaque intersection au point de rassemblement
-    # cette distance servira uniquement a trier l'ordre de visite
-    df["dist_meetup"] = df.apply(
-        lambda row: geodesic(
-            (row["latitude"], row["longitude"]),
-            (meetup_lat, meetup_long)
-        ).km,
-        axis=1
-    )
 
-    # ETAPE 6 : on trie par equipe puis par distance au point de rassemblement
-    df = df.sort_values(by=["equipe", "dist_meetup"]).reset_index(drop=True)
+    
+    # PARTIE INUTILE A PRESENT, SEULEMENT GARDEE AU CAS OU 
+    '''
+        # ETAPE 5 : on calcule la distance de chaque intersection au point de rassemblement
+        # cette distance servira uniquement a trier l'ordre de visite
+        df["dist_meetup"] = df.apply(
+            lambda row: geodesic(
+                (row["latitude"], row["longitude"]),
+                (meetup_lat, meetup_long)
+            ).km,
+            axis=1
+        )
 
-    # ETAPE 7 : on numerote les intersections au sein de chaque equipe en partant de 1
-    df["ordre"] = df.groupby("equipe").cumcount() + 1
+        # ETAPE 6 : on trie par equipe puis par distance au point de rassemblement
+        df = df.sort_values(by=["equipe", "dist_meetup"]).reset_index(drop=True)
 
-    # ETAPE 8 : on supprime la colonne temporaire dist_meetup
-    df = df.drop(columns=["dist_meetup"])
+        # ETAPE 7 : on numerote les intersections au sein de chaque equipe en partant de 1
+        df["ordre"] = df.groupby("equipe").cumcount() + 1
+
+        # ETAPE 8 : on supprime la colonne temporaire dist_meetup
+        df = df.drop(columns=["dist_meetup"])
+    '''
 
     return df

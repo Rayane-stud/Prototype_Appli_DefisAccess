@@ -39,7 +39,7 @@ def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =10):
                           ).meters
             if dist < rayon:
 
-                if i["nb_pp"] == j["nb_pp"]:
+                if i["nb_traversees"] == j["nb_traversees"]:
                     ligne1 = i.copy()
                     ligne1["source"] = nom1
 

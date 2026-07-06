@@ -1,68 +1,218 @@
 """
 FICHIER : identifier_PM_hybride.py
- 
+
 # BUT : automatiquement les Points de Mesure (PM) d'une ville
-      en combinant deux sources de données gratuites :
-        1. Sources gouvernementales officielles (data.gouv.fr, data.education.gouv.fr)
-           pour les lieux les plus importants (écoles, mairies, hôpitaux, pharmacies)
+      en combinant plusieurs sources de données gratuites :
+        1. Sources gouvernementales officielles (geo.api.gouv.fr, data.education.gouv.fr,
+           api-lannuaire.service-public.fr, FINESS, SNCF) pour les lieux les plus
+           importants (écoles, mairies, commissariats, gares, hôpitaux/cliniques...)
         2. OpenStreetMap via l'API Overpass
-           pour les lieux sans source gouvernementale (supermarchés, parcs, marchés...)
- 
+           pour les lieux sans source gouvernementale fiable (supermarchés, lieux
+           de culte, centres sportifs/culturels, bureaux de poste, gendarmeries...)
+
       Les frontières exactes de la commune sont utilisées comme decoupe pour la zone de recherche des pm
       via le niveau administratif OSM (open source maps)
- 
+
 LOGIQUE GLOBALE :
     Commune saisie
         ↓
     1a. Récupération du code INSEE via geo.api.gouv.fr (API officielle INSEE/IGN)
     1b. Récupération de l'osm_area_id via Nominatim (OpenStreetMap)
         ↓
-    2. Sources gouvernementales → écoles, mairies, hôpitaux, pharmacies
+    2. Sources gouvernementales → écoles, mairies, commissariats, gares (SNCF),
+       hôpitaux/cliniques (FINESS)
         ↓
-    3. OpenStreetMap → supermarchés, marchés, parcs, lieux de culte...
+    3. OpenStreetMap → catégories choisies par l'utilisateur (supermarchés,
+       lieux de culte, hôpitaux en secours si FINESS indisponible...)
         ↓
-    4. Fusion + dédoublonnage + export Excel
- 
+    4. Dédoublonnage géographique inter-sources + fusion + export Excel
+
 LISTE DES FONCTIONS :
- 
+
+--- Étape 1 : identifiants de la commune ---
+
 - get_code_insee_api() :
     # ROLE : Récupérer le code INSEE d'une commune via l'API officielle
               geo.api.gouv.fr (INSEE/IGN)
               Source 100% officielle et fiable, toutes les communes françaises y sont
     # ARGUMENTS : "ville" de type str
     # REPONSE : str (code INSEE) ou None si la commune n'est pas trouvée
- 
+
 - get_osm_area_id() :
     # ROLE : Récupérer l'osm_area_id d'une commune via Nominatim
               Cet identifiant est nécessaire pour délimiter les frontières
               exactes de la commune dans les requêtes Overpass
     # ARGUMENTS : "ville" de type str
     # REPONSE : int (osm_area_id) ou None si la commune n'est pas trouvée
- 
+
+--- Étape 2 : sources gouvernementales ---
+
+- _categoriser_ecole() :
+    # ROLE : Classer un libellé brut d'école ("nature_uai_libe") dans une
+              catégorie propre (Maternelles, Élémentaires, Collèges, Lycées, Autres)
+    # ARGUMENTS : "libelle" de type str
+    # REPONSE : str (label de catégorie)
+
 - get_ecoles_gouv() :
     # ROLE : Récupérer toutes les écoles d'une commune
               via l'API data.education.gouv.fr (source officielle exhaustive)
-    # ARGUMENTS : "code_insee" de type str
-    # REPONSE : list[dict] avec les clés nom | type | latitude | longitude
- 
+    # ARGUMENTS : "code_insee" de type str, "categories_ecoles" (optionnel)
+              liste de labels à garder (None = pas de filtre, tout garder)
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+- geocoder_adresse() :
+    # ROLE : Transformer une adresse texte en coordonnées GPS fiables via
+              l'API Adresse du gouvernement (BAN) — corrige les coordonnées
+              parfois fausses renvoyées par l'Annuaire de l'Administration
+    # ARGUMENTS : "adresse_texte" de type str
+    # REPONSE : dict {"latitude": float, "longitude": float} ou None si non trouvée
+
 - get_equipements_gouv() :
-    # ROLE : Récupérer les équipements publics (mairies, hôpitaux, pharmacies)
-              via l'API data.gouv.fr / Base Permanente des Équipements (BPE)
+    # ROLE : Récupérer la mairie d'une commune via l'Annuaire de l'Administration,
+              puis regéocoder son adresse avec la BAN pour des coordonnées fiables
     # ARGUMENTS : "code_insee" de type str
-    # REPONSE : list[dict] avec les clés nom | type | latitude | longitude
- 
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+- get_commissariats_service_public() :
+    # ROLE : Récupérer les commissariats d'une commune via l'Annuaire de
+              l'Administration (même API que get_equipements_gouv, filtrée sur
+              "commissariat_police"), géocodés avec la BAN
+    # ARGUMENTS : "code_insee" de type str
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+- get_gares_sncf() :
+    # ROLE : Récupérer les gares d'une commune via l'API officielle SNCF
+              (source prioritaire sur OSM pour les gares, les doublons éventuels
+              étant supprimés ensuite par dedoublonner_par_coordonnees())
+    # ARGUMENTS : "ville" de type str
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+- _telecharger_finess() :
+    # ROLE : Télécharger (avec re-essais) le CSV FINESS géolocalisé des
+              établissements de santé et le mettre en cache local
+    # ARGUMENTS : "chemin_cache" de type Path, "nb_essais" de type int (défaut 3)
+    # REPONSE : bool (True si le téléchargement a réussi)
+
+- _categoriser_etablissement_sante() :
+    # ROLE : Classer un libellé FINESS brut dans une catégorie propre
+              (Hôpitaux, Cliniques, Laboratoires, Centres de santé, Autres)
+    # ARGUMENTS : "libelle" de type str
+    # REPONSE : str (label de catégorie)
+
+- get_etablissements_finess() :
+    # ROLE : Récupérer les établissements de santé d'une commune depuis le
+              registre officiel FINESS (cache local, re-téléchargé si > 30 jours)
+    # ARGUMENTS : "code_insee" de type str, "base_dir" de type Path,
+              "categories_sante" (optionnel) liste de labels à garder
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+--- Étape 3 : OpenStreetMap ---
+
 - get_PM_osm() :
-    # ROLE : Récupérer les lieux complémentaires (supermarchés, marchés, parcs...)
-              via l'API Overpass dans les frontières exactes de la commune
-    # ARGUMENTS : "osm_area_id" de type int
-    # REPONSE : list[dict] avec les clés nom | type | latitude | longitude
- 
+    # ROLE : Récupérer les lieux complémentaires (lieux de culte, postes,
+              pharmacies, centres sportifs/culturels, supermarchés, gendarmeries...)
+              via l'API Overpass, avec jusqu'à 3 passes de retry en cas d'échec
+              (limites de fréquence 429 d'Overpass)
+    # ARGUMENTS : "osm_area_id" de type int, "categories" (optionnel) liste de
+              catégories à interroger (défaut CATEGORIES_OSM_DISPONIBLES),
+              "categories_supplementaires" (optionnel, ex: fallback santé)
+    # REPONSE : list[dict] avec les clés nom | type | source | latitude | longitude
+
+--- Étape 4 : dédoublonnage et orchestration ---
+
+- _distance_metres() :
+    # ROLE : Calculer la distance approximative en mètres entre deux points
+              GPS (formule haversine)
+    # ARGUMENTS : "lat1", "lon1", "lat2", "lon2" de type float
+    # REPONSE : float (distance en mètres)
+
+- dedoublonner_par_coordonnees() :
+    # ROLE : Supprimer les doublons géographiques entre sources différentes
+              (garde la source la plus fiable : SNCF > gouvernemental > OSM)
+    # ARGUMENTS : "pm_list" de type list[dict], "seuil_metres" de type int (défaut 30)
+    # REPONSE : list[dict] dédoublonnée
+
+- _choisir_categories_osm() :
+    # ROLE : Afficher un menu console des catégories OSM disponibles et
+              demander à l'utilisateur lesquelles inclure
+    # ARGUMENTS : aucun
+    # REPONSE : list[dict] des catégories choisies (format {"type", "osm_filters"})
+
+- _choisir_dans_liste() :
+    # ROLE : Afficher un menu console générique numéroté à partir d'une liste
+              de labels et demander lesquels garder (Entrée = tout garder)
+    # ARGUMENTS : "titre" de type str, "labels_disponibles" de type list[str]
+    # REPONSE : list[str] (labels choisis, toujours non vide)
+
+- choisir_categories_sante() :
+    # ROLE : Demander à l'utilisateur les catégories d'établissements de
+              santé FINESS à inclure (Hôpitaux, Cliniques, Laboratoires,
+              Centres de santé, Autres)
+    # ARGUMENTS : aucun
+    # REPONSE : list[str] (labels choisis)
+
+- choisir_categories_ecoles() :
+    # ROLE : Demander à l'utilisateur les types d'écoles à inclure
+              (Maternelles, Élémentaires, Collèges, Lycées, Autres)
+    # ARGUMENTS : aucun
+    # REPONSE : list[str] (labels choisis)
+
 - construire_dataframe_PM() :
-    # ROLE : Orchestrer toutes les sources, fusionner les résultats,
-              supprimer les doublons géographiques et exporter en Excel
+    # ROLE : Orchestrer toutes les sources (mode interactif console, sans
+              filtres), fusionner les résultats, dédoublonner et retourner
+              le DataFrame final
     # ARGUMENTS : "ville" de type str
     # REPONSE : pd.DataFrame avec les colonnes :
                 nom | type | source | latitude | longitude | coordonnees
+
+- construire_dataframe_PM_avec_filtres() :
+    # ROLE : Identique à construire_dataframe_PM(), mais demande en plus à
+              l'utilisateur les catégories santé (FINESS) et types d'écoles à garder
+    # ARGUMENTS : "ville" de type str
+    # REPONSE : pd.DataFrame (mêmes colonnes que construire_dataframe_PM())
+
+- construire_dataframe_PM_sans_input_avec_filtres() :
+    # ROLE : Identique à construire_dataframe_PM_avec_filtres(), mais sans
+              aucun appel à input() — pour l'interface Streamlit, filtres
+              (OSM/santé/écoles) passés directement en arguments
+    # ARGUMENTS : "ville" de type str, "categories_osm" / "categories_sante" /
+              "categories_ecoles" (optionnels, None = pas de filtre, tout garder)
+    # REPONSE : pd.DataFrame (mêmes colonnes que construire_dataframe_PM())
+
+- construire_dataframe_PM_sans_input() :
+    # ROLE : Identique à construire_dataframe_PM(), mais sans aucun appel à
+              input() — catégories OSM déjà choisies via l'interface graphique
+    # ARGUMENTS : "ville" de type str, "categories_osm" (optionnel, cases
+              cochées en Streamlit ; None/[] = toutes les catégories)
+    # REPONSE : pd.DataFrame (mêmes colonnes que construire_dataframe_PM())
+
+- construire_dataframe_PM2() :
+    # ROLE : Récupérer tous les PM (via construire_dataframe_PM_sans_input())
+              puis filtrer le résultat selon les cases cochées dans l'interface
+              Streamlit (Écoles, Mairie, Pharmacies, Supermarchés, Administrations)
+    # ARGUMENTS : "ville" de type str, "categories_filtrees" liste de labels cochés
+    # REPONSE : pd.DataFrame filtré (mêmes colonnes que construire_dataframe_PM())
+
+--- Étape 5 : export Excel ---
+
+- _nom_alternatif_disponible() :
+    # ROLE : Trouver un chemin de fichier disponible en ajoutant un suffixe
+              _2, _3... si le chemin demandé est déjà pris/verrouillé
+    # ARGUMENTS : "chemin_fichier" de type str
+    # REPONSE : str (nouveau chemin disponible)
+
+- _ecrire_excel_avec_retry() :
+    # ROLE : Écrire un DataFrame en Excel avec re-essais si le fichier est
+              verrouillé (ouvert dans Excel, synchro OneDrive en cours...),
+              sinon sauvegarde sous un nom alternatif
+    # ARGUMENTS : "df" de type DataFrame, "chemin_fichier" de type str,
+              "tentatives" / "delai_secondes" (optionnels)
+    # REPONSE : str (chemin final du fichier écrit)
+
+- exporter_PM_excel() :
+    # ROLE : Exporter le DataFrame de PM en fichier Excel dans un sous-dossier "PM"
+    # ARGUMENTS : "df" de type DataFrame, "nom_fichier" / "dossier_sortie" (optionnels)
+    # REPONSE : str (chemin du fichier généré) ou None si le DataFrame est vide
 """
 
 import math

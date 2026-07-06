@@ -20,7 +20,7 @@ import contextlib
 import yaml
 import streamlit as st
 import plotly.graph_objects as go
-from math import cos, radians
+from math import cos, radians, sin, pi
 from pathlib import Path
 
 from src.nettoyage import charger_intersections
@@ -1012,21 +1012,28 @@ def page_etape3():
 # ─────────────────────────────────────────────
 # 8. Page — Étape 4 : Fiches équipes (reprise du bloc de app5.py)
 # ─────────────────────────────────────────────
-def _polygones_carres_mapbox(lats, lons, textes, demi_cote_deg=0.00012):
+def _polygones_etoiles_mapbox(lats, lons, textes, rayon_deg=0.00018, ratio_interieur=0.42):
     """
     Construit un seul tracé Scattermapbox (mode="lines" + fill="toself") dessinant
-    un carré par point (au lieu d'un simple marker rond) — pour différencier les PM
-    des points d'équipe sur la carte, comme le <div> carré utilisé côté Folium
-    dans app5.py. Scattermapbox ne permet pas de personnaliser couleur/taille d'un
-    marker.symbol="square" sur un style sans jeton Mapbox (carto-positron), d'où
-    ce contournement géométrique : un petit carré par point, séparés par `None`.
+    une étoile à 5 branches par point (polygone à 10 sommets alternant rayon
+    extérieur/intérieur), séparées par `None` — pour marquer les lieux d'intérêt PMR
+    sur la carte. Scattermapbox ne permet pas de personnaliser couleur/taille d'un
+    marker.symbol sur un style sans jeton Mapbox (carto-positron), d'où ce
+    contournement géométrique.
     """
     lon_poly, lat_poly, text_poly = [], [], []
+    n_branches = 5
     for lat, lon, texte in zip(lats, lons, textes):
-        demi_lon = demi_cote_deg / max(cos(radians(lat)), 0.01)  # compense l'étirement des longitudes selon la latitude
-        lon_poly += [lon - demi_lon, lon + demi_lon, lon + demi_lon, lon - demi_lon, lon - demi_lon, None]
-        lat_poly += [lat - demi_cote_deg, lat - demi_cote_deg, lat + demi_cote_deg, lat + demi_cote_deg, lat - demi_cote_deg, None]
-        text_poly += [texte, texte, texte, texte, texte, None]
+        compression_lon = 1 / max(cos(radians(lat)), 0.01)  # compense l'étirement des longitudes selon la latitude
+        for i in range(n_branches * 2 + 1):
+            angle = pi / 2 + i * pi / n_branches
+            rayon = rayon_deg if i % 2 == 0 else rayon_deg * ratio_interieur
+            lon_poly.append(lon + rayon * cos(angle) * compression_lon)
+            lat_poly.append(lat + rayon * sin(angle))
+            text_poly.append(texte)
+        lon_poly.append(None)
+        lat_poly.append(None)
+        text_poly.append(None)
     return lon_poly, lat_poly, text_poly
 
 
@@ -1568,16 +1575,16 @@ def page_etape4():
 
         if not _pois_f.empty:
             _textes_pois = _pois_f.get("lieu", pd.Series(["POI"] * len(_pois_f), index=_pois_f.index)).astype(str).tolist()
-            _lon_pois_carres, _lat_pois_carres, _text_pois_carres = _polygones_carres_mapbox(
+            _lon_pois_etoiles, _lat_pois_etoiles, _text_pois_etoiles = _polygones_etoiles_mapbox(
                 _pois_f["latitude"].tolist(), _pois_f["longitude"].tolist(), _textes_pois,
             )
             fig_carte.add_trace(go.Scattermapbox(
-                lat=_lat_pois_carres, lon=_lon_pois_carres,
+                lat=_lat_pois_etoiles, lon=_lon_pois_etoiles,
                 mode="lines",
                 fill="toself",
-                fillcolor="#FF6B35",
-                line=dict(color="white", width=1),
-                text=_text_pois_carres,
+                fillcolor="black",
+                line=dict(color="black", width=1),
+                text=_text_pois_etoiles,
                 hoverinfo="text",
                 name="Lieux d'intérêt",
                 showlegend=False,

@@ -15,19 +15,19 @@ def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     fich2=fichier2.to_dict("records")
 
 
-    if nom_fichier1.contains("osm"):
-        nom1= "Fichier OSM"
-    elif nom_fichier1.contains("IA"):
-        nom1= "Fichier IA"
-    elif nom_fichier1.contains("mixte"):
-        nom1= "Fichier MIXTE"
-    
-    if nom_fichier2.contains("osm"):
-        nom2= "Fichier OSM"
-    elif nom_fichier2.contains("IA"):
-        nom2= "Fichier IA"
-    elif nom_fichier2.contains("mixte"):
-        nom2= "Fichier MIXTE"
+    if "osm" in nom_fichier1:
+        nom1 = "Fichier OSM"
+    elif "IA" in nom_fichier1:
+        nom1 = "Fichier IA"
+    elif "mixte" in nom_fichier1:
+        nom1 = "Fichier MIXTE"
+
+    if "osm" in nom_fichier2:
+        nom2 = "Fichier OSM"
+    elif "IA" in nom_fichier2:
+        nom2 = "Fichier IA"
+    elif "mixte" in nom_fichier2:
+        nom2 = "Fichier MIXTE"
 
     egaux = []
     diff= []

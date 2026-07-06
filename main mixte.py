@@ -174,7 +174,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     if rep=="o":
 
         #Rajouter la date dans le nom du fichier
-        nom="data/output/comparaisons/"+ville+"mixte.csv"
+        nom="data/raw/comparaisons/"+ville+"mixte.csv"
         tab_croisement.to_csv(nom,sep=";",index=False, encoding="utf-8-sig")
         
         rep=input("Avez vous un autre dossier existant avec lequel faire la comparaison ? (o/n)")

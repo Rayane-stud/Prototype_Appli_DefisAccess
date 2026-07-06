@@ -8,16 +8,26 @@ avec index, pour indiquer quel fichier sort quelle ligne
 import pandas as pd
 from geopy.distance import geodesic
 
-def recuperation_comp(nom_fichier1, nom_fichier2, index1,index2, rayon =20):
+def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =20):
     
     fichier2=pd.read_excel(nom_fichier2)
-    fich1=nom_fichier1.copy().to_dict("records")
+    fich1=fichier1.copy().to_dict("records")
     fich2=fichier2.to_dict("records")
 
 
-    nom1=....
-    nom2=....
-
+    if nom_fichier1.contains("osm"):
+        nom1= "Fichier OSM"
+    elif nom_fichier1.contains("IA"):
+        nom1= "Fichier IA"
+    elif nom_fichier1.contains("mixte"):
+        nom1= "Fichier MIXTE"
+    
+    if nom_fichier2.contains("osm"):
+        nom1= "Fichier OSM"
+    elif nom_fichier2.contains("IA"):
+        nom1= "Fichier IA"
+    elif nom_fichier2.contains("mixte"):
+        nom1= "Fichier MIXTE"
 
     egaux = []
     diff= []

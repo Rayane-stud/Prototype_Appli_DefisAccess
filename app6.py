@@ -20,6 +20,7 @@ import contextlib
 import yaml
 import streamlit as st
 import plotly.graph_objects as go
+from math import cos, radians, sin, pi
 from pathlib import Path
 
 from src.nettoyage import charger_intersections
@@ -1011,6 +1012,31 @@ def page_etape3():
 # ─────────────────────────────────────────────
 # 8. Page — Étape 4 : Fiches équipes (reprise du bloc de app5.py)
 # ─────────────────────────────────────────────
+def _polygones_etoiles_mapbox(lats, lons, textes, rayon_deg=0.00018, ratio_interieur=0.42):
+    """
+    Construit un seul tracé Scattermapbox (mode="lines" + fill="toself") dessinant
+    une étoile à 5 branches par point (polygone à 10 sommets alternant rayon
+    extérieur/intérieur), séparées par `None` — pour marquer les lieux d'intérêt PMR
+    sur la carte. Scattermapbox ne permet pas de personnaliser couleur/taille d'un
+    marker.symbol sur un style sans jeton Mapbox (carto-positron), d'où ce
+    contournement géométrique.
+    """
+    lon_poly, lat_poly, text_poly = [], [], []
+    n_branches = 5
+    for lat, lon, texte in zip(lats, lons, textes):
+        compression_lon = 1 / max(cos(radians(lat)), 0.01)  # compense l'étirement des longitudes selon la latitude
+        for i in range(n_branches * 2 + 1):
+            angle = pi / 2 + i * pi / n_branches
+            rayon = rayon_deg if i % 2 == 0 else rayon_deg * ratio_interieur
+            lon_poly.append(lon + rayon * cos(angle) * compression_lon)
+            lat_poly.append(lat + rayon * sin(angle))
+            text_poly.append(texte)
+        lon_poly.append(None)
+        lat_poly.append(None)
+        text_poly.append(None)
+    return lon_poly, lat_poly, text_poly
+
+
 @st.dialog("🎉 Feuilles terrain générées !")
 def _popup_resultat_final(nb_feuilles: int, n_equipes: int, ville: str):
     st.success(f"**{nb_feuilles} feuille(s)** générée(s) pour **{n_equipes} équipe(s)** — {ville}.")
@@ -1037,19 +1063,45 @@ def page_etape4():
     # ── Point de rendez-vous ────────────────────────────────────────────
     st.subheader("Point de rendez-vous")
 
-    detect_mairie_btn = st.button(
-        "📍 Utiliser la mairie comme point de RDV",
+    # Commune déjà pré-configurée (YAML) avec un point de RDV fixé à la main :
+    # on respecte cette valeur, pas d'appel API automatique dans ce cas.
+    _meetup_preconfigure = "meetup_lat" in cfg and "meetup_long" in cfg
+
+    # ── Auto-détection de la mairie (une seule fois par commune manuelle) ──
+    if (
+        commune_str.strip()
+        and not _meetup_preconfigure
+        and st.session_state.get("mairie_auto_tentative_commune") != commune_str
+    ):
+        # Marqué "tenté" avant même l'appel API, succès ou non, pour ne pas
+        # ré-interroger l'API à chaque rerun (ex: si la mairie est introuvable).
+        st.session_state["mairie_auto_tentative_commune"] = commune_str
+        with st.spinner("Détection automatique de la mairie…"):
+            _lat_auto, _lon_auto = recuperer_coords_mairie(commune_str)
+        if _lat_auto is not None:
+            st.session_state["mairie_lat"] = _lat_auto
+            st.session_state["mairie_lon"] = _lon_auto
+            st.session_state["mairie_commune"] = commune_str
+            st.session_state["input_lat"] = _lat_auto
+            st.session_state["input_lon"] = _lon_auto
+
+    redetect_mairie_btn = st.button(
+        "🔄 Re-détecter la mairie",
         disabled=not commune_str.strip(),
-        help="Récupère automatiquement les coordonnées de la mairie via l'API officielle.",
+        help=(
+            "Relance la recherche des coordonnées de la mairie via l'API officielle "
+            "— utile si l'auto-détection a échoué ou après une modification manuelle."
+        ),
         use_container_width=True,
     )
 
-    if detect_mairie_btn and commune_str.strip():
+    if redetect_mairie_btn and commune_str.strip():
         with st.spinner("Recherche de la mairie…"):
             _lat_m, _lon_m = recuperer_coords_mairie(commune_str)
         if _lat_m is not None:
             st.session_state["mairie_lat"] = _lat_m
             st.session_state["mairie_lon"] = _lon_m
+            st.session_state["mairie_commune"] = commune_str
             st.session_state["input_lat"] = _lat_m
             st.session_state["input_lon"] = _lon_m
             st.success(f"Mairie trouvée : {_lat_m:.6f}, {_lon_m:.6f}")
@@ -1057,13 +1109,16 @@ def page_etape4():
         else:
             st.warning("Mairie introuvable — saisissez les coordonnées manuellement.")
 
-    _default_lat = st.session_state.get("mairie_lat", float(cfg.get("meetup_lat", 48.8566)))
-    _default_lon = st.session_state.get("mairie_lon", float(cfg.get("meetup_long", 2.3522)))
+    # La mairie en cache n'est valable que pour la commune courante (évite de
+    # réutiliser par erreur les coordonnées d'une commune précédente).
+    _mairie_valide = st.session_state.get("mairie_commune") == commune_str
+    _default_lat = st.session_state["mairie_lat"] if _mairie_valide else float(cfg.get("meetup_lat", 48.8566))
+    _default_lon = st.session_state["mairie_lon"] if _mairie_valide else float(cfg.get("meetup_long", 2.3522))
 
     col_lat, col_lon = st.columns(2)
     meetup_lat = col_lat.number_input("Latitude",  value=_default_lat, format="%.6f", key="input_lat")
     meetup_lon = col_lon.number_input("Longitude", value=_default_lon, format="%.6f", key="input_lon")
-    st.caption("Modifiez les valeurs ci-dessus pour ajuster le point de RDV.")
+    st.caption("Rempli automatiquement avec la mairie de la commune — modifiez les valeurs ci-dessus pour ajuster le point de RDV.")
 
     n_teams = st.slider(
         "Nombre d'équipes",
@@ -1519,11 +1574,17 @@ def page_etape4():
         ))
 
         if not _pois_f.empty:
+            _textes_pois = _pois_f.get("lieu", pd.Series(["POI"] * len(_pois_f), index=_pois_f.index)).astype(str).tolist()
+            _lon_pois_etoiles, _lat_pois_etoiles, _text_pois_etoiles = _polygones_etoiles_mapbox(
+                _pois_f["latitude"].tolist(), _pois_f["longitude"].tolist(), _textes_pois,
+            )
             fig_carte.add_trace(go.Scattermapbox(
-                lat=_pois_f["latitude"], lon=_pois_f["longitude"],
-                mode="markers",
-                marker=dict(size=10, color="#FF6B35"),
-                text=_pois_f.get("lieu", pd.Series(["POI"] * len(_pois_f), index=_pois_f.index)).astype(str),
+                lat=_lat_pois_etoiles, lon=_lon_pois_etoiles,
+                mode="lines",
+                fill="toself",
+                fillcolor="black",
+                line=dict(color="black", width=1),
+                text=_text_pois_etoiles,
                 hoverinfo="text",
                 name="Lieux d'intérêt",
                 showlegend=False,

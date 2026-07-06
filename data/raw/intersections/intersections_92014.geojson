@@ -1,0 +1,3909 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322951365,
+          48.780245036
+        ]
+      },
+      "properties": {
+        "name": "Allée du Val de Bièvre / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320273508,
+          48.780070236
+        ]
+      },
+      "properties": {
+        "name": "Allée Gabrielle d'Estrées / Avenue de la République",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314426871,
+          48.789281815
+        ]
+      },
+      "properties": {
+        "name": "Allée Lafayette / Rue du Port Galand",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313593873,
+          48.787317382
+        ]
+      },
+      "properties": {
+        "name": "Allée Lafayette / Square Jacques Pierre Brissot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311230765,
+          48.780804408
+        ]
+      },
+      "properties": {
+        "name": "Allée Thaddy / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317986403,
+          48.786254283
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D127 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317975723,
+          48.786249181
+        ]
+      },
+      "properties": {
+        "name": "Avenue Aristide Briand D127 / Place de la Résistance D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323944383,
+          48.784539118
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bellevue / Avenue des Vergers",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320479703,
+          48.785273694
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bellevue / Rue du 25 Août 1944",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321860583,
+          48.785027496
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bellevue / Rue Pertuizot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322851748,
+          48.784800145
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bellevue / Rue Violette",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318311264,
+          48.77681058
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Avenue Galois D60",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320672813,
+          48.780716614
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319721276,
+          48.779143406
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la République / Rue Ravon",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323895067,
+          48.780070811
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Lattre de Tassigny / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312347522,
+          48.787236034
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Montrouge D77 / Résidence Normandie",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31396496,
+          48.789299306
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Montrouge D77 / Rond-Point du Docteur Schweitzer",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310051224,
+          48.785033108
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Montrouge D77 / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312546907,
+          48.772395765
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Cottages / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312566301,
+          48.772381606
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Cottages / Avenue Raymond Aron D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316021899,
+          48.77158365
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Cottages / Rue Alfred Nomblot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316958166,
+          48.771342141
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Cottages / Rue de la Fontaine Grelot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316014288,
+          48.771561381
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Cottages / Rue de la Pépinière",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323912255,
+          48.784472937
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Vergers / Avenue de Bellevue",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322960948,
+          48.782601315
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Vergers / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313430738,
+          48.774666083
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Allée de Trévise",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313472399,
+          48.774625477
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315508959,
+          48.774347678
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Rue Bobierre de Vallière",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314719278,
+          48.774452744
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Rue Brun",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318130939,
+          48.773949948
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Château / Rue de la Fontaine Grelot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3148123,
+          48.778457977
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Allée Françoise Dolto",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318678087,
+          48.78799608
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Avenue Aristide Briand D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31755972,
+          48.785129875
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Avenue du Panorama",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315282765,
+          48.779324252
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Boulevard Carnot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317508493,
+          48.786262303
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315340255,
+          48.779697365
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Passage du Marché",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317766062,
+          48.786279778
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Place de la Résistance D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317505688,
+          48.786270471
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Rue Armand Millet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318396217,
+          48.787065092
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Rue du Président Roosevelt",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318637811,
+          48.787606698
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Rue Jean Mermoz",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315584788,
+          48.780038528
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / Rue Ravon",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318760132,
+          48.787944842
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Général Leclerc D920 / D257",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310551127,
+          48.77763833
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Lycée Lakanal / Rue Auguste Demmler",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320120556,
+          48.784454208
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Rue du 25 Août 1944",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321191636,
+          48.783123071
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Panorama / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313941308,
+          48.775789259
+        ]
+      },
+      "properties": {
+        "name": "Avenue du Petit Chambord / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314279686,
+          48.77682453
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323748807,
+          48.776571006
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Avenue Larroumès D148",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316485719,
+          48.776798644
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue Bobierre de Vallière",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320456346,
+          48.776786243
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue Carrière Marlé",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323289447,
+          48.776777461
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue Charpentier",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319195485,
+          48.77678226
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue de la Fontaine Grelot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323255388,
+          48.776766597
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue Hoffmann",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316511732,
+          48.776822503
+        ]
+      },
+      "properties": {
+        "name": "Avenue Galois D60 / Rue Le Bouvier",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3200427,
+          48.78639171
+        ]
+      },
+      "properties": {
+        "name": "Avenue Mirebeau / Avenue Aristide Briand D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324345293,
+          48.785529231
+        ]
+      },
+      "properties": {
+        "name": "Avenue Mirebeau / Avenue des Vergers",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320489769,
+          48.78612943
+        ]
+      },
+      "properties": {
+        "name": "Avenue Mirebeau / Rue du 25 Août 1944",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322361651,
+          48.785791781
+        ]
+      },
+      "properties": {
+        "name": "Avenue Mirebeau / Rue Pertuizot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323299278,
+          48.785652402
+        ]
+      },
+      "properties": {
+        "name": "Avenue Mirebeau / Rue Violette",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312558606,
+          48.772391099
+        ]
+      },
+      "properties": {
+        "name": "Avenue Raymond Aron D920 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319284072,
+          48.778441135
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Avenue de la République",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322393214,
+          48.777256539
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Avenue de Lattre de Tassigny",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315282335,
+          48.779338425
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323210267,
+          48.776790943
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Avenue Galois D60",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320896449,
+          48.777941611
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue Carrière Marlé",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323274928,
+          48.776782375
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue Charpentier",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32326287,
+          48.776774672
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue Hoffmann",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317336392,
+          48.778879611
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot / Rue Le Bouvier",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317540501,
+          48.786296399
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Maréchal Joffre D920 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313644541,
+          48.780071968
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Maréchal Joffre D920 / Place de la Gare",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317543858,
+          48.786293741
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Maréchal Joffre D920 / Place de la Résistance D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315177974,
+          48.783110449
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Maréchal Joffre D920 / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.326070207,
+          48.776957708
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Tennis / La Bièvre",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314817925,
+          48.778487171
+        ]
+      },
+      "properties": {
+        "name": "Clos Saint-Jacques / Allée Françoise Dolto",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31494357,
+          48.778495268
+        ]
+      },
+      "properties": {
+        "name": "Clos Saint-Jacques / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316164804,
+          48.77910664
+        ]
+      },
+      "properties": {
+        "name": "Clos Saint-Jacques / Boulevard Carnot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315846778,
+          48.780704265
+        ]
+      },
+      "properties": {
+        "name": "Passage Alixia / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315379254,
+          48.779673192
+        ]
+      },
+      "properties": {
+        "name": "Passage du Marché / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314058915,
+          48.780884348
+        ]
+      },
+      "properties": {
+        "name": "Passage du Marché / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314938138,
+          48.780639383
+        ]
+      },
+      "properties": {
+        "name": "Passage du Marché / Passage Alixia",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315613957,
+          48.779249507
+        ]
+      },
+      "properties": {
+        "name": "Place Condorcet / Boulevard Carnot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315895883,
+          48.779962579
+        ]
+      },
+      "properties": {
+        "name": "Place Condorcet / Rue Ravon",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313587522,
+          48.779872376
+        ]
+      },
+      "properties": {
+        "name": "Place de la Gare / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313053961,
+          48.779820305
+        ]
+      },
+      "properties": {
+        "name": "Place de la Gare / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317827842,
+          48.786255492
+        ]
+      },
+      "properties": {
+        "name": "Place de la Résistance D127 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317510916,
+          48.786251475
+        ]
+      },
+      "properties": {
+        "name": "Place de la Résistance / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317508479,
+          48.786262281
+        ]
+      },
+      "properties": {
+        "name": "Place de la Résistance / Rue Armand Millet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312921423,
+          48.789448633
+        ]
+      },
+      "properties": {
+        "name": "Place du Port Galand / Rue du Docteur Schweitzer",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313927163,
+          48.789249977
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Docteur Schweitzer / Avenue de Montrouge D77",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314238401,
+          48.789363544
+        ]
+      },
+      "properties": {
+        "name": "Rond-Point du Docteur Schweitzer / Rue du Port Galand",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317173579,
+          48.77408185
+        ]
+      },
+      "properties": {
+        "name": "Rue Alfred Nomblot / Avenue du Château",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316018395,
+          48.771572401
+        ]
+      },
+      "properties": {
+        "name": "Rue Alfred Nomblot / Rue de la Pépinière",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316851616,
+          48.773419346
+        ]
+      },
+      "properties": {
+        "name": "Rue Alfred Nomblot / Rue de Lisieux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316469441,
+          48.772582292
+        ]
+      },
+      "properties": {
+        "name": "Rue Alfred Nomblot / Rue François Villon",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316632756,
+          48.772932488
+        ]
+      },
+      "properties": {
+        "name": "Rue Alfred Nomblot / Rue Pasteur",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313054002,
+          48.779819897
+        ]
+      },
+      "properties": {
+        "name": "Rue André Theuriet / Place de la Gare",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312937685,
+          48.779814479
+        ]
+      },
+      "properties": {
+        "name": "Rue André Theuriet / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31274581,
+          48.776604456
+        ]
+      },
+      "properties": {
+        "name": "Rue André Theuriet VC8 / D60",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317533309,
+          48.786306066
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Millet / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317495023,
+          48.786260372
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Millet / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317536736,
+          48.786303154
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Millet / Place de la Résistance D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316512661,
+          48.786594508
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Millet / Rue Ferdinand Jamin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315440592,
+          48.786920974
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Millet / Rue Jean Bastart",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311229222,
+          48.780804299
+        ]
+      },
+      "properties": {
+        "name": "Rue Arnold Van Gennep / Allée Thaddy",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310712051,
+          48.780061354
+        ]
+      },
+      "properties": {
+        "name": "Rue Arnold Van Gennep / Rue Arnoux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311243369,
+          48.780750531
+        ]
+      },
+      "properties": {
+        "name": "Rue Arnold Van Gennep / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316751812,
+          48.785511829
+        ]
+      },
+      "properties": {
+        "name": "Rue Auboin / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315981349,
+          48.785780074
+        ]
+      },
+      "properties": {
+        "name": "Rue Auboin / Rue Ferdinand Jamin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314878693,
+          48.786126674
+        ]
+      },
+      "properties": {
+        "name": "Rue Auboin / Rue Jean Bastart",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315939676,
+          48.775427297
+        ]
+      },
+      "properties": {
+        "name": "Rue Bobierre de Vallière / Avenue du Petit Chambord",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316498801,
+          48.7768108
+        ]
+      },
+      "properties": {
+        "name": "Rue Bobierre de Vallière / Rue Le Bouvier",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315083669,
+          48.77555662
+        ]
+      },
+      "properties": {
+        "name": "Rue Brun / Avenue du Petit Chambord",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32210982,
+          48.780449814
+        ]
+      },
+      "properties": {
+        "name": "Rue Caroline / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323185435,
+          48.782497541
+        ]
+      },
+      "properties": {
+        "name": "Rue Caroline / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315975497,
+          48.785768466
+        ]
+      },
+      "properties": {
+        "name": "Rue Cécile Vallet / Rue Auboin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31454025,
+          48.7841536
+        ]
+      },
+      "properties": {
+        "name": "Rue Cécile Vallet / Rue de Dîneur",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314035446,
+          48.783707663
+        ]
+      },
+      "properties": {
+        "name": "Rue Cécile Vallet / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315320198,
+          48.784802731
+        ]
+      },
+      "properties": {
+        "name": "Rue Cécile Vallet / Rue Elie le Gallais",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315978596,
+          48.785774301
+        ]
+      },
+      "properties": {
+        "name": "Rue Cécile Vallet / Rue Ferdinand Jamin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322906137,
+          48.780240534
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Péguy / Allée du Val de Bièvre",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322862645,
+          48.780237371
+        ]
+      },
+      "properties": {
+        "name": "Rue Charles Péguy / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324999977,
+          48.779899947
+        ]
+      },
+      "properties": {
+        "name": "Rue Charpentier / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325019865,
+          48.779899971
+        ]
+      },
+      "properties": {
+        "name": "Rue Charpentier / Rue de la Cosarde D160",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323275568,
+          48.776775858
+        ]
+      },
+      "properties": {
+        "name": "Rue Charpentier / Rue Hoffmann",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318587272,
+          48.771026708
+        ]
+      },
+      "properties": {
+        "name": "Rue de Châteaufort / Avenue des Cottages",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316879786,
+          48.783168354
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dîneur / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315531111,
+          48.783672611
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dîneur / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313651379,
+          48.784628102
+        ]
+      },
+      "properties": {
+        "name": "Rue de Dîneur / Rue Paul Henry Thilloy",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310072694,
+          48.785068308
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay D74 / Avenue de Montrouge D77",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315177838,
+          48.783126452
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay D74 / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311113744,
+          48.78483722
+        ]
+      },
+      "properties": {
+        "name": "Rue de Fontenay D74 / Rue Georges Lafenestre",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316573154,
+          48.782385125
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bièvre D74 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316565895,
+          48.782399196
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Bièvre D74 / Rue du 8 Mai 1945 D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317588262,
+          48.788211856
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Faïencerie / Rue du Pré Hilduin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31697857,
+          48.771346128
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine Grelot / Avenue des Cottages",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318144718,
+          48.773954672
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine Grelot / Avenue du Château",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318540176,
+          48.774959378
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Fontaine Grelot / Avenue du Petit Chambord",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325313234,
+          48.782046733
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Madeleine / Impasse de la Madeleine",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325824616,
+          48.781916628
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Madeleine / Rue des Peupliers",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318923546,
+          48.775997017
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Flamande / Rue de la Fontaine Grelot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322246401,
+          48.775242454
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Villa Flamande / Rue Hoffmann",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313252906,
+          48.774097933
+        ]
+      },
+      "properties": {
+        "name": "Rue de Lisieux / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311052755,
+          48.786644069
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bas Coquarts / Allée des Marronniers",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31107345,
+          48.786001737
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bas Coquarts / Avenue de Montrouge D77",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31102398,
+          48.78603205
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bas Coquarts / Rue du Général Sarrail",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31123269,
+          48.787327334
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bas Coquarts / Rue Édouard Branly",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311222486,
+          48.780879988
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blagis / Allée Thaddy",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311240568,
+          48.780780556
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blagis / Rue Arnold Van Gennep",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309908317,
+          48.782494015
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blagis / Rue Georges Lafenestre",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.30964716,
+          48.782655226
+        ]
+      },
+      "properties": {
+        "name": "Rue des Blagis / Rue Yvonne",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317077681,
+          48.78835658
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bruyères / Rue du Pré Hilduin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324632193,
+          48.779980731
+        ]
+      },
+      "properties": {
+        "name": "Rue des Peupliers / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314807215,
+          48.782462558
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rosiers / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31383139,
+          48.783787323
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rosiers / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320473567,
+          48.78533743
+        ]
+      },
+      "properties": {
+        "name": "Rue du 25 Août 1944 / Avenue de Bellevue",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320053413,
+          48.784394622
+        ]
+      },
+      "properties": {
+        "name": "Rue du 25 Août 1944 / Avenue du Panorama",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319525382,
+          48.783644441
+        ]
+      },
+      "properties": {
+        "name": "Rue du 25 Août 1944 / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316558762,
+          48.782411829
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 D74 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315191031,
+          48.783102766
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 D74 / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315184881,
+          48.783111884
+        ]
+      },
+      "properties": {
+        "name": "Rue du 8 Mai 1945 D74 / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322587433,
+          48.779728857
+        ]
+      },
+      "properties": {
+        "name": "Rue du Clos Saint-Cyr / Rue Charles Péguy",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311251759,
+          48.780670406
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Candelot / Rue Arnold Van Gennep",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311461997,
+          48.779910456
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Candelot / Rue Arnoux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311369357,
+          48.78057392
+        ]
+      },
+      "properties": {
+        "name": "Rue du Colonel Candelot / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322980567,
+          48.782045065
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Lyautey / Rue Caroline",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325037268,
+          48.781567806
+        ]
+      },
+      "properties": {
+        "name": "Rue du Maréchal Lyautey / Rue Massenet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314513917,
+          48.789263987
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Allée Lafayette",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318622746,
+          48.788039498
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Avenue Aristide Briand D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318597004,
+          48.788031885
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314311861,
+          48.789339693
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Rond-Point du Docteur Schweitzer",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316385923,
+          48.788695742
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Rue Albert Camus",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317623777,
+          48.788264549
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Rue de la Faïencerie",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317482682,
+          48.788325926
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Rue du Pré Hilduin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314885827,
+          48.789156089
+        ]
+      },
+      "properties": {
+        "name": "Rue du Port Galand / Square William Wilberforce",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.320267719,
+          48.786473147
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Roosevelt / Avenue Aristide Briand D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318323959,
+          48.787082905
+        ]
+      },
+      "properties": {
+        "name": "Rue du Président Roosevelt / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317241673,
+          48.784253056
+        ]
+      },
+      "properties": {
+        "name": "Rue Elie le Gallais / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316118237,
+          48.784568325
+        ]
+      },
+      "properties": {
+        "name": "Rue Elie le Gallais / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315340837,
+          48.784799888
+        ]
+      },
+      "properties": {
+        "name": "Rue Elie le Gallais / Rue Cécile Vallet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317251105,
+          48.784247609
+        ]
+      },
+      "properties": {
+        "name": "Rue Elie le Gallais / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314241864,
+          48.785113882
+        ]
+      },
+      "properties": {
+        "name": "Rue Elie le Gallais / Rue Paul Henry Thilloy",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316527496,
+          48.786598379
+        ]
+      },
+      "properties": {
+        "name": "Rue Ferdinand Jamin / Rue Armand Millet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3172845,
+          48.7877073
+        ]
+      },
+      "properties": {
+        "name": "Rue Ferdinand Jamin / Rue de la Faïencerie",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31289309,
+          48.773236059
+        ]
+      },
+      "properties": {
+        "name": "Rue François Villon / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309326549,
+          48.782919572
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Bizet / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309719958,
+          48.783556396
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Bizet / Rue Jeanne",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311133876,
+          48.784836714
+        ]
+      },
+      "properties": {
+        "name": "Rue Georges Lafenestre / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316299494,
+          48.779104671
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri IV / Boulevard Carnot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316231884,
+          48.779105736
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri IV / Clos Saint-Jacques",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316600425,
+          48.779805372
+        ]
+      },
+      "properties": {
+        "name": "Rue Henri IV / Rue Ravon",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321000447,
+          48.773319119
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoffmann / Avenue du Château",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321560204,
+          48.774181853
+        ]
+      },
+      "properties": {
+        "name": "Rue Hoffmann / Avenue du Petit Chambord",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316375641,
+          48.781943631
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Margottin / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314747301,
+          48.782305899
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Margottin / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314780089,
+          48.782248689
+        ]
+      },
+      "properties": {
+        "name": "Rue Jacques Margottin / Square Jean-Baptiste Colbert",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31489492,
+          48.786121503
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bastart / Rue Auboin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315149112,
+          48.786528884
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Bastart / Rue des Plantes",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32148168,
+          48.786793807
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Mermoz / Avenue Aristide Briand D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31854929,
+          48.787617631
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Mermoz / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32147084,
+          48.786772525
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean Mermoz / Rue Varengue",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.317258672,
+          48.784243305
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321255314,
+          48.78306656
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Avenue du Panorama",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.323224572,
+          48.782513581
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Rue Caroline",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324798026,
+          48.782153928
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Rue de la Madeleine",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319519274,
+          48.783592681
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Rue du 25 Août 1944",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322357529,
+          48.782741855
+        ]
+      },
+      "properties": {
+        "name": "Rue Jean-Roger Thorelle / Rue Oger",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311368783,
+          48.778048774
+        ]
+      },
+      "properties": {
+        "name": "Rue Laurin / Avenue du Lycée Lakanal",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311886538,
+          48.778967523
+        ]
+      },
+      "properties": {
+        "name": "Rue Laurin / Rue André Theuriet VC8",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325313897,
+          48.7820346
+        ]
+      },
+      "properties": {
+        "name": "Rue Massenet / Impasse de la Madeleine",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.325311255,
+          48.782023014
+        ]
+      },
+      "properties": {
+        "name": "Rue Massenet / Rue de la Madeleine",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321249853,
+          48.780623207
+        ]
+      },
+      "properties": {
+        "name": "Rue Oger / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322349184,
+          48.782722296
+        ]
+      },
+      "properties": {
+        "name": "Rue Oger / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313042277,
+          48.773590148
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3129863,
+          48.773589557
+        ]
+      },
+      "properties": {
+        "name": "Rue Pasteur / Avenue du Poitou",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322723397,
+          48.781596514
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue Caroline",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.324788931,
+          48.781115715
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Doumer / Rue Massenet",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314880139,
+          48.786112802
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Henry Thilloy / Rue Auboin",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313092059,
+          48.784205441
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Henry Thilloy / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314251936,
+          48.785121241
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Henry Thilloy / Rue Elie le Gallais",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314883209,
+          48.786118697
+        ]
+      },
+      "properties": {
+        "name": "Rue Paul Henry Thilloy / Rue Jean Bastart",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321977291,
+          48.785014348
+        ]
+      },
+      "properties": {
+        "name": "Rue Pertuizot / Avenue de Bellevue",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318818174,
+          48.77579343
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Langlade / Rue de la Fontaine Grelot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.312179534,
+          48.784591175
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Loti / Rue de Fontenay D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.311511794,
+          48.782480384
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Loti / Rue Delabergerie",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.310813069,
+          48.781461498
+        ]
+      },
+      "properties": {
+        "name": "Rue Pierre Loti / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321864673,
+          48.782891546
+        ]
+      },
+      "properties": {
+        "name": "Rue Plaisance / Rue Jean-Roger Thorelle",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.319730037,
+          48.779154281
+        ]
+      },
+      "properties": {
+        "name": "Rue Ravon / Avenue de la République",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315266638,
+          48.779340833
+        ]
+      },
+      "properties": {
+        "name": "Rue René Roeckel / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.315274403,
+          48.779336003
+        ]
+      },
+      "properties": {
+        "name": "Rue René Roeckel / Boulevard Carnot",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313604434,
+          48.77986638
+        ]
+      },
+      "properties": {
+        "name": "Rue René Roeckel / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313593589,
+          48.779874984
+        ]
+      },
+      "properties": {
+        "name": "Rue René Roeckel / Place de la Gare",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321454996,
+          48.78674834
+        ]
+      },
+      "properties": {
+        "name": "Rue Varengue / Avenue Aristide Briand D127",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.322837982,
+          48.784834765
+        ]
+      },
+      "properties": {
+        "name": "Rue Violette / Avenue de Bellevue",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308347047,
+          48.780503994
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvonne / Rue Arnoux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.309618788,
+          48.782688991
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvonne / Rue des Blagis",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308365443,
+          48.78048795
+        ]
+      },
+      "properties": {
+        "name": "Rue Yvonne / Villa Arnoux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.321881422,
+          48.776770167
+        ]
+      },
+      "properties": {
+        "name": "Square Evariste Galois / Avenue Galois D60",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31273019,
+          48.787616308
+        ]
+      },
+      "properties": {
+        "name": "Square Jacques Pierre Brissot / Avenue de Montrouge D77",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.316068782,
+          48.781265646
+        ]
+      },
+      "properties": {
+        "name": "Square Jean-Baptiste Colbert / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314702569,
+          48.782227156
+        ]
+      },
+      "properties": {
+        "name": "Square Jean-Baptiste Colbert / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.308382068,
+          48.780473694
+        ]
+      },
+      "properties": {
+        "name": "Villa Arnoux / Rue Arnoux",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.318027394,
+          48.781575662
+        ]
+      },
+      "properties": {
+        "name": "Villa Jeanne d'Arc / Rue de la Bièvre D74",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.314116799,
+          48.776791515
+        ]
+      },
+      "properties": {
+        "name": "D60 / Avenue du Général Leclerc D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.313739944,
+          48.776741266
+        ]
+      },
+      "properties": {
+        "name": "D60 / Boulevard du Maréchal Joffre D920",
+        "context": "Bourg-la-Reine, Hauts-de-Seine",
+        "citycode": "92014",
+        "depcode": "92"
+      }
+    }
+  ]
+}

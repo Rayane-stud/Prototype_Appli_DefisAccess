@@ -6,10 +6,10 @@ BUT : Nouvelle interface DEFIACCESS, organisée en pages (une par étape) au lie
       à 5 boutons (Présentation, Étape 1, Étape 2, Étape 3, Étape 4) + des
       boutons "Précédent"/"Suivant" en bas de chaque page.
 
-      Construction progressive, étape par étape, à la demande de l'utilisateur :
-      pour l'instant seules les pages "Présentation" et "Étape 1" (reprise du
-      bloc Intersections de app5.py) sont implémentées. Les étapes 2 à 4 sont
-      des pages à venir ("🚧").
+      Les 4 étapes sont implémentées (Intersections, Lieux d'intérêt, Passages
+      piétons, Fiches équipes). La carte finale (Étape 4) utilise Plotly plutôt
+      que Folium : cliquer sur une ligne du tableau "📊 Répartition par équipe"
+      met cette équipe en valeur sur la carte et grise les autres.
 
       app5.py n'est pas modifié par ce fichier.
 """
@@ -19,8 +19,7 @@ import zipfile
 import contextlib
 import yaml
 import streamlit as st
-import folium
-from streamlit_folium import st_folium
+import plotly.graph_objects as go
 from pathlib import Path
 
 from src.nettoyage import charger_intersections
@@ -30,7 +29,7 @@ from src.proximite import (
     fusion_croisement,
     assigner_equipes,
 )
-from src.routage import route_toutes_equipes
+from src.routage import route_toutes_equipes2
 from src.export import export_final_equipes
 from src.identification_PM import (
     get_code_insee_api,
@@ -1106,6 +1105,10 @@ def page_etape4():
 
     # ── Importer mes propres fichiers (optionnel, remplace l'auto) ─────────
     with st.expander("📂 Importer mes propres fichiers (avancé)", expanded=False):
+        st.caption(
+            "⚠️ Les filtres (types de voies, catégories de lieux) ne s'appliquent pas "
+            "à vos propres fichiers — ils sont utilisés tels quels."
+        )
         col_upload_inter, col_upload_lieux = st.columns(2)
 
         with col_upload_inter:
@@ -1113,7 +1116,7 @@ def page_etape4():
                 "Votre fichier intersections.csv",
                 type=["csv"],
                 key="uploader_intersections_manuel_e4",
-                help="Remplace le téléchargement automatique si un fichier est fourni ici.",
+                help="Remplace le téléchargement automatique si un fichier est fourni ici. Utilisé sans filtre.",
             )
 
         with col_upload_lieux:
@@ -1123,6 +1126,16 @@ def page_etape4():
                 key="uploader_lieux_manuel",
                 help="Remplace les lieux déjà générés si un fichier est fourni ici.",
             )
+
+        st.divider()
+        generate_btn_avance = st.button(
+            "⚡ Générer les fiches équipes avec mes fichiers",
+            key="btn_generate_avance",
+            type="primary",
+            use_container_width=True,
+            disabled=intersections_file is None or not commune_str.strip(),
+            help="Utilise directement les fichiers importés ci-dessus (intersections obligatoire, lieux optionnel).",
+        )
 
     # ── Résolution source intersections ─────────────────────────────────────
     if intersections_file is not None:
@@ -1226,7 +1239,9 @@ def page_etape4():
     )
 
     # ── Pipeline principal ──────────────────────────────────────────────
-    if generate_btn and ready:
+    # Déclenché par le bouton principal ci-dessus OU par le bouton dédié dans
+    # "📂 Importer mes propres fichiers (avancé)" — même pipeline dans les deux cas.
+    if (generate_btn or generate_btn_avance) and ready:
         import pandas as pd
 
         output_dir = Path("data/output/fiches_equipes")
@@ -1249,16 +1264,14 @@ def page_etape4():
                     df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
                     status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
             else:
+                # Fichier personnel importé en Étape 4 : utilisé tel quel, sans filtre
+                # par combinaisons de voies (celui-ci ne s'applique qu'aux intersections
+                # auto-chargées/importées en Étape 1 — un fichier personnel est considéré
+                # déjà préparé par l'utilisateur).
                 intersections_path = Path("data/raw/intersections_upload.csv")
                 intersections_path.parent.mkdir(parents=True, exist_ok=True)
                 intersections_path.write_bytes(intersections_file.read())
                 df = charger_intersections(str(intersections_path), commune_str)
-
-                _combos_pipeline = st.session_state.get("combos_selectionnes", [])
-                if _combos_pipeline:
-                    avant = len(df)
-                    df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
-                    status.info(f"**Étape 1/6** — Filtre voies : {avant} → {len(df)} intersections.")
 
             progress.progress(15)
 
@@ -1413,7 +1426,17 @@ def page_etape4():
             status.info("**Étape 5/6** — Répartition par équipes et calcul des itinéraires…")
             progress.progress(75)
             df = assigner_equipes(df, n_equipes=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
-            teams_dict = route_toutes_equipes(df, meetup_lat, meetup_lon)
+
+            class StreamlitLoggerRoutage(io.StringIO):
+                def write(self, texte):
+                    super().write(texte)
+                    if texte.strip():
+                        status.info(f"**Étape 5/6** — {texte.strip()}")
+                    return len(texte)
+
+            logs_routage = StreamlitLoggerRoutage()
+            with contextlib.redirect_stdout(logs_routage):
+                teams_dict = route_toutes_equipes2(df, meetup_lat, meetup_lon)
 
             # ── Étape 6 — Export XLSX ─────────────────────────────────────
             status.info("**Étape 6/6** — Génération des feuilles terrain XLSX…")
@@ -1465,66 +1488,134 @@ def page_etape4():
         st.divider()
 
         st.subheader("🗺️ Carte des intersections par équipe")
+        st.caption(
+            "Cliquez sur une ligne du tableau ci-dessous pour mettre une équipe en "
+            "valeur sur la carte et griser les autres. Recliquez sur la même ligne "
+            "pour revenir à la vue complète."
+        )
 
         COLORS = [
             "red", "blue", "green", "purple", "orange",
-            "darkred", "lightred", "beige", "darkblue", "darkgreen",
-            "cadetblue", "pink", "lightblue", "lightgreen", "gray",
-            "black", "lightgray", "white", "darkpurple", "salmon",
+            "darkred", "brown", "goldenrod", "darkblue", "darkgreen",
+            "cadetblue", "deeppink", "lightblue", "lightgreen", "gray",
+            "black", "silver", "dimgray", "indigo", "salmon",
         ]
+        COULEUR_GRISEE = "lightgray"
 
-        m = folium.Map(location=[_meetup_lat_f, _meetup_lon_f], zoom_start=14, tiles="CartoDB positron")
-        folium.Marker(
-            location=[_meetup_lat_f, _meetup_lon_f],
-            popup="<b>Point de rendez-vous</b>",
-            icon=folium.Icon(color="black", icon="home", prefix="fa"),
-        ).add_to(m)
+        # Équipe mise en valeur : fixée par le clic sur le tableau plus bas
+        # (persistée en session_state, lue ici avant de dessiner la carte).
+        _equipe_en_valeur = st.session_state.get("equipe_en_valeur_carte")
 
-        for _, poi in _pois_f.iterrows():
-            _label_poi = str(poi.get("lieu", "POI"))
-            folium.Marker(
-                location=[poi["latitude"], poi["longitude"]],
-                icon=folium.DivIcon(
-                    icon_size=(14, 14),
-                    icon_anchor=(7, 7),
-                    html=(
-                        '<div style="width:14px;height:14px;background-color:#FF6B35;'
-                        'border:2px solid white;box-shadow:0 0 2px rgba(0,0,0,0.6);"></div>'
-                    ),
-                ),
-                popup=folium.Popup(_label_poi, max_width=200),
-                tooltip=_label_poi,
-            ).add_to(m)
+        fig_carte = go.Figure()
+
+        fig_carte.add_trace(go.Scattermapbox(
+            lat=[_meetup_lat_f], lon=[_meetup_lon_f],
+            mode="markers",
+            marker=dict(size=16, color="black"),
+            text=["Point de rendez-vous"],
+            hoverinfo="text",
+            name="Point de rendez-vous",
+            showlegend=False,
+        ))
+
+        if not _pois_f.empty:
+            fig_carte.add_trace(go.Scattermapbox(
+                lat=_pois_f["latitude"], lon=_pois_f["longitude"],
+                mode="markers",
+                marker=dict(size=10, color="#FF6B35"),
+                text=_pois_f.get("lieu", pd.Series(["POI"] * len(_pois_f), index=_pois_f.index)).astype(str),
+                hoverinfo="text",
+                name="Lieux d'intérêt",
+                showlegend=False,
+            ))
 
         for equipe_id, team_df in _teams_dict_f.items():
-            color = COLORS[(equipe_id - 1) % len(COLORS)]
-            for _, row in team_df.iterrows():
-                nb_pp = int(row.get("nb_traversees", 0))
-                popup_html = (
-                    f"<b>Équipe {equipe_id}</b><br>"
-                    f"Ordre : {int(row.get('ordre', 0))}<br>"
-                    f"{row.get('intersection', '')}<br>"
-                    f"Passages piétons : {nb_pp}"
-                )
-                folium.CircleMarker(
-                    location=[row["latitude"], row["longitude"]],
-                    radius=6, color=color, fill=True, fill_opacity=0.75,
-                    popup=folium.Popup(popup_html, max_width=250),
-                ).add_to(m)
+            couleur_equipe = COLORS[(equipe_id - 1) % len(COLORS)]
+            est_en_valeur = _equipe_en_valeur is None or _equipe_en_valeur == equipe_id
+            couleur_affichee = couleur_equipe if est_en_valeur else COULEUR_GRISEE
+            opacite = 0.85 if est_en_valeur else 0.35
 
-        st_folium(m, width=None, height=500, returned_objects=[], key="carte_resultat_final")
+            hover_text = [
+                f"Équipe {equipe_id}<br>Ordre : {int(row.get('ordre', 0))}<br>"
+                f"{row.get('intersection', '')}<br>"
+                f"Passages piétons : {int(row.get('nb_traversees', 0))}"
+                for _, row in team_df.iterrows()
+            ]
+
+            fig_carte.add_trace(go.Scattermapbox(
+                lat=team_df["latitude"], lon=team_df["longitude"],
+                mode="markers",
+                marker=dict(size=11, color=couleur_affichee, opacity=opacite),
+                text=hover_text,
+                hoverinfo="text",
+                name=f"Équipe {equipe_id}",
+            ))
+
+        fig_carte.update_layout(
+            mapbox=dict(
+                style="carto-positron",
+                center=dict(lat=_meetup_lat_f, lon=_meetup_lon_f),
+                zoom=13,
+            ),
+            height=500,
+            margin=dict(l=0, r=0, t=0, b=0),
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
+            # Conserve le zoom/déplacement de l'utilisateur d'un rechargement à
+            # l'autre au lieu de recentrer la carte à chaque rerun Streamlit.
+            uirevision="carte_equipes",
+            # "pan" : le glisser-déposer déplace la carte (comme Folium/Leaflet)
+            # plutôt que de dessiner un rectangle de zoom (comportement par défaut de Plotly).
+            dragmode="pan",
+        )
+
+        st.plotly_chart(
+            fig_carte,
+            use_container_width=True,
+            key="carte_resultat_final",
+            # scrollZoom : zoom à la molette de la souris, désactivé par défaut dans
+            # Plotly (contrairement à Folium/Leaflet où il est actif nativement).
+            config={"scrollZoom": True},
+        )
 
         st.subheader("📊 Répartition par équipe")
         stats_rows = []
         for equipe_id, team_df in _teams_dict_f.items():
             stats_rows.append({
+                "_equipe_id": equipe_id,
                 "Équipe": f"Équipe {equipe_id}",
                 "Intersections": len(team_df),
                 "Passages piétons totaux": int(
                     team_df["nb_traversees"].sum() if "nb_traversees" in team_df.columns else 0
                 ),
             })
-        st.dataframe(pd.DataFrame(stats_rows), use_container_width=True, hide_index=True)
+        _df_stats = pd.DataFrame(stats_rows)
+
+        _etat_selection = st.dataframe(
+            _df_stats.drop(columns=["_equipe_id"]),
+            use_container_width=True,
+            hide_index=True,
+            on_select="rerun",
+            selection_mode="single-row",
+            key="table_repartition_equipes",
+        )
+
+        _lignes_selectionnees = _etat_selection["selection"]["rows"]
+        _equipe_cliquee = (
+            int(_df_stats.iloc[_lignes_selectionnees[0]]["_equipe_id"])
+            if _lignes_selectionnees else None
+        )
+
+        # IMPORTANT : _equipe_cliquee reflète l'état PERSISTANT de la sélection du
+        # tableau (pas un évènement ponctuel) — il reste égal tant que l'utilisateur
+        # ne change pas sa sélection. On se contente donc de refléter cet état dans
+        # la session, sans logique de "toggle" (qui bouclait indéfiniment : dès que
+        # la session rattrapait la sélection, le code croyait à un nouveau clic sur
+        # la même ligne et redésélectionnait, provoquant un clignotement en boucle).
+        # Recliquer sur la même ligne du tableau la désélectionne nativement
+        # (comportement intégré de st.dataframe en selection_mode="single-row").
+        if _equipe_cliquee != _equipe_en_valeur:
+            st.session_state["equipe_en_valeur_carte"] = _equipe_cliquee
+            st.rerun()
 
         _pp_label = {
             "OSM":       "OpenStreetMap (Overpass)",

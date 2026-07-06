@@ -118,7 +118,7 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
     )
 
     # ── On enregistre le tableau actuelle pour la comparaison
-    rep=input("Enregistrer un fichier pour la comparaison ? (o/n)")
+    rep=input("Enregistrer un fichier pour la comparaison ? (o/n)").lower()
     if rep=="o":
 
         #Rajouter la date dans le nom du fichier

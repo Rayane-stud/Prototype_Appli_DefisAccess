@@ -10,7 +10,7 @@ from geopy.distance import geodesic
 
 def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     
-    fichier2=pd.read_excel(nom_fichier2)
+    fichier2 = pd.read_csv(nom_fichier2, sep=";", encoding="utf-8-sig")
     fich1=fichier1.copy().to_dict("records")
     fich2=fichier2.to_dict("records")
 

@@ -24,23 +24,38 @@ remplir les questionnaires
     # ARGUMENTS : "df" de type DataFrame
                   "id_equipe" de type int (numero de l'equipe ex: 1, 2, 3...)
                   "dossier_sortie" de type str (chemin du dossier ou sauvegarder le fichier)
+                  "ville" de type str, optionnel (defaut "Garches"), utilise
+                  dans le nom du fichier genere
     # REPONSE : str (chemin complet du fichier XLSX genere)
 
+- _creer_dossier_horodate():
+    # ROLE : Creer un sous-dossier horodate (ex: "Garches_20250625_143022")
+              dans le dossier de sortie, pour ranger les fichiers d'une
+              meme generation sans ecraser les generations precedentes
+    # ARGUMENTS : "dossier_sortie" de type str (dossier parent)
+                  "ville" de type str, optionnel (defaut "Garches")
+    # REPONSE : str (chemin complet du sous-dossier cree)
+
 - exporter_toutes_equipes():
-    # ROLE : Appliquer vers_xlsx() pour chaque equipe du dictionnaire
+    # ROLE : Creer un sous-dossier horodate (_creer_dossier_horodate) puis
+              appliquer vers_xlsx() pour chaque equipe du dictionnaire
               et recuperer la liste de tous les fichiers generes
               (utile pour creer le ZIP Streamlit)
     # ARGUMENTS : "dict_equipes" de type dict {int : DataFrame}
                   (cle = id equipe, valeur = DataFrame de l equipe)
                   "dossier_sortie" de type str (chemin du dossier de sortie)
+                  "ville" de type str, optionnel (defaut "Garches")
     # REPONSE : list[str] (liste des chemins de tous les fichiers XLSX generes)
 
 - export_final_equipes():
-    # ROLE : Orchestrer les 3 etapes (duplication, ajout colonnes, export xlsx)
-              pour chaque equipe en une seule fonction
+    # ROLE : Orchestrer les etapes (creation dossier horodate, calcul de la
+              colonne coordonnees, duplication des lignes, ajout des colonnes
+              de notation terrain, export xlsx) pour chaque equipe en une
+              seule fonction
     # ARGUMENTS : "dict_equipes" de type dict {int : DataFrame}
                   (cle = id equipe, valeur = DataFrame de l equipe)
                   "dossier_sortie" de type str (chemin du dossier de sortie)
+                  "ville" de type str, optionnel (defaut "Garches")
     # REPONSE : list[str] (liste des chemins de tous les fichiers XLSX generes)
 """
 import os

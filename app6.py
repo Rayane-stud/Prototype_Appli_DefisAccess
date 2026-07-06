@@ -29,7 +29,7 @@ from src.proximite import (
     fusion_croisement,
     assigner_equipes,
 )
-from src.routage import route_toutes_equipes
+from src.routage import route_toutes_equipes2
 from src.export import export_final_equipes
 from src.identification_PM import (
     get_code_insee_api,
@@ -1426,7 +1426,17 @@ def page_etape4():
             status.info("**Étape 5/6** — Répartition par équipes et calcul des itinéraires…")
             progress.progress(75)
             df = assigner_equipes(df, n_equipes=n_teams, meetup_lat=meetup_lat, meetup_long=meetup_lon)
-            teams_dict = route_toutes_equipes(df, meetup_lat, meetup_lon)
+
+            class StreamlitLoggerRoutage(io.StringIO):
+                def write(self, texte):
+                    super().write(texte)
+                    if texte.strip():
+                        status.info(f"**Étape 5/6** — {texte.strip()}")
+                    return len(texte)
+
+            logs_routage = StreamlitLoggerRoutage()
+            with contextlib.redirect_stdout(logs_routage):
+                teams_dict = route_toutes_equipes2(df, meetup_lat, meetup_lon)
 
             # ── Étape 6 — Export XLSX ─────────────────────────────────────
             status.info("**Étape 6/6** — Génération des feuilles terrain XLSX…")

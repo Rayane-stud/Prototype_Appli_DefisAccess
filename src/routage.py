@@ -244,7 +244,8 @@ def voisin_lePlus_proche_pieton(df, start_lat, start_long, G):
     # Reconstruction du DataFrame final
     df_ordonne = df.loc[intersections_visitees].copy()
     df_ordonne["ordre"] = range(1, len(df_ordonne) + 1)
-    
+    df_ordonne = df_ordonne.drop(columns=["osm_node"], errors="ignore")  # colonne technique, inutile hors de ce calcul
+
     return df_ordonne
 
 
@@ -269,11 +270,14 @@ def route_toutes_equipes2(df, rdv_lat, rdv_long):
     ouest = toutes_longs.min() - buffer
     
     # 3. On télécharge la carte de cette zone exacte, peu importe les villes traversées !
+    # bbox attendu par osmnx : (ouest, sud, est, nord)
     print("Téléchargement du réseau piéton pour la zone détectée . . .")
-    G = ox.graph_from_bbox(bbox=(nord, sud, est, ouest), network_type="walk")
+    G = ox.graph_from_bbox(bbox=(ouest, sud, est, nord), network_type="walk")
 
     # 4. Paramétrer la vitesse de marche (4.5 km/h) et calculer les temps de trajet
-    G = ox.routing.add_edge_speeds(G, walk_speed=4.5)
+    # add_edge_speeds() n'a pas de paramètre "walk_speed" : pour une vitesse constante,
+    # osmnx recommande de fixer directement l'attribut speed_kph via networkx.
+    nx.set_edge_attributes(G, 4.5, "speed_kph")
     G = ox.routing.add_edge_travel_times(G)
     
     # 5. Dispatcher le calcul par équipe

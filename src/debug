@@ -1,0 +1,30 @@
+import pandas as pd
+import csv
+import io
+
+# 1. D'ABORD la définition de la variable
+fichier_benevole = "data/raw/comparaisons/fiches_excell_montrouge_equipe3.csv"
+
+# 2. ENSUITE la définition de la fonction
+def lire_fichier_benevole(fichier_benevole):
+    with open(fichier_benevole, encoding="utf-8-sig") as f:
+        lignes_brutes = f.readlines()
+
+    header = lignes_brutes[0].strip()
+    
+    lignes_nettoyees = [header]
+    for ligne in lignes_brutes[1:]:
+        ligne = ligne.strip()
+        if ligne.startswith('"') and ligne.endswith('"'):
+            ligne = ligne[1:-1]
+        ligne = ligne.replace('""', '"')
+        lignes_nettoyees.append(ligne)
+
+    contenu_propre = "\n".join(lignes_nettoyees)
+    fichref = pd.read_csv(io.StringIO(contenu_propre))
+    return fichref
+
+# 3. ENFIN l'appel de la fonction
+fichref = lire_fichier_benevole(fichier_benevole)
+print(fichref.columns.tolist())
+print(fichref["coordonnees"].head(10).tolist())

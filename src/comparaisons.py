@@ -7,6 +7,8 @@ avec index, pour indiquer quel fichier sort quelle ligne
 """
 import pandas as pd
 from geopy.distance import geodesic
+import io
+
 
 def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     
@@ -81,13 +83,30 @@ def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
 
     return
 
+def lire_fichier_benevole(fichier_benevole):
+    with open(fichier_benevole, encoding="utf-8-sig") as f:
+        lignes_brutes = f.readlines()
+
+    header = lignes_brutes[0].strip()
+    
+    lignes_nettoyees = [header]
+    for ligne in lignes_brutes[1:]:
+        ligne = ligne.strip()
+        if ligne.startswith('"') and ligne.endswith('"'):
+            ligne = ligne[1:-1]
+        ligne = ligne.replace('""', '"')
+        lignes_nettoyees.append(ligne)
+
+    contenu_propre = "\n".join(lignes_nettoyees)
+    fichref = pd.read_csv(io.StringIO(contenu_propre))
+    return fichref
 
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
-    fichref = pd.read_csv(fichier_benevole)
+    fichref = lire_fichier_benevole(fichier_benevole)
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
-
+   
     fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
 
     fichref["latitude"] = pd.to_numeric(fichref["latitude"])

@@ -10,24 +10,24 @@ from geopy.distance import geodesic
 
 def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     
-    fichier2=pd.read_excel(nom_fichier2)
+    fichier2 = pd.read_csv(nom_fichier2, sep=";", encoding="utf-8-sig")
     fich1=fichier1.copy().to_dict("records")
     fich2=fichier2.to_dict("records")
 
 
-    if nom_fichier1.contains("osm"):
-        nom1= "Fichier OSM"
-    elif nom_fichier1.contains("IA"):
-        nom1= "Fichier IA"
-    elif nom_fichier1.contains("mixte"):
-        nom1= "Fichier MIXTE"
-    
-    if nom_fichier2.contains("osm"):
-        nom2= "Fichier OSM"
-    elif nom_fichier2.contains("IA"):
-        nom2= "Fichier IA"
-    elif nom_fichier2.contains("mixte"):
-        nom2= "Fichier MIXTE"
+    if "osm" in nom_fichier1:
+        nom1 = "Fichier OSM"
+    elif "IA" in nom_fichier1:
+        nom1 = "Fichier IA"
+    elif "mixte" in nom_fichier1:
+        nom1 = "Fichier MIXTE"
+
+    if "osm" in nom_fichier2:
+        nom2 = "Fichier OSM"
+    elif "IA" in nom_fichier2:
+        nom2 = "Fichier IA"
+    elif "mixte" in nom_fichier2:
+        nom2 = "Fichier MIXTE"
 
     egaux = []
     diff= []
@@ -39,7 +39,7 @@ def recuperation_comp(fichier1, nom_fichier1, nom_fichier2, rayon =10):
                           ).meters
             if dist < rayon:
 
-                if i["nb_pp"] == j["nb_pp"]:
+                if i["nb_traversees"] == j["nb_traversees"]:
                     ligne1 = i.copy()
                     ligne1["source"] = nom1
 

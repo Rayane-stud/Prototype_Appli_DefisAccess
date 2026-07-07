@@ -106,11 +106,13 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichref = lire_fichier_benevole(fichier_benevole)
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
-   
-    fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
 
+    # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
+    fichref = (fichref.sort_values("traversee", ascending=False).drop_duplicates(subset=["coordonnees"], keep="first"))
+    fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
     fichref["latitude"] = pd.to_numeric(fichref["latitude"])
     fichref["longitude"] = pd.to_numeric(fichref["longitude"])
+
 
     fichref=fichref.to_dict("records")
     fich1=fichier1.copy().to_dict("records")
@@ -184,16 +186,31 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
 
             diff.append({})
 
+    
+    df_egaux = pd.DataFrame(egaux)
+    df_diff = pd.DataFrame(diff)
+
+    colonnes_voulues = [
+        "latitude",
+        "longitude",
+        "intersection",
+        "source",
+        "nb_traversee_reel",
+        "nb_traversees"
+    ]
+    df_egaux = df_egaux[colonnes_voulues]
+    df_diff = df_diff[colonnes_voulues]
+   
     fichier_sortie = "data/output/comparaisons/comparaison_terrain.xlsx"
     with pd.ExcelWriter(fichier_sortie) as writer:
 
-        pd.DataFrame(egaux).to_excel(
+        df_egaux.to_excel(
             writer,
             sheet_name="Egaux",
             index=False
         )
 
-        pd.DataFrame(diff).to_excel(
+        df_diff.to_excel(
             writer,
             sheet_name="Differents",
             index=False

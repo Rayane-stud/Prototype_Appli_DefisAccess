@@ -231,6 +231,43 @@ def _normaliser_ville(texte: str) -> str:
     return texte.lower().replace("-", " ").replace("_", " ")
 
 
+def _intersections_source_est_chemin(source) -> bool:
+    """True si `source` est un chemin (str/Path) vers un GeoJSON auto-téléchargé,
+    False si c'est un fichier importé via st.file_uploader (objet avec .name)."""
+    return getattr(source, "name", None) is None
+
+
+def charger_intersections_quelconque(source, combos_selectionnes: list | None = None):
+    """
+    Charge un DataFrame d'intersections depuis n'importe quelle source :
+    - un chemin (str/Path) vers un GeoJSON auto-téléchargé (Étape 1 automatique),
+    - un fichier importé (.csv, .xlsx ou .geojson) via st.file_uploader (Étape 1
+      "fichier personnalisé").
+
+    Applique le filtre par combinaisons de voies si `combos_selectionnes` est fourni
+    et que la colonne 'intersection' est présente.
+    """
+    import pandas as pd
+    from src.telecharger_intersections import charger_en_dataframe_sans_input
+
+    if _intersections_source_est_chemin(source):
+        df = charger_en_dataframe_sans_input(source, types_voies=[])
+    else:
+        nom = source.name
+        source.seek(0)
+        if nom.endswith(".csv"):
+            df = pd.read_csv(source)
+        elif nom.endswith(".geojson"):
+            df = charger_en_dataframe_sans_input(source, types_voies=[])
+        else:
+            df = pd.read_excel(source)
+
+    if combos_selectionnes and "intersection" in df.columns:
+        df = filtrer_par_combinaisons_voies(df, combos_selectionnes)
+
+    return df
+
+
 def _rmtree_force(path):
     # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
     # Si un fichier est verrouillé (ouvert dans Excel), on l'ignore avec un avertissement
@@ -570,33 +607,12 @@ def page_etape1():
 
             # ── Aperçu ───────────────────────────────────────────────────────────────────
             _source_fichier = st.session_state["inter_geojson_path"]
-            _est_perso = st.session_state.get("is_fichier_perso", False)
 
             if "inter_df_preview" not in st.session_state:
                 try:
-                    import pandas as pd
-
-                    if _est_perso:
-                        _nom = getattr(_source_fichier, "name", "")
-                        if _nom.endswith(".csv"):
-                            _df_inter_prev = pd.read_csv(_source_fichier)
-                        elif _nom.endswith(".geojson"):
-                            from src.telecharger_intersections import charger_en_dataframe_sans_input
-                            _df_inter_prev = charger_en_dataframe_sans_input(_source_fichier, types_voies=[])
-                        else:
-                            _df_inter_prev = pd.read_excel(_source_fichier)
-
-                        if "intersection" in _df_inter_prev.columns and combos_selectionnes:
-                            _df_inter_prev = filtrer_par_combinaisons_voies(_df_inter_prev, combos_selectionnes)
-
-                    else:
-                        from src.telecharger_intersections import charger_en_dataframe_sans_input
-                        _df_inter_prev = charger_en_dataframe_sans_input(_source_fichier, types_voies=[])
-                        if combos_selectionnes:
-                            _df_inter_prev = filtrer_par_combinaisons_voies(_df_inter_prev, combos_selectionnes)
-
-                    st.session_state["inter_df_preview"] = _df_inter_prev
-
+                    st.session_state["inter_df_preview"] = charger_intersections_quelconque(
+                        _source_fichier, combos_selectionnes
+                    )
                 except Exception as e:
                     st.warning(f"Aperçu impossible : {e}")
 
@@ -652,6 +668,42 @@ def page_etape2():
     else:
         ville_cible = commune_str.split(",")[0].strip()
         st.write(f"Commune ciblée : **{ville_cible}**")
+
+        # ── Option avancée, repliée : importer son propre fichier de lieux ───────────
+        with st.expander("⚙️ Utiliser un fichier personnalisé (avancé)", expanded=False):
+            fichier_perso_pm = st.file_uploader(
+                "Votre fichier de lieux (.xlsx)",
+                type=["xlsx"],
+                key="uploader_pm_manuel",
+                help="Remplace la génération automatique ci-dessous — utilisé tel quel pour cette commune.",
+            )
+            if fichier_perso_pm is not None:
+                if st.session_state.get("pm_perso_last_uploaded_name") != fichier_perso_pm.name:
+                    import pandas as pd
+                    _df_pm_perso = pd.read_excel(fichier_perso_pm)
+                    st.session_state["df_pm"] = _df_pm_perso
+                    st.session_state["pm_commune"] = ville_cible
+                    # None = signature non suivie : le nettoyage par changement de
+                    # filtres (plus bas) ne doit jamais effacer un fichier importé.
+                    st.session_state["pm_filters_signature"] = None
+                    st.session_state["is_fichier_perso_pm"] = True
+                    st.session_state["pm_perso_last_uploaded_name"] = fichier_perso_pm.name
+                    _buf_pm_perso = io.BytesIO()
+                    _df_pm_perso.to_excel(_buf_pm_perso, index=False)
+                    _buf_pm_perso.seek(0)
+                    st.session_state["pm_buffer"] = _buf_pm_perso.getvalue()
+                    st.rerun()
+            elif st.session_state.get("is_fichier_perso_pm"):
+                for cle in ("pm_buffer", "pm_commune", "pm_filters_signature",
+                            "is_fichier_perso_pm", "pm_perso_last_uploaded_name", "df_pm"):
+                    st.session_state.pop(cle, None)
+                st.rerun()
+
+        if (
+            st.session_state.get("is_fichier_perso_pm")
+            and st.session_state.get("pm_commune") == ville_cible
+        ):
+            st.success(f"📁 Fichier personnalisé de lieux utilisé pour **{ville_cible}**.")
 
         st.write("📋 **Sélectionnez les types de lieux à récupérer :**")
         st.caption(
@@ -739,6 +791,8 @@ def page_etape2():
                 st.session_state["df_pm"] = df_pm_local
                 st.session_state["pm_commune"] = ville_cible
                 st.session_state["pm_filters_signature"] = _signature_actuelle
+                st.session_state.pop("is_fichier_perso_pm", None)
+                st.session_state.pop("pm_perso_last_uploaded_name", None)
                 _buf_pm_local = io.BytesIO()
                 df_pm_local.to_excel(_buf_pm_local, index=False)
                 _buf_pm_local.seek(0)
@@ -810,12 +864,49 @@ def page_etape3():
         if accidents_file is None:
             st.warning("⚠️ Aucun fichier CSV chargé.")
 
+    inter_file_pp = None
+    pm_file_pp = None
+    pp_deja_fait_file = None
     if methode_pp == "IA (YOLO — best.pt requis)":
         import os
         if os.path.exists(os.path.join("models", "best.pt")):
             st.success("✅ Modèle `models/best.pt` détecté.")
         else:
             st.error("❌ `models/best.pt` introuvable — placez votre modèle dans `models/`.")
+
+        with st.expander("⚙️ Utiliser mes propres fichiers (avancé)", expanded=False):
+            st.caption(
+                "La méthode IA a besoin de savoir où sont les intersections et les lieux "
+                "d'intérêt. Importez-les ici pour analyser vos propres fichiers sans passer "
+                "par les Étapes 1 et 2 — sinon les données déjà chargées/générées pour "
+                "cette commune sont réutilisées automatiquement."
+            )
+            col_upload_inter_pp, col_upload_pm_pp = st.columns(2)
+            with col_upload_inter_pp:
+                inter_file_pp = st.file_uploader(
+                    "Votre fichier intersections.csv",
+                    type=["csv"],
+                    key="uploader_inter_pp_e3",
+                )
+            with col_upload_pm_pp:
+                pm_file_pp = st.file_uploader(
+                    "Votre fichier lieux.xlsx",
+                    type=["xlsx"],
+                    key="uploader_pm_pp_e3",
+                )
+
+            st.divider()
+            pp_deja_fait_file = st.file_uploader(
+                "Votre fichier passages_pietons.csv déjà généré ou modifié (optionnel)",
+                type=["csv"],
+                key="uploader_pp_deja_fait_e3",
+                help=(
+                    "Pour réutiliser un résultat IA déjà obtenu (éventuellement corrigé à la "
+                    "main) sans relancer la détection — 1 à 2 min économisées. Formats "
+                    "acceptés : 'intersection'/'nb_traversees' (déjà agrégé) ou "
+                    "'latitude'/'longitude' (points bruts)."
+                ),
+            )
 
     col_pp_gen, col_pp_reset = st.columns([3, 1])
     with col_pp_gen:
@@ -884,11 +975,16 @@ def page_etape3():
 
         elif methode_pp == "IA (YOLO — best.pt requis)":
             import os
+
+            _inter_source_ia = inter_file_pp if inter_file_pp is not None else st.session_state.get("inter_geojson_path")
             _inter_prete = bool(
-                st.session_state.get("inter_geojson_path")
-                and Path(st.session_state["inter_geojson_path"]).exists()
+                _inter_source_ia
+                and (
+                    not _intersections_source_est_chemin(_inter_source_ia)
+                    or Path(_inter_source_ia).exists()
+                )
             )
-            _pm_prete = (
+            _pm_prete = bool(pm_file_pp is not None) or (
                 "df_pm" in st.session_state
                 and st.session_state.get("pm_commune") == ville_pp
             )
@@ -898,36 +994,67 @@ def page_etape3():
                 st.toast("Modèle models/best.pt introuvable.", icon="❌", duration="long")
             elif not _inter_prete:
                 st.error(
-                    "Générez d'abord les intersections (Étape 1) avant de lancer la détection IA."
+                    "Générez d'abord les intersections (Étape 1) avant de lancer la détection IA, "
+                    "ou importez votre fichier intersections.csv ci-dessus."
                 )
                 st.toast("Intersections manquantes pour lancer l'IA.", icon="⚠️", duration="long")
             elif not _pm_prete:
                 st.error(
                     "Générez d'abord les lieux d'intérêt (Étape 2) pour cette commune avant de "
-                    "lancer la détection IA."
+                    "lancer la détection IA, ou importez votre fichier lieux.xlsx ci-dessus."
                 )
                 st.toast("Lieux d'intérêt (PM) manquants pour lancer l'IA.", icon="⚠️", duration="long")
             else:
-                from src.telecharger_intersections import charger_en_dataframe_sans_input
-                from src.IA_PP import analyser_toutes_intersections
+                import pandas as pd
                 from datetime import datetime
-                import re
 
                 with st.spinner(f"Préparation de l'analyse IA pour **{ville_pp}**…"):
                     _combos_ia = st.session_state.get("combos_selectionnes", [])
-                    df_inter_ia = charger_en_dataframe_sans_input(
-                        st.session_state["inter_geojson_path"], types_voies=[]
-                    )
-                    if _combos_ia:
-                        df_inter_ia = filtrer_par_combinaisons_voies(df_inter_ia, _combos_ia)
+                    df_inter_ia = charger_intersections_quelconque(_inter_source_ia, _combos_ia)
 
-                    df_inter_ia = filtre_distance(st.session_state["df_pm"], df_inter_ia, rayon_km=radius_km)
+                    pois_ia = pd.read_excel(pm_file_pp) if pm_file_pp is not None else st.session_state["df_pm"]
+
+                    df_inter_ia = filtre_distance(pois_ia, df_inter_ia, rayon_km=radius_km)
                     df_inter_ia = fusion_croisement(df_inter_ia, threshold_km=0.03)
 
                 if df_inter_ia.empty:
                     st.warning("Aucune intersection après filtrage géographique — IA non lancée.")
                     st.toast("Aucune intersection à analyser après filtrage.", icon="⚠️", duration="long")
+
+                elif pp_deja_fait_file is not None:
+                    # Raccourci : réutilise un résultat déjà généré (ou corrigé à la main)
+                    # au lieu de relancer la détection IA (économise 1-2 min).
+                    df_pp_deja_fait = pd.read_csv(pp_deja_fait_file)
+
+                    if "nb_traversees" in df_pp_deja_fait.columns and "intersection" in df_pp_deja_fait.columns:
+                        df_pp = df_inter_ia.merge(
+                            df_pp_deja_fait[["intersection", "nb_traversees"]],
+                            on="intersection", how="left",
+                        )
+                        df_pp["nb_traversees"] = df_pp["nb_traversees"].fillna(0)
+                    else:
+                        from src.identification_PP import comparer_coordonnees
+                        df_pp = comparer_coordonnees(df_pp_deja_fait, df_inter_ia)
+                        if "nb_pp" in df_pp.columns:
+                            df_pp["nb_traversees"] = df_pp["nb_pp"]
+                        elif "nb_passages_pietons" in df_pp.columns:
+                            df_pp["nb_traversees"] = df_pp["nb_passages_pietons"]
+                        else:
+                            df_pp["nb_traversees"] = 0
+
+                    st.session_state["df_pp"]      = df_pp
+                    st.session_state["pp_methode"] = "IA"
+                    st.session_state["pp_commune"] = ville_pp
+                    st.session_state.pop("pp_ia_dossier", None)
+                    st.toast(
+                        f"{len(df_pp)} intersections chargées depuis le fichier importé.",
+                        icon="✅", duration="long",
+                    )
+
                 else:
+                    from src.IA_PP import analyser_toutes_intersections
+                    import re
+
                     dossier_images_ia = str(
                         Path("data/raw/images_pp")
                         / f"images_{ville_pp}_{datetime.now().strftime('%d-%m-%Y_%Hh%M')}"
@@ -974,22 +1101,39 @@ def page_etape3():
                 st.dataframe(_df_pp_r.head(15), use_container_width=True)
                 st.caption(f"{len(_df_pp_r)} lignes au total")
 
-            _dossier_ia = st.session_state.get("pp_ia_dossier")
-            if _dossier_ia and Path(_dossier_ia).is_dir():
-                _zip_buf_ia = io.BytesIO()
-                with zipfile.ZipFile(_zip_buf_ia, "w", zipfile.ZIP_DEFLATED) as zf:
-                    for _f in Path(_dossier_ia).iterdir():
-                        if _f.is_file():
-                            zf.write(_f, arcname=_f.name)
-                _zip_buf_ia.seek(0)
+            col_dl_ia_csv, col_dl_ia_zip = st.columns(2)
+            with col_dl_ia_csv:
                 st.download_button(
-                    label="📥 Télécharger l'analyse des passages piétons",
-                    data=_zip_buf_ia,
-                    file_name=f"images_pp_{_c.lower().replace(' ', '_')}.zip",
-                    mime="application/zip",
-                    key="dl_pp_ia_zip",
+                    label="📥 Télécharger les résultats (.csv)",
+                    data=_df_pp_r.to_csv(index=False).encode("utf-8"),
+                    file_name=f"passages_pietons_ia_{_c.lower().replace(' ', '_')}.csv",
+                    mime="text/csv",
+                    help=(
+                        "Résultat exploitable (colonne 'nb_traversees' par intersection) — "
+                        "réimportable à l'Étape 4 ou ici même, pour éviter de relancer l'IA."
+                    ),
+                    key="dl_pp_ia_csv",
                     use_container_width=True,
                 )
+
+            _dossier_ia = st.session_state.get("pp_ia_dossier")
+            if _dossier_ia and Path(_dossier_ia).is_dir():
+                with col_dl_ia_zip:
+                    _zip_buf_ia = io.BytesIO()
+                    with zipfile.ZipFile(_zip_buf_ia, "w", zipfile.ZIP_DEFLATED) as zf:
+                        for _f in Path(_dossier_ia).iterdir():
+                            if _f.is_file():
+                                zf.write(_f, arcname=_f.name)
+                    _zip_buf_ia.seek(0)
+                    st.download_button(
+                        label="🖼️ Télécharger les images annotées (.zip)",
+                        data=_zip_buf_ia,
+                        file_name=f"images_pp_{_c.lower().replace(' ', '_')}.zip",
+                        mime="application/zip",
+                        help="Preuves visuelles uniquement — pas réimportable, juste pour vérification.",
+                        key="dl_pp_ia_zip",
+                        use_container_width=True,
+                    )
 
         elif "df_pp" in st.session_state:
             _df_pp_r = st.session_state["df_pp"]
@@ -1130,16 +1274,28 @@ def page_etape4():
     st.session_state["n_teams_val"] = n_teams
 
     # ── État des sources (auto par défaut) ──────────────────────────────────
+    # inter_geojson_path peut être soit un chemin (str) vers un GeoJSON
+    # auto-téléchargé, soit un fichier importé (objet uploader) depuis
+    # l'Étape 1 "fichier personnalisé" — les deux cas doivent être gérés.
     _inter_geojson_path = st.session_state.get("inter_geojson_path")
+    _inter_geojson_pret = bool(
+        _inter_geojson_path
+        and (
+            not _intersections_source_est_chemin(_inter_geojson_path)
+            or Path(_inter_geojson_path).exists()
+        )
+    )
 
     col_status_inter, col_status_lieux = st.columns(2)
 
     with col_status_inter:
-        if _inter_geojson_path and Path(_inter_geojson_path).exists():
-            st.success(
-                f"✅ Intersections chargées automatiquement : "
-                f"`{Path(_inter_geojson_path).name}`"
+        if _inter_geojson_pret:
+            _nom_inter_pret = (
+                _inter_geojson_path.name
+                if not _intersections_source_est_chemin(_inter_geojson_path)
+                else Path(_inter_geojson_path).name
             )
+            st.success(f"✅ Intersections chargées : `{_nom_inter_pret}`")
         else:
             st.info(
                 "Aucune intersection auto-chargée — importez un fichier ci-dessous ou utilisez "
@@ -1164,7 +1320,7 @@ def page_etape4():
             "⚠️ Les filtres (types de voies, catégories de lieux) ne s'appliquent pas "
             "à vos propres fichiers — ils sont utilisés tels quels."
         )
-        col_upload_inter, col_upload_lieux = st.columns(2)
+        col_upload_inter, col_upload_lieux, col_upload_pp = st.columns(3)
 
         with col_upload_inter:
             intersections_file = st.file_uploader(
@@ -1182,6 +1338,26 @@ def page_etape4():
                 help="Remplace les lieux déjà générés si un fichier est fourni ici.",
             )
 
+        with col_upload_pp:
+            pp_file = st.file_uploader(
+                "Votre fichier passages_pietons.csv (optionnel)",
+                type=["csv"],
+                key="uploader_pp_manuel_e4",
+                help=(
+                    "Deux formats acceptés : soit 'latitude'/'longitude' (un passage piéton "
+                    "repéré par ligne, ex. export OSM/Accidents), soit 'intersection'/"
+                    "'nb_traversees' déjà agrégé par intersection (ex. export CSV d'un "
+                    "résultat IA depuis l'Étape 3). Sans ce fichier (et sans passage par "
+                    "l'Étape 3), les nombres de passages piétons des fiches seront générés "
+                    "aléatoirement."
+                ),
+            )
+            if pp_file is None:
+                st.caption(
+                    "⚠️ Sans ce fichier ni passage par l'Étape 3, les passages piétons "
+                    "seront **fictifs (aléatoires)**."
+                )
+
         st.divider()
         generate_btn_avance = st.button(
             "⚡ Générer les fiches équipes avec mes fichiers",
@@ -1195,7 +1371,7 @@ def page_etape4():
     # ── Résolution source intersections ─────────────────────────────────────
     if intersections_file is not None:
         intersections_source = "csv"
-    elif _inter_geojson_path and Path(_inter_geojson_path).exists():
+    elif _inter_geojson_pret:
         intersections_source = "geojson"
     else:
         intersections_source = None
@@ -1209,10 +1385,15 @@ def page_etape4():
     else:
         lieux_source = None
 
+    # ── Résolution source passages piétons ────────────────────────────────
+    # Un fichier importé ici prend toujours la priorité sur un éventuel
+    # résultat de l'Étape 3 (qui pourrait concerner une autre commune).
+    pp_source = pp_file if pp_file is not None else None
+
     # ── Prévisualisation ────────────────────────────────────────────────
     _has_inter = intersections_source is not None
     _has_lieux = lieux_source is not None
-    _has_pp    = "df_pp" in st.session_state
+    _has_pp    = pp_source is not None or "df_pp" in st.session_state
 
     if _has_inter or _has_lieux or _has_pp:
         st.divider()
@@ -1258,12 +1439,19 @@ def page_etape4():
 
         if _has_pp:
             with tabs[idx]:
-                _df_pp_p = st.session_state["df_pp"]
-                _pp_methode_p = st.session_state.get("pp_methode", "")
-                _pp_commune_p = st.session_state.get("pp_commune", "")
-                with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=False):
-                    st.dataframe(_df_pp_p.head(20), use_container_width=True)
-                    st.caption(f"{len(_df_pp_p):,} lignes · méthode {_pp_methode_p} · {_pp_commune_p}")
+                if pp_source is not None:
+                    _df_pp_p = pd.read_csv(pp_source)
+                    pp_source.seek(0)
+                    with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=False):
+                        st.dataframe(_df_pp_p.head(20), use_container_width=True)
+                        st.caption(f"{len(_df_pp_p):,} passages piétons importés")
+                else:
+                    _df_pp_p = st.session_state["df_pp"]
+                    _pp_methode_p = st.session_state.get("pp_methode", "")
+                    _pp_commune_p = st.session_state.get("pp_commune", "")
+                    with st.expander(f"📋 Voir le tableau ({len(_df_pp_p):,} lignes)", expanded=False):
+                        st.dataframe(_df_pp_p.head(20), use_container_width=True)
+                        st.caption(f"{len(_df_pp_p):,} lignes · méthode {_pp_methode_p} · {_pp_commune_p}")
 
     # ── Bouton Générer ──────────────────────────────────────────────────
     st.divider()
@@ -1311,9 +1499,11 @@ def page_etape4():
             progress.progress(8)
 
             if intersections_source == "geojson":
-                from src.telecharger_intersections import charger_en_dataframe_sans_input
+                # _inter_geojson_path peut être le chemin d'un GeoJSON auto-téléchargé
+                # OU un fichier importé depuis l'Étape 1 "fichier personnalisé" —
+                # charger_intersections_quelconque() gère les deux cas.
                 _combos_pipeline = st.session_state.get("combos_selectionnes", [])
-                df = charger_en_dataframe_sans_input(_inter_geojson_path, types_voies=[])
+                df = charger_intersections_quelconque(_inter_geojson_path, None)
                 if _combos_pipeline:
                     avant = len(df)
                     df = filtrer_par_combinaisons_voies(df, _combos_pipeline)
@@ -1323,10 +1513,20 @@ def page_etape4():
                 # par combinaisons de voies (celui-ci ne s'applique qu'aux intersections
                 # auto-chargées/importées en Étape 1 — un fichier personnel est considéré
                 # déjà préparé par l'utilisateur).
+                #
+                # Deux formats sont acceptés :
+                # - "propre" (déjà nettoyé, colonnes latitude/longitude/intersection) —
+                #   notamment celui téléchargeable depuis l'Étape 1 — utilisé tel quel.
+                # - "brut" (export GeoJSON aplati type data.gouv.fr, colonnes
+                #   properties/context, geometry/coordinates/0…) — passe par
+                #   charger_intersections() pour être nettoyé.
                 intersections_path = Path("data/raw/intersections_upload.csv")
                 intersections_path.parent.mkdir(parents=True, exist_ok=True)
                 intersections_path.write_bytes(intersections_file.read())
-                df = charger_intersections(str(intersections_path), commune_str)
+
+                df = pd.read_csv(intersections_path)
+                if not {"latitude", "longitude", "intersection"}.issubset(df.columns):
+                    df = charger_intersections(str(intersections_path), commune_str)
 
             progress.progress(15)
 
@@ -1399,6 +1599,8 @@ def page_etape4():
                 st.session_state["df_pm"]      = df_pm_genere
                 st.session_state["pm_commune"] = _ville_pm
                 st.session_state["pm_filters_signature"] = signature_filtres_pm(_cs_choisies, _ce_choisies, _co_labels)
+                st.session_state.pop("is_fichier_perso_pm", None)
+                st.session_state.pop("pm_perso_last_uploaded_name", None)
                 _buf_pm = io.BytesIO()
                 df_pm_genere.to_excel(_buf_pm, index=False)
                 _buf_pm.seek(0)
@@ -1418,8 +1620,40 @@ def page_etape4():
             progress.progress(58)
 
             _pp_methode = st.session_state.get("pp_methode")
+            _pp_methode_effectif = _pp_methode
+            _pp_aleatoire = False
 
-            if _pp_methode == "IA":
+            if pp_source is not None:
+                _pp_methode_effectif = "Import"
+                df_pp_upload = pd.read_csv(pp_source)
+
+                if "nb_traversees" in df_pp_upload.columns and "intersection" in df_pp_upload.columns:
+                    # Format déjà agrégé par intersection (ex : résultat IA exporté
+                    # en CSV à l'Étape 3) — jointure directe, pas de comparaison
+                    # géographique nécessaire.
+                    status.info(
+                        "**Étape 4/6** — Intégration des passages piétons "
+                        "(résultat déjà agrégé importé)…"
+                    )
+                    df = df.merge(
+                        df_pp_upload[["intersection", "nb_traversees"]],
+                        on="intersection", how="left",
+                    )
+                    df["nb_traversees"] = df["nb_traversees"].fillna(0)
+                else:
+                    # Format brut : un point par passage piéton détecté
+                    # (latitude/longitude), comparé aux intersections par proximité.
+                    status.info("**Étape 4/6** — Intégration des passages piétons (fichier importé)…")
+                    from src.identification_PP import comparer_coordonnees
+                    df = comparer_coordonnees(df_pp_upload, df)
+                    if "nb_pp" in df.columns:
+                        df["nb_traversees"] = df["nb_pp"]
+                    elif "nb_passages_pietons" in df.columns:
+                        df["nb_traversees"] = df["nb_passages_pietons"]
+                    else:
+                        df["nb_traversees"] = 0
+
+            elif _pp_methode == "IA":
                 _df_pp_cache = st.session_state.get("df_pp")
                 _ia_deja_faite = (
                     _df_pp_cache is not None
@@ -1473,8 +1707,20 @@ def page_etape4():
 
             else:
                 df["nb_traversees"] = np.random.randint(1, 5, size=len(df))
-                status.info("**Étape 4/6** — Aucune méthode PP configurée, valeurs provisoires utilisées.")
+                _pp_aleatoire = True
+                st.warning(
+                    "⚠️ **Aucune donnée de passages piétons fournie** — les fiches équipes "
+                    "générées contiennent des nombres de passages piétons **inventés "
+                    "aléatoirement** (1 à 4 par intersection) et ne reflètent PAS la réalité "
+                    "du terrain. Pour des données réelles, complétez l'Étape 3 ou importez un "
+                    "fichier passages piétons dans le bloc « Importer mes propres fichiers » "
+                    "ci-dessus, puis régénérez.",
+                    icon="⚠️",
+                )
+                status.warning("**Étape 4/6** — Aucune méthode PP configurée : valeurs provisoires (aléatoires) utilisées.")
+                st.toast("Passages piétons fictifs (aléatoires) utilisés — voir l'avertissement.", icon="⚠️", duration="long")
 
+            st.session_state["final_pp_aleatoire"] = _pp_aleatoire
             progress.progress(65)
 
             # ── Étape 5 — Clustering & routing ────────────────────────────
@@ -1507,7 +1753,7 @@ def page_etape4():
             st.session_state["final_pois"]        = pois
             st.session_state["final_output_files"] = output_files
             st.session_state["final_meetup"]      = (meetup_lat, meetup_lon)
-            st.session_state["final_pp_methode"]  = _pp_methode
+            st.session_state["final_pp_methode"]  = _pp_methode_effectif
             st.session_state["final_ville"]       = _ville_actuelle
             st.session_state["final_n_teams"]     = n_teams
 
@@ -1603,11 +1849,16 @@ def page_etape4():
                 for _, row in team_df.iterrows()
             ]
 
+            ordres_text = [str(int(row.get("ordre", 0))) for _, row in team_df.iterrows()]
+
             fig_carte.add_trace(go.Scattermapbox(
                 lat=team_df["latitude"], lon=team_df["longitude"],
-                mode="markers",
-                marker=dict(size=11, color=couleur_affichee, opacity=opacite),
-                text=hover_text,
+                mode="markers+text",
+                marker=dict(size=20, color=couleur_affichee, opacity=opacite),
+                text=ordres_text,
+                textfont=dict(size=10, color="white"),
+                textposition="middle center",
+                hovertext=hover_text,
                 hoverinfo="text",
                 name=f"Équipe {equipe_id}",
             ))
@@ -1682,9 +1933,20 @@ def page_etape4():
             "OSM":       "OpenStreetMap (Overpass)",
             "Accidents": "Accidents corporels (CSV)",
             "IA":        "Détection IA YOLOv8",
-            None:        "Valeurs provisoires",
+            "Import":    "Fichier importé",
+            None:        "Valeurs provisoires (aléatoires)",
         }.get(_pp_methode_f, "Inconnue")
-        st.caption(f"Méthode passages piétons : {_pp_label}")
+
+        if st.session_state.get("final_pp_aleatoire"):
+            st.warning(
+                "⚠️ **Ces fiches contiennent des passages piétons fictifs (aléatoires)** — "
+                "aucune donnée réelle n'a été fournie (ni Étape 3, ni fichier importé). "
+                "Ne pas utiliser pour une vraie tournée terrain sans régénérer avec de "
+                "vraies données.",
+                icon="⚠️",
+            )
+        else:
+            st.caption(f"Méthode passages piétons : {_pp_label}")
 
         st.subheader("📥 Téléchargement")
         zip_buffer = io.BytesIO()

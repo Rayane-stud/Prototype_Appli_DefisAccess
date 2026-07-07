@@ -1091,64 +1091,65 @@ def page_etape3():
                     st.toast(f"Analyse IA terminée pour {len(df_pp)} intersections.", icon="✅", duration="long")
 
     if "pp_methode" in st.session_state:
-        _m = st.session_state["pp_methode"]
-        _c = st.session_state.get("pp_commune", "")
+        with st.spinner("Préparation du tableau et des images…"):
+            _m = st.session_state["pp_methode"]
+            _c = st.session_state.get("pp_commune", "")
 
-        if _m == "IA" and "df_pp" in st.session_state:
-            _df_pp_r = st.session_state["df_pp"]
-            st.success(f"✅ **{len(_df_pp_r)} intersections analysées** via IA pour {_c}.")
-            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
-                st.dataframe(_df_pp_r.head(15), use_container_width=True)
-                st.caption(f"{len(_df_pp_r)} lignes au total")
+            if _m == "IA" and "df_pp" in st.session_state:
+                _df_pp_r = st.session_state["df_pp"]
+                st.success(f"✅ **{len(_df_pp_r)} intersections analysées** via IA pour {_c}.")
+                with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
+                    st.dataframe(_df_pp_r.head(15), use_container_width=True)
+                    st.caption(f"{len(_df_pp_r)} lignes au total")
 
-            col_dl_ia_csv, col_dl_ia_zip = st.columns(2)
-            with col_dl_ia_csv:
-                st.download_button(
-                    label="📥 Télécharger les résultats (.csv)",
-                    data=_df_pp_r.to_csv(index=False).encode("utf-8"),
-                    file_name=f"passages_pietons_ia_{_c.lower().replace(' ', '_')}.csv",
-                    mime="text/csv",
-                    help=(
-                        "Résultat exploitable (colonne 'nb_traversees' par intersection) — "
-                        "réimportable à l'Étape 4 ou ici même, pour éviter de relancer l'IA."
-                    ),
-                    key="dl_pp_ia_csv",
-                    use_container_width=True,
-                )
-
-            _dossier_ia = st.session_state.get("pp_ia_dossier")
-            if _dossier_ia and Path(_dossier_ia).is_dir():
-                with col_dl_ia_zip:
-                    _zip_buf_ia = io.BytesIO()
-                    with zipfile.ZipFile(_zip_buf_ia, "w", zipfile.ZIP_DEFLATED) as zf:
-                        for _f in Path(_dossier_ia).iterdir():
-                            if _f.is_file():
-                                zf.write(_f, arcname=_f.name)
-                    _zip_buf_ia.seek(0)
+                col_dl_ia_csv, col_dl_ia_zip = st.columns(2)
+                with col_dl_ia_csv:
                     st.download_button(
-                        label="🖼️ Télécharger les images annotées (.zip)",
-                        data=_zip_buf_ia,
-                        file_name=f"images_pp_{_c.lower().replace(' ', '_')}.zip",
-                        mime="application/zip",
-                        help="Preuves visuelles uniquement — pas réimportable, juste pour vérification.",
-                        key="dl_pp_ia_zip",
+                        label="📥 Télécharger les résultats (.csv)",
+                        data=_df_pp_r.to_csv(index=False).encode("utf-8"),
+                        file_name=f"passages_pietons_ia_{_c.lower().replace(' ', '_')}.csv",
+                        mime="text/csv",
+                        help=(
+                            "Résultat exploitable (colonne 'nb_traversees' par intersection) — "
+                            "réimportable à l'Étape 4 ou ici même, pour éviter de relancer l'IA."
+                        ),
+                        key="dl_pp_ia_csv",
                         use_container_width=True,
                     )
 
-        elif "df_pp" in st.session_state:
-            _df_pp_r = st.session_state["df_pp"]
-            st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m} pour {_c}.")
-            with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
-                st.dataframe(_df_pp_r.head(15), use_container_width=True)
-                st.caption(f"{len(_df_pp_r)} lignes au total")
-            st.download_button(
-                label="📥 Télécharger l'analyse des passages piétons",
-                data=_df_pp_r.to_csv(index=False).encode("utf-8"),
-                file_name=f"passages_pietons_{_c.lower().replace(' ', '_')}.csv",
-                mime="text/csv",
-                key="dl_pp_csv",
-                use_container_width=True,
-            )
+                _dossier_ia = st.session_state.get("pp_ia_dossier")
+                if _dossier_ia and Path(_dossier_ia).is_dir():
+                    with col_dl_ia_zip:
+                        _zip_buf_ia = io.BytesIO()
+                        with zipfile.ZipFile(_zip_buf_ia, "w", zipfile.ZIP_DEFLATED) as zf:
+                            for _f in Path(_dossier_ia).iterdir():
+                                if _f.is_file():
+                                    zf.write(_f, arcname=_f.name)
+                        _zip_buf_ia.seek(0)
+                        st.download_button(
+                            label="🖼️ Télécharger les images annotées (.zip)",
+                            data=_zip_buf_ia,
+                            file_name=f"images_pp_{_c.lower().replace(' ', '_')}.zip",
+                            mime="application/zip",
+                            help="Preuves visuelles uniquement — pas réimportable, juste pour vérification.",
+                            key="dl_pp_ia_zip",
+                            use_container_width=True,
+                        )
+
+            elif "df_pp" in st.session_state:
+                _df_pp_r = st.session_state["df_pp"]
+                st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m} pour {_c}.")
+                with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
+                    st.dataframe(_df_pp_r.head(15), use_container_width=True)
+                    st.caption(f"{len(_df_pp_r)} lignes au total")
+                st.download_button(
+                    label="📥 Télécharger l'analyse des passages piétons",
+                    data=_df_pp_r.to_csv(index=False).encode("utf-8"),
+                    file_name=f"passages_pietons_{_c.lower().replace(' ', '_')}.csv",
+                    mime="text/csv",
+                    key="dl_pp_csv",
+                    use_container_width=True,
+                )
 
     pied_de_page_navigation("etape3")
 
@@ -1856,7 +1857,7 @@ def page_etape4():
                 mode="markers+text",
                 marker=dict(size=20, color=couleur_affichee, opacity=opacite),
                 text=ordres_text,
-                textfont=dict(size=10, color="white"),
+                textfont=dict(size=10, color="black"),
                 textposition="middle center",
                 hovertext=hover_text,
                 hoverinfo="text",

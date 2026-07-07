@@ -101,6 +101,14 @@ def lire_fichier_benevole(fichier_benevole):
     fichref = pd.read_csv(io.StringIO(contenu_propre))
     return fichref
 
+def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
+    if valeur_reelle == 0:
+        if valeur_estimee == 0:
+            return 0.0
+        else:
+            return None  # erreur non définie (division par zéro), à traiter à part
+    return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
+
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
     fichref = lire_fichier_benevole(fichier_benevole)
@@ -152,6 +160,13 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
         egal1 = (meilleur1 is not None and ref["nb_traversee_reel"] == meilleur1["nb_traversees"])
         egal2 = (meilleur2 is not None and ref["nb_traversee_reel"] == meilleur2["nb_traversees"])
 
+        erreur1 = None
+        erreur2 = None
+        if meilleur1 is not None:
+            erreur1 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur1["nb_traversees"])
+        if meilleur2 is not None:
+            erreur2 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur2["nb_traversees"])
+
         ligne_ref = ref.copy()
         ligne_ref["source"] = "Référence"
 
@@ -161,11 +176,13 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             if egal1:
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
+                ligne1["pourcentage_erreur"] = erreur1 
                 egaux.append(ligne1)
 
             if egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
+                ligne2["pourcentage_erreur"] = erreur2 
                 egaux.append(ligne2)
 
             egaux.append({})
@@ -177,11 +194,13 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             if meilleur1 is not None and not egal1:
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
+                ligne1["pourcentage_erreur"] = erreur1
                 diff.append(ligne1)
 
             if meilleur2 is not None and not egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
+                ligne2["pourcentage_erreur"] = erreur2
                 diff.append(ligne2)
 
             diff.append({})
@@ -196,7 +215,8 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
         "intersection",
         "source",
         "nb_traversee_reel",
-        "nb_traversees"
+        "nb_traversees",
+        "pourcentage_erreur"
     ]
     df_egaux = df_egaux[colonnes_voulues]
     df_diff = df_diff[colonnes_voulues]

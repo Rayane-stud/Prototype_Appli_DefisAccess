@@ -118,8 +118,8 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         rep=input("Avez vous un autre dossier existant avec lequel faire la comparaison ? (o/n)")
         if rep=="o":
             nom2=input("Veuillez donnée son nom seulement")
-            nom_fichier2="data/output/comparaisons/"+nom2+".csv"
-            comp.recuperation_comp(tab_croisement, nom, nom_fichier2)
+            nom_fichier2="data/raw/comparaisons/"+nom2+".csv"
+            comp.comparaison_code(tab_croisement, nom, nom_fichier2)
         else:
             print("Veuillez enregistrer alors un autre fichier avec la methode que vous voulez en utilisant le bon main")
 
@@ -192,7 +192,7 @@ def verifier_analyse_existante(ville: str) -> list:
 if __name__ == "__main__":
     # Demande le nom de la ville à analyser — .strip() supprime les espaces accidentels en début/fin
     while True:
-        ville = input("Nom de la ville à analyser : ").strip()
+        ville = input("Nom de la ville à analyser : ").strip().lower()
 
         # ── Vérification d'une analyse déjà existante ──────────────────────
         analyses_existantes = verifier_analyse_existante(ville)

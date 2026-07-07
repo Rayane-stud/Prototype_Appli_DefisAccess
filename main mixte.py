@@ -180,8 +180,8 @@ def main(rdv_lat: float, rdv_long: float, nb_equipes: int, ville: str):
         rep=input("Avez vous un autre dossier existant avec lequel faire la comparaison ? (o/n)")
         if rep=="o":
             nom2=input("Veuillez donnée son nom seulement")
-            nom_fichier2="data/output/comparaisons/"+nom2+".csv"
-            comp.recuperation_comp(tab_croisement, nom, nom_fichier2)
+            nom_fichier2="data/raw/comparaisons/"+nom2+".csv"
+            comp.comparaison_code(tab_croisement, nom, nom_fichier2)
         else:
             print("Veuillez enregistrer alors un autre fichier avec la methode que vous voulez en utilisant le bon main")
 

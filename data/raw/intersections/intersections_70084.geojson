@@ -1,0 +1,421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.961086003,
+          47.349383302
+        ]
+      },
+      "properties": {
+        "name": "Grande Rue D15 / Place du Champ de Foire",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.959752794,
+          47.345374317
+        ]
+      },
+      "properties": {
+        "name": "La Tounolle / Route de Bussières D66",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.956225,
+          47.346752297
+        ]
+      },
+      "properties": {
+        "name": "Route d'Étuz D15 / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.948024331,
+          47.349013907
+        ]
+      },
+      "properties": {
+        "name": "Route d'Étuz D15 / Rue Armand Peugeot",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.958778183,
+          47.346739567
+        ]
+      },
+      "properties": {
+        "name": "Route de Bussières D66 / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.959134057,
+          47.346209276
+        ]
+      },
+      "properties": {
+        "name": "Route de Bussières D66 / Rue de la Grande Fontaine",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.947512353,
+          47.348410348
+        ]
+      },
+      "properties": {
+        "name": "Rue Armand Peugeot / Rue Fred Lipmann",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.957750598,
+          47.346583767
+        ]
+      },
+      "properties": {
+        "name": "Rue de Barra / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.961158102,
+          47.348606047
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.954748248,
+          47.346691099
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Cerisaie / Route d'Étuz D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.953714903,
+          47.346757988
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grande Corvée / Route d'Étuz D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.957912234,
+          47.346491209
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Grande Fontaine / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.960897345,
+          47.349638175
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Graviolle / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.960545395,
+          47.349825611
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Graviolle / Rue des Planches",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.960078383,
+          47.348171058
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Grande Rue D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.961077301,
+          47.349369199
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Marne / Place du Champ de Foire",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.952947786,
+          47.346398727
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Sablière / Impasse des Pommiers",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.953638992,
+          47.346677436
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Sablière / Route d'Étuz D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.953698794,
+          47.346599844
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Sablière / Rue de la Tounolle",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.939802825,
+          47.344885579
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Sablière / Rue des Grands Prés",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.953820879,
+          47.346630302
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Tounolle / Route d'Étuz D15",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.942693108,
+          47.346211594
+        ]
+      },
+      "properties": {
+        "name": "Rue des Grands Prés / Rue de la Bruyere",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.958777802,
+          47.347476694
+        ]
+      },
+      "properties": {
+        "name": "Rue des Rochets / Rue de la Marne",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.961320407,
+          47.349521386
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin / Place du Champ de Foire",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.962244885,
+          47.349033696
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin / Rue de l'Église",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.948857099,
+          47.347761205
+        ]
+      },
+      "properties": {
+        "name": "Rue Frédéric Japy / Rue Fred Lipmann",
+        "context": "Boulot, Haute-Saône",
+        "citycode": "70084",
+        "depcode": "70"
+      }
+    }
+  ]
+}

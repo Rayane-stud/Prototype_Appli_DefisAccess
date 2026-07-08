@@ -566,7 +566,22 @@ def page_etape1():
                 logs_inter = InterLogger()
                 with st.spinner(f"Récupération des intersections de **{ville_inter}**…"):
                     with contextlib.redirect_stdout(logs_inter):
-                        fichiers = telecharger_intersections_ville(ville_inter, departements_preresolus=None)
+                        # 1. On récupère les codes enregistrés par la searchbox
+                        code_dept = st.session_state.get("code_dept_val")
+                        code_insee = st.session_state.get("code_insee_val")
+                        
+                        # 2. On prépare la variable de résolution
+                        # Si l'utilisateur a bien sélectionné une commune, on crée le tuple attendu
+                        if code_dept and code_insee:
+                            preresolus = [(code_dept, ville_inter, code_insee)]
+                        else:
+                            preresolus = None # Sécurité / Fallback au cas où
+                        
+                        # 3. On passe la liste à la fonction
+                        fichiers = telecharger_intersections_ville(
+                            ville_inter, 
+                            departements_preresolus=preresolus
+                        )
 
                 st.session_state["intersections_auto_ville"] = ville_inter
                 if fichiers:
@@ -578,7 +593,6 @@ def page_etape1():
                 else:
                     st.session_state["intersections_auto_echec"] = True
                     st.rerun()
-        else:
             _nom_perso = getattr(st.session_state.get("inter_geojson_path"), "name", "")
             st.info(f"📁 Fichier personnalisé utilisé : `{_nom_perso}`")
 

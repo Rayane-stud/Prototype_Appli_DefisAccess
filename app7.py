@@ -486,8 +486,28 @@ def page_etape1():
     else:
         ville_inter = commune_str.split(",")[0].strip()
 
-        # ── Option avancée, repliée : importer son propre fichier ────────────────────────
-        with st.expander("⚙️ Utiliser un fichier personnalisé (avancé)", expanded=False):
+        # ── Choix explicite du mode de récupération ───────────────────────────────────────
+        # demandé à l'utilisateur AVANT toute action, plutôt que de lancer le
+        # téléchargement automatique par défaut avec une option avancée
+        # cachée dans un expander (ancien comportement)
+        _modes_inter = ["Téléchargement automatique", "Importer mon propre fichier (avancé)"]
+        _mode_inter_persiste = st.session_state.get("mode_intersections_val", _modes_inter[0])
+        mode_intersections = st.radio(
+            "Comment récupérer les intersections ?",
+            options=_modes_inter,
+            index=_modes_inter.index(_mode_inter_persiste),
+            horizontal=True,
+            key="input_mode_intersections",
+        )
+        if mode_intersections != st.session_state.get("mode_intersections_val"):
+            # changement de mode : on efface l'état de la source précédente
+            # (fichier importé ou chemin auto-téléchargé) pour ne pas mélanger
+            # les deux — le mode nouvellement choisi repart de zéro
+            for _cle in ("inter_geojson_path", "inter_df_preview", "is_fichier_perso", "last_uploaded_name"):
+                st.session_state.pop(_cle, None)
+        st.session_state["mode_intersections_val"] = mode_intersections
+
+        if mode_intersections == "Importer mon propre fichier (avancé)":
             fichier_perso = st.file_uploader(
                 "Votre fichier d'intersections (.xlsx, .csv ou .geojson)",
                 type=["xlsx", "csv", "geojson"],
@@ -497,12 +517,12 @@ def page_etape1():
                 # 1. On mémorise de manière persistante (ne dépend plus du widget)
                 st.session_state["is_fichier_perso"] = True
                 st.session_state["last_uploaded_name"] = fichier_perso.name
-                
+
                 # 2. Sécurité : Pour éviter que le flux binaire ne meure au changement de page,
                 # on peut lire le contenu et le stocker dans un BytesIO persistant ou garder la source
                 st.session_state["inter_geojson_path"] = fichier_perso
 
-            # MODIFICATION ICI : On ne nettoie QUE si l'utilisateur a désemparé le fichier 
+            # MODIFICATION ICI : On ne nettoie QUE si l'utilisateur a désemparé le fichier
             # ALORS QU'IL EST ENCORE sur la page (le widget est visible à l'écran, donc sa clé existe)
             elif "uploader_intersections_manuel" in st.session_state and st.session_state["uploader_intersections_manuel"] is None:
                 if st.session_state.get("is_fichier_perso"):
@@ -512,8 +532,8 @@ def page_etape1():
                     st.session_state.pop("last_uploaded_name", None)
                     st.rerun()
 
-        # ── Mode automatique (par défaut) ─────────────────────────────────────────────────
-        if not st.session_state.get("is_fichier_perso"):
+        # ── Mode automatique ───────────────────────────────────────────────────────────────
+        if mode_intersections == "Téléchargement automatique":
             geojson_existant = trouver_geojson_existant(ville_inter)
 
             if geojson_existant is not None:
@@ -553,48 +573,57 @@ def page_etape1():
                     st.rerun()
 
             elif st.session_state.get("intersections_auto_ville") != ville_inter:
-                from src.telecharger_intersections import telecharger_intersections_ville
-                zone_logs_inter = st.empty()
+                # attend un clic explicite plutôt que de lancer le
+                # téléchargement dès l'affichage de la page
+                st.info(f"Aucune intersection en cache pour **{ville_inter}**.")
+                _telecharger_inter_btn = st.button(
+                    "📥 Télécharger les intersections", key="btn_telecharger_inter",
+                    type="primary", use_container_width=True,
+                )
+                if _telecharger_inter_btn:
+                    from src.telecharger_intersections import telecharger_intersections_ville
+                    zone_logs_inter = st.empty()
 
-                class InterLogger(io.StringIO):
-                    def write(self, texte):
-                        super().write(texte)
-                        lignes = self.getvalue().splitlines()
-                        zone_logs_inter.code("\n".join(lignes[-20:]) or "…", language="text")
-                        return len(texte)
+                    class InterLogger(io.StringIO):
+                        def write(self, texte):
+                            super().write(texte)
+                            lignes = self.getvalue().splitlines()
+                            zone_logs_inter.code("\n".join(lignes[-20:]) or "…", language="text")
+                            return len(texte)
 
-                logs_inter = InterLogger()
-                with st.spinner(f"Récupération des intersections de **{ville_inter}**…"):
-                    with contextlib.redirect_stdout(logs_inter):
-                        # 1. On récupère les codes enregistrés par la searchbox
-                        code_dept = st.session_state.get("code_dept_val")
-                        code_insee = st.session_state.get("code_insee_val")
-                        
-                        # 2. On prépare la variable de résolution
-                        # Si l'utilisateur a bien sélectionné une commune, on crée le tuple attendu
-                        if code_dept and code_insee:
-                            preresolus = [(code_dept, ville_inter, code_insee)]
-                        else:
-                            preresolus = None # Sécurité / Fallback au cas où
-                        
-                        # 3. On passe la liste à la fonction
-                        fichiers = telecharger_intersections_ville(
-                            ville_inter, 
-                            departements_preresolus=preresolus
-                        )
+                    logs_inter = InterLogger()
+                    with st.spinner(f"Récupération des intersections de **{ville_inter}**…"):
+                        with contextlib.redirect_stdout(logs_inter):
+                            # 1. On récupère les codes enregistrés par la searchbox
+                            code_dept = st.session_state.get("code_dept_val")
+                            code_insee = st.session_state.get("code_insee_val")
 
-                st.session_state["intersections_auto_ville"] = ville_inter
-                if fichiers:
-                    sauvegarder_index(ville_inter, Path(fichiers[0]))
-                    st.session_state["inter_geojson_path"] = fichiers[0]
-                    st.session_state.pop("inter_df_preview", None)
-                    st.session_state.pop("intersections_auto_echec", None)
-                    st.rerun()
-                else:
-                    st.session_state["intersections_auto_echec"] = True
-                    st.rerun()
+                            # 2. On prépare la variable de résolution
+                            # Si l'utilisateur a bien sélectionné une commune, on crée le tuple attendu
+                            if code_dept and code_insee:
+                                preresolus = [(code_dept, ville_inter, code_insee)]
+                            else:
+                                preresolus = None # Sécurité / Fallback au cas où
+
+                            # 3. On passe la liste à la fonction
+                            fichiers = telecharger_intersections_ville(
+                                ville_inter,
+                                departements_preresolus=preresolus
+                            )
+
+                    st.session_state["intersections_auto_ville"] = ville_inter
+                    if fichiers:
+                        sauvegarder_index(ville_inter, Path(fichiers[0]))
+                        st.session_state["inter_geojson_path"] = fichiers[0]
+                        st.session_state.pop("inter_df_preview", None)
+                        st.session_state.pop("intersections_auto_echec", None)
+                        st.rerun()
+                    else:
+                        st.session_state["intersections_auto_echec"] = True
+                        st.rerun()
+        elif st.session_state.get("is_fichier_perso"):
             _nom_perso = getattr(st.session_state.get("inter_geojson_path"), "name", "")
-            st.info(f"📁 Fichier personnalisé utilisé : `{_nom_perso}`")
+            st.success(f"✅ Fichier personnalisé utilisé : `{_nom_perso}`")
 
         # ── Filtre par combinaisons de types de voies (commun aux 3 modes) ───────────────
         if st.session_state.get("inter_geojson_path"):

@@ -13,3 +13,6 @@ data/output/
 # Caches Python
 **/__pycache__/
 *.pyc
+
+# Cache HTTP osmnx (réponses Overpass/OSM, régénéré automatiquement)
+cache/

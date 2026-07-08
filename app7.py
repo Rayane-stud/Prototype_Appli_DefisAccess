@@ -2193,7 +2193,7 @@ def page_etape4():
                                 caption=Path(_chemin_vi).parent.name,
                                 use_container_width=True,
                             )
-
+                            
     pied_de_page_navigation("etape4")
 
 

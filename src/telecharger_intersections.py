@@ -102,7 +102,9 @@ import gzip
 import json
 import os
 import pandas as pd
+from streamlit_searchbox import st_searchbox
 from pathlib import Path
+
 
 # URL du fichier GeoJSON compressé par département sur le serveur OpenStreetMap
 # {dept} sera remplacé par le numéro de département (ex: 94, 75, 2A, 971...)
@@ -755,6 +757,54 @@ def charger_en_dataframe(chemin_geojson: str) -> pd.DataFrame:
         print(f"  {len(df)} intersections après filtrage par type de voie.")
 
     return df
+
+
+def chercher_communes_api(search_term: str) -> list[tuple[str, dict]]:
+    """
+    Interroge l'API Géo Découpage Administratif de l'État Français.
+    
+    Args:
+        search_term (str): Chaîne de caractères tapée par l'utilisateur.
+        
+    Returns:
+        list[tuple[str, dict]]: Liste de suggestions sous forme (Texte_Affiché, Données_Internes)
+    """
+    # Optimisation : On ne requête pas l'API pour 1 seule lettre (évite le spam d'API et les faux positifs)
+    if not search_term or len(search_term) < 3:
+        return []
+    
+    # Construction de l'URL cible
+    # fields=nom,code,departement permet de limiter la taille de la réponse JSON au strict nécessaire
+    url = f"https://geo.api.gouv.fr/communes?nom={search_term}&limit=10&fields=nom,code,departement"
+    
+    try:
+        # Timeout court (3s) pour ne pas figer l'interface si l'API de l'État est ralentie
+        response = requests.get(url, timeout=3)
+        
+        if response.status_code == 200:
+            donnees = response.json()
+            suggestions = []
+            
+            for commune in donnees:
+                # Sécurité : On s'assure que la clé département existe bien (cas des communes spécifiques)
+                if 'departement' in commune:
+                    # Libellé clair pour l'utilisateur dans l'interface
+                    label = f"{commune['nom']} ({commune['departement']['code']} - {commune['departement']['nom']})"
+                    
+                    # Dictionnaire technique qui sera retourné au programme
+                    value = {
+                        "nom": commune['nom'],
+                        "code_insee": commune['code'],
+                        "code_dept": commune['departement']['code']
+                    }
+                    suggestions.append((label, value))
+            return suggestions
+            
+    except requests.exceptions.RequestException:
+        # En cas de coupure réseau ou crash de l'API, on retourne une liste vide proprement
+        return []
+        
+    return []
 
 
 # TESTS --------------------------------------------------------------------------------------------

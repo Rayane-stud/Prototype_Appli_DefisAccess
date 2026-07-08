@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.273631638,
+          49.097121086
+        ]
+      },
+      "properties": {
+        "name": "Bras du Clignon / Le Clignon",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.273741537,
+          49.10141784
+        ]
+      },
+      "properties": {
+        "name": "Chemin de l'Orme / Rue Principale D82",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.274308925,
+          49.100635805
+        ]
+      },
+      "properties": {
+        "name": "Impasse des Crochets / Rue Principale D82",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.275674249,
+          49.099983403
+        ]
+      },
+      "properties": {
+        "name": "Impasse Marcel Naude / Rue du Jeu d'Arc D871",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.274115665,
+          49.09978272
+        ]
+      },
+      "properties": {
+        "name": "Rue du Moulin du Vez / Rue Principale D82",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.27399617,
+          49.09956944
+        ]
+      },
+      "properties": {
+        "name": "Rue Principale D82 / Impasse des Roses",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.274302414,
+          49.099998523
+        ]
+      },
+      "properties": {
+        "name": "Rue Principale D82 / Rue du Jeu d'Arc D871",
+        "context": "Licy-Clignon, Aisne",
+        "citycode": "02428",
+        "depcode": "02"
+      }
+    }
+  ]
+}

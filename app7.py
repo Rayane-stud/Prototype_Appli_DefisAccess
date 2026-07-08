@@ -23,6 +23,8 @@ import plotly.graph_objects as go
 from streamlit_searchbox import st_searchbox
 from math import cos, radians, sin, pi
 from pathlib import Path
+import sys
+sys.path.append(str(Path(__file__).parent / "src"))
 
 from src.nettoyage import charger_intersections
 from src.proximite import (
@@ -268,6 +270,49 @@ def charger_intersections_quelconque(source, combos_selectionnes: list | None = 
         df = filtrer_par_combinaisons_voies(df, combos_selectionnes)
 
     return df
+
+
+def _joindre_nb_traversees_par_proximite(df_cible, df_pp, rayon_m: float = 30):
+    """
+    Rattache nb_traversees à chaque intersection de df_cible en cherchant la
+    ligne de df_pp la plus proche (dans un rayon donné), sans jamais supprimer
+    de ligne de df_cible.
+
+    Contrairement à comparer_coordonnees (conçue pour comparer des points
+    bruts un par un et qui supprime toute intersection sans correspondance),
+    df_pp est ici déjà agrégé par intersection (une ligne = une intersection
+    avec son nb_traversees final, ex: résultat de identification_PP.main()).
+    Les intersections de df_cible peuvent avoir été re-filtrées/fusionnées
+    depuis le calcul de df_pp, donc les coordonnées ne coïncident plus
+    exactement — d'où une recherche du plus proche voisin plutôt qu'une
+    jointure exacte.
+    """
+    from scipy.spatial import cKDTree
+
+    df_cible = df_cible.copy()
+    if df_pp.empty:
+        df_cible["nb_traversees"] = 0
+        return df_cible
+
+    lat0 = df_cible["latitude"].mean()
+    m_par_deg_lat = 111_320
+    m_par_deg_lon = 111_320 * cos(radians(lat0))
+
+    xy_cible = np.column_stack([
+        df_cible["longitude"].to_numpy() * m_par_deg_lon,
+        df_cible["latitude"].to_numpy() * m_par_deg_lat,
+    ])
+    xy_pp = np.column_stack([
+        df_pp["longitude"].to_numpy() * m_par_deg_lon,
+        df_pp["latitude"].to_numpy() * m_par_deg_lat,
+    ])
+
+    arbre = cKDTree(xy_pp)
+    distances, indices = arbre.query(xy_cible, k=1)
+
+    nb_traversees_pp = df_pp["nb_traversees"].to_numpy()[indices]
+    df_cible["nb_traversees"] = np.where(distances <= rayon_m, nb_traversees_pp, 0)
+    return df_cible
 
 
 def _rmtree_force(path):
@@ -914,7 +959,7 @@ def page_etape3():
     if not commune_str.strip():
         st.info("Saisissez d'abord le nom de la commune dans l'Étape 1.")
 
-    _options_pp = ["OSM (Overpass)", "Accidents (CSV)", "IA (YOLO — best.pt requis)"]
+    _options_pp = ["OSM + Accidents", "Accidents (CSV)", "IA (YOLO — best.pt requis)"]
     _methode_pp_persistee = st.session_state.get("methode_pp_val", _options_pp[0])
     methode_pp = st.radio(
         "Méthode de détection",
@@ -922,6 +967,11 @@ def page_etape3():
         index=_options_pp.index(_methode_pp_persistee),
         horizontal=True,
         key="input_methode_pp",
+        help=(
+            "OSM + Accidents combine les passages piétons répertoriés sur OpenStreetMap "
+            "(Overpass) et les accidents corporels impliquant un passage piéton (fichier "
+            "national local, aucun upload requis)."
+        ),
     )
     st.session_state["methode_pp_val"] = methode_pp
 
@@ -1001,23 +1051,54 @@ def page_etape3():
     if generer_pp_btn and commune_str.strip():
         ville_pp = commune_str.split(",")[0].strip()
 
-        if methode_pp == "OSM (Overpass)":
-            from src.identification_PP import get_osm_area_id, telecharger_passages_par_zone
-            with st.spinner(f"Interrogation d'OpenStreetMap pour **{ville_pp}**…"):
-                id_zone = get_osm_area_id(ville_pp)
-                if id_zone:
-                    df_pp = telecharger_passages_par_zone(id_zone, rayon_metres=25)
-                    if not df_pp.empty:
-                        st.session_state["df_pp"]      = df_pp
-                        st.session_state["pp_methode"] = "OSM"
-                        st.session_state["pp_commune"] = ville_pp
-                        st.toast(f"{len(df_pp)} intersections analysées via OSM.", icon="✅", duration="long")
-                    else:
-                        st.warning("Aucun passage piéton trouvé via OSM.")
-                        st.toast("Aucun passage piéton trouvé via OSM.", icon="⚠️", duration="long")
+        if methode_pp == "OSM + Accidents":
+            _inter_source_osm = st.session_state.get("inter_geojson_path")
+            _inter_prete_osm = bool(
+                _inter_source_osm
+                and (
+                    not _intersections_source_est_chemin(_inter_source_osm)
+                    or Path(_inter_source_osm).exists()
+                )
+            )
+            if not _inter_prete_osm:
+                st.error(
+                    "Générez d'abord les intersections (Étape 1) avant de lancer "
+                    "l'analyse OSM + Accidents."
+                )
+                st.toast("Intersections manquantes pour lancer l'analyse OSM + Accidents.", icon="⚠️", duration="long")
+            else:
+                from src.identification_PP import main as analyser_pp_osm_accidents
+
+                _combos_osm = st.session_state.get("combos_selectionnes", [])
+                df_inter_osm = charger_intersections_quelconque(_inter_source_osm, _combos_osm)
+
+                st.markdown("**Progression :**")
+                zone_logs_osm = st.empty()
+
+                class StreamlitLoggerOSM(io.StringIO):
+                    # redirige les print() de identification_PP.main (accidents,
+                    # puis OSM, puis fusion) vers l'UI
+                    def write(self, texte):
+                        super().write(texte)
+                        lignes = self.getvalue().splitlines()
+                        zone_logs_osm.code("\n".join(lignes[-25:]) or "…", language="text")
+                        return len(texte)
+
+                logs_osm = StreamlitLoggerOSM()
+                with st.spinner(f"Analyse OSM + Accidents pour **{ville_pp}**…"):
+                    with contextlib.redirect_stdout(logs_osm):
+                        df_pp = analyser_pp_osm_accidents(
+                            ville_pp, df_inter_osm, base_dir=Path(__file__).parent,
+                        )
+
+                if df_pp is None or df_pp.empty:
+                    st.warning(f"Aucun résultat OSM + Accidents pour '{ville_pp}'.")
+                    st.toast(f"Aucun résultat OSM + Accidents pour '{ville_pp}'.", icon="⚠️", duration="long")
                 else:
-                    st.error(f"Zone OSM introuvable pour '{ville_pp}'.")
-                    st.toast(f"Zone OSM introuvable pour '{ville_pp}'.", icon="❌", duration="long")
+                    st.session_state["df_pp"]      = df_pp
+                    st.session_state["pp_methode"] = "OSM"
+                    st.session_state["pp_commune"] = ville_pp
+                    st.toast(f"{len(df_pp)} intersections analysées via OSM + Accidents.", icon="✅", duration="long")
 
         elif methode_pp == "Accidents (CSV)":
             if accidents_file is None:
@@ -1167,6 +1248,7 @@ def page_etape3():
         with st.spinner("Préparation du tableau et des images…"):
             _m = st.session_state["pp_methode"]
             _c = st.session_state.get("pp_commune", "")
+            _m_affiche = "OSM + Accidents" if _m == "OSM" else _m
 
             if _m == "IA" and "df_pp" in st.session_state:
                 _df_pp_r = st.session_state["df_pp"]
@@ -1211,7 +1293,7 @@ def page_etape3():
 
             elif "df_pp" in st.session_state:
                 _df_pp_r = st.session_state["df_pp"]
-                st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m} pour {_c}.")
+                st.success(f"✅ **{len(_df_pp_r)} entrées PP** via {_m_affiche} pour {_c}.")
                 with st.expander(f"📋 Voir le tableau ({len(_df_pp_r):,} lignes)", expanded=False):
                     st.dataframe(_df_pp_r.head(15), use_container_width=True)
                     st.caption(f"{len(_df_pp_r)} lignes au total")
@@ -1768,7 +1850,17 @@ def page_etape4():
                     st.session_state["pp_commune"]    = _ville_actuelle
                     st.session_state["pp_ia_dossier"] = dossier_images
 
-            elif _pp_methode in ("OSM", "Accidents") and "df_pp" in st.session_state:
+            elif _pp_methode == "OSM" and "df_pp" in st.session_state:
+                # df_pp est déjà agrégé par intersection (identification_PP.main()) —
+                # jointure par proximité plutôt que comparer_coordonnees, qui
+                # traiterait à tort ces lignes comme des points bruts et
+                # supprimerait toute intersection sans correspondance à 30 m
+                # (les intersections ont pu être fusionnées/filtrées depuis
+                # l'Étape 3, ce qui décale légèrement leurs coordonnées)
+                df_pp_session = st.session_state["df_pp"]
+                df = _joindre_nb_traversees_par_proximite(df, df_pp_session)
+
+            elif _pp_methode == "Accidents" and "df_pp" in st.session_state:
                 from src.identification_PP import comparer_coordonnees
                 df_pp_session = st.session_state["df_pp"]
                 df = comparer_coordonnees(df_pp_session, df)
@@ -2038,6 +2130,69 @@ def page_etape4():
             use_container_width=True,
             key="dl_zip_final",
         )
+
+        # Uniquement pertinent pour la méthode IA : c'est la seule qui capture
+        # une image (annotée par YOLO) par intersection analysée — les autres
+        # méthodes (OSM, Accidents, Import) n'en génèrent aucune.
+        if _pp_methode_f == "IA":
+            st.subheader("🔍 Vérifier une détection IA")
+            st.caption(
+                "Collez les coordonnées d'une intersection depuis la colonne "
+                "'coordonnees' de la fiche Excel d'une équipe, pour voir l'image "
+                "que l'IA a analysée (avec ses détections annotées) et repérer d'éventuelles erreurs."
+            )
+            col_coords_vi, col_btn_vi = st.columns([3, 1])
+            with col_coords_vi:
+                _coords_vi = st.text_input(
+                    "Coordonnées (latitude,longitude)",
+                    key="input_coords_voir_image",
+                    placeholder="ex: 48.843520154,2.192857687",
+                )
+            with col_btn_vi:
+                st.write("")
+                _voir_image_btn = st.button(
+                    "🔍 Voir l'image", key="btn_voir_image", use_container_width=True,
+                )
+
+            if _voir_image_btn:
+                # importlib.reload : évite de devoir redémarrer tout le
+                # serveur Streamlit après une modification de voir_image.py —
+                # Streamlit ré-exécute app7.py à chaque interaction, mais le
+                # module déjà importé reste en cache (sys.modules) tant que le
+                # process ne redémarre pas, sinon (TypeError sur un paramètre
+                # ajouté, par exemple, alors que le code semble à jour sur disque)
+                import importlib
+                from src import voir_image as _mod_voir_image
+                importlib.reload(_mod_voir_image)
+                parser_coordonnees = _mod_voir_image.parser_coordonnees
+                trouver_image = _mod_voir_image.trouver_image
+                try:
+                    _lat_vi, _lon_vi = parser_coordonnees(_coords_vi.strip())
+                except ValueError as e:
+                    st.error(f"Coordonnées invalides : {e}")
+                else:
+                    # limité au dossier de LA génération en cours (pas toutes
+                    # les exécutions IA passées) : sinon une intersection déjà
+                    # analysée par le passé ressortirait une fois par ancienne
+                    # exécution, ce qui n'a aucun rapport avec la fiche affichée ici
+                    _dossier_vi = st.session_state.get("pp_ia_dossier")
+                    if not _dossier_vi:
+                        _images_vi = []
+                        st.warning(
+                            "Aucune image disponible pour cette génération (résultat IA "
+                            "importé depuis un fichier déjà agrégé, sans image capturée)."
+                        )
+                    else:
+                        _images_vi = trouver_image(_lat_vi, _lon_vi, dossier=_dossier_vi)
+                    if _dossier_vi and not _images_vi:
+                        st.warning(f"Aucune image trouvée pour ({_lat_vi:.5f}, {_lon_vi:.5f}).")
+                    else:
+                        for _chemin_vi in _images_vi:
+                            st.image(
+                                _chemin_vi,
+                                caption=Path(_chemin_vi).parent.name,
+                                use_container_width=True,
+                            )
 
     pied_de_page_navigation("etape4")
 

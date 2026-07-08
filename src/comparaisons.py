@@ -110,11 +110,11 @@ def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
             return None  # erreur non définie (division par zéro), à traiter à part
     return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
 
-
-def histogramme_erreurs_osm(fichier_benevole, fichier_osm, rayon=10):
+"""
+def histogramme_erreurs(fichier_benevole, fichier_source, nom_source, rayon=10):
 
     fichref = lire_fichier_benevole(fichier_benevole)
-    fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
+    fichier_src = pd.read_csv(fichier_source, sep=";", encoding="utf-8-sig")
 
     # Même nettoyage que dans comparaison_IRL
     fichref = (fichref.sort_values("traversee", ascending=False)
@@ -124,47 +124,47 @@ def histogramme_erreurs_osm(fichier_benevole, fichier_osm, rayon=10):
     fichref["longitude"] = pd.to_numeric(fichref["longitude"])
 
     fichref = fichref.to_dict("records")
-    fich1 = fichier1.to_dict("records")
+    fich_src = fichier_src.to_dict("records")
 
     resultats = []
 
     for ref in fichref:
-        meilleur1 = None
-        for i in fich1:
+        meilleur = None
+        for i in fich_src:
             dist = geodesic(
                 (ref["latitude"], ref["longitude"]),
                 (i["latitude"], i["longitude"])
             ).meters
             if dist < rayon:
-                meilleur1 = i
+                meilleur = i
 
-        # On ne garde que les points où une correspondance OSM existe
-        if meilleur1 is not None:
-            ecart = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+        # On ne garde que les points où une correspondance existe
+        if meilleur is not None:
+            ecart = meilleur["nb_traversees"] - ref["nb_traversee_reel"]
             resultats.append({
                 "nb_traversee_reel": ref["nb_traversee_reel"],
-                "nb_traversees_osm": meilleur1["nb_traversees"],
+                "nb_traversees_source": meilleur["nb_traversees"],
                 "ecart": ecart
             })
 
     df = pd.DataFrame(resultats)
 
     if df.empty:
-        print("Aucune correspondance trouvée entre OSM et le fichier de référence.")
+        print(f"Aucune correspondance trouvée entre {nom_source} et le fichier de référence.")
         return df
 
     # --- Graphique 1 : distribution des écarts (sur/sous-estimation) ---
     plt.figure(figsize=(10, 6))
     largeur_bins = range(int(df["ecart"].min()) - 1, int(df["ecart"].max()) + 2)
     plt.hist(df["ecart"], bins=largeur_bins, edgecolor="black", align="left")
-    plt.xlabel("Écart (nb_traversées OSM − nb_traversée réelle)")
+    plt.xlabel(f"Écart (nb_traversées {nom_source} − nb_traversée réelle)")
     plt.ylabel("Nombre d'intersections")
-    plt.title("Distribution des écarts entre OSM et le terrain")
+    plt.title(f"Distribution des écarts entre {nom_source} et le terrain")
     plt.axvline(0, color="red", linestyle="--", label="Aucune erreur")
     plt.legend()
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
-    plt.savefig("data/output/comparaisons/histogramme_ecarts_osm.png")
+    plt.savefig(f"data/output/comparaisons/histogramme_ecarts_{nom_source}.png")
     plt.show()
 
     # --- Graphique 2 : nombre d'erreurs par valeur réelle de traversées ---
@@ -175,14 +175,64 @@ def histogramme_erreurs_osm(fichier_benevole, fichier_osm, rayon=10):
     plt.figure(figsize=(10, 6))
     plt.bar(synthese["nb_traversee_reel"], synthese["nb_erreurs"], color="orange", edgecolor="black")
     plt.xlabel("Nombre de traversées réel (terrain)")
-    plt.ylabel("Nombre d'erreurs OSM")
-    plt.title("Nombre d'erreurs OSM par nombre de traversées réel")
+    plt.ylabel(f"Nombre d'erreurs {nom_source}")
+    plt.title(f"Nombre d'erreurs {nom_source} par nombre de traversées réel")
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
-    plt.savefig("data/output/comparaisons/erreurs_par_traversee_osm.png")
+    plt.savefig(f"data/output/comparaisons/erreurs_par_traversee_{nom_source}.png")
     plt.show()
 
     return df
+"""
+
+def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source"):
+
+    # Lecture des deux feuilles et fusion
+    df_egaux = pd.read_excel(fichier_sortie, sheet_name="Egaux")
+    df_diff = pd.read_excel(fichier_sortie, sheet_name="Differents")
+    df = pd.concat([df_egaux, df_diff], ignore_index=True)
+
+    # On garde uniquement les lignes de la source demandée (ex: "Fichier IA")
+    df_source = df[df[colonne_source] == nom_source].copy()
+
+    # On retire les lignes sans écart valide (ex: lignes vides séparatrices)
+    df_source = df_source.dropna(subset=["ecart"])
+
+    if df_source.empty:
+        print(f"Aucune donnée trouvée pour la source '{nom_source}' dans {fichier_sortie}.")
+        return df_source
+
+    # --- Graphique 1 : distribution des écarts (sur/sous-estimation) ---
+    plt.figure(figsize=(10, 6))
+    largeur_bins = range(int(df_source["ecart"].min()) - 1, int(df_source["ecart"].max()) + 2)
+    plt.hist(df_source["ecart"], bins=largeur_bins, edgecolor="black", align="left")
+    plt.xlabel(f"Écart (nb_traversées {nom_source} − nb_traversée réelle)")
+    plt.ylabel("Nombre d'intersections")
+    plt.title(f"Distribution des écarts entre {nom_source} et le terrain")
+    plt.axvline(0, color="red", linestyle="--", label="Aucune erreur")
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(f"data/output/comparaisons/histogramme_ecarts_{nom_source}.png")
+    plt.show()
+
+    # --- Graphique 2 : nombre d'erreurs par valeur réelle de traversées ---
+    df_source["est_une_erreur"] = df_source["ecart"] != 0
+    synthese = (df_source.groupby("nb_traversee_reel")["est_une_erreur"]
+                          .agg(["sum", "count"]).reset_index())
+    synthese.columns = ["nb_traversee_reel", "nb_erreurs", "nb_total"]
+
+    plt.figure(figsize=(10, 6))
+    plt.bar(synthese["nb_traversee_reel"], synthese["nb_erreurs"], color="orange", edgecolor="black")
+    plt.xlabel("Nombre de traversées réel (terrain)")
+    plt.ylabel(f"Nombre d'erreurs {nom_source}")
+    plt.title(f"Nombre d'erreurs {nom_source} par nombre de traversées réel")
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(f"data/output/comparaisons/erreurs_par_traversee_{nom_source}.png")
+    plt.show()
+
+    return df_source
 
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
@@ -251,13 +301,15 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             if egal1:
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
-                ligne1["pourcentage_erreur"] = erreur1 
+                ligne1["pourcentage_erreur"] = erreur1
+                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                 egaux.append(ligne1)
 
             if egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
-                ligne2["pourcentage_erreur"] = erreur2 
+                ligne2["pourcentage_erreur"] = erreur2
+                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                 egaux.append(ligne2)
 
             egaux.append({})
@@ -270,12 +322,14 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
                 ligne1["pourcentage_erreur"] = erreur1
+                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                 diff.append(ligne1)
 
             if meilleur2 is not None and not egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
                 ligne2["pourcentage_erreur"] = erreur2
+                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                 diff.append(ligne2)
 
             diff.append({})
@@ -291,7 +345,8 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
         "source",
         "nb_traversee_reel",
         "nb_traversees",
-        "pourcentage_erreur"
+        "pourcentage_erreur",
+        "ecart"
     ]
     df_egaux = df_egaux[colonnes_voulues]
     df_diff = df_diff[colonnes_voulues]
@@ -310,14 +365,16 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             sheet_name="Differents",
             index=False
         )
-    return
+    return fichier_sortie
 
 
-ville=input("Veuillez donnée le nom de la ville :").lower()
+ville = input("Veuillez donnée le nom de la ville :").lower()
 
-fichier_benevole="data/raw/comparaisons/fiches_excell_montrouge_equipe3.csv"
-nom_fichier1="data/raw/comparaisons/"+ville+"pp_osm.csv"
-nom_fichier2="data/raw/comparaisons/"+ville+"IA.csv"
+fichier_benevole = "data/raw/comparaisons/fiches_excell_montrouge_equipe3.csv"
+nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
+nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 
-comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
-histogramme_erreurs_osm(fichier_benevole, nom_fichier1)
+fichier_sortie = comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+
+histogramme_depuis_sortie(fichier_sortie, "Fichier OSM")
+histogramme_depuis_sortie(fichier_sortie, "Fichier IA")

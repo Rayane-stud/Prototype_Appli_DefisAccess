@@ -316,7 +316,7 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             sheet_name="Differents",
             index=False
         )
-    return
+    return fichier_sortie
 
 
 ville = input("Veuillez donnée le nom de la ville :").lower()
@@ -325,7 +325,10 @@ fichier_benevole = "data/raw/comparaisons/fiches_excell_montrouge_equipe3.csv"
 nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
 nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 
-comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+fichier_sortie=comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+
+#appel la fonction qui fait l'histogramme avec (fichier_sortie)
+
 
 histogramme_erreurs(fichier_benevole, nom_fichier1, "OSM")
 histogramme_erreurs(fichier_benevole, nom_fichier2, "IA")

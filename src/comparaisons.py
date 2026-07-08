@@ -8,6 +8,7 @@ avec index, pour indiquer quel fichier sort quelle ligne
 import pandas as pd
 from geopy.distance import geodesic
 import io
+import matplotlib.pyplot as plt
 
 
 def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
@@ -108,6 +109,80 @@ def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
         else:
             return None  # erreur non définie (division par zéro), à traiter à part
     return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
+
+
+def histogramme_erreurs_osm(fichier_benevole, fichier_osm, rayon=10):
+
+    fichref = lire_fichier_benevole(fichier_benevole)
+    fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
+
+    # Même nettoyage que dans comparaison_IRL
+    fichref = (fichref.sort_values("traversee", ascending=False)
+                       .drop_duplicates(subset=["coordonnees"], keep="first"))
+    fichref[["latitude", "longitude"]] = fichref["coordonnees"].astype(str).str.split(",", expand=True)
+    fichref["latitude"] = pd.to_numeric(fichref["latitude"])
+    fichref["longitude"] = pd.to_numeric(fichref["longitude"])
+
+    fichref = fichref.to_dict("records")
+    fich1 = fichier1.to_dict("records")
+
+    resultats = []
+
+    for ref in fichref:
+        meilleur1 = None
+        for i in fich1:
+            dist = geodesic(
+                (ref["latitude"], ref["longitude"]),
+                (i["latitude"], i["longitude"])
+            ).meters
+            if dist < rayon:
+                meilleur1 = i
+
+        # On ne garde que les points où une correspondance OSM existe
+        if meilleur1 is not None:
+            ecart = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+            resultats.append({
+                "nb_traversee_reel": ref["nb_traversee_reel"],
+                "nb_traversees_osm": meilleur1["nb_traversees"],
+                "ecart": ecart
+            })
+
+    df = pd.DataFrame(resultats)
+
+    if df.empty:
+        print("Aucune correspondance trouvée entre OSM et le fichier de référence.")
+        return df
+
+    # --- Graphique 1 : distribution des écarts (sur/sous-estimation) ---
+    plt.figure(figsize=(10, 6))
+    largeur_bins = range(int(df["ecart"].min()) - 1, int(df["ecart"].max()) + 2)
+    plt.hist(df["ecart"], bins=largeur_bins, edgecolor="black", align="left")
+    plt.xlabel("Écart (nb_traversées OSM − nb_traversée réelle)")
+    plt.ylabel("Nombre d'intersections")
+    plt.title("Distribution des écarts entre OSM et le terrain")
+    plt.axvline(0, color="red", linestyle="--", label="Aucune erreur")
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig("data/output/comparaisons/histogramme_ecarts_osm.png")
+    plt.show()
+
+    # --- Graphique 2 : nombre d'erreurs par valeur réelle de traversées ---
+    df["est_une_erreur"] = df["ecart"] != 0
+    synthese = df.groupby("nb_traversee_reel")["est_une_erreur"].agg(["sum", "count"]).reset_index()
+    synthese.columns = ["nb_traversee_reel", "nb_erreurs", "nb_total"]
+
+    plt.figure(figsize=(10, 6))
+    plt.bar(synthese["nb_traversee_reel"], synthese["nb_erreurs"], color="orange", edgecolor="black")
+    plt.xlabel("Nombre de traversées réel (terrain)")
+    plt.ylabel("Nombre d'erreurs OSM")
+    plt.title("Nombre d'erreurs OSM par nombre de traversées réel")
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig("data/output/comparaisons/erreurs_par_traversee_osm.png")
+    plt.show()
+
+    return df
 
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
@@ -245,3 +320,4 @@ nom_fichier1="data/raw/comparaisons/"+ville+"pp_osm.csv"
 nom_fichier2="data/raw/comparaisons/"+ville+"IA.csv"
 
 comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+histogramme_erreurs_osm(fichier_benevole, nom_fichier1)

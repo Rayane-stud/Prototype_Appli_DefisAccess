@@ -110,7 +110,7 @@ def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
             return None  # erreur non définie (division par zéro), à traiter à part
     return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
 
-
+"""
 def histogramme_erreurs(fichier_benevole, fichier_source, nom_source, rayon=10):
 
     fichref = lire_fichier_benevole(fichier_benevole)
@@ -183,6 +183,7 @@ def histogramme_erreurs(fichier_benevole, fichier_source, nom_source, rayon=10):
     plt.show()
 
     return df
+"""
 
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
@@ -251,13 +252,15 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
             if egal1:
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
-                ligne1["pourcentage_erreur"] = erreur1 
+                ligne1["pourcentage_erreur"] = erreur1
+                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                 egaux.append(ligne1)
 
             if egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
-                ligne2["pourcentage_erreur"] = erreur2 
+                ligne2["pourcentage_erreur"] = erreur2
+                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                 egaux.append(ligne2)
 
             egaux.append({})
@@ -270,12 +273,14 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
                 ligne1 = meilleur1.copy()
                 ligne1["source"] = nom1
                 ligne1["pourcentage_erreur"] = erreur1
+                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                 diff.append(ligne1)
 
             if meilleur2 is not None and not egal2:
                 ligne2 = meilleur2.copy()
                 ligne2["source"] = nom2
                 ligne2["pourcentage_erreur"] = erreur2
+                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                 diff.append(ligne2)
 
             diff.append({})
@@ -291,7 +296,8 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
         "source",
         "nb_traversee_reel",
         "nb_traversees",
-        "pourcentage_erreur"
+        "pourcentage_erreur",
+        "ecart"
     ]
     df_egaux = df_egaux[colonnes_voulues]
     df_diff = df_diff[colonnes_voulues]

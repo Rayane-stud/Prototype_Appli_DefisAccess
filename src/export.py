@@ -115,6 +115,8 @@ def ajouter_col_notation_terrain(df):
     # ETAPE 1 : on fait une copie du tableau pour ne pas modifier l'original
     df_terrain = df.copy()
 
+    df_terrain["nb_traversee_reel"] = None
+
     # ETAPE 2 : on ajoute les 4 colonnes de saisie avec None comme valeur par defaut
     # None en Python = "." en Stata (valeur manquante)
     # le benevole les remplira a la main sur le terrain

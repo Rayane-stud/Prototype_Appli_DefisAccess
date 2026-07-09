@@ -109,7 +109,7 @@ def sauvegarder_index(ville: str, chemin: Path):
     index_path = INTERSECTIONS_DIR / "index.json"
     index = {}
     if index_path.exists():
-        with open(index_path) as f:
+        with open(index_path,encoding='utf-8') as f:
             index = json.load(f)
     index[ville.lower().strip()] = str(chemin)
     with open(index_path, "w") as f:

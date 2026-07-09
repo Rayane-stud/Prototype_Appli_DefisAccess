@@ -241,7 +241,11 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
 
     # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
-    fichref = (fichref.sort_values("traversee", ascending=False).drop_duplicates(subset=["coordonnees"], keep="first"))
+    fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
+    idx = fichref.groupby("coordonnees")["traversee"].idxmax()
+    fichref = fichref.loc[idx].reset_index(drop=True)
+    print("nb_traversee_reel" in fichref.columns)
+
     fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
     fichref["latitude"] = pd.to_numeric(fichref["latitude"])
     fichref["longitude"] = pd.to_numeric(fichref["longitude"])

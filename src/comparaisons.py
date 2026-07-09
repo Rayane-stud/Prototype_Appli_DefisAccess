@@ -9,6 +9,7 @@ import pandas as pd
 from geopy.distance import geodesic
 import io
 import matplotlib.pyplot as plt
+import os
 
 
 def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
@@ -85,22 +86,15 @@ def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     return
 
 def lire_fichier_benevole(fichier_benevole):
-    with open(fichier_benevole, encoding="utf-8-sig") as f:
-        lignes_brutes = f.readlines()
+    feuilles = pd.read_excel(
+        fichier_benevole,
+        sheet_name=None,
+        engine="openpyxl"
+    )
+    for df in feuilles.values():
+        df.columns = df.columns.str.strip()
 
-    header = lignes_brutes[0].strip()
-    
-    lignes_nettoyees = [header]
-    for ligne in lignes_brutes[1:]:
-        ligne = ligne.strip()
-        if ligne.startswith('"') and ligne.endswith('"'):
-            ligne = ligne[1:-1]
-        ligne = ligne.replace('""', '"')
-        lignes_nettoyees.append(ligne)
-
-    contenu_propre = "\n".join(lignes_nettoyees)
-    fichref = pd.read_csv(io.StringIO(contenu_propre))
-    return fichref
+    return feuilles
 
 def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
     if valeur_reelle == 0:
@@ -152,107 +146,106 @@ def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source
 
 def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     
-    fichref = lire_fichier_benevole(fichier_benevole)
+    feuilles = lire_fichier_benevole(fichier_benevole)
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
-
-    # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
-    fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
-    idx = fichref.groupby("coordonnees")["traversee"].idxmax()
-    fichref = fichref.loc[idx].reset_index(drop=True)
-    print("nb_traversee_reel" in fichref.columns)
-
-    fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
-    fichref["latitude"] = pd.to_numeric(fichref["latitude"])
-    fichref["longitude"] = pd.to_numeric(fichref["longitude"])
-
-
-    fichref=fichref.to_dict("records")
-    fich1=fichier1.copy().to_dict("records")
-    fich2=fichier2.to_dict("records")
-    
-    nom1 = "Fichier OSM"
-    nom2 = "Fichier IA"
-
     egaux = []
     diff= []
 
-    for ref in fichref:
-        meilleur1 = None
-        meilleur2 = None
+    for _, fichref in feuilles.items():
 
-        # Recherche de l'intersection dans le fichier osm
-        for i in fich1:
-            dist = geodesic(
-                (ref["latitude"], ref["longitude"]),
-                (i["latitude"], i["longitude"])
-                ).meters
+    # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
+        fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
+        idx = fichref.groupby("coordonnees")["traversee"].idxmax()
+        fichref = fichref.loc[idx].reset_index(drop=True)
+        print("nb_traversee_reel" in fichref.columns)
 
-            if dist < rayon:
-                meilleur1 = i
+        fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
+        fichref["latitude"] = pd.to_numeric(fichref["latitude"])
+        fichref["longitude"] = pd.to_numeric(fichref["longitude"])
 
-        # Recherche de l'intersection dans le fichier IA
-        for j in fich2:
-            dist = geodesic(
-                (ref["latitude"], ref["longitude"]),
-                (j["latitude"], j["longitude"])
-            ).meters
+        fichref=fichref.to_dict("records")
+        fich1=fichier1.copy().to_dict("records")
+        fich2=fichier2.to_dict("records")
+    
+        nom1 = "Fichier OSM"
+        nom2 = "Fichier IA"
 
-            if dist < rayon:
-                meilleur2 = j
+        for ref in fichref:
+            meilleur1 = None
+            meilleur2 = None
 
-        # Comparaison des nombres de traversées
-        egal1 = (meilleur1 is not None and ref["nb_traversee_reel"] == meilleur1["nb_traversees"])
-        egal2 = (meilleur2 is not None and ref["nb_traversee_reel"] == meilleur2["nb_traversees"])
+            # Recherche de l'intersection dans le fichier osm
+            for i in fich1:
+                dist = geodesic(
+                    (ref["latitude"], ref["longitude"]),
+                    (i["latitude"], i["longitude"])
+                    ).meters
 
-        erreur1 = None
-        erreur2 = None
-        if meilleur1 is not None:
-            erreur1 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur1["nb_traversees"])
-        if meilleur2 is not None:
-            erreur2 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur2["nb_traversees"])
+                if dist < rayon:
+                    meilleur1 = i
 
-        ligne_ref = ref.copy()
-        ligne_ref["source"] = "Référence"
+            # Recherche de l'intersection dans le fichier IA
+            for j in fich2:
+                dist = geodesic(
+                    (ref["latitude"], ref["longitude"]),
+                    (j["latitude"], j["longitude"])
+                    ).meters
 
-        # EGAUX
-        if egal1 or egal2:
-            egaux.append(ligne_ref)
-            if egal1:
-                ligne1 = meilleur1.copy()
-                ligne1["source"] = nom1
-                ligne1["pourcentage_erreur"] = erreur1
-                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
-                egaux.append(ligne1)
+                if dist < rayon:
+                    meilleur2 = j
 
-            if egal2:
-                ligne2 = meilleur2.copy()
-                ligne2["source"] = nom2
-                ligne2["pourcentage_erreur"] = erreur2
-                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
-                egaux.append(ligne2)
+            # Comparaison des nombres de traversées
+            egal1 = (meilleur1 is not None and ref["nb_traversee_reel"] == meilleur1["nb_traversees"])
+            egal2 = (meilleur2 is not None and ref["nb_traversee_reel"] == meilleur2["nb_traversees"])
 
-            egaux.append({})
+            erreur1 = None
+            erreur2 = None
+            if meilleur1 is not None:
+                erreur1 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur1["nb_traversees"])
+            if meilleur2 is not None:
+                erreur2 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur2["nb_traversees"])
 
+            ligne_ref = ref.copy()
+            ligne_ref["source"] = "Référence"
 
-        # DIFFERENTS
-        if (not egal1) or (not egal2):
-            diff.append(ligne_ref)
-            if meilleur1 is not None and not egal1:
-                ligne1 = meilleur1.copy()
-                ligne1["source"] = nom1
-                ligne1["pourcentage_erreur"] = erreur1
-                ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
-                diff.append(ligne1)
+            # EGAUX
+            if egal1 or egal2:
+                egaux.append(ligne_ref)
+                if egal1:
+                    ligne1 = meilleur1.copy()
+                    ligne1["source"] = nom1
+                    ligne1["pourcentage_erreur"] = erreur1
+                    ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    egaux.append(ligne1)
 
-            if meilleur2 is not None and not egal2:
-                ligne2 = meilleur2.copy()
-                ligne2["source"] = nom2
-                ligne2["pourcentage_erreur"] = erreur2
-                ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
-                diff.append(ligne2)
+                if egal2:
+                    ligne2 = meilleur2.copy()
+                    ligne2["source"] = nom2
+                    ligne2["pourcentage_erreur"] = erreur2
+                    ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    egaux.append(ligne2)
 
-            diff.append({})
+                egaux.append({})
+
+            # DIFFERENTS
+            if (not egal1) or (not egal2):
+                diff.append(ligne_ref)
+                if meilleur1 is not None and not egal1:
+                    ligne1 = meilleur1.copy()
+                    ligne1["source"] = nom1
+                    ligne1["pourcentage_erreur"] = erreur1
+                    ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    diff.append(ligne1)
+
+                if meilleur2 is not None and not egal2:
+                    ligne2 = meilleur2.copy()
+                    ligne2["source"] = nom2
+                    ligne2["pourcentage_erreur"] = erreur2
+                    ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    diff.append(ligne2)
+
+                diff.append({})
 
     
     df_egaux = pd.DataFrame(egaux)
@@ -290,7 +283,7 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
 
 ville = input("Veuillez donnée le nom de la ville :").lower()
 
-fichier_benevole = "data/raw/comparaisons/fiches_excell_montrouge_equipe3.csv"
+fichier_benevole = "data/raw/comparaisons/fiches_excell.xlsx"
 nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
 nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 

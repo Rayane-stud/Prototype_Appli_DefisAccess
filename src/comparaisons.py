@@ -9,6 +9,7 @@ import pandas as pd
 from geopy.distance import geodesic
 import io
 import matplotlib.pyplot as plt
+import os
 
 
 def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):

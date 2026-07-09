@@ -155,6 +155,10 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichref = lire_fichier_benevole(fichier_benevole)
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
+    egaux = []
+    diff= []
+
+    for _, fichref in feuilles.items():
 
     # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
     fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
@@ -167,9 +171,9 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichref["longitude"] = pd.to_numeric(fichref["longitude"])
 
 
-    fichref=fichref.to_dict("records")
-    fich1=fichier1.copy().to_dict("records")
-    fich2=fichier2.to_dict("records")
+        fichref=fichref.to_dict("records")
+        fich1=fichier1.copy().to_dict("records")
+        fich2=fichier2.to_dict("records")
     
     nom1 = "Fichier OSM"
     nom2 = "Fichier IA"

@@ -1,88 +1,88 @@
-equipe,coordonnees,intersection,ordre,traversee,bande_de_guidage,nb_traversee_reel,bande_eveil,feu_parlant,commentaire
-"3,""48.81203335,2.311339709"",Rue Hippolyte Mulin / Rue Molière / Rue Molière / Rue Hippolyte Mulin,1,1,,,,,"
-"3,""48.81203335,2.311339709"",Rue Hippolyte Mulin / Rue Molière / Rue Molière / Rue Hippolyte Mulin,1,2,0,4,8,0,"
-"3,""48.811149599,2.310528701"",Rue de Chateaubriand / Rue Hippolyte Mulin,2,1,,,,,"
-"3,""48.811149599,2.310528701"",Rue de Chateaubriand / Rue Hippolyte Mulin,2,2,,,,,"
-"3,""48.811149599,2.310528701"",Rue de Chateaubriand / Rue Hippolyte Mulin,2,3,,,,,"
-"3,""48.811149599,2.310528701"",Rue de Chateaubriand / Rue Hippolyte Mulin,2,4,0,2,4,0,"
-"3,""48.81146975,2.30974778"",Rue de Chateaubriand / Rue Raoul Pugno,3,1,,,,,"
-"3,""48.81146975,2.30974778"",Rue de Chateaubriand / Rue Raoul Pugno,3,2,0,3,6,0,"
-"3,""48.811828321,2.308924202"",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,1,,,,,"
-"3,""48.811828321,2.308924202"",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,2,,,,,"
-"3,""48.811828321,2.308924202"",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,3,,,,,"
-"3,""48.811828321,2.308924202"",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,4,0,3,5,0,Le 4eme pp ancien n'existe plus (ancienne trace)"
-"3,""48.811454572,2.308585216"",Rue du Poitou / Rue Maurice Arnoux D59,5,1,,,,,"
-"3,""48.811454572,2.308585216"",Rue du Poitou / Rue Maurice Arnoux D59,5,2,0,1,2,0,Même chose que précédemment "
-"3,""48.810623383,2.308700918"",Avenue Marx Dormoy D62 / Avenue de la République D63 / Rue Raoul Pugno / Avenue Marx Dormoy D62,6,1,0,1,2,0,"
-"3,""48.810671617,2.307909791"",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,1,,,,,"
-"3,""48.810671617,2.307909791"",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,2,,,,,"
-"3,""48.810671617,2.307909791"",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,3,,,,,"
-"3,""48.810671617,2.307909791"",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,4,0,4,8,4,"
-"3,""48.813037968,2.308236108"",Rue Jules Chèret / Rue Jules Guesde / Rue Jules Guesde / Rue Jules Chèret,10,1,0,1,2,0,"
-"3,""48.813037968,2.308236108"",Rue Jules Chèret / Rue Jules Guesde / Rue Jules Guesde / Rue Jules Chèret,10,2,,,,,"
-"3,""48.812635394,2.309508522"",Rue Jules Guesde / Rue Maurice Arnoux D59 / Rue Molière / Rue Jules Guesde / Rue Molière / Rue Maurice Arnoux D59,11,1,,,,,"
-"3,""48.812635394,2.309508522"",Rue Jules Guesde / Rue Maurice Arnoux D59 / Rue Molière / Rue Jules Guesde / Rue Molière / Rue Maurice Arnoux D59,11,2,0,4,8,3,1 feu parlant non fonctionnel"
-"3,""48.813148521,2.309895862"",Rue Corneille / Rue Maurice Arnoux D59,12,1,0,1,2,0,"
-"3,""48.813148521,2.309895862"",Rue Corneille / Rue Maurice Arnoux D59,12,2,,,,,"
-"3,""48.81498414,2.309241754"",Avenue Jean Jaurès / Rue Henri Barbusse / Rue Henri Barbusse / Avenue Jean Jaurès,15,1,,,,,"
-"3,""48.81498414,2.309241754"",Avenue Jean Jaurès / Rue Henri Barbusse / Rue Henri Barbusse / Avenue Jean Jaurès,15,2,0,4,8,4,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,1,,,,,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,2,,,,,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,3,,,,,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,4,0,4,8,0,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,5,,,,,"
-"3,""48.815467706,2.308273871"",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,6,,,,,"
-"3,""48.816157156,2.30878737"",Rue Arthur Auger / Avenue Verdier D61,17,1,,,,,"
-"3,""48.816157156,2.30878737"",Rue Arthur Auger / Avenue Verdier D61,17,2,0,2,4,0,2 bande éveil abîmé "
-"3,""48.816218423,2.307047581"",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,1,,,,,"
-"3,""48.816218423,2.307047581"",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,2,,,,,"
-"3,""48.816218423,2.307047581"",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,3,,,,,"
-"3,""48.816218423,2.307047581"",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,4,0,5,8,5,"
-"3,""48.817502273,2.30805937"",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,1,,,,,"
-"3,""48.817502273,2.30805937"",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,2,,,,,"
-"3,""48.817502273,2.30805937"",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,3,,,,,"
-"3,""48.817502273,2.30805937"",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,4,,,,,"
-"3,""48.817502273,2.30805937"",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,5,0,5,11,5,1 manquante"
-"3,""48.81382772,2.307231173"",Rue Arthur Auger / Avenue Jean Jaurès,20,1,,,,,"
-"3,""48.81382772,2.307231173"",Rue Arthur Auger / Avenue Jean Jaurès,20,2,0,2,4,2,"
-"3,""48.813581497,2.306820598"",Rue Jules Guesde / Avenue Jean Jaurès,21,1,,,,,"
-"3,""48.813581497,2.306820598"",Rue Jules Guesde / Avenue Jean Jaurès,21,2,,,,,"
-"3,""48.813581497,2.306820598"",Rue Jules Guesde / Avenue Jean Jaurès,21,3,0,3,6,3,"
-"3,""48.812699252,2.305319812"",Rue du Poitou / Avenue Jean Jaurès,23,1,0,3,2,0,"
-"3,""48.813555513,2.304787333"",Rue Roger Salengro / Avenue de la Marne,24,1,,,,,"
-"3,""48.813555513,2.304787333"",Rue Roger Salengro / Avenue de la Marne,24,2,,,,,"
-"3,""48.813555513,2.304787333"",Rue Roger Salengro / Avenue de la Marne,24,3,0,3,6,0,"
-"3,""48.814157024,2.30529868"",Rue Jules Guesde / Avenue de la Marne,25,1,,,,,"
-"3,""48.814157024,2.30529868"",Rue Jules Guesde / Avenue de la Marne,25,2,0,3,5,3,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,1,,,,,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,2,,,,,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,3,,,,,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,4,,,,,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,5,,,,,"
-"3,""48.811962549,2.303413703"",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,6,,3,6,,Compte la 27 également"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,1,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,2,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,3,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,4,0,4,0,0,""On ne sait pas comment il en trouve 8, il compte peut être la 26 et la 28 ( toute la zone en travaux)"""
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,5,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,6,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,7,,,,,"
-"3,""48.811613048,2.303193338"",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,8,,,,,"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,1,0,1,0,1,(Tout est en travaux)"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,2,,,,,"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,3,,,,,"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,4,,,,,"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,5,,,,,"
-"3,""48.811148798,2.302748118"",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,6,,,,,"
-"3,""48.812537804,2.302147628"",Rue Germain Dardan / Rue Chopin,29,1,0,1,2,0,"
-"3,""48.812537804,2.302147628"",Rue Germain Dardan / Rue Chopin,29,2,,,,,"
-"3,""48.812537804,2.302147628"",Rue Germain Dardan / Rue Chopin,29,3,,,,,"
-"3,""48.812846615,2.301586733"",Rue Germain Dardan / Avenue Pierre Brossolette D906 / Rue Germain Dardan / Rue Étienne Dolet,30,1,0,3,2,2,"
-"3,""48.811981488,2.300801906"",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,1,,,,,"
-"3,""48.811981488,2.300801906"",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,2,,,,,"
-"3,""48.811981488,2.300801906"",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,3,0,3,6,2,"
-"3,""48.811981488,2.300801906"",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,4,,,,,"
-"3,""48.811447791,2.300160817"",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,1,,,,,"
-"3,""48.811447791,2.300160817"",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,2,0,2,7,1,"
-"3,""48.811447791,2.300160817"",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,3,,,,,"
-"3,""48.811447791,2.300160817"",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,4,,,,,"
+equipe,coordonnees,intersection,ordre,traversee,nb_traversee_reel,bande_de_guidage,bande_eveil,feu_parlant,commentaire
+3,"48.81203335,2.311339709",Rue Hippolyte Mulin / Rue Molière / Rue Molière / Rue Hippolyte Mulin,1,1,,,,,
+3,"48.81203335,2.311339709",Rue Hippolyte Mulin / Rue Molière / Rue Molière / Rue Hippolyte Mulin,1,2,4,0,8,0,
+3,"48.811149599,2.310528701",Rue de Chateaubriand / Rue Hippolyte Mulin,2,1,,,,,
+3,"48.811149599,2.310528701",Rue de Chateaubriand / Rue Hippolyte Mulin,2,2,,,,,
+3,"48.811149599,2.310528701",Rue de Chateaubriand / Rue Hippolyte Mulin,2,3,,,,,
+3,"48.811149599,2.310528701",Rue de Chateaubriand / Rue Hippolyte Mulin,2,4,2,0,4,0,
+3,"48.81146975,2.30974778",Rue de Chateaubriand / Rue Raoul Pugno,3,1,,,,,
+3,"48.81146975,2.30974778",Rue de Chateaubriand / Rue Raoul Pugno,3,2,3,0,6,0,
+3,"48.811828321,2.308924202",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,1,,,,,
+3,"48.811828321,2.308924202",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,2,,,,,
+3,"48.811828321,2.308924202",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,3,,,,,
+3,"48.811828321,2.308924202",Rue de Chateaubriand / Rue Maurice Arnoux D59 / Rue Roger Salengro / Rue Maurice Arnoux D59,4,4,3,0,5,0,Le 4eme pp ancien n'existe plus (ancienne trace)
+3,"48.811454572,2.308585216",Rue du Poitou / Rue Maurice Arnoux D59,5,1,,,,,
+3,"48.811454572,2.308585216",Rue du Poitou / Rue Maurice Arnoux D59,5,2,1,0,2,0,Même chose que précédemment 
+3,"48.810623383,2.308700918",Avenue Marx Dormoy D62 / Avenue de la République D63 / Rue Raoul Pugno / Avenue Marx Dormoy D62,6,1,1,0,2,0,
+3,"48.810671617,2.307909791",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,1,,,,,
+3,"48.810671617,2.307909791",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,2,,,,,
+3,"48.810671617,2.307909791",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,3,,,,,
+3,"48.810671617,2.307909791",Rue Maurice Arnoux D59 / Avenue Marx Dormoy D62,7,4,4,0,8,4,
+3,"48.813037968,2.308236108",Rue Jules Chèret / Rue Jules Guesde / Rue Jules Guesde / Rue Jules Chèret,10,1,,,,,
+3,"48.813037968,2.308236108",Rue Jules Chèret / Rue Jules Guesde / Rue Jules Guesde / Rue Jules Chèret,10,2,1,0,2,0,
+3,"48.812635394,2.309508522",Rue Jules Guesde / Rue Maurice Arnoux D59 / Rue Molière / Rue Jules Guesde / Rue Molière / Rue Maurice Arnoux D59,11,1,,,,,
+3,"48.812635394,2.309508522",Rue Jules Guesde / Rue Maurice Arnoux D59 / Rue Molière / Rue Jules Guesde / Rue Molière / Rue Maurice Arnoux D59,11,2,4,0,8,3,1 feu parlant non fonctionnel
+3,"48.813148521,2.309895862",Rue Corneille / Rue Maurice Arnoux D59,12,1,,,,,
+3,"48.813148521,2.309895862",Rue Corneille / Rue Maurice Arnoux D59,12,2,1,0,2,0,
+3,"48.81498414,2.309241754",Avenue Jean Jaurès / Rue Henri Barbusse / Rue Henri Barbusse / Avenue Jean Jaurès,15,1,,,,,
+3,"48.81498414,2.309241754",Avenue Jean Jaurès / Rue Henri Barbusse / Rue Henri Barbusse / Avenue Jean Jaurès,15,2,4,0,8,4,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,1,,,,,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,2,,,,,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,3,,,,,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,4,,,,,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,5,,,,,
+3,"48.815467706,2.308273871",Rue Arthur Auger / Rue Henri Barbusse / Rue Arthur Auger / Rue Marcel Sembat / Rue Marcel Sembat / Rue Arthur Auger / Rue Marcel Sembat / Rue Henri Barbusse,16,6,4,0,8,2,
+3,"48.816157156,2.30878737",Rue Arthur Auger / Avenue Verdier D61,17,1,,,,,
+3,"48.816157156,2.30878737",Rue Arthur Auger / Avenue Verdier D61,17,2,2,0,4,0,2 bande éveil abîmé 
+3,"48.816218423,2.307047581",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,1,,,,,
+3,"48.816218423,2.307047581",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,2,,,,,
+3,"48.816218423,2.307047581",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,3,,,,,
+3,"48.816218423,2.307047581",Avenue de la Marne / Avenue Verdier D61 / Rue Marcel Sembat / Avenue de la Marne / Rue Marcel Sembat / Avenue Verdier D61,18,4,5,0,8,5,
+3,"48.817502273,2.30805937",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,1,,,,,
+3,"48.817502273,2.30805937",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,2,,,,,
+3,"48.817502273,2.30805937",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,3,,,,,
+3,"48.817502273,2.30805937",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,4,,,,,
+3,"48.817502273,2.30805937",Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Rue Camille Pelletan / Avenue du 12 Février 1934 D61E / Avenue de la Marne / Avenue du 12 Février 1934 D61E / Avenue Pierre Brossolette D906 / Avenue du 12 Février 1934 D61E / Rue Camille Pelletan / Rue Camille Pelletan / Avenue du 12 Février 1934,19,5,5,0,11,5,1 manquante
+3,"48.81382772,2.307231173",Rue Arthur Auger / Avenue Jean Jaurès,20,1,,,,,
+3,"48.81382772,2.307231173",Rue Arthur Auger / Avenue Jean Jaurès,20,2,2,0,4,2,
+3,"48.813581497,2.306820598",Rue Jules Guesde / Avenue Jean Jaurès,21,1,,,,,
+3,"48.813581497,2.306820598",Rue Jules Guesde / Avenue Jean Jaurès,21,2,,,,,
+3,"48.813581497,2.306820598",Rue Jules Guesde / Avenue Jean Jaurès,21,3,3,0,6,3,
+3,"48.812699252,2.305319812",Rue du Poitou / Avenue Jean Jaurès,23,1,3,0,2,0,
+3,"48.813555513,2.304787333",Rue Roger Salengro / Avenue de la Marne,24,1,,,,,
+3,"48.813555513,2.304787333",Rue Roger Salengro / Avenue de la Marne,24,2,,,,,
+3,"48.813555513,2.304787333",Rue Roger Salengro / Avenue de la Marne,24,3,3,0,6,0,
+3,"48.814157024,2.30529868",Rue Jules Guesde / Avenue de la Marne,25,1,,,,,
+3,"48.814157024,2.30529868",Rue Jules Guesde / Avenue de la Marne,25,2,3,0,5,3,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,1,,,,,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,2,,,,,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,3,,,,,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,4,,,,,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,5,,,,,
+3,"48.811962549,2.303413703",Avenue de la Marne / Rue Germain Dardan / Rue Germain Dardan / Avenue de la Marne,26,6,3,,6,,Compte la 27 également
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,1,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,2,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,3,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,4,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,5,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,6,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,7,,,,,
+3,"48.811613048,2.303193338",Avenue de la Marne / Avenue Jean Jaurès D63A / Avenue Jean Jaurès / Avenue de la Marne / Rue Chopin / Avenue Jean Jaurès D63A,27,8,4,0,0,0,"On ne sait pas comment il en trouve 8, il compte peut être la 26 et la 28 ( toute la zone en travaux)"
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,1,,,,,
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,2,,,,,
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,3,,,,,
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,4,,,,,
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,5,,,,,
+3,"48.811148798,2.302748118",Avenue Jean Jaurès D63A / Avenue de la République / Avenue Jean Jaurès D63A / Avenue Marx Dormoy D62 / Avenue Marx Dormoy D62 / Avenue Jean Jaurès D63A,28,6,1,0,0,1,(Tout est en travaux)
+3,"48.812537804,2.302147628",Rue Germain Dardan / Rue Chopin,29,1,,,,,
+3,"48.812537804,2.302147628",Rue Germain Dardan / Rue Chopin,29,2,,,,,
+3,"48.812537804,2.302147628",Rue Germain Dardan / Rue Chopin,29,3,1,0,2,0,
+3,"48.812846615,2.301586733",Rue Germain Dardan / Avenue Pierre Brossolette D906 / Rue Germain Dardan / Rue Étienne Dolet,30,1,3,0,2,2,
+3,"48.811981488,2.300801906",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,1,,,,,
+3,"48.811981488,2.300801906",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,2,,,,,
+3,"48.811981488,2.300801906",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,3,,,,,
+3,"48.811981488,2.300801906",Avenue Marx Dormoy D62 / Avenue Pierre Brossolette D906 / Avenue Marx Dormoy D62 / Rue Marc Séguin,31,4,3,0,6,2,
+3,"48.811447791,2.300160817",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,1,,,,,
+3,"48.811447791,2.300160817",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,2,,,,,
+3,"48.811447791,2.300160817",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,3,,,,,
+3,"48.811447791,2.300160817",Avenue de Paris D906 / Avenue Pierre Brossolette D906 / Avenue de Paris D906 / Boulevard Camélinat D61A / Avenue Pierre Brossolette D906 / Avenue de Paris / Avenue Pierre Brossolette D906 / Boulevard Camélinat D61A,32,4,2,0,7,1,

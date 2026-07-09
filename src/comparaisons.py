@@ -110,82 +110,10 @@ def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
             return None  # erreur non définie (division par zéro), à traiter à part
     return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
 
-"""
-def histogramme_erreurs(fichier_benevole, fichier_source, nom_source, rayon=10):
-
-    fichref = lire_fichier_benevole(fichier_benevole)
-    fichier_src = pd.read_csv(fichier_source, sep=";", encoding="utf-8-sig")
-
-    # Même nettoyage que dans comparaison_IRL
-    fichref = (fichref.sort_values("traversee", ascending=False)
-                       .drop_duplicates(subset=["coordonnees"], keep="first"))
-    fichref[["latitude", "longitude"]] = fichref["coordonnees"].astype(str).str.split(",", expand=True)
-    fichref["latitude"] = pd.to_numeric(fichref["latitude"])
-    fichref["longitude"] = pd.to_numeric(fichref["longitude"])
-
-    fichref = fichref.to_dict("records")
-    fich_src = fichier_src.to_dict("records")
-
-    resultats = []
-
-    for ref in fichref:
-        meilleur = None
-        for i in fich_src:
-            dist = geodesic(
-                (ref["latitude"], ref["longitude"]),
-                (i["latitude"], i["longitude"])
-            ).meters
-            if dist < rayon:
-                meilleur = i
-
-        # On ne garde que les points où une correspondance existe
-        if meilleur is not None:
-            ecart = meilleur["nb_traversees"] - ref["nb_traversee_reel"]
-            resultats.append({
-                "nb_traversee_reel": ref["nb_traversee_reel"],
-                "nb_traversees_source": meilleur["nb_traversees"],
-                "ecart": ecart
-            })
-
-    df = pd.DataFrame(resultats)
-
-    if df.empty:
-        print(f"Aucune correspondance trouvée entre {nom_source} et le fichier de référence.")
-        return df
-
-    # --- Graphique 1 : distribution des écarts (sur/sous-estimation) ---
-    plt.figure(figsize=(10, 6))
-    largeur_bins = range(int(df["ecart"].min()) - 1, int(df["ecart"].max()) + 2)
-    plt.hist(df["ecart"], bins=largeur_bins, edgecolor="black", align="left")
-    plt.xlabel(f"Écart (nb_traversées {nom_source} − nb_traversée réelle)")
-    plt.ylabel("Nombre d'intersections")
-    plt.title(f"Distribution des écarts entre {nom_source} et le terrain")
-    plt.axvline(0, color="red", linestyle="--", label="Aucune erreur")
-    plt.legend()
-    plt.grid(axis="y", alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(f"data/output/comparaisons/histogramme_ecarts_{nom_source}.png")
-    plt.show()
-
-    # --- Graphique 2 : nombre d'erreurs par valeur réelle de traversées ---
-    df["est_une_erreur"] = df["ecart"] != 0
-    synthese = df.groupby("nb_traversee_reel")["est_une_erreur"].agg(["sum", "count"]).reset_index()
-    synthese.columns = ["nb_traversee_reel", "nb_erreurs", "nb_total"]
-
-    plt.figure(figsize=(10, 6))
-    plt.bar(synthese["nb_traversee_reel"], synthese["nb_erreurs"], color="orange", edgecolor="black")
-    plt.xlabel("Nombre de traversées réel (terrain)")
-    plt.ylabel(f"Nombre d'erreurs {nom_source}")
-    plt.title(f"Nombre d'erreurs {nom_source} par nombre de traversées réel")
-    plt.grid(axis="y", alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(f"data/output/comparaisons/erreurs_par_traversee_{nom_source}.png")
-    plt.show()
-
-    return df
-"""
-
 def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source"):
+
+    dossier_sortie = "data/output/comparaisons"
+    os.makedirs(dossier_sortie, exist_ok=True)
 
     # Lecture des deux feuilles et fusion
     df_egaux = pd.read_excel(fichier_sortie, sheet_name="Egaux")
@@ -202,7 +130,9 @@ def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source
         print(f"Aucune donnée trouvée pour la source '{nom_source}' dans {fichier_sortie}.")
         return df_source
 
-    # --- Graphique 1 : distribution des écarts (sur/sous-estimation) ---
+    # --- Graphique : distribution des écarts (sur/sous-estimation) ---
+    chemin_hist = os.path.join(dossier_sortie, f"histogramme_ecarts_{nom_source}.png")
+
     plt.figure(figsize=(10, 6))
     largeur_bins = range(int(df_source["ecart"].min()) - 1, int(df_source["ecart"].max()) + 2)
     plt.hist(df_source["ecart"], bins=largeur_bins, edgecolor="black", align="left")
@@ -213,24 +143,10 @@ def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source
     plt.legend()
     plt.grid(axis="y", alpha=0.3)
     plt.tight_layout()
-    plt.savefig(f"data/output/comparaisons/histogramme_ecarts_{nom_source}.png")
+    plt.savefig(chemin_hist, dpi=150, bbox_inches="tight")
+    print(f"Histogramme sauvegardé : {chemin_hist}")
     plt.show()
-
-    # --- Graphique 2 : nombre d'erreurs par valeur réelle de traversées ---
-    df_source["est_une_erreur"] = df_source["ecart"] != 0
-    synthese = (df_source.groupby("nb_traversee_reel")["est_une_erreur"]
-                          .agg(["sum", "count"]).reset_index())
-    synthese.columns = ["nb_traversee_reel", "nb_erreurs", "nb_total"]
-
-    plt.figure(figsize=(10, 6))
-    plt.bar(synthese["nb_traversee_reel"], synthese["nb_erreurs"], color="orange", edgecolor="black")
-    plt.xlabel("Nombre de traversées réel (terrain)")
-    plt.ylabel(f"Nombre d'erreurs {nom_source}")
-    plt.title(f"Nombre d'erreurs {nom_source} par nombre de traversées réel")
-    plt.grid(axis="y", alpha=0.3)
-    plt.tight_layout()
-    plt.savefig(f"data/output/comparaisons/erreurs_par_traversee_{nom_source}.png")
-    plt.show()
+    plt.close()
 
     return df_source
 
@@ -241,7 +157,11 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
 
     # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
-    fichref = (fichref.sort_values("traversee", ascending=False).drop_duplicates(subset=["coordonnees"], keep="first"))
+    fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
+    idx = fichref.groupby("coordonnees")["traversee"].idxmax()
+    fichref = fichref.loc[idx].reset_index(drop=True)
+    print("nb_traversee_reel" in fichref.columns)
+
     fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
     fichref["latitude"] = pd.to_numeric(fichref["latitude"])
     fichref["longitude"] = pd.to_numeric(fichref["longitude"])

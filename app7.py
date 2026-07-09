@@ -22,6 +22,7 @@ import streamlit as st
 import plotly.graph_objects as go
 from streamlit_searchbox import st_searchbox
 from math import cos, radians, sin, pi
+import xml.etree.ElementTree as ET
 from pathlib import Path
 import sys
 sys.path.append(str(Path(__file__).parent / "src"))
@@ -34,7 +35,7 @@ from src.proximite import (
     assigner_equipes,
 )
 from src.routage import route_toutes_equipes2
-from src.export import export_final_equipes
+from src.export import export_final_equipes, generer_kml_global_une_colonne
 from src.identification_PM import (
     get_code_insee_api,
     get_equipements_gouv,
@@ -122,16 +123,28 @@ def trouver_geojson_existant(ville: str) -> Path | None:
 
     # Priorité 1 : index.json (survit au refresh, O(1))
     if index_path.exists():
-        with open(index_path) as f:
-            index = json.load(f)
+        # SI LE FICHIER EST VIDE (0 octet), ON ÉVITE LE CRASH
+        if index_path.stat().st_size == 0:
+            index = {}
+        else:
+            try:
+                # LECTURE SÉCURISÉE AVEC ENCODAGE UTF-8
+                with open(index_path, "r", encoding="utf-8", errors="replace") as f:
+                    index = json.load(f)
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                # SI LE FICHIER EST CORROMPU, ON NE PLANTE PAS
+                index = {}
+                
         chemin = index.get(ville_norm)
+
+
         if chemin:
             p = Path(chemin)
             if p.exists():
                 return p
             else:
                 del index[ville_norm]
-                with open(index_path, "w") as f:
+                with open(index_path, "w", encoding="utf-8") as f:
                     json.dump(index, f, ensure_ascii=False, indent=2)
 
     # Priorité 2 : fallback API (première fois uniquement)
@@ -2115,14 +2128,31 @@ def page_etape4():
             st.caption(f"Méthode passages piétons : {_pp_label}")
 
         st.subheader("📥 Téléchargement")
+
+        # --- AJOUT KML : Génération du fichier KML juste avant de faire le ZIP ---
+        # Note : On récupère teams_dict défini un peu plus haut dans votre code (Ligne 757)
+        nom_kml_généré = "carte_globale_intersections.kml"
+        if 'teams_dict' in locals() and teams_dict:
+            generer_kml_global_une_colonne(teams_dict, nom_fichier_sortie=nom_kml_généré)
+        # ------------------------------------------------------------------------
+
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
+            #  Inclusion de vos fichiers Excel classiques
             for fpath in _output_files_f:
                 zf.write(fpath, arcname=Path(fpath).name)
+            
+            # --- AJOUT KML : On glisse le fichier KML à l'intérieur du ZIP ---
+            # from pathlib import Path ==> erreure  car ne doit pas exister que localement
+            if Path(nom_kml_généré).exists():
+                zf.write(nom_kml_généré, arcname=nom_kml_généré)
+            # -----------------------------------------------------------------
+
         zip_buffer.seek(0)
 
+        # Bouton principal qui télécharge maintenant le ZIP contenant les Excel ET le KML
         st.download_button(
-            label=f"📦 Télécharger les {len(_output_files_f)} feuilles terrain (.zip)",
+            label=f"📦 Télécharger les {len(_output_files_f)} feuilles terrain + Carte My Maps (.zip)",
             data=zip_buffer,
             file_name=f"defiaccess_{_ville_f.lower().replace(' ', '_')}.zip",
             mime="application/zip",
@@ -2130,6 +2160,19 @@ def page_etape4():
             use_container_width=True,
             key="dl_zip_final",
         )
+
+        # --- AJOUT KML OPTIONNEL : Un deuxième bouton si l'utilisateur veut SEULEMENT le KML ---
+        if Path(nom_kml_généré).exists():
+            with open(nom_kml_généré, "rb") as kml_file:
+                st.download_button(
+                    label="🌐 Télécharger uniquement le fichier KML pour Google My Maps",
+                    data=kml_file,
+                    file_name="carte_globale_intersections.kml",
+                    mime="application/vnd.google-earth.kml+xml",
+                    use_container_width=True,
+                    key="dl_kml_only"
+                )
+        # ----------------------------------------------------------------------------------------
 
         # Uniquement pertinent pour la méthode IA : c'est la seule qui capture
         # une image (annotée par YOLO) par intersection analysée — les autres
@@ -2193,7 +2236,7 @@ def page_etape4():
                                 caption=Path(_chemin_vi).parent.name,
                                 use_container_width=True,
                             )
-                            
+
     pied_de_page_navigation("etape4")
 
 

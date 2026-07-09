@@ -109,10 +109,10 @@ def sauvegarder_index(ville: str, chemin: Path):
     index_path = INTERSECTIONS_DIR / "index.json"
     index = {}
     if index_path.exists():
-        with open(index_path,encoding='utf-8') as f:
+        with open(index_path,encoding='utf-8',errors="replace") as f:
             index = json.load(f)
     index[ville.lower().strip()] = str(chemin)
-    with open(index_path, "w") as f:
+    with open(index_path, "w", encoding='utf-8',errors="replace") as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
 
 
@@ -144,7 +144,7 @@ def trouver_geojson_existant(ville: str) -> Path | None:
                 return p
             else:
                 del index[ville_norm]
-                with open(index_path, "w", encoding="utf-8") as f:
+                with open(index_path, "w", encoding="utf-8",errors="replace") as f:
                     json.dump(index, f, ensure_ascii=False, indent=2)
 
     # Priorité 2 : fallback API (première fois uniquement)

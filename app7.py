@@ -96,7 +96,13 @@ yaml_configs = load_yaml_configs()
 COMBINAISONS_VOIES = generer_combinaisons_voies(TYPES_VOIES_COMBO)
 
 # Dossier où telecharger_intersections.py sauvegarde les GeoJSON filtrés
-INTERSECTIONS_DIR = Path("intersections")
+INTERSECTIONS_DIR1 = Path("intersections")
+
+# ▲ Après : On pointe dynamiquement vers le dossier data du projet GitHub
+INTERSECTIONS_DIR = Path(__file__).parent / "data" / "raw" / "intersections"
+
+# Sécurité : Crée le dossier s'il n'existe pas encore sur le serveur
+INTERSECTIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def chemin_geojson_commune(code_insee: str) -> Path:
@@ -109,9 +115,16 @@ def sauvegarder_index(ville: str, chemin: Path):
     index_path = INTERSECTIONS_DIR / "index.json"
     index = {}
     if index_path.exists():
-        with open(index_path,encoding='utf-8',errors="replace") as f:
-            index = json.load(f)
-    index[ville.lower().strip()] = str(chemin)
+        try:
+            with open(index_path,encoding='utf-8',errors="replace") as f:
+                index = json.load(f)
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            index = {}
+            
+    # AVANT : index[ville.lower().strip()] = str(chemin)
+    # MODIFICATION : On ne stocke QUE le nom du fichier (ex: "intersections_94002.geojson")
+    index[ville.lower().strip()] = chemin.name
+
     with open(index_path, "w", encoding='utf-8',errors="replace") as f:
         json.dump(index, f, ensure_ascii=False, indent=2)
 
@@ -139,7 +152,9 @@ def trouver_geojson_existant(ville: str) -> Path | None:
 
 
         if chemin:
-            p = Path(chemin)
+            # MODIFICATION : On reconstruit le chemin complet sur le Cloud
+            p = INTERSECTIONS_DIR / chemin           
+            # AVANT  : p = Path(chemin)
             if p.exists():
                 return p
             else:

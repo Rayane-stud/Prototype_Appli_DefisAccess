@@ -1,0 +1,2773 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236739646,
+          46.885527755
+        ]
+      },
+      "properties": {
+        "name": "Allée du Bois de la Porte / Rue du Bois de la Porte",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232389275,
+          46.889552548
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Gare / Avenue de la Liberté D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232378232,
+          46.889552654
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Liberté D147 / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233688297,
+          46.888302225
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Liberté D147 / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.238866516,
+          46.89398783
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Platanes D28 / Allée du Souvenir Français",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236744468,
+          46.892197695
+        ]
+      },
+      "properties": {
+        "name": "Avenue des Platanes D28 / Chemin du Paradis",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.263264304,
+          46.88835693
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Brosse / Route de Pierrefitte",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.230143829,
+          46.892274174
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Combe / Chemin de Maunouet",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229854774,
+          46.891200759
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Combe / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23432021,
+          46.891612506
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Fontaine / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.214716396,
+          46.908578283
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Fontaine / Rue du Tilleul",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.204848243,
+          46.874364568
+        ]
+      },
+      "properties": {
+        "name": "Chemin de La Noue / Route de Monteil",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.247166251,
+          46.900994319
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Piscine / Chemin de la Rivière",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.243921327,
+          46.89725027
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Piscine / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236619684,
+          46.895062223
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Plaine des Moulins / Impasse des Chênes",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236370797,
+          46.894345536
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Plaine des Moulins / Impasse des Chevreuils",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.202951349,
+          46.889424827
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Pompe / Ruisseau de l'Étang Fourreau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.249099984,
+          46.900097073
+        ]
+      },
+      "properties": {
+        "name": "Chemin de la Rivière / Rue du Fief",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232964793,
+          46.891546158
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Maunouet / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.226314704,
+          46.889930208
+        ]
+      },
+      "properties": {
+        "name": "Chemin de Vaudoré / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.199457684,
+          46.886357463
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Cosses / Route de Parthenay D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.199476195,
+          46.886359317
+        ]
+      },
+      "properties": {
+        "name": "Chemin des Cosses / Rue du Regain",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.193514907,
+          46.904083905
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Clos / Route de Saumur D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.196905122,
+          46.904274861
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Clos / Rue de l'Ebeaupin",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25217322,
+          46.900156664
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Cormier / Route de Coulonges Thouarsais D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.253441721,
+          46.899443826
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Cormier / Route de Pressigny",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.263757036,
+          46.88760229
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Grand Pré / Route de Pierrefitte",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.203610205,
+          46.886969268
+        ]
+      },
+      "properties": {
+        "name": "Chemin du Lac / Rue du Regain",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.227941244,
+          46.885360738
+        ]
+      },
+      "properties": {
+        "name": "Chemin Rural de la Digue / Route de Bouillé D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234373165,
+          46.889424152
+        ]
+      },
+      "properties": {
+        "name": "Impasse de l'Espérance / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233158435,
+          46.898959241
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Seillereau / Rue de Seillereau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.237376298,
+          46.897040678
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Thouars / Chemin de la Plaine des Moulins",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.237355072,
+          46.897078483
+        ]
+      },
+      "properties": {
+        "name": "Impasse de Thouars / Rue des Quatre Vents",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.243958714,
+          46.886945035
+        ]
+      },
+      "properties": {
+        "name": "Le Thouaret / Ruisseau de la Joyette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234000094,
+          46.890702782
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Hôtel de Ville / Rue de l'Hôtel de Ville",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234041226,
+          46.890318572
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Hôtel de Ville / Rue de la Poste",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233648651,
+          46.890263219
+        ]
+      },
+      "properties": {
+        "name": "Place de l'Hôtel de Ville / Rue du Puits",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232557592,
+          46.885303815
+        ]
+      },
+      "properties": {
+        "name": "Place des Tilleuls / Route de Glénay D143",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23282487,
+          46.889057698
+        ]
+      },
+      "properties": {
+        "name": "Place du 14 Juillet / Avenue de la Liberté D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233347754,
+          46.887766365
+        ]
+      },
+      "properties": {
+        "name": "Place du 14 Juillet / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233055458,
+          46.887441016
+        ]
+      },
+      "properties": {
+        "name": "Route de Bouillé D28 / Route de Glénay D143",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233066786,
+          46.887464711
+        ]
+      },
+      "properties": {
+        "name": "Route de Bouillé D28 / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.249104353,
+          46.900083255
+        ]
+      },
+      "properties": {
+        "name": "Route de Chaffaud / Chemin de la Rivière",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.249262685,
+          46.89859218
+        ]
+      },
+      "properties": {
+        "name": "Route de Chaffaud / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.24910973,
+          46.900085698
+        ]
+      },
+      "properties": {
+        "name": "Route de Chaffaud / Rue du Fief",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.249328405,
+          46.898606749
+        ]
+      },
+      "properties": {
+        "name": "Route de Chaffaud / Rue du Rondereau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236662238,
+          46.892167898
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Avenue des Platanes D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235596997,
+          46.892904259
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Chemin de la Plaine des Moulins",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236699064,
+          46.892183076
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Chemin du Paradis",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.230311694,
+          46.899890289
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Rue de Marsais",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.231271291,
+          46.898531968
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Rue de Seillereau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233783105,
+          46.895325005
+        ]
+      },
+      "properties": {
+        "name": "Route de Conquenuche / Rue des Quatre Vents",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.250371996,
+          46.899147703
+        ]
+      },
+      "properties": {
+        "name": "Route de Coulonges Thouarsais D28 / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233071318,
+          46.88746393
+        ]
+      },
+      "properties": {
+        "name": "Route de Glénay D143 / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.245768345,
+          46.897843049
+        ]
+      },
+      "properties": {
+        "name": "Route de la Brosse / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.207116033,
+          46.873772638
+        ]
+      },
+      "properties": {
+        "name": "Route de Monteil / Route de Niort D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.204382268,
+          46.874738044
+        ]
+      },
+      "properties": {
+        "name": "Route de Monteil / Rue de La Motte",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.20714723,
+          46.873868917
+        ]
+      },
+      "properties": {
+        "name": "Route de Niort D3938 / Route de Niort D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.206011454,
+          46.874860976
+        ]
+      },
+      "properties": {
+        "name": "Route de Niort D3938 / Rue de La Chapelle",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.205197077,
+          46.875584515
+        ]
+      },
+      "properties": {
+        "name": "Route de Niort D3938 / Rue du Four",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.204807695,
+          46.876236468
+        ]
+      },
+      "properties": {
+        "name": "Route de Niort D3938 / Rue du Ruisseau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198387541,
+          46.889548124
+        ]
+      },
+      "properties": {
+        "name": "Route de Parthenay D3938 / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.238730584,
+          46.888976077
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Chemin dit du Pux",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234408843,
+          46.889449818
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Impasse de l'Espérance",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23600049,
+          46.88913362
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Impasse des Tonnelles",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.243463479,
+          46.887383183
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Le Thouaret",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235279802,
+          46.889082043
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Rue de l'Église",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236305199,
+          46.889510354
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Rue Montrabais",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234504121,
+          46.889420099
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.261337407,
+          46.886943617
+        ]
+      },
+      "properties": {
+        "name": "Route de Pierrefitte D135 / Ruisseau de la Joyette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.250451184,
+          46.899162086
+        ]
+      },
+      "properties": {
+        "name": "Route de Pressigny / Route de Coulonges Thouarsais D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.250372314,
+          46.899143759
+        ]
+      },
+      "properties": {
+        "name": "Route de Pressigny / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.263696574,
+          46.887647178
+        ]
+      },
+      "properties": {
+        "name": "Route de Saint-Varent / Chemin du Grand Pré",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.263633812,
+          46.887696166
+        ]
+      },
+      "properties": {
+        "name": "Route de Saint-Varent / Route de Pierrefitte",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.237328817,
+          46.897068567
+        ]
+      },
+      "properties": {
+        "name": "Route de Thouars D135 / Chemin de la Plaine des Moulins",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.237443245,
+          46.897040495
+        ]
+      },
+      "properties": {
+        "name": "Route de Thouars D135 / Impasse de Thouars",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.237267376,
+          46.897119499
+        ]
+      },
+      "properties": {
+        "name": "Route de Thouars D135 / Rue des Quatre Vents",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.244440474,
+          46.892258317
+        ]
+      },
+      "properties": {
+        "name": "Route des Tonnelles / Rue du Château",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.244866464,
+          46.887015443
+        ]
+      },
+      "properties": {
+        "name": "Route des Tonnelles / Ruisseau de la Joyette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200797628,
+          46.886447595
+        ]
+      },
+      "properties": {
+        "name": "Rue de L'Âumonerie / Rue des Caves",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.20079664,
+          46.886431679
+        ]
+      },
+      "properties": {
+        "name": "Rue de L'Âumonerie / Rue du Regain",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232537057,
+          46.889648212
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Avenue de la Gare",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232305275,
+          46.891457946
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Avenir / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197030754,
+          46.903741666
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ebeaupin / Chemin des Sablons",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197612951,
+          46.902754887
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Ebeaupin / Rue de la Prévoté",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235419443,
+          46.889983414
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Église / Rue Montrabais",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.252967173,
+          46.90063899
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Étang / Route de Coulonges Thouarsais D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.251340449,
+          46.902265671
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Étang / Rue du Fief",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233583053,
+          46.891580607
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôtel de Ville / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233774474,
+          46.890984042
+        ]
+      },
+      "properties": {
+        "name": "Rue de l'Hôtel de Ville / Rue Nepveu",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200699564,
+          46.903314918
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Clavelerie / Chemin de la Bruette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201735498,
+          46.901033514
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Clavelerie / Rue Sainte-Croix",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200890078,
+          46.903077362
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Clavelerie / Ruisseau de l'Étang Fourreau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.202650498,
+          46.89031955
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Cour Chauveau / Chemin de la Pompe",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201024792,
+          46.889585902
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Cour Chauveau / Rue de La Fromagerie",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201051047,
+          46.889372544
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Cour Chauveau / Rue des Caves",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201592725,
+          46.889850465
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Cour Chauveau / Rue du Coteau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201021911,
+          46.889387525
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Cour Chauveau / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23254029,
+          46.889647056
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Avenue de la Gare",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23433022,
+          46.889479329
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Impasse de l'Espérance",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234487094,
+          46.889428489
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Route de Pierrefitte D135",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.232550336,
+          46.889656526
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Rue de l'Avenir",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233711806,
+          46.889832913
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Rue du Puits",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234472683,
+          46.889435163
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Gendarmerie / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.22954098,
+          46.889569395
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Laiterie / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229346444,
+          46.890555405
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Laiterie / Chemin de la Combe",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.228870657,
+          46.891292141
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Laiterie / Impasse de la Laiterie",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.227988126,
+          46.88538604
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Mare / Chemin Rural de la Digue",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.228031878,
+          46.8854098
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Mare / Route de Bouillé D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229699552,
+          46.889279222
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Mare / Rue de Perception",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.205532796,
+          46.875198575
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Motte / Route de Niort D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.204990485,
+          46.874857127
+        ]
+      },
+      "properties": {
+        "name": "Rue de La Motte / Rue de La Chapelle",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.236412365,
+          46.89582445
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Plaine des Moulins / Chemin de la Plaine des Moulins",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235246328,
+          46.89677339
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Plaine des Moulins / Rue des Quatre Vents",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234779729,
+          46.890180783
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Poste / Rue Montrabais",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2347574,
+          46.89020972
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Poste / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234806763,
+          46.891028351
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Préfecture / Rue Nepveu",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.194142785,
+          46.902274424
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Prévoté / Route de Saumur D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.247768141,
+          46.893240791
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Prieuse / Rue de la Joatière",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234848258,
+          46.890554665
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Rivière / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197498436,
+          46.901767514
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Seigneurerie / Rue de l'Ebeaupin",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.196483264,
+          46.902269499
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Seigneurerie / Rue de la Prévoté",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198092643,
+          46.900574431
+        ]
+      },
+      "properties": {
+        "name": "Rue de la Seigneurerie / Rue Sainte-Croix",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229772588,
+          46.889461531
+        ]
+      },
+      "properties": {
+        "name": "Rue de Perception / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.231026948,
+          46.886582136
+        ]
+      },
+      "properties": {
+        "name": "Rue de Perception / Route de Bouillé D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.24319955,
+          46.896981366
+        ]
+      },
+      "properties": {
+        "name": "Rue des Acacias / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.243821277,
+          46.895783886
+        ]
+      },
+      "properties": {
+        "name": "Rue des Acacias / Rue des Camélias",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23030668,
+          46.889344854
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bournais / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.231681363,
+          46.886862215
+        ]
+      },
+      "properties": {
+        "name": "Rue des Bournais / Route de Bouillé D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.201083246,
+          46.889346954
+        ]
+      },
+      "properties": {
+        "name": "Rue des Caves / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198859234,
+          46.903323692
+        ]
+      },
+      "properties": {
+        "name": "Rue des Communaux / Chemin de la Bruette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197710624,
+          46.903930522
+        ]
+      },
+      "properties": {
+        "name": "Rue des Communaux / Chemin des Sablons",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197693306,
+          46.902683214
+        ]
+      },
+      "properties": {
+        "name": "Rue des Communaux / Rue de l'Ebeaupin",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197655357,
+          46.902720761
+        ]
+      },
+      "properties": {
+        "name": "Rue des Communaux / Rue de la Prévoté",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198829377,
+          46.903350409
+        ]
+      },
+      "properties": {
+        "name": "Rue des Communaux / Rue du Four Banal / Boucoeur",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23672602,
+          46.897005207
+        ]
+      },
+      "properties": {
+        "name": "Rue des Quatre Vents / Chemin de la Plaine des Moulins",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.233873569,
+          46.895783061
+        ]
+      },
+      "properties": {
+        "name": "Rue des Quatre Vents / Impasse des Quatre Vents",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234223572,
+          46.888889517
+        ]
+      },
+      "properties": {
+        "name": "Rue du Bois de la Porte / Rue Novihéria D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.247752982,
+          46.893237522
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue de la Joatière",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.247766656,
+          46.893236435
+        ]
+      },
+      "properties": {
+        "name": "Rue du Château / Rue de la Prieuse",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.202238168,
+          46.88935229
+        ]
+      },
+      "properties": {
+        "name": "Rue du Coteau / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.227838132,
+          46.889931203
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fief de Croix / Avenue de la Gare D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.229343403,
+          46.89036623
+        ]
+      },
+      "properties": {
+        "name": "Rue du Fief de Croix / Rue de la Laiterie",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.205102998,
+          46.875744802
+        ]
+      },
+      "properties": {
+        "name": "Rue du Four / Rue du Ruisseau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198966288,
+          46.903358151
+        ]
+      },
+      "properties": {
+        "name": "Rue du Four Banal / Boucoeur / Chemin de la Bruette",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.19908746,
+          46.903485998
+        ]
+      },
+      "properties": {
+        "name": "Rue du Four Banal / Boucoeur / Rue de la Rouère / Boucoeur",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.20267717,
+          46.889158687
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont Clergeau D147 / Chemin de la Pompe",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.198417952,
+          46.889526905
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont Clergeau D147 / Route de Parthenay D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.202814609,
+          46.889064935
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont Clergeau D147 / Ruisseau de l'Étang Fourreau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.194491294,
+          46.889781997
+        ]
+      },
+      "properties": {
+        "name": "Rue du Pont Clergeau D147 / D938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.199491488,
+          46.886362076
+        ]
+      },
+      "properties": {
+        "name": "Rue du Regain / Route de Parthenay D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200800978,
+          46.88645645
+        ]
+      },
+      "properties": {
+        "name": "Rue du Regain / Rue des Caves",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.204237024,
+          46.888062112
+        ]
+      },
+      "properties": {
+        "name": "Rue du Regain / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.202422149,
+          46.886743494
+        ]
+      },
+      "properties": {
+        "name": "Rue du Regain / Ruisseau de l'Étang Fourreau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.24939491,
+          46.898616165
+        ]
+      },
+      "properties": {
+        "name": "Rue du Rondereau / Route de la Butte D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.250574265,
+          46.897044292
+        ]
+      },
+      "properties": {
+        "name": "Rue du Rondereau / Rue de la Prieuse",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23452744,
+          46.897943246
+        ]
+      },
+      "properties": {
+        "name": "Rue du Thouaret / Rue de L'Aubépine",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.212640863,
+          46.911869684
+        ]
+      },
+      "properties": {
+        "name": "Rue du Tilleul / Chemin de Volbine",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234794889,
+          46.891093297
+        ]
+      },
+      "properties": {
+        "name": "Rue du Vieux Pont / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234782983,
+          46.891071566
+        ]
+      },
+      "properties": {
+        "name": "Rue du Vieux Pont / Rue Nepveu",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235426709,
+          46.889974658
+        ]
+      },
+      "properties": {
+        "name": "Rue Montrabais / Rue de l'Église",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234791196,
+          46.891041755
+        ]
+      },
+      "properties": {
+        "name": "Rue Nepveu / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234933344,
+          46.890753479
+        ]
+      },
+      "properties": {
+        "name": "Rue Novihéria D28 / Rue de la Préfecture",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.234796908,
+          46.890155786
+        ]
+      },
+      "properties": {
+        "name": "Rue Novihéria D28 / Rue Montrabais",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.195471278,
+          46.898295154
+        ]
+      },
+      "properties": {
+        "name": "Rue Sainte-Croix / Route de Saumur D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200279103,
+          46.900432219
+        ]
+      },
+      "properties": {
+        "name": "Rue Sainte-Croix / Ruisseau de l'Étang Fourreau",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.244923685,
+          46.886968089
+        ]
+      },
+      "properties": {
+        "name": "Ruisseau de la Joyette / Route des Tonnelles",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235595896,
+          46.891364635
+        ]
+      },
+      "properties": {
+        "name": "Vieux Pont / Avenue des Platanes D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235366187,
+          46.891333832
+        ]
+      },
+      "properties": {
+        "name": "Vieux Pont / Le Thouaret",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.235022605,
+          46.891200295
+        ]
+      },
+      "properties": {
+        "name": "Vieux Pont / Rue du Vieux Pont",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.207154693,
+          46.873880668
+        ]
+      },
+      "properties": {
+        "name": "D28 / Route de Niort D3938",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.194678654,
+          46.889718845
+        ]
+      },
+      "properties": {
+        "name": "D938 / Rue du Pont Clergeau D147",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200464313,
+          46.878089215
+        ]
+      },
+      "properties": {
+        "name": "D938 / D28",
+        "context": "Saint-Varent, Deux-Sèvres",
+        "citycode": "79299",
+        "depcode": "79"
+      }
+    }
+  ]
+}

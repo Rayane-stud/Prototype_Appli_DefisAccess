@@ -226,7 +226,6 @@ def export_final_equipes(dict_equipes, dossier_sortie, ville="Garches"):
         # ETAPE 4 : on appelle vers_xlsx() pour chaque equipe
         # qui cree le fichier XLSX et retourne son chemin
         chemin = vers_xlsx(df_equipe, id_equipe, dossier_export, ville)
-
         # ETAPE 5 : on ajoute le chemin du fichier genere a la liste
         liste_chemins.append(chemin)
 
@@ -234,6 +233,7 @@ def export_final_equipes(dict_equipes, dossier_sortie, ville="Garches"):
     return liste_chemins
 
 
+import random 
 
 def generer_kml_global_une_colonne(dict_equipes, nom_fichier_sortie="carte_globale_intersections.kml"):
     """
@@ -281,6 +281,28 @@ def generer_kml_global_une_colonne(dict_equipes, nom_fichier_sortie="carte_globa
     # Principe : On parcourt le dictionnaire équipe par équipe.
     for nom_equipe, df_equipe in dict_equipes.items():
         
+        # ---------------------------------------------------------------------
+        # MODIF_v1 : CREATION D'UN STYLE DE COULEUR UNIQUE PAR ÉQUIPE
+        # ---------------------------------------------------------------------
+        # Le format KML utilise le format AABBGGRR (Alpha, Bleu, Vert, Rouge) en hexadécimal.
+        # On génère une couleur aléatoire (sans être trop sombre) et opaque (ff).
+        r = lambda: random.randint(50, 255)
+        couleur_kml = f"ff{r():02x}{r():02x}{r():02x}" 
+        
+        id_style = f"style_{nom_equipe.replace(' ', '_')}"
+        style = ET.SubElement(document, 'Style', id=id_style)
+        icon_style = ET.SubElement(style, 'IconStyle')
+        
+        # On applique la couleur sur l'icône
+        color = ET.SubElement(icon_style, 'color')
+        color.text = couleur_kml
+        
+        # On utilise l'icône de repère officielle de Google qui accepte le changement de couleur
+        icon = ET.SubElement(icon_style, 'Icon')
+        href = ET.SubElement(icon, 'href')
+        href.text = "http://www.gstatic.com/mapspropro/images/prod/up/maps/icons/spotlight/spotlight-waypoint-b.png"
+        # ---------------------------------------------------------------------
+        
         # Utilité : La balise <Folder> agit exactement comme un calque dans Google Maps.
         # Tout ce qui sera mis à l'intérieur de ce Folder appartiendra à cette équipe 
         # spécifique et possédera sa propre case à cocher [X] dans l'interface Google.
@@ -323,12 +345,49 @@ def generer_kml_global_une_colonne(dict_equipes, nom_fichier_sortie="carte_globa
                     # lat = float(part2.strip())
                     
                     # ---------------------------------------------------------
+                    # MODIF_v1 : GESTION DE LA NUMÉROTATION VIA LA COLONNE 'ORDRE'
+                    # ---------------------------------------------------------
+                    # On vérifie si la colonne 'ordre' existe et contient bien une valeur.
+                    # Le .split('.')[0] permet de retirer le ".0" si le nombre est stocké en float.
+                    if 'ordre' in row and pd.notna(row['ordre']):
+                        num_ordre = str(row['ordre']).split('.')[0]
+                    else:
+                        num_ordre = str(idx + 1) # Sécurité si la colonne 'ordre' est vide ou absente
+                    # ---------------------------------------------------------
+
+
+                    # ---------------------------------------------------------
                     # 4. CRÉATION DU MARQUEUR (PLACEMARK) SUR LA CARTE
                     # ---------------------------------------------------------
                     # Utilité : La balise <Placemark> représente le repère visuel (le pin/l'épingle) 
                     # qui va apparaître physiquement sur la carte de l'utilisateur.
                     placemark = ET.SubElement(folder, 'Placemark')
-                    
+
+                    # ---------------------------------------------------------
+                    # MODIF_v1 : ASSIGNATION DU STYLE DE COULEUR AU MARQUEUR
+                    # ---------------------------------------------------------
+                    # On lie ce point spécifique au style de couleur créé pour son équipe.
+                    style_url = ET.SubElement(placemark, 'styleUrl')
+                    style_url.text = f"#{id_style}"
+                    # ---------------------------------------------------------
+
+                    # ---------------------------------------------------------
+                    # MODIF_v1 : CHANGEMENT DU NOM DE L'ÉPINGLE
+                    # ---------------------------------------------------------
+                    # Avant : name.text = f"Point {idx + 1}"
+                    # Maintenant : On utilise la variable extraite de la colonne ordre.
+                    name = ET.SubElement(placemark, 'name')
+                    name.text = f"N° {num_ordre}"
+                    # ---------------------------------------------------------
+
+                    # ---------------------------------------------------------
+                    # MODIF_v1 : ENRICHISSEMENT DE LA BULLE D'INFORMATION (DESCRIPTION)
+                    # ---------------------------------------------------------
+                    # Ajout de la ligne "Ordre de passage" visible lors d'un clic sur la carte.
+                    description = ET.SubElement(placemark, 'description')
+                    description.text = f"Équipe : {nom_equipe}\nOrdre de passage : {num_ordre}\nCoordonnées : {lat}, {lon}"
+                    # ---------------------------------------------------------
+
                     # Utilité : Définir le nom spécifique du repère (ex: "Point 1", "Point 2").
                     # Ce texte s'affichera directement à côté de l'épingle sur la carte.
                     name = ET.SubElement(placemark, 'name')

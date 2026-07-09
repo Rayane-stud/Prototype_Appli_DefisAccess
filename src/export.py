@@ -300,11 +300,11 @@ def generer_kml_global_une_colonne(dict_equipes, nom_fichier_sortie="carte_globa
             # Securité & Utilité : On vérifie que la colonne 'coordonnee' existe sur la ligne 
             # et qu'elle n'est pas vide (pd.notna). Cela évite que le script ne plante si un 
             # champ est mal rempli dans la base de données.
-            if hasattr(row, 'coordonnee') and pd.notna(row['coordonnee']):
+            if hasattr(row, 'coordonnees') and pd.notna(row['coordonnees']):
                 
                 # Nettoyage : On transforme en texte et on retire les espaces superflus 
                 # au début et à la fin (ex: " 48.85, 2.34 " devient "48.85,2.34")
-                coord_str = str(row['coordonnee']).strip()
+                coord_str = str(row['coordonnees']).strip()
                 
                 try:
                     # Principe : Puisque la latitude et la longitude sont dans la même case séparées 

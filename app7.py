@@ -123,16 +123,28 @@ def trouver_geojson_existant(ville: str) -> Path | None:
 
     # Priorité 1 : index.json (survit au refresh, O(1))
     if index_path.exists():
-        with open(index_path) as f:
-            index = json.load(f)
+        # SI LE FICHIER EST VIDE (0 octet), ON ÉVITE LE CRASH
+        if index_path.stat().st_size == 0:
+            index = {}
+        else:
+            try:
+                # LECTURE SÉCURISÉE AVEC ENCODAGE UTF-8
+                with open(index_path, "r", encoding="utf-8", errors="replace") as f:
+                    index = json.load(f)
+            except (json.JSONDecodeError, UnicodeDecodeError):
+                # SI LE FICHIER EST CORROMPU, ON NE PLANTE PAS
+                index = {}
+                
         chemin = index.get(ville_norm)
+
+
         if chemin:
             p = Path(chemin)
             if p.exists():
                 return p
             else:
                 del index[ville_norm]
-                with open(index_path, "w") as f:
+                with open(index_path, "w", encoding="utf-8") as f:
                     json.dump(index, f, ensure_ascii=False, indent=2)
 
     # Priorité 2 : fallback API (première fois uniquement)
@@ -2126,7 +2138,7 @@ def page_etape4():
 
         zip_buffer = io.BytesIO()
         with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
-            # Inclusion de vos fichiers Excel classiques
+            #  Inclusion de vos fichiers Excel classiques
             for fpath in _output_files_f:
                 zf.write(fpath, arcname=Path(fpath).name)
             

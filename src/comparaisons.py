@@ -280,7 +280,7 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
         )
     return fichier_sortie
 
-
+"""
 ville = input("Veuillez donnée le nom de la ville :").lower()
 
 fichier_benevole = "data/raw/comparaisons/fiches_excell.xlsx"
@@ -291,3 +291,4 @@ fichier_sortie = comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
 
 histogramme_depuis_sortie(fichier_sortie, "Fichier OSM")
 histogramme_depuis_sortie(fichier_sortie, "Fichier IA")
+"""

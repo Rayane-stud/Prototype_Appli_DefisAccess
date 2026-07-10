@@ -14,6 +14,7 @@ import numpy as np
 import requests
 from PIL import Image
 from io import BytesIO
+from geopy.distance import geodesic
 
 try:
     import cv2
@@ -124,17 +125,42 @@ def get_image_ign(
     return np.array(image_pil)
 
 
+def pixel_vers_latlon(
+    x_px: float,
+    y_px: float,
+    lat_centre: float,
+    lon_centre: float,
+    emprise_m: float,
+    taille_px: int,
+) -> tuple:
+    """
+    Convertit une position en pixels dans une image IGN (générée par
+    get_image_ign) en coordonnées lat/lon réelles.
+
+    Utilisé pour filtrer les détections YOLO par distance à l'intersection
+    ciblée, sans avoir à modifier la résolution des images analysées.
+    """
+    m_par_px = emprise_m / taille_px
+    dx_m = (x_px - taille_px / 2) * m_par_px
+    dy_m = (taille_px / 2 - y_px) * m_par_px  # axe y de l'image inversé (0 en haut)
+    delta_lat = dy_m / 111_000.0
+    delta_lon = dx_m / (111_000.0 * math.cos(math.radians(lat_centre)))
+    return lat_centre + delta_lat, lon_centre + delta_lon
+
+
 # ---------------------------------------------------------------------------
 # Étape 2a — Détection par YOLO (modèle entraîné)
 # ---------------------------------------------------------------------------
 
-def detect_passages_pietons_yolo(image: np.ndarray, chemin_sauvegarde: str = None) -> dict:
+def detect_passages_pietons_yolo(image: np.ndarray, chemin_sauvegarde: str = None, conf_min: float = None) -> dict:
     """
     Détecte les passages piétons avec le modèle YOLOv8 entraîné (best.pt).
 
     Args:
         image             : Tableau numpy RGB.
         chemin_sauvegarde : Chemin fichier pour sauvegarder l'image annotée (optionnel).
+        conf_min          : Seuil de confiance minimal par détection (0 à 1). Si None,
+                             YOLO applique son seuil par défaut (0.25).
 
     Returns:
         dict avec les clés :
@@ -145,7 +171,8 @@ def detect_passages_pietons_yolo(image: np.ndarray, chemin_sauvegarde: str = Non
     # ETAPE 1 : on charge le modèle YOLO (mis en cache après le premier appel)
     model = _charger_modele()
     # ETAPE 2 : on lance la détection sur l'image — verbose=False désactive les logs YOLO dans le terminal
-    results = model(image, verbose=False)
+    # conf_min filtre chaque box à la source (pas de bricolage post-hoc sur une confiance agrégée)
+    results = model(image, verbose=False, conf=conf_min) if conf_min is not None else model(image, verbose=False)
     # ETAPE 3 : on récupère les bounding boxes détectées et on compte les passages piétons trouvés
     boxes = results[0].boxes
     nb = len(boxes)
@@ -162,6 +189,45 @@ def detect_passages_pietons_yolo(image: np.ndarray, chemin_sauvegarde: str = Non
         "detecte": nb > 0,
         "nb_traversee": nb,
         "confiance": round(confiance, 2),
+    }
+
+
+def detect_passages_pietons_yolo_filtre(image: np.ndarray, chemin_sauvegarde: str = None, conf_min: float = None) -> dict:
+    """
+    Variante de detect_passages_pietons_yolo qui expose en plus la position
+    en pixels de chaque boîte détectée, afin de pouvoir filtrer les
+    détections par distance réelle à l'intersection ciblée (voir
+    analyser_intersection_filtre). Fonction indépendante de l'originale,
+    qui reste inchangée.
+
+    Args:
+        conf_min : Seuil de confiance minimal par détection (0 à 1). Si None,
+                   YOLO applique son seuil par défaut (0.25).
+
+    Returns:
+        dict avec les clés :
+            detecte (bool), nb_traversee (int), confiance (float) — identique
+                à detect_passages_pietons_yolo.
+            centres_px (list)              – centres [x, y] en pixels de chaque boîte.
+            confiances_individuelles (list) – confiance de chaque boîte (même ordre).
+    """
+    model = _charger_modele()
+    results = model(image, verbose=False, conf=conf_min) if conf_min is not None else model(image, verbose=False)
+    boxes = results[0].boxes
+    nb = len(boxes)
+    confiance = float(boxes.conf.mean()) if nb > 0 else 0.0
+    centres_px = boxes.xywh[:, :2].tolist() if nb > 0 else []
+    confiances_individuelles = boxes.conf.tolist() if nb > 0 else []
+
+    if chemin_sauvegarde:
+        Image.fromarray(results[0].plot()).save(chemin_sauvegarde)
+
+    return {
+        "detecte": nb > 0,
+        "nb_traversee": nb,
+        "confiance": round(confiance, 2),
+        "centres_px": centres_px,
+        "confiances_individuelles": confiances_individuelles,
     }
 
 
@@ -363,6 +429,7 @@ def analyser_intersection(
     taille_px: int = 512,
     sauvegarder_image: str = None,
     sauvegarder_image_annotee: str = None,
+    conf_min: float = None,
 ) -> dict:
     """
     Télécharge l'image IGN d'une intersection et détecte les passages piétons.
@@ -373,6 +440,9 @@ def analyser_intersection(
         emprise_m        : Zone couverte en mètres.
         taille_px        : Résolution de l'image.
         sauvegarder_image: Chemin fichier pour sauvegarder l'image (optionnel).
+        conf_min         : Seuil de confiance minimal par détection YOLO (0 à 1),
+                           transmis à detect_passages_pietons_yolo. Ignoré par le
+                           fallback OpenCV.
 
     Returns:
         dict avec les clés :
@@ -403,7 +473,9 @@ def analyser_intersection(
         # ETAPE 3 : on choisit la méthode de détection selon ce qui est disponible
         # YOLO en priorité car plus précis — OpenCV en fallback si best.pt est absent
         if _YOLO_DISPONIBLE and os.path.exists(_CHEMIN_MODELE):
-            detection = detect_passages_pietons_yolo(image, chemin_sauvegarde=sauvegarder_image_annotee)
+            detection = detect_passages_pietons_yolo(
+                image, chemin_sauvegarde=sauvegarder_image_annotee, conf_min=conf_min
+            )
             resultat["pp_detecte"] = detection["detecte"]
             resultat["pp_confiance"] = detection["confiance"]
             resultat["nb_traversee"] = detection["nb_traversee"]
@@ -415,6 +487,89 @@ def analyser_intersection(
             resultat["nb_traversee"] = detection["nb_bandes"]
 
     # ETAPE 4 : on capture les erreurs sans interrompre l'analyse des autres intersections
+    except ImportError as e:
+        resultat["erreur"] = f"Dépendance manquante : {e}"
+    except requests.RequestException as e:
+        resultat["erreur"] = f"Erreur réseau IGN : {e}"
+    except Exception as e:
+        resultat["erreur"] = f"Erreur : {e}"
+
+    return resultat
+
+
+def analyser_intersection_filtre(
+    lat: float,
+    lon: float,
+    emprise_m: float = 80,
+    taille_px: int = 512,
+    rayon_filtre_m: float = 25,
+    sauvegarder_image: str = None,
+    sauvegarder_image_annotee: str = None,
+    conf_min: float = None,
+) -> dict:
+    """
+    Variante de analyser_intersection qui ne garde que les passages piétons
+    détectés à moins de rayon_filtre_m de l'intersection ciblée (en mètres
+    réels), pour ignorer les passages piétons d'intersections voisines
+    visibles dans le même cadrage. Ne modifie pas analyser_intersection,
+    qui reste disponible telle quelle.
+
+    Args:
+        lat, lon         : Coordonnées WGS84 de l'intersection ciblée.
+        emprise_m        : Zone couverte en mètres (identique à l'entraînement du modèle).
+        taille_px        : Résolution de l'image (identique à l'entraînement du modèle).
+        rayon_filtre_m   : Distance maximale (mètres) entre un passage piéton détecté
+                           et l'intersection ciblée pour être retenu.
+        conf_min         : Seuil de confiance minimal par détection YOLO (0 à 1),
+                           transmis à detect_passages_pietons_yolo_filtre. Ignoré par le
+                           fallback OpenCV.
+
+    Returns:
+        dict avec les mêmes clés que analyser_intersection.
+    """
+    resultat = {
+        "lat": lat,
+        "lon": lon,
+        "image_ok": False,
+        "pp_detecte": False,
+        "pp_confiance": 0.0,
+        "nb_traversee": 0,
+        "erreur": None,
+    }
+
+    try:
+        image = get_image_ign(lat, lon, emprise_m=emprise_m, taille_px=taille_px)
+        resultat["image_ok"] = True
+
+        if sauvegarder_image:
+            Image.fromarray(image).save(sauvegarder_image)
+
+        if _YOLO_DISPONIBLE and os.path.exists(_CHEMIN_MODELE):
+            detection = detect_passages_pietons_yolo_filtre(
+                image, chemin_sauvegarde=sauvegarder_image_annotee, conf_min=conf_min
+            )
+
+            # on ne garde que les détections dont la position réelle tombe
+            # à moins de rayon_filtre_m de l'intersection ciblée
+            confiances_retenues = []
+            for (x_px, y_px), conf in zip(detection["centres_px"], detection["confiances_individuelles"]):
+                lat_d, lon_d = pixel_vers_latlon(x_px, y_px, lat, lon, emprise_m, taille_px)
+                if geodesic((lat, lon), (lat_d, lon_d)).meters <= rayon_filtre_m:
+                    confiances_retenues.append(conf)
+
+            resultat["pp_detecte"] = len(confiances_retenues) > 0
+            resultat["nb_traversee"] = len(confiances_retenues)
+            resultat["pp_confiance"] = (
+                round(sum(confiances_retenues) / len(confiances_retenues), 2)
+                if confiances_retenues else 0.0
+            )
+        else:
+            # fallback OpenCV : pas de filtrage géométrique (pas de boîtes individuelles exploitables)
+            detection = detect_passages_pietons_cv(image, emprise_m=emprise_m)
+            resultat["pp_detecte"] = detection["detecte"]
+            resultat["pp_confiance"] = detection["confiance"]
+            resultat["nb_traversee"] = detection["nb_bandes"]
+
     except ImportError as e:
         resultat["erreur"] = f"Dépendance manquante : {e}"
     except requests.RequestException as e:
@@ -437,8 +592,9 @@ def analyser_toutes_intersections(
     taille_px: int = 512,
     delai_s: float = 0.5,
     dossier_images: str = None, # Dossier de stockage de l'image annotée
+    conf_min: float = None,
 ):
-    """  
+    """
     Analyse toutes les intersections d'un DataFrame pandas.
 
     Compatible avec la sortie de nettoyage.py (mêmes noms de colonnes par défaut).
@@ -450,10 +606,12 @@ def analyser_toutes_intersections(
         emprise_m: Emprise au sol par image en mètres.
         taille_px: Résolution des images téléchargées.
         delai_s  : Pause entre requêtes IGN (évite la surcharge serveur).
+        conf_min : Seuil de confiance minimal par détection YOLO (0 à 1). Si None,
+                   comportement inchangé (seuil par défaut de YOLO, 0.25).
 
     Returns:
         Copie du DataFrame avec les colonnes ajoutées :
-            pp_detecte, pp_confiance, pp_nb_bandes, pp_image_ok, pp_erreur.     
+            pp_detecte, pp_confiance, pp_nb_bandes, pp_image_ok, pp_erreur.
     """
     # ETAPE 1 : On crée le sous-dossier avec la ville, la date et l'heure
     if dossier_images:
@@ -486,7 +644,7 @@ def analyser_toutes_intersections(
         )
         # ETAPE 3 : on analyse l'intersection et on passe le chemin image pour la sauvegarde annotée
         res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
-                                    sauvegarder_image_annotee=chemin_img)
+                                    sauvegarder_image_annotee=chemin_img, conf_min=conf_min)
 
         # ETAPE 4 : on affiche le résultat dans le terminal pour suivre la progression
         if res["erreur"]:
@@ -515,7 +673,7 @@ def analyser_toutes_intersections(
                 if dossier_images else None
             )
             res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
-                                        sauvegarder_image_annotee=chemin_img)
+                                        sauvegarder_image_annotee=chemin_img, conf_min=conf_min)
             if res["erreur"]:
                 print(f"ERREUR : {res['erreur']}")
             else:
@@ -540,7 +698,7 @@ def analyser_toutes_intersections(
                 if dossier_images else None
             )
             res = analyser_intersection(lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
-                                        sauvegarder_image_annotee=chemin_img)
+                                        sauvegarder_image_annotee=chemin_img, conf_min=conf_min)
             if res["erreur"]:
                 print(f"ERREUR : {res['erreur']}")
             else:
@@ -560,6 +718,161 @@ def analyser_toutes_intersections(
     df_sortie["pp_erreur"]    = [r["erreur"]         for r in resultats]
 
     # ETAPE 8 : on recense les intersections toujours en erreur et on met à jour pp_erreur (module)
+    global pp_erreur
+    pp_erreur = []
+    for idx, r in enumerate(resultats):
+        if r["erreur"]:
+            ligne = df.iloc[idx]
+            pp_erreur.append({
+                "lat": float(ligne[col_lat]),
+                "lon": float(ligne[col_lon]),
+                "erreur": r["erreur"],
+            })
+
+    if pp_erreur:
+        print(f"\n--- {len(pp_erreur)} intersection(s) non analysée(s) après les deux passes ---")
+        for entry in pp_erreur:
+            print(f"  ({entry['lat']:.5f}, {entry['lon']:.5f})  →  {entry['erreur']}")
+    else:
+        print("\nToutes les intersections ont été analysées avec succès.")
+
+    return df_sortie
+
+
+def analyser_toutes_intersections_filtre(
+    df,
+    col_lat: str = "lat",
+    col_lon: str = "lon",
+    emprise_m: float = 80,
+    taille_px: int = 512,
+    rayon_filtre_m: float = 25,
+    delai_s: float = 0.5,
+    dossier_images: str = None,  # Dossier de stockage de l'image annotée
+    conf_min: float = None,
+):
+    """
+    Variante de analyser_toutes_intersections qui utilise
+    analyser_intersection_filtre : les passages piétons détectés à plus de
+    rayon_filtre_m de l'intersection ciblée (donc appartenant probablement à
+    une intersection voisine visible dans le même cadrage) sont ignorés.
+    N'appelle jamais analyser_intersection, qui reste inchangée.
+
+    Args:
+        df             : DataFrame avec colonnes de coordonnées.
+        col_lat        : Nom de la colonne latitude.
+        col_lon        : Nom de la colonne longitude.
+        emprise_m      : Emprise au sol par image en mètres.
+        taille_px      : Résolution des images téléchargées.
+        rayon_filtre_m : Distance maximale (mètres) entre un passage piéton détecté
+                         et l'intersection ciblée pour être retenu.
+        delai_s        : Pause entre requêtes IGN (évite la surcharge serveur).
+        conf_min       : Seuil de confiance minimal par détection YOLO (0 à 1). Si
+                         None, comportement inchangé (seuil par défaut YOLO, 0.25).
+
+    Returns:
+        Copie du DataFrame avec les colonnes ajoutées :
+            pp_detecte, pp_confiance, nb_traversees, pp_image_ok, pp_erreur.
+    """
+    if dossier_images:
+        from datetime import datetime
+        date_heure = datetime.now().strftime("%Y-%m-%d_%Hh%M")
+        nom_ville = str(df["ville"].iloc[0]).replace(" ", "_") if "ville" in df.columns else "ville"
+        dossier_final = os.path.join(dossier_images, f"{nom_ville}_{date_heure}")
+        os.makedirs(dossier_final, exist_ok=True)
+    else:
+        dossier_final = None
+
+    resultats = []
+    total = len(df)
+
+    for i, (_, ligne) in enumerate(df.iterrows(), 1):
+        lat_i = float(ligne[col_lat])
+        lon_i = float(ligne[col_lon])
+        print(f"[{i}/{total}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
+
+        chemin_img = (
+            os.path.join(dossier_images, f"{i:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+            if dossier_images else None
+        )
+        res = analyser_intersection_filtre(
+            lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+            rayon_filtre_m=rayon_filtre_m, sauvegarder_image_annotee=chemin_img,
+            conf_min=conf_min,
+        )
+
+        if res["erreur"]:
+            print(f"ERREUR : {res['erreur']}")
+        else:
+            statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+            print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
+
+        resultats.append(res)
+        if i < total:
+            time.sleep(delai_s)
+
+    # deuxième passe sur les intersections en erreur (erreur réseau IGN transitoire)
+    indices_echec = [idx for idx, r in enumerate(resultats) if r["erreur"]]
+    if indices_echec:
+        print(f"\n--- Deuxième passe : {len(indices_echec)} intersection(s) en erreur ---")
+        time.sleep(2)
+        for rang, idx in enumerate(indices_echec, 1):
+            ligne = df.iloc[idx]
+            lat_i = float(ligne[col_lat])
+            lon_i = float(ligne[col_lon])
+            print(f"[retry {rang}/{len(indices_echec)}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
+            chemin_img = (
+                os.path.join(dossier_images, f"{idx+1:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+                if dossier_images else None
+            )
+            res = analyser_intersection_filtre(
+                lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+                rayon_filtre_m=rayon_filtre_m, sauvegarder_image_annotee=chemin_img,
+                conf_min=conf_min,
+            )
+            if res["erreur"]:
+                print(f"ERREUR : {res['erreur']}")
+            else:
+                statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+                print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
+            resultats[idx] = res
+            if rang < len(indices_echec):
+                time.sleep(delai_s)
+
+    # troisième passe sur les intersections encore en erreur
+    indices_echec2 = [idx for idx, r in enumerate(resultats) if r["erreur"]]
+    if indices_echec2:
+        print(f"\n--- Troisième passe : {len(indices_echec2)} intersection(s) encore en erreur ---")
+        time.sleep(5)
+        for rang, idx in enumerate(indices_echec2, 1):
+            ligne = df.iloc[idx]
+            lat_i = float(ligne[col_lat])
+            lon_i = float(ligne[col_lon])
+            print(f"[retry {rang}/{len(indices_echec2)}] ({lat_i:.5f}, {lon_i:.5f}) ...", end=" ", flush=True)
+            chemin_img = (
+                os.path.join(dossier_images, f"{idx+1:04d}_{lat_i:.5f}_{lon_i:.5f}.jpg")
+                if dossier_images else None
+            )
+            res = analyser_intersection_filtre(
+                lat_i, lon_i, emprise_m=emprise_m, taille_px=taille_px,
+                rayon_filtre_m=rayon_filtre_m, sauvegarder_image_annotee=chemin_img,
+                conf_min=conf_min,
+            )
+            if res["erreur"]:
+                print(f"ERREUR : {res['erreur']}")
+            else:
+                statut = "PP détecté" if res["pp_detecte"] else "aucun PP"
+                print(f"{statut}  (confiance={res['pp_confiance']}, nb_traversee={res['nb_traversee']})")
+            resultats[idx] = res
+            if rang < len(indices_echec2):
+                time.sleep(delai_s)
+
+    df_sortie = df.copy()
+    df_sortie["pp_detecte"]    = [r["pp_detecte"]   for r in resultats]
+    df_sortie["pp_confiance"]  = [r["pp_confiance"]  for r in resultats]
+    df_sortie["nb_traversees"] = [r["nb_traversee"]  for r in resultats]
+    df_sortie["pp_image_ok"]   = [r["image_ok"]      for r in resultats]
+    df_sortie["pp_erreur"]     = [r["erreur"]         for r in resultats]
+
     global pp_erreur
     pp_erreur = []
     for idx, r in enumerate(resultats):

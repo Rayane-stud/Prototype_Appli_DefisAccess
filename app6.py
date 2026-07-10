@@ -1630,7 +1630,7 @@ def page_etape3():
                     # pas de résultat déjà fait à réutiliser : lance la vraie
                     # détection IA (1-2 min, une image Street View analysée
                     # par intersection)
-                    from src.IA_PP import analyser_toutes_intersections
+                    from src.IA_PP import analyser_toutes_intersections_filtre
                     import re
 
                     dossier_images_ia = str(
@@ -1664,7 +1664,7 @@ def page_etape3():
 
                     logs_ia = StreamlitLoggerIA()
                     with contextlib.redirect_stdout(logs_ia):
-                        df_pp = analyser_toutes_intersections(
+                        df_pp = analyser_toutes_intersections_filtre(
                             df_inter_ia, col_lat="latitude", col_lon="longitude",
                             dossier_images=dossier_images_ia,
                         )
@@ -2305,7 +2305,7 @@ def page_etape4():
                     status.info("**Étape 4/6** — Réutilisation de l'analyse IA déjà effectuée dans l'Étape 3…")
                     df = _df_pp_cache
                 else:
-                    from src.IA_PP import analyser_toutes_intersections
+                    from src.IA_PP import analyser_toutes_intersections_filtre
                     from datetime import datetime
                     import re
                     dossier_images = str(
@@ -2326,7 +2326,7 @@ def page_etape4():
 
                     logs_ia2 = StreamlitLoggerIA2()
                     with contextlib.redirect_stdout(logs_ia2):
-                        df = analyser_toutes_intersections(
+                        df = analyser_toutes_intersections_filtre(
                             df, col_lat="latitude", col_lon="longitude", dossier_images=dossier_images
                         )
                     st.session_state["df_pp"]         = df

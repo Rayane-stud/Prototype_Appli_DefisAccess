@@ -150,36 +150,23 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
     fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
     egaux = []
-    diff = []
+    diff= []
 
-    for nom_feuille, fichref in feuilles.items():
+    for _, fichref in feuilles.items():
 
-        # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
+    # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
         fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
-
-        # On retire les lignes où 'traversee' n'a pas pu être convertie en nombre
-        lignes_invalides = fichref["traversee"].isna().sum()
-        if lignes_invalides > 0:
-            print(f"⚠️ Feuille '{nom_feuille}' : {lignes_invalides} ligne(s) avec 'traversee' invalide ignorée(s).")
-            fichref = fichref.dropna(subset=["traversee"])
-
-        # Si la feuille n'a plus aucune ligne exploitable, on passe à la suivante
-        if fichref.empty:
-            print(f"⚠️ Feuille '{nom_feuille}' ignorée : aucune ligne valide après nettoyage.")
-            continue
-
         idx = fichref.groupby("coordonnees")["traversee"].idxmax()
         fichref = fichref.loc[idx].reset_index(drop=True)
-        
-        fichref = fichref.rename(columns={"traversee": "nb_traversee_reel"})
+        print("nb_traversee_reel" in fichref.columns)
 
-        fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(" ", expand=True))
+        fichref[["latitude", "longitude"]] = (fichref["coordonnees"].astype(str).str.split(",", expand=True))
         fichref["latitude"] = pd.to_numeric(fichref["latitude"])
         fichref["longitude"] = pd.to_numeric(fichref["longitude"])
 
-        fichref = fichref.to_dict("records")
-        fich1 = fichier1.copy().to_dict("records")
-        fich2 = fichier2.to_dict("records")
+        fichref=fichref.to_dict("records")
+        fich1=fichier1.copy().to_dict("records")
+        fich2=fichier2.to_dict("records")
     
         nom1 = "Fichier OSM"
         nom2 = "Fichier IA"
@@ -229,14 +216,14 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
                     ligne1 = meilleur1.copy()
                     ligne1["source"] = nom1
                     ligne1["pourcentage_erreur"] = erreur1
-                    ligne1["ecart"] = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                     egaux.append(ligne1)
 
                 if egal2:
                     ligne2 = meilleur2.copy()
                     ligne2["source"] = nom2
                     ligne2["pourcentage_erreur"] = erreur2
-                    ligne2["ecart"] = meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                     egaux.append(ligne2)
 
                 egaux.append({})
@@ -248,18 +235,19 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
                     ligne1 = meilleur1.copy()
                     ligne1["source"] = nom1
                     ligne1["pourcentage_erreur"] = erreur1
-                    ligne1["ecart"] = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    ligne1["ecart"]= meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
                     diff.append(ligne1)
 
                 if meilleur2 is not None and not egal2:
                     ligne2 = meilleur2.copy()
                     ligne2["source"] = nom2
                     ligne2["pourcentage_erreur"] = erreur2
-                    ligne2["ecart"] = meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    ligne2["ecart"]= meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
                     diff.append(ligne2)
 
                 diff.append({})
 
+    
     df_egaux = pd.DataFrame(egaux)
     df_diff = pd.DataFrame(diff)
 
@@ -295,7 +283,7 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
 
 ville = input("Veuillez donnée le nom de la ville :").lower()
 
-fichier_benevole = "data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx"
+fichier_benevole = "data/raw/comparaisons/fiches_excell.xlsx"
 nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
 nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 

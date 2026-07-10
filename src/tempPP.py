@@ -1,151 +1,314 @@
 """
-Fonction :
-    Charger Accident(path,ville):
-        on importe le document pour le trier
+On effectue la comparaisons de l'éfficacité des differentes sources ici
 
-        
-idée :
-    une fonction pour qui trie le dossier brute et garde seulement les accidents su passage piétons,
-    peut importes la ville, il créer un tableau de référence qu'il met a jour 1 fois par mois
+Faire en fonction de 2 fichier ou 3 fichier
 
-    Une fonction qui d'apres ce tableau de référence, vas trier en fonction de la ville puis 
-    appelle une autre pour attribuer les passages piétons aux intersections correspondantes
+avec index, pour indiquer quel fichier sort quelle ligne
 """
-
-"""
-Pour lié les 2 méthodes :
-    - tri par intersections a 20m environ, puis ensuite on compare les coodronnées des pp a 5m environ 
-        pour determiner lequel est le meme
-"""
-
 import pandas as pd
-import csv
 from geopy.distance import geodesic
+import io
+import matplotlib.pyplot as plt
+import os
 
-import identification_PP as pp
-from nettoyage import charger_intersections
-from proximite import fusion_croisement 
 
-def charger_accidents(path, ville):
-    # charger le fichier CSV
-    df = pd.read_csv(path, sep=";").copy()
-
-    #on trie celon le nom de la ville
-    col="commune"
-    df_ville = df[df[col].str.contains(ville, case=False, na=False)]
-    df_ville = df_ville.reset_index(drop=True)
-
-    #on garde les colonnes souhaitées
-    garde=["geo_point_2d","commune","adresse"
-           ,"usager1","loc_usa1"
-           ,"usager2","loc_usa2"
-           ,"usager3","loc_usa3"
-           ,"usager4","loc_usa4"
-           ,"usager5","loc_usa5"
-           ,"usager6","loc_usa6"]
-    df_ville=df_ville[garde]
-
-    tableau = df_ville.rename(columns={"geo_point_2d": "coordonnees",})
-
-    tableau=trier_accidents(tableau)
-    tableau=coordonnees_accident(tableau)
-
+def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
     
-    return tableau
-
-def trier_accidents(df_ville):
-    #Trier par contient "Sur le passage piéton"
-    #dans les colonnes : "AZ"=loc_usa1 , "BI"=loc_usa2 , "BR"=loc_usa3 , "CA"=loc_usa4 etc
-    #Attention, passage pieton peut etre dans l'un mais pas dans les autres, 
-    # donc ne pas trier à la suite à causes des pertes de données
-    df = df_ville.copy()
-    colonne=["loc_usa1","loc_usa2","loc_usa3","loc_usa4","loc_usa5","loc_usa6"]
-    trie= df[colonne].apply(lambda col: col.str.contains("Sur le passage piéton"
-                        , case=False, na=False)).any(axis=1)
-    df= df[trie]
-    df = df.reset_index(drop=True)
-
-    return df
+    fichier2 = pd.read_csv(nom_fichier2, sep=";", encoding="utf-8-sig")
+    fich1=fichier1.copy().to_dict("records")
+    fich2=fichier2.to_dict("records")
 
 
-def coordonnees_accident(tableau, rayon=5):
-    #on separe la longitude et la latitude en 2 colonnes distinctes
-    #on traitre les doublons
-    #On regroupe les accidents a moins de 5m
+    if "osm" in nom_fichier1:
+        nom1 = "Fichier OSM"
+    elif "IA" in nom_fichier1:
+        nom1 = "Fichier IA"
+    elif "mixte" in nom_fichier1:
+        nom1 = "Fichier MIXTE"
 
-    df=tableau.copy()
-    df[["latitude", "longitude"]] = (df["coordonnees"].str.split(",", expand=True))
-    df = df.drop(columns=["coordonnees"])
+    if "osm" in nom_fichier2:
+        nom2 = "Fichier OSM"
+    elif "IA" in nom_fichier2:
+        nom2 = "Fichier IA"
+    elif "mixte" in nom_fichier2:
+        nom2 = "Fichier MIXTE"
 
-    df["longitude"] = pd.to_numeric(df["longitude"])
-    df["latitude"] = pd.to_numeric(df["latitude"])
-    df= df.drop_duplicates(subset=["longitude", "latitude"],keep="first")
+    egaux = []
+    diff= []
 
-    lignes = df.to_dict("records")
+    for i in fich1:
+        for j in fich2:
+            dist=geodesic((i["latitude"],i["longitude"]),
+                          (j["latitude"],j["longitude"])
+                          ).meters
+            if dist < rayon:
 
-    i = 0
-    while i < len(lignes):
-        j = i + 1
-        while j < len(lignes):
-            dist= geodesic((lignes[i]["latitude"], lignes[i]["longitude"]),
-                (lignes[j]["latitude"], lignes[j]["longitude"])).meters
-            
-            if dist <= rayon:
-                lignes.pop(j)
-            else:
-                j += 1
-        i += 1
+                if i["nb_traversees"] == j["nb_traversees"]:
+                    ligne1 = i.copy()
+                    ligne1["source"] = nom1
 
-    df_final= pd.DataFrame(lignes)
-    df_final = df_final.reset_index(drop=True)
-    return df_final
+                    ligne2 = j.copy()
+                    ligne2["source"] = nom2
 
+                    egaux.append(ligne1)
+                    egaux.append(ligne2)
+                    egaux.append({})      # ligne vide
 
-def comparer_coordonnees(passage_pieton, intersection_retenue, rayon=30):
-    #on compare les coordonnées des intersections avec celles des passage piétons
-    #a qq metres pres et on ajoute le nb de passage pietons à l'intersections
-    pp=passage_pieton.copy().to_dict("records")
-    inter=intersection_retenue.copy().to_dict("records")
+                else:
+                    ligne1 = i.copy()
+                    ligne1["source"] = nom1
 
-    for i in inter:
-        nb=0
-        x=0
-        for j in pp:
-            dist= geodesic((i["latitude"], i["longitude"])
-                    ,(j["latitude"], j["longitude"])).meters
+                    ligne2 = j.copy()
+                    ligne2["source"] = nom2
 
+                    diff.append(ligne1)
+                    diff.append(ligne2)
+                    diff.append({})  # ligne vide
 
-            if dist<=rayon:
-                nb+=1
-                x+=1
-                i["latitude_pp"+str(x)]=j["latitude"]
-                i["longitude_pp"+str(x)]=j["longitude"]
-        i["nb_pp"]=nb
+                break
     
-    inter = pd.DataFrame(inter)
-    inter= inter[inter["nb_pp"] != 0]
+    fichier_sortie="data/output/comparaisons/comparaison.xlsx"
 
-    colonnes = ["latitude", "longitude", "intersection", "Ville/Commune", "nb_pp"]
-    for col in inter.columns:
-        if col not in colonnes:
-            colonnes.append(col)
-    inter = inter[colonnes]
+    with pd.ExcelWriter(fichier_sortie) as writer:
 
-    return inter
+        pd.DataFrame(egaux).to_excel(
+            writer,
+            sheet_name="Egaux",
+            index=False
+        )
+
+        pd.DataFrame(diff).to_excel(
+            writer,
+            sheet_name="Differents",
+            index=False
+        )
+
+    return
+
+def lire_fichier_benevole(fichier_benevole):
+    feuilles = pd.read_excel(
+        fichier_benevole,
+        sheet_name=None,
+        engine="openpyxl"
+    )
+    for df in feuilles.values():
+        df.columns = df.columns.str.strip()
+
+    return feuilles
+
+def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
+    if valeur_reelle == 0:
+        if valeur_estimee == 0:
+            return 0.0
+        else:
+            return None  # erreur non définie (division par zéro), à traiter à part
+    return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
+
+def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source"):
+
+    dossier_sortie = "data/output/comparaisons"
+    os.makedirs(dossier_sortie, exist_ok=True)
+
+    # Lecture des deux feuilles et fusion
+    df_egaux = pd.read_excel(fichier_sortie, sheet_name="Egaux")
+    df_diff = pd.read_excel(fichier_sortie, sheet_name="Differents")
+    df = pd.concat([df_egaux, df_diff], ignore_index=True)
+
+    # On garde uniquement les lignes de la source demandée (ex: "Fichier IA")
+    df_source = df[df[colonne_source] == nom_source].copy()
+
+    # On retire les lignes sans écart valide (ex: lignes vides séparatrices)
+    df_source = df_source.dropna(subset=["ecart"])
+
+    if df_source.empty:
+        print(f"Aucune donnée trouvée pour la source '{nom_source}' dans {fichier_sortie}.")
+        return df_source
+
+    # --- Graphique : distribution des écarts (sur/sous-estimation) ---
+    chemin_hist = os.path.join(dossier_sortie, f"histogramme_ecarts_{nom_source}.png")
+
+    plt.figure(figsize=(10, 6))
+    largeur_bins = range(int(df_source["ecart"].min()) - 1, int(df_source["ecart"].max()) + 2)
+    plt.hist(df_source["ecart"], bins=largeur_bins, edgecolor="black", align="left")
+    plt.xlabel(f"Écart (nb_traversées {nom_source} − nb_traversée réelle)")
+    plt.ylabel("Nombre d'intersections")
+    plt.title(f"Distribution des écarts entre {nom_source} et le terrain")
+    plt.axvline(0, color="red", linestyle="--", label="Aucune erreur")
+    plt.legend()
+    plt.grid(axis="y", alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(chemin_hist, dpi=150, bbox_inches="tight")
+    print(f"Histogramme sauvegardé : {chemin_hist}")
+    plt.show()
+    plt.close()
+
+    return df_source
+
+def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
+    
+    feuilles = lire_fichier_benevole(fichier_benevole)
+    fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
+    fichier2 = pd.read_csv(fichier_IA, sep=";", encoding="utf-8-sig")
+    egaux = []
+    diff = []
+
+    for nom_feuille, fichref in feuilles.items():
+
+        # Garder uniquement la ligne avec le plus grand nombre de traversées par coordonnées
+        fichref["traversee"] = pd.to_numeric(fichref["traversee"], errors="coerce")
+
+        # On retire les lignes où 'traversee' n'a pas pu être convertie en nombre
+        lignes_invalides = fichref["traversee"].isna().sum()
+        if lignes_invalides > 0:
+            print(f"⚠️ Feuille '{nom_feuille}' : {lignes_invalides} ligne(s) avec 'traversee' invalide ignorée(s).")
+            fichref = fichref.dropna(subset=["traversee"])
+
+        # Si la feuille n'a plus aucune ligne exploitable, on passe à la suivante
+        if fichref.empty:
+            print(f"⚠️ Feuille '{nom_feuille}' ignorée : aucune ligne valide après nettoyage.")
+            continue
+
+        idx = fichref.groupby("coordonnees")["traversee"].idxmax()
+        fichref = fichref.loc[idx].reset_index(drop=True)
+        
+        fichref = fichref.rename(columns={"traversee": "nb_traversee_reel"})
+
+        coords_split = (fichref["coordonnees"].astype(str).str.strip().str.split(r"[,\s]+", expand=True))
+        fichref["latitude"] = coords_split[0]
+        fichref["longitude"] = coords_split[1]
+
+        fichref["latitude"] = pd.to_numeric(fichref["latitude"], errors="coerce")
+        fichref["longitude"] = pd.to_numeric(fichref["longitude"], errors="coerce")
+
+        # Sécurité : on ignore les lignes où lat/lon n'ont pas pu être converties
+        lignes_invalides_coords = fichref[["latitude", "longitude"]].isna().any(axis=1).sum()
+        if lignes_invalides_coords > 0:
+            print(f"⚠️ Feuille '{nom_feuille}' : {lignes_invalides_coords} ligne(s) avec coordonnées invalides ignorée(s).")
+            fichref = fichref.dropna(subset=["latitude", "longitude"])
+
+        fichref = fichref.to_dict("records")
+        fich1 = fichier1.copy().to_dict("records")
+        fich2 = fichier2.to_dict("records")
+    
+        nom1 = "Fichier OSM"
+        nom2 = "Fichier IA"
+
+        for ref in fichref:
+            meilleur1 = None
+            meilleur2 = None
+
+            # Recherche de l'intersection dans le fichier osm
+            for i in fich1:
+                dist = geodesic(
+                    (ref["latitude"], ref["longitude"]),
+                    (i["latitude"], i["longitude"])
+                    ).meters
+
+                if dist < rayon:
+                    meilleur1 = i
+
+            # Recherche de l'intersection dans le fichier IA
+            for j in fich2:
+                dist = geodesic(
+                    (ref["latitude"], ref["longitude"]),
+                    (j["latitude"], j["longitude"])
+                    ).meters
+
+                if dist < rayon:
+                    meilleur2 = j
+
+            # Comparaison des nombres de traversées
+            egal1 = (meilleur1 is not None and ref["nb_traversee_reel"] == meilleur1["nb_traversees"])
+            egal2 = (meilleur2 is not None and ref["nb_traversee_reel"] == meilleur2["nb_traversees"])
+
+            erreur1 = None
+            erreur2 = None
+            if meilleur1 is not None:
+                erreur1 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur1["nb_traversees"])
+            if meilleur2 is not None:
+                erreur2 = calcul_pourcentage_erreur(ref["nb_traversee_reel"], meilleur2["nb_traversees"])
+
+            ligne_ref = ref.copy()
+            ligne_ref["source"] = "Référence"
+
+            # EGAUX
+            if egal1 or egal2:
+                egaux.append(ligne_ref)
+                if egal1:
+                    ligne1 = meilleur1.copy()
+                    ligne1["source"] = nom1
+                    ligne1["pourcentage_erreur"] = erreur1
+                    ligne1["ecart"] = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    egaux.append(ligne1)
+
+                if egal2:
+                    ligne2 = meilleur2.copy()
+                    ligne2["source"] = nom2
+                    ligne2["pourcentage_erreur"] = erreur2
+                    ligne2["ecart"] = meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    egaux.append(ligne2)
+
+                egaux.append({})
+
+            # DIFFERENTS
+            if (not egal1) or (not egal2):
+                diff.append(ligne_ref)
+                if meilleur1 is not None and not egal1:
+                    ligne1 = meilleur1.copy()
+                    ligne1["source"] = nom1
+                    ligne1["pourcentage_erreur"] = erreur1
+                    ligne1["ecart"] = meilleur1["nb_traversees"] - ref["nb_traversee_reel"]
+                    diff.append(ligne1)
+
+                if meilleur2 is not None and not egal2:
+                    ligne2 = meilleur2.copy()
+                    ligne2["source"] = nom2
+                    ligne2["pourcentage_erreur"] = erreur2
+                    ligne2["ecart"] = meilleur2["nb_traversees"] - ref["nb_traversee_reel"]
+                    diff.append(ligne2)
+
+                diff.append({})
+
+    df_egaux = pd.DataFrame(egaux)
+    df_diff = pd.DataFrame(diff)
+
+    colonnes_voulues = [
+        "latitude",
+        "longitude",
+        "intersection",
+        "source",
+        "nb_traversee_reel",
+        "nb_traversees",
+        "pourcentage_erreur",
+        "ecart"
+    ]
+    df_egaux = df_egaux[colonnes_voulues]
+    df_diff = df_diff[colonnes_voulues]
+   
+    fichier_sortie = "data/output/comparaisons/comparaison_terrain.xlsx"
+    with pd.ExcelWriter(fichier_sortie) as writer:
+
+        df_egaux.to_excel(
+            writer,
+            sheet_name="Egaux",
+            index=False
+        )
+
+        df_diff.to_excel(
+            writer,
+            sheet_name="Differents",
+            index=False
+        )
+    return fichier_sortie
 
 
-Ville= input("Entrez le nom de la ville : ")
-#nomF = input("Entrez le nom du fichier (sans l'extension .csv) : ")
-#path="data/raw/source_pp/accidents-corporels-de-la-circulation-routiere fichier entier.csv"
-csv_path = "data/raw/intersections-92.csv"
-intersections=charger_intersections(csv_path, Ville)
+ville = input("Veuillez donnée le nom de la ville :").lower()
 
-final=pp.main(Ville,intersections)
-#tableau = charger_accidents(path, Ville)
-#print (tableau.head)
-#nettoyer=fusion_croisement(intersections)
-#final=comparer_coordonnees(tableau, nettoyer)
+fichier_benevole = "data/raw/FINAL_Defi_Access_Garches_22_05_2026_nettoye╠ü.xlsx"
+nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
+nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 
-final.to_csv(
-    "data/output/passages_pietons"+Ville+".csv",
-    sep=";", index=False, encoding="utf-8-sig")
+fichier_sortie = comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+
+histogramme_depuis_sortie(fichier_sortie, "Fichier OSM")
+histogramme_depuis_sortie(fichier_sortie, "Fichier IA")

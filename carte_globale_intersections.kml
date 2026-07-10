@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>DEFIACCESS - Toutes les Équipes</name><Folder><name>1</name><Placemark><name>Point 16</name><description>Équipe : 1
+Coordonnées : 49.875591413, 2.281771346</description><Point><coordinates>2.281771346,49.875591413,0</coordinates></Point></Placemark><Placemark><name>Point 14</name><description>Équipe : 1
+Coordonnées : 49.87032364, 2.283684414</description><Point><coordinates>2.283684414,49.87032364,0</coordinates></Point></Placemark><Placemark><name>Point 11</name><description>Équipe : 1
+Coordonnées : 49.870102645, 2.283979315</description><Point><coordinates>2.283979315,49.870102645,0</coordinates></Point></Placemark><Placemark><name>Point 1</name><description>Équipe : 1
+Coordonnées : 49.870527989, 2.284108311</description><Point><coordinates>2.284108311,49.870527989,0</coordinates></Point></Placemark><Placemark><name>Point 10</name><description>Équipe : 1
+Coordonnées : 49.868502726, 2.283179356</description><Point><coordinates>2.283179356,49.868502726,0</coordinates></Point></Placemark></Folder><Folder><name>4</name><Placemark><name>Point 3</name><description>Équipe : 4
+Coordonnées : 49.884692297, 2.324077142</description><Point><coordinates>2.324077142,49.884692297,0</coordinates></Point></Placemark><Placemark><name>Point 2</name><description>Équipe : 4
+Coordonnées : 49.884405927, 2.3248471</description><Point><coordinates>2.3248471,49.884405927,0</coordinates></Point></Placemark></Folder><Folder><name>2</name><Placemark><name>Point 7</name><description>Équipe : 2
+Coordonnées : 49.913022821, 2.254785008</description><Point><coordinates>2.254785008,49.913022821,0</coordinates></Point></Placemark><Placemark><name>Point 4</name><description>Équipe : 2
+Coordonnées : 49.914385963, 2.254966571</description><Point><coordinates>2.254966571,49.914385963,0</coordinates></Point></Placemark><Placemark><name>Point 5</name><description>Équipe : 2
+Coordonnées : 49.914397894, 2.252538264</description><Point><coordinates>2.252538264,49.914397894,0</coordinates></Point></Placemark><Placemark><name>Point 15</name><description>Équipe : 2
+Coordonnées : 49.914221555, 2.252220152</description><Point><coordinates>2.252220152,49.914221555,0</coordinates></Point></Placemark><Placemark><name>Point 13</name><description>Équipe : 2
+Coordonnées : 49.916388546, 2.250705854</description><Point><coordinates>2.250705854,49.916388546,0</coordinates></Point></Placemark><Placemark><name>Point 12</name><description>Équipe : 2
+Coordonnées : 49.91699455, 2.255985364</description><Point><coordinates>2.255985364,49.91699455,0</coordinates></Point></Placemark></Folder><Folder><name>3</name><Placemark><name>Point 20</name><description>Équipe : 3
+Coordonnées : 49.902022831, 2.299512177</description><Point><coordinates>2.299512177,49.902022831,0</coordinates></Point></Placemark><Placemark><name>Point 6</name><description>Équipe : 3
+Coordonnées : 49.911647131, 2.30262298</description><Point><coordinates>2.30262298,49.911647131,0</coordinates></Point></Placemark><Placemark><name>Point 8</name><description>Équipe : 3
+Coordonnées : 49.90690329, 2.318326586</description><Point><coordinates>2.318326586,49.90690329,0</coordinates></Point></Placemark></Folder><Folder><name>5</name><Placemark><name>Point 21</name><description>Équipe : 5
+Coordonnées : 49.892704393, 2.284621014</description><Point><coordinates>2.284621014,49.892704393,0</coordinates></Point></Placemark><Placemark><name>Point 9</name><description>Équipe : 5
+Coordonnées : 49.881642724, 2.284959235</description><Point><coordinates>2.284959235,49.881642724,0</coordinates></Point></Placemark><Placemark><name>Point 17</name><description>Équipe : 5
+Coordonnées : 49.874800806, 2.271811796</description><Point><coordinates>2.271811796,49.874800806,0</coordinates></Point></Placemark><Placemark><name>Point 18</name><description>Équipe : 5
+Coordonnées : 49.879410821, 2.267397737</description><Point><coordinates>2.267397737,49.879410821,0</coordinates></Point></Placemark><Placemark><name>Point 19</name><description>Équipe : 5
+Coordonnées : 49.879477083, 2.266946425</description><Point><coordinates>2.266946425,49.879477083,0</coordinates></Point></Placemark></Folder></Document></kml>

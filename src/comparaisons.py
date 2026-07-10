@@ -67,7 +67,7 @@ def comparaison_code(fichier1, nom_fichier1, nom_fichier2, rayon =10):
 
                 break
     
-    fichier_sortie="data/output/comparaisons/comparaison.xlsx"
+    fichier_sortie="data/output/comparaisons/comparaison_code.xlsx"
 
     with pd.ExcelWriter(fichier_sortie) as writer:
 

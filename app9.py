@@ -367,6 +367,128 @@ def _joindre_nb_traversees_par_proximite(df_cible, df_pp, rayon_m: float = 30):
     return df_cible
 
 
+def _telecharger_passages_zone_filtree(df_inter, rayon_metres: float = 25, marge_m: float = 200):
+    """
+    Équivalent de identification_PP.telecharger_passages_par_zone, mais scopé à
+    une bounding box autour des intersections déjà filtrées (Étape 2/3) plutôt
+    qu'à toute la commune (area(id_zone)) — utilisé uniquement par la méthode
+    Mixte, pour éviter d'interroger Overpass sur toute la ville (293+
+    intersections pour Montrouge par ex.) alors que seule une poignée
+    d'intersections filtrées par le rayon POI nous intéresse. Ça réduit
+    fortement le risque de timeout Overpass (504/read timeout) constaté sur
+    les grandes communes.
+
+    Ne re-télécharge pas les intersections (on a déjà df_inter, issu de
+    l'Étape 1/2/3) — seuls les passages piétons sont interrogés, puis
+    rattachés par plus-proche-voisin aux intersections de df_inter. Produit
+    le même schéma de colonnes que telecharger_passages_par_zone
+    (intersection/latitude/longitude/nb_passages_pietons/latitude_ppN/
+    longitude_ppN) pour rester compatible avec identification_PP.trie_intersections.
+    """
+    import math
+    import pandas as pd
+    from scipy.spatial import cKDTree
+    from src.identification_PP import envoyer_requete_overpass, CATEGORIES_PASSAGES_PIETONS
+
+    lat_moy = df_inter["latitude"].mean()
+    marge_deg_lat = marge_m / 111_000
+    marge_deg_lon = marge_m / (111_000 * math.cos(math.radians(lat_moy)))
+
+    sud   = df_inter["latitude"].min() - marge_deg_lat
+    nord  = df_inter["latitude"].max() + marge_deg_lat
+    ouest = df_inter["longitude"].min() - marge_deg_lon
+    est   = df_inter["longitude"].max() + marge_deg_lon
+
+    filtre_osm = CATEGORIES_PASSAGES_PIETONS[0]["osm_filters"]
+    headers = {
+        "User-Agent": "ProjetSecuriteRoutiere_AnalyseIntersections/1.0 (contact: ton_email@exemple.com)",
+        "Content-Type": "application/x-www-form-urlencoded",
+    }
+    requete_passages = f"""
+    [out:json][timeout:60][bbox:{sud},{ouest},{nord},{est}];
+    (node{filtre_osm};way{filtre_osm};)->.passages_pietons;
+    .passages_pietons out body center;
+    """
+
+    print(f" Récupération des passages piétons (zone filtrée, {len(df_inter)} intersections)...")
+    donnees = envoyer_requete_overpass(requete_passages, headers)
+
+    intersections_brutes = df_inter[["intersection", "latitude", "longitude"]].copy()
+    intersections_brutes["nb_passages_pietons"] = 0
+    intersections_brutes = intersections_brutes.to_dict("records")
+
+    passages_pietons_extraits = []
+    if donnees:
+        for el in donnees.get("elements", []):
+            lat = el.get("lat") or el.get("center", {}).get("lat")
+            lon = el.get("lon") or el.get("center", {}).get("lon")
+            if lat and lon:
+                passages_pietons_extraits.append({"lat": lat, "lon": lon})
+
+    print(f" {len(passages_pietons_extraits)} passages piétons trouvés (zone filtrée).")
+
+    if passages_pietons_extraits:
+        coords_intersections = np.array([
+            [math.radians(i["latitude"]), math.radians(i["longitude"])]
+            for i in intersections_brutes
+        ])
+        arbre = cKDTree(coords_intersections)
+        rayon_radians = rayon_metres / 6371000
+
+        for passage in passages_pietons_extraits:
+            point = [math.radians(passage["lat"]), math.radians(passage["lon"])]
+            distance, index = arbre.query(point, k=1, distance_upper_bound=rayon_radians)
+            if index < len(intersections_brutes):
+                intersections_brutes[index]["nb_passages_pietons"] += 1
+                valeur = intersections_brutes[index]["nb_passages_pietons"]
+                intersections_brutes[index][f"latitude_pp{valeur}"] = passage["lat"]
+                intersections_brutes[index][f"longitude_pp{valeur}"] = passage["lon"]
+
+    return pd.DataFrame(intersections_brutes)
+
+
+def _osm_accidents_scope_locale(ville: str, df_inter, base_dir, rayon_metres: float = 25):
+    """
+    Équivalent de identification_PP.main, mais où la partie OSM est scopée aux
+    intersections filtrées (_telecharger_passages_zone_filtree) plutôt qu'à
+    toute la commune. La partie accidents (déjà scopée par intersection via
+    comparer_coordonnees) et la logique de fusion (trie_intersections) sont
+    réutilisées telles quelles depuis identification_PP.
+    """
+    from pathlib import Path as _Path
+    from src.identification_PP import charger_accidents, comparer_coordonnees, trie_intersections
+
+    base_dir = _Path(base_dir) if base_dir is not None else _Path(".")
+    path_accidents = str(
+        base_dir / "data" / "raw" / "source_pp"
+        / "accidents-corporels-de-la-circulation-routiere fichier entier.csv"
+    )
+
+    print(f"--- Démarrage du traitement Mixte (OSM scopé) pour la commune : {ville} ---")
+
+    final_accident = None
+    try:
+        tableau_accident = charger_accidents(path_accidents, ville)
+        final_accident = comparer_coordonnees(tableau_accident, df_inter)
+    except FileNotFoundError:
+        print(f" Fichier des accidents introuvable ({path_accidents}) — étape ignorée.")
+    except Exception as e:
+        print(f" Erreur lors du traitement des accidents : {e} — étape ignorée.")
+
+    df_resultat = _telecharger_passages_zone_filtree(df_inter, rayon_metres=rayon_metres)
+
+    if (final_accident is None or final_accident.empty) and df_resultat.empty:
+        print(" Aucune des deux méthodes n'a produit de résultat exploitable.")
+        return None
+    if final_accident is None or final_accident.empty:
+        return df_resultat.rename(columns={"nb_passages_pietons": "nb_traversees"})[
+            ["latitude", "longitude", "intersection", "nb_traversees"]
+        ]
+    if df_resultat.empty:
+        return final_accident[["latitude", "longitude", "intersection", "nb_traversees"]]
+    return trie_intersections(final_accident, df_resultat)
+
+
 def _rmtree_force(path):
     # Sur Windows/OneDrive, certains fichiers sont en lecture seule → on force les permissions avant suppression
     # Si un fichier est verrouillé (ouvert dans Excel), on l'ignore avec un avertissement
@@ -1262,7 +1384,7 @@ def page_etape3():
                 st.toast("Lieux d'intérêt (PM) manquants pour lancer le Mixte.", icon="⚠️", duration="long")
             else:
                 from datetime import datetime
-                from src.fusion_mixte import calculer_mixte
+                import src.IA_PP as IA_PP
 
                 with st.spinner(f"Préparation de l'analyse Mixte pour **{ville_pp}**…"):
                     _combos_mixte = st.session_state.get("combos_selectionnes", [])
@@ -1293,13 +1415,48 @@ def page_etape3():
                             return len(texte)
 
                     logs_mixte = StreamlitLoggerMixte()
+                    # Note : contrairement à src/fusion_mixte.calculer_mixte (qui interroge
+                    # Overpass sur toute la commune via identification_PP.main), la partie
+                    # OSM ici est scopée aux intersections déjà filtrées par l'Étape 2/3
+                    # (_osm_accidents_scope_locale / _telecharger_passages_zone_filtree,
+                    # définies plus haut dans ce fichier) — évite les timeouts Overpass sur
+                    # les grandes communes en ne demandant que la zone utile.
                     with st.spinner(f"Fusion IA / OSM+Accidents pour **{ville_pp}**…"):
                         with contextlib.redirect_stdout(logs_mixte):
-                            df_pp = calculer_mixte(
-                                df_inter_mixte, ville_pp, Path(__file__).parent,
-                                conf_min=conf_min_mixte, rayon_filtre_m=rayon_filtre_mixte,
-                                dossier_images=dossier_images_mixte,
+                            df_ia = IA_PP.analyser_toutes_intersections_filtre(
+                                df_inter_mixte, col_lat="latitude", col_lon="longitude",
+                                rayon_filtre_m=rayon_filtre_mixte, dossier_images=dossier_images_mixte,
+                                conf_min=conf_min_mixte,
                             )
+                            df_osm_acc = _osm_accidents_scope_locale(
+                                ville_pp, df_inter_mixte, Path(__file__).parent,
+                            )
+
+                            df_pp = df_inter_mixte.copy()
+                            df_pp["nb_traversees_ia"] = df_ia["nb_traversees"].to_numpy()
+
+                            if df_osm_acc is None or df_osm_acc.empty:
+                                print(
+                                    "\n Méthode OSM+Accidents indisponible pour cette commune — "
+                                    "le comptage mixte retombe entièrement sur l'IA."
+                                )
+                                df_pp["nb_traversees_osm_accident"] = 0
+                                df_pp["nb_traversees"] = df_pp["nb_traversees_ia"]
+                            else:
+                                df_pp = _joindre_nb_traversees_par_proximite(df_pp, df_osm_acc, rayon_m=25)
+                                df_pp = df_pp.rename(columns={"nb_traversees": "nb_traversees_osm_accident"})
+
+                                nb_ia = df_pp["nb_traversees_ia"]
+                                nb_osm_acc = df_pp["nb_traversees_osm_accident"]
+                                deux_positifs = (nb_ia > 0) & (nb_osm_acc > 0)
+                                compromis = ((nb_ia + nb_osm_acc) / 2).round().astype(int)
+                                df_pp["nb_traversees"] = np.where(deux_positifs, compromis, nb_ia + nb_osm_acc)
+
+                                print(f"\n Fusion mixte IA (conf >= {conf_min_mixte}) / OSM+Accidents :")
+                                print(f"   Total passages détectés par l'IA filtrée   : {int(nb_ia.sum())} (moyenne {nb_ia.mean():.2f}/intersection)")
+                                print(f"   Total passages détectés par OSM+Accidents  : {int(nb_osm_acc.sum())} (moyenne {nb_osm_acc.mean():.2f}/intersection)")
+                                print(f"   Total passages retenus (mixte)             : {int(df_pp['nb_traversees'].sum())} (moyenne {df_pp['nb_traversees'].mean():.2f}/intersection)")
+                                print(f"   {int(deux_positifs.sum())} intersection(s) sur {len(df_pp)} où les deux méthodes détectent quelque chose (moyenne appliquée).")
 
                     st.session_state["df_pp"]         = df_pp
                     st.session_state["pp_methode"]    = "Mixte"

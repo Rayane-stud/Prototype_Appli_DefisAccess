@@ -104,7 +104,7 @@ def calcul_pourcentage_erreur(valeur_reelle, valeur_estimee):
             return None  # erreur non définie (division par zéro), à traiter à part
     return abs(valeur_estimee - valeur_reelle) / valeur_reelle * 100
 
-def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source"):
+def histogramme_depuis_sortie(fichier_sortie, nom_source, ville, colonne_source="source"):
 
     dossier_sortie = "data/output/comparaisons"
     os.makedirs(dossier_sortie, exist_ok=True)
@@ -125,7 +125,7 @@ def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source
         return df_source
 
     # --- Graphique : distribution des écarts (sur/sous-estimation) ---
-    chemin_hist = os.path.join(dossier_sortie, f"histogramme_ecarts_{nom_source}.png")
+    chemin_hist = os.path.join(dossier_sortie, f"histogramme_ecarts_{nom_source}_{ville}.png")
 
     plt.figure(figsize=(10, 6))
     largeur_bins = range(int(df_source["ecart"].min()) - 1, int(df_source["ecart"].max()) + 2)
@@ -144,7 +144,7 @@ def histogramme_depuis_sortie(fichier_sortie, nom_source, colonne_source="source
 
     return df_source
 
-def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
+def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, ville, rayon=10):
     
     feuilles = lire_fichier_benevole(fichier_benevole)
     fichier1 = pd.read_csv(fichier_osm, sep=";", encoding="utf-8-sig")
@@ -264,7 +264,7 @@ def comparaison_IRL(fichier_benevole, fichier_osm, fichier_IA, rayon=10):
     df_egaux = df_egaux[colonnes_voulues]
     df_diff = df_diff[colonnes_voulues]
    
-    fichier_sortie = "data/output/comparaisons/comparaison_terrain.xlsx"
+    fichier_sortie = f"data/output/comparaisons/comparaison_terrain_{ville}.xlsx"
     with pd.ExcelWriter(fichier_sortie) as writer:
 
         df_egaux.to_excel(
@@ -287,7 +287,7 @@ fichier_benevole = "data/raw/comparaisons/fiches_excell.xlsx"
 nom_fichier1 = "data/raw/comparaisons/" + ville + "pp_osm.csv"
 nom_fichier2 = "data/raw/comparaisons/" + ville + "IA.csv"
 
-fichier_sortie = comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2)
+fichier_sortie = comparaison_IRL(fichier_benevole, nom_fichier1, nom_fichier2, ville)
 
-histogramme_depuis_sortie(fichier_sortie, "Fichier OSM")
-histogramme_depuis_sortie(fichier_sortie, "Fichier IA")
+histogramme_depuis_sortie(fichier_sortie, "Fichier OSM", ville)
+histogramme_depuis_sortie(fichier_sortie, "Fichier IA", ville)

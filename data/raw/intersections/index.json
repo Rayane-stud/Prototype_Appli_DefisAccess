@@ -1,4 +1,6 @@
 {
   "montrouge": "intersections_92049.geojson",
-  "garches": "intersections_92033.geojson"
+  "garches": "intersections_92033.geojson",
+  "pléneuf-val-andré": "intersections_22186.geojson",
+  "gap": "intersections_05061.geojson"
 }

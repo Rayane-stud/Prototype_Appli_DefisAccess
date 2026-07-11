@@ -13,6 +13,17 @@ BUT : Nouvelle interface DEFIACCESS, organisée en pages (une par étape) au lie
 
       app5.py n'est pas modifié par ce fichier.
 """
+import os
+
+# Contourne un conflit connu (Windows) entre les runtimes OpenMP embarqués par
+# torch/ultralytics (IA - YOLO) et scikit-learn/k-means-constrained (chargé dès
+# le démarrage via src.proximite) : conflit associé à un plantage "page blanche"
+# lors de la génération des PP (Étape 3, méthodes IA/Mixte). Doit rester tout en
+# haut du fichier, avant tout autre import, pour être lu par les runtimes OpenMP
+# dès leur initialisation. setdefault : une valeur déjà définie côté shell reste
+# prioritaire, on ne l'écrase pas.
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 import numpy as np
 import io
 import zipfile
@@ -63,6 +74,16 @@ LABELS_OSM    = [c["label"] for c in CATEGORIES_OSM_DISPONIBLES]
 # Orthophoto IGN fixe (80 m d'emprise, 512 px -> 6,4 px/m), sans annotation.
 _EXEMPLE_INTERSECTION_IMG = Path(__file__).parent / "assets" / "exemple_intersection.jpg"
 _EXEMPLE_INTERSECTION_EMPRISE_M = 80
+
+# Serveurs Overpass de repli pour le téléchargement du réseau piéton (Étape 4,
+# route_toutes_equipes2 dans src/routage.py) : contrairement à identification_PP.py,
+# osmnx n'interroge qu'un seul serveur (overpass-api.de) sans repli — on bascule
+# nous-mêmes sur un miroir via ox.settings.overpass_url si celui-ci ne répond pas.
+SERVEURS_OVERPASS_ROUTAGE = [
+    "https://overpass-api.de/api",
+    "https://overpass.kumi.systems/api",
+    "https://maps.mail.ru/osm/tools/overpass/api",
+]
 
 
 @st.cache_data
@@ -1206,13 +1227,13 @@ def page_etape3():
             key="btn_generer_pp",
             type="secondary",
             use_container_width=True,
-            disabled=not commune_str.strip(),
+            disabled=not commune_str.strip() or st.session_state.get("pp_generation_en_cours", False),
         )
     with col_pp_reset:
         reset_pp_btn = st.button("Réinitialiser", key="btn_reset_pp", use_container_width=True)
 
     if reset_pp_btn:
-        for cle in ("df_pp", "pp_methode", "pp_commune", "pp_ia_dossier"):
+        for cle in ("df_pp", "pp_methode", "pp_commune", "pp_ia_dossier", "pp_generation_en_cours"):
             st.session_state.pop(cle, None)
         st.rerun()
 
@@ -1224,6 +1245,7 @@ def page_etape3():
         # spécifiques à la méthode IA/Mixte (rerun précédent), les deux reruns
         # peuvent se chevaucher et faire planter l'appli (page blanche).
         st.session_state["pp_lancement_pending"] = True
+        st.session_state["pp_generation_en_cours"] = True
         st.rerun()
 
     if st.session_state.pop("pp_lancement_pending", False) and commune_str.strip():
@@ -1463,6 +1485,8 @@ def page_etape3():
                     st.session_state["pp_commune"]    = ville_pp
                     st.session_state["pp_ia_dossier"] = dossier_images_mixte
                     st.toast(f"Analyse Mixte terminée pour {len(df_pp)} intersections.", icon="✅", duration="long")
+
+        st.session_state["pp_generation_en_cours"] = False
 
     if "pp_methode" in st.session_state:
         with st.spinner("Préparation du tableau et des images…"):
@@ -2118,7 +2142,20 @@ def page_etape4():
 
             logs_routage = StreamlitLoggerRoutage()
             with contextlib.redirect_stdout(logs_routage):
-                teams_dict = route_toutes_equipes2(df, meetup_lat, meetup_lon)
+                import osmnx as ox
+                import requests
+
+                for _i_serveur_ov, _url_overpass_ov in enumerate(SERVEURS_OVERPASS_ROUTAGE):
+                    ox.settings.overpass_url = _url_overpass_ov
+                    try:
+                        teams_dict = route_toutes_equipes2(df, meetup_lat, meetup_lon)
+                        break
+                    except requests.exceptions.RequestException as e:
+                        dernier_serveur_ov = _i_serveur_ov == len(SERVEURS_OVERPASS_ROUTAGE) - 1
+                        print(f"Serveur Overpass {_url_overpass_ov} indisponible ({e}).")
+                        if dernier_serveur_ov:
+                            raise
+                        print("Tentative sur le serveur Overpass suivant...")
 
             # ── Étape 6 — Export XLSX ─────────────────────────────────────
             status.info("**Étape 6/6** — Génération des feuilles terrain XLSX…")

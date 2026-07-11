@@ -1,4 +1,4 @@
 gdal-bin
 libgdal-dev
 libproj-dev
-libgl1-mesa-glx
+libgl1
